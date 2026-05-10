@@ -4,15 +4,6 @@ import logoImg from './assets/logo.png';
 
 const API = 'https://webklienti-backend.onrender.com';
 
-const galleryItems = [
-  { title: 'Kaderníctvo Jana', category: 'One-page web', color: '#e8f4f0' },
-  { title: 'AutoServis Horváth', category: 'Prezentačný web', color: '#f4f0e8' },
-  { title: 'Pekáreň Novák', category: 'One-page web', color: '#f0e8f4' },
-  { title: 'Fitness Studio Pro', category: 'Prezentačný web', color: '#e8f0f4' },
-  { title: 'Reštaurácia Azur', category: 'E-shop', color: '#f4e8e8' },
-  { title: 'Právna kancelária', category: 'Prezentačný web', color: '#e8f4e8' },
-];
-
 const staticReviews = [
   { author: 'Marek Novák', company: 'Novák & syn s.r.o.', text: 'Vynikajúca práca! Web bol hotový za 5 dní a presne podľa našich predstáv. Odporúčam každému.', rating: 5 },
   { author: 'Jana Kováčová', company: 'Kaderníctvo Jana', text: 'Konečne mám pekný web! Komunikácia bola super, cena výborná. Zákazníci mi hovoria, že web vyzerá profesionálne.', rating: 5 },
@@ -21,7 +12,7 @@ const staticReviews = [
 
 const T = {
   sk: {
-    nav: ['Cenník', 'Galéria', 'Referencie', 'Kontakt'],
+    nav: ['Cenník', 'Referencie', 'Kontakt'],
     navOrder: 'Objednať',
     heroBadge: '🚀 Akcia — 50% zľava do konca mesiaca',
     heroTitle: ['Weby, ktoré', 'prinášajú ', 'klientov'],
@@ -40,8 +31,6 @@ const T = {
       { num: 'krok 3', title: 'My tvoríme', desc: 'Náš tím pripraví váš web. Nemusíte nič pripravovať ani posielať.' },
       { num: 'krok 4', title: 'Spustenie', desc: 'Web je hotový do 5 dní a môžete ho hneď prezentovať zákazníkom.' },
     ],
-    galleryLabel: 'Naše práce',
-    galleryTitle: 'Galéria projektov',
     reviewsLabel: 'Referencie',
     reviewsTitle: 'Čo hovoria klienti',
     formLabel: 'Objednávka',
@@ -98,7 +87,7 @@ Používame Google Analytics na sledovanie návštevnosti. Cookies môžete odmi
 Platné od: 1.1.2025`,
   },
   cz: {
-    nav: ['Ceník', 'Galerie', 'Reference', 'Kontakt'],
+    nav: ['Ceník', 'Reference', 'Kontakt'],
     navOrder: 'Objednat',
     heroBadge: '🚀 Akce — 50% sleva do konce měsíce',
     heroTitle: ['Weby, které', 'přinášejí ', 'klienty'],
@@ -117,8 +106,6 @@ Platné od: 1.1.2025`,
       { num: 'krok 3', title: 'My tvoříme', desc: 'Náš tým připraví váš web. Nemusíte nic připravovat ani posílat.' },
       { num: 'krok 4', title: 'Spuštění', desc: 'Web je hotový do 5 dnů a můžete ho hned prezentovat zákazníkům.' },
     ],
-    galleryLabel: 'Naše práce',
-    galleryTitle: 'Galerie projektů',
     reviewsLabel: 'Reference',
     reviewsTitle: 'Co říkají klienti',
     formLabel: 'Objednávka',
@@ -175,7 +162,7 @@ Používáme Google Analytics ke sledování návštěvnosti. Cookies můžete o
 Platné od: 1.1.2025`,
   },
   en: {
-    nav: ['Pricing', 'Gallery', 'Reviews', 'Contact'],
+    nav: ['Pricing', 'Reviews', 'Contact'],
     navOrder: 'Order now',
     heroBadge: '🚀 Sale — 50% off until end of month',
     heroTitle: ['Websites that', 'bring you ', 'clients'],
@@ -194,8 +181,6 @@ Platné od: 1.1.2025`,
       { num: 'step 3', title: 'We build it', desc: 'Our team prepares your website. You don\'t need to prepare or send anything.' },
       { num: 'step 4', title: 'Launch', desc: 'Your website is ready in 5 days and you can start presenting it to customers.' },
     ],
-    galleryLabel: 'Our work',
-    galleryTitle: 'Project gallery',
     reviewsLabel: 'Testimonials',
     reviewsTitle: 'What clients say',
     formLabel: 'Order',
@@ -259,6 +244,7 @@ export default function App() {
   const [formStatus, setFormStatus] = useState('idle');
   const [cookieVisible, setCookieVisible] = useState(() => !localStorage.getItem('wk_cookie'));
   const [privacyOpen, setPrivacyOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const t = T[lang];
 
@@ -288,12 +274,13 @@ export default function App() {
 
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    setMenuOpen(false);
   };
 
   const acceptCookies = () => { localStorage.setItem('wk_cookie', '1'); setCookieVisible(false); };
   const declineCookies = () => { localStorage.setItem('wk_cookie', '0'); setCookieVisible(false); };
 
-  const navIds = ['pricing', 'gallery', 'reviews', 'footer'];
+  const navIds = ['pricing', 'reviews', 'footer'];
 
   const langBtn = (code) => ({
     background: lang === code ? 'rgba(255,210,0,0.15)' : 'rgba(255,255,255,0.07)',
@@ -308,30 +295,65 @@ export default function App() {
 
       {/* NAV */}
       <nav style={{ position: 'sticky', top: 0, zIndex: 100, background: 'rgba(26,26,26,0.97)', backdropFilter: 'blur(8px)', padding: '0 40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: 64 }}>
+        
+        {/* LOGO */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <img src={logoImg} alt="WK logo" style={{ height: 44, width: 44, objectFit: 'contain', mixBlendMode: 'screen' }} />
           <span style={{ fontWeight: 800, fontSize: 18, color: '#f5f2eb', letterSpacing: -0.5 }}>
             Web<span style={{ color: '#ffd200' }}>Klienti</span>
           </span>
         </div>
-        <div style={{ display: 'flex', gap: 28, alignItems: 'center' }}>
+
+        {/* DESKTOP NAV */}
+        <div style={{ display: 'flex', gap: 28, alignItems: 'center', '@media(max-width:768px)': { display: 'none' } }} className="desktop-nav">
           {t.nav.map((label, i) => (
             <button key={i} onClick={() => scrollTo(navIds[i])} style={{ background: 'none', border: 'none', color: 'rgba(245,242,235,0.7)', cursor: 'pointer', fontSize: 14, fontWeight: 500 }}>{label}</button>
           ))}
         </div>
-        <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
+
+        {/* DESKTOP RIGHT */}
+        <div style={{ display: 'flex', gap: 10, alignItems: 'center' }} className="desktop-nav">
           <div style={{ display: 'flex', gap: 4 }}>
             {['sk', 'cz', 'en'].map(code => (
-              <button key={code} onClick={() => setLang(code)} style={langBtn(code)}>
-                {code.toUpperCase()}
-              </button>
+              <button key={code} onClick={() => setLang(code)} style={langBtn(code)}>{code.toUpperCase()}</button>
             ))}
           </div>
           <button onClick={() => scrollTo('contact')} style={{ background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '8px 20px', borderRadius: 100, fontSize: 14, fontWeight: 600, cursor: 'pointer', marginLeft: 4 }}>
             {t.navOrder}
           </button>
         </div>
+
+        {/* HAMBURGER */}
+        <button onClick={() => setMenuOpen(!menuOpen)} className="hamburger" style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', padding: 8, flexDirection: 'column', gap: 5 }}>
+          <span style={{ display: 'block', width: 24, height: 2, background: menuOpen ? '#ffd200' : '#f5f2eb', transition: 'all .3s', transform: menuOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none' }}></span>
+          <span style={{ display: 'block', width: 24, height: 2, background: menuOpen ? 'transparent' : '#f5f2eb', transition: 'all .3s' }}></span>
+          <span style={{ display: 'block', width: 24, height: 2, background: menuOpen ? '#ffd200' : '#f5f2eb', transition: 'all .3s', transform: menuOpen ? 'rotate(-45deg) translate(5px, -5px)' : 'none' }}></span>
+        </button>
       </nav>
+
+      {/* MOBILE MENU */}
+      {menuOpen && (
+        <div style={{ position: 'fixed', top: 64, left: 0, right: 0, zIndex: 99, background: 'rgba(26,26,26,0.98)', padding: '20px 40px', display: 'flex', flexDirection: 'column', gap: 16, borderTop: '1px solid rgba(255,255,255,0.08)' }}>
+          {t.nav.map((label, i) => (
+            <button key={i} onClick={() => scrollTo(navIds[i])} style={{ background: 'none', border: 'none', color: 'rgba(245,242,235,0.9)', cursor: 'pointer', fontSize: 18, fontWeight: 600, textAlign: 'left', padding: '8px 0' }}>{label}</button>
+          ))}
+          <div style={{ display: 'flex', gap: 8, paddingTop: 8 }}>
+            {['sk', 'cz', 'en'].map(code => (
+              <button key={code} onClick={() => setLang(code)} style={langBtn(code)}>{code.toUpperCase()}</button>
+            ))}
+          </div>
+          <button onClick={() => scrollTo('contact')} style={{ background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '12px 20px', borderRadius: 100, fontSize: 16, fontWeight: 700, cursor: 'pointer', marginTop: 8 }}>
+            {t.navOrder}
+          </button>
+        </div>
+      )}
+
+      <style>{`
+        @media (max-width: 768px) {
+          .desktop-nav { display: none !important; }
+          .hamburger { display: flex !important; }
+        }
+      `}</style>
 
       {/* HERO */}
       <div style={{ background: '#1a1a1a', color: '#f5f2eb', padding: '100px 40px 120px', textAlign: 'center' }}>
@@ -414,27 +436,6 @@ export default function App() {
               </div>
             ))}
           </div>
-        </div>
-      </div>
-
-      {/* GALLERY */}
-      <div id="gallery" style={{ padding: '100px 40px', maxWidth: 1100, margin: '0 auto' }}>
-        <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#888', marginBottom: 12 }}>{t.galleryLabel}</p>
-        <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, marginBottom: 56 }}>{t.galleryTitle}</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16 }}>
-          {galleryItems.map((item, i) => (
-            <div key={i} style={{ background: item.color, borderRadius: 20, overflow: 'hidden', cursor: 'pointer', transition: 'transform 0.2s' }}
-              onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-4px)'}
-              onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}>
-              <div style={{ height: 180, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 48 }}>
-                {['💇', '🔧', '🥖', '💪', '🍽️', '⚖️'][i]}
-              </div>
-              <div style={{ padding: '20px 24px 24px' }}>
-                <p style={{ fontSize: 11, letterSpacing: 2, textTransform: 'uppercase', color: '#888', marginBottom: 6 }}>{item.category}</p>
-                <h3 style={{ fontSize: 18, fontWeight: 700 }}>{item.title}</h3>
-              </div>
-            </div>
-          ))}
         </div>
       </div>
 
