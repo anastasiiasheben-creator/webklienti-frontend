@@ -3,7 +3,7 @@ import logoImg from '../assets/logo.webp';
 
 const posts = {
   'preco-kazda-mala-firma-potrebuje-web': {
-    title: 'Prečo každá malá firma potrebuje web',
+    title: 'Prečo každá malá firma potrebuje web?',
     date: '11. mája 2025',
     readTime: '4 min čítania',
     content: `
