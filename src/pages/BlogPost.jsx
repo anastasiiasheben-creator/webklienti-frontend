@@ -4,7 +4,7 @@ import logoImg from '../assets/logo.webp';
 const posts = {
   'preco-kazda-mala-firma-potrebuje-web': {
     title: 'Prečo dnes každá malá firma potrebuje web?',
-    date: '15. januára 2025',
+    date: '12. februára 2025',
     readTime: '4 min čítania',
     content: `
 Každý deň ľudia vo vašom okolí hľadajú služby, ktoré ponúkate. Ak však nemáte web, väčšina z nich skončí u konkurencie.
@@ -48,7 +48,7 @@ Váš nový web môžete mať hotový už za 5 dní.
   },
   'preco-je-seo-klucove': {
     title: 'Prečo je SEO kľúčové pre úspech vášho podnikania',
-    date: '10. marca 2025',
+    date: '18. marca 2025',
     readTime: '3 min čítania',
     content: `
 Dnes už nestačí mať len peknú webovú stránku. Ak sa váš web nezobrazuje vo vyhľadávačoch ako Google, väčšina potenciálnych zákazníkov vás jednoducho nenájde. Ľudia každý deň hľadajú produkty a služby online — a firmy, ktoré sú na prvých pozíciách, získavajú najviac objednávok, telefonátov a klientov.
@@ -83,7 +83,7 @@ Ak chcete, aby váš web pracoval pre váš biznis 24/7 a prinášal viac objedn
   },
   'kolko-stoji-webstranka-na-slovensku': {
     title: 'Koľko stojí webstránka na Slovensku?',
-    date: '5. mája 2025',
+    date: '3. apríla 2025',
     readTime: '5 min čítania',
     content: `
 Jedna z najčastejších otázok, ktorú dostávame: "Koľko stojí webstránka?" Odpoveď nie je jednoduchá, pretože ceny sa líšia enormne — od 0 € až po desiatky tisíc eur. Poďme si to rozobrat.
@@ -146,7 +146,7 @@ Máte otázky o cene? Napíšte nám — radi vám poradíme bez záväzkov.
   },
   'preco-web-neprinas-zakaznikov': {
     title: 'Prečo vám web neprináša zákazníkov (a ako to zmeniť)',
-    date: '7. mája 2025',
+    date: '29. apríla 2025',
     readTime: '3 min čítania',
     content: `
 Váš web môže vyzerať dobre. Ale ak neprináša dopyty, nie je problém v trhu — ale v ňom.
