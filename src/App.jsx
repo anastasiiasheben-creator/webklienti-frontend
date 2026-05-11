@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FaWhatsapp, FaFacebookF } from "react-icons/fa";
-import logoImg from './assets/logo.png';
+import logoImg from './assets/logo.webp';
 
 const API = 'https://webklienti-backend.onrender.com';
 
