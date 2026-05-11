@@ -184,6 +184,66 @@ Máte otázky o cene? Napíšte nám — radi vám poradíme bez záväzkov.
   Dobrý web neexistuje preto, aby vyzeral pekne. Existuje preto, aby prinášal zákazky.
     `,
   },
+  'preco-vas-eshop-nepredava': {
+  title: 'Prečo váš e-shop nepredáva?',
+  date: '11. mája 2026',
+  readTime: '4 min čítania',
+  content: `
+  Ak ľudia prídu, ale nekúpia… je problém v nich, alebo vo vás?
+  
+  ## Rozumie váš e-shop zákazníkovi do 5 sekúnd?
+  
+  Čo vidí zákazník ako prvé? A čo si má z toho odniesť? Ak si nie je istý — odchádza.
+  
+  Pýtajte sa:
+  - rozumie môj e-shop do 5 sekúnd?
+  - vie zákazník, prečo práve ja?
+  
+  Ak nie… prečo by mal nakúpiť?
+  
+  ## Je váš e-shop pripravený na zákazníka?
+  
+  Ak niekto vstúpi do vášho obchodu, vedie ho niečo ďalej? Alebo stojí a rozmýšľa?
+  
+  Koľko krokov musí spraviť, aby nakúpil? A koľko krokov je už príliš veľa?
+  
+  Možno problém nie je v cene. Možno je problém v ceste k nákupu.
+  
+  ## Prečo ľudia odchádzajú bez nákupu?
+  
+  Keď zákazník odíde, pýtate sa „prečo"? Alebo len „škoda"?
+  
+  Čo ho zastavilo?
+  - nedôvera?
+  - chaos?
+  - pomalosť?
+  
+  Alebo jednoducho necítil dôvod zostať?
+  
+  ## Je váš e-shop dôveryhodný… alebo len existuje?
+  
+  Verili by ste svojmu e-shopu, keby ste ho videli prvýkrát?
+  
+  Čo vidí zákazník?
+  - recenzie?
+  - jasné informácie?
+  - profesionálny dojem?
+  
+  Alebo len stránku, ktorá niečo predáva? A prečo by mal veriť práve vám?
+  
+  ## Čo by sa stalo, keby váš e-shop zmizol zajtra?
+  
+  Prišli by ste o dizajn… alebo o predaje? Koľko ľudí by vás ešte našlo? Koľko by si vás zapamätalo?
+  
+  Ak by sa nič nezmenilo… potrebujete vôbec taký e-shop?
+  
+  ## Záver
+  
+  Nie je otázka, či máte e-shop. Otázka je:
+  
+  Či e-shop pracuje pre vás… alebo proti vám.
+    `,
+  },
 };
 
 function renderContent(content) {
