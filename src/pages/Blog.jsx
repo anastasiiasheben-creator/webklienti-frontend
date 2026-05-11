@@ -24,12 +24,12 @@ const posts = [
     readTime: '5 min čítania',
   },
   {
-    slug: 'ako-si-vybrat-webdizajnera',
-    title: 'Ako si vybrať správneho webdizajnéra? 5 otázok ktoré musíte položiť',
-    excerpt: 'Nie každý "webdizajnér" dodá to, čo sľubuje. Tieto otázky vám pomôžu vybrať spoľahlivého partnera a vyhnúť sa sklamaniu.',
-    date: '1. mája 2025',
-    readTime: '4 min čítania',
-  },  
+    slug: 'preco-web-neprinas-zakaznikov',
+    title: 'Prečo vám web neprináša zákazníkov (a ako to zmeniť)',
+    excerpt: 'Váš web môže vyzerať dobre, ale ak neprináša dopyty, nie je problém v trhu — ale vo webe. Zistite 3 hlavné dôvody a ako ich opraviť.',
+    date: '11. mája 2025',
+    readTime: '3 min čítania',
+  }, 
 ];
 
 export default function Blog() {
