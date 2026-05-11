@@ -3,82 +3,82 @@ import logoImg from '../assets/logo.webp';
 
 const posts = {
   'preco-kazda-mala-firma-potrebuje-web': {
-  title: 'Prečo dnes každá malá firma potrebuje web?',
-  date: '15. januára 2025',
-  readTime: '4 min čítania',
-  content: `
-  Každý deň ľudia vo vašom okolí hľadajú služby, ktoré ponúkate. Ak však nemáte web, väčšina z nich skončí u konkurencie.
-  
-  Dnes zákazníci hľadajú firmy cez Google. Ak vás tam nenájdu, pre nich prakticky neexistujete. Nestačí mať len Facebook — firma bez webu často pôsobí menej dôveryhodne a prichádza o klientov ešte pred prvým kontaktom.
-  
-  ## Web pracuje za vás 24/7
-  
-  Profesionálny web:
-  
-  - prezentuje vaše služby
-  - buduje dôveru
-  - privádza nových zákazníkov
-  - umožňuje klientom kontaktovať vás kedykoľvek
-  
-  Aj keď pracujete alebo spíte, váš web stále získava nových klientov.
-  
-  ## Prvý dojem rozhoduje
-  
-  Ľudia si dnes firmu preverujú online ešte pred telefonátom. Moderný a rýchly web vytvára profesionálny dojem a výrazne zvyšuje šancu, že si zákazník vyberie práve vás.
-  
-  Firma bez webu dnes stráca dôveru aj objednávky.
-  
-  ## Web nemusí byť drahý
-  
-  Profesionálny firemný web dnes nemusí stáť tisíce eur. U nás začína od 299 €:
-  
-  - moderný dizajn
-  - mobilná verzia
-  - rýchle dodanie do 5 dní
-  - bez skrytých poplatkov
-  
-  Pre väčšinu firiem sa investícia vráti už pri prvom novom zákazníkovi.
-  
-  ## Nečakajte, kým vás konkurencia predbehne
-  
-  Každý deň bez webu znamená stratených zákazníkov. Čím dlhšie čakáte, tým viac klientov získava vaša konkurencia.
-  
-  Váš nový web môžete mať hotový už za 5 dní.
+    title: 'Prečo dnes každá malá firma potrebuje web?',
+    date: '15. januára 2025',
+    readTime: '4 min čítania',
+    content: `
+Každý deň ľudia vo vašom okolí hľadajú služby, ktoré ponúkate. Ak však nemáte web, väčšina z nich skončí u konkurencie.
+
+Dnes zákazníci hľadajú firmy cez Google. Ak vás tam nenájdu, pre nich prakticky neexistujete. Nestačí mať len Facebook — firma bez webu často pôsobí menej dôveryhodne a prichádza o klientov ešte pred prvým kontaktom.
+
+## Web pracuje za vás 24/7
+
+Profesionálny web:
+
+- prezentuje vaše služby
+- buduje dôveru
+- privádza nových zákazníkov
+- umožňuje klientom kontaktovať vás kedykoľvek
+
+Aj keď pracujete alebo spíte, váš web stále získava nových klientov.
+
+## Prvý dojem rozhoduje
+
+Ľudia si dnes firmu preverujú online ešte pred telefonátom. Moderný a rýchly web vytvára profesionálny dojem a výrazne zvyšuje šancu, že si zákazník vyberie práve vás.
+
+Firma bez webu dnes stráca dôveru aj objednávky.
+
+## Web nemusí byť drahý
+
+Profesionálny firemný web dnes nemusí stáť tisíce eur. U nás začína od 299 €:
+
+- moderný dizajn
+- mobilná verzia
+- rýchle dodanie do 5 dní
+- bez skrytých poplatkov
+
+Pre väčšinu firiem sa investícia vráti už pri prvom novom zákazníkovi.
+
+## Nečakajte, kým vás konkurencia predbehne
+
+Každý deň bez webu znamená stratených zákazníkov. Čím dlhšie čakáte, tým viac klientov získava vaša konkurencia.
+
+Váš nový web môžete mať hotový už za 5 dní.
     `,
   },
   'preco-je-seo-klucove': {
-  title: 'Prečo je SEO kľúčové pre úspech vášho podnikania',
-  date: '10. marca 2025',
-  readTime: '3 min čítania',
-  content: `
-  Dnes už nestačí mať len peknú webovú stránku. Ak sa váš web nezobrazuje vo vyhľadávačoch ako Google, väčšina potenciálnych zákazníkov vás jednoducho nenájde. Ľudia každý deň hľadajú produkty a služby online — a firmy, ktoré sú na prvých pozíciách, získavajú najviac objednávok, telefonátov a klientov.
-  
-  Práve preto je SEO (optimalizácia pre vyhľadávače) jednou z najdôležitejších investícií do rastu firmy.
-  
-  ## SEO pomáha:
-  
-  - zvýšiť viditeľnosť vašej firmy
-  - priviesť na web viac reálnych zákazníkov
-  - budovať dôveru a profesionálny imidž
-  - získať výhodu pred konkurenciou
-  - znížiť náklady na platenú reklamu
-  
-  Na rozdiel od reklamy SEO funguje dlhodobo. Kým reklama prestane prinášať výsledky hneď po vypnutí kampane, kvalitne optimalizovaný web môže získavať nových klientov nepretržite.
-  
-  Mnohí podnikatelia prichádzajú každý mesiac o zákazníkov len preto, že ich konkurencia je vo vyhľadávaní vyššie. Ak váš web nie je optimalizovaný správne, zákazník si veľmi často vyberie inú firmu — aj keď ponúkate lepšie služby alebo ceny.
-  
-  ## Profesionálne SEO zahŕňa:
-  
-  - technickú optimalizáciu webu
-  - zrýchlenie načítania stránky
-  - kvalitný obsah
-  - správnu štruktúru webu
-  - lokálne SEO
-  - budovanie autority a dôveryhodnosti stránky
-  
-  Cieľ je jednoduchý: dostať váš web vyššie vo vyhľadávaní a premeniť návštevníkov na zákazníkov.
-  
-  Ak chcete, aby váš web pracoval pre váš biznis 24/7 a prinášal viac objednávok, SEO je nevyhnutnosť. Čím skôr začnete, tým väčší náskok získate pred konkurenciou.
+    title: 'Prečo je SEO kľúčové pre úspech vášho podnikania',
+    date: '10. marca 2025',
+    readTime: '3 min čítania',
+    content: `
+Dnes už nestačí mať len peknú webovú stránku. Ak sa váš web nezobrazuje vo vyhľadávačoch ako Google, väčšina potenciálnych zákazníkov vás jednoducho nenájde. Ľudia každý deň hľadajú produkty a služby online — a firmy, ktoré sú na prvých pozíciách, získavajú najviac objednávok, telefonátov a klientov.
+
+Práve preto je SEO (optimalizácia pre vyhľadávače) jednou z najdôležitejších investícií do rastu firmy.
+
+## SEO pomáha:
+
+- zvýšiť viditeľnosť vašej firmy
+- priviesť na web viac reálnych zákazníkov
+- budovať dôveru a profesionálny imidž
+- získať výhodu pred konkurenciou
+- znížiť náklady na platenú reklamu
+
+Na rozdiel od reklamy SEO funguje dlhodobo. Kým reklama prestane prinášať výsledky hneď po vypnutí kampane, kvalitne optimalizovaný web môže získavať nových klientov nepretržite.
+
+Mnohí podnikatelia prichádzajú každý mesiac o zákazníkov len preto, že ich konkurencia je vo vyhľadávaní vyššie. Ak váš web nie je optimalizovaný správne, zákazník si veľmi často vyberie inú firmu — aj keď ponúkate lepšie služby alebo ceny.
+
+## Profesionálne SEO zahŕňa:
+
+- technickú optimalizáciu webu
+- zrýchlenie načítania stránky
+- kvalitný obsah
+- správnu štruktúru webu
+- lokálne SEO
+- budovanie autority a dôveryhodnosti stránky
+
+Cieľ je jednoduchý: dostať váš web vyššie vo vyhľadávaní a premeniť návštevníkov na zákazníkov.
+
+Ak chcete, aby váš web pracoval pre váš biznis 24/7 a prinášal viac objednávok, SEO je nevyhnutnosť. Čím skôr začnete, tým väčší náskok získate pred konkurenciou.
     `,
   },
   'kolko-stoji-webstranka-na-slovensku': {
@@ -145,103 +145,103 @@ Máte otázky o cene? Napíšte nám — radi vám poradíme bez záväzkov.
     `,
   },
   'preco-web-neprinas-zakaznikov': {
-  title: 'Prečo vám web neprináša zákazníkov (a ako to zmeniť)',
-  date: '11. mája 2026',
-  readTime: '3 min čítania',
-  content: `
-  Váš web môže vyzerať dobre. Ale ak neprináša dopyty, nie je problém v trhu — ale v ňom.
-  
-  Web buď predáva, alebo stráca zákazníkov.
-  
-  ## 1. Strácate ľudí na mobile
-  
-  Väčšina návštev prichádza z telefónu. Ak web sa pomaly načítava, je neprehľadný alebo sa ťažko používa — zákazník odchádza do pár sekúnd.
-  
-  ## 2. Návštevník nevie, čo má robiť
-  
-  Ak nie je hneď jasné čo ponúkate, prečo práve vy a ako vás kontaktovať — nemáte šancu na zákazku.
-  
-  ## 3. Nepôsobíte dôveryhodne
-  
-  Zákazník porovnáva. A rozhoduje prvý dojem. Ak web nevyzerá profesionálne alebo je nejasný — vyberie konkurenciu, aj keď ste lepší.
-  
-  ## Skutočný problém
-  
-  Web nie je vizitka. Je to predajný nástroj. Ak nevedie k akcii, každý deň prichádzate o zákazníkov.
-  
-  ## Čo funguje
-  
-  - rýchly web
-  - jasná ponuka do pár sekúnd
-  - mobilná optimalizácia
-  - výrazné tlačidlo kontaktu
-  - dôkazy dôvery (recenzie, práce, referencie)
-  
-  ## Záver
-  
-  Každý návštevník je potenciálny zákazník. Ak ho nepresvedčíte okamžite, odíde ku konkurencii.
-  
-  Dobrý web neexistuje preto, aby vyzeral pekne. Existuje preto, aby prinášal zákazky.
+    title: 'Prečo vám web neprináša zákazníkov (a ako to zmeniť)',
+    date: '7. mája 2025',
+    readTime: '3 min čítania',
+    content: `
+Váš web môže vyzerať dobre. Ale ak neprináša dopyty, nie je problém v trhu — ale v ňom.
+
+Web buď predáva, alebo stráca zákazníkov.
+
+## 1. Strácate ľudí na mobile
+
+Väčšina návštev prichádza z telefónu. Ak web sa pomaly načítava, je neprehľadný alebo sa ťažko používa — zákazník odchádza do pár sekúnd.
+
+## 2. Návštevník nevie, čo má robiť
+
+Ak nie je hneď jasné čo ponúkate, prečo práve vy a ako vás kontaktovať — nemáte šancu na zákazku.
+
+## 3. Nepôsobíte dôveryhodne
+
+Zákazník porovnáva. A rozhoduje prvý dojem. Ak web nevyzerá profesionálne alebo je nejasný — vyberie konkurenciu, aj keď ste lepší.
+
+## Skutočný problém
+
+Web nie je vizitka. Je to predajný nástroj. Ak nevedie k akcii, každý deň prichádzate o zákazníkov.
+
+## Čo funguje
+
+- rýchly web
+- jasná ponuka do pár sekúnd
+- mobilná optimalizácia
+- výrazné tlačidlo kontaktu
+- dôkazy dôvery (recenzie, práce, referencie)
+
+## Záver
+
+Každý návštevník je potenciálny zákazník. Ak ho nepresvedčíte okamžite, odíde ku konkurencii.
+
+Dobrý web neexistuje preto, aby vyzeral pekne. Existuje preto, aby prinášal zákazky.
     `,
   },
   'preco-vas-eshop-nepredava': {
-  title: 'Prečo váš e-shop nepredáva?',
-  date: '11. mája 2026',
-  readTime: '4 min čítania',
-  content: `
-  Ak ľudia prídu, ale nekúpia… je problém v nich, alebo vo vás?
-  
-  ## Rozumie váš e-shop zákazníkovi do 5 sekúnd?
-  
-  Čo vidí zákazník ako prvé? A čo si má z toho odniesť? Ak si nie je istý — odchádza.
-  
-  Pýtajte sa:
-  - rozumie môj e-shop do 5 sekúnd?
-  - vie zákazník, prečo práve ja?
-  
-  Ak nie… prečo by mal nakúpiť?
-  
-  ## Je váš e-shop pripravený na zákazníka?
-  
-  Ak niekto vstúpi do vášho obchodu, vedie ho niečo ďalej? Alebo stojí a rozmýšľa?
-  
-  Koľko krokov musí spraviť, aby nakúpil? A koľko krokov je už príliš veľa?
-  
-  Možno problém nie je v cene. Možno je problém v ceste k nákupu.
-  
-  ## Prečo ľudia odchádzajú bez nákupu?
-  
-  Keď zákazník odíde, pýtate sa „prečo"? Alebo len „škoda"?
-  
-  Čo ho zastavilo?
-  - nedôvera?
-  - chaos?
-  - pomalosť?
-  
-  Alebo jednoducho necítil dôvod zostať?
-  
-  ## Je váš e-shop dôveryhodný… alebo len existuje?
-  
-  Verili by ste svojmu e-shopu, keby ste ho videli prvýkrát?
-  
-  Čo vidí zákazník?
-  - recenzie?
-  - jasné informácie?
-  - profesionálny dojem?
-  
-  Alebo len stránku, ktorá niečo predáva? A prečo by mal veriť práve vám?
-  
-  ## Čo by sa stalo, keby váš e-shop zmizol zajtra?
-  
-  Prišli by ste o dizajn… alebo o predaje? Koľko ľudí by vás ešte našlo? Koľko by si vás zapamätalo?
-  
-  Ak by sa nič nezmenilo… potrebujete vôbec taký e-shop?
-  
-  ## Záver
-  
-  Nie je otázka, či máte e-shop. Otázka je:
-  
-  Či e-shop pracuje pre vás… alebo proti vám.
+    title: 'Prečo váš e-shop nepredáva?',
+    date: '11. mája 2026',
+    readTime: '4 min čítania',
+    content: `
+Ak ľudia prídu, ale nekúpia… je problém v nich, alebo vo vás?
+
+## Rozumie váš e-shop zákazníkovi do 5 sekúnd?
+
+Čo vidí zákazník ako prvé? A čo si má z toho odniesť? Ak si nie je istý — odchádza.
+
+Pýtajte sa:
+- rozumie môj e-shop do 5 sekúnd?
+- vie zákazník, prečo práve ja?
+
+Ak nie… prečo by mal nakúpiť?
+
+## Je váš e-shop pripravený na zákazníka?
+
+Ak niekto vstúpi do vášho obchodu, vedie ho niečo ďalej? Alebo stojí a rozmýšľa?
+
+Koľko krokov musí spraviť, aby nakúpil? A koľko krokov je už príliš veľa?
+
+Možno problém nie je v cene. Možno je problém v ceste k nákupu.
+
+## Prečo ľudia odchádzajú bez nákupu?
+
+Keď zákazník odíde, pýtate sa „prečo"? Alebo len „škoda"?
+
+Čo ho zastavilo?
+- nedôvera?
+- chaos?
+- pomalosť?
+
+Alebo jednoducho necítil dôvod zostať?
+
+## Je váš e-shop dôveryhodný… alebo len existuje?
+
+Verili by ste svojmu e-shopu, keby ste ho videli prvýkrát?
+
+Čo vidí zákazník?
+- recenzie?
+- jasné informácie?
+- profesionálny dojem?
+
+Alebo len stránku, ktorá niečo predáva? A prečo by mal veriť práve vám?
+
+## Čo by sa stalo, keby váš e-shop zmizol zajtra?
+
+Prišli by ste o dizajn… alebo o predaje? Koľko ľudí by vás ešte našlo? Koľko by si vás zapamätalo?
+
+Ak by sa nič nezmenilo… potrebujete vôbec taký e-shop?
+
+## Záver
+
+Nie je otázka, či máte e-shop. Otázka je:
+
+Či e-shop pracuje pre vás… alebo proti vám.
     `,
   },
 };
@@ -286,7 +286,6 @@ export default function BlogPost() {
   return (
     <div style={{ fontFamily: "'Segoe UI', sans-serif", background: '#f5f2eb', minHeight: '100vh' }}>
 
-      {/* NAV */}
       <nav style={{ background: 'rgba(26,26,26,0.97)', padding: '0 40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: 64 }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
           <img src={logoImg} alt="WebKlienti logo" style={{ height: 44, width: 44, objectFit: 'contain', mixBlendMode: 'screen' }} />
@@ -297,7 +296,6 @@ export default function BlogPost() {
         <Link to="/blog" style={{ color: 'rgba(245,242,235,0.7)', textDecoration: 'none', fontSize: 14 }}>← Späť na blog</Link>
       </nav>
 
-      {/* ARTICLE */}
       <article style={{ maxWidth: 720, margin: '0 auto', padding: '80px 40px' }}>
         <div style={{ display: 'flex', gap: 16, marginBottom: 24, fontSize: 13, color: '#888' }}>
           <span>{post.date}</span>
@@ -311,7 +309,6 @@ export default function BlogPost() {
           {renderContent(post.content)}
         </div>
 
-        {/* CTA */}
         <div style={{ background: '#1a1a1a', borderRadius: 20, padding: '48px 40px', textAlign: 'center', marginTop: 40 }}>
           <h2 style={{ fontSize: 24, fontWeight: 800, color: '#f5f2eb', marginBottom: 12 }}>Potrebujete web pre vašu firmu?</h2>
           <p style={{ color: 'rgba(245,242,235,0.5)', marginBottom: 24 }}>Hotový za 5 dní od 299 €. Bez mesačných poplatkov.</p>
