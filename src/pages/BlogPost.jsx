@@ -45,7 +45,7 @@ Začnite dnes — web môžete mať za 5 dní.
     `,
   },
   'kolko-stoji-webstranka-na-slovensku': {
-    title: 'Koľko stojí webstránka na Slovensku v roku 2025?',
+    title: 'Koľko stojí webstránka na Slovensku?',
     date: '5. mája 2025',
     readTime: '5 min čítania',
     content: `
