@@ -282,10 +282,11 @@ export default function App() {
 
   const navIds = ['pricing', 'reviews', 'footer'];
 
+  
   const langBtn = (code) => ({
-    background: lang === code ? 'rgba(255,210,0,0.15)' : 'rgba(255,255,255,0.07)',
-    border: lang === code ? '1px solid rgba(255,210,0,0.5)' : '1px solid rgba(255,255,255,0.12)',
-    color: lang === code ? '#ffd200' : 'rgba(245,242,235,0.5)',
+    background: lang === code ? 'rgba(255,210,0,0.2)' : 'rgba(255,255,255,0.15)',
+    border: lang === code ? '1px solid rgba(255,210,0,0.7)' : '1px solid rgba(255,255,255,0.3)',
+    color: lang === code ? '#ffd200' : 'rgba(245,242,235,0.85)',
     padding: '4px 10px', borderRadius: 6, fontSize: 12, fontWeight: 700,
     cursor: 'pointer', transition: 'all .2s', letterSpacing: 1,
   });
@@ -298,14 +299,14 @@ export default function App() {
         
         {/* LOGO */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <img src={logoImg} alt="WK logo" style={{ height: 44, width: 44, objectFit: 'contain', mixBlendMode: 'screen' }} />
+          <img src={logoImg} alt="WebKlienti logo" style={{ height: 44, width: 44, objectFit: 'contain', mixBlendMode: 'screen' }} />
           <span style={{ fontWeight: 800, fontSize: 18, color: '#f5f2eb', letterSpacing: -0.5 }}>
             Web<span style={{ color: '#ffd200' }}>Klienti</span>
           </span>
         </div>
 
         {/* DESKTOP NAV */}
-        <div style={{ display: 'flex', gap: 28, alignItems: 'center', '@media(max-width:768px)': { display: 'none' } }} className="desktop-nav">
+        <div style={{ display: 'flex', gap: 28, alignItems: 'center' }} className="desktop-nav">
           {t.nav.map((label, i) => (
             <button key={i} onClick={() => scrollTo(navIds[i])} style={{ background: 'none', border: 'none', color: 'rgba(245,242,235,0.7)', cursor: 'pointer', fontSize: 14, fontWeight: 500 }}>{label}</button>
           ))}
@@ -313,9 +314,9 @@ export default function App() {
 
         {/* DESKTOP RIGHT */}
         <div style={{ display: 'flex', gap: 10, alignItems: 'center' }} className="desktop-nav">
-          <div style={{ display: 'flex', gap: 4 }}>
+          <div style={{ display: 'flex', gap: 4 }} role="group" aria-label="Vybrať jazyk">
             {['sk', 'cz', 'en'].map(code => (
-              <button key={code} onClick={() => setLang(code)} style={langBtn(code)}>{code.toUpperCase()}</button>
+              <button key={code} onClick={() => setLang(code)} style={langBtn(code)} aria-pressed={lang === code} aria-label={`Jazyk: ${code.toUpperCase()}`}>{code.toUpperCase()}</button>
             ))}
           </div>
           <button onClick={() => scrollTo('contact')} style={{ background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '8px 20px', borderRadius: 100, fontSize: 14, fontWeight: 600, cursor: 'pointer', marginLeft: 4 }}>
@@ -324,7 +325,7 @@ export default function App() {
         </div>
 
         {/* HAMBURGER */}
-        <button onClick={() => setMenuOpen(!menuOpen)} className="hamburger" style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', padding: 8, flexDirection: 'column', gap: 5 }}>
+        <button onClick={() => setMenuOpen(!menuOpen)} className="hamburger" aria-label="Otvoriť menu" aria-expanded={menuOpen} style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', padding: 8, flexDirection: 'column', gap: 5 }}>
           <span style={{ display: 'block', width: 24, height: 2, background: menuOpen ? '#ffd200' : '#f5f2eb', transition: 'all .3s', transform: menuOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none' }}></span>
           <span style={{ display: 'block', width: 24, height: 2, background: menuOpen ? 'transparent' : '#f5f2eb', transition: 'all .3s' }}></span>
           <span style={{ display: 'block', width: 24, height: 2, background: menuOpen ? '#ffd200' : '#f5f2eb', transition: 'all .3s', transform: menuOpen ? 'rotate(-45deg) translate(5px, -5px)' : 'none' }}></span>
@@ -337,9 +338,9 @@ export default function App() {
           {t.nav.map((label, i) => (
             <button key={i} onClick={() => scrollTo(navIds[i])} style={{ background: 'none', border: 'none', color: 'rgba(245,242,235,0.9)', cursor: 'pointer', fontSize: 18, fontWeight: 600, textAlign: 'left', padding: '8px 0' }}>{label}</button>
           ))}
-          <div style={{ display: 'flex', gap: 8, paddingTop: 8 }}>
+          <div style={{ display: 'flex', gap: 8, paddingTop: 8 }} role="group" aria-label="Vybrať jazyk">
             {['sk', 'cz', 'en'].map(code => (
-              <button key={code} onClick={() => setLang(code)} style={langBtn(code)}>{code.toUpperCase()}</button>
+              <button key={code} onClick={() => setLang(code)} style={langBtn(code)} aria-pressed={lang === code} aria-label={`Jazyk: ${code.toUpperCase()}`}>{code.toUpperCase()}</button>
             ))}
           </div>
           <button onClick={() => scrollTo('contact')} style={{ background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '12px 20px', borderRadius: 100, fontSize: 16, fontWeight: 700, cursor: 'pointer', marginTop: 8 }}>
@@ -355,183 +356,207 @@ export default function App() {
         }
       `}</style>
 
-      {/* HERO */}
-      <div style={{ background: '#1a1a1a', color: '#f5f2eb', padding: '100px 40px 120px', textAlign: 'center' }}>
-        <div style={{ maxWidth: 700, margin: '0 auto' }}>
-          <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', color: 'rgba(245,242,235,0.6)', padding: '5px 16px', borderRadius: 100, fontSize: 12, fontWeight: 500, marginBottom: 12 }}>
-            {t.marketTag}
-          </div>
-          <div style={{ display: 'block', marginTop: 8 }}>
-            <div style={{ display: 'inline-block', background: 'rgba(255,210,0,0.15)', color: '#ffd200', padding: '6px 18px', borderRadius: 100, fontSize: 13, fontWeight: 600, marginBottom: 24, letterSpacing: 1 }}>
-              {t.heroBadge}
-            </div>
-          </div>
-          <h1 style={{ fontSize: 'clamp(40px, 7vw, 80px)', fontWeight: 900, lineHeight: 1.05, letterSpacing: -3, marginBottom: 24 }}>
-            {t.heroTitle[0]}<br /><span style={{ color: '#ffd200' }}>{t.heroTitle[1]}</span>{t.heroTitle[2]}
-          </h1>
-          <p style={{ fontSize: 20, color: 'rgba(245,242,235,0.6)', marginBottom: 48, lineHeight: 1.6, whiteSpace: 'pre-line' }}>
-            {t.heroSub}
-          </p>
-          <button onClick={() => scrollTo('contact')} style={{ display: 'inline-flex', alignItems: 'center', gap: 10, background: '#ffd200', color: '#1a1a1a', padding: '18px 40px', borderRadius: 100, fontWeight: 700, fontSize: 18, cursor: 'pointer', border: 'none', marginBottom: 48 }}>
-            {t.heroCta}
-          </button>
-          <div style={{ display: 'flex', gap: 48, justifyContent: 'center', paddingTop: 40, borderTop: '1px solid rgba(255,255,255,0.08)', marginBottom: 40 }}>
-            <div>
-              <div style={{ fontSize: 36, fontWeight: 900, color: '#ffd200', letterSpacing: -1 }}>80+</div>
-              <div style={{ fontSize: 13, color: 'rgba(245,242,235,0.5)', marginTop: 4 }}>{t.statClients}</div>
-            </div>
-            <div>
-              <div style={{ fontSize: 36, fontWeight: 900, color: '#ffd200', letterSpacing: -1 }}>3×</div>
-              <div style={{ fontSize: 13, color: 'rgba(245,242,235,0.5)', marginTop: 4 }}>{t.statLeads}</div>
-            </div>
-            <div>
-              <div style={{ fontSize: 36, fontWeight: 900, color: '#ffd200', letterSpacing: -1 }}>5 dní</div>
-              <div style={{ fontSize: 13, color: 'rgba(245,242,235,0.5)', marginTop: 4 }}>{t.statDays}</div>
-            </div>
-          </div>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            {t.heroBadges.map(b => (
-              <span key={b} style={{ background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)', padding: '8px 18px', borderRadius: 100, fontSize: 13, color: 'rgba(245,242,235,0.7)' }}>{b}</span>
-            ))}
-          </div>
-        </div>
-      </div>
+      {/* FIX 4: добавлен <main> тег */}
+      <main>
 
-      {/* PRICING */}
-      <div id="pricing" style={{ padding: '100px 40px', maxWidth: 1100, margin: '0 auto' }}>
-        <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#888', marginBottom: 12 }}>{t.pricingLabel}</p>
-        <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, marginBottom: 56 }}>{t.pricingTitle}</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 2, alignItems: 'stretch' }}>
-          {t.cards.map((card, i) => (
-            <div key={i} style={{ background: card.featured ? '#1a1a1a' : '#fff', color: card.featured ? '#f5f2eb' : '#1a1a1a', padding: '40px 32px', borderRadius: i === 0 ? '24px 0 0 24px' : i === 2 ? '0 24px 24px 0' : 0, position: 'relative', display: 'flex', flexDirection: 'column' }}>
-              {card.featured && <div style={{ position: 'absolute', top: -14, left: '50%', transform: 'translateX(-50%)', background: '#ffd200', color: '#1a1a1a', padding: '4px 16px', borderRadius: 100, fontSize: 12, fontWeight: 700, whiteSpace: 'nowrap' }}>{t.featuredBadge}</div>}
-              <p style={{ fontSize: 11, letterSpacing: 2, textTransform: 'uppercase', color: card.featured ? 'rgba(245,242,235,0.5)' : '#888', marginBottom: 12 }}>{card.tag}</p>
-              <h3 style={{ fontSize: 24, fontWeight: 800, marginBottom: 4 }}>{card.name}</h3>
-              <div style={{ fontSize: 48, fontWeight: 900, letterSpacing: -2, margin: '16px 0 4px' }}>{card.price}</div>
-              <p style={{ fontSize: 13, textDecoration: 'line-through', color: card.featured ? 'rgba(245,242,235,0.4)' : '#bbb', marginBottom: 24 }}>{card.old}</p>
-              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10, flexGrow: 1, marginBottom: 24 }}>
-                {card.features.map(f => (
-                  <li key={f} style={{ fontSize: 14, color: card.featured ? 'rgba(245,242,235,0.75)' : '#555', display: 'flex', gap: 8 }}>
-                    <span style={{ color: '#ffd200', fontWeight: 700, flexShrink: 0 }}>✓</span>{f}
-                  </li>
-                ))}
-              </ul>
-              <button onClick={() => { setForm(p => ({ ...p, package: card.name + ' — ' + card.price })); scrollTo('contact'); }} style={{ width: '70%', padding: '12px', borderRadius: 100, fontSize: 15, fontWeight: 800, cursor: 'pointer', textAlign: 'center', letterSpacing: 0.5, display: 'block', margin: '0 auto', background: card.featured ? '#ffd200' : 'transparent', color: '#1a1a1a', border: card.featured ? '2px solid #ffd200' : '2px solid #1a1a1a' }}>{t.orderBtn}</button>
+        {/* HERO */}
+        <div style={{ background: '#1a1a1a', color: '#f5f2eb', padding: '100px 40px 120px', textAlign: 'center' }}>
+          <div style={{ maxWidth: 700, margin: '0 auto' }}>
+            <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', color: 'rgba(245,242,235,0.6)', padding: '5px 16px', borderRadius: 100, fontSize: 12, fontWeight: 500, marginBottom: 12 }}>
+              {t.marketTag}
             </div>
-          ))}
-        </div>
-      </div>
-
-      {/* HOW IT WORKS */}
-      <div style={{ background: '#1a1a1a', padding: '100px 40px' }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#666', marginBottom: 12 }}>{t.howLabel}</p>
-          <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, color: '#f5f2eb', marginBottom: 56 }}>{t.howTitle}</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 2 }}>
-            {t.steps.map((s, i) => (
-              <div key={i} style={{ padding: '36px 32px', background: 'rgba(255,255,255,0.04)', borderRadius: i === 0 ? '20px 0 0 20px' : i === 3 ? '0 20px 20px 0' : 0, borderRight: i < 3 ? '1px solid rgba(255,255,255,0.06)' : 'none' }}>
-                <div style={{ fontSize: 56, fontWeight: 900, color: 'rgba(255,255,255,0.06)', lineHeight: 1, marginBottom: 20 }}>{s.num}</div>
-                <h3 style={{ fontSize: 18, fontWeight: 700, color: '#f5f2eb', marginBottom: 10 }}>{s.title}</h3>
-                <p style={{ fontSize: 14, color: 'rgba(245,242,235,0.5)', lineHeight: 1.7 }}>{s.desc}</p>
+            <div style={{ display: 'block', marginTop: 8 }}>
+              <div style={{ display: 'inline-block', background: 'rgba(255,210,0,0.15)', color: '#ffd200', padding: '6px 18px', borderRadius: 100, fontSize: 13, fontWeight: 600, marginBottom: 24, letterSpacing: 1 }}>
+                {t.heroBadge}
               </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* REVIEWS */}
-      <div id="reviews" style={{ background: '#1a1a1a', padding: '100px 40px' }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#666', marginBottom: 12 }}>{t.reviewsLabel}</p>
-          <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, color: '#f5f2eb', marginBottom: 56 }}>{t.reviewsTitle}</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16 }}>
-            {staticReviews.map((r, i) => (
-              <div key={i} style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 20, padding: '32px 28px' }}>
-                <div style={{ color: '#ffd200', fontSize: 18, marginBottom: 16 }}>{'★'.repeat(r.rating)}</div>
-                <p style={{ fontSize: 15, color: 'rgba(245,242,235,0.75)', lineHeight: 1.7, marginBottom: 24 }}>"{r.text}"</p>
-                <div>
-                  <p style={{ fontWeight: 700, color: '#f5f2eb', fontSize: 14 }}>{r.author}</p>
-                  {r.company && <p style={{ fontSize: 13, color: 'rgba(245,242,235,0.4)' }}>{r.company}</p>}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* ORDER FORM */}
-      <div id="contact" style={{ padding: '100px 40px', maxWidth: 700, margin: '0 auto' }}>
-        <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#888', marginBottom: 12 }}>{t.formLabel}</p>
-        <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, marginBottom: 12 }}>{t.formTitle}</h2>
-        <p style={{ color: '#888', marginBottom: 48, fontSize: 16 }}>{t.formSub}</p>
-        {formStatus === 'success' ? (
-          <div style={{ background: '#1a1a1a', color: '#f5f2eb', borderRadius: 24, padding: '60px 40px', textAlign: 'center' }}>
-            <div style={{ fontSize: 56, marginBottom: 16 }}>🎉</div>
-            <h3 style={{ fontSize: 28, fontWeight: 800, marginBottom: 12 }}>{t.successTitle}</h3>
-            <p style={{ color: 'rgba(245,242,235,0.6)', fontSize: 16 }}>{t.successMsg}</p>
-            <button onClick={() => setFormStatus('idle')} style={{ marginTop: 32, background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '12px 28px', borderRadius: 100, fontWeight: 600, cursor: 'pointer' }}>{t.newOrder}</button>
-          </div>
-        ) : (
-          <div style={{ background: '#fff', borderRadius: 24, padding: '48px 40px', display: 'flex', flexDirection: 'column', gap: 20 }}>
-            {t.fields.map(f => (
-              <div key={f.key}>
-                <label style={{ display: 'block', fontSize: 13, fontWeight: 600, marginBottom: 8, color: '#444' }}>{f.label}</label>
-                <input type={f.type} placeholder={f.placeholder} value={form[f.key]}
-                  onChange={e => setForm(p => ({ ...p, [f.key]: e.target.value }))}
-                  style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit' }} />
-              </div>
-            ))}
-            <div>
-              <label style={{ display: 'block', fontSize: 13, fontWeight: 600, marginBottom: 8, color: '#444' }}>{t.packageLabel}</label>
-              <select value={form.package} onChange={e => setForm(p => ({ ...p, package: e.target.value }))}
-                style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit', background: '#fff' }}>
-                <option value="">{t.packagePlaceholder}</option>
-                {t.packages.map(p => <option key={p} value={p}>{p}</option>)}
-              </select>
             </div>
-            <div>
-              <label style={{ display: 'block', fontSize: 13, fontWeight: 600, marginBottom: 8, color: '#444' }}>{t.messageLabel}</label>
-              <textarea placeholder={t.messagePlaceholder} value={form.message}
-                onChange={e => setForm(p => ({ ...p, message: e.target.value }))} rows={4}
-                style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit', resize: 'vertical' }} />
-            </div>
-            {formStatus === 'error' && <p style={{ color: '#e24b4a', fontSize: 14 }}>{t.errorMsg}</p>}
-            <button onClick={handleSubmit} disabled={formStatus === 'loading'}
-              style={{ background: '#1a1a1a', color: '#ffd200', border: 'none', padding: '16px', borderRadius: 100, fontSize: 16, fontWeight: 700, cursor: 'pointer', opacity: formStatus === 'loading' ? 0.7 : 1 }}>
-              {formStatus === 'loading' ? t.submitting : t.submitBtn}
+            <h1 style={{ fontSize: 'clamp(40px, 7vw, 80px)', fontWeight: 900, lineHeight: 1.05, letterSpacing: -3, marginBottom: 24 }}>
+              {t.heroTitle[0]}<br /><span style={{ color: '#ffd200' }}>{t.heroTitle[1]}</span>{t.heroTitle[2]}
+            </h1>
+            <p style={{ fontSize: 20, color: 'rgba(245,242,235,0.6)', marginBottom: 48, lineHeight: 1.6, whiteSpace: 'pre-line' }}>
+              {t.heroSub}
+            </p>
+            <button onClick={() => scrollTo('contact')} style={{ display: 'inline-flex', alignItems: 'center', gap: 10, background: '#ffd200', color: '#1a1a1a', padding: '18px 40px', borderRadius: 100, fontWeight: 700, fontSize: 18, cursor: 'pointer', border: 'none', marginBottom: 48 }}>
+              {t.heroCta}
             </button>
+            <div style={{ display: 'flex', gap: 48, justifyContent: 'center', paddingTop: 40, borderTop: '1px solid rgba(255,255,255,0.08)', marginBottom: 40 }}>
+              <div>
+                <div style={{ fontSize: 36, fontWeight: 900, color: '#ffd200', letterSpacing: -1 }}>80+</div>
+                <div style={{ fontSize: 13, color: 'rgba(245,242,235,0.5)', marginTop: 4 }}>{t.statClients}</div>
+              </div>
+              <div>
+                <div style={{ fontSize: 36, fontWeight: 900, color: '#ffd200', letterSpacing: -1 }}>3×</div>
+                <div style={{ fontSize: 13, color: 'rgba(245,242,235,0.5)', marginTop: 4 }}>{t.statLeads}</div>
+              </div>
+              <div>
+                <div style={{ fontSize: 36, fontWeight: 900, color: '#ffd200', letterSpacing: -1 }}>5 dní</div>
+                <div style={{ fontSize: 13, color: 'rgba(245,242,235,0.5)', marginTop: 4 }}>{t.statDays}</div>
+              </div>
+            </div>
+            <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
+              {t.heroBadges.map(b => (
+                <span key={b} style={{ background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)', padding: '8px 18px', borderRadius: 100, fontSize: 13, color: 'rgba(245,242,235,0.7)' }}>{b}</span>
+              ))}
+            </div>
           </div>
-        )}
-      </div>
+        </div>
 
-      {/* FLOATING BUTTONS */}
+        {/* PRICING */}
+        <div id="pricing" style={{ padding: '100px 40px', maxWidth: 1100, margin: '0 auto' }}>
+          <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#888', marginBottom: 12 }}>{t.pricingLabel}</p>
+          <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, marginBottom: 56 }}>{t.pricingTitle}</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 2, alignItems: 'stretch' }}>
+            {t.cards.map((card, i) => (
+              <div key={i} style={{ background: card.featured ? '#1a1a1a' : '#fff', color: card.featured ? '#f5f2eb' : '#1a1a1a', padding: '40px 32px', borderRadius: i === 0 ? '24px 0 0 24px' : i === 2 ? '0 24px 24px 0' : 0, position: 'relative', display: 'flex', flexDirection: 'column' }}>
+                {card.featured && <div style={{ position: 'absolute', top: -14, left: '50%', transform: 'translateX(-50%)', background: '#ffd200', color: '#1a1a1a', padding: '4px 16px', borderRadius: 100, fontSize: 12, fontWeight: 700, whiteSpace: 'nowrap' }}>{t.featuredBadge}</div>}
+                <p style={{ fontSize: 11, letterSpacing: 2, textTransform: 'uppercase', color: card.featured ? 'rgba(245,242,235,0.5)' : '#888', marginBottom: 12 }}>{card.tag}</p>
+                <h3 style={{ fontSize: 24, fontWeight: 800, marginBottom: 4 }}>{card.name}</h3>
+                <div style={{ fontSize: 48, fontWeight: 900, letterSpacing: -2, margin: '16px 0 4px' }}>{card.price}</div>
+                <p style={{ fontSize: 13, textDecoration: 'line-through', color: card.featured ? 'rgba(245,242,235,0.4)' : '#bbb', marginBottom: 24 }}>{card.old}</p>
+                <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10, flexGrow: 1, marginBottom: 24 }}>
+                  {card.features.map(f => (
+                    <li key={f} style={{ fontSize: 14, color: card.featured ? 'rgba(245,242,235,0.75)' : '#555', display: 'flex', gap: 8 }}>
+                      <span style={{ color: '#ffd200', fontWeight: 700, flexShrink: 0 }}>✓</span>{f}
+                    </li>
+                  ))}
+                </ul>
+                <button onClick={() => { setForm(p => ({ ...p, package: card.name + ' — ' + card.price })); scrollTo('contact'); }} style={{ width: '70%', padding: '12px', borderRadius: 100, fontSize: 15, fontWeight: 800, cursor: 'pointer', textAlign: 'center', letterSpacing: 0.5, display: 'block', margin: '0 auto', background: card.featured ? '#ffd200' : 'transparent', color: '#1a1a1a', border: card.featured ? '2px solid #ffd200' : '2px solid #1a1a1a' }}>{t.orderBtn}</button>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* HOW IT WORKS */}
+        <div style={{ background: '#1a1a1a', padding: '100px 40px' }}>
+          <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+            <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#666', marginBottom: 12 }}>{t.howLabel}</p>
+            <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, color: '#f5f2eb', marginBottom: 56 }}>{t.howTitle}</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 2 }}>
+              {t.steps.map((s, i) => (
+                <div key={i} style={{ padding: '36px 32px', background: 'rgba(255,255,255,0.04)', borderRadius: i === 0 ? '20px 0 0 20px' : i === 3 ? '0 20px 20px 0' : 0, borderRight: i < 3 ? '1px solid rgba(255,255,255,0.06)' : 'none' }}>
+                  <div style={{ fontSize: 56, fontWeight: 900, color: 'rgba(255,255,255,0.06)', lineHeight: 1, marginBottom: 20 }}>{s.num}</div>
+                  <h3 style={{ fontSize: 18, fontWeight: 700, color: '#f5f2eb', marginBottom: 10 }}>{s.title}</h3>
+                  <p style={{ fontSize: 14, color: 'rgba(245,242,235,0.5)', lineHeight: 1.7 }}>{s.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* REVIEWS */}
+        <div id="reviews" style={{ background: '#1a1a1a', padding: '100px 40px' }}>
+          <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+            <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#666', marginBottom: 12 }}>{t.reviewsLabel}</p>
+            <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, color: '#f5f2eb', marginBottom: 56 }}>{t.reviewsTitle}</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16 }}>
+              {staticReviews.map((r, i) => (
+                <div key={i} style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 20, padding: '32px 28px' }}>
+                  <div style={{ color: '#ffd200', fontSize: 18, marginBottom: 16 }} aria-label={`Hodnotenie: ${r.rating} z 5`}>{'★'.repeat(r.rating)}</div>
+                  <p style={{ fontSize: 15, color: 'rgba(245,242,235,0.75)', lineHeight: 1.7, marginBottom: 24 }}>"{r.text}"</p>
+                  <div>
+                    <p style={{ fontWeight: 700, color: '#f5f2eb', fontSize: 14 }}>{r.author}</p>
+                    {r.company && <p style={{ fontSize: 13, color: 'rgba(245,242,235,0.4)' }}>{r.company}</p>}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* ORDER FORM */}
+        <div id="contact" style={{ padding: '100px 40px', maxWidth: 700, margin: '0 auto' }}>
+          <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#888', marginBottom: 12 }}>{t.formLabel}</p>
+          <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, marginBottom: 12 }}>{t.formTitle}</h2>
+          <p style={{ color: '#888', marginBottom: 48, fontSize: 16 }}>{t.formSub}</p>
+          {formStatus === 'success' ? (
+            <div style={{ background: '#1a1a1a', color: '#f5f2eb', borderRadius: 24, padding: '60px 40px', textAlign: 'center' }}>
+              <div style={{ fontSize: 56, marginBottom: 16 }}>🎉</div>
+              <h3 style={{ fontSize: 28, fontWeight: 800, marginBottom: 12 }}>{t.successTitle}</h3>
+              <p style={{ color: 'rgba(245,242,235,0.6)', fontSize: 16 }}>{t.successMsg}</p>
+              <button onClick={() => setFormStatus('idle')} style={{ marginTop: 32, background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '12px 28px', borderRadius: 100, fontWeight: 600, cursor: 'pointer' }}>{t.newOrder}</button>
+            </div>
+          ) : (
+            <div style={{ background: '#fff', borderRadius: 24, padding: '48px 40px', display: 'flex', flexDirection: 'column', gap: 20 }}>
+              {t.fields.map(f => (
+                <div key={f.key}>
+                  {/* FIX 1: label связан с input через htmlFor/id */}
+                  <label htmlFor={`field-${f.key}`} style={{ display: 'block', fontSize: 13, fontWeight: 600, marginBottom: 8, color: '#444' }}>{f.label}</label>
+                  <input
+                    id={`field-${f.key}`}
+                    type={f.type}
+                    placeholder={f.placeholder}
+                    value={form[f.key]}
+                    onChange={e => setForm(p => ({ ...p, [f.key]: e.target.value }))}
+                    style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit' }}
+                  />
+                </div>
+              ))}
+              <div>
+                {/* FIX 1: select связан с label */}
+                <label htmlFor="field-package" style={{ display: 'block', fontSize: 13, fontWeight: 600, marginBottom: 8, color: '#444' }}>{t.packageLabel}</label>
+                <select
+                  id="field-package"
+                  value={form.package}
+                  onChange={e => setForm(p => ({ ...p, package: e.target.value }))}
+                  style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit', background: '#fff' }}
+                >
+                  <option value="">{t.packagePlaceholder}</option>
+                  {t.packages.map(p => <option key={p} value={p}>{p}</option>)}
+                </select>
+              </div>
+              <div>
+                <label htmlFor="field-message" style={{ display: 'block', fontSize: 13, fontWeight: 600, marginBottom: 8, color: '#444' }}>{t.messageLabel}</label>
+                <textarea
+                  id="field-message"
+                  placeholder={t.messagePlaceholder}
+                  value={form.message}
+                  onChange={e => setForm(p => ({ ...p, message: e.target.value }))}
+                  rows={4}
+                  style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit', resize: 'vertical' }}
+                />
+              </div>
+              {formStatus === 'error' && <p style={{ color: '#e24b4a', fontSize: 14 }} role="alert">{t.errorMsg}</p>}
+              <button onClick={handleSubmit} disabled={formStatus === 'loading'}
+                style={{ background: '#1a1a1a', color: '#ffd200', border: 'none', padding: '16px', borderRadius: 100, fontSize: 16, fontWeight: 700, cursor: 'pointer', opacity: formStatus === 'loading' ? 0.7 : 1 }}>
+                {formStatus === 'loading' ? t.submitting : t.submitBtn}
+              </button>
+            </div>
+          )}
+        </div>
+
+      </main>
+
+      {/* FIX 2: aria-label на кнопках соцсетей */}
       <div style={{ position: 'fixed', right: 20, bottom: 20, display: 'flex', flexDirection: 'column', gap: 12, zIndex: 999 }}>
         <a href="https://wa.me/421907890600" target="_blank" rel="noopener noreferrer"
+          aria-label="Kontaktujte nás cez WhatsApp"
           style={{ width: 56, height: 56, background: '#25D366', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 24, boxShadow: '0 10px 25px rgba(0,0,0,0.2)' }}>
           <FaWhatsapp />
         </a>
         <a href="https://facebook.com/profile.php?id=61588797397714" target="_blank" rel="noopener noreferrer"
+          aria-label="Sledujte nás na Facebooku"
           style={{ width: 56, height: 56, background: '#1877F2', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 22, boxShadow: '0 10px 25px rgba(0,0,0,0.2)' }}>
           <FaFacebookF />
         </a>
       </div>
 
       {/* FOOTER */}
-      <div id="footer" style={{ background: '#1a1a1a', color: 'rgba(245,242,235,0.4)', textAlign: 'center', padding: '40px', fontSize: 13 }}>
-        <img src={logoImg} alt="WK logo" style={{ height: 40, width: 40, objectFit: 'contain', marginBottom: 12, mixBlendMode: 'screen' }} />
+      <footer id="footer" style={{ background: '#1a1a1a', color: 'rgba(245,242,235,0.4)', textAlign: 'center', padding: '40px', fontSize: 13 }}>
+        <img src={logoImg} alt="WebKlienti logo" style={{ height: 40, width: 40, objectFit: 'contain', marginBottom: 12, mixBlendMode: 'screen' }} />
         <div style={{ display: 'flex', gap: 24, justifyContent: 'center', marginBottom: 12, flexWrap: 'wrap' }}>
           <a href="mailto:info@webklienti.com" style={{ color: 'rgba(245,242,235,0.6)', textDecoration: 'none' }}>info@webklienti.com</a>
-          <a href="tel:+421907890600" style={{ color: 'rgba(245,242,235,0.6)', textDecoration: 'none' }}>+421 907 890 600</a>          
+          <a href="tel:+421907890600" style={{ color: 'rgba(245,242,235,0.6)', textDecoration: 'none' }}>+421 907 890 600</a>
+          <span style={{ color: 'rgba(245,242,235,0.3)' }}>webklienti.com</span>
         </div>
         <div style={{ marginBottom: 8 }}>
           <button onClick={() => setPrivacyOpen(true)} style={{ background: 'none', border: 'none', color: 'rgba(245,242,235,0.4)', cursor: 'pointer', fontSize: 13, textDecoration: 'underline' }}>{t.privacyLink}</button>
         </div>
         <p>{t.footerRights}</p>
-      </div>
+      </footer>
 
       {/* COOKIE BANNER */}
       {cookieVisible && (
-        <div style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 9999, background: '#1a1a1a', borderTop: '1px solid rgba(255,255,255,0.1)', padding: '16px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
+        <div role="dialog" aria-label="Cookie súhlas" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 9999, background: '#1a1a1a', borderTop: '1px solid rgba(255,255,255,0.1)', padding: '16px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
           <p style={{ color: 'rgba(245,242,235,0.75)', fontSize: 14, margin: 0, flex: 1 }}>
             🍪 {t.cookieMsg}{' '}
             <button onClick={() => setPrivacyOpen(true)} style={{ background: 'none', border: 'none', color: '#ffd200', cursor: 'pointer', fontSize: 14, textDecoration: 'underline', padding: 0 }}>{t.privacyLink}</button>
@@ -545,9 +570,9 @@ export default function App() {
 
       {/* PRIVACY POLICY MODAL */}
       {privacyOpen && (
-        <div style={{ position: 'fixed', inset: 0, zIndex: 10000, background: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 20 }}>
+        <div role="dialog" aria-modal="true" aria-label={t.privacyTitle} style={{ position: 'fixed', inset: 0, zIndex: 10000, background: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 20 }}>
           <div style={{ background: '#fff', borderRadius: 16, padding: '40px', maxWidth: 600, width: '100%', maxHeight: '80vh', overflowY: 'auto', position: 'relative' }}>
-            <button onClick={() => setPrivacyOpen(false)} style={{ position: 'absolute', top: 16, right: 16, background: 'none', border: 'none', fontSize: 24, cursor: 'pointer', color: '#888' }}>✕</button>
+            <button onClick={() => setPrivacyOpen(false)} aria-label="Zavrieť" style={{ position: 'absolute', top: 16, right: 16, background: 'none', border: 'none', fontSize: 24, cursor: 'pointer', color: '#888' }}>✕</button>
             <h2 style={{ fontWeight: 800, fontSize: 22, marginBottom: 24 }}>{t.privacyTitle}</h2>
             <pre style={{ whiteSpace: 'pre-wrap', fontSize: 14, lineHeight: 1.7, color: '#444', fontFamily: 'inherit' }}>{t.privacyContent}</pre>
           </div>
