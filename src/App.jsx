@@ -1,6 +1,9 @@
 import { useState } from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
 import { FaWhatsapp, FaFacebookF } from "react-icons/fa";
 import logoImg from './assets/logo.webp';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 
 const API = 'https://webklienti-backend.onrender.com';
 
@@ -205,7 +208,7 @@ Platné od: 1.1.2025`,
     packages: ['One-page website — 299 €', 'Business website — 499 €', 'Online store — 999 €'],
     cards: [
       { tag: 'Starter', name: 'One-page website', price: '299 €', old: 'usually 599 €', features: ['Custom modern design', 'Mobile friendly (Google loves it)', 'Contact form + map', 'WhatsApp — customers reach you in one click', 'Facebook link — build community from day 1', 'SEO — appear on Google before your competitors', 'GDPR ready (Privacy Policy + cookie banner)', 'Google reviews section — trust = more clients', 'Business email', '🎁 BONUS: Google Business profile (show up on Maps)', 'Ready in 5 days'], featured: false },
-      { tag: '⭐ Most popular', name: 'Business website', price: '499 €', old: 'usually 999 €', features: ['Everything from One-page +', '5 custom subpages', 'Gallery & testimonials', 'Blog — add articles yourself', 'Advanced SEO + keyword analysis', 'Google Analytics — see who visits and from where', 'Ready in 7 days'], featured: true },
+      { tag: '⭐ Most popular', name: 'Business website', price: '299 €', old: 'usually 999 €', features: ['Everything from One-page +', '5 custom subpages', 'Gallery & testimonials', 'Blog — add articles yourself', 'Advanced SEO + keyword analysis', 'Google Analytics — see who visits and from where', 'Ready in 7 days'], featured: true },
       { tag: 'E-commerce', name: 'Online store', price: '999 €', old: 'usually 1999 €', features: ['Everything from Business website +', 'Up to 500 products', 'Payment gateway (card, PayPal)', 'Automatic invoices', 'Order management', 'WhatsApp + Facebook shop integration', 'Ready in 14 days'], featured: false },
     ],
     featuredBadge: 'MOST POPULAR',
@@ -238,7 +241,7 @@ Effective from: 1.1.2025`,
   },
 };
 
-export default function App() {
+function HomePage() {
   const [lang, setLang] = useState('sk');
   const [form, setForm] = useState({ name: '', email: '', phone: '', package: '', message: '' });
   const [formStatus, setFormStatus] = useState('idle');
@@ -282,7 +285,6 @@ export default function App() {
 
   const navIds = ['pricing', 'reviews', 'footer'];
 
-  
   const langBtn = (code) => ({
     background: lang === code ? 'rgba(255,210,0,0.2)' : 'rgba(255,255,255,0.15)',
     border: lang === code ? '1px solid rgba(255,210,0,0.7)' : '1px solid rgba(255,255,255,0.3)',
@@ -294,25 +296,21 @@ export default function App() {
   return (
     <div style={{ fontFamily: "'Segoe UI', sans-serif", background: '#f5f2eb', color: '#1a1a1a', minHeight: '100vh' }}>
 
-      {/* NAV */}
       <nav style={{ position: 'sticky', top: 0, zIndex: 100, background: 'rgba(26,26,26,0.97)', backdropFilter: 'blur(8px)', padding: '0 40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: 64 }}>
-        
-        {/* LOGO */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+        <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
           <img src={logoImg} alt="WebKlienti logo" style={{ height: 44, width: 44, objectFit: 'contain', mixBlendMode: 'screen' }} />
           <span style={{ fontWeight: 800, fontSize: 18, color: '#f5f2eb', letterSpacing: -0.5 }}>
             Web<span style={{ color: '#ffd200' }}>Klienti</span>
           </span>
-        </div>
+        </Link>
 
-        {/* DESKTOP NAV */}
         <div style={{ display: 'flex', gap: 28, alignItems: 'center' }} className="desktop-nav">
           {t.nav.map((label, i) => (
             <button key={i} onClick={() => scrollTo(navIds[i])} style={{ background: 'none', border: 'none', color: 'rgba(245,242,235,0.7)', cursor: 'pointer', fontSize: 14, fontWeight: 500 }}>{label}</button>
           ))}
+          <Link to="/blog" style={{ color: 'rgba(245,242,235,0.7)', textDecoration: 'none', fontSize: 14, fontWeight: 500 }}>Blog</Link>
         </div>
 
-        {/* DESKTOP RIGHT */}
         <div style={{ display: 'flex', gap: 10, alignItems: 'center' }} className="desktop-nav">
           <div style={{ display: 'flex', gap: 4 }} role="group" aria-label="Vybrať jazyk">
             {['sk', 'cz', 'en'].map(code => (
@@ -324,7 +322,6 @@ export default function App() {
           </button>
         </div>
 
-        {/* HAMBURGER */}
         <button onClick={() => setMenuOpen(!menuOpen)} className="hamburger" aria-label="Otvoriť menu" aria-expanded={menuOpen} style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', padding: 8, flexDirection: 'column', gap: 5 }}>
           <span style={{ display: 'block', width: 24, height: 2, background: menuOpen ? '#ffd200' : '#f5f2eb', transition: 'all .3s', transform: menuOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none' }}></span>
           <span style={{ display: 'block', width: 24, height: 2, background: menuOpen ? 'transparent' : '#f5f2eb', transition: 'all .3s' }}></span>
@@ -332,12 +329,12 @@ export default function App() {
         </button>
       </nav>
 
-      {/* MOBILE MENU */}
       {menuOpen && (
         <div style={{ position: 'fixed', top: 64, left: 0, right: 0, zIndex: 99, background: 'rgba(26,26,26,0.98)', padding: '20px 40px', display: 'flex', flexDirection: 'column', gap: 16, borderTop: '1px solid rgba(255,255,255,0.08)' }}>
           {t.nav.map((label, i) => (
             <button key={i} onClick={() => scrollTo(navIds[i])} style={{ background: 'none', border: 'none', color: 'rgba(245,242,235,0.9)', cursor: 'pointer', fontSize: 18, fontWeight: 600, textAlign: 'left', padding: '8px 0' }}>{label}</button>
           ))}
+          <Link to="/blog" onClick={() => setMenuOpen(false)} style={{ color: 'rgba(245,242,235,0.9)', textDecoration: 'none', fontSize: 18, fontWeight: 600, padding: '8px 0' }}>Blog</Link>
           <div style={{ display: 'flex', gap: 8, paddingTop: 8 }} role="group" aria-label="Vybrať jazyk">
             {['sk', 'cz', 'en'].map(code => (
               <button key={code} onClick={() => setLang(code)} style={langBtn(code)} aria-pressed={lang === code} aria-label={`Jazyk: ${code.toUpperCase()}`}>{code.toUpperCase()}</button>
@@ -356,52 +353,29 @@ export default function App() {
         }
       `}</style>
 
-      {/* FIX 4: добавлен <main> тег */}
       <main>
-
-        {/* HERO */}
         <div style={{ background: '#1a1a1a', color: '#f5f2eb', padding: '100px 40px 120px', textAlign: 'center' }}>
           <div style={{ maxWidth: 700, margin: '0 auto' }}>
-            <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', color: 'rgba(245,242,235,0.6)', padding: '5px 16px', borderRadius: 100, fontSize: 12, fontWeight: 500, marginBottom: 12 }}>
-              {t.marketTag}
-            </div>
+            <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', color: 'rgba(245,242,235,0.6)', padding: '5px 16px', borderRadius: 100, fontSize: 12, fontWeight: 500, marginBottom: 12 }}>{t.marketTag}</div>
             <div style={{ display: 'block', marginTop: 8 }}>
-              <div style={{ display: 'inline-block', background: 'rgba(255,210,0,0.15)', color: '#ffd200', padding: '6px 18px', borderRadius: 100, fontSize: 13, fontWeight: 600, marginBottom: 24, letterSpacing: 1 }}>
-                {t.heroBadge}
-              </div>
+              <div style={{ display: 'inline-block', background: 'rgba(255,210,0,0.15)', color: '#ffd200', padding: '6px 18px', borderRadius: 100, fontSize: 13, fontWeight: 600, marginBottom: 24, letterSpacing: 1 }}>{t.heroBadge}</div>
             </div>
             <h1 style={{ fontSize: 'clamp(40px, 7vw, 80px)', fontWeight: 900, lineHeight: 1.05, letterSpacing: -3, marginBottom: 24 }}>
               {t.heroTitle[0]}<br /><span style={{ color: '#ffd200' }}>{t.heroTitle[1]}</span>{t.heroTitle[2]}
             </h1>
-            <p style={{ fontSize: 20, color: 'rgba(245,242,235,0.6)', marginBottom: 48, lineHeight: 1.6, whiteSpace: 'pre-line' }}>
-              {t.heroSub}
-            </p>
-            <button onClick={() => scrollTo('contact')} style={{ display: 'inline-flex', alignItems: 'center', gap: 10, background: '#ffd200', color: '#1a1a1a', padding: '18px 40px', borderRadius: 100, fontWeight: 700, fontSize: 18, cursor: 'pointer', border: 'none', marginBottom: 48 }}>
-              {t.heroCta}
-            </button>
+            <p style={{ fontSize: 20, color: 'rgba(245,242,235,0.6)', marginBottom: 48, lineHeight: 1.6, whiteSpace: 'pre-line' }}>{t.heroSub}</p>
+            <button onClick={() => scrollTo('contact')} style={{ display: 'inline-flex', alignItems: 'center', gap: 10, background: '#ffd200', color: '#1a1a1a', padding: '18px 40px', borderRadius: 100, fontWeight: 700, fontSize: 18, cursor: 'pointer', border: 'none', marginBottom: 48 }}>{t.heroCta}</button>
             <div style={{ display: 'flex', gap: 48, justifyContent: 'center', paddingTop: 40, borderTop: '1px solid rgba(255,255,255,0.08)', marginBottom: 40 }}>
-              <div>
-                <div style={{ fontSize: 36, fontWeight: 900, color: '#ffd200', letterSpacing: -1 }}>80+</div>
-                <div style={{ fontSize: 13, color: 'rgba(245,242,235,0.5)', marginTop: 4 }}>{t.statClients}</div>
-              </div>
-              <div>
-                <div style={{ fontSize: 36, fontWeight: 900, color: '#ffd200', letterSpacing: -1 }}>3×</div>
-                <div style={{ fontSize: 13, color: 'rgba(245,242,235,0.5)', marginTop: 4 }}>{t.statLeads}</div>
-              </div>
-              <div>
-                <div style={{ fontSize: 36, fontWeight: 900, color: '#ffd200', letterSpacing: -1 }}>5 dní</div>
-                <div style={{ fontSize: 13, color: 'rgba(245,242,235,0.5)', marginTop: 4 }}>{t.statDays}</div>
-              </div>
+              <div><div style={{ fontSize: 36, fontWeight: 900, color: '#ffd200', letterSpacing: -1 }}>80+</div><div style={{ fontSize: 13, color: 'rgba(245,242,235,0.5)', marginTop: 4 }}>{t.statClients}</div></div>
+              <div><div style={{ fontSize: 36, fontWeight: 900, color: '#ffd200', letterSpacing: -1 }}>3×</div><div style={{ fontSize: 13, color: 'rgba(245,242,235,0.5)', marginTop: 4 }}>{t.statLeads}</div></div>
+              <div><div style={{ fontSize: 36, fontWeight: 900, color: '#ffd200', letterSpacing: -1 }}>5 dní</div><div style={{ fontSize: 13, color: 'rgba(245,242,235,0.5)', marginTop: 4 }}>{t.statDays}</div></div>
             </div>
             <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-              {t.heroBadges.map(b => (
-                <span key={b} style={{ background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)', padding: '8px 18px', borderRadius: 100, fontSize: 13, color: 'rgba(245,242,235,0.7)' }}>{b}</span>
-              ))}
+              {t.heroBadges.map(b => (<span key={b} style={{ background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)', padding: '8px 18px', borderRadius: 100, fontSize: 13, color: 'rgba(245,242,235,0.7)' }}>{b}</span>))}
             </div>
           </div>
         </div>
 
-        {/* PRICING */}
         <div id="pricing" style={{ padding: '100px 40px', maxWidth: 1100, margin: '0 auto' }}>
           <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#888', marginBottom: 12 }}>{t.pricingLabel}</p>
           <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, marginBottom: 56 }}>{t.pricingTitle}</h2>
@@ -414,19 +388,14 @@ export default function App() {
                 <div style={{ fontSize: 48, fontWeight: 900, letterSpacing: -2, margin: '16px 0 4px' }}>{card.price}</div>
                 <p style={{ fontSize: 13, textDecoration: 'line-through', color: card.featured ? 'rgba(245,242,235,0.4)' : '#bbb', marginBottom: 24 }}>{card.old}</p>
                 <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10, flexGrow: 1, marginBottom: 24 }}>
-                  {card.features.map(f => (
-                    <li key={f} style={{ fontSize: 14, color: card.featured ? 'rgba(245,242,235,0.75)' : '#555', display: 'flex', gap: 8 }}>
-                      <span style={{ color: '#ffd200', fontWeight: 700, flexShrink: 0 }}>✓</span>{f}
-                    </li>
-                  ))}
+                  {card.features.map(f => (<li key={f} style={{ fontSize: 14, color: card.featured ? 'rgba(245,242,235,0.75)' : '#555', display: 'flex', gap: 8 }}><span style={{ color: '#ffd200', fontWeight: 700, flexShrink: 0 }}>✓</span>{f}</li>))}
                 </ul>
-                <button onClick={() => { setForm(p => ({ ...p, package: card.name + ' — ' + card.price })); scrollTo('contact'); }} style={{ width: '70%', padding: '12px', borderRadius: 100, fontSize: 15, fontWeight: 800, cursor: 'pointer', textAlign: 'center', letterSpacing: 0.5, display: 'block', margin: '0 auto', background: card.featured ? '#ffd200' : 'transparent', color: '#1a1a1a', border: card.featured ? '2px solid #ffd200' : '2px solid #1a1a1a' }}>{t.orderBtn}</button>
+                <button onClick={() => { setForm(p => ({ ...p, package: card.name + ' — ' + card.price })); scrollTo('contact'); }} style={{ width: '70%', padding: '12px', borderRadius: 100, fontSize: 15, fontWeight: 800, cursor: 'pointer', textAlign: 'center', display: 'block', margin: '0 auto', background: card.featured ? '#ffd200' : 'transparent', color: '#1a1a1a', border: card.featured ? '2px solid #ffd200' : '2px solid #1a1a1a' }}>{t.orderBtn}</button>
               </div>
             ))}
           </div>
         </div>
 
-        {/* HOW IT WORKS */}
         <div style={{ background: '#1a1a1a', padding: '100px 40px' }}>
           <div style={{ maxWidth: 1100, margin: '0 auto' }}>
             <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#666', marginBottom: 12 }}>{t.howLabel}</p>
@@ -443,7 +412,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* REVIEWS */}
         <div id="reviews" style={{ background: '#1a1a1a', padding: '100px 40px' }}>
           <div style={{ maxWidth: 1100, margin: '0 auto' }}>
             <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#666', marginBottom: 12 }}>{t.reviewsLabel}</p>
@@ -463,7 +431,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* ORDER FORM */}
         <div id="contact" style={{ padding: '100px 40px', maxWidth: 700, margin: '0 auto' }}>
           <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#888', marginBottom: 12 }}>{t.formLabel}</p>
           <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, marginBottom: 12 }}>{t.formTitle}</h2>
@@ -479,68 +446,35 @@ export default function App() {
             <div style={{ background: '#fff', borderRadius: 24, padding: '48px 40px', display: 'flex', flexDirection: 'column', gap: 20 }}>
               {t.fields.map(f => (
                 <div key={f.key}>
-                  {/* FIX 1: label связан с input через htmlFor/id */}
                   <label htmlFor={`field-${f.key}`} style={{ display: 'block', fontSize: 13, fontWeight: 600, marginBottom: 8, color: '#444' }}>{f.label}</label>
-                  <input
-                    id={`field-${f.key}`}
-                    type={f.type}
-                    placeholder={f.placeholder}
-                    value={form[f.key]}
-                    onChange={e => setForm(p => ({ ...p, [f.key]: e.target.value }))}
-                    style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit' }}
-                  />
+                  <input id={`field-${f.key}`} type={f.type} placeholder={f.placeholder} value={form[f.key]} onChange={e => setForm(p => ({ ...p, [f.key]: e.target.value }))} style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit' }} />
                 </div>
               ))}
               <div>
-                {/* FIX 1: select связан с label */}
                 <label htmlFor="field-package" style={{ display: 'block', fontSize: 13, fontWeight: 600, marginBottom: 8, color: '#444' }}>{t.packageLabel}</label>
-                <select
-                  id="field-package"
-                  value={form.package}
-                  onChange={e => setForm(p => ({ ...p, package: e.target.value }))}
-                  style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit', background: '#fff' }}
-                >
+                <select id="field-package" value={form.package} onChange={e => setForm(p => ({ ...p, package: e.target.value }))} style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit', background: '#fff' }}>
                   <option value="">{t.packagePlaceholder}</option>
                   {t.packages.map(p => <option key={p} value={p}>{p}</option>)}
                 </select>
               </div>
               <div>
                 <label htmlFor="field-message" style={{ display: 'block', fontSize: 13, fontWeight: 600, marginBottom: 8, color: '#444' }}>{t.messageLabel}</label>
-                <textarea
-                  id="field-message"
-                  placeholder={t.messagePlaceholder}
-                  value={form.message}
-                  onChange={e => setForm(p => ({ ...p, message: e.target.value }))}
-                  rows={4}
-                  style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit', resize: 'vertical' }}
-                />
+                <textarea id="field-message" placeholder={t.messagePlaceholder} value={form.message} onChange={e => setForm(p => ({ ...p, message: e.target.value }))} rows={4} style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit', resize: 'vertical' }} />
               </div>
               {formStatus === 'error' && <p style={{ color: '#e24b4a', fontSize: 14 }} role="alert">{t.errorMsg}</p>}
-              <button onClick={handleSubmit} disabled={formStatus === 'loading'}
-                style={{ background: '#1a1a1a', color: '#ffd200', border: 'none', padding: '16px', borderRadius: 100, fontSize: 16, fontWeight: 700, cursor: 'pointer', opacity: formStatus === 'loading' ? 0.7 : 1 }}>
+              <button onClick={handleSubmit} disabled={formStatus === 'loading'} style={{ background: '#1a1a1a', color: '#ffd200', border: 'none', padding: '16px', borderRadius: 100, fontSize: 16, fontWeight: 700, cursor: 'pointer', opacity: formStatus === 'loading' ? 0.7 : 1 }}>
                 {formStatus === 'loading' ? t.submitting : t.submitBtn}
               </button>
             </div>
           )}
         </div>
-
       </main>
 
-      {/* FIX 2: aria-label на кнопках соцсетей */}
       <div style={{ position: 'fixed', right: 20, bottom: 20, display: 'flex', flexDirection: 'column', gap: 12, zIndex: 999 }}>
-        <a href="https://wa.me/421907890600" target="_blank" rel="noopener noreferrer"
-          aria-label="Kontaktujte nás cez WhatsApp"
-          style={{ width: 56, height: 56, background: '#25D366', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 24, boxShadow: '0 10px 25px rgba(0,0,0,0.2)' }}>
-          <FaWhatsapp />
-        </a>
-        <a href="https://facebook.com/profile.php?id=61588797397714" target="_blank" rel="noopener noreferrer"
-          aria-label="Sledujte nás na Facebooku"
-          style={{ width: 56, height: 56, background: '#1877F2', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 22, boxShadow: '0 10px 25px rgba(0,0,0,0.2)' }}>
-          <FaFacebookF />
-        </a>
+        <a href="https://wa.me/421907890600" target="_blank" rel="noopener noreferrer" aria-label="Kontaktujte nás cez WhatsApp" style={{ width: 56, height: 56, background: '#25D366', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 24, boxShadow: '0 10px 25px rgba(0,0,0,0.2)' }}><FaWhatsapp /></a>
+        <a href="https://facebook.com/profile.php?id=61588797397714" target="_blank" rel="noopener noreferrer" aria-label="Sledujte nás na Facebooku" style={{ width: 56, height: 56, background: '#1877F2', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 22, boxShadow: '0 10px 25px rgba(0,0,0,0.2)' }}><FaFacebookF /></a>
       </div>
 
-      {/* FOOTER */}
       <footer id="footer" style={{ background: '#1a1a1a', color: 'rgba(245,242,235,0.4)', textAlign: 'center', padding: '40px', fontSize: 13 }}>
         <img src={logoImg} alt="WebKlienti logo" style={{ height: 40, width: 40, objectFit: 'contain', marginBottom: 12, mixBlendMode: 'screen' }} />
         <div style={{ display: 'flex', gap: 24, justifyContent: 'center', marginBottom: 12, flexWrap: 'wrap' }}>
@@ -554,7 +488,6 @@ export default function App() {
         <p>{t.footerRights}</p>
       </footer>
 
-      {/* COOKIE BANNER */}
       {cookieVisible && (
         <div role="dialog" aria-label="Cookie súhlas" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 9999, background: '#1a1a1a', borderTop: '1px solid rgba(255,255,255,0.1)', padding: '16px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
           <p style={{ color: 'rgba(245,242,235,0.75)', fontSize: 14, margin: 0, flex: 1 }}>
@@ -568,7 +501,6 @@ export default function App() {
         </div>
       )}
 
-      {/* PRIVACY POLICY MODAL */}
       {privacyOpen && (
         <div role="dialog" aria-modal="true" aria-label={t.privacyTitle} style={{ position: 'fixed', inset: 0, zIndex: 10000, background: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 20 }}>
           <div style={{ background: '#fff', borderRadius: 16, padding: '40px', maxWidth: 600, width: '100%', maxHeight: '80vh', overflowY: 'auto', position: 'relative' }}>
@@ -578,7 +510,16 @@ export default function App() {
           </div>
         </div>
       )}
-
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/blog/:slug" element={<BlogPost />} />
+    </Routes>
   );
 }
