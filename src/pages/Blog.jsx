@@ -23,6 +23,13 @@ const posts = [
     date: '1. mája 2025',
     readTime: '4 min čítania',
   },
+  {
+    slug: 'preco-je-seo-klucove',
+    title: 'Prečo je SEO kľúčové pre úspech vášho podnikania',
+    excerpt: 'Dnes už nestačí mať len peknú webovú stránku. Ak sa váš web nezobrazuje vo vyhľadávačoch, väčšina zákazníkov vás nenájde. Zistite prečo je SEO nevyhnutnosť.',
+    date: '11. mája 2025',
+    readTime: '3 min čítania',
+  },
 ];
 
 export default function Blog() {
