@@ -27,9 +27,16 @@ const posts = [
     slug: 'preco-web-neprinas-zakaznikov',
     title: 'Prečo vám web neprináša zákazníkov (a ako to zmeniť)',
     excerpt: 'Váš web môže vyzerať dobre, ale ak neprináša dopyty, nie je problém v trhu — ale vo webe. Zistite 3 hlavné dôvody a ako ich opraviť.',
-    date: '11. mája 2025',
+    date: '7. mája 2025',
     readTime: '3 min čítania',
-  }, 
+  },
+  {
+    slug: 'preco-vas-eshop-nepredava',
+    title: 'Prečo váš e-shop nepredáva?',
+    excerpt: 'Ľudia prídu, ale nekúpia. Je problém v nich, alebo vo vás? 5 otázok, ktoré vám otvoria oči o vašom e-shope.',
+    date: '11. mája 2026',
+    readTime: '4 min čítania',
+  },
 ];
 
 export default function Blog() {
