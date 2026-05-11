@@ -144,67 +144,46 @@ Pre malú firmu je optimálna investícia **299 € — 800 €** za kvalitný w
 Máte otázky o cene? Napíšte nám — radi vám poradíme bez záväzkov.
     `,
   },
-  'ako-si-vybrat-webdizajnera': {
-    title: 'Ako si vybrať správneho webdizajnéra? 5 otázok ktoré musíte položiť',
-    date: '1. mája 2025',
-    readTime: '4 min čítania',
-    content: `
-Vybrať správneho webdizajnéra môže byť náročné. Na trhu sú stovky ponúk — od študentov po veľké agentúry. Ako sa rozhodnúť správne a vyhnúť sa sklamaniu?
-
-## 1. "Môžem vidieť vaše predchádzajúce práce?"
-
-Toto je prvá a najdôležitejšia otázka. Každý seriózny webdizajnér má portfólio — ukážky webov, ktoré vytvoril.
-
-Na čo sa pozrieť:
-- Vyzerajú weby moderne a profesionálne?
-- Fungujú správne na mobile?
-- Sú podobné tomu, čo chcete vy?
-
-Ak vám odpovie "ešte nemám portfólio, ale...", poďakujte a hľadajte ďalej.
-
-## 2. "Koľko trvá vytvorenie webu?"
-
-Reálny čas pre jednoduché weby je 5 — 14 dní. Pre zložitejšie projekty 3 — 6 týždňov.
-
-Pozor na:
-- "Urobím to za víkend" — príliš optimistické
-- "Trvá to 3 mesiace" — pre jednoduchý web príliš dlho
-
-## 3. "Čo je zahrnuté v cene?"
-
-Mnohí dizajnéri uvádzajú nízku cenu, ale extra účtujú za:
-- Mobilnú verziu
-- SEO optimalizáciu
-- Kontaktný formulár
-- Zmeny po odovzdaní
-
-Pýtajte sa konkrétne: Je v cene SEO? Je v cene mobilná verzia? Koľko zmien môžem urobiť?
-
-## 4. "Kto bude vlastniť web po odovzdaní?"
-
-Toto je kritická otázka. Niektorí dizajnéri si nechávajú prístup k webu a účtujú mesačné poplatky za "správu". Ak prestanete platiť, stratíte web.
-
-Požiadajte o:
-- Prístup k hostingu na vaše meno
-- Prístup k doméne na vaše meno
-- Zdrojový kód webu
-
-## 5. "Čo sa stane, ak budem potrebovať zmeny?"
-
-Web nie je jednorazová vec. Budete potrebovať aktualizácie, nové texty, nové fotky.
-
-Dobrý dizajnér vám:
-- Vysvetlí ako robiť základné zmeny sami
-- Ponúkne cenu za budúce úpravy
-- Bude dostupný aj po odovzdaní
-
-## Záver
-
-Správny webdizajnér je partner, nie len dodávateľ. Hľadajte niekoho, kto rozumie vášmu biznisu a chce, aby váš web skutočne fungoval.
-
-U nás dostanete všetky odpovede na tieto otázky vopred — bez prekvapení, bez skrytých poplatkov. Web hotový za 5 dní od 299 €.
+  'preco-web-neprinas-zakaznikov': {
+  title: 'Prečo vám web neprináša zákazníkov (a ako to zmeniť)',
+  date: '11. mája 2025',
+  readTime: '3 min čítania',
+  content: `
+  Váš web môže vyzerať dobre. Ale ak neprináša dopyty, nie je problém v trhu — ale v ňom.
+  
+  Web buď predáva, alebo stráca zákazníkov.
+  
+  ## 1. Strácate ľudí na mobile
+  
+  Väčšina návštev prichádza z telefónu. Ak web sa pomaly načítava, je neprehľadný alebo sa ťažko používa — zákazník odchádza do pár sekúnd.
+  
+  ## 2. Návštevník nevie, čo má robiť
+  
+  Ak nie je hneď jasné čo ponúkate, prečo práve vy a ako vás kontaktovať — nemáte šancu na zákazku.
+  
+  ## 3. Nepôsobíte dôveryhodne
+  
+  Zákazník porovnáva. A rozhoduje prvý dojem. Ak web nevyzerá profesionálne alebo je nejasný — vyberie konkurenciu, aj keď ste lepší.
+  
+  ## Skutočný problém
+  
+  Web nie je vizitka. Je to predajný nástroj. Ak nevedie k akcii, každý deň prichádzate o zákazníkov.
+  
+  ## Čo funguje
+  
+  - rýchly web
+  - jasná ponuka do pár sekúnd
+  - mobilná optimalizácia
+  - výrazné tlačidlo kontaktu
+  - dôkazy dôvery (recenzie, práce, referencie)
+  
+  ## Záver
+  
+  Každý návštevník je potenciálny zákazník. Ak ho nepresvedčíte okamžite, odíde ku konkurencii.
+  
+  Dobrý web neexistuje preto, aby vyzeral pekne. Existuje preto, aby prinášal zákazky.
     `,
-  },  
+  },
 };
 
 function renderContent(content) {
