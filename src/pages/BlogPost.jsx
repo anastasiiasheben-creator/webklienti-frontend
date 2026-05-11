@@ -168,6 +168,41 @@ Správny webdizajnér je partner, nie len dodávateľ. Hľadajte niekoho, kto ro
 U nás dostanete všetky odpovede na tieto otázky vopred — bez prekvapení, bez skrytých poplatkov. Web hotový za 5 dní od 299 €.
     `,
   },
+  'preco-je-seo-klucove': {
+  title: 'Prečo je SEO kľúčové pre úspech vášho podnikania',
+  date: '11. mája 2025',
+  readTime: '3 min čítania',
+  content: `
+  Dnes už nestačí mať len peknú webovú stránku. Ak sa váš web nezobrazuje vo vyhľadávačoch ako Google, väčšina potenciálnych zákazníkov vás jednoducho nenájde. Ľudia každý deň hľadajú produkty a služby online — a firmy, ktoré sú na prvých pozíciách, získavajú najviac objednávok, telefonátov a klientov.
+  
+  Práve preto je SEO (optimalizácia pre vyhľadávače) jednou z najdôležitejších investícií do rastu firmy.
+  
+  ## SEO pomáha:
+  
+  - zvýšiť viditeľnosť vašej firmy
+  - priviesť na web viac reálnych zákazníkov
+  - budovať dôveru a profesionálny imidž
+  - získať výhodu pred konkurenciou
+  - znížiť náklady na platenú reklamu
+  
+  Na rozdiel od reklamy SEO funguje dlhodobo. Kým reklama prestane prinášať výsledky hneď po vypnutí kampane, kvalitne optimalizovaný web môže získavať nových klientov nepretržite.
+  
+  Mnohí podnikatelia prichádzajú každý mesiac o zákazníkov len preto, že ich konkurencia je vo vyhľadávaní vyššie. Ak váš web nie je optimalizovaný správne, zákazník si veľmi často vyberie inú firmu — aj keď ponúkate lepšie služby alebo ceny.
+  
+  ## Profesionálne SEO zahŕňa:
+  
+  - technickú optimalizáciu webu
+  - zrýchlenie načítania stránky
+  - kvalitný obsah
+  - správnu štruktúru webu
+  - lokálne SEO
+  - budovanie autority a dôveryhodnosti stránky
+  
+  Cieľ je jednoduchý: dostať váš web vyššie vo vyhľadávaní a premeniť návštevníkov na zákazníkov.
+  
+  Ak chcete, aby váš web pracoval pre váš biznis 24/7 a prinášal viac objednávok, SEO je nevyhnutnosť. Čím skôr začnete, tým väčší náskok získate pred konkurenciou.
+    `,
+  },
 };
 
 function renderContent(content) {
