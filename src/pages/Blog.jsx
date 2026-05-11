@@ -4,14 +4,14 @@ import logoImg from '../assets/logo.webp';
 const posts = [
   {
     slug: 'preco-kazda-mala-firma-potrebuje-web',
-    title: 'Prečo každá malá firma potrebuje web v roku 2025',
+    title: 'Prečo každá malá firma potrebuje web',
     excerpt: '87% zákazníkov hľadá firmy online. Ak vás nenájdu na internete, vyberú si konkurenciu. Zistite prečo je web dnes nevyhnutnosť, nie luxus.',
-    date: '11. mája 2025',
+    date: '8. mája 2025',
     readTime: '4 min čítania',
   },
   {
     slug: 'kolko-stoji-webstranka-na-slovensku',
-    title: 'Koľko stojí webstránka na Slovensku v roku 2025?',
+    title: 'Koľko stojí webstránka na Slovensku?',
     excerpt: 'Ceny webstránok sa pohybujú od 200 € až po tisíce eur. Ako sa v tom vyznať a za čo vlastne platíte? Úprimný prehľad trhu.',
     date: '5. mája 2025',
     readTime: '5 min čítania',
