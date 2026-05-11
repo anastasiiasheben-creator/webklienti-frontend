@@ -4,7 +4,7 @@ import logoImg from '../assets/logo.webp';
 const posts = [
   {
     slug: 'preco-kazda-mala-firma-potrebuje-web',
-    title: 'Prečo každá malá firma potrebuje web',
+    title: 'Prečo každá malá firma potrebuje web?',
     excerpt: '87% zákazníkov hľadá firmy online. Ak vás nenájdu na internete, vyberú si konkurenciu. Zistite prečo je web dnes nevyhnutnosť, nie luxus.',
     date: '8. mája 2025',
     readTime: '4 min čítania',
