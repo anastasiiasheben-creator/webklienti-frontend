@@ -1,0 +1,85 @@
+import { Link } from 'react-router-dom';
+import logoImg from '../assets/logo.webp';
+
+const posts = [
+  {
+    slug: 'preco-kazda-mala-firma-potrebuje-web',
+    title: 'Prečo každá malá firma potrebuje web v roku 2025',
+    excerpt: '87% zákazníkov hľadá firmy online. Ak vás nenájdu na internete, vyberú si konkurenciu. Zistite prečo je web dnes nevyhnutnosť, nie luxus.',
+    date: '11. mája 2025',
+    readTime: '4 min čítania',
+  },
+  {
+    slug: 'kolko-stoji-webstranka-na-slovensku',
+    title: 'Koľko stojí webstránka na Slovensku v roku 2025?',
+    excerpt: 'Ceny webstránok sa pohybujú od 200 € až po tisíce eur. Ako sa v tom vyznať a za čo vlastne platíte? Úprimný prehľad trhu.',
+    date: '5. mája 2025',
+    readTime: '5 min čítania',
+  },
+  {
+    slug: 'ako-si-vybrat-webdizajnera',
+    title: 'Ako si vybrať správneho webdizajnéra? 5 otázok ktoré musíte položiť',
+    excerpt: 'Nie každý "webdizajnér" dodá to, čo sľubuje. Tieto otázky vám pomôžu vybrať spoľahlivého partnera a vyhnúť sa sklamaniu.',
+    date: '1. mája 2025',
+    readTime: '4 min čítania',
+  },
+];
+
+export default function Blog() {
+  return (
+    <div style={{ fontFamily: "'Segoe UI', sans-serif", background: '#f5f2eb', minHeight: '100vh' }}>
+
+      {/* NAV */}
+      <nav style={{ background: 'rgba(26,26,26,0.97)', padding: '0 40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: 64 }}>
+        <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
+          <img src={logoImg} alt="WebKlienti logo" style={{ height: 44, width: 44, objectFit: 'contain', mixBlendMode: 'screen' }} />
+          <span style={{ fontWeight: 800, fontSize: 18, color: '#f5f2eb' }}>
+            Web<span style={{ color: '#ffd200' }}>Klienti</span>
+          </span>
+        </Link>
+        <Link to="/" style={{ color: 'rgba(245,242,235,0.7)', textDecoration: 'none', fontSize: 14 }}>← Späť na hlavnú</Link>
+      </nav>
+
+      {/* HEADER */}
+      <div style={{ background: '#1a1a1a', padding: '80px 40px', textAlign: 'center' }}>
+        <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#666', marginBottom: 12 }}>Blog</p>
+        <h1 style={{ fontSize: 'clamp(32px, 5vw, 56px)', fontWeight: 900, letterSpacing: -2, color: '#f5f2eb', marginBottom: 16 }}>
+          Tipy a rady pre váš <span style={{ color: '#ffd200' }}>online biznis</span>
+        </h1>
+        <p style={{ color: 'rgba(245,242,235,0.5)', fontSize: 16, maxWidth: 500, margin: '0 auto' }}>
+          Praktické články o webstránkach, SEO a online marketingu pre malé firmy.
+        </p>
+      </div>
+
+      {/* POSTS */}
+      <div style={{ maxWidth: 800, margin: '0 auto', padding: '80px 40px' }}>
+        {posts.map((post, i) => (
+          <Link key={i} to={`/blog/${post.slug}`} style={{ textDecoration: 'none' }}>
+            <div style={{ background: '#fff', borderRadius: 20, padding: '40px', marginBottom: 24, transition: 'transform .2s, box-shadow .2s' }}
+              onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 40px rgba(0,0,0,0.1)'; }}
+              onMouseLeave={e => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = 'none'; }}>
+              <div style={{ display: 'flex', gap: 16, marginBottom: 12, fontSize: 13, color: '#888' }}>
+                <span>{post.date}</span>
+                <span>·</span>
+                <span>{post.readTime}</span>
+              </div>
+              <h2 style={{ fontSize: 22, fontWeight: 800, color: '#1a1a1a', marginBottom: 12, lineHeight: 1.3 }}>{post.title}</h2>
+              <p style={{ fontSize: 15, color: '#555', lineHeight: 1.7, marginBottom: 20 }}>{post.excerpt}</p>
+              <span style={{ color: '#1a1a1a', fontWeight: 700, fontSize: 14 }}>Čítať článok →</span>
+            </div>
+          </Link>
+        ))}
+      </div>
+
+      {/* CTA */}
+      <div style={{ background: '#1a1a1a', padding: '80px 40px', textAlign: 'center' }}>
+        <h2 style={{ fontSize: 32, fontWeight: 900, color: '#f5f2eb', marginBottom: 16 }}>Potrebujete web pre vašu firmu?</h2>
+        <p style={{ color: 'rgba(245,242,235,0.5)', marginBottom: 32, fontSize: 16 }}>Hotový za 5 dní od 299 €</p>
+        <Link to="/#contact" style={{ background: '#ffd200', color: '#1a1a1a', padding: '16px 40px', borderRadius: 100, fontWeight: 700, fontSize: 16, textDecoration: 'none' }}>
+          Objednať web →
+        </Link>
+      </div>
+
+    </div>
+  );
+}
