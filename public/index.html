@@ -4,6 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- ═══ PERFORMANCE: kritické CSS ═══ -->
+    <style>
+      body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f5f2eb; color: #1a1a1a; }
+      #root { min-height: 100vh; }
+      nav { position: sticky; top: 0; z-index: 100; background: rgba(26,26,26,0.97); height: 64px; }
+    </style>
+
+    <!-- ═══ PERFORMANCE: preload ═══ -->
+    <link rel="preload" href="%PUBLIC_URL%/logo.webp" as="image" type="image/webp" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
     <!-- ═══ SEO: ZÁKLADNÉ ═══ -->
     <title>Web Klienti – Tvorba webstránok od 299 € | SK · CZ · EU</title>
     <meta name="description" content="Profesionálne webstránky pre malé firmy od 299 €. Hotové za 5 dni. SEO, GDPR, Google Business profil. Slovensko, Česko, Európa. Bez mesačných poplatkov." />
