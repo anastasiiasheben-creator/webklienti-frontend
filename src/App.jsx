@@ -129,7 +129,7 @@ Platné od: 1.1.2025`,
     footerRights: '© 2025 Web Klienti · Všechna práva vyhrazena',
     packages: ['One-page web — 299 €', 'Prezentační web — 499 €', 'Internetový obchod — 999 €'],
     cards: [
-      { tag: 'Základní', name: 'One-page web', price: '299 €', old: 'běžně 599 €', features: ['Moderní design na míru', 'Mobile friendly (Google to miluje)', 'Kontaktní formulář + mapa', 'WhatsApp — zákazník vám napíše jedním kliknutím', 'Facebook propojení — budujete komunitu od 1. dne', 'SEO — najdou vás na Googlu dříve než konkurenci', 'GDPR ready (Privacy Policy + cookie lišta)', 'Sekce Google recenzí — důvěra = více klientů', 'Firemní email (info@vasfirma.cz)', '🎁 BONUS: Google Business profil (zobrazíte se na Mapách)', 'Hotovo za 5 dní'], featured: false },
+      { tag: 'Základní', name: 'One-page web', price: '299 €', old: 'běžně 599 €', features: ['Moderní design na míru', 'Mobile friendly (Google to miluje)', 'Kontaktní formulář + mapa', 'WhatsApp — zákazník vám napíše jedním kliknutím', 'Facebook propojení — budujete komunitu od 1. dne', 'SEO — najdou vás na Googlu dříve než konkurenci', 'GDPR ready (Privacy Policy + cookie lišta)', 'Sekce Google recenzí — důvěra = více klientů', 'Firemní email', '🎁 BONUS: Google Business profil (zobrazíte se na Mapách)', 'Hotovo za 5 dní'], featured: false },
       { tag: '⭐ Nejpopulárnější', name: 'Prezentační web', price: '499 €', old: 'běžně 999 €', features: ['Vše z One-page +', '5 podstránek na míru', 'Galerie & reference', 'Blog — přidáváte články sami', 'Pokročilé SEO + analýza klíčových slov', 'Google Analytics — vidíte kdo a odkud přichází', 'Hotovo za 7 dní'], featured: true },
       { tag: 'E-shop', name: 'Internetový obchod', price: '999 €', old: 'běžně 1999 €', features: ['Vše z Prezentačního webu +', 'Do 500 produktů', 'Platební brána (karta, PayPal)', 'Automatické faktury', 'Správa objednávek', 'WhatsApp + Facebook shop propojení', 'Hotovo za 14 dní'], featured: false },
     ],
@@ -204,7 +204,7 @@ Platné od: 1.1.2025`,
     footerRights: '© 2025 Web Klienti · All rights reserved',
     packages: ['One-page website — 299 €', 'Business website — 499 €', 'Online store — 999 €'],
     cards: [
-      { tag: 'Starter', name: 'One-page website', price: '299 €', old: 'usually 599 €', features: ['Custom modern design', 'Mobile friendly (Google loves it)', 'Contact form + map', 'WhatsApp — customers reach you in one click', 'Facebook link — build community from day 1', 'SEO — appear on Google before your competitors', 'GDPR ready (Privacy Policy + cookie banner)', 'Google reviews section — trust = more clients', 'Business email (info@yourcompany.com)', '🎁 BONUS: Google Business profile (show up on Maps)', 'Ready in 5 days'], featured: false },
+      { tag: 'Starter', name: 'One-page website', price: '299 €', old: 'usually 599 €', features: ['Custom modern design', 'Mobile friendly (Google loves it)', 'Contact form + map', 'WhatsApp — customers reach you in one click', 'Facebook link — build community from day 1', 'SEO — appear on Google before your competitors', 'GDPR ready (Privacy Policy + cookie banner)', 'Google reviews section — trust = more clients', 'Business email', '🎁 BONUS: Google Business profile (show up on Maps)', 'Ready in 5 days'], featured: false },
       { tag: '⭐ Most popular', name: 'Business website', price: '499 €', old: 'usually 999 €', features: ['Everything from One-page +', '5 custom subpages', 'Gallery & testimonials', 'Blog — add articles yourself', 'Advanced SEO + keyword analysis', 'Google Analytics — see who visits and from where', 'Ready in 7 days'], featured: true },
       { tag: 'E-commerce', name: 'Online store', price: '999 €', old: 'usually 1999 €', features: ['Everything from Business website +', 'Up to 500 products', 'Payment gateway (card, PayPal)', 'Automatic invoices', 'Order management', 'WhatsApp + Facebook shop integration', 'Ready in 14 days'], featured: false },
     ],
@@ -521,8 +521,7 @@ export default function App() {
         <img src={logoImg} alt="WK logo" style={{ height: 40, width: 40, objectFit: 'contain', marginBottom: 12, mixBlendMode: 'screen' }} />
         <div style={{ display: 'flex', gap: 24, justifyContent: 'center', marginBottom: 12, flexWrap: 'wrap' }}>
           <a href="mailto:info@webklienti.com" style={{ color: 'rgba(245,242,235,0.6)', textDecoration: 'none' }}>info@webklienti.com</a>
-          <a href="tel:+421907890600" style={{ color: 'rgba(245,242,235,0.6)', textDecoration: 'none' }}>+421 907 890 600</a>
-          <span style={{ color: 'rgba(245,242,235,0.3)' }}>webklienti.com</span>
+          <a href="tel:+421907890600" style={{ color: 'rgba(245,242,235,0.6)', textDecoration: 'none' }}>+421 907 890 600</a>          
         </div>
         <div style={{ marginBottom: 8 }}>
           <button onClick={() => setPrivacyOpen(true)} style={{ background: 'none', border: 'none', color: 'rgba(245,242,235,0.4)', cursor: 'pointer', fontSize: 13, textDecoration: 'underline' }}>{t.privacyLink}</button>
