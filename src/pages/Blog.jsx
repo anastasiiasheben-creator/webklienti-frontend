@@ -4,10 +4,17 @@ import logoImg from '../assets/logo.webp';
 const posts = [
   {
     slug: 'preco-kazda-mala-firma-potrebuje-web',
-    title: 'Prečo každá malá firma potrebuje web?',
-    excerpt: '87% zákazníkov hľadá firmy online. Ak vás nenájdu na internete, vyberú si konkurenciu. Zistite prečo je web dnes nevyhnutnosť, nie luxus.',
+    title: 'Prečo dnes každá malá firma potrebuje web?',
+    excerpt: '87 % zákazníkov hľadá firmy online. Ak nie ste na internete, prichádzate o zákazníkov v prospech konkurencie.',
     date: '8. mája 2025',
     readTime: '4 min čítania',
+  },
+  {
+    slug: 'preco-je-seo-klucove',
+    title: 'Prečo je SEO kľúčové pre úspech vášho podnikania',
+    excerpt: 'Dnes už nestačí mať len peknú webovú stránku. Ak sa váš web nezobrazuje vo vyhľadávačoch, väčšina zákazníkov vás nenájde. Zistite prečo je SEO nevyhnutnosť.',
+    date: '11. mája 2025',
+    readTime: '3 min čítania',
   },
   {
     slug: 'kolko-stoji-webstranka-na-slovensku',
@@ -22,14 +29,7 @@ const posts = [
     excerpt: 'Nie každý "webdizajnér" dodá to, čo sľubuje. Tieto otázky vám pomôžu vybrať spoľahlivého partnera a vyhnúť sa sklamaniu.',
     date: '1. mája 2025',
     readTime: '4 min čítania',
-  },
-  {
-    slug: 'preco-je-seo-klucove',
-    title: 'Prečo je SEO kľúčové pre úspech vášho podnikania',
-    excerpt: 'Dnes už nestačí mať len peknú webovú stránku. Ak sa váš web nezobrazuje vo vyhľadávačoch, väčšina zákazníkov vás nenájde. Zistite prečo je SEO nevyhnutnosť.',
-    date: '11. mája 2025',
-    readTime: '3 min čítania',
-  },
+  },  
 ];
 
 export default function Blog() {
