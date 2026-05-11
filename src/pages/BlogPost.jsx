@@ -3,45 +3,82 @@ import logoImg from '../assets/logo.webp';
 
 const posts = {
   'preco-kazda-mala-firma-potrebuje-web': {
-    title: 'Prečo každá malá firma potrebuje web?',
-    date: '11. mája 2025',
-    readTime: '4 min čítania',
-    content: `
-Možno si hovoríte: "Mám Facebook stránku, to stačí." Alebo: "Som malá firma, web nepotrebujem." Realita je však iná.
-
-## 87% zákazníkov hľadá firmy online
-
-Podľa aktuálnych štatistík až 87% ľudí hľadá firmy a služby cez internet — najčastejšie cez Google. Ak vás tam nenájdu, jednoducho zavolajú konkurencii, ktorá web má.
-
-Web nie je luxus. Je to váš najlacnejší predajca, ktorý pracuje 24 hodín denne, 7 dní v týždni — bez prestávky, bez platu.
-
-## Prečo nestačí len Facebook?
-
-Facebook stránka je dobrý doplnok, ale nie náhrada webu. Dôvody:
-
-- **Facebook algoritmus** rozhoduje, kto uvidí vaše príspevky. Organický dosah klesá každý rok.
-- **Google vás nenájde** — Facebook profily sa v Google vyhľadávaní zobrazujú zle.
-- **Dôveryhodnosť** — zákazníci vnímajú firmu bez webu ako menej profesionálnu.
-- **Vy nekontrolujete obsah** — Facebook môže zmeniť pravidlá alebo zrušiť stránku kedykoľvek.
-
-## Čo vám web prinesie?
-
-1. **Viac dopytov** — zákazníci vás nájdu na Google a kontaktujú vás priamo
-2. **Dôveryhodnosť** — profesionálny web buduje dôveru ešte pred prvým kontaktom
-3. **Úspora času** — web odpovedá na časté otázky za vás (ceny, služby, kontakt)
-4. **Konkurenčná výhoda** — stále sú firmy bez webu. Buďte o krok vpred.
-
-## Koľko to stojí?
-
-Profesionálny web pre malú firmu dnes nie je drahý. U nás začína od **299 €** a je hotový za **5 dní**. Bez mesačných poplatkov, bez skrytých nákladov.
-
-Investícia do webu sa väčšine firiem vráti už pri prvom novom zákazníkovi.
-
-## Záver
-
-Ak ešte nemáte web, prichádzate každý deň o potenciálnych zákazníkov. Čím dlhšie čakáte, tým viac ich získava vaša konkurencia.
-
-Začnite dnes — web môžete mať za 5 dní.
+  title: 'Prečo dnes každá malá firma potrebuje web?',
+  date: '11. mája 2025',
+  readTime: '4 min čítania',
+  content: `
+  Každý deň ľudia vo vašom okolí hľadajú služby, ktoré ponúkate. Ak však nemáte web, väčšina z nich skončí u konkurencie.
+  
+  Dnes zákazníci hľadajú firmy cez Google. Ak vás tam nenájdu, pre nich prakticky neexistujete. Nestačí mať len Facebook — firma bez webu často pôsobí menej dôveryhodne a prichádza o klientov ešte pred prvým kontaktom.
+  
+  ## Web pracuje za vás 24/7
+  
+  Profesionálny web:
+  
+  - prezentuje vaše služby
+  - buduje dôveru
+  - privádza nových zákazníkov
+  - umožňuje klientom kontaktovať vás kedykoľvek
+  
+  Aj keď pracujete alebo spíte, váš web stále získava nových klientov.
+  
+  ## Prvý dojem rozhoduje
+  
+  Ľudia si dnes firmu preverujú online ešte pred telefonátom. Moderný a rýchly web vytvára profesionálny dojem a výrazne zvyšuje šancu, že si zákazník vyberie práve vás.
+  
+  Firma bez webu dnes stráca dôveru aj objednávky.
+  
+  ## Web nemusí byť drahý
+  
+  Profesionálny firemný web dnes nemusí stáť tisíce eur. U nás začína od 299 €:
+  
+  - moderný dizajn
+  - mobilná verzia
+  - rýchle dodanie do 5 dní
+  - bez skrytých poplatkov
+  
+  Pre väčšinu firiem sa investícia vráti už pri prvom novom zákazníkovi.
+  
+  ## Nečakajte, kým vás konkurencia predbehne
+  
+  Každý deň bez webu znamená stratených zákazníkov. Čím dlhšie čakáte, tým viac klientov získava vaša konkurencia.
+  
+  Váš nový web môžete mať hotový už za 5 dní.
+    `,
+  },
+  'preco-je-seo-klucove': {
+  title: 'Prečo je SEO kľúčové pre úspech vášho podnikania',
+  date: '11. mája 2025',
+  readTime: '3 min čítania',
+  content: `
+  Dnes už nestačí mať len peknú webovú stránku. Ak sa váš web nezobrazuje vo vyhľadávačoch ako Google, väčšina potenciálnych zákazníkov vás jednoducho nenájde. Ľudia každý deň hľadajú produkty a služby online — a firmy, ktoré sú na prvých pozíciách, získavajú najviac objednávok, telefonátov a klientov.
+  
+  Práve preto je SEO (optimalizácia pre vyhľadávače) jednou z najdôležitejších investícií do rastu firmy.
+  
+  ## SEO pomáha:
+  
+  - zvýšiť viditeľnosť vašej firmy
+  - priviesť na web viac reálnych zákazníkov
+  - budovať dôveru a profesionálny imidž
+  - získať výhodu pred konkurenciou
+  - znížiť náklady na platenú reklamu
+  
+  Na rozdiel od reklamy SEO funguje dlhodobo. Kým reklama prestane prinášať výsledky hneď po vypnutí kampane, kvalitne optimalizovaný web môže získavať nových klientov nepretržite.
+  
+  Mnohí podnikatelia prichádzajú každý mesiac o zákazníkov len preto, že ich konkurencia je vo vyhľadávaní vyššie. Ak váš web nie je optimalizovaný správne, zákazník si veľmi často vyberie inú firmu — aj keď ponúkate lepšie služby alebo ceny.
+  
+  ## Profesionálne SEO zahŕňa:
+  
+  - technickú optimalizáciu webu
+  - zrýchlenie načítania stránky
+  - kvalitný obsah
+  - správnu štruktúru webu
+  - lokálne SEO
+  - budovanie autority a dôveryhodnosti stránky
+  
+  Cieľ je jednoduchý: dostať váš web vyššie vo vyhľadávaní a premeniť návštevníkov na zákazníkov.
+  
+  Ak chcete, aby váš web pracoval pre váš biznis 24/7 a prinášal viac objednávok, SEO je nevyhnutnosť. Čím skôr začnete, tým väčší náskok získate pred konkurenciou.
     `,
   },
   'kolko-stoji-webstranka-na-slovensku': {
@@ -167,42 +204,7 @@ Správny webdizajnér je partner, nie len dodávateľ. Hľadajte niekoho, kto ro
 
 U nás dostanete všetky odpovede na tieto otázky vopred — bez prekvapení, bez skrytých poplatkov. Web hotový za 5 dní od 299 €.
     `,
-  },
-  'preco-je-seo-klucove': {
-  title: 'Prečo je SEO kľúčové pre úspech vášho podnikania',
-  date: '11. mája 2025',
-  readTime: '3 min čítania',
-  content: `
-  Dnes už nestačí mať len peknú webovú stránku. Ak sa váš web nezobrazuje vo vyhľadávačoch ako Google, väčšina potenciálnych zákazníkov vás jednoducho nenájde. Ľudia každý deň hľadajú produkty a služby online — a firmy, ktoré sú na prvých pozíciách, získavajú najviac objednávok, telefonátov a klientov.
-  
-  Práve preto je SEO (optimalizácia pre vyhľadávače) jednou z najdôležitejších investícií do rastu firmy.
-  
-  ## SEO pomáha:
-  
-  - zvýšiť viditeľnosť vašej firmy
-  - priviesť na web viac reálnych zákazníkov
-  - budovať dôveru a profesionálny imidž
-  - získať výhodu pred konkurenciou
-  - znížiť náklady na platenú reklamu
-  
-  Na rozdiel od reklamy SEO funguje dlhodobo. Kým reklama prestane prinášať výsledky hneď po vypnutí kampane, kvalitne optimalizovaný web môže získavať nových klientov nepretržite.
-  
-  Mnohí podnikatelia prichádzajú každý mesiac o zákazníkov len preto, že ich konkurencia je vo vyhľadávaní vyššie. Ak váš web nie je optimalizovaný správne, zákazník si veľmi často vyberie inú firmu — aj keď ponúkate lepšie služby alebo ceny.
-  
-  ## Profesionálne SEO zahŕňa:
-  
-  - technickú optimalizáciu webu
-  - zrýchlenie načítania stránky
-  - kvalitný obsah
-  - správnu štruktúru webu
-  - lokálne SEO
-  - budovanie autority a dôveryhodnosti stránky
-  
-  Cieľ je jednoduchý: dostať váš web vyššie vo vyhľadávaní a premeniť návštevníkov na zákazníkov.
-  
-  Ak chcete, aby váš web pracoval pre váš biznis 24/7 a prinášal viac objednávok, SEO je nevyhnutnosť. Čím skôr začnete, tým väčší náskok získate pred konkurenciou.
-    `,
-  },
+  },  
 };
 
 function renderContent(content) {
