@@ -484,8 +484,7 @@ function HomePage() {
         </div>
         <div style={{ marginBottom: 16, lineHeight: 1.8, color: 'rgba(245,242,235,0.35)' }}>
           <p style={{ margin: 0 }}>Ing. Anastasiia Sheben · Ulica Mozartova 5652/12 · 917 08 Trnava · Slovensko</p>
-          <p style={{ margin: 0 }}>IČO: 56360495 · DIČ: 1087134598</p>
-          <p style={{ margin: 0 }}>Okresný úrad Trnava · Číslo živnostenského registra: 250-58651</p>
+          <p style={{ margin: 0 }}>IČO: 56360495 · DIČ: 1087134598 · Okresný úrad Trnava · Číslo živnostenského registra: 250-58651</p>
         </div>
         <div style={{ marginBottom: 8 }}>
           <button onClick={() => setPrivacyOpen(true)} style={{ background: 'none', border: 'none', color: 'rgba(245,242,235,0.4)', cursor: 'pointer', fontSize: 13, textDecoration: 'underline' }}>{t.privacyLink}</button>
