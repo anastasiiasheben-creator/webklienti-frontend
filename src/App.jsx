@@ -208,7 +208,7 @@ Platné od: 1.1.2025`,
     packages: ['One-page website — 299 €', 'Business website — 499 €', 'Online store — 999 €'],
     cards: [
       { tag: 'Starter', name: 'One-page website', price: '299 €', old: 'usually 599 €', features: ['Custom modern design', 'Mobile friendly (Google loves it)', 'Contact form + map', 'WhatsApp — customers reach you in one click', 'Facebook link — build community from day 1', 'SEO — appear on Google before your competitors', 'GDPR ready (Privacy Policy + cookie banner)', 'Google reviews section — trust = more clients', 'Business email', '🎁 BONUS: Google Business profile (show up on Maps)', 'Ready in 5 days'], featured: false },
-      { tag: '⭐ Most popular', name: 'Business website', price: '299 €', old: 'usually 999 €', features: ['Everything from One-page +', '5 custom subpages', 'Gallery & testimonials', 'Blog — add articles yourself', 'Advanced SEO + keyword analysis', 'Google Analytics — see who visits and from where', 'Ready in 7 days'], featured: true },
+      { tag: '⭐ Most popular', name: 'Business website', price: '499 €', old: 'usually 999 €', features: ['Everything from One-page +', '5 custom subpages', 'Gallery & testimonials', 'Blog — add articles yourself', 'Advanced SEO + keyword analysis', 'Google Analytics — see who visits and from where', 'Ready in 7 days'], featured: true },
       { tag: 'E-commerce', name: 'Online store', price: '999 €', old: 'usually 1999 €', features: ['Everything from Business website +', 'Up to 500 products', 'Payment gateway (card, PayPal)', 'Automatic invoices', 'Order management', 'WhatsApp + Facebook shop integration', 'Ready in 14 days'], featured: false },
     ],
     featuredBadge: 'MOST POPULAR',
