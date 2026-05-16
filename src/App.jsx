@@ -266,6 +266,8 @@ function HomePage() {
       const data = await res.json();
       if (data.success) {
         setFormStatus('success');
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'form_submit_success' });
         setForm({ name: '', email: '', phone: '', package: '', message: '' });
       } else {
         setFormStatus('error');
