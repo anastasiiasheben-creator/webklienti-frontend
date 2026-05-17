@@ -86,57 +86,57 @@ Ak chcete, aby váš web pracoval pre váš biznis 24/7 a prinášal viac objedn
   date: '28. júna 2025',
   readTime: '5 min čítania',
   content: `
-  V dnešnom digitálnom svete nestačí mať iba peknú webstránku. Ak chcete získavať nových zákazníkov, budovať dôveru a zvyšovať návštevnosť, potrebujete rozumieť tomu, ako sa ľudia na vašom webe správajú a ako vás nachádzajú vo vyhľadávači Google.
-  
-  Práve preto patria Google Search Console a Google Analytics medzi najdôležitejšie nástroje každého moderného webu.
-  
-  ## Google Search Console – lepšia viditeľnosť vo vyhľadávaní
-  
-  Google Search Console je nástroj, ktorý pomáha sledovať výkon stránky vo výsledkoch vyhľadávania Google. Umožňuje analyzovať kľúčové slová, kontrolovať indexovanie podstránok a odhaliť technické problémy, ktoré môžu negatívne ovplyvniť SEO.
-  
-  Vďaka Search Console môžete jednoducho zistiť:
-  
-  - ktoré vyhľadávania privádzajú návštevníkov na váš web,
-  - ako často sa stránka zobrazuje vo výsledkoch Google,
-  - ktoré podstránky fungujú najlepšie,
-  - aké technické chyby je potrebné opraviť,
-  - ako zlepšiť organickú návštevnosť.
-  
-  Správne nastavená Search Console pomáha webu rásť a zvyšovať jeho viditeľnosť bez zbytočných reklamných nákladov.
-  
-  ## Google Analytics – detailný pohľad na návštevníkov
-  
-  Google Analytics poskytuje detailné štatistiky o návštevnosti webu a správaní používateľov. Firmy tak získavajú cenné údaje, ktoré pomáhajú robiť lepšie marketingové aj obchodné rozhodnutia.
-  
-  Pomocou Google Analytics môžete sledovať:
-  
-  - počet návštevníkov webu,
-  - odkiaľ návštevníci prichádzajú,
-  - ktoré stránky sú najnavštevovanejšie,
-  - koľko času používatelia na webe trávia,
-  - úspešnosť reklamných kampaní a formulárov.
-  
-  Tieto informácie pomáhajú optimalizovať obsah, zlepšovať používateľský zážitok a efektívnejšie získavať nových klientov.
-  
-  ## Dáta, ktoré rozhodujú o úspechu
-  
-  Spojenie Google Search Console a Google Analytics prináša komplexný pohľad na výkon webstránky. Nestačí totiž len priviesť návštevníka na web — dôležité je pochopiť jeho správanie a premeniť návštevu na reálny kontakt alebo zákazku.
-  
-  Moderné firmy dnes rozhodujú na základe dát. Web bez analytiky funguje naslepo. Správne nastavené merania umožňujú odhaliť silné aj slabé stránky webu, optimalizovať marketing a dlhodobo zvyšovať výsledky.
-  
-  ## Prečo je analytika dôležitá aj pre menšie firmy?
-  
-  Mnoho menších podnikateľov si myslí, že analytické nástroje potrebujú iba veľké spoločnosti. Opak je však pravdou. Práve menšie firmy môžu vďaka dátam efektívnejšie investovať do reklamy, lepšie cieliť služby a pochopiť potreby svojich zákazníkov.
-  
-  Aj jednoduchý prehľad návštevnosti môže výrazne pomôcť pri raste firmy a budovaní silnej online prezentácie.
-  
-  ## Záver
-  
-  Google Search Console a Google Analytics dnes predstavujú základ úspešného webu. Pomáhajú zlepšovať viditeľnosť vo vyhľadávačoch, analyzovať návštevnosť a robiť rozhodnutia na základe reálnych dát.
-  
-  Ak chcete, aby váš web nebol len vizitkou, ale skutočným nástrojom na získavanie zákazníkov, analytika by mala byť jeho prirodzenou súčasťou.
-    `,
-  },
+V dnešnom digitálnom svete nestačí mať iba peknú webstránku. Ak chcete získavať nových zákazníkov, budovať dôveru a zvyšovať návštevnosť, potrebujete rozumieť tomu, ako sa ľudia na vašom webe správajú a ako vás nachádzajú vo vyhľadávači Google.
+
+Práve preto patria Google Search Console a Google Analytics medzi najdôležitejšie nástroje každého moderného webu.
+
+## Google Search Console – lepšia viditeľnosť vo vyhľadávaní
+
+Google Search Console je nástroj, ktorý pomáha sledovať výkon stránky vo výsledkoch vyhľadávania Google. Umožňuje analyzovať kľúčové slová, kontrolovať indexovanie podstránok a odhaliť technické problémy, ktoré môžu negatívne ovplyvniť SEO.
+
+Vďaka Search Console môžete jednoducho zistiť:
+
+- ktoré vyhľadávania privádzajú návštevníkov na váš web,
+- ako často sa stránka zobrazuje vo výsledkoch Google,
+- ktoré podstránky fungujú najlepšie,
+- aké technické chyby je potrebné opraviť,
+- ako zlepšiť organickú návštevnosť.
+
+Správne nastavená Search Console pomáha webu rásť a zvyšovať jeho viditeľnosť bez zbytočných reklamných nákladov.
+
+## Google Analytics – detailný pohľad na návštevníkov
+
+Google Analytics poskytuje detailné štatistiky o návštevnosti webu a správaní používateľov. Firmy tak získavajú cenné údaje, ktoré pomáhajú robiť lepšie marketingové aj obchodné rozhodnutia.
+
+Pomocou Google Analytics môžete sledovať:
+
+- počet návštevníkov webu,
+- odkiaľ návštevníci prichádzajú,
+- ktoré stránky sú najnavštevovanejšie,
+- koľko času používatelia na webe trávia,
+- úspešnosť reklamných kampaní a formulárov.
+
+Tieto informácie pomáhajú optimalizovať obsah, zlepšovať používateľský zážitok a efektívnejšie získavať nových klientov.
+
+## Dáta, ktoré rozhodujú o úspechu
+
+Spojenie Google Search Console a Google Analytics prináša komplexný pohľad na výkon webstránky. Nestačí totiž len priviesť návštevníka na web — dôležité je pochopiť jeho správanie a premeniť návštevu na reálny kontakt alebo zákazku.
+
+Moderné firmy dnes rozhodujú na základe dát. Web bez analytiky funguje naslepo. Správne nastavené merania umožňujú odhaliť silné aj slabé stránky webu, optimalizovať marketing a dlhodobo zvyšovať výsledky.
+
+## Prečo je analytika dôležitá aj pre menšie firmy?
+
+Mnoho menších podnikateľov si myslí, že analytické nástroje potrebujú iba veľké spoločnosti. Opak je však pravdou. Práve menšie firmy môžu vďaka dátam efektívnejšie investovať do reklamy, lepšie cieliť služby a pochopiť potreby svojich zákazníkov.
+
+Aj jednoduchý prehľad návštevnosti môže výrazne pomôcť pri raste firmy a budovaní silnej online prezentácie.
+
+## Záver
+
+Google Search Console a Google Analytics dnes predstavujú základ úspešného webu. Pomáhajú zlepšovať viditeľnosť vo vyhľadávačoch, analyzovať návštevnosť a robiť rozhodnutia na základe reálnych dát.
+
+Ak chcete, aby váš web nebol len vizitkou, ale skutočným nástrojom na získavanie zákazníkov, analytika by mala byť jeho prirodzenou súčasťou.
+`,
+},
   'kolko-stoji-webstranka-na-slovensku': {
     title: 'Koľko stojí webstránka na Slovensku?',
     date: '3. apríla 2025',
