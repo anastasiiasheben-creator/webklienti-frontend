@@ -304,25 +304,27 @@ Nie je otázka, či máte e-shop. Otázka je:
 
 function renderContent(content) {
   return content.split('\n').map((line, i) => {
-    if (line.startsWith('## ')) {
-      return <h2 key={i} style={{ fontSize: 24, fontWeight: 800, color: '#1a1a1a', margin: '40px 0 16px' }}>{line.replace('## ', '')}</h2>;
+    const l = line.trimStart();
+
+    if (l.startsWith('## ')) {
+      return <h2 key={i}>{l.replace('## ', '')}</h2>;
     }
-    if (line.startsWith('### ')) {
-      return <h3 key={i} style={{ fontSize: 18, fontWeight: 700, color: '#1a1a1a', margin: '28px 0 12px' }}>{line.replace('### ', '')}</h3>;
+
+    if (l.startsWith('### ')) {
+      return <h3 key={i}>{l.replace('### ', '')}</h3>;
     }
-    if (line.startsWith('- ')) {
-      return <li key={i} style={{ fontSize: 16, color: '#444', lineHeight: 1.8, marginLeft: 20 }}>{line.replace('- ', '').replace(/\*\*(.*?)\*\*/g, '$1')}</li>;
+
+    if (l.startsWith('- ')) {
+      return <li key={i}>{l.replace('- ', '')}</li>;
     }
-    if (line.match(/^\d+\./)) {
-      return <li key={i} style={{ fontSize: 16, color: '#444', lineHeight: 1.8, marginLeft: 20 }}>{line.replace(/^\d+\.\s/, '').replace(/\*\*(.*?)\*\*/g, '$1')}</li>;
+
+    if (l.match(/^\d+\./)) {
+      return <li key={i}>{l.replace(/^\d+\.\s/, '')}</li>;
     }
-    if (line.startsWith('**') && line.endsWith('**')) {
-      return <p key={i} style={{ fontSize: 16, color: '#1a1a1a', fontWeight: 700, margin: '8px 0' }}>{line.replace(/\*\*/g, '')}</p>;
-    }
-    if (line.trim() === '') {
-      return <br key={i} />;
-    }
-    return <p key={i} style={{ fontSize: 16, color: '#444', lineHeight: 1.8, margin: '8px 0' }} dangerouslySetInnerHTML={{ __html: line.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />;
+
+    if (l.trim() === '') return <br key={i} />;
+
+    return <p key={i} key={i}>{l}</p>;
   });
 }
 
