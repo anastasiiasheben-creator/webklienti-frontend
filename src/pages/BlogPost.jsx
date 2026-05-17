@@ -82,10 +82,10 @@ Ak chcete, aby váš web pracoval pre váš biznis 24/7 a prinášal viac objedn
     `,
   },
   'google-search-console-a-google-analytics': {
-  title: 'Prečo sú Google Search Console a Google Analytics nevyhnutné pre moderný web?',
-  date: '28. júna 2025',
-  readTime: '5 min čítania',
-  content: `
+    title: 'Prečo sú Google Search Console a Google Analytics nevyhnutné pre moderný web?',
+    date: '28. júna 2025',
+    readTime: '5 min čítania',
+    content: `
 V dnešnom digitálnom svete nestačí mať iba peknú webstránku. Ak chcete získavať nových zákazníkov, budovať dôveru a zvyšovať návštevnosť, potrebujete rozumieť tomu, ako sa ľudia na vašom webe správajú a ako vás nachádzajú vo vyhľadávači Google.
 
 Práve preto patria Google Search Console a Google Analytics medzi najdôležitejšie nástroje každého moderného webu.
@@ -135,8 +135,8 @@ Aj jednoduchý prehľad návštevnosti môže výrazne pomôcť pri raste firmy 
 Google Search Console a Google Analytics dnes predstavujú základ úspešného webu. Pomáhajú zlepšovať viditeľnosť vo vyhľadávačoch, analyzovať návštevnosť a robiť rozhodnutia na základe reálnych dát.
 
 Ak chcete, aby váš web nebol len vizitkou, ale skutočným nástrojom na získavanie zákazníkov, analytika by mala byť jeho prirodzenou súčasťou.
-`,
-},
+    `,
+  },
   'kolko-stoji-webstranka-na-slovensku': {
     title: 'Koľko stojí webstránka na Slovensku?',
     date: '3. apríla 2025',
@@ -302,28 +302,69 @@ Nie je otázka, či máte e-shop. Otázka je:
   },
 };
 
+// Renderuje **tučný text** bez dangerouslySetInnerHTML
+function renderInline(text) {
+  return text.split(/\*\*(.*?)\*\*/g).map((part, idx) =>
+    idx % 2 === 1 ? <strong key={idx}>{part}</strong> : part
+  );
+}
+
 function renderContent(content) {
-  return content.split('\n').map((line, i) => {
-    if (line.startsWith('## ')) {
-      return <h2 key={i} style={{ fontSize: 24, fontWeight: 800, color: '#1a1a1a', margin: '40px 0 16px' }}>{line.replace('## ', '')}</h2>;
+  const lines = content.split('\n');
+  const result = [];
+  let listBuffer = [];
+
+  const flushList = (key) => {
+    if (listBuffer.length > 0) {
+      result.push(
+        <ul key={`ul-${key}`} style={{ paddingLeft: 24, margin: '12px 0' }}>
+          {listBuffer.map((item, idx) => (
+            <li key={idx} style={{ fontSize: 16, color: '#444', lineHeight: 1.8 }}>
+              {renderInline(item)}
+            </li>
+          ))}
+        </ul>
+      );
+      listBuffer = [];
     }
-    if (line.startsWith('### ')) {
-      return <h3 key={i} style={{ fontSize: 18, fontWeight: 700, color: '#1a1a1a', margin: '28px 0 12px' }}>{line.replace('### ', '')}</h3>;
+  };
+
+  lines.forEach((line, i) => {
+    const l = line.trimStart();
+
+    if (l.startsWith('## ')) {
+      flushList(i);
+      result.push(
+        <h2 key={i} style={{ fontSize: 24, fontWeight: 800, color: '#1a1a1a', margin: '40px 0 16px' }}>
+          {l.replace('## ', '')}
+        </h2>
+      );
+    } else if (l.startsWith('### ')) {
+      flushList(i);
+      result.push(
+        <h3 key={i} style={{ fontSize: 18, fontWeight: 700, color: '#1a1a1a', margin: '28px 0 12px' }}>
+          {l.replace('### ', '')}
+        </h3>
+      );
+    } else if (l.startsWith('- ')) {
+      listBuffer.push(l.replace('- ', ''));
+    } else if (l.match(/^\d+\.\s/)) {
+      listBuffer.push(l.replace(/^\d+\.\s/, ''));
+    } else if (l.trim() === '') {
+      flushList(i);
+      result.push(<br key={i} />);
+    } else {
+      flushList(i);
+      result.push(
+        <p key={i} style={{ fontSize: 16, color: '#444', lineHeight: 1.8, margin: '8px 0' }}>
+          {renderInline(l)}
+        </p>
+      );
     }
-    if (line.startsWith('- ')) {
-      return <li key={i} style={{ fontSize: 16, color: '#444', lineHeight: 1.8, marginLeft: 20 }}>{line.replace('- ', '').replace(/\*\*(.*?)\*\*/g, '$1')}</li>;
-    }
-    if (line.match(/^\d+\./)) {
-      return <li key={i} style={{ fontSize: 16, color: '#444', lineHeight: 1.8, marginLeft: 20 }}>{line.replace(/^\d+\.\s/, '').replace(/\*\*(.*?)\*\*/g, '$1')}</li>;
-    }
-    if (line.startsWith('**') && line.endsWith('**')) {
-      return <p key={i} style={{ fontSize: 16, color: '#1a1a1a', fontWeight: 700, margin: '8px 0' }}>{line.replace(/\*\*/g, '')}</p>;
-    }
-    if (line.trim() === '') {
-      return <br key={i} />;
-    }
-    return <p key={i} style={{ fontSize: 16, color: '#444', lineHeight: 1.8, margin: '8px 0' }} dangerouslySetInnerHTML={{ __html: line.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />;
   });
+
+  flushList('end');
+  return result;
 }
 
 export default function BlogPost() {
