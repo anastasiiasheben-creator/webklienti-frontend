@@ -48,6 +48,9 @@ const T = {
     packagePlaceholder: '— Vyberte balík —',
     messageLabel: 'Správa',
     messagePlaceholder: 'Čo potrebujete? Aký je váš biznis?',
+    consentLabel: 'Súhlasím so spracovaním osobných údajov v súlade s',
+    consentLink: 'Ochranou súkromia',
+    consentError: 'Prosím, potvrďte súhlas so spracovaním osobných údajov.',
     submitBtn: 'Odoslať objednávku →',
     submitting: 'Odosielam...',
     successTitle: 'Ďakujeme!',
@@ -123,6 +126,9 @@ Platné od: 1.1.2025`,
     packagePlaceholder: '— Vyberte balíček —',
     messageLabel: 'Zpráva',
     messagePlaceholder: 'Co potřebujete? Jaký je váš byznys?',
+    consentLabel: 'Souhlasím se zpracováním osobních údajů v souladu s',
+    consentLink: 'Ochranou soukromí',
+    consentError: 'Prosím potvrďte souhlas se zpracováním osobních údajů.',
     submitBtn: 'Odeslat objednávku →',
     submitting: 'Odesílám...',
     successTitle: 'Děkujeme!',
@@ -198,6 +204,9 @@ Platné od: 1.1.2025`,
     packagePlaceholder: '— Select a plan —',
     messageLabel: 'Message',
     messagePlaceholder: 'What do you need? What is your business?',
+    consentLabel: 'I agree to the processing of my personal data in accordance with the',
+    consentLink: 'Privacy Policy',
+    consentError: 'Please confirm your consent to the processing of personal data.',
     submitBtn: 'Send order →',
     submitting: 'Sending...',
     successTitle: 'Thank you!',
@@ -243,7 +252,7 @@ Effective from: 1.1.2025`,
 
 function HomePage() {
   const [lang, setLang] = useState('sk');
-  const [form, setForm] = useState({ name: '', email: '', phone: '', package: '', message: '' });
+  const [form, setForm] = useState({ name: '', email: '', phone: '', package: '', message: '', consent: false });
   const [formStatus, setFormStatus] = useState('idle');
   const [cookieVisible, setCookieVisible] = useState(() => !localStorage.getItem('wk_cookie'));
   const [privacyOpen, setPrivacyOpen] = useState(false);
@@ -254,6 +263,10 @@ function HomePage() {
   const handleSubmit = async () => {
     if (!form.name || !form.email || !form.package) {
       alert(lang === 'en' ? 'Please fill in name, email and select a plan' : lang === 'cz' ? 'Vyplňte jméno, email a vyberte balíček' : 'Vyplňte meno, email a vyberte balík');
+      return;
+    }
+    if (!form.consent) {
+      alert(t.consentError);
       return;
     }
     setFormStatus('loading');
@@ -268,7 +281,7 @@ function HomePage() {
         setFormStatus('success');
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({ event: 'form_submit_success' });
-        setForm({ name: '', email: '', phone: '', package: '', message: '' });
+        setForm({ name: '', email: '', phone: '', package: '', message: '', consent: false });
       } else {
         setFormStatus('error');
       }
@@ -449,7 +462,7 @@ function HomePage() {
               {t.fields.map(f => (
                 <div key={f.key}>
                   <label htmlFor={`field-${f.key}`} style={{ display: 'block', fontSize: 13, fontWeight: 600, marginBottom: 8, color: '#444' }}>{f.label}</label>
-                  <input id={`field-${f.key}`} type={f.type} placeholder={f.placeholder} value={form[f.key]} onChange={e => setForm(p => ({ ...p, [f.key]: e.target.value }))} style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit' }} />
+                  <input id={`field-${f.key}`} type={f.type} placeholder={f.placeholder} value={form[f.key]} onChange={e => setForm(p => ({ ...p, [f.key]: e.target.value }))} style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }} />
                 </div>
               ))}
               <div>
@@ -461,8 +474,31 @@ function HomePage() {
               </div>
               <div>
                 <label htmlFor="field-message" style={{ display: 'block', fontSize: 13, fontWeight: 600, marginBottom: 8, color: '#444' }}>{t.messageLabel}</label>
-                <textarea id="field-message" placeholder={t.messagePlaceholder} value={form.message} onChange={e => setForm(p => ({ ...p, message: e.target.value }))} rows={4} style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit', resize: 'vertical' }} />
+                <textarea id="field-message" placeholder={t.messagePlaceholder} value={form.message} onChange={e => setForm(p => ({ ...p, message: e.target.value }))} rows={4} style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit', resize: 'vertical', boxSizing: 'border-box' }} />
               </div>
+
+              {/* GDPR Consent Checkbox */}
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
+                <input
+                  id="field-consent"
+                  type="checkbox"
+                  checked={form.consent}
+                  onChange={e => setForm(p => ({ ...p, consent: e.target.checked }))}
+                  style={{ marginTop: 3, width: 16, height: 16, cursor: 'pointer', accentColor: '#1a1a1a', flexShrink: 0 }}
+                />
+                <label htmlFor="field-consent" style={{ fontSize: 13, color: '#666', lineHeight: 1.5, cursor: 'pointer' }}>
+                  {t.consentLabel}{' '}
+                  <button
+                    type="button"
+                    onClick={() => setPrivacyOpen(true)}
+                    style={{ background: 'none', border: 'none', color: '#1a1a1a', cursor: 'pointer', fontSize: 13, textDecoration: 'underline', padding: 0, fontWeight: 600 }}
+                  >
+                    {t.consentLink}
+                  </button>
+                  {' *'}
+                </label>
+              </div>
+
               {formStatus === 'error' && <p style={{ color: '#e24b4a', fontSize: 14 }} role="alert">{t.errorMsg}</p>}
               <button onClick={handleSubmit} disabled={formStatus === 'loading'} style={{ background: '#1a1a1a', color: '#ffd200', border: 'none', padding: '16px', borderRadius: 100, fontSize: 16, fontWeight: 700, cursor: 'pointer', opacity: formStatus === 'loading' ? 0.7 : 1 }}>
                 {formStatus === 'loading' ? t.submitting : t.submitBtn}
