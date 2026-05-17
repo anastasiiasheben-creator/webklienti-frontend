@@ -500,7 +500,22 @@ function HomePage() {
               </div>
 
               {formStatus === 'error' && <p style={{ color: '#e24b4a', fontSize: 14 }} role="alert">{t.errorMsg}</p>}
-              <button onClick={handleSubmit} disabled={formStatus === 'loading'} style={{ background: '#1a1a1a', color: '#ffd200', border: 'none', padding: '16px', borderRadius: 100, fontSize: 16, fontWeight: 700, cursor: 'pointer', opacity: formStatus === 'loading' ? 0.7 : 1 }}>
+              <button
+                onClick={handleSubmit}
+                disabled={formStatus === 'loading' || !form.consent}
+                style={{
+                  background: form.consent ? '#1a1a1a' : '#d0cec9',
+                  color: form.consent ? '#ffd200' : '#a09d98',
+                  border: 'none',
+                  padding: '16px',
+                  borderRadius: 100,
+                  fontSize: 16,
+                  fontWeight: 700,
+                  cursor: form.consent ? 'pointer' : 'not-allowed',
+                  opacity: formStatus === 'loading' ? 0.7 : 1,
+                  transition: 'background 0.2s, color 0.2s',
+                }}
+              >
                 {formStatus === 'loading' ? t.submitting : t.submitBtn}
               </button>
             </div>
