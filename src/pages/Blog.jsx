@@ -17,6 +17,13 @@ const posts = [
     readTime: '3 min čítania',
   },
   {
+    slug: 'google-search-console-a-google-analytics',
+    title: 'Prečo sú Google Search Console a Google Analytics nevyhnutné pre moderný web?',
+    excerpt: 'Google Search Console a Google Analytics pomáhajú firmám sledovať návštevnosť, zlepšovať SEO a robiť lepšie rozhodnutia na základe dát.',
+    date: '28. júna 2025',
+    readTime: '5 min čítania',
+  },
+  {
     slug: 'kolko-stoji-webstranka-na-slovensku',
     title: 'Koľko stojí webstránka na Slovensku?',
     excerpt: 'Ceny webstránok sa pohybujú od 200 € až po tisíce eur. Ako sa v tom vyznať a za čo vlastne platíte? Úprimný prehľad trhu.',
