@@ -11,7 +11,7 @@ const posts = [
   },
   {
     slug: 'ai-na-webstranke-konkurecna-vyhoda',
-    title: 'AI na vašej webstránke: Konkurenčná výhoda, ktorú už používajú úspešné firmy',
+    title: 'AI na vašej webstránke: konkurenčná výhoda, ktorú už používajú úspešné firmy',
     excerpt:
       'AI chatboty, inteligentné vyhľadávanie a personalizovaný obsah dnes pomáhajú firmám zvyšovať konverzie, šetriť čas a zlepšovať zákaznícku podporu.',
     date: '19. mája 2026',
