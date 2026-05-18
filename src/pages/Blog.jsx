@@ -10,6 +10,14 @@ const posts = [
     readTime: '4 min čítania',
   },
   {
+    slug: 'ai-na-webstranke-konkurecna-vyhoda',
+    title: 'AI na vašej webstránke: Konkurenčná výhoda, ktorú už používajú úspešné firmy',
+    excerpt:
+      'AI chatboty, inteligentné vyhľadávanie a personalizovaný obsah dnes pomáhajú firmám zvyšovať konverzie, šetriť čas a zlepšovať zákaznícku podporu.',
+    date: '19. mája 2026',
+    readTime: '6 min čítania',
+  },
+  {
     slug: 'preco-je-seo-klucove',
     title: 'Prečo je SEO kľúčové pre úspech vášho podnikania',
     excerpt: 'Dnes už nestačí mať len peknú webovú stránku. Ak sa váš web nezobrazuje vo vyhľadávačoch, väčšina zákazníkov vás nenájde. Zistite prečo je SEO nevyhnutnosť.',
