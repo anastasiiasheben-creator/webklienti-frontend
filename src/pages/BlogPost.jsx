@@ -47,7 +47,7 @@ Váš nový web môžete mať hotový už za 5 dní.
     `,
   },
 'ai-na-webstranke-konkurecna-vyhoda': {
-    title: 'AI na vašej webstránke: Konkurenčná výhoda, ktorú už používajú úspešné firmy',
+    title: 'AI na vašej webstránke: konkurenčná výhoda, ktorú už používajú úspešné firmy',
     date: '19. mája 2026',
     readTime: '6 min čítania',
     content: `
