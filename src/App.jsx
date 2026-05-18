@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useState, lazy, Suspense } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import { FaWhatsapp, FaFacebookF } from "react-icons/fa";
 import logoImg from './assets/logo.webp';
-import Blog from './pages/Blog';
-import BlogPost from './pages/BlogPost';
+
+const Blog = lazy(() => import('./pages/Blog'));
+const BlogPost = lazy(() => import('./pages/BlogPost'));
 
 const API = 'https://webklienti-backend.onrender.com';
 
@@ -477,7 +478,6 @@ function HomePage() {
                 <textarea id="field-message" placeholder={t.messagePlaceholder} value={form.message} onChange={e => setForm(p => ({ ...p, message: e.target.value }))} rows={4} style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit', resize: 'vertical', boxSizing: 'border-box' }} />
               </div>
 
-              {/* GDPR Consent Checkbox */}
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
                 <input
                   id="field-consent"
@@ -575,8 +575,16 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/blog/:slug" element={<BlogPost />} />
+      <Route path="/blog" element={
+        <Suspense fallback={null}>
+          <Blog />
+        </Suspense>
+      } />
+      <Route path="/blog/:slug" element={
+        <Suspense fallback={null}>
+          <BlogPost />
+        </Suspense>
+      } />
     </Routes>
   );
 }
