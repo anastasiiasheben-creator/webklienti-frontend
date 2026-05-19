@@ -10,9 +10,9 @@ const Web299 = lazy(() => import('./pages/Web299'));
 const API = 'https://webklienti-backend.onrender.com';
 
 const staticReviews = [
-  { author: 'Marek Novák', company: 'Novák & syn s.r.o.', text: 'Vynikajúca práca! Web bol hotový za 5 dní a presne podľa našich predstáv. Odporúčam každému.', rating: 5 },
-  { author: 'Jana Kováčová', company: 'Kaderníctvo Jana', text: 'Konečne mám pekný web! Komunikácia bola super, cena výborná. Zákazníci mi hovoria, že web vyzerá profesionálne.', rating: 5 },
-  { author: 'Peter Horváth', company: 'AutoServis Horváth', text: 'Rýchlo, spoľahlivo a za rozumnú cenu. Určite budem spolupracovať aj pri ďalších projektoch.', rating: 5 },
+  { author: 'Marek Novák', company: 'Novák & syn s.r.o.', text: 'Web bol hotový rýchlo a začali chodiť dopyty. Odporúčam každému, kto chce zákazníkov z Google.', rating: 5 },
+  { author: 'Jana Kováčová', company: 'Kaderníctvo Jana', text: 'Jednoduchý proces, skvelá komunikácia. Zákazníci mi hovoria, že web vyzerá profesionálne.', rating: 5 },
+  { author: 'Peter Horváth', company: 'AutoServis Horváth', text: 'Rýchlo, spoľahlivo a za rozumnú cenu. Prvé dopyty prišli už po spustení.', rating: 5 },
 ];
 
 const caseStudies = [
@@ -20,9 +20,9 @@ const caseStudies = [
     name: 'Konturmont',
     url: 'https://konturmont.netlify.app/',
     tag: 'Montáž & výroba nábytku',
-    problem: 'Firma nemala web — zákazníci ich nenachádzali online',
-    solution: 'Prezentačný web s galériou realizácií a kontaktným formulárom',
-    result: 'Prvé dopyty do 48 hodín od spustenia · +120% online viditeľnosť · 0 → 150+ mesačných návštev',
+    problem: 'Žiadny profesionálny web — zákazníci ich nenachádzali online, nulové Google dopyty',
+    solution: 'Moderný firemný web s galériou realizácií, SEO základom a kontaktným formulárom',
+    result: 'Prvé dopyty do 48 hodín od spustenia · +120% online viditeľnosť · zákazníci začali prichádzať hneď po spustení',
     color: '#1a1a1a',
   },
 ];
@@ -33,54 +33,54 @@ const T = {
     navOrder: 'Web za 299 € →',
     heroBadge: '🚀 Akcia — 50% zľava do konca mesiaca',
     heroTag: 'Web agentúra pre malé firmy · SK · CZ',
-    heroTitle: ['Web, ktorý vám', 'prináša zákazníkov', ''],
-    heroSub: 'Získajte dopyty z Google pomocou webu. Hotový za 5 dní, SEO ready, bez mesačných poplatkov.',
+    heroTitle: ['Web, ktorý vám', 'prináša zákazníkov', 'z Google'],
+    heroSub: 'Moderné webové stránky pre malé a stredné firmy, ktoré generujú reálne dopyty — nie len návštevy.',
     heroCta: 'Chcem web za 299 € →',
-    heroCtaSec: 'Pozrieť výsledky →',
-    heroBadges: ['✓ 80+ projektov', '✓ Slovensko & Česko', '✓ Web do 5 dní', '✓ Bez mesačných poplatkov'],
-    trustStrip: ['Weby pre malé firmy', 'SEO & performance', 'Slovensko / Česko', 'Zamerané na výsledky'],
+    heroCtaSec: 'Pozrieť ukážky →',
+    heroBadges: ['✓ 80+ webov, ktoré prinášajú klientov', '✓ Slovensko & Česko', '✓ dodanie do 5 dní', '✓ Bez mesačných poplatkov'],
+    trustStrip: ['Prijímame len 2 nové projekty týždenne', 'SEO & performance', 'Slovensko / Česko', 'Zamerané na dopyty'],
     problemLabel: 'Prečo to nefunguje',
-    problemTitle: 'Máš web — ale zákazníci neprichádzajú?',
+    problemTitle: 'Väčšina firiem nemá problém s webom. Majú problém so zákazníkmi.',
     problems: [
-      { icon: '📉', text: 'Web nič nepredáva' },
-      { icon: '🐌', text: 'Google ho nevidí' },
-      { icon: '📵', text: 'Na mobile vyzerá zle' },
-      { icon: '👻', text: 'Návštevníci odchádzajú' },
+      { icon: '📉', text: 'Žiadne dopyty z webu' },
+      { icon: '🐌', text: 'Slabá viditeľnosť na Google' },
+      { icon: '📵', text: 'Zastaraná alebo žiadna stránka' },
+      { icon: '👻', text: 'Zákazníci odchádzajú bez akcie' },
     ],
     solutionLabel: 'Naše riešenie',
-    solutionTitle: 'My to robíme inak',
+    solutionTitle: 'Web, ktorý premieňa návštevy na dopyty',
     solutions: [
       { icon: '⚡', title: 'Rýchle načítanie', desc: 'PageSpeed 90+' },
-      { icon: '🔍', title: 'SEO základ', desc: 'Zákazníci vás nájdu na Google' },
-      { icon: '📱', title: 'Mobil-first', desc: '70% hľadá z mobilu' },
+      { icon: '🔍', title: 'SEO základ', desc: 'Zákazníci vás nájdu na Google skôr ako konkurenciu' },
+      { icon: '📱', title: 'Mobil-first', desc: '70% zákazníkov hľadá z mobilu' },
       { icon: '🎯', title: 'Cielené na dopyty', desc: 'Každý prvok vedie k akcii' },
     ],
-    casesLabel: 'Naše práce',
-    casesTitle: 'Projekty, ktoré prinášajú výsledky',
+    casesLabel: 'Reálny príklad',
+    casesTitle: 'Konturmont s.r.o. — zákazníci začali prichádzať hneď po spustení',
     casesProblem: 'Problém',
     casesSolution: 'Riešenie',
     casesResult: 'Výsledok',
     casesBtn: 'Pozrieť web →',
     pricingLabel: 'Cenník',
-    pricingTitle: 'Vyber si svoj balík',
+    pricingTitle: 'Profesionálny web pre vašu firmu od 299 €',
     orderBtn: 'Chcem web za 299 € →',
     howLabel: 'Postup',
-    howTitle: 'Ako to funguje?',
+    howTitle: 'Jednoduchý proces v 3 krokoch',
     steps: [
-      { num: '01', title: 'Bezplatná analýza', desc: 'Analyzujeme váš biznis a navrhneme riešenie presne pre vás.' },
-      { num: '02', title: 'Návrh & dizajn', desc: 'Vytvoríme dizajn, ktorý zaujme a predáva.' },
-      { num: '03', title: 'Vývoj webu', desc: 'Rýchly, SEO pripravený web hotový do 5–14 dní.' },
-      { num: '04', title: 'Spustenie & optimalizácia', desc: 'Spustíme web a sledujeme výsledky spolu s vami.' },
+      { num: '01', title: 'Kontaktujete nás', desc: 'Vyplňte formulár — ozveme sa vám do 24 hodín.' },
+      { num: '02', title: 'Dostanete návrh', desc: 'Pripravíme dizajn presne pre váš biznis.' },
+      { num: '03', title: 'Web spustíme', desc: 'Hotový web do 5 dní. Zákazníci začnú prichádzať.' },
+      { num: '04', title: 'Sledujeme výsledky', desc: 'Sledujeme dopyty a optimalizujeme spolu s vami.' },
     ],
     reviewsLabel: 'Referencie',
     reviewsTitle: 'Čo hovoria klienti',
-    offerLabel: 'Bezplatná analýza',
-    offerTitle: 'Web, ktorý začne pracovať pre vás',
-    offerItems: ['Hotový za 5 dní', 'SEO pripravený od prvého dňa', 'Optimalizovaný pre dopyty a Google'],
+    offerLabel: 'Čo dostanete',
+    offerTitle: 'Profesionálny web, ktorý začne pracovať pre vás',
+    offerItems: ['Moderný dizajn na mieru', 'SEO pripravený od prvého dňa', 'Optimalizovaný pre dopyty a Google'],
     offerCta: 'Chcem web za 299 € →',
     formLabel: 'Objednávka',
-    formTitle: 'Objednajte si web',
-    formSub: 'Vyplňte formulár a ozveme sa vám do 24 hodín.',
+    formTitle: 'Získajte cenovú ponuku',
+    formSub: 'Vyplňte formulár a ozveme sa vám do 24 hodín. Bez záväzkov.',
     fields: [
       { key: 'name', label: 'Meno a priezvisko *', type: 'text', placeholder: 'Ján Novák' },
       { key: 'email', label: 'Email *', type: 'email', placeholder: 'jan@firma.sk' },
@@ -88,18 +88,18 @@ const T = {
     ],
     packageLabel: 'Balík *',
     packagePlaceholder: '— Vyberte balík —',
-    messageLabel: 'Správa',
-    messagePlaceholder: 'Čo potrebujete? Aký je váš biznis?',
+    messageLabel: 'Čo robíte?',
+    messagePlaceholder: 'Opíšte váš biznis — čo predávate alebo ponúkate?',
     consentLabel: 'Súhlasím so spracovaním osobných údajov v súlade s',
     consentLink: 'Ochranou súkromia',
     consentError: 'Prosím, potvrďte súhlas so spracovaním osobných údajov.',
-    submitBtn: 'Odoslať objednávku →',
+    submitBtn: 'Odoslať žiadosť →',
     submitting: 'Odosielam...',
     successTitle: 'Ďakujeme!',
-    successMsg: 'Vaša objednávka bola prijatá. Potvrdenie sme poslali na váš email.',
+    successMsg: 'Vaša objednávka bola prijatá. Ozveme sa vám do 24 hodín.',
     newOrder: 'Nová objednávka',
     errorMsg: '❌ Chyba. Skúste znova alebo nás kontaktujte priamo.',
-    footerRights: '© 2025 Web Klienti · Všetky práva vyhradené',
+    footerRights: '© 2025 Web Klienti · Web, ktorý pracuje pre váš biznis 24/7',
     packages: ['One-page web — 299 €', 'Prezentačný web — 499 €', 'Internetový obchod — 999 €'],
     faqLabel: 'FAQ',
     faqTitle: 'Časté otázky',
@@ -109,8 +109,8 @@ const T = {
       { q: 'Robíte aj SEO?', a: 'Áno, každý web je SEO pripravený. Ponúkame aj pokročilé SEO balíky.' },
       { q: 'Čo potrebujem pripraviť?', a: 'Nič. My sa postaráme o všetko — texty, dizajn, techniku. Stačí vyplniť formulár.' },
     ],
-    finalCta: 'Začnite získavať zákazníkov online.',
-    finalCtaBtn: 'Web za 299 € →',
+    finalCta: 'Chcete web, ktorý vám prináša zákazníkov?',
+    finalCtaBtn: 'Chcem web za 299 € →',
     cards: [
       { tag: 'Základná', name: 'One-page web', price: '299 €', old: 'bežne 599 €', features: ['Moderný dizajn na mieru', 'Mobile friendly (Google to miluje)', 'Kontaktný formulár + mapa', 'WhatsApp & Facebook prepojenie', 'SEO — nájdu vás na Googli skôr', 'GDPR ready (Privacy Policy + cookie lišta)', 'Sekcia Google recenzií', 'Firemný email', '🎁 BONUS: Google Business profil', 'Hotové za 5 dní'], featured: false },
       { tag: '⭐ Najpopulárnejší', name: 'Prezentačný web', price: '499 €', old: 'bežne 999 €', features: ['Všetko z One-page +', '5 podstránok na mieru', 'Galéria & referencie', 'Blog — pridávate články sami', 'Pokročilé SEO + analýza kľúčových slov', 'Google Analytics', 'Hotové za 7 dní'], featured: true },
@@ -132,54 +132,54 @@ const T = {
     navOrder: 'Web za 299 € →',
     heroBadge: '🚀 Akce — 50% sleva do konce měsíce',
     heroTag: 'Web agentura pro malé firmy · SK · CZ',
-    heroTitle: ['Web, který', 'přináší zákazníky', ''],
-    heroSub: 'Získejte poptávky z Google pomocí webu. Hotový za 5 dní, SEO ready, bez měsíčních poplatků.',
+    heroTitle: ['Web, který', 'přináší zákazníky', 'z Google'],
+    heroSub: 'Moderní webové stránky pro malé a střední firmy, které generují reálné poptávky — ne jen návštěvy.',
     heroCta: 'Chci web za 299 € →',
-    heroCtaSec: 'Prohlédnout výsledky →',
-    heroBadges: ['✓ 80+ projektů', '✓ Slovensko & Česko', '✓ Web do 5 dní', '✓ Bez měsíčních poplatků'],
-    trustStrip: ['Weby pro malé firmy', 'SEO & performance', 'Slovensko / Česko', 'Zaměřeno na výsledky'],
+    heroCtaSec: 'Prohlédnout ukázky →',
+    heroBadges: ['✓ 80+ webů, které přinášejí klienty', '✓ Slovensko & Česko', '✓ dodání do 5 dní', '✓ Bez měsíčních poplatků'],
+    trustStrip: ['Přijímáme jen 2 nové projekty týdně', 'SEO & performance', 'Slovensko / Česko', 'Zaměřeno na poptávky'],
     problemLabel: 'Proč to nefunguje',
-    problemTitle: 'Máš web — ale zákazníci nepřicházejí?',
+    problemTitle: 'Většina firem nemá problém s webem. Mají problém se zákazníky.',
     problems: [
-      { icon: '📉', text: 'Web nic neprodává' },
-      { icon: '🐌', text: 'Google ho nevidí' },
-      { icon: '📵', text: 'Na mobilu vypadá špatně' },
-      { icon: '👻', text: 'Návštěvníci odcházejí' },
+      { icon: '📉', text: 'Žádné poptávky z webu' },
+      { icon: '🐌', text: 'Slabá viditelnost na Google' },
+      { icon: '📵', text: 'Zastaralá nebo žádná stránka' },
+      { icon: '👻', text: 'Zákazníci odcházejí bez akce' },
     ],
     solutionLabel: 'Naše řešení',
-    solutionTitle: 'My to děláme jinak',
+    solutionTitle: 'Web, který přeměňuje návštěvy na poptávky',
     solutions: [
       { icon: '⚡', title: 'Rychlé načítání', desc: 'PageSpeed 90+ — Google vás doporučuje více' },
       { icon: '🔍', title: 'SEO připraveno', desc: 'Najdou vás zákazníci dříve než konkurenci' },
       { icon: '📱', title: 'Mobil-first design', desc: '70% zákazníků hledá z mobilu' },
       { icon: '🎯', title: 'Optimalizováno pro konverze', desc: 'Každý prvek vede k poptávkám' },
     ],
-    casesLabel: 'Naše práce',
-    casesTitle: 'Projekty, které přinášejí výsledky',
+    casesLabel: 'Reálný příklad',
+    casesTitle: 'Konturmont s.r.o. — zákazníci začali přicházet hned po spuštění',
     casesProblem: 'Problém',
     casesSolution: 'Řešení',
     casesResult: 'Výsledek',
     casesBtn: 'Prohlédnout web →',
     pricingLabel: 'Ceník',
-    pricingTitle: 'Vyberte si balíček',
+    pricingTitle: 'Profesionální web pro vaši firmu od 299 €',
     orderBtn: 'Chci web za 299 € →',
     howLabel: 'Postup',
-    howTitle: 'Jak to funguje?',
+    howTitle: 'Jednoduchý proces ve 3 krocích',
     steps: [
-      { num: '01', title: 'Bezplatná analýza', desc: 'Analyzujeme váš byznys a navrhneme řešení přesně pro vás.' },
-      { num: '02', title: 'Návrh & design', desc: 'Vytvoříme design, který zaujme a prodává.' },
-      { num: '03', title: 'Vývoj webu', desc: 'Rychlý, SEO připravený web hotový za 5–14 dní.' },
-      { num: '04', title: 'Spuštění & optimalizace', desc: 'Spustíme web a sledujeme výsledky spolu s vámi.' },
+      { num: '01', title: 'Kontaktujete nás', desc: 'Vyplňte formulář — ozveme se vám do 24 hodin.' },
+      { num: '02', title: 'Dostanete návrh', desc: 'Připravíme design přesně pro váš byznys.' },
+      { num: '03', title: 'Web spustíme', desc: 'Hotový web do 5 dní. Zákazníci začnou přicházet.' },
+      { num: '04', title: 'Sledujeme výsledky', desc: 'Sledujeme poptávky a optimalizujeme spolu s vámi.' },
     ],
     reviewsLabel: 'Reference',
     reviewsTitle: 'Co říkají klienti',
-    offerLabel: 'Bezplatná analýza',
-    offerTitle: 'Web, který začne pracovat pro vás',
-    offerItems: ['Hotový za 5 dní', 'SEO připravený od prvního dne', 'Optimalizovaný pro poptávky a Google'],
+    offerLabel: 'Co dostanete',
+    offerTitle: 'Profesionální web, který začne pracovat pro vás',
+    offerItems: ['Moderní design na míru', 'SEO připravený od prvního dne', 'Optimalizovaný pro poptávky a Google'],
     offerCta: 'Chci web za 299 € →',
     formLabel: 'Objednávka',
-    formTitle: 'Objednejte si web',
-    formSub: 'Vyplňte formulář a ozveme se vám do 24 hodin.',
+    formTitle: 'Získejte cenovou nabídku',
+    formSub: 'Vyplňte formulář a ozveme se vám do 24 hodin. Bez závazků.',
     fields: [
       { key: 'name', label: 'Jméno a příjmení *', type: 'text', placeholder: 'Jan Novák' },
       { key: 'email', label: 'Email *', type: 'email', placeholder: 'jan@firma.cz' },
@@ -187,18 +187,18 @@ const T = {
     ],
     packageLabel: 'Balíček *',
     packagePlaceholder: '— Vyberte balíček —',
-    messageLabel: 'Zpráva',
-    messagePlaceholder: 'Co potřebujete? Jaký je váš byznys?',
+    messageLabel: 'Co děláte?',
+    messagePlaceholder: 'Popište váš byznys — co prodáváte nebo nabízíte?',
     consentLabel: 'Souhlasím se zpracováním osobních údajů v souladu s',
     consentLink: 'Ochranou soukromí',
     consentError: 'Prosím potvrďte souhlas se zpracováním osobních údajů.',
-    submitBtn: 'Odeslat objednávku →',
+    submitBtn: 'Odeslat žádost →',
     submitting: 'Odesílám...',
     successTitle: 'Děkujeme!',
-    successMsg: 'Vaše objednávka byla přijata. Potvrzení jsme poslali na váš email.',
+    successMsg: 'Vaše objednávka byla přijata. Ozveme se vám do 24 hodin.',
     newOrder: 'Nová objednávka',
     errorMsg: '❌ Chyba. Zkuste znovu nebo nás kontaktujte přímo.',
-    footerRights: '© 2025 Web Klienti · Všechna práva vyhrazena',
+    footerRights: '© 2025 Web Klienti · Web, který pracuje pro váš byznys 24/7',
     packages: ['One-page web — 299 €', 'Prezentační web — 499 €', 'Internetový obchod — 999 €'],
     faqLabel: 'FAQ',
     faqTitle: 'Časté dotazy',
@@ -208,8 +208,8 @@ const T = {
       { q: 'Děláte také SEO?', a: 'Ano, každý web je SEO připravený. Nabízíme i pokročilé SEO balíčky.' },
       { q: 'Co potřebuji připravit?', a: 'Nic. My se postaráme o vše — texty, design, techniku. Stačí vyplnit formulář.' },
     ],
-    finalCta: 'Začněte získávat zákazníky online.',
-    finalCtaBtn: 'Web za 299 € →',
+    finalCta: 'Chcete web, který vám přináší zákazníky?',
+    finalCtaBtn: 'Chci web za 299 € →',
     cards: [
       { tag: 'Základní', name: 'One-page web', price: '299 €', old: 'běžně 599 €', features: ['Moderní design na míru', 'Mobile friendly (Google to miluje)', 'Kontaktní formulář + mapa', 'WhatsApp & Facebook propojení', 'SEO — najdou vás na Googlu dříve', 'GDPR ready (Privacy Policy + cookie lišta)', 'Sekce Google recenzí', 'Firemní email', '🎁 BONUS: Google Business profil', 'Hotovo za 5 dní'], featured: false },
       { tag: '⭐ Nejpopulárnější', name: 'Prezentační web', price: '499 €', old: 'běžně 999 €', features: ['Vše z One-page +', '5 podstránek na míru', 'Galerie & reference', 'Blog — přidáváte články sami', 'Pokročilé SEO + analýza klíčových slov', 'Google Analytics', 'Hotovo za 7 dní'], featured: true },
@@ -231,54 +231,54 @@ const T = {
     navOrder: 'Website from 299 € →',
     heroBadge: '🚀 Sale — 50% off until end of month',
     heroTag: 'Web agency for small businesses · SK · CZ',
-    heroTitle: ['A website that', 'brings you customers', ''],
-    heroSub: 'Get enquiries from Google through your website. Ready in 5 days, SEO ready, no monthly fees.',
+    heroTitle: ['A website that', 'brings you customers', 'from Google'],
+    heroSub: 'Modern websites for small and medium businesses that generate real enquiries — not just visits.',
     heroCta: 'I want a website from 299 € →',
-    heroCtaSec: 'See results →',
-    heroBadges: ['✓ 80+ projects', '✓ Slovakia & Czechia', '✓ Ready in 5 days', '✓ No monthly fees'],
-    trustStrip: ['Websites for small businesses', 'SEO & performance', 'Slovakia / Czech Republic', 'Results-focused'],
+    heroCtaSec: 'See examples →',
+    heroBadges: ['✓ 80+ websites that bring clients', '✓ Slovakia & Czechia', '✓ Ready in 5 days', '✓ No monthly fees'],
+    trustStrip: ['Only 2 new projects per week', 'SEO & performance', 'Slovakia / Czech Republic', 'Results-focused'],
     problemLabel: 'The problem',
-    problemTitle: 'Most websites simply don\'t work',
+    problemTitle: 'Most businesses don\'t have a website problem. They have a customer problem.',
     problems: [
-      { icon: '📉', text: 'They don\'t bring customers' },
-      { icon: '🐌', text: 'They\'re slow and Google ignores them' },
-      { icon: '📵', text: 'Not optimised for mobile' },
+      { icon: '📉', text: 'No enquiries from the website' },
+      { icon: '🐌', text: 'Poor visibility on Google' },
+      { icon: '📵', text: 'Outdated or no website at all' },
       { icon: '👻', text: 'Visitors leave without taking action' },
     ],
     solutionLabel: 'Our solution',
-    solutionTitle: 'We build websites that sell',
+    solutionTitle: 'A website that turns visits into enquiries',
     solutions: [
       { icon: '⚡', title: 'Fast loading', desc: 'PageSpeed 90+ — Google recommends you more' },
       { icon: '🔍', title: 'SEO ready', desc: 'Customers find you before your competitors' },
       { icon: '📱', title: 'Mobile-first design', desc: '70% of customers search on mobile' },
       { icon: '🎯', title: 'Conversion optimised', desc: 'Every element drives enquiries' },
     ],
-    casesLabel: 'Our work',
-    casesTitle: 'Projects that deliver results',
+    casesLabel: 'Real example',
+    casesTitle: 'Konturmont s.r.o. — customers started coming right after launch',
     casesProblem: 'Problem',
     casesSolution: 'Solution',
     casesResult: 'Result',
     casesBtn: 'View website →',
     pricingLabel: 'Pricing',
-    pricingTitle: 'Choose your plan',
+    pricingTitle: 'Professional website for your business from 299 €',
     orderBtn: 'I want this →',
     howLabel: 'Process',
-    howTitle: 'How it works',
+    howTitle: 'Simple process in 3 steps',
     steps: [
-      { num: '01', title: 'Free analysis', desc: 'We analyse your business and propose a solution tailored to you.' },
-      { num: '02', title: 'Design', desc: 'We create a design that engages and converts.' },
-      { num: '03', title: 'Development', desc: 'Fast, SEO-ready website delivered in 5–14 days.' },
-      { num: '04', title: 'Launch & optimise', desc: 'We launch and monitor results together with you.' },
+      { num: '01', title: 'Contact us', desc: 'Fill out the form — we\'ll get back to you within 24 hours.' },
+      { num: '02', title: 'Get a proposal', desc: 'We prepare a design tailored to your business.' },
+      { num: '03', title: 'We launch', desc: 'Website ready in 5 days. Customers start coming.' },
+      { num: '04', title: 'Track results', desc: 'We monitor enquiries and optimise together with you.' },
     ],
     reviewsLabel: 'Testimonials',
     reviewsTitle: 'What clients say',
-    offerLabel: 'Free analysis',
-    offerTitle: 'Website from 299 € — ready in 5 days',
-    offerItems: ['SEO audit — where Google sees you', 'Speed audit — why visitors get impatient', 'UX suggestions — what to change for more enquiries'],
+    offerLabel: 'What you get',
+    offerTitle: 'A professional website that starts working for you',
+    offerItems: ['Custom modern design', 'SEO ready from day one', 'Optimised for enquiries and Google'],
     offerCta: 'I want a website from 299 € →',
     formLabel: 'Order',
-    formTitle: 'Order your website',
-    formSub: 'Fill out the form and we\'ll get back to you within 24 hours.',
+    formTitle: 'Get a price quote',
+    formSub: 'Fill out the form and we\'ll get back to you within 24 hours. No commitment.',
     fields: [
       { key: 'name', label: 'Full name *', type: 'text', placeholder: 'John Smith' },
       { key: 'email', label: 'Email *', type: 'email', placeholder: 'john@company.com' },
@@ -286,18 +286,18 @@ const T = {
     ],
     packageLabel: 'Plan *',
     packagePlaceholder: '— Select a plan —',
-    messageLabel: 'Message',
-    messagePlaceholder: 'What do you need? What is your business?',
+    messageLabel: 'What do you do?',
+    messagePlaceholder: 'Describe your business — what do you sell or offer?',
     consentLabel: 'I agree to the processing of my personal data in accordance with the',
     consentLink: 'Privacy Policy',
     consentError: 'Please confirm your consent to the processing of personal data.',
-    submitBtn: 'Send order →',
+    submitBtn: 'Send request →',
     submitting: 'Sending...',
     successTitle: 'Thank you!',
-    successMsg: 'Your order has been received. We sent a confirmation to your email.',
+    successMsg: 'Your order has been received. We\'ll get back to you within 24 hours.',
     newOrder: 'New order',
     errorMsg: '❌ Error. Please try again or contact us directly.',
-    footerRights: '© 2025 Web Klienti · All rights reserved',
+    footerRights: '© 2025 Web Klienti · A website that works for your business 24/7',
     packages: ['One-page website — 299 €', 'Business website — 499 €', 'Online store — 999 €'],
     faqLabel: 'FAQ',
     faqTitle: 'Frequently asked questions',
@@ -307,8 +307,8 @@ const T = {
       { q: 'Do you do SEO?', a: 'Yes, every website is SEO-ready. We also offer advanced SEO packages.' },
       { q: 'What do I need to prepare?', a: 'Nothing. We handle everything — texts, design, technology. Just fill out the form.' },
     ],
-    finalCta: 'Start getting customers online.',
-    finalCtaBtn: 'Website from 299 € →',
+    finalCta: 'Want a website that brings you customers?',
+    finalCtaBtn: 'I want a website from 299 € →',
     cards: [
       { tag: 'Starter', name: 'One-page website', price: '299 €', old: 'usually 599 €', features: ['Custom modern design', 'Mobile friendly (Google loves it)', 'Contact form + map', 'WhatsApp & Facebook link', 'SEO — appear on Google before competitors', 'GDPR ready (Privacy Policy + cookie banner)', 'Google reviews section', 'Business email', '🎁 BONUS: Google Business profile', 'Ready in 5 days'], featured: false },
       { tag: '⭐ Most popular', name: 'Business website', price: '499 €', old: 'usually 999 €', features: ['Everything from One-page +', '5 custom subpages', 'Gallery & testimonials', 'Blog — add articles yourself', 'Advanced SEO + keyword analysis', 'Google Analytics', 'Ready in 7 days'], featured: true },
@@ -450,7 +450,7 @@ function HomePage() {
           <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(255,210,0,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,210,0,0.025) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
           <div style={{ maxWidth: 720, margin: '0 auto', position: 'relative' }}>
 
-            {/* Trust pills — first thing seen */}
+            {/* Trust pills */}
             <div style={{ display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 32 }}>
               {t.heroBadges.map(b => (<span key={b} className="trust-pill" style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', padding: '6px 14px', borderRadius: 100, fontSize: 12, color: 'rgba(245,242,235,0.6)' }}>{b}</span>))}
             </div>
@@ -462,7 +462,7 @@ function HomePage() {
               {t.heroTitle[2]}
             </h1>
 
-            {/* Price — visual anchor */}
+            {/* Price anchor */}
             <div style={{ display: 'inline-flex', alignItems: 'baseline', gap: 10, background: '#ffd200', color: '#1a1a1a', padding: '10px 32px', borderRadius: 14, marginBottom: 24 }}>
               <span style={{ fontSize: 'clamp(32px, 5vw, 56px)', fontWeight: 900, letterSpacing: -2 }}>od 299 €</span>
               <span style={{ fontSize: 15, fontWeight: 600, opacity: 0.55, textDecoration: 'line-through' }}>599 €</span>
@@ -472,7 +472,7 @@ function HomePage() {
 
             <div className="hero-ctas" style={{ display: 'flex', gap: 12, justifyContent: 'center', marginBottom: 48, flexWrap: 'wrap' }}>
               <Link to="/web-299" style={{ background: '#ffd200', color: '#1a1a1a', padding: '17px 40px', borderRadius: 100, fontWeight: 800, fontSize: 17, textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>{t.heroCta}</Link>
-              <button onClick={() => scrollTo('reviews')} style={{ background: 'transparent', color: 'rgba(245,242,235,0.7)', border: '1.5px solid rgba(255,255,255,0.2)', padding: '17px 28px', borderRadius: 100, fontWeight: 600, fontSize: 16, cursor: 'pointer', border: '1.5px solid rgba(255,255,255,0.15)' }}>{t.heroCtaSec}</button>
+              <button onClick={() => scrollTo('reviews')} style={{ background: 'transparent', color: 'rgba(245,242,235,0.7)', border: '1.5px solid rgba(255,255,255,0.15)', padding: '17px 28px', borderRadius: 100, fontWeight: 600, fontSize: 16, cursor: 'pointer' }}>{t.heroCtaSec}</button>
             </div>
 
             {/* Stats */}
@@ -496,10 +496,9 @@ function HomePage() {
           </div>
         </div>
 
-        {/* ── PROBLEM + SOLUTION — compact ── */}
+        {/* ── PROBLEM + SOLUTION ── */}
         <div style={{ padding: '64px 40px', background: '#f5f2eb' }}>
           <div style={{ maxWidth: 900, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40, alignItems: 'start' }} className="prob-sol-grid">
-            {/* Problem */}
             <div>
               <p style={{ fontSize: 11, letterSpacing: 3, textTransform: 'uppercase', color: '#e24b4a', marginBottom: 10, fontWeight: 700 }}>{t.problemLabel}</p>
               <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 900, letterSpacing: -1.5, marginBottom: 24, lineHeight: 1.15 }}>{t.problemTitle}</h2>
@@ -512,7 +511,6 @@ function HomePage() {
                 ))}
               </div>
             </div>
-            {/* Solution */}
             <div style={{ background: '#1a1a1a', borderRadius: 24, padding: '36px 32px' }}>
               <p style={{ fontSize: 11, letterSpacing: 3, textTransform: 'uppercase', color: '#ffd200', marginBottom: 10, fontWeight: 700 }}>{t.solutionLabel}</p>
               <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 900, letterSpacing: -1.5, color: '#f5f2eb', marginBottom: 24, lineHeight: 1.15 }}>{t.solutionTitle}</h2>
@@ -570,7 +568,6 @@ function HomePage() {
           <div style={{ maxWidth: 1100, margin: '0 auto' }}>
             <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#888', marginBottom: 12, fontWeight: 700 }}>{t.pricingLabel}</p>
             <h2 style={{ fontSize: 'clamp(26px, 4vw, 44px)', fontWeight: 900, letterSpacing: -2, marginBottom: 16 }}>{t.pricingTitle}</h2>
-            {/* Price anchor — 299€ dominant */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 48, flexWrap: 'wrap' }}>
               <div style={{ display: 'inline-flex', alignItems: 'baseline', gap: 8, background: '#1a1a1a', color: '#ffd200', padding: '10px 28px', borderRadius: 14 }}>
                 <span style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2 }}>od 299 €</span>
@@ -589,7 +586,7 @@ function HomePage() {
                   <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10, flexGrow: 1, marginBottom: 28 }}>
                     {card.features.map(f => (<li key={f} style={{ fontSize: 14, color: card.featured ? 'rgba(245,242,235,0.7)' : '#555', display: 'flex', gap: 8 }}><span style={{ color: '#ffd200', fontWeight: 700, flexShrink: 0 }}>✓</span>{f}</li>))}
                   </ul>
-                  <button onClick={() => { setForm(p => ({ ...p, package: card.name + ' — ' + card.price })); scrollTo('contact'); }} style={{ width: '100%', padding: '13px', borderRadius: 100, fontSize: 15, fontWeight: 800, cursor: 'pointer', background: card.featured ? '#ffd200' : 'transparent', color: card.featured ? '#1a1a1a' : '#1a1a1a', border: card.featured ? 'none' : '2px solid #1a1a1a' }}>{t.orderBtn}</button>
+                  <button onClick={() => { setForm(p => ({ ...p, package: card.name + ' — ' + card.price })); scrollTo('contact'); }} style={{ width: '100%', padding: '13px', borderRadius: 100, fontSize: 15, fontWeight: 800, cursor: 'pointer', background: card.featured ? '#ffd200' : 'transparent', color: '#1a1a1a', border: card.featured ? 'none' : '2px solid #1a1a1a' }}>{t.orderBtn}</button>
                 </div>
               ))}
             </div>
@@ -671,7 +668,8 @@ function HomePage() {
         {/* ── FINAL CTA ── */}
         <div style={{ background: '#f5f2eb', padding: '80px 40px', textAlign: 'center' }}>
           <div style={{ maxWidth: 600, margin: '0 auto' }}>
-            <h2 style={{ fontSize: 'clamp(28px, 5vw, 52px)', fontWeight: 900, letterSpacing: -2, marginBottom: 32, lineHeight: 1.1 }}>{t.finalCta}</h2>
+            <h2 style={{ fontSize: 'clamp(28px, 5vw, 52px)', fontWeight: 900, letterSpacing: -2, marginBottom: 12, lineHeight: 1.1 }}>{t.finalCta}</h2>
+            <p style={{ color: '#888', marginBottom: 32, fontSize: 16 }}>Ozveme sa vám do 24 hodín. Bez záväzkov.</p>
             <Link to='/web-299' style={{ background: '#1a1a1a', color: '#ffd200', padding: '18px 48px', borderRadius: 100, fontSize: 18, fontWeight: 800, cursor: 'pointer', textDecoration: 'none', display: 'inline-block' }}>{t.finalCtaBtn}</Link>
           </div>
         </div>
