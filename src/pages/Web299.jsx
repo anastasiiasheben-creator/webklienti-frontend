@@ -59,8 +59,8 @@ export default function Web299() {
 
       {/* 2. HERO — silnejší headline + trust line pod ním */}
       <div style={{ padding: '52px 24px 56px', textAlign: 'center', maxWidth: 700, margin: '0 auto' }}>
-        <h1 style={{ fontSize: 'clamp(32px, 6vw, 62px)', fontWeight: 900, lineHeight: 1.08, letterSpacing: -2.5, marginBottom: 20 }}>
-          Získajte moderný web,<br />ktorý vám <span style={{ color: '#ffd200' }}>prinesie zákazníkov</span>
+        <h1 style={{ fontSize: 'clamp(30px, 6vw, 60px)', fontWeight: 900, lineHeight: 1.08, letterSpacing: -2.5, marginBottom: 20 }}>
+          Web stránka, ktorá vám<br /><span style={{ color: '#ffd200' }}>prinesie zákazníkov</span>
         </h1>
 
         <div style={{ display: 'inline-flex', alignItems: 'baseline', gap: 8, background: '#ffd200', color: '#1a1a1a', padding: '10px 28px', borderRadius: 14, marginBottom: 20 }}>
@@ -195,6 +195,48 @@ export default function Web299() {
                 <p style={{ fontWeight: 700, color: '#f5f2eb', fontSize: 13 }}>{r.author}</p>
                 <p style={{ fontSize: 12, color: '#444' }}>{r.company}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* TRUST BLOCK — Frame 6 */}
+      <div style={{ background: '#1a1a1a', padding: '52px 24px' }}>
+        <div style={{ maxWidth: 700, margin: '0 auto' }}>
+          <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 32 }}>Prečo nám firmy dôverujú</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 12 }}>
+            {[
+              { icon: '⚡', title: 'Rýchla komunikácia', desc: 'Odpoveď do 24 hodín' },
+              { icon: '💰', title: 'Férová cena', desc: 'Konečná cena, žiadne skryté poplatky' },
+              { icon: '📈', title: 'Reálne výsledky', desc: 'Weby, ktoré generujú dopyty' },
+              { icon: '🏆', title: '80+ projektov', desc: 'Overené na SK & CZ trhu' },
+            ].map(item => (
+              <div key={item.title} style={{ background: '#0f0f0f', border: '1px solid rgba(255,255,255,0.06)', borderRadius: 14, padding: '20px 18px', display: 'flex', gap: 14, alignItems: 'flex-start' }}>
+                <span style={{ fontSize: 22, flexShrink: 0 }}>{item.icon}</span>
+                <div>
+                  <p style={{ fontSize: 14, fontWeight: 700, color: '#f5f2eb', marginBottom: 3 }}>{item.title}</p>
+                  <p style={{ fontSize: 12, color: 'rgba(245,242,235,0.35)' }}>{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* FINAL CTA — Frame 8 */}
+      <div style={{ background: '#ffd200', padding: '52px 24px', textAlign: 'center' }}>
+        <div style={{ maxWidth: 560, margin: '0 auto' }}>
+          <h2 style={{ fontSize: 'clamp(22px, 4vw, 38px)', fontWeight: 900, letterSpacing: -1.5, color: '#1a1a1a', marginBottom: 24, lineHeight: 1.1 }}>
+            Chcete web, ktorý funguje?
+          </h2>
+          <button className="btn-yellow" onClick={scrollToForm} style={{ background: '#1a1a1a', color: '#ffd200', border: 'none', padding: '18px 48px', borderRadius: 100, fontSize: 18, fontWeight: 800, cursor: 'pointer', marginBottom: 16 }}>
+            Chcem web za 299 € →
+          </button>
+          <div style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap', marginTop: 12 }}>
+            {['Odpoveď do 24 hodín', 'Bez záväzkov', 'Hotový za 5 dní'].map(t => (
+              <span key={t} style={{ fontSize: 13, color: 'rgba(26,26,26,0.6)', display: 'flex', alignItems: 'center', gap: 4 }}>
+                <span>✓</span> {t}
+              </span>
             ))}
           </div>
         </div>
