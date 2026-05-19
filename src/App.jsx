@@ -17,8 +17,8 @@ const staticReviews = [
 
 const caseStudies = [
   {
-    name: 'Konturmont',
-    url: 'https://konturmont.netlify.app/',
+    name: 'Montwell',
+    url: 'https://montwell.sk/',
     tag: 'Montáž & výroba nábytku',
     problem: 'Žiadny profesionálny web — zákazníci ich nenachádzali online, nulové Google dopyty',
     solution: 'Moderný firemný web s galériou realizácií, SEO základom a kontaktným formulárom',
@@ -56,7 +56,7 @@ const T = {
       { icon: '🎯', title: 'Cielené na dopyty', desc: 'Každý prvok vedie k akcii' },
     ],
     casesLabel: 'Reálny príklad',
-    casesTitle: 'Konturmont s.r.o. — zákazníci začali prichádzať hneď po spustení',
+    casesTitle: 'Montwell — zákazníci začali prichádzať hneď po spustení',
     casesProblem: 'Problém',
     casesSolution: 'Riešenie',
     casesResult: 'Výsledok',
@@ -155,7 +155,7 @@ const T = {
       { icon: '🎯', title: 'Optimalizováno pro konverze', desc: 'Každý prvek vede k poptávkám' },
     ],
     casesLabel: 'Reálný příklad',
-    casesTitle: 'Konturmont s.r.o. — zákazníci začali přicházet hned po spuštění',
+    casesTitle: 'Montwell — zákazníci začali přicházet hned po spuštění',
     casesProblem: 'Problém',
     casesSolution: 'Řešení',
     casesResult: 'Výsledek',
@@ -254,7 +254,7 @@ const T = {
       { icon: '🎯', title: 'Conversion optimised', desc: 'Every element drives enquiries' },
     ],
     casesLabel: 'Real example',
-    casesTitle: 'Konturmont s.r.o. — customers started coming right after launch',
+    casesTitle: 'Montwell — customers started coming right after launch',
     casesProblem: 'Problem',
     casesSolution: 'Solution',
     casesResult: 'Result',
