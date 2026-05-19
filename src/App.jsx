@@ -1,7 +1,6 @@
 import { useState, lazy, Suspense, useEffect } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import { FaWhatsapp } from 'react-icons/fa/index.js';
-import { FaFacebookF } from 'react-icons/fa/index.js';
+import { FaWhatsapp, FaFacebookF } from 'react-icons/fa';
 import logoImg from './assets/logo.webp';
 
 const Blog = lazy(() => import('./pages/Blog'));
