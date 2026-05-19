@@ -2,6 +2,7 @@ import { useState, lazy, Suspense, useEffect } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import { FaWhatsapp, FaFacebookF } from 'react-icons/fa';
 import logoImg from './assets/logo.webp';
+import skDefault from './i18n/sk.js';
 
 const Blog = lazy(() => import('./pages/Blog'));
 const BlogPost = lazy(() => import('./pages/BlogPost'));
@@ -27,10 +28,6 @@ const caseStudies = [
   },
 ];
 
-// Fallback SK translations loaded synchronously so the page renders immediately
-// without waiting for the dynamic import. Other languages load on demand.
-import skDefault from './i18n/sk.js';
-
 function HomePage() {
   const [lang, setLang] = useState('sk');
   const [t, setT] = useState(skDefault);
@@ -41,7 +38,6 @@ function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState(null);
 
-  // Lazy-load translations when language changes (SK is already loaded above)
   useEffect(() => {
     if (lang === 'sk') {
       setT(skDefault);
@@ -161,33 +157,23 @@ function HomePage() {
         <div style={{ background: '#1a1a1a', color: '#f5f2eb', padding: '72px 40px 88px', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(255,210,0,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,210,0,0.025) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
           <div style={{ maxWidth: 720, margin: '0 auto', position: 'relative' }}>
-
-            {/* Trust pills */}
             <div style={{ display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 32 }}>
               {t.heroBadges.map(b => (<span key={b} className="trust-pill" style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', padding: '6px 14px', borderRadius: 100, fontSize: 12, color: 'rgba(245,242,235,0.6)' }}>{b}</span>))}
             </div>
-
-            {/* Main headline */}
             <h1 style={{ fontSize: 'clamp(36px, 7vw, 72px)', fontWeight: 900, lineHeight: 1.06, letterSpacing: -3, marginBottom: 20 }}>
               {t.heroTitle[0]}<br />
               <span style={{ color: '#ffd200' }}>{t.heroTitle[1]}</span><br />
               {t.heroTitle[2]}
             </h1>
-
-            {/* Price anchor */}
             <div style={{ display: 'inline-flex', alignItems: 'baseline', gap: 10, background: '#ffd200', color: '#1a1a1a', padding: '10px 32px', borderRadius: 14, marginBottom: 24 }}>
               <span style={{ fontSize: 'clamp(32px, 5vw, 56px)', fontWeight: 900, letterSpacing: -2 }}>od 299 €</span>
               <span style={{ fontSize: 15, fontWeight: 600, opacity: 0.55, textDecoration: 'line-through' }}>599 €</span>
             </div>
-
             <p style={{ fontSize: 17, color: 'rgba(245,242,235,0.5)', marginBottom: 36, lineHeight: 1.65, maxWidth: 520, margin: '0 auto 36px' }}>{t.heroSub}</p>
-
             <div className="hero-ctas" style={{ display: 'flex', gap: 12, justifyContent: 'center', marginBottom: 48, flexWrap: 'wrap' }}>
               <Link to="/web-299" style={{ background: '#ffd200', color: '#1a1a1a', padding: '17px 40px', borderRadius: 100, fontWeight: 800, fontSize: 17, textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>{t.heroCta}</Link>
               <button onClick={() => scrollTo('reviews')} style={{ background: 'transparent', color: 'rgba(245,242,235,0.7)', border: '1.5px solid rgba(255,255,255,0.15)', padding: '17px 28px', borderRadius: 100, fontWeight: 600, fontSize: 16, cursor: 'pointer' }}>{t.heroCtaSec}</button>
             </div>
-
-            {/* Stats */}
             <div className="stats-row" style={{ display: 'flex', gap: 48, justifyContent: 'center', paddingTop: 36, borderTop: '1px solid rgba(255,255,255,0.07)' }}>
               {[['80+', t.statClients], ['3×', t.statLeads], ['5 dní', t.statDays]].map(([val, label]) => (
                 <div key={label}>
