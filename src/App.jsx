@@ -22,7 +22,7 @@ const caseStudies = [
     tag: 'Montáž & výroba nábytku',
     problem: 'Firma nemala web — zákazníci ich nenachádzali online',
     solution: 'Prezentačný web s galériou realizácií a kontaktným formulárom',
-    result: 'Prvé dopyty do 48 hodín od spustenia',
+    result: 'Prvé dopyty do 48 hodín · +120% online viditeľnosť',
     color: '#1a1a1a',
   },
 ];
@@ -33,8 +33,8 @@ const T = {
     navOrder: 'Web za 299 € →',
     heroBadge: '🚀 Akcia — 50% zľava do konca mesiaca',
     heroTag: 'Web agentúra pre malé firmy · SK · CZ',
-    heroTitle: ['Získajte viac zákazníkov', 'cez web', 'už od 299 €'],
-    heroSub: 'Pomáhame firmám premieňať návštevy na reálne dopyty pomocou webu a Google Ads.',
+    heroTitle: ['Web, ktorý', 'prináša zákazníkov', '— od 299 €'],
+    heroSub: 'Firemný web hotový za 5 dní. SEO, mobile friendly, Google Ads ready. Prvé dopyty do 48 hodín.',
     heroCta: 'Chcem web za 299 € →',
     heroCtaSec: 'Pozrieť výsledky →',
     heroBadges: ['✓ 80+ projektov', '✓ Slovensko & Česko', '✓ Web do 5 dní', '✓ Bez mesačných poplatkov'],
@@ -132,8 +132,8 @@ const T = {
     navOrder: 'Web za 299 € →',
     heroBadge: '🚀 Akce — 50% sleva do konce měsíce',
     heroTag: 'Web agentura pro malé firmy · SK · CZ',
-    heroTitle: ['Získejte více zákazníků', 'přes web', 'již od 299 €'],
-    heroSub: 'Pomáháme firmám přeměňovat návštěvy na reálné poptávky pomocí webu a Google Ads.',
+    heroTitle: ['Web, který', 'přináší zákazníky', '— od 299 €'],
+    heroSub: 'Firemní web hotový za 5 dní. SEO, mobile friendly, Google Ads ready. První poptávky do 48 hodin.',
     heroCta: 'Chci web za 299 € →',
     heroCtaSec: 'Prohlédnout výsledky →',
     heroBadges: ['✓ 80+ projektů', '✓ Slovensko & Česko', '✓ Web do 5 dní', '✓ Bez měsíčních poplatků'],
@@ -231,8 +231,8 @@ const T = {
     navOrder: 'Website from 299 € →',
     heroBadge: '🚀 Sale — 50% off until end of month',
     heroTag: 'Web agency for small businesses · SK · CZ',
-    heroTitle: ['Get more customers', 'through your website', 'from 299 €'],
-    heroSub: 'We help businesses turn website visits into real enquiries through web design and Google Ads.',
+    heroTitle: ['A website that', 'brings you customers', '— from 299 €'],
+    heroSub: 'Business website ready in 5 days. SEO, mobile friendly, Google Ads ready. First enquiries within 48 hours.',
     heroCta: 'I want a website from 299 € →',
     heroCtaSec: 'See results →',
     heroBadges: ['✓ 80+ projects', '✓ Slovakia & Czechia', '✓ Ready in 5 days', '✓ No monthly fees'],
@@ -441,6 +441,7 @@ function HomePage() {
         .card-hover { transition: transform 0.2s, box-shadow 0.2s; }
         .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
         .trust-pill { white-space: nowrap; }
+        @media (max-width: 768px) { .prob-sol-grid { grid-template-columns: 1fr !important; } }
       `}</style>
 
       <main>
@@ -495,35 +496,38 @@ function HomePage() {
           </div>
         </div>
 
-        {/* ── PROBLEM ── */}
-        <div style={{ padding: '80px 40px', background: '#f5f2eb' }}>
-          <div style={{ maxWidth: 900, margin: '0 auto' }}>
-            <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#e24b4a', marginBottom: 12, fontWeight: 700 }}>{t.problemLabel}</p>
-            <h2 style={{ fontSize: 'clamp(26px, 4vw, 44px)', fontWeight: 900, letterSpacing: -2, marginBottom: 48 }}>{t.problemTitle}</h2>
-            <div className="problem-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16 }}>
-              {t.problems.map((p) => (
-                <div key={p.text} style={{ background: '#fff', border: '1.5px solid #eee', borderRadius: 20, padding: '32px 24px', textAlign: 'center' }}>
-                  <div style={{ fontSize: 36, marginBottom: 16 }}>{p.icon}</div>
-                  <p style={{ fontSize: 15, fontWeight: 600, color: '#333', lineHeight: 1.5 }}>{p.text}</p>
-                </div>
-              ))}
+        {/* ── PROBLEM + SOLUTION — compact ── */}
+        <div style={{ padding: '64px 40px', background: '#f5f2eb' }}>
+          <div style={{ maxWidth: 900, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40, alignItems: 'start' }} className="prob-sol-grid">
+            {/* Problem */}
+            <div>
+              <p style={{ fontSize: 11, letterSpacing: 3, textTransform: 'uppercase', color: '#e24b4a', marginBottom: 10, fontWeight: 700 }}>{t.problemLabel}</p>
+              <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 900, letterSpacing: -1.5, marginBottom: 24, lineHeight: 1.15 }}>{t.problemTitle}</h2>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                {t.problems.map((p) => (
+                  <div key={p.text} style={{ display: 'flex', alignItems: 'center', gap: 12, background: '#fff', border: '1px solid #eee', borderRadius: 12, padding: '14px 18px' }}>
+                    <span style={{ fontSize: 22, flexShrink: 0 }}>{p.icon}</span>
+                    <span style={{ fontSize: 14, fontWeight: 600, color: '#333' }}>{p.text}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        </div>
-
-        {/* ── SOLUTION ── */}
-        <div style={{ padding: '80px 40px', background: '#1a1a1a' }}>
-          <div style={{ maxWidth: 900, margin: '0 auto' }}>
-            <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#ffd200', marginBottom: 12, fontWeight: 700 }}>{t.solutionLabel}</p>
-            <h2 style={{ fontSize: 'clamp(26px, 4vw, 44px)', fontWeight: 900, letterSpacing: -2, color: '#f5f2eb', marginBottom: 48 }}>{t.solutionTitle}</h2>
-            <div className="solution-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16 }}>
-              {t.solutions.map((s) => (
-                <div key={s.title} style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 20, padding: '32px 24px' }}>
-                  <div style={{ fontSize: 32, marginBottom: 16 }}>{s.icon}</div>
-                  <h3 style={{ fontSize: 16, fontWeight: 700, color: '#f5f2eb', marginBottom: 8 }}>{s.title}</h3>
-                  <p style={{ fontSize: 14, color: 'rgba(245,242,235,0.5)', lineHeight: 1.6 }}>{s.desc}</p>
-                </div>
-              ))}
+            {/* Solution */}
+            <div style={{ background: '#1a1a1a', borderRadius: 24, padding: '36px 32px' }}>
+              <p style={{ fontSize: 11, letterSpacing: 3, textTransform: 'uppercase', color: '#ffd200', marginBottom: 10, fontWeight: 700 }}>{t.solutionLabel}</p>
+              <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 900, letterSpacing: -1.5, color: '#f5f2eb', marginBottom: 24, lineHeight: 1.15 }}>{t.solutionTitle}</h2>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                {t.solutions.map((s) => (
+                  <div key={s.title} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                    <span style={{ fontSize: 20, flexShrink: 0 }}>{s.icon}</span>
+                    <div>
+                      <span style={{ fontSize: 14, fontWeight: 700, color: '#f5f2eb' }}>{s.title}</span>
+                      <span style={{ fontSize: 13, color: 'rgba(245,242,235,0.4)', marginLeft: 6 }}>— {s.desc}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <Link to="/web-299" style={{ display: 'inline-block', marginTop: 28, background: '#ffd200', color: '#1a1a1a', padding: '13px 32px', borderRadius: 100, fontWeight: 800, fontSize: 15, textDecoration: 'none' }}>{t.heroCta}</Link>
             </div>
           </div>
         </div>
