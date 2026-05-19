@@ -5,6 +5,7 @@ import logoImg from './assets/logo.webp';
 
 const Blog = lazy(() => import('./pages/Blog'));
 const BlogPost = lazy(() => import('./pages/BlogPost'));
+const Web299 = lazy(() => import('./pages/Web299'));
 
 const API = 'https://webklienti-backend.onrender.com';
 
@@ -762,6 +763,7 @@ export default function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/blog" element={<Suspense fallback={null}><Blog /></Suspense>} />
       <Route path="/blog/:slug" element={<Suspense fallback={null}><BlogPost /></Suspense>} />
+      <Route path="/web-299" element={<Suspense fallback={null}><Web299 /></Suspense>} />
     </Routes>
   );
 }
