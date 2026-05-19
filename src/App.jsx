@@ -33,27 +33,27 @@ const T = {
     navOrder: 'Web za 299 € →',
     heroBadge: '🚀 Akcia — 50% zľava do konca mesiaca',
     heroTag: 'Web agentúra pre malé firmy · SK · CZ',
-    heroTitle: ['Weby a Google Ads,', 'ktoré prinášajú', 'zákazníkov — nie len návštevy'],
-    heroSub: '87% zákazníkov hľadá firmy online.\nNájdu vás — alebo vašu konkurenciu?\nWeb za 299 €. Hotový za 5 dní.',
-    heroCta: 'Získať cenovú ponuku →',
-    heroCtaSec: 'Web za 299 € →',
-    heroBadges: ['✓ Odpoveď do 24 hodín', '✓ Mobile friendly', '✓ SEO pripravené', '✓ Bez mesačných poplatkov'],
+    heroTitle: ['Získajte viac zákazníkov', 'cez web', 'už od 299 €'],
+    heroSub: 'Pomáhame firmám premieňať návštevy na reálne dopyty pomocou webu a Google Ads.',
+    heroCta: 'Chcem web za 299 € →',
+    heroCtaSec: 'Pozrieť výsledky →',
+    heroBadges: ['✓ 80+ projektov', '✓ Slovensko & Česko', '✓ Web do 5 dní', '✓ Bez mesačných poplatkov'],
     trustStrip: ['Weby pre malé firmy', 'SEO & performance', 'Slovensko / Česko', 'Zamerané na výsledky'],
     problemLabel: 'Prečo to nefunguje',
-    problemTitle: 'Väčšina webstránok nefunguje',
+    problemTitle: 'Máš web — ale zákazníci neprichádzajú?',
     problems: [
-      { icon: '📉', text: 'Neprinášajú zákazníkov' },
-      { icon: '🐌', text: 'Sú pomalé a Google ich ignoruje' },
-      { icon: '📵', text: 'Nie sú optimalizované pre mobil' },
-      { icon: '👻', text: 'Návštevníci odchádzajú bez akcie' },
+      { icon: '📉', text: 'Web nič nepredáva' },
+      { icon: '🐌', text: 'Google ho nevidí' },
+      { icon: '📵', text: 'Na mobile vyzerá zle' },
+      { icon: '👻', text: 'Návštevníci odchádzajú' },
     ],
     solutionLabel: 'Naše riešenie',
-    solutionTitle: 'Navrhujeme weby, ktoré predávajú',
+    solutionTitle: 'My to robíme inak',
     solutions: [
-      { icon: '⚡', title: 'Rýchle načítanie', desc: 'PageSpeed 90+ — Google vás odporúča viac' },
-      { icon: '🔍', title: 'SEO pripravené', desc: 'Nájdu vás zákazníci skôr ako konkurenciu' },
-      { icon: '📱', title: 'Mobil-first dizajn', desc: '70% zákazníkov hľadá z mobilu' },
-      { icon: '🎯', title: 'Optimalizované pre konverzie', desc: 'Každý prvok vedie k dopytom' },
+      { icon: '⚡', title: 'Rýchle načítanie', desc: 'PageSpeed 90+' },
+      { icon: '🔍', title: 'SEO základ', desc: 'Zákazníci vás nájdu na Google' },
+      { icon: '📱', title: 'Mobil-first', desc: '70% hľadá z mobilu' },
+      { icon: '🎯', title: 'Cielené na dopyty', desc: 'Každý prvok vedie k akcii' },
     ],
     casesLabel: 'Naše práce',
     casesTitle: 'Projekty, ktoré prinášajú výsledky',
@@ -75,8 +75,8 @@ const T = {
     reviewsLabel: 'Referencie',
     reviewsTitle: 'Čo hovoria klienti',
     offerLabel: 'Bezplatná analýza',
-    offerTitle: 'Web za 299 € — hotový do 5 dní',
-    offerItems: ['SEO audit — kde vás Google vidí', 'Speed audit — prečo sú návštevníci netrpezliví', 'UX návrhy — čo zmeniť pre viac dopytov'],
+    offerTitle: 'Web, ktorý začne pracovať pre vás',
+    offerItems: ['Hotový za 5 dní', 'SEO pripravený od prvého dňa', 'Optimalizovaný pre dopyty a Google'],
     offerCta: 'Chcem web za 299 € →',
     formLabel: 'Objednávka',
     formTitle: 'Objednajte si web',
@@ -109,7 +109,7 @@ const T = {
       { q: 'Robíte aj SEO?', a: 'Áno, každý web je SEO pripravený. Ponúkame aj pokročilé SEO balíky.' },
       { q: 'Čo potrebujem pripraviť?', a: 'Nič. My sa postaráme o všetko — texty, dizajn, techniku. Stačí vyplniť formulár.' },
     ],
-    finalCta: 'Web, ktorý vám začne prinášať klientov.',
+    finalCta: 'Začnite získavať zákazníkov online.',
     finalCtaBtn: 'Web za 299 € →',
     cards: [
       { tag: 'Základná', name: 'One-page web', price: '299 €', old: 'bežne 599 €', features: ['Moderný dizajn na mieru', 'Mobile friendly (Google to miluje)', 'Kontaktný formulár + mapa', 'WhatsApp & Facebook prepojenie', 'SEO — nájdu vás na Googli skôr', 'GDPR ready (Privacy Policy + cookie lišta)', 'Sekcia Google recenzií', 'Firemný email', '🎁 BONUS: Google Business profil', 'Hotové za 5 dní'], featured: false },
@@ -132,22 +132,22 @@ const T = {
     navOrder: 'Web za 299 € →',
     heroBadge: '🚀 Akce — 50% sleva do konce měsíce',
     heroTag: 'Web agentura pro malé firmy · SK · CZ',
-    heroTitle: ['Weby a Google Ads,', 'které přinášejí', 'zákazníky — ne jen návštěvy'],
-    heroSub: '87% zákazníků hledá firmy online.\nNajdou vás — nebo vaši konkurenci?\nWeb za 299 €. Hotový za 5 dní.',
-    heroCta: 'Získat cenovou nabídku →',
-    heroCtaSec: 'Web za 299 € →',
-    heroBadges: ['✓ Odpověď do 24 hodin', '✓ Mobile friendly', '✓ SEO připraveno', '✓ Bez měsíčních poplatků'],
+    heroTitle: ['Získejte více zákazníků', 'přes web', 'již od 299 €'],
+    heroSub: 'Pomáháme firmám přeměňovat návštěvy na reálné poptávky pomocí webu a Google Ads.',
+    heroCta: 'Chci web za 299 € →',
+    heroCtaSec: 'Prohlédnout výsledky →',
+    heroBadges: ['✓ 80+ projektů', '✓ Slovensko & Česko', '✓ Web do 5 dní', '✓ Bez měsíčních poplatků'],
     trustStrip: ['Weby pro malé firmy', 'SEO & performance', 'Slovensko / Česko', 'Zaměřeno na výsledky'],
     problemLabel: 'Proč to nefunguje',
-    problemTitle: 'Většina webstránek nefunguje',
+    problemTitle: 'Máš web — ale zákazníci nepřicházejí?',
     problems: [
-      { icon: '📉', text: 'Nepřinášejí zákazníky' },
-      { icon: '🐌', text: 'Jsou pomalé a Google je ignoruje' },
-      { icon: '📵', text: 'Nejsou optimalizované pro mobil' },
-      { icon: '👻', text: 'Návštěvníci odcházejí bez akce' },
+      { icon: '📉', text: 'Web nic neprodává' },
+      { icon: '🐌', text: 'Google ho nevidí' },
+      { icon: '📵', text: 'Na mobilu vypadá špatně' },
+      { icon: '👻', text: 'Návštěvníci odcházejí' },
     ],
     solutionLabel: 'Naše řešení',
-    solutionTitle: 'Navrhujeme weby, které prodávají',
+    solutionTitle: 'My to děláme jinak',
     solutions: [
       { icon: '⚡', title: 'Rychlé načítání', desc: 'PageSpeed 90+ — Google vás doporučuje více' },
       { icon: '🔍', title: 'SEO připraveno', desc: 'Najdou vás zákazníci dříve než konkurenci' },
@@ -174,8 +174,8 @@ const T = {
     reviewsLabel: 'Reference',
     reviewsTitle: 'Co říkají klienti',
     offerLabel: 'Bezplatná analýza',
-    offerTitle: 'Web za 299 € — hotový do 5 dní',
-    offerItems: ['SEO audit — kde vás Google vidí', 'Speed audit — proč jsou návštěvníci netrpěliví', 'UX návrhy — co změnit pro více poptávek'],
+    offerTitle: 'Web, který začne pracovat pro vás',
+    offerItems: ['Hotový za 5 dní', 'SEO připravený od prvního dne', 'Optimalizovaný pro poptávky a Google'],
     offerCta: 'Chci web za 299 € →',
     formLabel: 'Objednávka',
     formTitle: 'Objednejte si web',
@@ -208,7 +208,7 @@ const T = {
       { q: 'Děláte také SEO?', a: 'Ano, každý web je SEO připravený. Nabízíme i pokročilé SEO balíčky.' },
       { q: 'Co potřebuji připravit?', a: 'Nic. My se postaráme o vše — texty, design, techniku. Stačí vyplnit formulář.' },
     ],
-    finalCta: 'Web, který vám začne přinášet klienty.',
+    finalCta: 'Začněte získávat zákazníky online.',
     finalCtaBtn: 'Web za 299 € →',
     cards: [
       { tag: 'Základní', name: 'One-page web', price: '299 €', old: 'běžně 599 €', features: ['Moderní design na míru', 'Mobile friendly (Google to miluje)', 'Kontaktní formulář + mapa', 'WhatsApp & Facebook propojení', 'SEO — najdou vás na Googlu dříve', 'GDPR ready (Privacy Policy + cookie lišta)', 'Sekce Google recenzí', 'Firemní email', '🎁 BONUS: Google Business profil', 'Hotovo za 5 dní'], featured: false },
@@ -231,11 +231,11 @@ const T = {
     navOrder: 'Website from 299 € →',
     heroBadge: '🚀 Sale — 50% off until end of month',
     heroTag: 'Web agency for small businesses · SK · CZ',
-    heroTitle: ['Websites & Google Ads', 'that bring you', 'clients — not just traffic'],
-    heroSub: '87% of customers search for businesses online.\nWill they find you — or your competitor?\nWebsite for 299 €. Ready in 5 days.',
-    heroCta: 'Get a quote →',
-    heroCtaSec: 'Website from 299 € →',
-    heroBadges: ['✓ Reply within 24h', '✓ Mobile friendly', '✓ SEO ready', '✓ No monthly fees'],
+    heroTitle: ['Get more customers', 'through your website', 'from 299 €'],
+    heroSub: 'We help businesses turn website visits into real enquiries through web design and Google Ads.',
+    heroCta: 'I want a website from 299 € →',
+    heroCtaSec: 'See results →',
+    heroBadges: ['✓ 80+ projects', '✓ Slovakia & Czechia', '✓ Ready in 5 days', '✓ No monthly fees'],
     trustStrip: ['Websites for small businesses', 'SEO & performance', 'Slovakia / Czech Republic', 'Results-focused'],
     problemLabel: 'The problem',
     problemTitle: 'Most websites simply don\'t work',
@@ -307,7 +307,7 @@ const T = {
       { q: 'Do you do SEO?', a: 'Yes, every website is SEO-ready. We also offer advanced SEO packages.' },
       { q: 'What do I need to prepare?', a: 'Nothing. We handle everything — texts, design, technology. Just fill out the form.' },
     ],
-    finalCta: 'A website that starts bringing you clients.',
+    finalCta: 'Start getting customers online.',
     finalCtaBtn: 'Website from 299 € →',
     cards: [
       { tag: 'Starter', name: 'One-page website', price: '299 €', old: 'usually 599 €', features: ['Custom modern design', 'Mobile friendly (Google loves it)', 'Contact form + map', 'WhatsApp & Facebook link', 'SEO — appear on Google before competitors', 'GDPR ready (Privacy Policy + cookie banner)', 'Google reviews section', 'Business email', '🎁 BONUS: Google Business profile', 'Ready in 5 days'], featured: false },
@@ -445,37 +445,43 @@ function HomePage() {
 
       <main>
         {/* ── HERO ── */}
-        <div style={{ background: '#1a1a1a', color: '#f5f2eb', padding: '80px 40px 100px', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
-          {/* subtle grid bg */}
-          <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(255,210,0,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,210,0,0.03) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
-          <div style={{ maxWidth: 760, margin: '0 auto', position: 'relative' }}>
-            <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', color: 'rgba(245,242,235,0.5)', padding: '5px 16px', borderRadius: 100, fontSize: 12, fontWeight: 500, marginBottom: 16, letterSpacing: 1 }}>{t.heroTag}</div>
-            <div>
-              <div style={{ display: 'inline-block', background: 'rgba(255,210,0,0.12)', border: '1px solid rgba(255,210,0,0.2)', color: '#ffd200', padding: '6px 18px', borderRadius: 100, fontSize: 13, fontWeight: 600, marginBottom: 28, letterSpacing: 0.5 }}>{t.heroBadge}</div>
+        <div style={{ background: '#1a1a1a', color: '#f5f2eb', padding: '72px 40px 88px', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+          <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(255,210,0,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,210,0,0.025) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
+          <div style={{ maxWidth: 720, margin: '0 auto', position: 'relative' }}>
+
+            {/* Trust pills — first thing seen */}
+            <div style={{ display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 32 }}>
+              {t.heroBadges.map(b => (<span key={b} className="trust-pill" style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', padding: '6px 14px', borderRadius: 100, fontSize: 12, color: 'rgba(245,242,235,0.6)' }}>{b}</span>))}
             </div>
-            <h1 style={{ fontSize: 'clamp(38px, 7vw, 76px)', fontWeight: 900, lineHeight: 1.05, letterSpacing: -3, marginBottom: 24 }}>
+
+            {/* Main headline */}
+            <h1 style={{ fontSize: 'clamp(36px, 7vw, 72px)', fontWeight: 900, lineHeight: 1.06, letterSpacing: -3, marginBottom: 20 }}>
               {t.heroTitle[0]}<br />
-              <span style={{ color: '#ffd200', display: 'inline-block', position: 'relative' }}>
-                {t.heroTitle[1]}
-                <span style={{ position: 'absolute', bottom: -4, left: 0, right: 0, height: 3, background: '#ffd200', borderRadius: 2, opacity: 0.4 }} />
-              </span>
-              <br />{t.heroTitle[2]}
+              <span style={{ color: '#ffd200' }}>{t.heroTitle[1]}</span><br />
+              {t.heroTitle[2]}
             </h1>
-            <p style={{ fontSize: 18, color: 'rgba(245,242,235,0.55)', marginBottom: 44, lineHeight: 1.7, whiteSpace: 'pre-line', maxWidth: 580, margin: '0 auto 44px' }}>{t.heroSub}</p>
-            <div className="hero-ctas" style={{ display: 'flex', gap: 12, justifyContent: 'center', marginBottom: 56, flexWrap: 'wrap' }}>
-              <button onClick={() => scrollTo('contact')} style={{ background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '16px 36px', borderRadius: 100, fontWeight: 800, fontSize: 17, cursor: 'pointer' }}>{t.heroCta}</button>
-              <Link to="/web-299" style={{ background: 'transparent', color: 'rgba(245,242,235,0.7)', border: '1.5px solid rgba(255,255,255,0.2)', padding: '16px 28px', borderRadius: 100, fontWeight: 600, fontSize: 16, cursor: 'pointer', textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>{t.heroCtaSec}</Link>
+
+            {/* Price — visual anchor */}
+            <div style={{ display: 'inline-flex', alignItems: 'baseline', gap: 10, background: '#ffd200', color: '#1a1a1a', padding: '10px 32px', borderRadius: 14, marginBottom: 24 }}>
+              <span style={{ fontSize: 'clamp(32px, 5vw, 56px)', fontWeight: 900, letterSpacing: -2 }}>od 299 €</span>
+              <span style={{ fontSize: 15, fontWeight: 600, opacity: 0.55, textDecoration: 'line-through' }}>599 €</span>
             </div>
-            <div className="stats-row" style={{ display: 'flex', gap: 56, justifyContent: 'center', paddingTop: 40, borderTop: '1px solid rgba(255,255,255,0.07)', marginBottom: 40 }}>
+
+            <p style={{ fontSize: 17, color: 'rgba(245,242,235,0.5)', marginBottom: 36, lineHeight: 1.65, maxWidth: 520, margin: '0 auto 36px' }}>{t.heroSub}</p>
+
+            <div className="hero-ctas" style={{ display: 'flex', gap: 12, justifyContent: 'center', marginBottom: 48, flexWrap: 'wrap' }}>
+              <Link to="/web-299" style={{ background: '#ffd200', color: '#1a1a1a', padding: '17px 40px', borderRadius: 100, fontWeight: 800, fontSize: 17, textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>{t.heroCta}</Link>
+              <button onClick={() => scrollTo('reviews')} style={{ background: 'transparent', color: 'rgba(245,242,235,0.7)', border: '1.5px solid rgba(255,255,255,0.2)', padding: '17px 28px', borderRadius: 100, fontWeight: 600, fontSize: 16, cursor: 'pointer', border: '1.5px solid rgba(255,255,255,0.15)' }}>{t.heroCtaSec}</button>
+            </div>
+
+            {/* Stats */}
+            <div className="stats-row" style={{ display: 'flex', gap: 48, justifyContent: 'center', paddingTop: 36, borderTop: '1px solid rgba(255,255,255,0.07)' }}>
               {[['80+', t.statClients], ['3×', t.statLeads], ['5 dní', t.statDays]].map(([val, label]) => (
                 <div key={label}>
-                  <div style={{ fontSize: 40, fontWeight: 900, color: '#ffd200', letterSpacing: -2 }}>{val}</div>
-                  <div style={{ fontSize: 12, color: 'rgba(245,242,235,0.4)', marginTop: 4, letterSpacing: 0.5 }}>{label}</div>
+                  <div style={{ fontSize: 38, fontWeight: 900, color: '#ffd200', letterSpacing: -2 }}>{val}</div>
+                  <div style={{ fontSize: 12, color: 'rgba(245,242,235,0.4)', marginTop: 4 }}>{label}</div>
                 </div>
               ))}
-            </div>
-            <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
-              {t.heroBadges.map(b => (<span key={b} className="trust-pill" style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', padding: '7px 16px', borderRadius: 100, fontSize: 13, color: 'rgba(245,242,235,0.6)' }}>{b}</span>))}
             </div>
           </div>
         </div>
