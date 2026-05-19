@@ -1,6 +1,7 @@
-import { useState, lazy, Suspense } from 'react';
+import { useState, lazy, Suspense, useEffect } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import { FaWhatsapp, FaFacebookF } from "react-icons/fa";
+import { FaWhatsapp } from 'react-icons/fa/index.js';
+import { FaFacebookF } from 'react-icons/fa/index.js';
 import logoImg from './assets/logo.webp';
 
 const Blog = lazy(() => import('./pages/Blog'));
@@ -27,308 +28,13 @@ const caseStudies = [
   },
 ];
 
-const T = {
-  sk: {
-    nav: ['Cenník', 'Referencie', 'Kontakt'],
-    navOrder: 'Web za 299 € →',
-    heroBadge: '🚀 Akcia — 50% zľava do konca mesiaca',
-    heroTag: 'Web agentúra pre malé firmy · SK · CZ',
-    heroTitle: ['Web, ktorý vám', 'prináša zákazníkov', 'z Google'],
-    heroSub: 'Moderné webové stránky pre malé a stredné firmy, ktoré generujú reálne dopyty — nie len návštevy.',
-    heroCta: 'Chcem web za 299 € →',
-    heroCtaSec: 'Pozrieť ukážky →',
-    heroBadges: ['✓ 80+ webov, ktoré prinášajú klientov', '✓ Slovensko & Česko', '✓ dodanie do 5 dní', '✓ Bez mesačných poplatkov'],
-    trustStrip: ['Prijímame len 2 nové projekty týždenne', 'SEO & performance', 'Slovensko / Česko', 'Zamerané na dopyty'],
-    problemLabel: 'Prečo to nefunguje',
-    problemTitle: 'Väčšina firiem nemá problém s webom. Majú problém so zákazníkmi.',
-    problems: [
-      { icon: '📉', text: 'Žiadne dopyty z webu' },
-      { icon: '🐌', text: 'Slabá viditeľnosť na Google' },
-      { icon: '📵', text: 'Zastaraná alebo žiadna stránka' },
-      { icon: '👻', text: 'Zákazníci odchádzajú bez akcie' },
-    ],
-    solutionLabel: 'Naše riešenie',
-    solutionTitle: 'Web, ktorý premieňa návštevy na dopyty',
-    solutions: [
-      { icon: '⚡', title: 'Rýchle načítanie', desc: 'PageSpeed 90+' },
-      { icon: '🔍', title: 'SEO základ', desc: 'Zákazníci vás nájdu na Google skôr ako konkurenciu' },
-      { icon: '📱', title: 'Mobil-first', desc: '70% zákazníkov hľadá z mobilu' },
-      { icon: '🎯', title: 'Cielené na dopyty', desc: 'Každý prvok vedie k akcii' },
-    ],
-    casesLabel: 'Reálny príklad',
-    casesTitle: 'Montwell — zákazníci začali prichádzať hneď po spustení',
-    casesProblem: 'Problém',
-    casesSolution: 'Riešenie',
-    casesResult: 'Výsledok',
-    casesBtn: 'Pozrieť web →',
-    pricingLabel: 'Cenník',
-    pricingTitle: 'Profesionálny web pre vašu firmu od 299 €',
-    orderBtn: 'Chcem web za 299 € →',
-    howLabel: 'Postup',
-    howTitle: 'Jednoduchý proces v 3 krokoch',
-    steps: [
-      { num: '01', title: 'Kontaktujete nás', desc: 'Vyplňte formulár — ozveme sa vám do 24 hodín.' },
-      { num: '02', title: 'Dostanete návrh', desc: 'Pripravíme dizajn presne pre váš biznis.' },
-      { num: '03', title: 'Web spustíme', desc: 'Hotový web do 5 dní. Zákazníci začnú prichádzať.' },
-      { num: '04', title: 'Sledujeme výsledky', desc: 'Sledujeme dopyty a optimalizujeme spolu s vami.' },
-    ],
-    reviewsLabel: 'Referencie',
-    reviewsTitle: 'Čo hovoria klienti',
-    offerLabel: 'Čo dostanete',
-    offerTitle: 'Profesionálny web, ktorý začne pracovať pre vás',
-    offerItems: ['Moderný dizajn na mieru', 'SEO pripravený od prvého dňa', 'Optimalizovaný pre dopyty a Google'],
-    offerCta: 'Chcem web za 299 € →',
-    formLabel: 'Objednávka',
-    formTitle: 'Získajte cenovú ponuku',
-    formSub: 'Vyplňte formulár a ozveme sa vám do 24 hodín. Bez záväzkov.',
-    fields: [
-      { key: 'name', label: 'Meno a priezvisko *', type: 'text', placeholder: 'Ján Novák' },
-      { key: 'email', label: 'Email *', type: 'email', placeholder: 'jan@firma.sk' },
-      { key: 'phone', label: 'Telefón', type: 'tel', placeholder: '+421 900 000 000' },
-    ],
-    packageLabel: 'Balík *',
-    packagePlaceholder: '— Vyberte balík —',
-    messageLabel: 'Čo robíte?',
-    messagePlaceholder: 'Opíšte váš biznis — čo predávate alebo ponúkate?',
-    consentLabel: 'Súhlasím so spracovaním osobných údajov v súlade s',
-    consentLink: 'Ochranou súkromia',
-    consentError: 'Prosím, potvrďte súhlas so spracovaním osobných údajov.',
-    submitBtn: 'Odoslať žiadosť →',
-    submitting: 'Odosielam...',
-    successTitle: 'Ďakujeme!',
-    successMsg: 'Vaša objednávka bola prijatá. Ozveme sa vám do 24 hodín.',
-    newOrder: 'Nová objednávka',
-    errorMsg: '❌ Chyba. Skúste znova alebo nás kontaktujte priamo.',
-    footerRights: '© 2025 Web Klienti · Web, ktorý pracuje pre váš biznis 24/7',
-    packages: ['One-page web — 299 €', 'Prezentačný web — 499 €', 'Internetový obchod — 999 €'],
-    faqLabel: 'FAQ',
-    faqTitle: 'Časté otázky',
-    faqs: [
-      { q: 'Koľko stojí web?', a: 'One-page web od 299 €, prezentačný web od 499 €, e-shop od 999 €. Cena je konečná, bez skrytých poplatkov.' },
-      { q: 'Ako dlho trvá výroba?', a: 'One-page web je hotový za 5 dní, prezentačný web za 7 dní, e-shop za 14 dní.' },
-      { q: 'Robíte aj SEO?', a: 'Áno, každý web je SEO pripravený. Ponúkame aj pokročilé SEO balíky.' },
-      { q: 'Čo potrebujem pripraviť?', a: 'Nič. My sa postaráme o všetko — texty, dizajn, techniku. Stačí vyplniť formulár.' },
-    ],
-    finalCta: 'Chcete web, ktorý vám prináša zákazníkov?',
-    finalCtaBtn: 'Chcem web za 299 € →',
-    cards: [
-      { tag: 'Základná', name: 'One-page web', price: '299 €', old: 'bežne 599 €', features: ['Moderný dizajn na mieru', 'Mobile friendly (Google to miluje)', 'Kontaktný formulár + mapa', 'WhatsApp & Facebook prepojenie', 'SEO — nájdu vás na Googli skôr', 'GDPR ready (Privacy Policy + cookie lišta)', 'Sekcia Google recenzií', 'Firemný email', '🎁 BONUS: Google Business profil', 'Hotové za 5 dní'], featured: false },
-      { tag: '⭐ Najpopulárnejší', name: 'Prezentačný web', price: '499 €', old: 'bežne 999 €', features: ['Všetko z One-page +', '5 podstránok na mieru', 'Galéria & referencie', 'Blog — pridávate články sami', 'Pokročilé SEO + analýza kľúčových slov', 'Google Analytics', 'Hotové za 7 dní'], featured: true },
-      { tag: 'E-shop', name: 'Internetový obchod', price: '999 €', old: 'bežne 1999 €', features: ['Všetko z Prezentačného +', 'Do 500 produktov', 'Platobná brána (karta, PayPal)', 'Automatické faktúry', 'Správa objednávok', 'WhatsApp + Facebook shop', 'Hotové za 14 dní'], featured: false },
-    ],
-    featuredBadge: 'NAJPOPULÁRNEJŠÍ',
-    statClients: 'Spokojných klientov',
-    statLeads: 'Viac dopytov',
-    statDays: 'Hotový web',
-    cookieMsg: 'Táto stránka používa cookies pre lepší zážitok a analytiku.',
-    cookieAccept: 'Súhlasím',
-    cookieDecline: 'Odmietnuť',
-    privacyLink: 'Ochrana súkromia',
-    privacyTitle: 'Ochrana osobných údajov',
-    privacyContent: `Prevádzkovateľ: Web Klienti, info@webklienti.com, +421 907 890 600\n\nAké údaje zbierame:\n• Meno, priezvisko, adresa, e-mail, telefón — pri odoslaní objednávky\n\nNa čo ich používame:\nPlnenie zmluvy, vedenie účtovnej evidencie a vzájomná komunikácia.\n\nDoba uchovávania:\nPo dobu trvania zmluvy a 5 rokov po jej ukončení.\n\nVaše práva:\nMáte právo na prístup k svojim údajom, ich opravu, vymazanie alebo prenosnosť. Žiadosť zasielajte na info@webklienti.com.\n\nCookies:\nPoužívame Google Analytics na sledovanie návštevnosti.\n\nPlatné od: 1.1.2025`,
-  },
-  cz: {
-    nav: ['Ceník', 'Reference', 'Kontakt'],
-    navOrder: 'Web za 299 € →',
-    heroBadge: '🚀 Akce — 50% sleva do konce měsíce',
-    heroTag: 'Web agentura pro malé firmy · SK · CZ',
-    heroTitle: ['Web, který', 'přináší zákazníky', 'z Google'],
-    heroSub: 'Moderní webové stránky pro malé a střední firmy, které generují reálné poptávky — ne jen návštěvy.',
-    heroCta: 'Chci web za 299 € →',
-    heroCtaSec: 'Prohlédnout ukázky →',
-    heroBadges: ['✓ 80+ webů, které přinášejí klienty', '✓ Slovensko & Česko', '✓ dodání do 5 dní', '✓ Bez měsíčních poplatků'],
-    trustStrip: ['Přijímáme jen 2 nové projekty týdně', 'SEO & performance', 'Slovensko / Česko', 'Zaměřeno na poptávky'],
-    problemLabel: 'Proč to nefunguje',
-    problemTitle: 'Většina firem nemá problém s webem. Mají problém se zákazníky.',
-    problems: [
-      { icon: '📉', text: 'Žádné poptávky z webu' },
-      { icon: '🐌', text: 'Slabá viditelnost na Google' },
-      { icon: '📵', text: 'Zastaralá nebo žádná stránka' },
-      { icon: '👻', text: 'Zákazníci odcházejí bez akce' },
-    ],
-    solutionLabel: 'Naše řešení',
-    solutionTitle: 'Web, který přeměňuje návštěvy na poptávky',
-    solutions: [
-      { icon: '⚡', title: 'Rychlé načítání', desc: 'PageSpeed 90+ — Google vás doporučuje více' },
-      { icon: '🔍', title: 'SEO připraveno', desc: 'Najdou vás zákazníci dříve než konkurenci' },
-      { icon: '📱', title: 'Mobil-first design', desc: '70% zákazníků hledá z mobilu' },
-      { icon: '🎯', title: 'Optimalizováno pro konverze', desc: 'Každý prvek vede k poptávkám' },
-    ],
-    casesLabel: 'Reálný příklad',
-    casesTitle: 'Montwell — zákazníci začali přicházet hned po spuštění',
-    casesProblem: 'Problém',
-    casesSolution: 'Řešení',
-    casesResult: 'Výsledek',
-    casesBtn: 'Prohlédnout web →',
-    pricingLabel: 'Ceník',
-    pricingTitle: 'Profesionální web pro vaši firmu od 299 €',
-    orderBtn: 'Chci web za 299 € →',
-    howLabel: 'Postup',
-    howTitle: 'Jednoduchý proces ve 3 krocích',
-    steps: [
-      { num: '01', title: 'Kontaktujete nás', desc: 'Vyplňte formulář — ozveme se vám do 24 hodin.' },
-      { num: '02', title: 'Dostanete návrh', desc: 'Připravíme design přesně pro váš byznys.' },
-      { num: '03', title: 'Web spustíme', desc: 'Hotový web do 5 dní. Zákazníci začnou přicházet.' },
-      { num: '04', title: 'Sledujeme výsledky', desc: 'Sledujeme poptávky a optimalizujeme spolu s vámi.' },
-    ],
-    reviewsLabel: 'Reference',
-    reviewsTitle: 'Co říkají klienti',
-    offerLabel: 'Co dostanete',
-    offerTitle: 'Profesionální web, který začne pracovat pro vás',
-    offerItems: ['Moderní design na míru', 'SEO připravený od prvního dne', 'Optimalizovaný pro poptávky a Google'],
-    offerCta: 'Chci web za 299 € →',
-    formLabel: 'Objednávka',
-    formTitle: 'Získejte cenovou nabídku',
-    formSub: 'Vyplňte formulář a ozveme se vám do 24 hodin. Bez závazků.',
-    fields: [
-      { key: 'name', label: 'Jméno a příjmení *', type: 'text', placeholder: 'Jan Novák' },
-      { key: 'email', label: 'Email *', type: 'email', placeholder: 'jan@firma.cz' },
-      { key: 'phone', label: 'Telefon', type: 'tel', placeholder: '+420 900 000 000' },
-    ],
-    packageLabel: 'Balíček *',
-    packagePlaceholder: '— Vyberte balíček —',
-    messageLabel: 'Co děláte?',
-    messagePlaceholder: 'Popište váš byznys — co prodáváte nebo nabízíte?',
-    consentLabel: 'Souhlasím se zpracováním osobních údajů v souladu s',
-    consentLink: 'Ochranou soukromí',
-    consentError: 'Prosím potvrďte souhlas se zpracováním osobních údajů.',
-    submitBtn: 'Odeslat žádost →',
-    submitting: 'Odesílám...',
-    successTitle: 'Děkujeme!',
-    successMsg: 'Vaše objednávka byla přijata. Ozveme se vám do 24 hodin.',
-    newOrder: 'Nová objednávka',
-    errorMsg: '❌ Chyba. Zkuste znovu nebo nás kontaktujte přímo.',
-    footerRights: '© 2025 Web Klienti · Web, který pracuje pro váš byznys 24/7',
-    packages: ['One-page web — 299 €', 'Prezentační web — 499 €', 'Internetový obchod — 999 €'],
-    faqLabel: 'FAQ',
-    faqTitle: 'Časté dotazy',
-    faqs: [
-      { q: 'Kolik stojí web?', a: 'One-page web od 299 €, prezentační web od 499 €, e-shop od 999 €. Cena je konečná, bez skrytých poplatků.' },
-      { q: 'Jak dlouho trvá výroba?', a: 'One-page web je hotový za 5 dní, prezentační web za 7 dní, e-shop za 14 dní.' },
-      { q: 'Děláte také SEO?', a: 'Ano, každý web je SEO připravený. Nabízíme i pokročilé SEO balíčky.' },
-      { q: 'Co potřebuji připravit?', a: 'Nic. My se postaráme o vše — texty, design, techniku. Stačí vyplnit formulář.' },
-    ],
-    finalCta: 'Chcete web, který vám přináší zákazníky?',
-    finalCtaBtn: 'Chci web za 299 € →',
-    cards: [
-      { tag: 'Základní', name: 'One-page web', price: '299 €', old: 'běžně 599 €', features: ['Moderní design na míru', 'Mobile friendly (Google to miluje)', 'Kontaktní formulář + mapa', 'WhatsApp & Facebook propojení', 'SEO — najdou vás na Googlu dříve', 'GDPR ready (Privacy Policy + cookie lišta)', 'Sekce Google recenzí', 'Firemní email', '🎁 BONUS: Google Business profil', 'Hotovo za 5 dní'], featured: false },
-      { tag: '⭐ Nejpopulárnější', name: 'Prezentační web', price: '499 €', old: 'běžně 999 €', features: ['Vše z One-page +', '5 podstránek na míru', 'Galerie & reference', 'Blog — přidáváte články sami', 'Pokročilé SEO + analýza klíčových slov', 'Google Analytics', 'Hotovo za 7 dní'], featured: true },
-      { tag: 'E-shop', name: 'Internetový obchod', price: '999 €', old: 'běžně 1999 €', features: ['Vše z Prezentačního +', 'Do 500 produktů', 'Platební brána (karta, PayPal)', 'Automatické faktury', 'Správa objednávek', 'WhatsApp + Facebook shop', 'Hotovo za 14 dní'], featured: false },
-    ],
-    featuredBadge: 'NEJPOPULÁRNĚJŠÍ',
-    statClients: 'Spokojených klientů',
-    statLeads: 'Více poptávek',
-    statDays: 'Hotový web',
-    cookieMsg: 'Tato stránka používá cookies pro lepší zážitek a analytiku.',
-    cookieAccept: 'Souhlasím',
-    cookieDecline: 'Odmítnout',
-    privacyLink: 'Ochrana soukromí',
-    privacyTitle: 'Ochrana osobních údajů',
-    privacyContent: `Provozovatel: Web Klienti, info@webklienti.com, +421 907 890 600\n\nJaké údaje sbíráme:\n• Jméno, příjmení, adresa, e-mail, telefon — při odeslání objednávky\n\nK čemu je používáme:\nPlnění smlouvy, vedení účetní evidence a vzájemná komunikace.\n\nDoba uchovávání:\nPo dobu trvání smlouvy a 5 let po jejím ukončení.\n\nVaše práva:\nMáte právo na přístup ke svým údajům, jejich opravu, vymazání nebo přenositelnost.\n\nCookies:\nPoužíváme Google Analytics ke sledování návštěvnosti.\n\nPlatné od: 1.1.2025`,
-  },
-  en: {
-    nav: ['Pricing', 'Reviews', 'Contact'],
-    navOrder: 'Website from 299 € →',
-    heroBadge: '🚀 Sale — 50% off until end of month',
-    heroTag: 'Web agency for small businesses · SK · CZ',
-    heroTitle: ['A website that', 'brings you customers', 'from Google'],
-    heroSub: 'Modern websites for small and medium businesses that generate real enquiries — not just visits.',
-    heroCta: 'I want a website from 299 € →',
-    heroCtaSec: 'See examples →',
-    heroBadges: ['✓ 80+ websites that bring clients', '✓ Slovakia & Czechia', '✓ Ready in 5 days', '✓ No monthly fees'],
-    trustStrip: ['Only 2 new projects per week', 'SEO & performance', 'Slovakia / Czech Republic', 'Results-focused'],
-    problemLabel: 'The problem',
-    problemTitle: 'Most businesses don\'t have a website problem. They have a customer problem.',
-    problems: [
-      { icon: '📉', text: 'No enquiries from the website' },
-      { icon: '🐌', text: 'Poor visibility on Google' },
-      { icon: '📵', text: 'Outdated or no website at all' },
-      { icon: '👻', text: 'Visitors leave without taking action' },
-    ],
-    solutionLabel: 'Our solution',
-    solutionTitle: 'A website that turns visits into enquiries',
-    solutions: [
-      { icon: '⚡', title: 'Fast loading', desc: 'PageSpeed 90+ — Google recommends you more' },
-      { icon: '🔍', title: 'SEO ready', desc: 'Customers find you before your competitors' },
-      { icon: '📱', title: 'Mobile-first design', desc: '70% of customers search on mobile' },
-      { icon: '🎯', title: 'Conversion optimised', desc: 'Every element drives enquiries' },
-    ],
-    casesLabel: 'Real example',
-    casesTitle: 'Montwell — customers started coming right after launch',
-    casesProblem: 'Problem',
-    casesSolution: 'Solution',
-    casesResult: 'Result',
-    casesBtn: 'View website →',
-    pricingLabel: 'Pricing',
-    pricingTitle: 'Professional website for your business from 299 €',
-    orderBtn: 'I want this →',
-    howLabel: 'Process',
-    howTitle: 'Simple process in 3 steps',
-    steps: [
-      { num: '01', title: 'Contact us', desc: 'Fill out the form — we\'ll get back to you within 24 hours.' },
-      { num: '02', title: 'Get a proposal', desc: 'We prepare a design tailored to your business.' },
-      { num: '03', title: 'We launch', desc: 'Website ready in 5 days. Customers start coming.' },
-      { num: '04', title: 'Track results', desc: 'We monitor enquiries and optimise together with you.' },
-    ],
-    reviewsLabel: 'Testimonials',
-    reviewsTitle: 'What clients say',
-    offerLabel: 'What you get',
-    offerTitle: 'A professional website that starts working for you',
-    offerItems: ['Custom modern design', 'SEO ready from day one', 'Optimised for enquiries and Google'],
-    offerCta: 'I want a website from 299 € →',
-    formLabel: 'Order',
-    formTitle: 'Get a price quote',
-    formSub: 'Fill out the form and we\'ll get back to you within 24 hours. No commitment.',
-    fields: [
-      { key: 'name', label: 'Full name *', type: 'text', placeholder: 'John Smith' },
-      { key: 'email', label: 'Email *', type: 'email', placeholder: 'john@company.com' },
-      { key: 'phone', label: 'Phone', type: 'tel', placeholder: '+421 900 000 000' },
-    ],
-    packageLabel: 'Plan *',
-    packagePlaceholder: '— Select a plan —',
-    messageLabel: 'What do you do?',
-    messagePlaceholder: 'Describe your business — what do you sell or offer?',
-    consentLabel: 'I agree to the processing of my personal data in accordance with the',
-    consentLink: 'Privacy Policy',
-    consentError: 'Please confirm your consent to the processing of personal data.',
-    submitBtn: 'Send request →',
-    submitting: 'Sending...',
-    successTitle: 'Thank you!',
-    successMsg: 'Your order has been received. We\'ll get back to you within 24 hours.',
-    newOrder: 'New order',
-    errorMsg: '❌ Error. Please try again or contact us directly.',
-    footerRights: '© 2025 Web Klienti · A website that works for your business 24/7',
-    packages: ['One-page website — 299 €', 'Business website — 499 €', 'Online store — 999 €'],
-    faqLabel: 'FAQ',
-    faqTitle: 'Frequently asked questions',
-    faqs: [
-      { q: 'How much does a website cost?', a: 'One-page website from 299 €, business website from 499 €, online store from 999 €. Final price, no hidden fees.' },
-      { q: 'How long does it take?', a: 'One-page website in 5 days, business website in 7 days, online store in 14 days.' },
-      { q: 'Do you do SEO?', a: 'Yes, every website is SEO-ready. We also offer advanced SEO packages.' },
-      { q: 'What do I need to prepare?', a: 'Nothing. We handle everything — texts, design, technology. Just fill out the form.' },
-    ],
-    finalCta: 'Want a website that brings you customers?',
-    finalCtaBtn: 'I want a website from 299 € →',
-    cards: [
-      { tag: 'Starter', name: 'One-page website', price: '299 €', old: 'usually 599 €', features: ['Custom modern design', 'Mobile friendly (Google loves it)', 'Contact form + map', 'WhatsApp & Facebook link', 'SEO — appear on Google before competitors', 'GDPR ready (Privacy Policy + cookie banner)', 'Google reviews section', 'Business email', '🎁 BONUS: Google Business profile', 'Ready in 5 days'], featured: false },
-      { tag: '⭐ Most popular', name: 'Business website', price: '499 €', old: 'usually 999 €', features: ['Everything from One-page +', '5 custom subpages', 'Gallery & testimonials', 'Blog — add articles yourself', 'Advanced SEO + keyword analysis', 'Google Analytics', 'Ready in 7 days'], featured: true },
-      { tag: 'E-commerce', name: 'Online store', price: '999 €', old: 'usually 1999 €', features: ['Everything from Business website +', 'Up to 500 products', 'Payment gateway (card, PayPal)', 'Automatic invoices', 'Order management', 'WhatsApp + Facebook shop', 'Ready in 14 days'], featured: false },
-    ],
-    featuredBadge: 'MOST POPULAR',
-    statClients: 'Happy clients',
-    statLeads: 'More enquiries',
-    statDays: 'Website ready',
-    cookieMsg: 'This site uses cookies for a better experience and analytics.',
-    cookieAccept: 'Accept',
-    cookieDecline: 'Decline',
-    privacyLink: 'Privacy Policy',
-    privacyTitle: 'Privacy Policy',
-    privacyContent: `Controller: Web Klienti, info@webklienti.com, +421 907 890 600\n\nData we collect:\n• Full name, address, email, phone — when submitting an order\n\nHow we use it:\nOrder fulfillment, accounting records and mutual communication.\n\nRetention period:\nFor the duration of the contract and 5 years after its termination.\n\nYour rights:\nYou have the right to access, correct, delete or transfer your data.\n\nCookies:\nWe use Google Analytics to track traffic.\n\nEffective from: 1.1.2025`,
-  },
-};
+// Fallback SK translations loaded synchronously so the page renders immediately
+// without waiting for the dynamic import. Other languages load on demand.
+import skDefault from './i18n/sk.js';
 
 function HomePage() {
   const [lang, setLang] = useState('sk');
+  const [t, setT] = useState(skDefault);
   const [form, setForm] = useState({ name: '', email: '', phone: '', package: '', message: '', consent: false });
   const [formStatus, setFormStatus] = useState('idle');
   const [cookieVisible, setCookieVisible] = useState(() => !localStorage.getItem('wk_cookie'));
@@ -336,7 +42,14 @@ function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState(null);
 
-  const t = T[lang];
+  // Lazy-load translations when language changes (SK is already loaded above)
+  useEffect(() => {
+    if (lang === 'sk') {
+      setT(skDefault);
+      return;
+    }
+    import(`./i18n/${lang}.js`).then((m) => setT(m.default));
+  }, [lang]);
 
   const handleSubmit = async () => {
     if (!form.name || !form.email || !form.package) {
@@ -723,8 +436,8 @@ function HomePage() {
 
       {/* ── FLOATING BUTTONS ── */}
       <div style={{ position: 'fixed', right: 20, bottom: 20, display: 'flex', flexDirection: 'column', gap: 12, zIndex: 999 }}>
-        <a href="https://wa.me/421907890600" target="_blank" rel="noopener noreferrer" style={{ width: 56, height: 56, background: '#25D366', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 24, boxShadow: '0 10px 25px rgba(0,0,0,0.2)' }}><FaWhatsapp /></a>
-        <a href="https://facebook.com/profile.php?id=61588797397714" target="_blank" rel="noopener noreferrer" style={{ width: 56, height: 56, background: '#1877F2', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 22, boxShadow: '0 10px 25px rgba(0,0,0,0.2)' }}><FaFacebookF /></a>
+        <a href="https://wa.me/421907890600" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" style={{ width: 56, height: 56, background: '#25D366', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 24, boxShadow: '0 10px 25px rgba(0,0,0,0.2)' }}><FaWhatsapp /></a>
+        <a href="https://facebook.com/profile.php?id=61588797397714" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style={{ width: 56, height: 56, background: '#1877F2', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 22, boxShadow: '0 10px 25px rgba(0,0,0,0.2)' }}><FaFacebookF /></a>
       </div>
 
       {/* ── FOOTER ── */}
