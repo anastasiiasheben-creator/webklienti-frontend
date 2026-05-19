@@ -22,7 +22,7 @@ const caseStudies = [
     tag: 'Montáž & výroba nábytku',
     problem: 'Firma nemala web — zákazníci ich nenachádzali online',
     solution: 'Prezentačný web s galériou realizácií a kontaktným formulárom',
-    result: 'Prvé dopyty do 48 hodín · +120% online viditeľnosť',
+    result: 'Prvé dopyty do 48 hodín od spustenia · +120% online viditeľnosť · 0 → 150+ mesačných návštev',
     color: '#1a1a1a',
   },
 ];
@@ -33,8 +33,8 @@ const T = {
     navOrder: 'Web za 299 € →',
     heroBadge: '🚀 Akcia — 50% zľava do konca mesiaca',
     heroTag: 'Web agentúra pre malé firmy · SK · CZ',
-    heroTitle: ['Web, ktorý', 'prináša zákazníkov', '— od 299 €'],
-    heroSub: 'Firemný web hotový za 5 dní. SEO, mobile friendly, Google Ads ready. Prvé dopyty do 48 hodín.',
+    heroTitle: ['Web, ktorý vám', 'prináša zákazníkov', '— od 299 €'],
+    heroSub: 'Získajte dopyty z Google pomocou webu. Hotový za 5 dní, SEO ready, bez mesačných poplatkov.',
     heroCta: 'Chcem web za 299 € →',
     heroCtaSec: 'Pozrieť výsledky →',
     heroBadges: ['✓ 80+ projektov', '✓ Slovensko & Česko', '✓ Web do 5 dní', '✓ Bez mesačných poplatkov'],
@@ -63,7 +63,7 @@ const T = {
     casesBtn: 'Pozrieť web →',
     pricingLabel: 'Cenník',
     pricingTitle: 'Vyber si svoj balík',
-    orderBtn: 'Objednať',
+    orderBtn: 'Chcem web za 299 € →',
     howLabel: 'Postup',
     howTitle: 'Ako to funguje?',
     steps: [
@@ -133,7 +133,7 @@ const T = {
     heroBadge: '🚀 Akce — 50% sleva do konce měsíce',
     heroTag: 'Web agentura pro malé firmy · SK · CZ',
     heroTitle: ['Web, který', 'přináší zákazníky', '— od 299 €'],
-    heroSub: 'Firemní web hotový za 5 dní. SEO, mobile friendly, Google Ads ready. První poptávky do 48 hodin.',
+    heroSub: 'Získejte poptávky z Google pomocí webu. Hotový za 5 dní, SEO ready, bez měsíčních poplatků.',
     heroCta: 'Chci web za 299 € →',
     heroCtaSec: 'Prohlédnout výsledky →',
     heroBadges: ['✓ 80+ projektů', '✓ Slovensko & Česko', '✓ Web do 5 dní', '✓ Bez měsíčních poplatků'],
@@ -162,7 +162,7 @@ const T = {
     casesBtn: 'Prohlédnout web →',
     pricingLabel: 'Ceník',
     pricingTitle: 'Vyberte si balíček',
-    orderBtn: 'Objednat',
+    orderBtn: 'Chci web za 299 € →',
     howLabel: 'Postup',
     howTitle: 'Jak to funguje?',
     steps: [
@@ -232,7 +232,7 @@ const T = {
     heroBadge: '🚀 Sale — 50% off until end of month',
     heroTag: 'Web agency for small businesses · SK · CZ',
     heroTitle: ['A website that', 'brings you customers', '— from 299 €'],
-    heroSub: 'Business website ready in 5 days. SEO, mobile friendly, Google Ads ready. First enquiries within 48 hours.',
+    heroSub: 'Get enquiries from Google through your website. Ready in 5 days, SEO ready, no monthly fees.',
     heroCta: 'I want a website from 299 € →',
     heroCtaSec: 'See results →',
     heroBadges: ['✓ 80+ projects', '✓ Slovakia & Czechia', '✓ Ready in 5 days', '✓ No monthly fees'],
@@ -261,7 +261,7 @@ const T = {
     casesBtn: 'View website →',
     pricingLabel: 'Pricing',
     pricingTitle: 'Choose your plan',
-    orderBtn: 'Order',
+    orderBtn: 'I want this →',
     howLabel: 'Process',
     howTitle: 'How it works',
     steps: [
@@ -569,7 +569,15 @@ function HomePage() {
         <div id="pricing" style={{ padding: '80px 40px', background: '#fff' }}>
           <div style={{ maxWidth: 1100, margin: '0 auto' }}>
             <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#888', marginBottom: 12, fontWeight: 700 }}>{t.pricingLabel}</p>
-            <h2 style={{ fontSize: 'clamp(26px, 4vw, 44px)', fontWeight: 900, letterSpacing: -2, marginBottom: 56 }}>{t.pricingTitle}</h2>
+            <h2 style={{ fontSize: 'clamp(26px, 4vw, 44px)', fontWeight: 900, letterSpacing: -2, marginBottom: 16 }}>{t.pricingTitle}</h2>
+            {/* Price anchor — 299€ dominant */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 48, flexWrap: 'wrap' }}>
+              <div style={{ display: 'inline-flex', alignItems: 'baseline', gap: 8, background: '#1a1a1a', color: '#ffd200', padding: '10px 28px', borderRadius: 14 }}>
+                <span style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2 }}>od 299 €</span>
+                <span style={{ fontSize: 14, color: 'rgba(245,242,235,0.4)', textDecoration: 'line-through' }}>599 €</span>
+              </div>
+              <span style={{ fontSize: 14, color: '#888' }}>· {t.heroBadges[2]} · {t.heroBadges[3]}</span>
+            </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 0, alignItems: 'stretch' }}>
               {t.cards.map((card, i) => (
                 <div key={i} className="card-hover" style={{ background: card.featured ? '#1a1a1a' : '#f8f8f6', color: card.featured ? '#f5f2eb' : '#1a1a1a', padding: '40px 32px', borderRadius: i === 0 ? '24px 0 0 24px' : i === 2 ? '0 24px 24px 0' : 0, position: 'relative', display: 'flex', flexDirection: 'column', border: card.featured ? '2px solid #ffd200' : '1px solid #eee' }}>
