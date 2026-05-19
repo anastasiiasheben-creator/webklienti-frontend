@@ -30,13 +30,13 @@ const caseStudies = [
 const T = {
   sk: {
     nav: ['Cenník', 'Referencie', 'Kontakt'],
-    navOrder: 'Získať analýzu zadarmo',
+    navOrder: 'Web za 299 € →',
     heroBadge: '🚀 Akcia — 50% zľava do konca mesiaca',
     heroTag: 'Web agentúra pre malé firmy · SK · CZ',
-    heroTitle: ['Weby, ktoré menia', 'návštevníkov', 'na klientov'],
+    heroTitle: ['Weby a Google Ads,', 'ktoré prinášajú', 'zákazníkov — nie len návštevy'],
     heroSub: '87% zákazníkov hľadá firmy online.\nNájdu vás — alebo vašu konkurenciu?\nWeb za 299 €. Hotový za 5 dní.',
-    heroCta: 'Získať bezplatnú analýzu webu →',
-    heroCtaSec: 'Dohodnúť konzultáciu',
+    heroCta: 'Získať cenovú ponuku →',
+    heroCtaSec: 'Web za 299 € →',
     heroBadges: ['✓ Odpoveď do 24 hodín', '✓ Mobile friendly', '✓ SEO pripravené', '✓ Bez mesačných poplatkov'],
     trustStrip: ['Weby pre malé firmy', 'SEO & performance', 'Slovensko / Česko', 'Zamerané na výsledky'],
     problemLabel: 'Prečo to nefunguje',
@@ -75,9 +75,9 @@ const T = {
     reviewsLabel: 'Referencie',
     reviewsTitle: 'Čo hovoria klienti',
     offerLabel: 'Bezplatná analýza',
-    offerTitle: 'Zistite, prečo váš web nestačí',
+    offerTitle: 'Web za 299 € — hotový do 5 dní',
     offerItems: ['SEO audit — kde vás Google vidí', 'Speed audit — prečo sú návštevníci netrpezliví', 'UX návrhy — čo zmeniť pre viac dopytov'],
-    offerCta: 'Chcem bezplatnú analýzu →',
+    offerCta: 'Chcem web za 299 € →',
     formLabel: 'Objednávka',
     formTitle: 'Objednajte si web',
     formSub: 'Vyplňte formulár a ozveme sa vám do 24 hodín.',
@@ -110,7 +110,7 @@ const T = {
       { q: 'Čo potrebujem pripraviť?', a: 'Nič. My sa postaráme o všetko — texty, dizajn, techniku. Stačí vyplniť formulár.' },
     ],
     finalCta: 'Web, ktorý vám začne prinášať klientov.',
-    finalCtaBtn: 'Začať teraz →',
+    finalCtaBtn: 'Web za 299 € →',
     cards: [
       { tag: 'Základná', name: 'One-page web', price: '299 €', old: 'bežne 599 €', features: ['Moderný dizajn na mieru', 'Mobile friendly (Google to miluje)', 'Kontaktný formulár + mapa', 'WhatsApp & Facebook prepojenie', 'SEO — nájdu vás na Googli skôr', 'GDPR ready (Privacy Policy + cookie lišta)', 'Sekcia Google recenzií', 'Firemný email', '🎁 BONUS: Google Business profil', 'Hotové za 5 dní'], featured: false },
       { tag: '⭐ Najpopulárnejší', name: 'Prezentačný web', price: '499 €', old: 'bežne 999 €', features: ['Všetko z One-page +', '5 podstránok na mieru', 'Galéria & referencie', 'Blog — pridávate články sami', 'Pokročilé SEO + analýza kľúčových slov', 'Google Analytics', 'Hotové za 7 dní'], featured: true },
@@ -129,13 +129,13 @@ const T = {
   },
   cz: {
     nav: ['Ceník', 'Reference', 'Kontakt'],
-    navOrder: 'Získat analýzu zdarma',
+    navOrder: 'Web za 299 € →',
     heroBadge: '🚀 Akce — 50% sleva do konce měsíce',
     heroTag: 'Web agentura pro malé firmy · SK · CZ',
-    heroTitle: ['Weby, které mění', 'návštěvníky', 'v klienty'],
+    heroTitle: ['Weby a Google Ads,', 'které přinášejí', 'zákazníky — ne jen návštěvy'],
     heroSub: '87% zákazníků hledá firmy online.\nNajdou vás — nebo vaši konkurenci?\nWeb za 299 €. Hotový za 5 dní.',
-    heroCta: 'Získat bezplatnou analýzu webu →',
-    heroCtaSec: 'Domluvit konzultaci',
+    heroCta: 'Získat cenovou nabídku →',
+    heroCtaSec: 'Web za 299 € →',
     heroBadges: ['✓ Odpověď do 24 hodin', '✓ Mobile friendly', '✓ SEO připraveno', '✓ Bez měsíčních poplatků'],
     trustStrip: ['Weby pro malé firmy', 'SEO & performance', 'Slovensko / Česko', 'Zaměřeno na výsledky'],
     problemLabel: 'Proč to nefunguje',
@@ -174,9 +174,9 @@ const T = {
     reviewsLabel: 'Reference',
     reviewsTitle: 'Co říkají klienti',
     offerLabel: 'Bezplatná analýza',
-    offerTitle: 'Zjistěte, proč váš web nestačí',
+    offerTitle: 'Web za 299 € — hotový do 5 dní',
     offerItems: ['SEO audit — kde vás Google vidí', 'Speed audit — proč jsou návštěvníci netrpěliví', 'UX návrhy — co změnit pro více poptávek'],
-    offerCta: 'Chci bezplatnou analýzu →',
+    offerCta: 'Chci web za 299 € →',
     formLabel: 'Objednávka',
     formTitle: 'Objednejte si web',
     formSub: 'Vyplňte formulář a ozveme se vám do 24 hodin.',
@@ -209,7 +209,7 @@ const T = {
       { q: 'Co potřebuji připravit?', a: 'Nic. My se postaráme o vše — texty, design, techniku. Stačí vyplnit formulář.' },
     ],
     finalCta: 'Web, který vám začne přinášet klienty.',
-    finalCtaBtn: 'Začít hned →',
+    finalCtaBtn: 'Web za 299 € →',
     cards: [
       { tag: 'Základní', name: 'One-page web', price: '299 €', old: 'běžně 599 €', features: ['Moderní design na míru', 'Mobile friendly (Google to miluje)', 'Kontaktní formulář + mapa', 'WhatsApp & Facebook propojení', 'SEO — najdou vás na Googlu dříve', 'GDPR ready (Privacy Policy + cookie lišta)', 'Sekce Google recenzí', 'Firemní email', '🎁 BONUS: Google Business profil', 'Hotovo za 5 dní'], featured: false },
       { tag: '⭐ Nejpopulárnější', name: 'Prezentační web', price: '499 €', old: 'běžně 999 €', features: ['Vše z One-page +', '5 podstránek na míru', 'Galerie & reference', 'Blog — přidáváte články sami', 'Pokročilé SEO + analýza klíčových slov', 'Google Analytics', 'Hotovo za 7 dní'], featured: true },
@@ -228,13 +228,13 @@ const T = {
   },
   en: {
     nav: ['Pricing', 'Reviews', 'Contact'],
-    navOrder: 'Get free analysis',
+    navOrder: 'Website from 299 € →',
     heroBadge: '🚀 Sale — 50% off until end of month',
     heroTag: 'Web agency for small businesses · SK · CZ',
-    heroTitle: ['Websites that turn', 'visitors', 'into clients'],
+    heroTitle: ['Websites & Google Ads', 'that bring you', 'clients — not just traffic'],
     heroSub: '87% of customers search for businesses online.\nWill they find you — or your competitor?\nWebsite for 299 €. Ready in 5 days.',
-    heroCta: 'Get free website analysis →',
-    heroCtaSec: 'Book a consultation',
+    heroCta: 'Get a quote →',
+    heroCtaSec: 'Website from 299 € →',
     heroBadges: ['✓ Reply within 24h', '✓ Mobile friendly', '✓ SEO ready', '✓ No monthly fees'],
     trustStrip: ['Websites for small businesses', 'SEO & performance', 'Slovakia / Czech Republic', 'Results-focused'],
     problemLabel: 'The problem',
@@ -273,9 +273,9 @@ const T = {
     reviewsLabel: 'Testimonials',
     reviewsTitle: 'What clients say',
     offerLabel: 'Free analysis',
-    offerTitle: 'Find out why your website falls short',
+    offerTitle: 'Website from 299 € — ready in 5 days',
     offerItems: ['SEO audit — where Google sees you', 'Speed audit — why visitors get impatient', 'UX suggestions — what to change for more enquiries'],
-    offerCta: 'Get free analysis →',
+    offerCta: 'I want a website from 299 € →',
     formLabel: 'Order',
     formTitle: 'Order your website',
     formSub: 'Fill out the form and we\'ll get back to you within 24 hours.',
@@ -308,7 +308,7 @@ const T = {
       { q: 'What do I need to prepare?', a: 'Nothing. We handle everything — texts, design, technology. Just fill out the form.' },
     ],
     finalCta: 'A website that starts bringing you clients.',
-    finalCtaBtn: 'Start now →',
+    finalCtaBtn: 'Website from 299 € →',
     cards: [
       { tag: 'Starter', name: 'One-page website', price: '299 €', old: 'usually 599 €', features: ['Custom modern design', 'Mobile friendly (Google loves it)', 'Contact form + map', 'WhatsApp & Facebook link', 'SEO — appear on Google before competitors', 'GDPR ready (Privacy Policy + cookie banner)', 'Google reviews section', 'Business email', '🎁 BONUS: Google Business profile', 'Ready in 5 days'], featured: false },
       { tag: '⭐ Most popular', name: 'Business website', price: '499 €', old: 'usually 999 €', features: ['Everything from One-page +', '5 custom subpages', 'Gallery & testimonials', 'Blog — add articles yourself', 'Advanced SEO + keyword analysis', 'Google Analytics', 'Ready in 7 days'], featured: true },
@@ -464,7 +464,7 @@ function HomePage() {
             <p style={{ fontSize: 18, color: 'rgba(245,242,235,0.55)', marginBottom: 44, lineHeight: 1.7, whiteSpace: 'pre-line', maxWidth: 580, margin: '0 auto 44px' }}>{t.heroSub}</p>
             <div className="hero-ctas" style={{ display: 'flex', gap: 12, justifyContent: 'center', marginBottom: 56, flexWrap: 'wrap' }}>
               <button onClick={() => scrollTo('contact')} style={{ background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '16px 36px', borderRadius: 100, fontWeight: 800, fontSize: 17, cursor: 'pointer' }}>{t.heroCta}</button>
-              <button onClick={() => scrollTo('contact')} style={{ background: 'transparent', color: 'rgba(245,242,235,0.7)', border: '1.5px solid rgba(255,255,255,0.2)', padding: '16px 28px', borderRadius: 100, fontWeight: 600, fontSize: 16, cursor: 'pointer' }}>{t.heroCtaSec}</button>
+              <Link to="/web-299" style={{ background: 'transparent', color: 'rgba(245,242,235,0.7)', border: '1.5px solid rgba(255,255,255,0.2)', padding: '16px 28px', borderRadius: 100, fontWeight: 600, fontSize: 16, cursor: 'pointer', textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>{t.heroCtaSec}</Link>
             </div>
             <div className="stats-row" style={{ display: 'flex', gap: 56, justifyContent: 'center', paddingTop: 40, borderTop: '1px solid rgba(255,255,255,0.07)', marginBottom: 40 }}>
               {[['80+', t.statClients], ['3×', t.statLeads], ['5 dní', t.statDays]].map(([val, label]) => (
@@ -625,7 +625,7 @@ function HomePage() {
                 <div key={item} style={{ background: 'rgba(26,26,26,0.08)', borderRadius: 12, padding: '10px 20px', fontSize: 14, fontWeight: 600, color: '#1a1a1a' }}>✓ {item}</div>
               ))}
             </div>
-            <button onClick={() => scrollTo('contact')} style={{ background: '#1a1a1a', color: '#ffd200', border: 'none', padding: '16px 40px', borderRadius: 100, fontSize: 17, fontWeight: 800, cursor: 'pointer' }}>{t.offerCta}</button>
+            <Link to='/web-299' style={{ background: '#1a1a1a', color: '#ffd200', border: 'none', padding: '16px 40px', borderRadius: 100, fontSize: 17, fontWeight: 800, cursor: 'pointer', textDecoration: 'none', display: 'inline-block' }}>{t.offerCta}</Link>
           </div>
         </div>
 
@@ -654,7 +654,7 @@ function HomePage() {
         <div style={{ background: '#f5f2eb', padding: '80px 40px', textAlign: 'center' }}>
           <div style={{ maxWidth: 600, margin: '0 auto' }}>
             <h2 style={{ fontSize: 'clamp(28px, 5vw, 52px)', fontWeight: 900, letterSpacing: -2, marginBottom: 32, lineHeight: 1.1 }}>{t.finalCta}</h2>
-            <button onClick={() => scrollTo('contact')} style={{ background: '#1a1a1a', color: '#ffd200', border: 'none', padding: '18px 48px', borderRadius: 100, fontSize: 18, fontWeight: 800, cursor: 'pointer' }}>{t.finalCtaBtn}</button>
+            <Link to='/web-299' style={{ background: '#1a1a1a', color: '#ffd200', padding: '18px 48px', borderRadius: 100, fontSize: 18, fontWeight: 800, cursor: 'pointer', textDecoration: 'none', display: 'inline-block' }}>{t.finalCtaBtn}</Link>
           </div>
         </div>
 
