@@ -98,7 +98,7 @@ export default function Web299() {
       <div style={{ background: '#1a1a1a', padding: '52px 24px' }}>
         <div style={{ maxWidth: 800, margin: '0 auto' }}>
           <p style={{ fontSize: 11, letterSpacing: 3, textTransform: 'uppercase', color: '#555', marginBottom: 10, textAlign: 'center', fontWeight: 700 }}>Príklad z praxe</p>
-          <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 4 }}>Konturmont s.r.o.</h2>
+          <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 4 }}>Montwell</h2>
           <p style={{ textAlign: 'center', fontSize: 13, color: '#555', marginBottom: 28 }}>Výroba a montáž nábytku · Slovensko</p>
 
           <div className="case-split" style={{ display: 'flex', gap: 12, alignItems: 'stretch', marginBottom: 14 }}>
@@ -116,7 +116,7 @@ export default function Web299() {
             <div style={{ flex: 1, background: '#0f0f0f', border: '1px solid rgba(255,210,0,0.25)', borderRadius: 16, padding: '22px 18px' }}>
               <div style={{ display: 'inline-block', background: '#4ade80', color: '#1a1a1a', padding: '3px 12px', borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 12 }}>PO</div>
               <div style={{ fontSize: 24, marginBottom: 8 }}>🌐</div>
-              <p style={{ fontSize: 13, fontWeight: 700, color: '#ffd200', marginBottom: 8 }}>konturmont.netlify.app</p>
+              <p style={{ fontSize: 13, fontWeight: 700, color: '#ffd200', marginBottom: 8 }}>montwell.sk</p>
               {['Profesionálny web', 'Galéria realizácií', 'Zákazníci ich nájdu na Google'].map(i => (
                 <div key={i} style={{ fontSize: 12, color: 'rgba(245,242,235,0.6)', display: 'flex', gap: 6, marginBottom: 4 }}>
                   <span style={{ color: '#4ade80' }}>✓</span> {i}
@@ -128,7 +128,7 @@ export default function Web299() {
           {/* 5. CASE číslo — silnejší result */}
           <div style={{ background: 'rgba(255,210,0,0.07)', border: '1px solid rgba(255,210,0,0.2)', borderRadius: 14, padding: '14px 22px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 10 }}>
             <span style={{ fontSize: 14, fontWeight: 700, color: '#ffd200' }}>🎯 Prvé leady do 48 hodín · +120% viac dopytov po spustení</span>
-            <a href="https://konturmont.netlify.app/" target="_blank" rel="noopener noreferrer" style={{ color: '#ffd200', fontSize: 13, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(255,210,0,0.3)', padding: '6px 14px', borderRadius: 100, whiteSpace: 'nowrap' }}>Pozrieť web →</a>
+            <a href="https://montwell.sk/" target="_blank" rel="noopener noreferrer" style={{ color: '#ffd200', fontSize: 13, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(255,210,0,0.3)', padding: '6px 14px', borderRadius: 100, whiteSpace: 'nowrap' }}>Pozrieť web →</a>
           </div>
         </div>
       </div>
