@@ -2,66 +2,6 @@ import { useState } from 'react';
 
 const API = 'https://webklienti-backend.onrender.com';
 
-const beforeImg = '/images/konturmont-before.jpg'; // Instagram screenshot
-const afterImg = '/images/konturmont-after.jpg';   // Website screenshot
-
-// ── TEXTS (SK default, can extend to CZ/EN) ──
-const T = {
-  badge: '✓ Odpoveď do 24 hodín · Bez záväzkov',
-  heroTag: 'Webstránka pre malú firmu',
-  heroTitle: 'Webstránka, ktorá\nprináša klientov',
-  heroTitle2: 'za 299 €',
-  heroSub: '87% zákazníkov hľadá firmy online.\nNájdu vás — alebo vašu konkurenciu?',
-  heroCta: 'Získať nezáväznú ponuku →',
-  heroTrust: ['✓ Hotová za 5 dní', '✓ Mobile friendly', '✓ SEO pripravená', '✓ Bez mesačných poplatkov'],
-  whatTitle: 'Čo dostanete za 299 €',
-  whatItems: [
-    { icon: '🎨', title: 'Dizajn na mieru', desc: 'Moderný a profesionálny web presne pre váš biznis' },
-    { icon: '📱', title: 'Mobile friendly', desc: 'Perfektne vyzerá na mobile, tablete aj PC' },
-    { icon: '🔍', title: 'SEO základy', desc: 'Zákazníci vás nájdu na Google' },
-    { icon: '📧', title: 'Kontaktný formulár', desc: 'Zákazníci vám píšu priamo z webu' },
-    { icon: '📍', title: 'Google Maps', desc: 'Zobrazíte sa na mapách pri hľadaní' },
-    { icon: '💼', title: 'Firemný email', desc: 'info@vásabiznis.sk — vyzerá profesionálne' },
-  ],
-  caseTitle: 'Príklad z praxe',
-  caseName: 'Konturmont s.r.o.',
-  caseTag: 'Výroba a montáž nábytku · Slovensko',
-  caseBefore: 'Pred',
-  caseAfter: 'Po',
-  caseBeforeDesc: 'Len Instagram — 64 sledovateľov, žiadny web',
-  caseAfterDesc: 'Profesionálny web s galériou a kontaktným formulárom',
-  caseResult: '🎯 Prvé dopyty do 48 hodín od spustenia',
-  caseLink: 'Pozrieť web →',
-  stepsTitle: 'Ako to funguje',
-  steps: [
-    { num: '01', title: 'Kontaktujete nás', desc: 'Vyplníte krátky formulár — trvá 2 minúty.' },
-    { num: '02', title: 'Dostanete návrh', desc: 'Do 24 hodín vám pošleme ukážku dizajnu.' },
-    { num: '03', title: 'Spustíme web', desc: 'Za 5 dní máte hotovú webstránku online.' },
-  ],
-  reviewsTitle: 'Čo hovoria klienti',
-  reviews: [
-    { author: 'Marek Novák', company: 'Novák & syn s.r.o.', text: 'Web bol hotový za 5 dní presne podľa predstáv. Zákazníci píšu, že web vyzerá profesionálne.', rating: 5 },
-    { author: 'Jana Kováčová', company: 'Kaderníctvo Jana', text: 'Konečne mám pekný web! Komunikácia bola super, cena výborná.', rating: 5 },
-  ],
-  formTitle: 'Získajte nezáväznú ponuku',
-  formSub: 'Vyplňte formulár — ozveme sa do 24 hodín.',
-  fieldName: 'Meno a priezvisko *',
-  fieldEmail: 'Email *',
-  fieldPhone: 'Telefón',
-  fieldBiz: 'Čo robíte? (typ biznisu)',
-  fieldMsg: 'Správa',
-  fieldMsgPlaceholder: 'Napíšte čo potrebujete...',
-  consentLabel: 'Súhlasím so spracovaním osobných údajov',
-  consentError: 'Potvrďte súhlas so spracovaním údajov.',
-  submitBtn: 'Odoslať ponuku →',
-  submitting: 'Odosielam...',
-  successTitle: 'Ďakujeme!',
-  successMsg: 'Ozveme sa vám do 24 hodín.',
-  errorMsg: '❌ Chyba. Skúste znova alebo nás kontaktujte priamo.',
-  footerText: '© 2025 Web Klienti · info@webklienti.com · +421 907 890 600',
-  urgency: '🔥 Aktuálne máme voľné miesto pre 2 klientov tento mesiac',
-};
-
 export default function Web299() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', biz: '', message: '', consent: false, package: 'One-page web — 299 €' });
   const [formStatus, setFormStatus] = useState('idle');
@@ -69,11 +9,8 @@ export default function Web299() {
   const scrollToForm = () => document.getElementById('form299')?.scrollIntoView({ behavior: 'smooth' });
 
   const handleSubmit = async () => {
-    if (!form.name || !form.email) {
-      alert('Vyplňte meno a email.');
-      return;
-    }
-    if (!form.consent) { alert(T.consentError); return; }
+    if (!form.name || !form.email) { alert('Vyplňte meno a email.'); return; }
+    if (!form.consent) { alert('Potvrďte súhlas so spracovaním údajov.'); return; }
     setFormStatus('loading');
     try {
       const res = await fetch(`${API}/api/orders`, {
@@ -93,195 +30,201 @@ export default function Web299() {
 
   return (
     <div style={{ fontFamily: "'Segoe UI', sans-serif", background: '#0f0f0f', color: '#f5f2eb', minHeight: '100vh' }}>
-
       <style>{`
         * { box-sizing: border-box; margin: 0; padding: 0; }
         @media (max-width: 640px) {
           .what-grid { grid-template-columns: 1fr 1fr !important; }
-          .steps-row { flex-direction: column !important; }
           .case-split { flex-direction: column !important; }
-          .hero-title { font-size: 38px !important; }
+          .arrow-sep { display: none !important; }
           .reviews-grid { grid-template-columns: 1fr !important; }
+          .steps-row { flex-direction: column !important; }
         }
-        @media (max-width: 400px) {
-          .what-grid { grid-template-columns: 1fr !important; }
-        }
-        input:focus, textarea:focus, select:focus { border-color: #ffd200 !important; outline: none; }
-        .btn-main { transition: transform 0.15s, box-shadow 0.15s; }
-        .btn-main:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(255,210,0,0.3); }
+        input:focus, textarea:focus { border-color: #ffd200 !important; outline: none; }
+        .btn-yellow { transition: transform 0.15s, box-shadow 0.15s; }
+        .btn-yellow:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(255,210,0,0.35); }
       `}</style>
 
-      {/* ── TOP BAR ── */}
-      <div style={{ background: '#ffd200', padding: '10px 24px', textAlign: 'center' }}>
-        <span style={{ fontSize: 13, fontWeight: 700, color: '#1a1a1a', letterSpacing: 0.3 }}>{T.urgency}</span>
+      {/* URGENCY BAR */}
+      <div style={{ background: '#ffd200', padding: '9px 24px', textAlign: 'center' }}>
+        <span style={{ fontSize: 13, fontWeight: 700, color: '#1a1a1a' }}>🔥 Aktuálne máme voľné miesto pre 2 klientov tento mesiac</span>
       </div>
 
-      {/* ── MINIMAL HEADER ── */}
-      <div style={{ padding: '20px 40px', borderBottom: '1px solid rgba(255,255,255,0.06)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+      {/* HEADER */}
+      <div style={{ padding: '18px 32px', borderBottom: '1px solid rgba(255,255,255,0.06)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <span style={{ fontWeight: 800, fontSize: 18, color: '#f5f2eb' }}>Web<span style={{ color: '#ffd200' }}>Klienti</span></span>
         <a href="tel:+421907890600" style={{ color: '#ffd200', textDecoration: 'none', fontSize: 14, fontWeight: 600 }}>+421 907 890 600</a>
       </div>
 
-      {/* ── HERO ── */}
-      <div style={{ padding: '72px 24px 80px', textAlign: 'center', maxWidth: 720, margin: '0 auto', position: 'relative' }}>
-        <div style={{ display: 'inline-block', background: 'rgba(255,210,0,0.1)', border: '1px solid rgba(255,210,0,0.25)', color: '#ffd200', padding: '6px 18px', borderRadius: 100, fontSize: 12, fontWeight: 600, marginBottom: 24, letterSpacing: 1, textTransform: 'uppercase' }}>{T.heroTag}</div>
-        <h1 className="hero-title" style={{ fontSize: 'clamp(36px, 6vw, 68px)', fontWeight: 900, lineHeight: 1.08, letterSpacing: -2.5, marginBottom: 16, whiteSpace: 'pre-line' }}>
-          {T.heroTitle}
-        </h1>
-        <div style={{ display: 'inline-block', background: '#ffd200', color: '#1a1a1a', fontSize: 'clamp(32px, 5vw, 60px)', fontWeight: 900, letterSpacing: -2, padding: '4px 24px', borderRadius: 12, marginBottom: 32 }}>{T.heroTitle2}</div>
-        <p style={{ fontSize: 18, color: 'rgba(245,242,235,0.55)', lineHeight: 1.7, whiteSpace: 'pre-line', marginBottom: 40 }}>{T.heroSub}</p>
-        <button className="btn-main" onClick={scrollToForm} style={{ background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '18px 44px', borderRadius: 100, fontWeight: 800, fontSize: 18, cursor: 'pointer', display: 'inline-block', marginBottom: 32 }}>{T.heroCta}</button>
-        <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
-          {T.heroTrust.map(b => (
-            <span key={b} style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', padding: '7px 16px', borderRadius: 100, fontSize: 13, color: 'rgba(245,242,235,0.6)', whiteSpace: 'nowrap' }}>{b}</span>
+      {/* HERO */}
+      <div style={{ padding: '56px 24px 64px', textAlign: 'center', maxWidth: 680, margin: '0 auto' }}>
+        <div style={{ display: 'flex', gap: 20, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 32 }}>
+          {['80+ webov vytvorených', 'Slovensko & Česko', 'Hotový za 5 dní'].map(t => (
+            <span key={t} style={{ fontSize: 13, color: 'rgba(245,242,235,0.45)', display: 'flex', alignItems: 'center', gap: 6 }}>
+              <span style={{ color: '#ffd200' }}>✓</span> {t}
+            </span>
           ))}
         </div>
-      </div>
-
-      {/* ── WHAT YOU GET ── */}
-      <div style={{ background: '#1a1a1a', padding: '72px 24px' }}>
-        <div style={{ maxWidth: 860, margin: '0 auto' }}>
-          <h2 style={{ fontSize: 'clamp(24px, 4vw, 40px)', fontWeight: 900, letterSpacing: -1.5, textAlign: 'center', marginBottom: 48 }}>{T.whatTitle}</h2>
-          <div className="what-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
-            {T.whatItems.map(item => (
-              <div key={item.title} style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 20, padding: '28px 24px' }}>
-                <div style={{ fontSize: 28, marginBottom: 12 }}>{item.icon}</div>
-                <h3 style={{ fontSize: 15, fontWeight: 700, color: '#f5f2eb', marginBottom: 6 }}>{item.title}</h3>
-                <p style={{ fontSize: 13, color: 'rgba(245,242,235,0.45)', lineHeight: 1.6 }}>{item.desc}</p>
-              </div>
-            ))}
-          </div>
-          <div style={{ textAlign: 'center', marginTop: 40 }}>
-            <button className="btn-main" onClick={scrollToForm} style={{ background: 'transparent', color: '#ffd200', border: '1.5px solid rgba(255,210,0,0.4)', padding: '14px 36px', borderRadius: 100, fontSize: 16, fontWeight: 700, cursor: 'pointer' }}>{T.heroCta}</button>
-          </div>
+        <h1 style={{ fontSize: 'clamp(34px, 6vw, 64px)', fontWeight: 900, lineHeight: 1.08, letterSpacing: -2.5, marginBottom: 20 }}>
+          Moderná web stránka<br />pre vašu firmu
+        </h1>
+        <div style={{ display: 'inline-flex', alignItems: 'baseline', gap: 8, background: '#ffd200', color: '#1a1a1a', padding: '10px 28px', borderRadius: 14, marginBottom: 20 }}>
+          <span style={{ fontSize: 'clamp(28px, 5vw, 52px)', fontWeight: 900, letterSpacing: -2 }}>od 299 €</span>
+          <span style={{ fontSize: 14, fontWeight: 600, opacity: 0.6, textDecoration: 'line-through' }}>599 €</span>
         </div>
+        <p style={{ fontSize: 17, color: 'rgba(245,242,235,0.5)', lineHeight: 1.65, marginBottom: 36 }}>
+          87% zákazníkov hľadá firmy online.<br />
+          Nájdu vás — alebo vašu konkurenciu?
+        </p>
+        <button className="btn-yellow" onClick={scrollToForm} style={{ background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '18px 48px', borderRadius: 100, fontWeight: 800, fontSize: 18, cursor: 'pointer' }}>
+          Získať cenovú ponuku →
+        </button>
+        <p style={{ marginTop: 14, fontSize: 13, color: 'rgba(245,242,235,0.25)' }}>Bez záväzkov · Odpoveď do 24 hodín</p>
       </div>
 
-      {/* ── CASE STUDY ── */}
-      <div style={{ padding: '72px 24px', background: '#0f0f0f' }}>
-        <div style={{ maxWidth: 860, margin: '0 auto' }}>
-          <p style={{ fontSize: 11, letterSpacing: 3, textTransform: 'uppercase', color: '#666', marginBottom: 12, textAlign: 'center', fontWeight: 700 }}>{T.caseTitle}</p>
-          <h2 style={{ fontSize: 'clamp(22px, 3.5vw, 36px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 8 }}>{T.caseName}</h2>
-          <p style={{ textAlign: 'center', fontSize: 13, color: '#666', marginBottom: 40 }}>{T.caseTag}</p>
-
-          {/* Before / After */}
-          <div className="case-split" style={{ display: 'flex', gap: 16, marginBottom: 28 }}>
-            <div style={{ flex: 1, borderRadius: 16, overflow: 'hidden', position: 'relative' }}>
-              <div style={{ position: 'absolute', top: 12, left: 12, zIndex: 2, background: '#e24b4a', color: '#fff', padding: '4px 12px', borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 1 }}>{T.caseBefore}</div>
-              {/* Instagram mockup */}
-              <div style={{ background: '#1a1a1a', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 16, padding: '32px 24px', minHeight: 200, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 12 }}>
-                <div style={{ width: 64, height: 64, borderRadius: '50%', background: 'rgba(255,255,255,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 28 }}>📷</div>
-                <p style={{ fontSize: 14, fontWeight: 700, color: '#f5f2eb' }}>@konturmont</p>
-                <div style={{ display: 'flex', gap: 20, fontSize: 13, color: 'rgba(245,242,235,0.4)' }}>
-                  <span>15 príspevkov</span>
-                  <span>64 sledovateľov</span>
-                </div>
-                <p style={{ fontSize: 12, color: 'rgba(245,242,235,0.3)', textAlign: 'center', marginTop: 4 }}>{T.caseBeforeDesc}</p>
-              </div>
-            </div>
-
-            <div style={{ display: 'flex', alignItems: 'center', fontSize: 24, color: '#ffd200', fontWeight: 900, flexShrink: 0 }}>→</div>
-
-            <div style={{ flex: 1, borderRadius: 16, overflow: 'hidden', position: 'relative' }}>
-              <div style={{ position: 'absolute', top: 12, left: 12, zIndex: 2, background: '#4ade80', color: '#1a1a1a', padding: '4px 12px', borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 1 }}>{T.caseAfter}</div>
-              <div style={{ background: '#1a1a1a', border: '1px solid rgba(255,210,0,0.2)', borderRadius: 16, padding: '32px 24px', minHeight: 200, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 12 }}>
-                <div style={{ width: 64, height: 64, borderRadius: '50%', background: 'rgba(255,210,0,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 28 }}>🌐</div>
-                <p style={{ fontSize: 14, fontWeight: 700, color: '#ffd200' }}>konturmont.netlify.app</p>
-                <div style={{ display: 'flex', gap: 20, fontSize: 13, color: 'rgba(245,242,235,0.4)' }}>
-                  <span>150+ realizácií</span>
-                  <span>Profesionálny web</span>
-                </div>
-                <p style={{ fontSize: 12, color: 'rgba(245,242,235,0.3)', textAlign: 'center', marginTop: 4 }}>{T.caseAfterDesc}</p>
-              </div>
-            </div>
-          </div>
-
-          <div style={{ background: 'rgba(255,210,0,0.08)', border: '1px solid rgba(255,210,0,0.2)', borderRadius: 16, padding: '20px 28px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
-            <span style={{ fontSize: 16, fontWeight: 700, color: '#ffd200' }}>{T.caseResult}</span>
-            <a href="https://konturmont.netlify.app/" target="_blank" rel="noopener noreferrer" style={{ color: '#ffd200', fontSize: 14, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(255,210,0,0.3)', padding: '8px 18px', borderRadius: 100 }}>{T.caseLink}</a>
-          </div>
-        </div>
-      </div>
-
-      {/* ── HOW IT WORKS ── */}
-      <div style={{ background: '#1a1a1a', padding: '72px 24px' }}>
-        <div style={{ maxWidth: 760, margin: '0 auto' }}>
-          <h2 style={{ fontSize: 'clamp(24px, 4vw, 40px)', fontWeight: 900, letterSpacing: -1.5, textAlign: 'center', marginBottom: 48 }}>{T.stepsTitle}</h2>
-          <div className="steps-row" style={{ display: 'flex', gap: 0, position: 'relative' }}>
-            {T.steps.map((s, i) => (
-              <div key={i} style={{ flex: 1, padding: '32px 28px', textAlign: 'center', borderRight: i < 2 ? '1px solid rgba(255,255,255,0.07)' : 'none' }}>
-                <div style={{ fontSize: 48, fontWeight: 900, color: '#ffd200', opacity: 0.7, lineHeight: 1, marginBottom: 16 }}>{s.num}</div>
-                <h3 style={{ fontSize: 16, fontWeight: 700, color: '#f5f2eb', marginBottom: 8 }}>{s.title}</h3>
-                <p style={{ fontSize: 14, color: 'rgba(245,242,235,0.45)', lineHeight: 1.6 }}>{s.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* ── REVIEWS ── */}
-      <div style={{ padding: '72px 24px', background: '#0f0f0f' }}>
-        <div style={{ maxWidth: 760, margin: '0 auto' }}>
-          <h2 style={{ fontSize: 'clamp(24px, 4vw, 40px)', fontWeight: 900, letterSpacing: -1.5, textAlign: 'center', marginBottom: 40 }}>{T.reviewsTitle}</h2>
-          <div className="reviews-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-            {T.reviews.map((r, i) => (
-              <div key={i} style={{ background: '#1a1a1a', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 20, padding: '28px 24px' }}>
-                <div style={{ color: '#ffd200', fontSize: 14, marginBottom: 12 }}>{'★'.repeat(r.rating)}</div>
-                <p style={{ fontSize: 14, color: 'rgba(245,242,235,0.65)', lineHeight: 1.7, marginBottom: 20 }}>"{r.text}"</p>
-                <p style={{ fontWeight: 700, color: '#f5f2eb', fontSize: 14 }}>{r.author}</p>
-                <p style={{ fontSize: 12, color: '#666' }}>{r.company}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* ── FORM ── */}
-      <div id="form299" style={{ padding: '72px 24px', background: '#1a1a1a' }}>
-        <div style={{ maxWidth: 560, margin: '0 auto' }}>
-          <h2 style={{ fontSize: 'clamp(24px, 4vw, 40px)', fontWeight: 900, letterSpacing: -1.5, textAlign: 'center', marginBottom: 8 }}>{T.formTitle}</h2>
-          <p style={{ textAlign: 'center', color: 'rgba(245,242,235,0.45)', fontSize: 15, marginBottom: 36 }}>{T.formSub}</p>
-
-          {formStatus === 'success' ? (
-            <div style={{ background: '#0f0f0f', border: '1px solid rgba(255,210,0,0.2)', borderRadius: 24, padding: '56px 40px', textAlign: 'center' }}>
-              <div style={{ fontSize: 52, marginBottom: 16 }}>🎉</div>
-              <h3 style={{ fontSize: 26, fontWeight: 800, marginBottom: 12, color: '#ffd200' }}>{T.successTitle}</h3>
-              <p style={{ color: 'rgba(245,242,235,0.55)', fontSize: 15 }}>{T.successMsg}</p>
-            </div>
-          ) : (
-            <div style={{ background: '#0f0f0f', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 24, padding: '40px 36px', display: 'flex', flexDirection: 'column', gap: 18 }}>
-              {[
-                { key: 'name', label: T.fieldName, type: 'text', placeholder: 'Ján Novák' },
-                { key: 'email', label: T.fieldEmail, type: 'email', placeholder: 'jan@firma.sk' },
-                { key: 'phone', label: T.fieldPhone, type: 'tel', placeholder: '+421 900 000 000' },
-                { key: 'biz', label: T.fieldBiz, type: 'text', placeholder: 'napr. kaderníctvo, autoservis...' },
-              ].map(f => (
-                <div key={f.key}>
-                  <label style={{ display: 'block', fontSize: 13, fontWeight: 600, marginBottom: 8, color: 'rgba(245,242,235,0.6)' }}>{f.label}</label>
-                  <input type={f.type} placeholder={f.placeholder} value={form[f.key]} onChange={e => setForm(p => ({ ...p, [f.key]: e.target.value }))} style={{ width: '100%', padding: '13px 16px', background: '#1a1a1a', border: '1.5px solid rgba(255,255,255,0.12)', borderRadius: 12, fontSize: 15, color: '#f5f2eb', fontFamily: 'inherit', transition: 'border-color 0.2s' }} />
+      {/* CASE STUDY — hned po hero */}
+      <div style={{ background: '#1a1a1a', padding: '56px 24px' }}>
+        <div style={{ maxWidth: 800, margin: '0 auto' }}>
+          <p style={{ fontSize: 11, letterSpacing: 3, textTransform: 'uppercase', color: '#555', marginBottom: 10, textAlign: 'center', fontWeight: 700 }}>Príklad z praxe</p>
+          <h2 style={{ fontSize: 'clamp(20px, 3vw, 32px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 6 }}>Konturmont s.r.o.</h2>
+          <p style={{ textAlign: 'center', fontSize: 13, color: '#555', marginBottom: 32 }}>Výroba a montáž nábytku · Slovensko</p>
+          <div className="case-split" style={{ display: 'flex', gap: 12, alignItems: 'stretch', marginBottom: 16 }}>
+            <div style={{ flex: 1, background: '#0f0f0f', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 16, padding: '24px 20px' }}>
+              <div style={{ display: 'inline-block', background: '#e24b4a', color: '#fff', padding: '3px 12px', borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 14 }}>PRED</div>
+              <div style={{ fontSize: 26, marginBottom: 10 }}>📷</div>
+              <p style={{ fontSize: 14, fontWeight: 700, color: '#f5f2eb', marginBottom: 10 }}>Len Instagram</p>
+              {['64 sledovateľov', 'Žiadny web', 'Zákazníci ich nenachádzali na Google'].map(i => (
+                <div key={i} style={{ fontSize: 13, color: 'rgba(245,242,235,0.35)', display: 'flex', gap: 6, marginBottom: 5 }}>
+                  <span style={{ color: '#e24b4a' }}>✗</span> {i}
                 </div>
               ))}
-              <div>
-                <label style={{ display: 'block', fontSize: 13, fontWeight: 600, marginBottom: 8, color: 'rgba(245,242,235,0.6)' }}>{T.fieldMsg}</label>
-                <textarea placeholder={T.fieldMsgPlaceholder} value={form.message} onChange={e => setForm(p => ({ ...p, message: e.target.value }))} rows={3} style={{ width: '100%', padding: '13px 16px', background: '#1a1a1a', border: '1.5px solid rgba(255,255,255,0.12)', borderRadius: 12, fontSize: 15, color: '#f5f2eb', fontFamily: 'inherit', resize: 'vertical' }} />
+            </div>
+            <div className="arrow-sep" style={{ display: 'flex', alignItems: 'center', fontSize: 22, color: '#ffd200', flexShrink: 0 }}>→</div>
+            <div style={{ flex: 1, background: '#0f0f0f', border: '1px solid rgba(255,210,0,0.25)', borderRadius: 16, padding: '24px 20px' }}>
+              <div style={{ display: 'inline-block', background: '#4ade80', color: '#1a1a1a', padding: '3px 12px', borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 14 }}>PO</div>
+              <div style={{ fontSize: 26, marginBottom: 10 }}>🌐</div>
+              <p style={{ fontSize: 14, fontWeight: 700, color: '#ffd200', marginBottom: 10 }}>konturmont.netlify.app</p>
+              {['Profesionálny web', 'Galéria realizácií', 'Zákazníci ho nájdu na Google'].map(i => (
+                <div key={i} style={{ fontSize: 13, color: 'rgba(245,242,235,0.6)', display: 'flex', gap: 6, marginBottom: 5 }}>
+                  <span style={{ color: '#4ade80' }}>✓</span> {i}
+                </div>
+              ))}
+            </div>
+          </div>
+          <div style={{ background: 'rgba(255,210,0,0.07)', border: '1px solid rgba(255,210,0,0.2)', borderRadius: 14, padding: '14px 22px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 10 }}>
+            <span style={{ fontSize: 15, fontWeight: 700, color: '#ffd200' }}>🎯 Prvé dopyty do 48 hodín od spustenia</span>
+            <a href="https://konturmont.netlify.app/" target="_blank" rel="noopener noreferrer" style={{ color: '#ffd200', fontSize: 13, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(255,210,0,0.3)', padding: '6px 14px', borderRadius: 100 }}>Pozrieť web →</a>
+          </div>
+        </div>
+      </div>
+
+      {/* WHAT YOU GET */}
+      <div style={{ padding: '56px 24px', background: '#0f0f0f' }}>
+        <div style={{ maxWidth: 800, margin: '0 auto' }}>
+          <h2 style={{ fontSize: 'clamp(20px, 3vw, 32px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 32 }}>Čo dostanete za 299 €</h2>
+          <div className="what-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10 }}>
+            {[
+              { icon: '🎨', title: 'Dizajn na mieru' },
+              { icon: '📱', title: 'Mobile friendly' },
+              { icon: '🔍', title: 'SEO základy' },
+              { icon: '📧', title: 'Kontaktný formulár' },
+              { icon: '📍', title: 'Google Maps' },
+              { icon: '💼', title: 'Firemný email' },
+            ].map(item => (
+              <div key={item.title} style={{ background: '#1a1a1a', border: '1px solid rgba(255,255,255,0.06)', borderRadius: 14, padding: '18px 16px', display: 'flex', gap: 10, alignItems: 'center' }}>
+                <span style={{ fontSize: 20, flexShrink: 0 }}>{item.icon}</span>
+                <span style={{ fontSize: 13, fontWeight: 600, color: '#f5f2eb' }}>{item.title}</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
-                <input id="consent299" type="checkbox" checked={form.consent} onChange={e => setForm(p => ({ ...p, consent: e.target.checked }))} style={{ marginTop: 3, width: 16, height: 16, cursor: 'pointer', accentColor: '#ffd200', flexShrink: 0 }} />
-                <label htmlFor="consent299" style={{ fontSize: 13, color: 'rgba(245,242,235,0.4)', lineHeight: 1.5, cursor: 'pointer' }}>{T.consentLabel} *</label>
+            ))}
+          </div>
+          <div style={{ textAlign: 'center', marginTop: 28 }}>
+            <button className="btn-yellow" onClick={scrollToForm} style={{ background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '15px 40px', borderRadius: 100, fontSize: 16, fontWeight: 800, cursor: 'pointer' }}>
+              Získať cenovú ponuku →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* HOW IT WORKS */}
+      <div style={{ background: '#1a1a1a', padding: '56px 24px' }}>
+        <div style={{ maxWidth: 680, margin: '0 auto' }}>
+          <h2 style={{ fontSize: 'clamp(20px, 3vw, 32px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 36 }}>Ako to funguje</h2>
+          <div className="steps-row" style={{ display: 'flex' }}>
+            {[
+              { num: '01', title: 'Kontaktujete nás', desc: 'Formulár za 2 minúty' },
+              { num: '02', title: 'Dostanete návrh', desc: 'Do 24 hodín' },
+              { num: '03', title: 'Web je online', desc: 'Za 5 dní' },
+            ].map((s, i) => (
+              <div key={i} style={{ flex: 1, padding: '24px 16px', textAlign: 'center', borderRight: i < 2 ? '1px solid rgba(255,255,255,0.06)' : 'none' }}>
+                <div style={{ fontSize: 36, fontWeight: 900, color: '#ffd200', opacity: 0.6, lineHeight: 1, marginBottom: 10 }}>{s.num}</div>
+                <p style={{ fontSize: 14, fontWeight: 700, color: '#f5f2eb', marginBottom: 4 }}>{s.title}</p>
+                <p style={{ fontSize: 12, color: 'rgba(245,242,235,0.3)' }}>{s.desc}</p>
               </div>
-              {formStatus === 'error' && <p style={{ color: '#e24b4a', fontSize: 14 }}>{T.errorMsg}</p>}
-              <button className="btn-main" onClick={handleSubmit} disabled={formStatus === 'loading' || !form.consent} style={{ background: form.consent ? '#ffd200' : 'rgba(255,210,0,0.2)', color: form.consent ? '#1a1a1a' : 'rgba(255,210,0,0.3)', border: 'none', padding: '17px', borderRadius: 100, fontSize: 17, fontWeight: 800, cursor: form.consent ? 'pointer' : 'not-allowed', transition: 'all 0.2s' }}>
-                {formStatus === 'loading' ? T.submitting : T.submitBtn}
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* REVIEWS */}
+      <div style={{ padding: '56px 24px', background: '#0f0f0f' }}>
+        <div style={{ maxWidth: 720, margin: '0 auto' }}>
+          <h2 style={{ fontSize: 'clamp(20px, 3vw, 32px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 28 }}>Čo hovoria klienti</h2>
+          <div className="reviews-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+            {[
+              { author: 'Marek Novák', company: 'Novák & syn s.r.o.', text: 'Web bol hotový za 5 dní presne podľa predstáv. Zákazníci píšu, že vyzerá profesionálne.' },
+              { author: 'Jana Kováčová', company: 'Kaderníctvo Jana', text: 'Konečne mám pekný web! Komunikácia super, cena výborná.' },
+            ].map((r, i) => (
+              <div key={i} style={{ background: '#1a1a1a', border: '1px solid rgba(255,255,255,0.06)', borderRadius: 16, padding: '22px 20px' }}>
+                <div style={{ color: '#ffd200', fontSize: 12, marginBottom: 10 }}>★★★★★</div>
+                <p style={{ fontSize: 14, color: 'rgba(245,242,235,0.6)', lineHeight: 1.65, marginBottom: 14 }}>"{r.text}"</p>
+                <p style={{ fontWeight: 700, color: '#f5f2eb', fontSize: 13 }}>{r.author}</p>
+                <p style={{ fontSize: 12, color: '#444' }}>{r.company}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* FORM */}
+      <div id="form299" style={{ padding: '56px 24px 72px', background: '#1a1a1a' }}>
+        <div style={{ maxWidth: 500, margin: '0 auto' }}>
+          <h2 style={{ fontSize: 'clamp(20px, 3vw, 32px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 6 }}>Získajte cenovú ponuku</h2>
+          <p style={{ textAlign: 'center', color: 'rgba(245,242,235,0.35)', fontSize: 14, marginBottom: 28 }}>Vyplňte formulár — ozveme sa do 24 hodín.</p>
+          {formStatus === 'success' ? (
+            <div style={{ background: '#0f0f0f', border: '1px solid rgba(255,210,0,0.2)', borderRadius: 20, padding: '48px 32px', textAlign: 'center' }}>
+              <div style={{ fontSize: 48, marginBottom: 14 }}>🎉</div>
+              <h3 style={{ fontSize: 24, fontWeight: 800, marginBottom: 10, color: '#ffd200' }}>Ďakujeme!</h3>
+              <p style={{ color: 'rgba(245,242,235,0.5)', fontSize: 15 }}>Ozveme sa vám do 24 hodín.</p>
+            </div>
+          ) : (
+            <div style={{ background: '#0f0f0f', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 20, padding: '32px 28px', display: 'flex', flexDirection: 'column', gap: 14 }}>
+              {[
+                { key: 'name', label: 'Meno a priezvisko *', type: 'text', placeholder: 'Ján Novák' },
+                { key: 'email', label: 'Email *', type: 'email', placeholder: 'jan@firma.sk' },
+                { key: 'phone', label: 'Telefón', type: 'tel', placeholder: '+421 900 000 000' },
+                { key: 'biz', label: 'Čo robíte?', type: 'text', placeholder: 'napr. kaderníctvo, reštaurácia...' },
+              ].map(f => (
+                <div key={f.key}>
+                  <label style={{ display: 'block', fontSize: 12, fontWeight: 600, marginBottom: 6, color: 'rgba(245,242,235,0.45)', textTransform: 'uppercase', letterSpacing: 0.5 }}>{f.label}</label>
+                  <input type={f.type} placeholder={f.placeholder} value={form[f.key]} onChange={e => setForm(p => ({ ...p, [f.key]: e.target.value }))} style={{ width: '100%', padding: '12px 15px', background: '#1a1a1a', border: '1.5px solid rgba(255,255,255,0.1)', borderRadius: 10, fontSize: 15, color: '#f5f2eb', fontFamily: 'inherit' }} />
+                </div>
+              ))}
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10, marginTop: 4 }}>
+                <input id="c299" type="checkbox" checked={form.consent} onChange={e => setForm(p => ({ ...p, consent: e.target.checked }))} style={{ marginTop: 3, width: 16, height: 16, cursor: 'pointer', accentColor: '#ffd200', flexShrink: 0 }} />
+                <label htmlFor="c299" style={{ fontSize: 12, color: 'rgba(245,242,235,0.3)', lineHeight: 1.5, cursor: 'pointer' }}>Súhlasím so spracovaním osobných údajov *</label>
+              </div>
+              {formStatus === 'error' && <p style={{ color: '#e24b4a', fontSize: 13 }}>❌ Chyba. Skúste znova alebo nás kontaktujte priamo.</p>}
+              <button className="btn-yellow" onClick={handleSubmit} disabled={formStatus === 'loading' || !form.consent} style={{ background: form.consent ? '#ffd200' : 'rgba(255,210,0,0.12)', color: form.consent ? '#1a1a1a' : 'rgba(255,210,0,0.2)', border: 'none', padding: '16px', borderRadius: 100, fontSize: 17, fontWeight: 800, cursor: form.consent ? 'pointer' : 'not-allowed', marginTop: 4 }}>
+                {formStatus === 'loading' ? 'Odosielam...' : 'Odoslať ponuku →'}
               </button>
-              <p style={{ textAlign: 'center', fontSize: 12, color: 'rgba(245,242,235,0.25)' }}>Bez záväzkov · Odpoveď do 24 hodín · Bezplatná konzultácia</p>
+              <p style={{ textAlign: 'center', fontSize: 12, color: 'rgba(245,242,235,0.18)' }}>Bez záväzkov · Bezplatná konzultácia</p>
             </div>
           )}
         </div>
       </div>
 
-      {/* ── FOOTER ── */}
-      <div style={{ padding: '28px 24px', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
-        <p style={{ fontSize: 13, color: 'rgba(245,242,235,0.25)' }}>{T.footerText}</p>
+      {/* FOOTER */}
+      <div style={{ padding: '22px', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+        <p style={{ fontSize: 12, color: 'rgba(245,242,235,0.18)' }}>© 2025 Web Klienti · info@webklienti.com · +421 907 890 600</p>
       </div>
     </div>
   );
