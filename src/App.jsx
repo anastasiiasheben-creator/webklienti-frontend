@@ -195,7 +195,7 @@ function HomePage() {
         </div>
 
         <div style={{ padding: '64px 40px', background: '#f5f2eb' }}>
-          <div style={{ maxWidth: 900, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40, alignItems: 'start' }} className="prob-sol-grid">
+          <div style={{ maxWidth: 900, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40, alignItems: 'stretch' }} className="prob-sol-grid">
             <div>
               <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#c0392b', marginBottom: 10, fontWeight: 700 }}>{t.problemLabel}</p>
               <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 900, letterSpacing: -1.5, marginBottom: 24, lineHeight: 1.15 }}>{t.problemTitle}</h2>
