@@ -26,7 +26,7 @@
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.webklienti.com/" />
 
-    <!-- ═══ SEO: OPEN GRAPH (Facebook, LinkedIn) ═══ -->
+    <!-- ═══ SEO: OPEN GRAPH ═══ -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.webklienti.com/" />
     <meta property="og:title" content="Web Klienti – Tvorba webstránok od 299 €" />
@@ -43,7 +43,7 @@
     <meta name="twitter:description" content="Profesionálne webstránky pre malé firmy od 299 €. Hotové za 5 dni." />
     <meta name="twitter:image" content="/og-image.png" />
 
-    <!-- ═══ SEO: GEO (lokálne SEO) ═══ -->
+    <!-- ═══ SEO: GEO ═══ -->
     <meta name="geo.region" content="SK" />
     <meta name="geo.placename" content="Slovensko" />
 
@@ -83,20 +83,26 @@
     <!-- ═══ FARBA PREHLIADAČA ═══ -->
     <meta name="theme-color" content="#1a1a1a" />
 
-    <!-- ═══ GTM: načítaj čo najskôr ═══ -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-N39N3BP9');</script>
-    <!-- End Google Tag Manager -->
+    <!-- ═══ GTM: lazy load – načíta sa 2s po načítaní stránky ═══ -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+          f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-N39N3BP9');
+        }, 2000);
+      });
+    </script>
 
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N39N3BP9"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <noscript>Pre zobrazenie tejto stránky je potrebný JavaScript.</noscript>
     <div id="root"></div>
