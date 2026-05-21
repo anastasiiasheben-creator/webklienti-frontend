@@ -195,7 +195,7 @@ function HomePage() {
         </div>
 
         <div style={{ padding: '64px 40px', background: '#f5f2eb' }}>
-          <div style={{ maxWidth: 900, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40, alignItems: 'stretch' }} className="prob-sol-grid">
+          <div style={{ maxWidth: 900, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40, alignItems: 'start' }} className="prob-sol-grid">
             <div>
               <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#c0392b', marginBottom: 10, fontWeight: 700 }}>{t.problemLabel}</p>
               <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 900, letterSpacing: -1.5, marginBottom: 24, lineHeight: 1.15 }}>{t.problemTitle}</h2>
@@ -277,7 +277,7 @@ function HomePage() {
                   <p style={{ fontSize: 12, letterSpacing: 2, textTransform: 'uppercase', color: card.featured ? 'rgba(245,242,235,0.7)' : '#666', marginBottom: 10 }}>{card.tag}</p>
                   <h3 style={{ fontSize: 22, fontWeight: 800, marginBottom: 4 }}>{card.name}</h3>
                   <div style={{ fontSize: 52, fontWeight: 900, letterSpacing: -2, margin: '14px 0 4px', color: card.featured ? '#ffd200' : '#1a1a1a' }}>{card.price}</div>
-                  <p style={{ fontSize: 13, textDecoration: 'line-through', color: card.featured ? 'rgba(245,242,235,0.55)' : '#888', marginBottom: 24 }}>{card.old}</p>
+                  <p style={{ fontSize: 13, textDecoration: 'line-through', color: card.featured ? 'rgba(245,242,235,0.55)' : '#666', marginBottom: 24 }}>{card.old}</p>
                   <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10, flexGrow: 1, marginBottom: 28 }}>
                     {card.features.map(f => (<li key={f} style={{ fontSize: 14, color: card.featured ? 'rgba(245,242,235,0.85)' : '#444', display: 'flex', gap: 8 }}><span style={{ color: '#ffd200', fontWeight: 700, flexShrink: 0 }}>✓</span>{f}</li>))}
                   </ul>
@@ -325,7 +325,7 @@ function HomePage() {
 
         <div style={{ background: '#ffd200', padding: '60px 40px' }}>
           <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center' }}>
-            <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: 'rgba(26,26,26,0.6)', marginBottom: 12, fontWeight: 700 }}>{t.offerLabel}</p>
+            <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: 'rgba(26,26,26,0.75)', marginBottom: 12, fontWeight: 700 }}>{t.offerLabel}</p>
             <h2 style={{ fontSize: 'clamp(24px, 4vw, 40px)', fontWeight: 900, letterSpacing: -1.5, color: '#1a1a1a', marginBottom: 28 }}>{t.offerTitle}</h2>
             <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 36 }}>
               {t.offerItems.map(item => (
