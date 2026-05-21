@@ -39,10 +39,7 @@ function HomePage() {
   const [openFaq, setOpenFaq] = useState(null);
 
   useEffect(() => {
-    if (lang === 'sk') {
-      setT(skDefault);
-      return;
-    }
+    if (lang === 'sk') { setT(skDefault); return; }
     import(`./i18n/${lang}.js`).then((m) => setT(m.default));
   }, [lang]);
 
@@ -107,7 +104,13 @@ function HomePage() {
             {t.navOrder}
           </button>
         </div>
-        <button onClick={() => setMenuOpen(!menuOpen)} className="hamburger" style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', padding: 8, flexDirection: 'column', gap: 5 }}>
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="hamburger"
+          aria-label="Otvoriť menu"
+          aria-expanded={menuOpen}
+          style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', padding: 8, flexDirection: 'column', gap: 5 }}
+        >
           <span style={{ display: 'block', width: 24, height: 2, background: menuOpen ? '#ffd200' : '#f5f2eb', transition: 'all .3s', transform: menuOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none' }}></span>
           <span style={{ display: 'block', width: 24, height: 2, background: menuOpen ? 'transparent' : '#f5f2eb', transition: 'all .3s' }}></span>
           <span style={{ display: 'block', width: 24, height: 2, background: menuOpen ? '#ffd200' : '#f5f2eb', transition: 'all .3s', transform: menuOpen ? 'rotate(-45deg) translate(5px, -5px)' : 'none' }}></span>
@@ -167,7 +170,7 @@ function HomePage() {
             </h1>
             <div style={{ display: 'inline-flex', alignItems: 'baseline', gap: 10, background: '#ffd200', color: '#1a1a1a', padding: '10px 32px', borderRadius: 14, marginBottom: 24 }}>
               <span style={{ fontSize: 'clamp(32px, 5vw, 56px)', fontWeight: 900, letterSpacing: -2 }}>od 299 €</span>
-              <span style={{ fontSize: 15, fontWeight: 600, opacity: 0.55, textDecoration: 'line-through' }}>599 €</span>
+              <span style={{ fontSize: 15, fontWeight: 600, opacity: 0.75, textDecoration: 'line-through' }}>599 €</span>
             </div>
             <p style={{ fontSize: 17, color: 'rgba(245,242,235,0.5)', marginBottom: 36, lineHeight: 1.65, maxWidth: 520, margin: '0 auto 36px' }}>{t.heroSub}</p>
             <div className="hero-ctas" style={{ display: 'flex', gap: 12, justifyContent: 'center', marginBottom: 48, flexWrap: 'wrap' }}>
@@ -218,7 +221,7 @@ function HomePage() {
                     <span style={{ fontSize: 20, flexShrink: 0 }}>{s.icon}</span>
                     <div>
                       <span style={{ fontSize: 14, fontWeight: 700, color: '#f5f2eb' }}>{s.title}</span>
-                      <span style={{ fontSize: 13, color: 'rgba(245,242,235,0.4)', marginLeft: 6 }}>— {s.desc}</span>
+                      <span style={{ fontSize: 13, color: 'rgba(245,242,235,0.6)', marginLeft: 6 }}>— {s.desc}</span>
                     </div>
                   </div>
                 ))}
@@ -269,7 +272,7 @@ function HomePage() {
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 48, flexWrap: 'wrap' }}>
               <div style={{ display: 'inline-flex', alignItems: 'baseline', gap: 8, background: '#1a1a1a', color: '#ffd200', padding: '10px 28px', borderRadius: 14 }}>
                 <span style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2 }}>od 299 €</span>
-                <span style={{ fontSize: 14, color: 'rgba(245,242,235,0.4)', textDecoration: 'line-through' }}>599 €</span>
+                <span style={{ fontSize: 14, color: 'rgba(245,242,235,0.6)', textDecoration: 'line-through' }}>599 €</span>
               </div>
               <span style={{ fontSize: 14, color: '#888' }}>· {t.heroBadges[2]} · {t.heroBadges[3]}</span>
             </div>
@@ -277,10 +280,10 @@ function HomePage() {
               {t.cards.map((card, i) => (
                 <div key={i} className="card-hover" style={{ background: card.featured ? '#1a1a1a' : '#f8f8f6', color: card.featured ? '#f5f2eb' : '#1a1a1a', padding: '40px 32px', borderRadius: i === 0 ? '24px 0 0 24px' : i === 2 ? '0 24px 24px 0' : 0, position: 'relative', display: 'flex', flexDirection: 'column', border: card.featured ? '2px solid #ffd200' : '1px solid #eee' }}>
                   {card.featured && <div style={{ position: 'absolute', top: -15, left: '50%', transform: 'translateX(-50%)', background: '#ffd200', color: '#1a1a1a', padding: '5px 18px', borderRadius: 100, fontSize: 11, fontWeight: 800, whiteSpace: 'nowrap', letterSpacing: 1 }}>{t.featuredBadge}</div>}
-                  <p style={{ fontSize: 11, letterSpacing: 2, textTransform: 'uppercase', color: card.featured ? 'rgba(245,242,235,0.4)' : '#aaa', marginBottom: 10 }}>{card.tag}</p>
+                  <p style={{ fontSize: 11, letterSpacing: 2, textTransform: 'uppercase', color: card.featured ? 'rgba(245,242,235,0.6)' : '#888', marginBottom: 10 }}>{card.tag}</p>
                   <h3 style={{ fontSize: 22, fontWeight: 800, marginBottom: 4 }}>{card.name}</h3>
                   <div style={{ fontSize: 52, fontWeight: 900, letterSpacing: -2, margin: '14px 0 4px', color: card.featured ? '#ffd200' : '#1a1a1a' }}>{card.price}</div>
-                  <p style={{ fontSize: 13, textDecoration: 'line-through', color: card.featured ? 'rgba(245,242,235,0.3)' : '#ccc', marginBottom: 24 }}>{card.old}</p>
+                  <p style={{ fontSize: 13, textDecoration: 'line-through', color: card.featured ? 'rgba(245,242,235,0.5)' : '#999', marginBottom: 24 }}>{card.old}</p>
                   <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10, flexGrow: 1, marginBottom: 28 }}>
                     {card.features.map(f => (<li key={f} style={{ fontSize: 14, color: card.featured ? 'rgba(245,242,235,0.7)' : '#555', display: 'flex', gap: 8 }}><span style={{ color: '#ffd200', fontWeight: 700, flexShrink: 0 }}>✓</span>{f}</li>))}
                   </ul>
@@ -301,7 +304,7 @@ function HomePage() {
                 <div key={i} style={{ padding: '36px 28px', background: 'rgba(255,255,255,0.03)', borderRight: i < 3 ? '1px solid rgba(255,255,255,0.06)' : 'none', borderRadius: i === 0 ? '20px 0 0 20px' : i === 3 ? '0 20px 20px 0' : 0 }}>
                   <div style={{ fontSize: 44, fontWeight: 900, color: '#ffd200', lineHeight: 1, marginBottom: 20, opacity: 0.8 }}>{s.num}</div>
                   <h3 style={{ fontSize: 16, fontWeight: 700, color: '#f5f2eb', marginBottom: 10 }}>{s.title}</h3>
-                  <p style={{ fontSize: 14, color: 'rgba(245,242,235,0.45)', lineHeight: 1.7 }}>{s.desc}</p>
+                  <p style={{ fontSize: 14, color: 'rgba(245,242,235,0.6)', lineHeight: 1.7 }}>{s.desc}</p>
                 </div>
               ))}
             </div>
@@ -355,7 +358,7 @@ function HomePage() {
                     <span style={{ color: '#ffd200', fontSize: 20, fontWeight: 300, flexShrink: 0, transition: 'transform 0.2s', transform: openFaq === i ? 'rotate(45deg)' : 'none' }}>+</span>
                   </button>
                   {openFaq === i && (
-                    <p style={{ fontSize: 15, color: 'rgba(245,242,235,0.55)', lineHeight: 1.7, paddingBottom: 20, marginTop: -4 }}>{faq.a}</p>
+                    <p style={{ fontSize: 15, color: 'rgba(245,242,235,0.65)', lineHeight: 1.7, paddingBottom: 20, marginTop: -4 }}>{faq.a}</p>
                   )}
                 </div>
               ))}
@@ -429,7 +432,7 @@ function HomePage() {
       <footer id="footer" style={{ background: '#111', color: 'rgba(245,242,235,0.35)', textAlign: 'center', padding: '48px 40px', fontSize: 13 }}>
         <img src={logoImg} alt="WebKlienti logo" style={{ height: 40, width: 40, objectFit: 'contain', marginBottom: 16, mixBlendMode: 'screen' }} />
         <div style={{ display: 'flex', gap: 24, justifyContent: 'center', marginBottom: 14, flexWrap: 'wrap' }}>
-          <a href="mailto:info@webklienti.com" style={{ color: 'rgba(245,242,235,0.55)', textDecoration: 'none' }}>info@webklienti.com</a>
+          <a href="mailto:info@webklienti.com" style={{ color: 'rgba(245,242,235,0.65)', textDecoration: 'none' }}>info@webklienti.com</a>
           <a href="tel:+421907890600" style={{ color: 'rgba(245,242,235,0.55)', textDecoration: 'none' }}>+421 907 890 600</a>
           <span style={{ color: 'rgba(245,242,235,0.25)' }}>webklienti.com</span>
         </div>
@@ -445,7 +448,7 @@ function HomePage() {
 
       {/* ── COOKIE ── */}
       {cookieVisible && (
-        <div role="dialog" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 9999, background: '#1a1a1a', borderTop: '1px solid rgba(255,255,255,0.1)', padding: '16px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
+        <div role="dialog" aria-label="Cookie súhlas" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 9999, background: '#1a1a1a', borderTop: '1px solid rgba(255,255,255,0.1)', padding: '16px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
           <p style={{ color: 'rgba(245,242,235,0.75)', fontSize: 14, margin: 0, flex: 1 }}>
             🍪 {t.cookieMsg}{' '}
             <button onClick={() => setPrivacyOpen(true)} style={{ background: 'none', border: 'none', color: '#ffd200', cursor: 'pointer', fontSize: 14, textDecoration: 'underline', padding: 0 }}>{t.privacyLink}</button>
@@ -459,9 +462,9 @@ function HomePage() {
 
       {/* ── PRIVACY MODAL ── */}
       {privacyOpen && (
-        <div role="dialog" aria-modal="true" style={{ position: 'fixed', inset: 0, zIndex: 10000, background: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 20 }}>
+        <div role="dialog" aria-modal="true" aria-label={t.privacyTitle} style={{ position: 'fixed', inset: 0, zIndex: 10000, background: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 20 }}>
           <div style={{ background: '#fff', borderRadius: 16, padding: '40px', maxWidth: 600, width: '100%', maxHeight: '80vh', overflowY: 'auto', position: 'relative' }}>
-            <button onClick={() => setPrivacyOpen(false)} style={{ position: 'absolute', top: 16, right: 16, background: 'none', border: 'none', fontSize: 24, cursor: 'pointer', color: '#888' }}>✕</button>
+            <button onClick={() => setPrivacyOpen(false)} aria-label="Zavrieť" style={{ position: 'absolute', top: 16, right: 16, background: 'none', border: 'none', fontSize: 24, cursor: 'pointer', color: '#888' }}>✕</button>
             <h2 style={{ fontWeight: 800, fontSize: 22, marginBottom: 24 }}>{t.privacyTitle}</h2>
             <pre style={{ whiteSpace: 'pre-wrap', fontSize: 14, lineHeight: 1.7, color: '#444', fontFamily: 'inherit' }}>{t.privacyContent}</pre>
           </div>
