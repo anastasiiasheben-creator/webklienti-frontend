@@ -5,6 +5,7 @@ import { FaWhatsapp, FaFacebookF } from "react-icons/fa";
 import logoImg from './assets/logo.webp';
 import montwellImg from './assets/montwell-preview.png';
 import Blog from './pages/Blog';
+import Privacy from './pages/Privacy';
 import BlogPost from './pages/BlogPost';
 
 const API = 'https://webklienti-backend.onrender.com';
@@ -281,7 +282,8 @@ Effective from: 1.1.2025`,
 
 function HomePage() {
   const [lang, setLang] = useState('sk');
-  const [form, setForm] = useState({ name: '', email: '', phone: '', package: '', message: '' });
+  const [form, setForm] = useState({ name: '', email: '', phone: '', package: '', message: '', consent: false });
+  const [consentError, setConsentError] = useState(false);
   const [formStatus, setFormStatus] = useState('idle');
   const [cookieVisible, setCookieVisible] = useState(() => !localStorage.getItem('wk_cookie'));
   const [privacyOpen, setPrivacyOpen] = useState(false);
@@ -295,6 +297,11 @@ function HomePage() {
       alert(lang === 'en' ? 'Please fill in name, email and select a plan' : lang === 'cz' ? 'Vyplňte jméno, email a vyberte balíček' : 'Vyplňte meno, email a vyberte balík');
       return;
     }
+    if (!form.consent) {
+      setConsentError(true);
+      return;
+    }
+    setConsentError(false);
     setFormStatus('loading');
     try {
       const res = await fetch(`${API}/api/orders`, {
@@ -305,7 +312,7 @@ function HomePage() {
       const data = await res.json();
       if (data.success) {
         setFormStatus('success');
-        setForm({ name: '', email: '', phone: '', package: '', message: '' });
+        setForm({ name: '', email: '', phone: '', package: '', message: '', consent: false });
       } else {
         setFormStatus('error');
       }
@@ -756,6 +763,28 @@ function HomePage() {
                 <textarea id="field-message" placeholder={t.messagePlaceholder} value={form.message} onChange={e => setForm(p => ({ ...p, message: e.target.value }))} rows={4} style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit', resize: 'vertical', boxSizing: 'border-box' }} />
               </div>
               {formStatus === 'error' && <p style={{ color: '#e24b4a', fontSize: 14 }} role="alert">{t.errorMsg}</p>}
+              {/* GDPR checkbox */}
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
+                <input
+                  id="field-consent"
+                  type="checkbox"
+                  checked={form.consent}
+                  onChange={e => { setForm(p => ({ ...p, consent: e.target.checked })); setConsentError(false); }}
+                  style={{ marginTop: 3, width: 16, height: 16, cursor: 'pointer', accentColor: '#1a1a1a', flexShrink: 0 }}
+                />
+                <label htmlFor="field-consent" style={{ fontSize: 13, color: '#888', lineHeight: 1.5, cursor: 'pointer' }}>
+                  {lang === 'en'
+                    ? 'I agree to the processing of personal data in accordance with the '
+                    : lang === 'cz'
+                    ? 'Souhlasím se zpracováním osobních údajů podle '
+                    : 'Súhlasím so spracovaním osobných údajov podľa '}
+                  <Link to="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: '#1a1a1a', fontSize: 13, fontWeight: 600, textDecoration: 'underline' }}>
+                    {lang === 'en' ? 'Privacy Policy' : lang === 'cz' ? 'Ochrany osobních údajů' : 'Ochrany osobných údajov'}
+                  </Link>
+                  {' *'}
+                </label>
+              </div>
+              {consentError && <p style={{ color: '#e24b4a', fontSize: 13, marginTop: -8 }}>⚠️ {lang === 'en' ? 'Please confirm your consent.' : lang === 'cz' ? 'Potvrďte prosím souhlas.' : 'Potvrďte prosím súhlas.'}</p>}
               <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap', padding: '4px 0' }}>
                 {['✓ ' + (lang === 'en' ? 'Reply in 24h' : lang === 'cz' ? 'Odpovíme do 24h' : 'Odpovieme do 24h'),
                   '✓ ' + (lang === 'en' ? 'First draft free' : lang === 'cz' ? 'Návrh zdarma' : 'Návrh zdarma'),
@@ -788,9 +817,6 @@ function HomePage() {
           <p style={{ margin: 0 }}>Ing. Anastasiia Sheben · Ulica Mozartova 5652/12 · 917 08 Trnava · Slovensko</p>
           <p style={{ margin: 0 }}>IČO: 56360495 · DIČ: 1087134598</p>
           <p style={{ margin: 0 }}>Okresný úrad Trnava · Číslo živnostenského registra: 250-58651</p>
-        </div>
-        <div style={{ marginBottom: 8 }}>
-          <button onClick={() => setPrivacyOpen(true)} style={{ background: 'none', border: 'none', color: 'rgba(245,242,235,0.4)', cursor: 'pointer', fontSize: 13, textDecoration: 'underline' }}>{t.privacyLink}</button>
         </div>
         <p>{t.footerRights}</p>
       </footer>
@@ -829,6 +855,7 @@ export default function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/:slug" element={<BlogPost />} />
+      <Route path="/privacy" element={<Privacy />} />
     </Routes>
   );
 }
