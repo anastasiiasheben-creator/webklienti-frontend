@@ -17,9 +17,9 @@ const T = {
     nav: ['Cenník', 'Referencie', 'Kontakt'],
     navOrder: 'Objednať',
     heroBadge: '🚀 Akcia — 50% zľava do konca mesiaca',
-    heroTitle: ['Získajte viac', 'zákazníkov ', 'z Google'],
-    heroSub: 'Vytvoríme vám profesionálnu webstránku za 5 dní,\naby vás zákazníci našli skôr než konkurenciu.\nWebstránka od 299 €. Bez mesačných poplatkov.',
-    heroCta: 'Chcem viac zákazníkov →',
+    heroTitle: ['Webstránky, ktoré vám', 'prinášajú zákazníkov ', 'z Google'],
+    heroSub: 'Moderný web od 299 € bez mesačných poplatkov.\nNavrhnutý tak, aby vám denne prinášal dopyty.',
+    heroCta: 'Chcem web, ktorý predáva →',
     heroBadges: ['✓ Cena je konečná', '✓ Mobile friendly', '✓ Firemný email', '✓ Bez mesačných poplatkov'],
     marketTag: '🌍 Slovensko · Česko · Európa',
     pricingLabel: 'Cenník',
@@ -71,9 +71,9 @@ const T = {
     footerRights: '© 2025 Web Klienti · Všetky práva vyhradené',
     packages: ['One-page web — 299 €', 'Prezentačný web — 499 €', 'Internetový obchod — 999 €'],
     cards: [
-      { tag: 'Základná', name: 'One-page web', price: '299 €', old: 'bežne 599 €', features: ['Moderný dizajn na mieru', 'Mobile friendly (Google to miluje)', 'Kontaktný formulár + mapa', 'WhatsApp — zákazník vám napíše jedným kliknutím', 'Facebook prepojenie — budujete komunitu od 1. dňa', 'SEO — nájdu vás na Googli skôr ako konkurenciu', 'GDPR ready (Privacy Policy + cookie lišta)', 'Sekcia Google recenzií — dôvera = viac klientov', 'Firemný email', '🎁 BONUS: Google Business profil (zobrazíte sa na Mapách)', 'Hotové za 5 dní'], featured: false },
-      { tag: '⭐ Najpopulárnejší', name: 'Prezentačný web', price: '499 €', old: 'bežne 999 €', features: ['Všetko z One-page +', '5 podstránok na mieru', 'Galéria & referencie', 'Blog — pridávate články sami', 'Pokročilé SEO + analýza kľúčových slov', 'Google Analytics — vidíte kto a odkiaľ prichádza', 'Hotové za 7 dní'], featured: true },
-      { tag: 'E-shop', name: 'Internetový obchod', price: '999 €', old: 'bežne 1999 €', features: ['Všetko z Prezentačného webu +', 'Do 500 produktov', 'Platobná brána (karta, PayPal)', 'Automatické faktúry', 'Správa objednávok', 'WhatsApp + Facebook shop prepojenie', 'Hotové za 14 dní'], featured: false },
+      { tag: 'Základná', name: 'One-page web', price: '299 €', old: 'bežne 599 €', forWhom: 'Ideálne pre živnostníkov a malé lokálne firmy', features: ['Moderný dizajn na mieru', 'Mobile friendly (Google to miluje)', 'Kontaktný formulár + mapa', 'WhatsApp — zákazník vám napíše jedným kliknutím', 'Facebook prepojenie — budujete komunitu od 1. dňa', 'SEO — nájdu vás na Googli skôr ako konkurenciu', 'GDPR ready (Privacy Policy + cookie lišta)', 'Sekcia Google recenzií — dôvera = viac klientov', 'Firemný email', '🎁 BONUS: Google Business profil (zobrazíte sa na Mapách)', 'Hotové za 5 dní'], featured: false },
+      { tag: '⭐ Najpopulárnejší', name: 'Prezentačný web', price: '499 €', old: 'bežne 999 €', forWhom: 'Najlepšia voľba pre väčšinu klientov — firmy, služby, remeselníci', features: ['Všetko z One-page +', '5 podstránok na mieru', 'Galéria & referencie', 'Blog — pridávate články sami', 'Pokročilé SEO + analýza kľúčových slov', 'Google Analytics — vidíte kto a odkiaľ prichádza', 'Hotové za 7 dní'], featured: true },
+      { tag: 'E-shop', name: 'Internetový obchod', price: '999 €', old: 'bežne 1999 €', forWhom: 'Pre tých, ktorí chcú predávať produkty online', features: ['Všetko z Prezentačného webu +', 'Do 500 produktov', 'Platobná brána (karta, PayPal)', 'Automatické faktúry', 'Správa objednávok', 'WhatsApp + Facebook shop prepojenie', 'Hotové za 14 dní'], featured: false },
     ],
     featuredBadge: 'NAJPOPULÁRNEJŠÍ',
     statNote: 'Nový projekt · Každý web robíme individuálne bez šablón',
@@ -105,9 +105,9 @@ Platné od: 1.1.2025`,
     nav: ['Ceník', 'Reference', 'Kontakt'],
     navOrder: 'Objednat',
     heroBadge: '🚀 Akce — 50% sleva do konce měsíce',
-    heroTitle: ['Získejte více', 'zákazníků ', 'z Google'],
-    heroSub: 'Vytvoříme vám profesionální web za 5 dní,\naby vás zákazníci našli dříve než konkurenci.\nWeb od 299 €. Bez měsíčních poplatků.',
-    heroCta: 'Chci více zákazníků →',
+    heroTitle: ['Weby, které vám', 'přinášejí zákazníky ', 'z Google'],
+    heroSub: 'Moderní web od 299 € bez měsíčních poplatků.\nNavržený tak, aby vám denně přinášel poptávky.',
+    heroCta: 'Chci web, který prodává →',
     heroBadges: ['✓ Cena je konečná', '✓ Mobile friendly', '✓ Firemní email', '✓ Bez měsíčních poplatků'],
     marketTag: '🌍 Slovensko · Česko · Evropa',
     pricingLabel: 'Ceník',
@@ -159,9 +159,9 @@ Platné od: 1.1.2025`,
     footerRights: '© 2025 Web Klienti · Všechna práva vyhrazena',
     packages: ['One-page web — 299 €', 'Prezentační web — 499 €', 'Internetový obchod — 999 €'],
     cards: [
-      { tag: 'Základní', name: 'One-page web', price: '299 €', old: 'běžně 599 €', features: ['Moderní design na míru', 'Mobile friendly (Google to miluje)', 'Kontaktní formulář + mapa', 'WhatsApp — zákazník vám napíše jedním kliknutím', 'Facebook propojení — budujete komunitu od 1. dne', 'SEO — najdou vás na Googlu dříve než konkurenci', 'GDPR ready (Privacy Policy + cookie lišta)', 'Sekce Google recenzí — důvěra = více klientů', 'Firemní email', '🎁 BONUS: Google Business profil (zobrazíte se na Mapách)', 'Hotovo za 5 dní'], featured: false },
-      { tag: '⭐ Nejpopulárnější', name: 'Prezentační web', price: '499 €', old: 'běžně 999 €', features: ['Vše z One-page +', '5 podstránek na míru', 'Galerie & reference', 'Blog — přidáváte články sami', 'Pokročilé SEO + analýza klíčových slov', 'Google Analytics — vidíte kdo a odkud přichází', 'Hotovo za 7 dní'], featured: true },
-      { tag: 'E-shop', name: 'Internetový obchod', price: '999 €', old: 'běžně 1999 €', features: ['Vše z Prezentačního webu +', 'Do 500 produktů', 'Platební brána (karta, PayPal)', 'Automatické faktury', 'Správa objednávek', 'WhatsApp + Facebook shop propojení', 'Hotovo za 14 dní'], featured: false },
+      { tag: 'Základní', name: 'One-page web', price: '299 €', old: 'běžně 599 €', forWhom: 'Ideální pro živnostníky a malé lokální firmy', features: ['Moderní design na míru', 'Mobile friendly (Google to miluje)', 'Kontaktní formulář + mapa', 'WhatsApp — zákazník vám napíše jedním kliknutím', 'Facebook propojení — budujete komunitu od 1. dne', 'SEO — najdou vás na Googlu dříve než konkurenci', 'GDPR ready (Privacy Policy + cookie lišta)', 'Sekce Google recenzí — důvěra = více klientů', 'Firemní email', '🎁 BONUS: Google Business profil (zobrazíte se na Mapách)', 'Hotovo za 5 dní'], featured: false },
+      { tag: '⭐ Nejpopulárnější', name: 'Prezentační web', price: '499 €', old: 'běžně 999 €', forWhom: 'Nejlepší volba pro většinu klientů — firmy, služby, řemeslníci', features: ['Vše z One-page +', '5 podstránek na míru', 'Galerie & reference', 'Blog — přidáváte články sami', 'Pokročilé SEO + analýza klíčových slov', 'Google Analytics — vidíte kdo a odkud přichází', 'Hotovo za 7 dní'], featured: true },
+      { tag: 'E-shop', name: 'Internetový obchod', price: '999 €', old: 'běžně 1999 €', forWhom: 'Pro ty, kteří chtějí prodávat produkty online', features: ['Vše z Prezentačního webu +', 'Do 500 produktů', 'Platební brána (karta, PayPal)', 'Automatické faktury', 'Správa objednávek', 'WhatsApp + Facebook shop propojení', 'Hotovo za 14 dní'], featured: false },
     ],
     featuredBadge: 'NEJPOPULÁRNĚJŠÍ',
     statNote: 'Nový projekt · Každý web děláme individuálně bez šablon',
@@ -193,9 +193,9 @@ Platné od: 1.1.2025`,
     nav: ['Pricing', 'Reviews', 'Contact'],
     navOrder: 'Order now',
     heroBadge: '🚀 Sale — 50% off until end of month',
-    heroTitle: ['Get more', 'customers ', 'from Google'],
-    heroSub: 'We build you a professional website in 5 days,\nso customers find you before your competitors.\nWebsite from 299 €. No monthly fees.',
-    heroCta: 'Get more customers →',
+    heroTitle: ['Websites that bring', 'you customers ', 'from Google'],
+    heroSub: 'Professional website from 299 €. No monthly fees.\nBuilt to generate inquiries for your business every day.',
+    heroCta: 'I want a website that sells →',
     heroBadges: ['✓ Final price', '✓ Mobile friendly', '✓ Business email', '✓ No monthly fees'],
     marketTag: '🌍 Slovakia · Czech Republic · Europe',
     pricingLabel: 'Pricing',
@@ -247,9 +247,9 @@ Platné od: 1.1.2025`,
     footerRights: '© 2025 Web Klienti · All rights reserved',
     packages: ['One-page website — 299 €', 'Business website — 499 €', 'Online store — 999 €'],
     cards: [
-      { tag: 'Starter', name: 'One-page website', price: '299 €', old: 'usually 599 €', features: ['Custom modern design', 'Mobile friendly (Google loves it)', 'Contact form + map', 'WhatsApp — customers reach you in one click', 'Facebook link — build community from day 1', 'SEO — appear on Google before your competitors', 'GDPR ready (Privacy Policy + cookie banner)', 'Google reviews section — trust = more clients', 'Business email', '🎁 BONUS: Google Business profile (show up on Maps)', 'Ready in 5 days'], featured: false },
-      { tag: '⭐ Most popular', name: 'Business website', price: '499 €', old: 'usually 999 €', features: ['Everything from One-page +', '5 custom subpages', 'Gallery & testimonials', 'Blog — add articles yourself', 'Advanced SEO + keyword analysis', 'Google Analytics — see who visits and from where', 'Ready in 7 days'], featured: true },
-      { tag: 'E-commerce', name: 'Online store', price: '999 €', old: 'usually 1999 €', features: ['Everything from Business website +', 'Up to 500 products', 'Payment gateway (card, PayPal)', 'Automatic invoices', 'Order management', 'WhatsApp + Facebook shop integration', 'Ready in 14 days'], featured: false },
+      { tag: 'Starter', name: 'One-page website', price: '299 €', old: 'usually 599 €', forWhom: 'Perfect for freelancers and small local businesses', features: ['Custom modern design', 'Mobile friendly (Google loves it)', 'Contact form + map', 'WhatsApp — customers reach you in one click', 'Facebook link — build community from day 1', 'SEO — appear on Google before your competitors', 'GDPR ready (Privacy Policy + cookie banner)', 'Google reviews section — trust = more clients', 'Business email', '🎁 BONUS: Google Business profile (show up on Maps)', 'Ready in 5 days'], featured: false },
+      { tag: '⭐ Most popular', name: 'Business website', price: '499 €', old: 'usually 999 €', forWhom: 'Best choice for most clients — companies, services, tradespeople', features: ['Everything from One-page +', '5 custom subpages', 'Gallery & testimonials', 'Blog — add articles yourself', 'Advanced SEO + keyword analysis', 'Google Analytics — see who visits and from where', 'Ready in 7 days'], featured: true },
+      { tag: 'E-commerce', name: 'Online store', price: '999 €', old: 'usually 1999 €', forWhom: 'For those who want to sell products online', features: ['Everything from Business website +', 'Up to 500 products', 'Payment gateway (card, PayPal)', 'Automatic invoices', 'Order management', 'WhatsApp + Facebook shop integration', 'Ready in 14 days'], featured: false },
     ],
     featuredBadge: 'MOST POPULAR',
     statNote: 'New agency · Every website built individually, no templates',
@@ -345,17 +345,17 @@ function HomePage() {
 
   const seoData = {
     sk: {
-      title: 'Tvorba webstránok a e-shopov | WebKlienti',
+      title: 'Tvorba webstránok, ktoré prinášajú zákazníkov | WebKlienti',
       description: 'Moderné webstránky od 299 €. Web hotový do 5 dní. Tvorba webov a e-shopov pre firmy na Slovensku a v Česku. Bez mesačných poplatkov.',
       url: 'https://webklienti.com',
     },
     cz: {
-      title: 'Tvorba webových stránek a e-shopů | WebKlienti',
+      title: 'Tvorba webů, které přinášejí zákazníky | WebKlienti',
       description: 'Moderní webové stránky od 299 €. Web hotový do 5 dní. Tvorba webů a e-shopů pro firmy v ČR a SR. Bez měsíčních poplatků.',
       url: 'https://webklienti.com',
     },
     en: {
-      title: 'Website Design & Development | WebKlienti',
+      title: 'Websites That Bring You Customers | WebKlienti',
       description: 'Professional websites from 299 €. Ready in 5 days. Web design and e-commerce for businesses in Slovakia and Czech Republic. No monthly fees.',
       url: 'https://webklienti.com',
     },
@@ -560,7 +560,40 @@ function HomePage() {
           }
         `}</style>
 
-        {/* ─── CENNÍK ─── */}
+
+        {/* ─── PRE KOHO ─── */}
+        <div style={{ background: '#f5f2eb', padding: '80px 40px' }}>
+          <div style={{ maxWidth: 900, margin: '0 auto', textAlign: 'center' }}>
+            <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#888', marginBottom: 12 }}>
+              {lang === 'en' ? 'For who' : lang === 'cz' ? 'Pro koho' : 'Pre koho'}
+            </p>
+            <h2 style={{ fontSize: 'clamp(24px, 3vw, 40px)', fontWeight: 900, letterSpacing: -1, marginBottom: 48 }}>
+              {lang === 'en' ? 'WebKlienti is the right fit for you if…' : lang === 'cz' ? 'WebKlienti je pro vás, pokud…' : 'WebKlienti je pre vás, ak…'}
+            </h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 16, marginBottom: 40 }}>
+              {[
+                { icon: '🔨', label: lang === 'en' ? 'Tradesperson / craftsman' : lang === 'cz' ? 'Řemeslník / živnostník' : 'Remeselník / živnostník' },
+                { icon: '💇', label: lang === 'en' ? 'Beauty & wellness' : lang === 'cz' ? 'Kadeřnictví, kosmetika' : 'Kaderníctvo, kozmetika' },
+                { icon: '🏗️', label: lang === 'en' ? 'Construction & services' : lang === 'cz' ? 'Stavebnictví a služby' : 'Stavebníctvo a služby' },
+                { icon: '🏋️', label: lang === 'en' ? 'Fitness & sport' : lang === 'cz' ? 'Fitness a sport' : 'Fitness a šport' },
+                { icon: '🛒', label: lang === 'en' ? 'Starting e-shop' : lang === 'cz' ? 'Začínající e-shop' : 'Začínajúci e-shop' },
+                { icon: '📍', label: lang === 'en' ? 'Local business' : lang === 'cz' ? 'Lokální podnik' : 'Lokálny podnik' },
+              ].map((item, i) => (
+                <div key={i} style={{ background: '#fff', borderRadius: 16, padding: '24px 16px', textAlign: 'center' }}>
+                  <div style={{ fontSize: 32, marginBottom: 10 }}>{item.icon}</div>
+                  <p style={{ fontSize: 14, fontWeight: 600, color: '#1a1a1a' }}>{item.label}</p>
+                </div>
+              ))}
+            </div>
+            <div style={{ background: '#1a1a1a', borderRadius: 16, padding: '20px 28px', display: 'inline-block' }}>
+              <p style={{ fontSize: 14, color: 'rgba(245,242,235,0.5)', margin: 0 }}>
+                ❌ {lang === 'en' ? 'Not for enterprise or custom development projects' : lang === 'cz' ? 'Nejsme vhodní pro enterprise či custom dev projekty' : 'Nie sme vhodní pre enterprise alebo custom dev projekty'}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* ─── CENNÍK ─── */
         <div id="pricing" style={{ padding: '100px 40px', maxWidth: 1100, margin: '0 auto' }}>
           <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#888', marginBottom: 12 }}>{t.pricingLabel}</p>
           <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, marginBottom: 56 }}>{t.pricingTitle}</h2>
@@ -571,7 +604,8 @@ function HomePage() {
                 <p style={{ fontSize: 11, letterSpacing: 2, textTransform: 'uppercase', color: card.featured ? 'rgba(245,242,235,0.5)' : '#888', marginBottom: 12 }}>{card.tag}</p>
                 <h3 style={{ fontSize: 24, fontWeight: 800, marginBottom: 4 }}>{card.name}</h3>
                 <div style={{ fontSize: 48, fontWeight: 900, letterSpacing: -2, margin: '16px 0 4px' }}>{card.price}</div>
-                <p style={{ fontSize: 13, textDecoration: 'line-through', color: card.featured ? 'rgba(245,242,235,0.4)' : '#bbb', marginBottom: 24 }}>{card.old}</p>
+                <p style={{ fontSize: 13, textDecoration: 'line-through', color: card.featured ? 'rgba(245,242,235,0.4)' : '#bbb', marginBottom: 12 }}>{card.old}</p>
+                {card.forWhom && <p style={{ fontSize: 13, color: card.featured ? 'rgba(255,210,0,0.8)' : '#888', background: card.featured ? 'rgba(255,210,0,0.08)' : '#f5f2eb', padding: '8px 12px', borderRadius: 8, marginBottom: 20, lineHeight: 1.5 }}>👤 {card.forWhom}</p>}
                 <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10, flexGrow: 1, marginBottom: 24, padding: 0 }}>
                   {card.features.map(f => (
                     <li key={f} style={{ fontSize: 14, color: card.featured ? 'rgba(245,242,235,0.75)' : '#555', display: 'flex', gap: 8 }}>
@@ -681,7 +715,20 @@ function HomePage() {
         <div id="contact" style={{ padding: '100px 40px', maxWidth: 700, margin: '0 auto' }}>
           <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#888', marginBottom: 12 }}>{t.formLabel}</p>
           <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, marginBottom: 12 }}>{t.formTitle}</h2>
-          <p style={{ color: '#888', marginBottom: 48, fontSize: 16 }}>{t.formSub}</p>
+          <p style={{ color: '#888', marginBottom: 32, fontSize: 16 }}>{t.formSub}</p>
+          {/* Closing argument */}
+          <div style={{ background: '#1a1a1a', borderRadius: 16, padding: '24px 28px', marginBottom: 32, display: 'flex', gap: 24, flexWrap: 'wrap', justifyContent: 'center' }}>
+            {[
+              { icon: '⚡', text: lang === 'en' ? 'Reply within 24 hours' : 'Odpovieme do 24 hodín' },
+              { icon: '🎨', text: lang === 'en' ? 'First draft free' : 'Prvý návrh zdarma' },
+              { icon: '🛡️', text: lang === 'en' ? 'No commitment' : 'Bez záväzku' },
+            ].map(item => (
+              <div key={item.text} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                <span style={{ fontSize: 18 }}>{item.icon}</span>
+                <span style={{ fontSize: 14, fontWeight: 600, color: '#f5f2eb' }}>{item.text}</span>
+              </div>
+            ))}
+          </div>
           {formStatus === 'success' ? (
             <div style={{ background: '#1a1a1a', color: '#f5f2eb', borderRadius: 24, padding: '60px 40px', textAlign: 'center' }}>
               <div style={{ fontSize: 56, marginBottom: 16 }}>🎉</div>
@@ -709,6 +756,12 @@ function HomePage() {
                 <textarea id="field-message" placeholder={t.messagePlaceholder} value={form.message} onChange={e => setForm(p => ({ ...p, message: e.target.value }))} rows={4} style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit', resize: 'vertical', boxSizing: 'border-box' }} />
               </div>
               {formStatus === 'error' && <p style={{ color: '#e24b4a', fontSize: 14 }} role="alert">{t.errorMsg}</p>}
+              <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap', padding: '4px 0' }}>
+                {['✓ ' + (lang === 'en' ? 'Reply in 24h' : lang === 'cz' ? 'Odpovíme do 24h' : 'Odpovieme do 24h'),
+                  '✓ ' + (lang === 'en' ? 'First draft free' : lang === 'cz' ? 'Návrh zdarma' : 'Návrh zdarma'),
+                  '✓ ' + (lang === 'en' ? 'No commitment' : lang === 'cz' ? 'Bez závazku' : 'Bez záväzku')
+                ].map(b => <span key={b} style={{ fontSize: 12, color: '#888', fontWeight: 600 }}>{b}</span>)}
+              </div>
               <button onClick={handleSubmit} disabled={formStatus === 'loading'} style={{ background: '#1a1a1a', color: '#ffd200', border: 'none', padding: '16px', borderRadius: 100, fontSize: 16, fontWeight: 700, cursor: 'pointer', opacity: formStatus === 'loading' ? 0.7 : 1 }}>
                 {formStatus === 'loading' ? t.submitting : t.submitBtn}
               </button>
