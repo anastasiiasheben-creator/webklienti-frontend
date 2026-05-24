@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { FaWhatsapp, FaFacebookF } from "react-icons/fa";
 import logoImg from './assets/logo.webp';
-import montwellImg from './assets/montwell-preview.png';
+
+// Montwell screenshot — nahraj súbor do src/assets/montwell-preview.png
+let montwellImg = null;
+try { montwellImg = require('./assets/montwell-preview.png'); } catch (e) {}
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 
@@ -526,8 +529,9 @@ function HomePage() {
           <div style={{ maxWidth: 1000, margin: '0 auto' }}>
             <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#999', marginBottom: 8 }}>{montwell.label}</p>
             <h2 style={{ fontSize: 'clamp(24px, 3vw, 40px)', fontWeight: 900, letterSpacing: -1, marginBottom: 36 }}>Montwell</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32, alignItems: 'start' }}>
-              {/* Screenshot */}
+            <div style={{ display: 'grid', gridTemplateColumns: montwellImg ? '1fr 1fr' : '1fr', gap: 32, alignItems: 'start' }}>
+              {/* Screenshot — zobrazí sa len ak existuje súbor */}
+              {montwellImg && (
               <div style={{ borderRadius: 16, overflow: 'hidden', boxShadow: '0 20px 60px rgba(0,0,0,0.15)', border: '1px solid rgba(0,0,0,0.06)' }}>
                 <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer">
                   <img
@@ -537,6 +541,7 @@ function HomePage() {
                   />
                 </a>
               </div>
+              )}
               {/* Info karty + button */}
               <div>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 24 }}>
