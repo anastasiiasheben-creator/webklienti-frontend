@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const API = 'https://webklienti-backend.onrender.com';
 
@@ -32,6 +33,13 @@ export default function Web299() {
 
   return (
     <div style={{ fontFamily: "'Segoe UI', sans-serif", background: '#0f0f0f', color: '#f5f2eb', minHeight: '100vh' }}>
+
+      <Helmet>
+        <title>Web za 299 € – Tvorba webstránok pre malé firmy | WebKlienti</title>
+        <meta name="description" content="Profesionálny firemný web za 299 €. Hotový za 5 dní, mobilná verzia, SEO základy, kontaktný formulár. Bez skrytých poplatkov. Slovensko a Česko." />
+        <link rel="canonical" href="https://www.webklienti.com/web-299" />
+      </Helmet>
+
       <style>{`
         * { box-sizing: border-box; margin: 0; padding: 0; }
         @media (max-width: 640px) {
@@ -46,18 +54,15 @@ export default function Web299() {
         .btn-yellow:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(255,210,0,0.35); }
       `}</style>
 
-      {/* 1. URGENCY BAR — агрессивнее */}
       <div style={{ background: '#1a1a1a', borderBottom: '1px solid rgba(255,210,0,0.3)', padding: '9px 24px', textAlign: 'center' }}>
         <span style={{ fontSize: 13, fontWeight: 700, color: '#ffd200' }}>⚡ Kapacita tento týždeň: zostávajú <span style={{ background: '#ffd200', color: '#1a1a1a', padding: '1px 8px', borderRadius: 4 }}>2 miesta</span></span>
       </div>
 
-      {/* HEADER */}
       <div style={{ padding: '18px 32px', borderBottom: '1px solid rgba(255,255,255,0.06)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <span style={{ fontWeight: 800, fontSize: 18, color: '#f5f2eb' }}>Web<span style={{ color: '#ffd200' }}>Klienti</span></span>
         <a href="tel:+421907890600" style={{ color: '#ffd200', textDecoration: 'none', fontSize: 14, fontWeight: 600 }}>+421 907 890 600</a>
       </div>
 
-      {/* 2. HERO — silnejší headline + trust line pod ním */}
       <div style={{ padding: '52px 24px 56px', textAlign: 'center', maxWidth: 700, margin: '0 auto' }}>
         <h1 style={{ fontSize: 'clamp(30px, 6vw, 60px)', fontWeight: 900, lineHeight: 1.08, letterSpacing: -2.5, marginBottom: 20 }}>
           Web stránka, ktorá vám<br /><span style={{ color: '#ffd200' }}>prinesie zákazníkov</span>
@@ -73,7 +78,6 @@ export default function Web299() {
           Nájdu vás — alebo vašu konkurenciu?
         </p>
 
-        {/* 3. TRUST LINE pod hero — hneď viditeľná */}
         <div style={{ display: 'flex', gap: 6, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 32 }}>
           {[
             { icon: '★', text: '4.9/5 hodnotenie' },
@@ -87,14 +91,12 @@ export default function Web299() {
           ))}
         </div>
 
-        {/* 4. CTA — want-based */}
         <button className="btn-yellow" onClick={scrollToForm} style={{ background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '18px 48px', borderRadius: 100, fontWeight: 800, fontSize: 18, cursor: 'pointer' }}>
           Chcem web za 299 € →
         </button>
         <p style={{ marginTop: 12, fontSize: 13, color: 'rgba(245,242,235,0.22)' }}>Bez záväzkov · Odpoveď do 24 hodín</p>
       </div>
 
-      {/* CASE STUDY — hned po hero */}
       <div style={{ background: '#1a1a1a', padding: '52px 24px' }}>
         <div style={{ maxWidth: 800, margin: '0 auto' }}>
           <p style={{ fontSize: 11, letterSpacing: 3, textTransform: 'uppercase', color: '#555', marginBottom: 10, textAlign: 'center', fontWeight: 700 }}>Príklad z praxe</p>
@@ -125,7 +127,6 @@ export default function Web299() {
             </div>
           </div>
 
-          {/* 5. CASE číslo — silnejší result */}
           <div style={{ background: 'rgba(255,210,0,0.07)', border: '1px solid rgba(255,210,0,0.2)', borderRadius: 14, padding: '14px 22px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 10 }}>
             <span style={{ fontSize: 14, fontWeight: 700, color: '#ffd200' }}>🎯 Prvé leady do 48 hodín · +120% viac dopytov po spustení</span>
             <a href="https://montwell.sk/" target="_blank" rel="noopener noreferrer" style={{ color: '#ffd200', fontSize: 13, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(255,210,0,0.3)', padding: '6px 14px', borderRadius: 100, whiteSpace: 'nowrap' }}>Pozrieť web →</a>
@@ -133,7 +134,6 @@ export default function Web299() {
         </div>
       </div>
 
-      {/* WHAT YOU GET */}
       <div style={{ padding: '52px 24px', background: '#0f0f0f' }}>
         <div style={{ maxWidth: 800, margin: '0 auto' }}>
           <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 28 }}>Čo dostanete za 299 €</h2>
@@ -160,7 +160,6 @@ export default function Web299() {
         </div>
       </div>
 
-      {/* HOW IT WORKS */}
       <div style={{ background: '#1a1a1a', padding: '52px 24px' }}>
         <div style={{ maxWidth: 660, margin: '0 auto' }}>
           <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 32 }}>Ako to funguje</h2>
@@ -180,7 +179,6 @@ export default function Web299() {
         </div>
       </div>
 
-      {/* REVIEWS */}
       <div style={{ padding: '52px 24px', background: '#0f0f0f' }}>
         <div style={{ maxWidth: 700, margin: '0 auto' }}>
           <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 24 }}>Čo hovoria klienti</h2>
@@ -200,7 +198,6 @@ export default function Web299() {
         </div>
       </div>
 
-      {/* TRUST BLOCK — Frame 6 */}
       <div style={{ background: '#1a1a1a', padding: '52px 24px' }}>
         <div style={{ maxWidth: 700, margin: '0 auto' }}>
           <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 32 }}>Prečo nám firmy dôverujú</h2>
@@ -223,7 +220,6 @@ export default function Web299() {
         </div>
       </div>
 
-      {/* FINAL CTA — Frame 8 */}
       <div style={{ background: '#ffd200', padding: '52px 24px', textAlign: 'center' }}>
         <div style={{ maxWidth: 560, margin: '0 auto' }}>
           <h2 style={{ fontSize: 'clamp(22px, 4vw, 38px)', fontWeight: 900, letterSpacing: -1.5, color: '#1a1a1a', marginBottom: 24, lineHeight: 1.1 }}>
@@ -242,7 +238,6 @@ export default function Web299() {
         </div>
       </div>
 
-      {/* FORM — consent validates on submit, button always active */}
       <div id="form299" style={{ padding: '52px 24px 68px', background: '#1a1a1a' }}>
         <div style={{ maxWidth: 500, margin: '0 auto' }}>
           <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 6 }}>Získajte cenovú ponuku</h2>
@@ -272,7 +267,6 @@ export default function Web299() {
               </div>
               {consentError && <p style={{ color: '#e24b4a', fontSize: 13, marginTop: -4 }}>⚠️ Potvrďte súhlas so spracovaním údajov.</p>}
               {formStatus === 'error' && <p style={{ color: '#e24b4a', fontSize: 13 }}>❌ Chyba. Skúste znova alebo nás kontaktujte priamo.</p>}
-              {/* BUTTON always active — validates on click */}
               <button className="btn-yellow" onClick={handleSubmit} disabled={formStatus === 'loading'} style={{ background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '16px', borderRadius: 100, fontSize: 17, fontWeight: 800, cursor: 'pointer', marginTop: 4, opacity: formStatus === 'loading' ? 0.7 : 1 }}>
                 {formStatus === 'loading' ? 'Odosielam...' : 'Chcem web za 299 € →'}
               </button>
@@ -282,7 +276,6 @@ export default function Web299() {
         </div>
       </div>
 
-      {/* FOOTER */}
       <div style={{ padding: '22px', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
         <p style={{ fontSize: 12, color: 'rgba(245,242,235,0.18)' }}>© 2025 Web Klienti · info@webklienti.com · +421 907 890 600</p>
       </div>
