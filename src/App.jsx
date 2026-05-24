@@ -813,11 +813,7 @@ function HomePage() {
           <a href="tel:+421907890600" style={{ color: 'rgba(245,242,235,0.6)', textDecoration: 'none' }}>+421 907 890 600</a>
           <span style={{ color: 'rgba(245,242,235,0.3)' }}>webklienti.com</span>
         </div>
-        <div style={{ marginBottom: 16, lineHeight: 1.8, color: 'rgba(245,242,235,0.35)' }}>
-          <p style={{ margin: 0 }}>Ing. Anastasiia Sheben · Ulica Mozartova 5652/12 · 917 08 Trnava · Slovensko</p>
-          <p style={{ margin: 0 }}>IČO: 56360495 · DIČ: 1087134598</p>
-          <p style={{ margin: 0 }}>Okresný úrad Trnava · Číslo živnostenského registra: 250-58651</p>
-        </div>
+
         <p>{t.footerRights}</p>
       </footer>
 
