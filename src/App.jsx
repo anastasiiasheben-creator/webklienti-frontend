@@ -568,9 +568,9 @@ function HomePage() {
               {lang === 'en' ? 'For who' : lang === 'cz' ? 'Pro koho' : 'Pre koho'}
             </p>
             <h2 style={{ fontSize: 'clamp(24px, 3vw, 40px)', fontWeight: 900, letterSpacing: -1, marginBottom: 48 }}>
-              {lang === 'en' ? 'WebKlienti is the right fit for you if…' : lang === 'cz' ? 'WebKlienti je pro vás, pokud…' : 'WebKlienti je pre vás, ak…'}
+              {lang === 'en' ? 'WebKlienti is the right fit for you if you are…' : lang === 'cz' ? 'WebKlienti je pro vás, pokud jste…' : 'WebKlienti je pre vás, ak ste…'}
             </h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 16, marginBottom: 40 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16, marginBottom: 40 }}>
               {[
                 { icon: '🔨', label: lang === 'en' ? 'Tradesperson / craftsman' : lang === 'cz' ? 'Řemeslník / živnostník' : 'Remeselník / živnostník' },
                 { icon: '💇', label: lang === 'en' ? 'Beauty & wellness' : lang === 'cz' ? 'Kadeřnictví, kosmetika' : 'Kaderníctvo, kozmetika' },
