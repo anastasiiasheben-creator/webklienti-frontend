@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import logoImg from '../assets/logo.webp';
 
 const posts = [
@@ -12,8 +13,7 @@ const posts = [
   {
     slug: 'ai-na-webstranke-konkurecna-vyhoda',
     title: 'AI na vašej webstránke: konkurenčná výhoda, ktorú už používajú úspešné firmy',
-    excerpt:
-      'AI chatboty, inteligentné vyhľadávanie a personalizovaný obsah dnes pomáhajú firmám zvyšovať konverzie, šetriť čas a zlepšovať zákaznícku podporu.',
+    excerpt: 'AI chatboty, inteligentné vyhľadávanie a personalizovaný obsah dnes pomáhajú firmám zvyšovať konverzie, šetriť čas a zlepšovať zákaznícku podporu.',
     date: '19. mája 2026',
     readTime: '6 min čítania',
   },
@@ -57,6 +57,12 @@ const posts = [
 export default function Blog() {
   return (
     <div style={{ fontFamily: "'Segoe UI', sans-serif", background: '#f5f2eb', minHeight: '100vh' }}>
+
+      <Helmet>
+        <title>Blog – Tipy o webstránkach a SEO | WebKlienti</title>
+        <meta name="description" content="Praktické články o tvorbe webstránok, SEO a online marketingu pre malé firmy na Slovensku." />
+        <link rel="canonical" href="https://www.webklienti.com/blog" />
+      </Helmet>
 
       {/* NAV */}
       <nav style={{ background: 'rgba(26,26,26,0.97)', padding: '0 40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: 64 }}>
