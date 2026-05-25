@@ -10,7 +10,6 @@ import BlogPost from './pages/BlogPost';
 
 const API = 'https://webklienti-backend.onrender.com';
 
-// Referencie — pridaj reálnych klientov sem keď ich budeš mať
 const staticReviews = [];
 
 const T = {
@@ -83,24 +82,7 @@ const T = {
     cookieDecline: 'Odmietnuť',
     privacyLink: 'Ochrana súkromia',
     privacyTitle: 'Ochrana osobných údajov',
-    privacyContent: `Prevádzkovateľ: Web Klienti, info@webklienti.com, +421 907 890 600
-
-Aké údaje zbierame:
-• Meno, priezvisko, adresa, e-mail, telefón — pri odoslaní objednávky
-
-Na čo ich používame:
-Plnenie zmluvy, vedenie účtovnej evidencie a vzájomná komunikácia.
-
-Doba uchovávania:
-Po dobu trvania zmluvy a 5 rokov po jej ukončení v súlade so zákonom č. 431/2002 Z. z. o účtovníctve.
-
-Vaše práva:
-Máte právo na prístup k svojim údajom, ich opravu, vymazanie alebo prenosnosť. Žiadosť zasielajte písomne na info@webklienti.com.
-
-Cookies:
-Používame Google Analytics na sledovanie návštevnosti. Cookies môžete odmietnuť pri prvej návšteve.
-
-Platné od: 1.1.2025`,
+    privacyContent: `Prevádzkovateľ: Web Klienti, info@webklienti.com, +421 907 890 600`,
   },
   cz: {
     nav: ['Ceník', 'Reference', 'Kontakt'],
@@ -171,24 +153,7 @@ Platné od: 1.1.2025`,
     cookieDecline: 'Odmítnout',
     privacyLink: 'Ochrana soukromí',
     privacyTitle: 'Ochrana osobních údajů',
-    privacyContent: `Provozovatel: Web Klienti, info@webklienti.com, +421 907 890 600
-
-Jaké údaje sbíráme:
-• Jméno, příjmení, adresa, e-mail, telefon — při odeslání objednávky
-
-K čemu je používáme:
-Plnění smlouvy, vedení účetní evidence a vzájemná komunikace.
-
-Doba uchovávání:
-Po dobu trvání smlouvy a 5 let po jejím ukončení v souladu se zákonem o účetnictví.
-
-Vaše práva:
-Máte právo na přístup ke svým údajům, jejich opravu, vymazání nebo přenositelnost. Žádost zasílejte písemně na info@webklienti.com.
-
-Cookies:
-Používáme Google Analytics ke sledování návštěvnosti. Cookies můžete odmítnout při první návštěvě.
-
-Platné od: 1.1.2025`,
+    privacyContent: `Provozovatel: Web Klienti, info@webklienti.com, +421 907 890 600`,
   },
   en: {
     nav: ['Pricing', 'Reviews', 'Contact'],
@@ -225,7 +190,7 @@ Platné od: 1.1.2025`,
       { q: "What if I don't like the design?", a: "We send the first draft within 24 hours. If you don't like it, we'll revise it. You only pay after approving the design." },
     ],
     guaranteeTitle: 'Zero risk',
-    guaranteeText: 'You get your first website draft within 24 hours, for free. Pay just a 50% deposit — the rest only after you approve the finished website. No hidden fees.',
+    guaranteeText: "You get your first website draft within 24 hours, for free. Pay just a 50% deposit — the rest only after you approve the finished website. No hidden fees.",
     guaranteeBadges: ['✓ Draft in 24 hours', '✓ 50% deposit · 50% after approval', '✓ Website is yours after delivery'],
     formLabel: 'Order',
     formTitle: 'Get a free website draft',
@@ -259,24 +224,7 @@ Platné od: 1.1.2025`,
     cookieDecline: 'Decline',
     privacyLink: 'Privacy Policy',
     privacyTitle: 'Privacy Policy',
-    privacyContent: `Controller: Web Klienti, info@webklienti.com, +421 907 890 600
-
-Data we collect:
-• Full name, address, email, phone — when submitting an order
-
-How we use it:
-Order fulfillment, accounting records and mutual communication.
-
-Retention period:
-For the duration of the contract and 5 years after its termination in accordance with accounting law.
-
-Your rights:
-You have the right to access, correct, delete or transfer your data. Send a written request to info@webklienti.com.
-
-Cookies:
-We use Google Analytics to track traffic. You can decline cookies on your first visit.
-
-Effective from: 1.1.2025`,
+    privacyContent: `Controller: Web Klienti, info@webklienti.com, +421 907 890 600`,
   },
 };
 
@@ -297,10 +245,7 @@ function HomePage() {
       alert(lang === 'en' ? 'Please fill in name, email and select a plan' : lang === 'cz' ? 'Vyplňte jméno, email a vyberte balíček' : 'Vyplňte meno, email a vyberte balík');
       return;
     }
-    if (!form.consent) {
-      setConsentError(true);
-      return;
-    }
+    if (!form.consent) { setConsentError(true); return; }
     setConsentError(false);
     setFormStatus('loading');
     try {
@@ -313,22 +258,13 @@ function HomePage() {
       if (data.success) {
         setFormStatus('success');
         setForm({ name: '', email: '', phone: '', package: '', message: '', consent: false });
-      } else {
-        setFormStatus('error');
-      }
-    } catch {
-      setFormStatus('error');
-    }
+      } else { setFormStatus('error'); }
+    } catch { setFormStatus('error'); }
   };
 
-  const scrollTo = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-    setMenuOpen(false);
-  };
-
+  const scrollTo = (id) => { document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }); setMenuOpen(false); };
   const acceptCookies = () => { localStorage.setItem('wk_cookie', '1'); setCookieVisible(false); };
   const declineCookies = () => { localStorage.setItem('wk_cookie', '0'); setCookieVisible(false); };
-
   const navIds = ['pricing', 'reviews', 'footer'];
 
   const langBtn = (code) => ({
@@ -344,120 +280,90 @@ function HomePage() {
     viewBtn: lang === 'en' ? 'View project →' : lang === 'cz' ? 'Zobrazit projekt →' : 'Zobraziť projekt →',
     facts: [
       { label: lang === 'en' ? 'Type' : 'Typ', value: lang === 'en' ? 'Corporate website' : lang === 'cz' ? 'Firemní web' : 'Firemná webstránka' },
-      { label: lang === 'en' ? 'Features' : lang === 'cz' ? 'Funkcie' : 'Funkcie', value: lang === 'en' ? 'Responsive design · Contact form · SEO' : lang === 'cz' ? 'Responzivní design · Kontaktní formulář · SEO' : 'Responzívny dizajn · Kontaktný formulár · SEO' },
+      { label: lang === 'en' ? 'Features' : 'Funkcie', value: lang === 'en' ? 'Responsive · Contact form · SEO' : lang === 'cz' ? 'Responzivní · Formulář · SEO' : 'Responzívny · Formulár · SEO' },
       { label: lang === 'en' ? 'Result' : lang === 'cz' ? 'Výsledek' : 'Výsledok', value: lang === 'en' ? 'First organic inquiries after launch' : lang === 'cz' ? 'První organické dopyty po spuštění' : 'Prvé organické dopyty po spustení' },
-      { label: lang === 'en' ? 'Timeline' : lang === 'cz' ? 'Doba' : 'Doba', value: lang === 'en' ? '5 days' : '5 dní' },
+      { label: lang === 'en' ? 'Timeline' : 'Doba', value: lang === 'en' ? '5 days' : '5 dní' },
     ],
   };
 
   const seoData = {
-    sk: {
-      title: 'Tvorba webstránok, ktoré prinášajú zákazníkov | WebKlienti',
-      description: 'Moderné webstránky od 299 €. Web hotový do 5 dní. Tvorba webov a e-shopov pre firmy na Slovensku a v Česku. Bez mesačných poplatkov.',
-      url: 'https://webklienti.com',
-    },
-    cz: {
-      title: 'Tvorba webů, které přinášejí zákazníky | WebKlienti',
-      description: 'Moderní webové stránky od 299 €. Web hotový do 5 dní. Tvorba webů a e-shopů pro firmy v ČR a SR. Bez měsíčních poplatků.',
-      url: 'https://webklienti.com',
-    },
-    en: {
-      title: 'Websites That Bring You Customers | WebKlienti',
-      description: 'Professional websites from 299 €. Ready in 5 days. Web design and e-commerce for businesses in Slovakia and Czech Republic. No monthly fees.',
-      url: 'https://webklienti.com',
-    },
+    sk: { title: 'Tvorba webstránok, ktoré prinášajú zákazníkov | WebKlienti', description: 'Moderné webstránky od 299 €. Web hotový do 5 dní. Tvorba webov a e-shopov pre firmy na Slovensku a v Česku. Bez mesačných poplatkov.', url: 'https://webklienti.com' },
+    cz: { title: 'Tvorba webů, které přinášejí zákazníky | WebKlienti', description: 'Moderní webové stránky od 299 €. Web hotový do 5 dní. Tvorba webů a e-shopů pro firmy v ČR a SR. Bez měsíčních poplatků.', url: 'https://webklienti.com' },
+    en: { title: 'Websites That Bring You Customers | WebKlienti', description: 'Professional websites from 299 €. Ready in 5 days. Web design and e-commerce for businesses in Slovakia and Czech Republic. No monthly fees.', url: 'https://webklienti.com' },
   };
   const seo = seoData[lang];
 
   return (
     <div style={{ fontFamily: "'Segoe UI', sans-serif", background: '#f5f2eb', color: '#1a1a1a', minHeight: '100vh' }}>
-
       <Helmet>
         <html lang={lang} />
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
         <link rel="canonical" href={seo.url} />
-
-        {/* Open Graph */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={seo.url} />
         <meta property="og:title" content={seo.title} />
         <meta property="og:description" content={seo.description} />
         <meta property="og:image" content="https://webklienti.com/og-image.jpg" />
         <meta property="og:locale" content={lang === 'sk' ? 'sk_SK' : lang === 'cz' ? 'cs_CZ' : 'en_US'} />
-
-        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={seo.title} />
         <meta name="twitter:description" content={seo.description} />
         <meta name="twitter:image" content="https://webklienti.com/og-image.jpg" />
-
-        {/* Schema.org LocalBusiness */}
-        <script type="application/ld+json">{`
-          {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "WebKlienti",
-            "url": "https://webklienti.com",
-            "telephone": "+421907890600",
-            "email": "info@webklienti.com",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Ulica Mozartova 5652/12",
-              "addressLocality": "Trnava",
-              "postalCode": "917 08",
-              "addressCountry": "SK"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": 48.3774,
-              "longitude": 17.5872
-            },
-            "areaServed": ["SK", "CZ"],
-            "priceRange": "\u20ac\u20ac",
-            "openingHours": "Mo-Fr 09:00-18:00",
-            "sameAs": ["https://facebook.com/profile.php?id=61588797397714"],
-            "hasOfferCatalog": {
-              "@type": "OfferCatalog",
-              "name": "Tvorba webstranok",
-              "itemListElement": [
-                { "@type": "Offer", "name": "One-page web", "price": "299", "priceCurrency": "EUR" },
-                { "@type": "Offer", "name": "Prezentacny web", "price": "499", "priceCurrency": "EUR" },
-                { "@type": "Offer", "name": "Internetovy obchod", "price": "999", "priceCurrency": "EUR" }
-              ]
-            }
-          }
-        `}</script>
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"LocalBusiness","name":"WebKlienti","url":"https://webklienti.com","telephone":"+421907890600","email":"info@webklienti.com","address":{"@type":"PostalAddress","streetAddress":"Ulica Mozartova 5652/12","addressLocality":"Trnava","postalCode":"917 08","addressCountry":"SK"},"geo":{"@type":"GeoCoordinates","latitude":48.3774,"longitude":17.5872},"areaServed":["SK","CZ"],"priceRange":"\u20ac\u20ac","openingHours":"Mo-Fr 09:00-18:00","sameAs":["https://facebook.com/profile.php?id=61588797397714"]}`}</script>
       </Helmet>
 
-      {/* NAV */}
-      <nav style={{ position: 'sticky', top: 0, zIndex: 100, background: 'rgba(26,26,26,0.97)', backdropFilter: 'blur(8px)', padding: '0 40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: 64 }}>
-        <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
-          <img src={logoImg} alt="WebKlienti logo" style={{ height: 44, width: 44, objectFit: 'contain', mixBlendMode: 'screen' }} />
-          <span style={{ fontWeight: 800, fontSize: 18, color: '#f5f2eb', letterSpacing: -0.5 }}>
-            Web<span style={{ color: '#ffd200' }}>Klienti</span>
-          </span>
-        </Link>
+      <style>{`
+        @media (max-width: 768px) {
+          .desktop-nav { display: none !important; }
+          .hamburger { display: flex !important; }
+        }
+        @media (max-width: 600px) {
+          .hero-stats { gap: 24px !important; }
+          .hero-stats > div > div:first-child { font-size: 28px !important; }
+          .montwell-grid { grid-template-columns: 1fr !important; }
+          .montwell-facts { grid-template-columns: 1fr 1fr !important; }
+          .prekoho-grid { grid-template-columns: 1fr 1fr !important; }
+          .pricing-grid { grid-template-columns: 1fr !important; }
+          .pricing-card { border-radius: 16px !important; }
+          .steps-grid { grid-template-columns: 1fr !important; }
+          .step-card { border-radius: 16px !important; border-right: none !important; border-bottom: 1px solid rgba(0,0,0,0.06) !important; }
+          .hero-badges { gap: 6px !important; }
+          .guarantee-badges { flex-direction: column !important; align-items: center !important; }
+          .closing-arg { flex-direction: column !important; gap: 12px !important; align-items: flex-start !important; }
+          .form-trust { flex-direction: column !important; align-items: flex-start !important; gap: 6px !important; }
+          .footer-links { flex-direction: column !important; gap: 8px !important; }
+          .faq-accordion { padding: 16px 20px !important; }
+          .form-wrap { padding: 28px 20px !important; }
+          .section-pad { padding: 60px 20px !important; }
+          .hero-pad { padding: 72px 20px 80px !important; }
+          .montwell-pad { padding: 60px 20px !important; }
+          .contact-pad { padding: 60px 20px !important; }
+        }
+      `}</style>
 
+      {/* NAV */}
+      <nav style={{ position: 'sticky', top: 0, zIndex: 100, background: 'rgba(26,26,26,0.97)', backdropFilter: 'blur(8px)', padding: '0 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: 64 }}>
+        <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
+          <img src={logoImg} alt="WebKlienti logo" style={{ height: 40, width: 40, objectFit: 'contain', mixBlendMode: 'screen' }} />
+          <span style={{ fontWeight: 800, fontSize: 18, color: '#f5f2eb', letterSpacing: -0.5 }}>Web<span style={{ color: '#ffd200' }}>Klienti</span></span>
+        </Link>
         <div style={{ display: 'flex', gap: 28, alignItems: 'center' }} className="desktop-nav">
           {t.nav.map((label, i) => (
             <button key={i} onClick={() => scrollTo(navIds[i])} style={{ background: 'none', border: 'none', color: 'rgba(245,242,235,0.7)', cursor: 'pointer', fontSize: 14, fontWeight: 500 }}>{label}</button>
           ))}
           <Link to="/blog" style={{ color: 'rgba(245,242,235,0.7)', textDecoration: 'none', fontSize: 14, fontWeight: 500 }}>Blog</Link>
         </div>
-
         <div style={{ display: 'flex', gap: 10, alignItems: 'center' }} className="desktop-nav">
-          <div style={{ display: 'flex', gap: 4 }} role="group" aria-label="Vybrať jazyk">
+          <div style={{ display: 'flex', gap: 4 }}>
             {['sk', 'cz', 'en'].map(code => (
-              <button key={code} onClick={() => setLang(code)} style={langBtn(code)} aria-pressed={lang === code} aria-label={`Jazyk: ${code.toUpperCase()}`}>{code.toUpperCase()}</button>
+              <button key={code} onClick={() => setLang(code)} style={langBtn(code)}>{code.toUpperCase()}</button>
             ))}
           </div>
-          <button onClick={() => scrollTo('contact')} style={{ background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '8px 20px', borderRadius: 100, fontSize: 14, fontWeight: 600, cursor: 'pointer', marginLeft: 4 }}>
-            {t.navOrder}
-          </button>
+          <button onClick={() => scrollTo('contact')} style={{ background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '8px 20px', borderRadius: 100, fontSize: 14, fontWeight: 600, cursor: 'pointer', marginLeft: 4 }}>{t.navOrder}</button>
         </div>
-
-        <button onClick={() => setMenuOpen(!menuOpen)} className="hamburger" aria-label="Otvoriť menu" aria-expanded={menuOpen} style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', padding: 8, flexDirection: 'column', gap: 5 }}>
+        <button onClick={() => setMenuOpen(!menuOpen)} className="hamburger" aria-label="Menu" style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', padding: 8, flexDirection: 'column', gap: 5 }}>
           <span style={{ display: 'block', width: 24, height: 2, background: menuOpen ? '#ffd200' : '#f5f2eb', transition: 'all .3s', transform: menuOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none' }}></span>
           <span style={{ display: 'block', width: 24, height: 2, background: menuOpen ? 'transparent' : '#f5f2eb', transition: 'all .3s' }}></span>
           <span style={{ display: 'block', width: 24, height: 2, background: menuOpen ? '#ffd200' : '#f5f2eb', transition: 'all .3s', transform: menuOpen ? 'rotate(-45deg) translate(5px, -5px)' : 'none' }}></span>
@@ -465,119 +371,90 @@ function HomePage() {
       </nav>
 
       {menuOpen && (
-        <div style={{ position: 'fixed', top: 64, left: 0, right: 0, zIndex: 99, background: 'rgba(26,26,26,0.98)', padding: '20px 40px', display: 'flex', flexDirection: 'column', gap: 16, borderTop: '1px solid rgba(255,255,255,0.08)' }}>
+        <div style={{ position: 'fixed', top: 64, left: 0, right: 0, zIndex: 99, background: 'rgba(26,26,26,0.98)', padding: '20px 24px', display: 'flex', flexDirection: 'column', gap: 16, borderTop: '1px solid rgba(255,255,255,0.08)' }}>
           {t.nav.map((label, i) => (
             <button key={i} onClick={() => scrollTo(navIds[i])} style={{ background: 'none', border: 'none', color: 'rgba(245,242,235,0.9)', cursor: 'pointer', fontSize: 18, fontWeight: 600, textAlign: 'left', padding: '8px 0' }}>{label}</button>
           ))}
           <Link to="/blog" onClick={() => setMenuOpen(false)} style={{ color: 'rgba(245,242,235,0.9)', textDecoration: 'none', fontSize: 18, fontWeight: 600, padding: '8px 0' }}>Blog</Link>
-          <div style={{ display: 'flex', gap: 8, paddingTop: 8 }} role="group" aria-label="Vybrať jazyk">
+          <div style={{ display: 'flex', gap: 8, paddingTop: 8 }}>
             {['sk', 'cz', 'en'].map(code => (
-              <button key={code} onClick={() => setLang(code)} style={langBtn(code)} aria-pressed={lang === code} aria-label={`Jazyk: ${code.toUpperCase()}`}>{code.toUpperCase()}</button>
+              <button key={code} onClick={() => setLang(code)} style={langBtn(code)}>{code.toUpperCase()}</button>
             ))}
           </div>
-          <button onClick={() => scrollTo('contact')} style={{ background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '12px 20px', borderRadius: 100, fontSize: 16, fontWeight: 700, cursor: 'pointer', marginTop: 8 }}>
-            {t.navOrder}
-          </button>
+          <button onClick={() => scrollTo('contact')} style={{ background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '14px 20px', borderRadius: 100, fontSize: 16, fontWeight: 700, cursor: 'pointer', marginTop: 8 }}>{t.navOrder}</button>
         </div>
       )}
 
-      <style>{`
-        @media (max-width: 768px) {
-          .desktop-nav { display: none !important; }
-          .hamburger { display: flex !important; }
-        }
-      `}</style>
-
       <main>
-        {/* ─── HERO ─── */}
-        <div style={{ background: '#1a1a1a', color: '#f5f2eb', padding: '100px 40px 120px', textAlign: 'center' }}>
+        {/* HERO */}
+        <div className="hero-pad" style={{ background: '#1a1a1a', color: '#f5f2eb', padding: '100px 40px 120px', textAlign: 'center' }}>
           <div style={{ maxWidth: 700, margin: '0 auto' }}>
             <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', color: 'rgba(245,242,235,0.6)', padding: '5px 16px', borderRadius: 100, fontSize: 12, fontWeight: 500, marginBottom: 12 }}>{t.marketTag}</div>
             <div style={{ display: 'block', marginTop: 8 }}>
               <div style={{ display: 'inline-block', background: 'rgba(255,210,0,0.15)', color: '#ffd200', padding: '6px 18px', borderRadius: 100, fontSize: 13, fontWeight: 600, marginBottom: 24, letterSpacing: 1 }}>{t.heroBadge}</div>
             </div>
-            <h1 style={{ fontSize: 'clamp(40px, 7vw, 80px)', fontWeight: 900, lineHeight: 1.05, letterSpacing: -3, marginBottom: 24 }}>
+            <h1 style={{ fontSize: 'clamp(36px, 7vw, 80px)', fontWeight: 900, lineHeight: 1.05, letterSpacing: -2, marginBottom: 24 }}>
               {t.heroTitle[0]}<br /><span style={{ color: '#ffd200' }}>{t.heroTitle[1]}</span>{t.heroTitle[2]}
             </h1>
-            <p style={{ fontSize: 20, color: 'rgba(245,242,235,0.6)', marginBottom: 48, lineHeight: 1.6, whiteSpace: 'pre-line' }}>{t.heroSub}</p>
-            <button onClick={() => scrollTo('contact')} style={{ display: 'inline-flex', alignItems: 'center', gap: 10, background: '#ffd200', color: '#1a1a1a', padding: '18px 40px', borderRadius: 100, fontWeight: 700, fontSize: 18, cursor: 'pointer', border: 'none', marginBottom: 48 }}>{t.heroCta}</button>
-
-            {/* STATS — reálne, bez "80+ klientov" */}
-            <div style={{ display: 'flex', gap: 48, justifyContent: 'center', paddingTop: 40, borderTop: '1px solid rgba(255,255,255,0.08)', marginBottom: 16 }}>
-              <div>
-                <div style={{ fontSize: 36, fontWeight: 900, color: '#ffd200', letterSpacing: -1 }}>5 {lang === 'en' ? 'days' : 'dní'}</div>
-                <div style={{ fontSize: 13, color: 'rgba(245,242,235,0.5)', marginTop: 4 }}>{lang === 'en' ? 'Website ready' : lang === 'cz' ? 'Hotový web' : 'Hotový web'}</div>
-              </div>
-              <div>
-                <div style={{ fontSize: 36, fontWeight: 900, color: '#ffd200', letterSpacing: -1 }}>3×</div>
-                <div style={{ fontSize: 13, color: 'rgba(245,242,235,0.5)', marginTop: 4 }}>{lang === 'en' ? 'More inquiries' : lang === 'cz' ? 'Více poptávek' : 'Viac dopytov'}</div>
-              </div>
-              <div>
-                <div style={{ fontSize: 36, fontWeight: 900, color: '#ffd200', letterSpacing: -1 }}>299€</div>
-                <div style={{ fontSize: 13, color: 'rgba(245,242,235,0.5)', marginTop: 4 }}>{lang === 'en' ? 'Starting price' : lang === 'cz' ? 'Od ceny' : 'Od ceny'}</div>
-              </div>
+            <p style={{ fontSize: 'clamp(16px, 2.5vw, 20px)', color: 'rgba(245,242,235,0.6)', marginBottom: 40, lineHeight: 1.6, whiteSpace: 'pre-line' }}>{t.heroSub}</p>
+            <button onClick={() => scrollTo('contact')} style={{ display: 'inline-flex', alignItems: 'center', gap: 10, background: '#ffd200', color: '#1a1a1a', padding: '16px 36px', borderRadius: 100, fontWeight: 700, fontSize: 'clamp(15px, 2vw, 18px)', cursor: 'pointer', border: 'none', marginBottom: 40 }}>{t.heroCta}</button>
+            <div className="hero-stats" style={{ display: 'flex', gap: 40, justifyContent: 'center', paddingTop: 32, borderTop: '1px solid rgba(255,255,255,0.08)', marginBottom: 16 }}>
+              {[
+                { val: lang === 'en' ? '5 days' : '5 dní', label: lang === 'en' ? 'Website ready' : lang === 'cz' ? 'Hotový web' : 'Hotový web' },
+                { val: '3×', label: lang === 'en' ? 'More inquiries' : lang === 'cz' ? 'Více poptávek' : 'Viac dopytov' },
+                { val: '299€', label: lang === 'en' ? 'Starting price' : 'Od ceny' },
+              ].map((s, i) => (
+                <div key={i}>
+                  <div style={{ fontSize: 32, fontWeight: 900, color: '#ffd200', letterSpacing: -1 }}>{s.val}</div>
+                  <div style={{ fontSize: 12, color: 'rgba(245,242,235,0.5)', marginTop: 4 }}>{s.label}</div>
+                </div>
+              ))}
             </div>
-            {/* Transparentný status */}
-            <p style={{ fontSize: 13, color: 'rgba(245,242,235,0.35)', marginBottom: 32, fontStyle: 'italic' }}>{t.statNote}</p>
-
-            <div style={{ display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 32 }}>
+            <p style={{ fontSize: 12, color: 'rgba(245,242,235,0.35)', marginBottom: 24, fontStyle: 'italic' }}>{t.statNote}</p>
+            <div className="hero-badges" style={{ display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap' }}>
               {t.heroBadges.map((b) => (
-                <span key={b} style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', padding: '6px 14px', borderRadius: 100, fontSize: 12, color: 'rgba(245,242,235,0.7)' }}>{b}</span>
+                <span key={b} style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', padding: '6px 12px', borderRadius: 100, fontSize: 12, color: 'rgba(245,242,235,0.7)' }}>{b}</span>
               ))}
             </div>
           </div>
         </div>
 
-        {/* ─── MONTWELL REALIZÁCIA ─── */}
-        <div style={{ background: '#edeae0', padding: '80px 40px' }}>
+        {/* MONTWELL */}
+        <div className="montwell-pad" style={{ background: '#edeae0', padding: '80px 40px' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto' }}>
             <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#999', marginBottom: 8 }}>{montwell.label}</p>
-            <h2 style={{ fontSize: 'clamp(24px, 3vw, 40px)', fontWeight: 900, letterSpacing: -1, marginBottom: 36 }}>Montwell</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32, alignItems: 'start' }}>
-              {/* Screenshot */}
+            <h2 style={{ fontSize: 'clamp(22px, 3vw, 40px)', fontWeight: 900, letterSpacing: -1, marginBottom: 32 }}>Montwell</h2>
+            <div className="montwell-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 28, alignItems: 'start' }}>
               <div style={{ borderRadius: 16, overflow: 'hidden', boxShadow: '0 20px 60px rgba(0,0,0,0.15)', border: '1px solid rgba(0,0,0,0.06)' }}>
                 <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={montwellImg}
-                    alt="Montwell webstránka — screenshot"
-                    style={{ width: '100%', display: 'block' }}
-                  />
+                  <img src={montwellImg} alt="Montwell webstránka" style={{ width: '100%', display: 'block' }} loading="lazy" />
                 </a>
               </div>
-              {/* Info karty + button */}
               <div>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 24 }}>
+                <div className="montwell-facts" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 24 }}>
                   {montwell.facts.map((f, i) => (
-                    <div key={i} style={{ background: '#fff', borderRadius: 14, padding: '18px 20px' }}>
+                    <div key={i} style={{ background: '#fff', borderRadius: 14, padding: '16px 18px' }}>
                       <p style={{ fontSize: 10, letterSpacing: 2, textTransform: 'uppercase', color: '#bbb', marginBottom: 6 }}>{f.label}</p>
-                      <p style={{ fontSize: 14, fontWeight: 600, color: '#1a1a1a', lineHeight: 1.5, margin: 0 }}>{f.value}</p>
+                      <p style={{ fontSize: 13, fontWeight: 600, color: '#1a1a1a', lineHeight: 1.5, margin: 0 }}>{f.value}</p>
                     </div>
                   ))}
                 </div>
-                <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', background: '#1a1a1a', color: '#ffd200', padding: '12px 28px', borderRadius: 100, fontSize: 14, fontWeight: 700, textDecoration: 'none' }}>
-                  {montwell.viewBtn}
-                </a>
+                <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', background: '#1a1a1a', color: '#ffd200', padding: '12px 28px', borderRadius: 100, fontSize: 14, fontWeight: 700, textDecoration: 'none' }}>{montwell.viewBtn}</a>
               </div>
             </div>
           </div>
         </div>
-        <style>{`
-          @media (max-width: 700px) {
-            .montwell-grid { grid-template-columns: 1fr !important; }
-          }
-        `}</style>
 
-
-        {/* ─── PRE KOHO ─── */}
-        <div style={{ background: '#f5f2eb', padding: '80px 40px' }}>
+        {/* PRE KOHO */}
+        <div className="section-pad" style={{ background: '#f5f2eb', padding: '80px 40px' }}>
           <div style={{ maxWidth: 900, margin: '0 auto', textAlign: 'center' }}>
             <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#888', marginBottom: 12 }}>
               {lang === 'en' ? 'For who' : lang === 'cz' ? 'Pro koho' : 'Pre koho'}
             </p>
-            <h2 style={{ fontSize: 'clamp(24px, 3vw, 40px)', fontWeight: 900, letterSpacing: -1, marginBottom: 48 }}>
+            <h2 style={{ fontSize: 'clamp(22px, 3vw, 40px)', fontWeight: 900, letterSpacing: -1, marginBottom: 40 }}>
               {lang === 'en' ? 'WebKlienti is the right fit for you if you are…' : lang === 'cz' ? 'WebKlienti je pro vás, pokud jste…' : 'WebKlienti je pre vás, ak ste…'}
             </h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16, marginBottom: 40 }}>
+            <div className="prekoho-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 14, marginBottom: 32 }}>
               {[
                 { icon: '🔨', label: lang === 'en' ? 'Tradesperson / craftsman' : lang === 'cz' ? 'Řemeslník / živnostník' : 'Remeselník / živnostník' },
                 { icon: '💇', label: lang === 'en' ? 'Beauty & wellness' : lang === 'cz' ? 'Kadeřnictví, kosmetika' : 'Kaderníctvo, kozmetika' },
@@ -586,212 +463,199 @@ function HomePage() {
                 { icon: '🛒', label: lang === 'en' ? 'Starting e-shop' : lang === 'cz' ? 'Začínající e-shop' : 'Začínajúci e-shop' },
                 { icon: '📍', label: lang === 'en' ? 'Local business' : lang === 'cz' ? 'Lokální podnik' : 'Lokálny podnik' },
               ].map((item, i) => (
-                <div key={i} style={{ background: '#fff', borderRadius: 16, padding: '24px 16px', textAlign: 'center' }}>
-                  <div style={{ fontSize: 32, marginBottom: 10 }}>{item.icon}</div>
-                  <p style={{ fontSize: 14, fontWeight: 600, color: '#1a1a1a' }}>{item.label}</p>
+                <div key={i} style={{ background: '#fff', borderRadius: 14, padding: '20px 12px', textAlign: 'center' }}>
+                  <div style={{ fontSize: 28, marginBottom: 8 }}>{item.icon}</div>
+                  <p style={{ fontSize: 13, fontWeight: 600, color: '#1a1a1a', margin: 0 }}>{item.label}</p>
                 </div>
               ))}
             </div>
-            <div style={{ background: '#1a1a1a', borderRadius: 16, padding: '20px 28px', display: 'inline-block' }}>
-              <p style={{ fontSize: 14, color: 'rgba(245,242,235,0.5)', margin: 0 }}>
+            <div style={{ background: '#1a1a1a', borderRadius: 14, padding: '16px 24px', display: 'inline-block' }}>
+              <p style={{ fontSize: 13, color: 'rgba(245,242,235,0.5)', margin: 0 }}>
                 ❌ {lang === 'en' ? 'Not for enterprise or custom development projects' : lang === 'cz' ? 'Nejsme vhodní pro enterprise či custom dev projekty' : 'Nie sme vhodní pre enterprise alebo custom dev projekty'}
               </p>
             </div>
           </div>
         </div>
 
-        {/* ─── CENNÍK ─── */}
-        <div id="pricing" style={{ padding: '100px 40px', maxWidth: 1100, margin: '0 auto' }}>
+        {/* CENNÍK */}
+        <div id="pricing" className="section-pad" style={{ padding: '80px 20px', maxWidth: 1100, margin: '0 auto' }}>
           <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#888', marginBottom: 12 }}>{t.pricingLabel}</p>
-          <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, marginBottom: 56 }}>{t.pricingTitle}</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 2, alignItems: 'stretch' }}>
+          <h2 style={{ fontSize: 'clamp(26px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, marginBottom: 48 }}>{t.pricingTitle}</h2>
+          <div className="pricing-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 2, alignItems: 'stretch' }}>
             {t.cards.map((card, i) => (
-              <div key={i} style={{ background: card.featured ? '#1a1a1a' : '#fff', color: card.featured ? '#f5f2eb' : '#1a1a1a', padding: '40px 32px', borderRadius: i === 0 ? '24px 0 0 24px' : i === 2 ? '0 24px 24px 0' : 0, position: 'relative', display: 'flex', flexDirection: 'column' }}>
+              <div key={i} className="pricing-card" style={{ background: card.featured ? '#1a1a1a' : '#fff', color: card.featured ? '#f5f2eb' : '#1a1a1a', padding: '36px 28px', borderRadius: i === 0 ? '24px 0 0 24px' : i === 2 ? '0 24px 24px 0' : 0, position: 'relative', display: 'flex', flexDirection: 'column' }}>
                 {card.featured && <div style={{ position: 'absolute', top: -14, left: '50%', transform: 'translateX(-50%)', background: '#ffd200', color: '#1a1a1a', padding: '4px 16px', borderRadius: 100, fontSize: 12, fontWeight: 700, whiteSpace: 'nowrap' }}>{t.featuredBadge}</div>}
-                <p style={{ fontSize: 11, letterSpacing: 2, textTransform: 'uppercase', color: card.featured ? 'rgba(245,242,235,0.5)' : '#888', marginBottom: 12 }}>{card.tag}</p>
-                <h3 style={{ fontSize: 24, fontWeight: 800, marginBottom: 4 }}>{card.name}</h3>
-                <div style={{ fontSize: 48, fontWeight: 900, letterSpacing: -2, margin: '16px 0 4px' }}>{card.price}</div>
-                <p style={{ fontSize: 13, textDecoration: 'line-through', color: card.featured ? 'rgba(245,242,235,0.4)' : '#bbb', marginBottom: 12 }}>{card.old}</p>
-                {card.forWhom && <p style={{ fontSize: 13, color: card.featured ? 'rgba(255,210,0,0.8)' : '#888', background: card.featured ? 'rgba(255,210,0,0.08)' : '#f5f2eb', padding: '8px 12px', borderRadius: 8, marginBottom: 20, lineHeight: 1.5 }}>👤 {card.forWhom}</p>}
-                <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10, flexGrow: 1, marginBottom: 24, padding: 0 }}>
+                <p style={{ fontSize: 11, letterSpacing: 2, textTransform: 'uppercase', color: card.featured ? 'rgba(245,242,235,0.5)' : '#888', marginBottom: 10 }}>{card.tag}</p>
+                <h3 style={{ fontSize: 22, fontWeight: 800, marginBottom: 4 }}>{card.name}</h3>
+                <div style={{ fontSize: 44, fontWeight: 900, letterSpacing: -2, margin: '12px 0 4px' }}>{card.price}</div>
+                <p style={{ fontSize: 13, textDecoration: 'line-through', color: card.featured ? 'rgba(245,242,235,0.4)' : '#bbb', marginBottom: 10 }}>{card.old}</p>
+                {card.forWhom && <p style={{ fontSize: 12, color: card.featured ? 'rgba(255,210,0,0.8)' : '#888', background: card.featured ? 'rgba(255,210,0,0.08)' : '#f5f2eb', padding: '7px 10px', borderRadius: 8, marginBottom: 16, lineHeight: 1.5 }}>👤 {card.forWhom}</p>}
+                <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 9, flexGrow: 1, marginBottom: 20, padding: 0 }}>
                   {card.features.map(f => (
-                    <li key={f} style={{ fontSize: 14, color: card.featured ? 'rgba(245,242,235,0.75)' : '#555', display: 'flex', gap: 8 }}>
+                    <li key={f} style={{ fontSize: 13, color: card.featured ? 'rgba(245,242,235,0.75)' : '#555', display: 'flex', gap: 8 }}>
                       <span style={{ color: '#ffd200', fontWeight: 700, flexShrink: 0 }}>✓</span>{f}
                     </li>
                   ))}
                 </ul>
-                {/* Tlačidlo — zobrazuje názov + cenu balíka */}
-                <button
-                  onClick={() => { setForm(p => ({ ...p, package: card.name + ' — ' + card.price })); scrollTo('contact'); }}
-                  style={{ width: '100%', padding: '14px 12px', borderRadius: 100, fontSize: 14, fontWeight: 800, cursor: 'pointer', textAlign: 'center', background: card.featured ? '#ffd200' : 'transparent', color: '#1a1a1a', border: card.featured ? '2px solid #ffd200' : '2px solid #1a1a1a', lineHeight: 1.3 }}
-                >
+                <button onClick={() => { setForm(p => ({ ...p, package: card.name + ' — ' + card.price })); scrollTo('contact'); }}
+                  style={{ width: '100%', padding: '14px 12px', borderRadius: 100, fontSize: 14, fontWeight: 800, cursor: 'pointer', textAlign: 'center', background: card.featured ? '#ffd200' : 'transparent', color: '#1a1a1a', border: card.featured ? '2px solid #ffd200' : '2px solid #1a1a1a', lineHeight: 1.3, minHeight: 52 }}>
                   {t.orderBtn}
-                  <span style={{ display: 'block', fontSize: 12, fontWeight: 600, opacity: 0.6, marginTop: 2 }}>{card.name} · {card.price}</span>
+                  <span style={{ display: 'block', fontSize: 11, fontWeight: 600, opacity: 0.6, marginTop: 2 }}>{card.name} · {card.price}</span>
                 </button>
               </div>
             ))}
           </div>
         </div>
 
-        {/* ─── GARANCIA ─── */}
-        <div style={{ background: '#1a1a1a', padding: '80px 40px' }}>
+        {/* GARANCIA */}
+        <div style={{ background: '#1a1a1a', padding: '72px 24px' }}>
           <div style={{ maxWidth: 680, margin: '0 auto', textAlign: 'center' }}>
-            <div style={{ fontSize: 48, marginBottom: 16 }}>🛡️</div>
-            <h2 style={{ fontSize: 'clamp(24px, 3vw, 36px)', fontWeight: 900, color: '#f5f2eb', letterSpacing: -1, marginBottom: 16 }}>{t.guaranteeTitle}</h2>
-            <p style={{ fontSize: 18, color: 'rgba(245,242,235,0.6)', lineHeight: 1.7, marginBottom: 32 }}>{t.guaranteeText}</p>
-            <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
+            <div style={{ fontSize: 44, marginBottom: 14 }}>🛡️</div>
+            <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 900, color: '#f5f2eb', letterSpacing: -1, marginBottom: 14 }}>{t.guaranteeTitle}</h2>
+            <p style={{ fontSize: 17, color: 'rgba(245,242,235,0.6)', lineHeight: 1.7, marginBottom: 28 }}>{t.guaranteeText}</p>
+            <div className="guarantee-badges" style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
               {t.guaranteeBadges.map(b => (
-                <span key={b} style={{ background: 'rgba(255,210,0,0.12)', border: '1px solid rgba(255,210,0,0.3)', color: '#ffd200', padding: '8px 18px', borderRadius: 100, fontSize: 13, fontWeight: 600 }}>{b}</span>
+                <span key={b} style={{ background: 'rgba(255,210,0,0.12)', border: '1px solid rgba(255,210,0,0.3)', color: '#ffd200', padding: '8px 16px', borderRadius: 100, fontSize: 13, fontWeight: 600 }}>{b}</span>
               ))}
             </div>
           </div>
         </div>
 
-        {/* ─── AKO TO FUNGUJE ─── */}
-        <div style={{ background: '#f5f2eb', padding: '100px 40px' }}>
+        {/* AKO TO FUNGUJE */}
+        <div className="section-pad" style={{ background: '#f5f2eb', padding: '80px 24px' }}>
           <div style={{ maxWidth: 1100, margin: '0 auto' }}>
             <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#aaa', marginBottom: 12 }}>{t.howLabel}</p>
-            <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, marginBottom: 56 }}>{t.howTitle}</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 2 }}>
+            <h2 style={{ fontSize: 'clamp(26px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, marginBottom: 48 }}>{t.howTitle}</h2>
+            <div className="steps-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 2 }}>
               {t.steps.map((s, i) => (
-                <div key={i} style={{ padding: '36px 32px', background: '#fff', borderRadius: i === 0 ? '20px 0 0 20px' : i === 3 ? '0 20px 20px 0' : 0, borderRight: i < 3 ? '1px solid rgba(0,0,0,0.06)' : 'none' }}>
-                  <div style={{ fontSize: 56, fontWeight: 900, color: 'rgba(0,0,0,0.06)', lineHeight: 1, marginBottom: 20 }}>{s.num}</div>
-                  <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 10 }}>{s.title}</h3>
-                  <p style={{ fontSize: 14, color: '#888', lineHeight: 1.7 }}>{s.desc}</p>
+                <div key={i} className="step-card" style={{ padding: '32px 28px', background: '#fff', borderRadius: i === 0 ? '20px 0 0 20px' : i === 3 ? '0 20px 20px 0' : 0, borderRight: i < 3 ? '1px solid rgba(0,0,0,0.06)' : 'none' }}>
+                  <div style={{ fontSize: 48, fontWeight: 900, color: 'rgba(0,0,0,0.06)', lineHeight: 1, marginBottom: 16 }}>{s.num}</div>
+                  <h3 style={{ fontSize: 17, fontWeight: 700, marginBottom: 8 }}>{s.title}</h3>
+                  <p style={{ fontSize: 13, color: '#888', lineHeight: 1.7 }}>{s.desc}</p>
                 </div>
               ))}
             </div>
           </div>
         </div>
 
-        {/* ─── REFERENCIE ─── */}
-        <div id="reviews" style={{ background: '#1a1a1a', padding: '100px 40px' }}>
+        {/* REFERENCIE */}
+        <div id="reviews" style={{ background: '#1a1a1a', padding: '72px 24px' }}>
           <div style={{ maxWidth: 1100, margin: '0 auto' }}>
             <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#666', marginBottom: 12 }}>{t.reviewsLabel}</p>
-            <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, color: '#f5f2eb', marginBottom: 56 }}>{t.reviewsTitle}</h2>
+            <h2 style={{ fontSize: 'clamp(26px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, color: '#f5f2eb', marginBottom: 48 }}>{t.reviewsTitle}</h2>
             {staticReviews.length > 0 ? (
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16 }}>
                 {staticReviews.map((r, i) => (
-                  <div key={i} style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 20, padding: '32px 28px' }}>
-                    <div style={{ color: '#ffd200', fontSize: 18, marginBottom: 16 }}>{'★'.repeat(r.rating)}</div>
-                    <p style={{ fontSize: 15, color: 'rgba(245,242,235,0.75)', lineHeight: 1.7, marginBottom: 24 }}>"{r.text}"</p>
-                    <div>
-                      <p style={{ fontWeight: 700, color: '#f5f2eb', fontSize: 14 }}>{r.author}</p>
-                      {r.company && <p style={{ fontSize: 13, color: 'rgba(245,242,235,0.4)' }}>{r.company}</p>}
-                    </div>
+                  <div key={i} style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 20, padding: '28px 24px' }}>
+                    <div style={{ color: '#ffd200', fontSize: 16, marginBottom: 14 }}>{'★'.repeat(r.rating)}</div>
+                    <p style={{ fontSize: 15, color: 'rgba(245,242,235,0.75)', lineHeight: 1.7, marginBottom: 20 }}>"{r.text}"</p>
+                    <p style={{ fontWeight: 700, color: '#f5f2eb', fontSize: 14 }}>{r.author}</p>
+                    {r.company && <p style={{ fontSize: 13, color: 'rgba(245,242,235,0.4)' }}>{r.company}</p>}
                   </div>
                 ))}
               </div>
             ) : (
-              <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 20, padding: '48px 40px', textAlign: 'center' }}>
-                <div style={{ fontSize: 36, marginBottom: 16 }}>⭐</div>
-                <p style={{ fontSize: 16, color: 'rgba(245,242,235,0.5)', lineHeight: 1.7, marginBottom: 8 }}>
+              <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 20, padding: '40px 24px', textAlign: 'center' }}>
+                <div style={{ fontSize: 32, marginBottom: 14 }}>⭐</div>
+                <p style={{ fontSize: 15, color: 'rgba(245,242,235,0.5)', lineHeight: 1.7, marginBottom: 8 }}>
                   {lang === 'en' ? 'First client reviews coming soon.' : lang === 'cz' ? 'První recenze klientů budou brzy.' : 'Prvé recenzie klientov čoskoro.'}
                 </p>
-                <p style={{ fontSize: 14, color: 'rgba(245,242,235,0.3)' }}>
-                  {lang === 'en' ? 'We are at the beginning — but we deliver every project with full commitment.' : lang === 'cz' ? 'Jsme na začátku — každý projekt ale děláme s plným nasazením.' : 'Sme na začiatku — každý projekt robíme s plným nasadením.'}
+                <p style={{ fontSize: 13, color: 'rgba(245,242,235,0.3)' }}>
+                  {lang === 'en' ? 'We are at the beginning — every project delivered with full commitment.' : lang === 'cz' ? 'Jsme na začátku — každý projekt děláme s plným nasazením.' : 'Sme na začiatku — každý projekt robíme s plným nasadením.'}
                 </p>
               </div>
             )}
           </div>
         </div>
 
-        {/* ─── FAQ ─── */}
-        <div id="faq" style={{ padding: '100px 40px', maxWidth: 800, margin: '0 auto' }}>
+        {/* FAQ */}
+        <div id="faq" style={{ padding: '72px 24px', maxWidth: 800, margin: '0 auto' }}>
           <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#888', marginBottom: 12 }}>{t.faqLabel}</p>
-          <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, marginBottom: 48 }}>{t.faqTitle}</h2>
+          <h2 style={{ fontSize: 'clamp(26px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
             {t.faqItems.map((item, i) => (
               <div key={i} style={{ background: '#fff', borderRadius: i === 0 ? '16px 16px 0 0' : i === t.faqItems.length - 1 ? '0 0 16px 16px' : 0, overflow: 'hidden' }}>
-                <button
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 28px', background: 'none', border: 'none', borderBottom: openFaq === i ? '1px solid #f0ece0' : 'none', cursor: 'pointer', textAlign: 'left', gap: 16 }}
-                >
-                  <span style={{ fontSize: 16, fontWeight: 600, color: '#1a1a1a' }}>{item.q}</span>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                  className="faq-accordion"
+                  style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '18px 24px', background: 'none', border: 'none', borderBottom: openFaq === i ? '1px solid #f0ece0' : 'none', cursor: 'pointer', textAlign: 'left', gap: 16, minHeight: 60 }}>
+                  <span style={{ fontSize: 15, fontWeight: 600, color: '#1a1a1a' }}>{item.q}</span>
                   <span style={{ fontSize: 22, color: '#ffd200', fontWeight: 700, flexShrink: 0, transition: 'transform .2s', transform: openFaq === i ? 'rotate(45deg)' : 'none', display: 'inline-block' }}>+</span>
                 </button>
                 {openFaq === i && (
-                  <div style={{ padding: '16px 28px 24px', fontSize: 15, color: '#666', lineHeight: 1.8 }}>{item.a}</div>
+                  <div style={{ padding: '14px 24px 22px', fontSize: 14, color: '#666', lineHeight: 1.8 }}>{item.a}</div>
                 )}
               </div>
             ))}
           </div>
         </div>
 
-        {/* ─── FORMULÁR ─── */}
-        <div id="contact" style={{ padding: '100px 40px', maxWidth: 700, margin: '0 auto' }}>
+        {/* FORMULÁR */}
+        <div id="contact" className="contact-pad" style={{ padding: '72px 24px', maxWidth: 680, margin: '0 auto' }}>
           <p style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: '#888', marginBottom: 12 }}>{t.formLabel}</p>
-          <h2 style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, marginBottom: 12 }}>{t.formTitle}</h2>
-          <p style={{ color: '#888', marginBottom: 32, fontSize: 16 }}>{t.formSub}</p>
-          {/* Closing argument */}
-          <div style={{ background: '#1a1a1a', borderRadius: 16, padding: '24px 28px', marginBottom: 32, display: 'flex', gap: 24, flexWrap: 'wrap', justifyContent: 'center' }}>
+          <h2 style={{ fontSize: 'clamp(26px, 4vw, 48px)', fontWeight: 900, letterSpacing: -2, marginBottom: 12 }}>{t.formTitle}</h2>
+          <p style={{ color: '#888', marginBottom: 24, fontSize: 15 }}>{t.formSub}</p>
+          <div className="closing-arg" style={{ background: '#1a1a1a', borderRadius: 14, padding: '20px 24px', marginBottom: 28, display: 'flex', gap: 20, flexWrap: 'wrap', justifyContent: 'center' }}>
             {[
-              { icon: '⚡', text: lang === 'en' ? 'Reply within 24 hours' : 'Odpovieme do 24 hodín' },
-              { icon: '🎨', text: lang === 'en' ? 'First draft free' : 'Prvý návrh zdarma' },
-              { icon: '🛡️', text: lang === 'en' ? 'No commitment' : 'Bez záväzku' },
+              { icon: '⚡', text: lang === 'en' ? 'Reply within 24 hours' : lang === 'cz' ? 'Odpovíme do 24 hodin' : 'Odpovieme do 24 hodín' },
+              { icon: '🎨', text: lang === 'en' ? 'First draft free' : lang === 'cz' ? 'Návrh zdarma' : 'Prvý návrh zdarma' },
+              { icon: '🛡️', text: lang === 'en' ? 'No commitment' : lang === 'cz' ? 'Bez závazku' : 'Bez záväzku' },
             ].map(item => (
               <div key={item.text} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                <span style={{ fontSize: 18 }}>{item.icon}</span>
-                <span style={{ fontSize: 14, fontWeight: 600, color: '#f5f2eb' }}>{item.text}</span>
+                <span style={{ fontSize: 16 }}>{item.icon}</span>
+                <span style={{ fontSize: 13, fontWeight: 600, color: '#f5f2eb' }}>{item.text}</span>
               </div>
             ))}
           </div>
           {formStatus === 'success' ? (
-            <div style={{ background: '#1a1a1a', color: '#f5f2eb', borderRadius: 24, padding: '60px 40px', textAlign: 'center' }}>
-              <div style={{ fontSize: 56, marginBottom: 16 }}>🎉</div>
-              <h3 style={{ fontSize: 28, fontWeight: 800, marginBottom: 12 }}>{t.successTitle}</h3>
-              <p style={{ color: 'rgba(245,242,235,0.6)', fontSize: 16 }}>{t.successMsg}</p>
-              <button onClick={() => setFormStatus('idle')} style={{ marginTop: 32, background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '12px 28px', borderRadius: 100, fontWeight: 600, cursor: 'pointer' }}>{t.newOrder}</button>
+            <div style={{ background: '#1a1a1a', color: '#f5f2eb', borderRadius: 20, padding: '52px 32px', textAlign: 'center' }}>
+              <div style={{ fontSize: 48, marginBottom: 14 }}>🎉</div>
+              <h3 style={{ fontSize: 26, fontWeight: 800, marginBottom: 10 }}>{t.successTitle}</h3>
+              <p style={{ color: 'rgba(245,242,235,0.6)', fontSize: 15 }}>{t.successMsg}</p>
+              <button onClick={() => setFormStatus('idle')} style={{ marginTop: 28, background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '12px 28px', borderRadius: 100, fontWeight: 600, cursor: 'pointer' }}>{t.newOrder}</button>
             </div>
           ) : (
-            <div style={{ background: '#fff', borderRadius: 24, padding: '48px 40px', display: 'flex', flexDirection: 'column', gap: 20 }}>
+            <div className="form-wrap" style={{ background: '#fff', borderRadius: 20, padding: '40px 36px', display: 'flex', flexDirection: 'column', gap: 18 }}>
               {t.fields.map(f => (
                 <div key={f.key}>
-                  <label htmlFor={`field-${f.key}`} style={{ display: 'block', fontSize: 13, fontWeight: 600, marginBottom: 8, color: '#444' }}>{f.label}</label>
-                  <input id={`field-${f.key}`} type={f.type} placeholder={f.placeholder} value={form[f.key]} onChange={e => setForm(p => ({ ...p, [f.key]: e.target.value }))} style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }} />
+                  <label htmlFor={`field-${f.key}`} style={{ display: 'block', fontSize: 13, fontWeight: 600, marginBottom: 7, color: '#444' }}>{f.label}</label>
+                  <input id={`field-${f.key}`} type={f.type} placeholder={f.placeholder} value={form[f.key]} onChange={e => setForm(p => ({ ...p, [f.key]: e.target.value }))}
+                    style={{ width: '100%', padding: '13px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 16, outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }} />
                 </div>
               ))}
               <div>
-                <label htmlFor="field-package" style={{ display: 'block', fontSize: 13, fontWeight: 600, marginBottom: 8, color: '#444' }}>{t.packageLabel}</label>
-                <select id="field-package" value={form.package} onChange={e => setForm(p => ({ ...p, package: e.target.value }))} style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit', background: '#fff' }}>
+                <label htmlFor="field-package" style={{ display: 'block', fontSize: 13, fontWeight: 600, marginBottom: 7, color: '#444' }}>{t.packageLabel}</label>
+                <select id="field-package" value={form.package} onChange={e => setForm(p => ({ ...p, package: e.target.value }))}
+                  style={{ width: '100%', padding: '13px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 16, outline: 'none', fontFamily: 'inherit', background: '#fff' }}>
                   <option value="">{t.packagePlaceholder}</option>
                   {t.packages.map(p => <option key={p} value={p}>{p}</option>)}
                 </select>
               </div>
               <div>
-                <label htmlFor="field-message" style={{ display: 'block', fontSize: 13, fontWeight: 600, marginBottom: 8, color: '#444' }}>{t.messageLabel}</label>
-                <textarea id="field-message" placeholder={t.messagePlaceholder} value={form.message} onChange={e => setForm(p => ({ ...p, message: e.target.value }))} rows={4} style={{ width: '100%', padding: '12px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 15, outline: 'none', fontFamily: 'inherit', resize: 'vertical', boxSizing: 'border-box' }} />
+                <label htmlFor="field-message" style={{ display: 'block', fontSize: 13, fontWeight: 600, marginBottom: 7, color: '#444' }}>{t.messageLabel}</label>
+                <textarea id="field-message" placeholder={t.messagePlaceholder} value={form.message} onChange={e => setForm(p => ({ ...p, message: e.target.value }))} rows={4}
+                  style={{ width: '100%', padding: '13px 16px', border: '1.5px solid #e5e5e5', borderRadius: 12, fontSize: 16, outline: 'none', fontFamily: 'inherit', resize: 'vertical', boxSizing: 'border-box' }} />
               </div>
               {formStatus === 'error' && <p style={{ color: '#e24b4a', fontSize: 14 }} role="alert">{t.errorMsg}</p>}
-              {/* GDPR checkbox */}
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
-                <input
-                  id="field-consent"
-                  type="checkbox"
-                  checked={form.consent}
+                <input id="field-consent" type="checkbox" checked={form.consent}
                   onChange={e => { setForm(p => ({ ...p, consent: e.target.checked })); setConsentError(false); }}
-                  style={{ marginTop: 3, width: 16, height: 16, cursor: 'pointer', accentColor: '#1a1a1a', flexShrink: 0 }}
-                />
+                  style={{ marginTop: 3, width: 18, height: 18, cursor: 'pointer', accentColor: '#1a1a1a', flexShrink: 0 }} />
                 <label htmlFor="field-consent" style={{ fontSize: 13, color: '#888', lineHeight: 1.5, cursor: 'pointer' }}>
-                  {lang === 'en'
-                    ? 'I agree to the processing of personal data in accordance with the '
-                    : lang === 'cz'
-                    ? 'Souhlasím se zpracováním osobních údajů podle '
-                    : 'Súhlasím so spracovaním osobných údajov podľa '}
+                  {lang === 'en' ? 'I agree to the processing of personal data per the ' : lang === 'cz' ? 'Souhlasím se zpracováním osobních údajů dle ' : 'Súhlasím so spracovaním osobných údajov podľa '}
                   <Link to="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: '#1a1a1a', fontSize: 13, fontWeight: 600, textDecoration: 'underline' }}>
                     {lang === 'en' ? 'Privacy Policy' : lang === 'cz' ? 'Ochrany osobních údajů' : 'Ochrany osobných údajov'}
-                  </Link>
-                  {' *'}
+                  </Link>{' *'}
                 </label>
               </div>
               {consentError && <p style={{ color: '#e24b4a', fontSize: 13, marginTop: -8 }}>⚠️ {lang === 'en' ? 'Please confirm your consent.' : lang === 'cz' ? 'Potvrďte prosím souhlas.' : 'Potvrďte prosím súhlas.'}</p>}
-              <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap', padding: '4px 0' }}>
+              <div className="form-trust" style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap', padding: '4px 0' }}>
                 {['✓ ' + (lang === 'en' ? 'Reply in 24h' : lang === 'cz' ? 'Odpovíme do 24h' : 'Odpovieme do 24h'),
-                  '✓ ' + (lang === 'en' ? 'First draft free' : lang === 'cz' ? 'Návrh zdarma' : 'Návrh zdarma'),
-                  '✓ ' + (lang === 'en' ? 'No commitment' : lang === 'cz' ? 'Bez závazku' : 'Bez záväzku')
+                  '✓ ' + (lang === 'en' ? 'First draft free' : 'Návrh zdarma'),
+                  '✓ ' + (lang === 'en' ? 'No commitment' : lang === 'cz' ? 'Bez závazku' : 'Bez záväzku'),
                 ].map(b => <span key={b} style={{ fontSize: 12, color: '#888', fontWeight: 600 }}>{b}</span>)}
               </div>
-              <button onClick={handleSubmit} disabled={formStatus === 'loading'} style={{ background: '#1a1a1a', color: '#ffd200', border: 'none', padding: '16px', borderRadius: 100, fontSize: 16, fontWeight: 700, cursor: 'pointer', opacity: formStatus === 'loading' ? 0.7 : 1 }}>
+              <button onClick={handleSubmit} disabled={formStatus === 'loading'}
+                style={{ background: '#1a1a1a', color: '#ffd200', border: 'none', padding: '16px', borderRadius: 100, fontSize: 16, fontWeight: 700, cursor: 'pointer', opacity: formStatus === 'loading' ? 0.7 : 1, minHeight: 54 }}>
                 {formStatus === 'loading' ? t.submitting : t.submitBtn}
               </button>
             </div>
@@ -799,44 +663,43 @@ function HomePage() {
         </div>
       </main>
 
-      {/* FLOATING BUTTONS */}
-      <div style={{ position: 'fixed', right: 20, bottom: 20, display: 'flex', flexDirection: 'column', gap: 12, zIndex: 999 }}>
-        <a href="https://wa.me/421907890600" target="_blank" rel="noopener noreferrer" aria-label="Kontaktujte nás cez WhatsApp" style={{ width: 56, height: 56, background: '#25D366', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 24, boxShadow: '0 10px 25px rgba(0,0,0,0.2)' }}><FaWhatsapp /></a>
-        <a href="https://facebook.com/profile.php?id=61588797397714" target="_blank" rel="noopener noreferrer" aria-label="Sledujte nás na Facebooku" style={{ width: 56, height: 56, background: '#1877F2', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 22, boxShadow: '0 10px 25px rgba(0,0,0,0.2)' }}><FaFacebookF /></a>
+      {/* FLOATING */}
+      <div style={{ position: 'fixed', right: 16, bottom: 16, display: 'flex', flexDirection: 'column', gap: 12, zIndex: 999 }}>
+        <a href="https://wa.me/421907890600" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" style={{ width: 52, height: 52, background: '#25D366', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 22, boxShadow: '0 8px 20px rgba(0,0,0,0.2)' }}><FaWhatsapp /></a>
+        <a href="https://facebook.com/profile.php?id=61588797397714" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style={{ width: 52, height: 52, background: '#1877F2', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 20, boxShadow: '0 8px 20px rgba(0,0,0,0.2)' }}><FaFacebookF /></a>
       </div>
 
       {/* FOOTER */}
-      <footer id="footer" style={{ background: '#1a1a1a', color: 'rgba(245,242,235,0.4)', textAlign: 'center', padding: '40px', fontSize: 13 }}>
-        <img src={logoImg} alt="WebKlienti logo" style={{ height: 40, width: 40, objectFit: 'contain', marginBottom: 12, mixBlendMode: 'screen' }} />
-        <div style={{ display: 'flex', gap: 24, justifyContent: 'center', marginBottom: 12, flexWrap: 'wrap' }}>
+      <footer id="footer" style={{ background: '#1a1a1a', color: 'rgba(245,242,235,0.4)', textAlign: 'center', padding: '36px 24px', fontSize: 13 }}>
+        <img src={logoImg} alt="WebKlienti logo" style={{ height: 36, width: 36, objectFit: 'contain', marginBottom: 12, mixBlendMode: 'screen' }} />
+        <div className="footer-links" style={{ display: 'flex', gap: 20, justifyContent: 'center', marginBottom: 12, flexWrap: 'wrap' }}>
           <a href="mailto:info@webklienti.com" style={{ color: 'rgba(245,242,235,0.6)', textDecoration: 'none' }}>info@webklienti.com</a>
           <a href="tel:+421907890600" style={{ color: 'rgba(245,242,235,0.6)', textDecoration: 'none' }}>+421 907 890 600</a>
           <span style={{ color: 'rgba(245,242,235,0.3)' }}>webklienti.com</span>
         </div>
-
         <p>{t.footerRights}</p>
       </footer>
 
       {/* COOKIE BANNER */}
       {cookieVisible && (
-        <div role="dialog" aria-label="Cookie súhlas" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 9999, background: '#1a1a1a', borderTop: '1px solid rgba(255,255,255,0.1)', padding: '16px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
-          <p style={{ color: 'rgba(245,242,235,0.75)', fontSize: 14, margin: 0, flex: 1 }}>
+        <div role="dialog" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 9999, background: '#1a1a1a', borderTop: '1px solid rgba(255,255,255,0.1)', padding: '14px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 10 }}>
+          <p style={{ color: 'rgba(245,242,235,0.75)', fontSize: 13, margin: 0, flex: 1 }}>
             🍪 {t.cookieMsg}{' '}
-            <button onClick={() => setPrivacyOpen(true)} style={{ background: 'none', border: 'none', color: '#ffd200', cursor: 'pointer', fontSize: 14, textDecoration: 'underline', padding: 0 }}>{t.privacyLink}</button>
+            <button onClick={() => setPrivacyOpen(true)} style={{ background: 'none', border: 'none', color: '#ffd200', cursor: 'pointer', fontSize: 13, textDecoration: 'underline', padding: 0 }}>{t.privacyLink}</button>
           </p>
           <div style={{ display: 'flex', gap: 8 }}>
-            <button onClick={declineCookies} style={{ background: 'transparent', border: '1px solid rgba(255,255,255,0.2)', color: 'rgba(245,242,235,0.6)', padding: '8px 16px', borderRadius: 100, fontSize: 13, cursor: 'pointer' }}>{t.cookieDecline}</button>
-            <button onClick={acceptCookies} style={{ background: '#ffd200', border: 'none', color: '#1a1a1a', padding: '8px 20px', borderRadius: 100, fontSize: 13, fontWeight: 700, cursor: 'pointer' }}>{t.cookieAccept}</button>
+            <button onClick={declineCookies} style={{ background: 'transparent', border: '1px solid rgba(255,255,255,0.2)', color: 'rgba(245,242,235,0.6)', padding: '8px 14px', borderRadius: 100, fontSize: 13, cursor: 'pointer' }}>{t.cookieDecline}</button>
+            <button onClick={acceptCookies} style={{ background: '#ffd200', border: 'none', color: '#1a1a1a', padding: '8px 18px', borderRadius: 100, fontSize: 13, fontWeight: 700, cursor: 'pointer' }}>{t.cookieAccept}</button>
           </div>
         </div>
       )}
 
       {/* PRIVACY MODAL */}
       {privacyOpen && (
-        <div role="dialog" aria-modal="true" aria-label={t.privacyTitle} style={{ position: 'fixed', inset: 0, zIndex: 10000, background: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 20 }}>
-          <div style={{ background: '#fff', borderRadius: 16, padding: '40px', maxWidth: 600, width: '100%', maxHeight: '80vh', overflowY: 'auto', position: 'relative' }}>
-            <button onClick={() => setPrivacyOpen(false)} aria-label="Zavrieť" style={{ position: 'absolute', top: 16, right: 16, background: 'none', border: 'none', fontSize: 24, cursor: 'pointer', color: '#888' }}>✕</button>
-            <h2 style={{ fontWeight: 800, fontSize: 22, marginBottom: 24 }}>{t.privacyTitle}</h2>
+        <div role="dialog" aria-modal="true" style={{ position: 'fixed', inset: 0, zIndex: 10000, background: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 16 }}>
+          <div style={{ background: '#fff', borderRadius: 16, padding: '36px 28px', maxWidth: 580, width: '100%', maxHeight: '85vh', overflowY: 'auto', position: 'relative' }}>
+            <button onClick={() => setPrivacyOpen(false)} style={{ position: 'absolute', top: 14, right: 14, background: 'none', border: 'none', fontSize: 22, cursor: 'pointer', color: '#888' }}>✕</button>
+            <h2 style={{ fontWeight: 800, fontSize: 20, marginBottom: 20 }}>{t.privacyTitle}</h2>
             <pre style={{ whiteSpace: 'pre-wrap', fontSize: 14, lineHeight: 1.7, color: '#444', fontFamily: 'inherit' }}>{t.privacyContent}</pre>
           </div>
         </div>
