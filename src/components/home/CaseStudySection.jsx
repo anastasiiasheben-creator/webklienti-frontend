@@ -1,7 +1,14 @@
 import montwellImg from '../../assets/montwell-preview.png';
 import { C } from '../../lib/constants';
 
-const staticReviews = [];
+const staticReviews = [
+  {
+    author: 'Matus K.',
+    rating: 5,
+    text: 'Super služby ! Som veľmi spokojný',
+    company: null,
+  },
+];
 
 export default function CaseStudySection({ t, lang }) {
   const montwell = {
