@@ -343,7 +343,7 @@ function HomePage() {
         </div>
 
         {/* ── 4. SOLUTION / PROCESS ── */}
-        <div style={{ background: C.white, padding: '96px 40px', borderBottom: `1px solid ${C.border}` }}>
+        <div style={{ background: C.bg, padding: '96px 40px', borderBottom: `1px solid ${C.border}` }}>
           <div style={{ maxWidth: 1200, margin: '0 auto' }}>
             <p className="section-label">{t.solutionLabel}</p>
             <h2 style={{ fontSize: 'clamp(28px, 3vw, 36px)', fontWeight: 700, lineHeight: 1.22, letterSpacing: '-0.01em', marginBottom: 48, maxWidth: 620 }}>{t.solutionTitle}</h2>
@@ -609,13 +609,13 @@ function HomePage() {
                     onChange={e => { setForm(p => ({ ...p, consent: e.target.checked })); setConsentError(false); }}
                     style={{ marginTop: 3, width: 18, height: 18, cursor: 'pointer', accentColor: C.blue, flexShrink: 0 }} />
                   <label htmlFor="field-consent" style={{ fontSize: 13, color: C.textSub, lineHeight: 1.5, cursor: 'pointer' }}>
-                    {lang === 'en' ? 'I agree to the processing of personal data per the ' : lang === 'cz' ? 'Souhlasím se zpracováním osobních údajů dle ' : 'Súhlasím so spracovaním osobných údajov podľa '}
+                    {t.consentLabel}{' '}
                     <Link to="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: C.blue, fontSize: 13, fontWeight: 600 }}>
-                      {lang === 'en' ? 'Privacy Policy' : lang === 'cz' ? 'Ochrany osobních údajů' : 'Ochrany osobných údajov'}
+                      {t.consentLink}
                     </Link>{' *'}
                   </label>
                 </div>
-                {consentError && <p style={{ color: C.red, fontSize: 13 }}>⚠️ {lang === 'en' ? 'Please confirm your consent.' : lang === 'cz' ? 'Potvrďte prosím souhlas.' : 'Potvrďte prosím súhlas.'}</p>}
+                {consentError && <p style={{ color: C.red, fontSize: 13 }}>⚠️ {t.consentError}</p>}
                 <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
                   {[
                     '✓ ' + (lang === 'en' ? 'First draft free' : 'Návrh zdarma'),
