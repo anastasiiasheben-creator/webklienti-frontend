@@ -216,7 +216,7 @@ function HomePage() {
           <span>webklienti.com</span>
         </div>
         <p style={{ marginBottom: 8 }}>{t.footerRights}</p>
-        <p style={{ fontSize: 12, opacity: 0.5, fontStyle: 'italic' }}>{t.statNote}</p>
+        <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)', fontStyle: 'italic' }}>{t.statNote}</p>
         <div style={{ marginTop: 32, paddingTop: 32, borderTop: '1px solid rgba(255,255,255,0.1)' }}>
           <button onClick={() => scrollTo('contact')} className="btn-primary" style={{ fontSize: 15 }}>
             {lang === 'en' ? 'I want more customers from Google' : lang === 'cz' ? 'Chci více zákazníků z Google' : 'Chcem viac zákazníkov z Google'}
