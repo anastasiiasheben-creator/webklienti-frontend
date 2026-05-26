@@ -137,7 +137,7 @@ function HomePage() {
       {/* NAV */}
       <nav style={{ position: 'sticky', top: 0, zIndex: 100, background: 'rgba(255,255,255,0.97)', backdropFilter: 'blur(8px)', borderBottom: `1px solid ${C.border}`, padding: '0 40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: 64, boxShadow: navScrolled ? '0 4px 20px rgba(0,0,0,0.08)' : 'none', transition: 'box-shadow .2s' }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
-          <img src={logoImg} alt="WebKlienti logo" style={{ height: 36, width: 36, objectFit: 'contain' }} />
+          <img src={logoImg} alt="WebKlienti logo" style={{ height: 36, width: 36, objectFit: 'contain', borderRadius: '50%' }} />
           <span style={{ fontWeight: 700, fontSize: 18, color: C.text, letterSpacing: -0.5 }}>Web<span style={{ color: C.blue }}>Klienti</span></span>
         </Link>
         <div style={{ display: 'flex', gap: 32, alignItems: 'center' }} className="desktop-nav">
@@ -209,7 +209,7 @@ function HomePage() {
 
       {/* FOOTER */}
       <footer id="footer" style={{ background: C.dark, color: 'rgba(255,255,255,0.4)', textAlign: 'center', padding: '48px 24px', fontSize: 14 }}>
-        <img src={logoImg} alt="WebKlienti logo" style={{ height: 36, width: 36, objectFit: 'contain', marginBottom: 16, filter: 'brightness(0) invert(1)', opacity: 0.7 }} />
+        <img src={logoImg} alt="WebKlienti logo" style={{ height: 36, width: 36, objectFit: 'contain', marginBottom: 16, borderRadius: '50%' }} />
         <div className="footer-links" style={{ display: 'flex', gap: 24, justifyContent: 'center', marginBottom: 12, flexWrap: 'wrap' }}>
           <a href="mailto:info@webklienti.com" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>info@webklienti.com</a>
           <a href="tel:+421907890600" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>+421 907 890 600</a>
