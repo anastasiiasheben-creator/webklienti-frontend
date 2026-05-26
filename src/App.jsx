@@ -96,7 +96,7 @@ const T = {
     finalCtaBtn: 'Získať analýzu webu zdarma →',
     stickyCtaBtn: 'Chcem analýzu webu →',
     formLabel: 'Objednávka',
-    formTitle: 'Získajte bezplatný návrh',
+    formTitle: 'Získajte 3 konkrétne spôsoby, ako získať viac zákazníkov z Google',
     formSub: 'Vyplňte formulár a do 24 hodín vám pošleme prvý návrh webu zdarma.',
     fields: [
       { key: 'name', label: 'Meno a priezvisko *', type: 'text', placeholder: 'Ján Novák' },
@@ -106,9 +106,16 @@ const T = {
     packageLabel: 'Balík *',
     packagePlaceholder: '— Vyberte balík —',
     packages: ['One-page web — 299 €', 'Prezentačný web — 499 €', 'Internetový obchod — 999 €'],
+    intentCards: [
+      { value: 'One-page web — 299 €', intent: 'Chcem len web', sub: 'Rýchly profesionálny web, ktorý ma dostane na Google', price: '299 €', badge: null },
+      { value: 'Prezentačný web — 499 €', intent: 'Chcem viac klientov', sub: 'Web navrhnutý na dopyty — s SEO, blogom a analýzou', price: '499 €', badge: 'Odporúčané' },
+      { value: 'Internetový obchod — 999 €', intent: 'Chcem maximalizovať dopyty', sub: 'Kompletný predajný systém vrátane e-shopu a trackingu', price: '999 €', badge: null },
+    ],
+    intentLabel: 'Čo chcete dosiahnuť? *',
+    intentNote: 'Vyberte cieľ — pomôže nám pripraviť konkrétny plán pre vás.',
     messageLabel: 'Správa',
     messagePlaceholder: 'Čo potrebujete? Aký je váš biznis?',
-    submitBtn: 'Získať bezplatný návrh →',
+    submitBtn: 'Získať návrh zdarma →',
     submitting: 'Odosielam...',
     successTitle: 'Ďakujeme!',
     successMsg: 'Vaša objednávka bola prijatá. Potvrdenie sme poslali na váš email.',
@@ -190,7 +197,7 @@ const T = {
     finalCtaBtn: 'Získat analýzu webu zdarma →',
     stickyCtaBtn: 'Chci analýzu webu →',
     formLabel: 'Objednávka',
-    formTitle: 'Získejte bezplatný návrh',
+    formTitle: 'Získejte 3 konkrétní způsoby, jak získat více zákazníků z Google',
     formSub: 'Vyplňte formulář a do 24 hodin vám pošleme první návrh webu zdarma.',
     fields: [
       { key: 'name', label: 'Jméno a příjmení *', type: 'text', placeholder: 'Jan Novák' },
@@ -200,9 +207,16 @@ const T = {
     packageLabel: 'Balíček *',
     packagePlaceholder: '— Vyberte balíček —',
     packages: ['One-page web — 299 €', 'Prezentační web — 499 €', 'Internetový obchod — 999 €'],
+    intentCards: [
+      { value: 'One-page web — 299 €', intent: 'Chci jen web', sub: 'Rychlý profesionální web, který mě dostane na Google', price: '299 €', badge: null },
+      { value: 'Prezentační web — 499 €', intent: 'Chci více klientů', sub: 'Web navržený na poptávky — s SEO, blogem a analýzou', price: '499 €', badge: 'Doporučeno' },
+      { value: 'Internetový obchod — 999 €', intent: 'Chci maximalizovat poptávky', sub: 'Kompletní prodejní systém včetně e-shopu a trackingu', price: '999 €', badge: null },
+    ],
+    intentLabel: 'Čeho chcete dosáhnout? *',
+    intentNote: 'Vyberte cíl — pomůže nám připravit konkrétní plán pro vás.',
     messageLabel: 'Zpráva',
     messagePlaceholder: 'Co potřebujete? Jaký je váš byznys?',
-    submitBtn: 'Získat bezplatný návrh →',
+    submitBtn: 'Získat návrh zdarma →',
     submitting: 'Odesílám...',
     successTitle: 'Děkujeme!',
     successMsg: 'Vaše objednávka byla přijata. Potvrzení jsme poslali na váš email.',
@@ -284,7 +298,7 @@ const T = {
     finalCtaBtn: 'Get free website analysis →',
     stickyCtaBtn: 'I want a website analysis →',
     formLabel: 'Order',
-    formTitle: 'Get a free website draft',
+    formTitle: 'Get 3 specific ways to bring more customers from Google',
     formSub: "Fill out the form and we'll send you a free first draft within 24 hours.",
     fields: [
       { key: 'name', label: 'Full name *', type: 'text', placeholder: 'John Smith' },
@@ -294,6 +308,13 @@ const T = {
     packageLabel: 'Plan *',
     packagePlaceholder: '— Select a plan —',
     packages: ['One-page website — 299 €', 'Business website — 499 €', 'Online store — 999 €'],
+    intentCards: [
+      { value: 'One-page website — 299 €', intent: 'I just need a website', sub: 'A fast professional site that gets me found on Google', price: '299 €', badge: null },
+      { value: 'Business website — 499 €', intent: 'I want more clients', sub: 'Website built for inquiries — with SEO, blog and analytics', price: '499 €', badge: 'Recommended' },
+      { value: 'Online store — 999 €', intent: 'I want to maximise inquiries', sub: 'Complete sales system including e-shop and conversion tracking', price: '999 €', badge: null },
+    ],
+    intentLabel: 'What do you want to achieve? *',
+    intentNote: 'Select your goal — helps us prepare a specific plan for you.',
     messageLabel: 'Message',
     messagePlaceholder: 'What do you need? What is your business?',
     submitBtn: 'Get free draft →',
@@ -867,13 +888,50 @@ function HomePage() {
                     onChange={e => setForm(p => ({ ...p, website: e.target.value }))}
                     style={{ width: '100%', padding: '12px 16px', border: `1.5px solid ${C.border}`, borderRadius: 10, fontSize: 15, color: C.text, background: C.white }} />
                 </div>
+                {/* ── INTENT CARDS (replaces dropdown) ── */}
                 <div>
-                  <label htmlFor="field-package" style={{ display: 'block', fontSize: 14, fontWeight: 600, marginBottom: 8, color: C.text }}>{t.packageLabel}</label>
-                  <select id="field-package" value={form.package} onChange={e => setForm(p => ({ ...p, package: e.target.value }))}
-                    style={{ width: '100%', padding: '12px 16px', border: `1.5px solid ${C.border}`, borderRadius: 10, fontSize: 15, outline: 'none', color: C.text, background: C.white }}>
-                    <option value="">{t.packagePlaceholder}</option>
-                    {t.packages.map(p => <option key={p} value={p}>{p}</option>)}
-                  </select>
+                  <p style={{ fontSize: 14, fontWeight: 600, marginBottom: 4, color: C.text }}>{t.intentLabel}</p>
+                  <p style={{ fontSize: 13, color: C.textSub, marginBottom: 12 }}>{t.intentNote}</p>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                    {t.intentCards.map((card) => {
+                      const selected = form.package === card.value;
+                      return (
+                        <button
+                          key={card.value}
+                          type="button"
+                          onClick={() => setForm(p => ({ ...p, package: card.value }))}
+                          style={{
+                            width: '100%', textAlign: 'left', padding: '14px 16px',
+                            border: selected ? `2px solid ${C.blue}` : `1.5px solid ${C.border}`,
+                            borderRadius: 12, cursor: 'pointer', fontFamily: 'Inter, sans-serif',
+                            background: selected ? 'rgba(37,99,235,0.04)' : C.white,
+                            transition: 'all .15s', position: 'relative',
+                            boxShadow: selected ? `0 0 0 3px rgba(37,99,235,0.08)` : 'none',
+                          }}
+                        >
+                          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12 }}>
+                            <div>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 3 }}>
+                                <span style={{ fontSize: 15, fontWeight: 700, color: selected ? C.blue : C.text }}>{card.intent}</span>
+                                {card.badge && (
+                                  <span style={{ fontSize: 11, fontWeight: 700, background: C.blue, color: '#fff', padding: '2px 8px', borderRadius: 999 }}>{card.badge}</span>
+                                )}
+                              </div>
+                              <span style={{ fontSize: 13, color: C.textSub, lineHeight: 1.4, display: 'block' }}>{card.sub}</span>
+                            </div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexShrink: 0 }}>
+                              <span style={{ fontSize: 15, fontWeight: 700, color: selected ? C.blue : C.text }}>{card.price}</span>
+                              <div style={{
+                                width: 20, height: 20, borderRadius: '50%', flexShrink: 0,
+                                border: selected ? `6px solid ${C.blue}` : `2px solid ${C.border}`,
+                                background: C.white, transition: 'all .15s',
+                              }} />
+                            </div>
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
                 </div>
                 <div>
                   <label htmlFor="field-message" style={{ display: 'block', fontSize: 14, fontWeight: 600, marginBottom: 8, color: C.text }}>{t.messageLabel}</label>
@@ -894,8 +952,9 @@ function HomePage() {
                 </div>
                 {consentError && <p style={{ color: C.red, fontSize: 13 }}>⚠️ {lang === 'en' ? 'Please confirm your consent.' : lang === 'cz' ? 'Potvrďte prosím souhlas.' : 'Potvrďte prosím súhlas.'}</p>}
                 <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
-                  {['✓ ' + (lang === 'en' ? 'Reply in 24h' : lang === 'cz' ? 'Odpovíme do 24h' : 'Odpovieme do 24h'),
+                  {[
                     '✓ ' + (lang === 'en' ? 'First draft free' : 'Návrh zdarma'),
+                    '✓ ' + (lang === 'en' ? 'Reply in 24h' : lang === 'cz' ? 'Odpovíme do 24h' : 'Odpovieme do 24h'),
                     '✓ ' + (lang === 'en' ? 'No commitment' : lang === 'cz' ? 'Bez závazku' : 'Bez záväzku'),
                   ].map(b => <span key={b} style={{ fontSize: 13, color: C.textSub, fontWeight: 500 }}>{b}</span>)}
                 </div>
