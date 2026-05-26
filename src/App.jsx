@@ -8,9 +8,9 @@ import Blog from './pages/Blog';
 import Privacy from './pages/Privacy';
 import BlogPost from './pages/BlogPost';
 
-import sk from './locales/sk.json';
-import cz from './locales/cz.json';
-import en from './locales/en.json';
+import sk from './i18n/sk';
+import cz from './i18n/cz';
+import en from './i18n/en';
 
 const API = process.env.REACT_APP_API_URL || 'http://localhost:3000';
 const staticReviews = [];
