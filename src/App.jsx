@@ -308,7 +308,7 @@ function HomePage() {
               ))}
             </div>
             {/* closing */}
-            <div style={{ background: C.dark, borderRadius: 16, padding: '20px 28px', display: 'inline-block' }}>
+            <div style={{ background: C.text, borderRadius: 16, padding: '20px 28px', display: 'inline-block' }}>
               <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.7)', margin: 0, fontWeight: 500 }}>
                 <span style={{ color: C.red, marginRight: 8 }}>→</span>{t.problemClose}
               </p>
