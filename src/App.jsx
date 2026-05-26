@@ -98,7 +98,7 @@ function HomePage() {
         <meta name="twitter:title" content={seo.title} />
         <meta name="twitter:description" content={seo.description} />
         <meta name="twitter:image" content="https://webklienti.com/og-image.jpg" />
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"WebKlienti","url":"https://webklienti.com","telephone":"+421907890600","email":"info@webklienti.com","address":{"@type":"PostalAddress","streetAddress":"Ulica Mozartova 5652/12","addressLocality":"Trnava","postalCode":"917 08","addressCountry":"SK"},"areaServed":["SK","CZ"],"priceRange":"€€","openingHours":"Mo-Fr 09:00-18:00"}</script>
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"LocalBusiness","name":"WebKlienti","url":"https://webklienti.com","telephone":"+421907890600","email":"info@webklienti.com","address":{"@type":"PostalAddress","streetAddress":"Ulica Mozartova 5652/12","addressLocality":"Trnava","postalCode":"917 08","addressCountry":"SK"},"areaServed":["SK","CZ"],"priceRange":"\u20ac\u20ac","openingHours":"Mo-Fr 09:00-18:00"}`}</script>
       </Helmet>
 
       <style>{`
