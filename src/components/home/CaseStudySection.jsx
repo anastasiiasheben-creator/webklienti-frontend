@@ -46,7 +46,7 @@ export default function CaseStudySection({ t, lang }) {
         {/* ── MONTWELL PRED / PO ── */}
         <div className="card" style={{ padding: 32, marginBottom: 24 }}>
           {/* Screenshot + meta */}
-          <div className="montwell-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40, alignItems: 'center', marginBottom: 28 }}>
+          <div className="montwell-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40, alignItems: 'stretch', marginBottom: 28 }}>
             <div style={{ borderRadius: 12, overflow: 'hidden', border: `1px solid ${C.border}` }}>
               <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer">
                 <img src={montwellImg} alt="Montwell webstránka" style={{ width: '100%', display: 'block' }} loading="lazy" />
@@ -56,43 +56,41 @@ export default function CaseStudySection({ t, lang }) {
               <p style={{ fontSize: 12, letterSpacing: 2, textTransform: 'uppercase', color: C.textSub, marginBottom: 6 }}>{montwell.label}</p>
               <h3 style={{ fontSize: 24, fontWeight: 700, marginBottom: 20 }}>Montwell</h3>
 
-              {/* PRED / PO cards */}
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 20 }}>
+              {/* PRED / PO cards — full height matching image */}
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, flexGrow: 1 }}>
                 {/* PRED */}
-                <div style={{ background: '#FEF2F2', border: '1px solid #FECACA', borderRadius: 12, padding: '16px 14px' }}>
-                  <div style={{ display: 'inline-block', background: '#FEE2E2', color: C.red, padding: '2px 10px', borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 10 }}>
+                <div style={{ background: '#FEF2F2', border: '1px solid #FECACA', borderRadius: 12, padding: '20px 18px', display: 'flex', flexDirection: 'column' }}>
+                  <div style={{ display: 'inline-block', background: '#FEE2E2', color: C.red, padding: '2px 10px', borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 14, alignSelf: 'flex-start' }}>
                     {montwell.beforeLabel}
                   </div>
-                  <p style={{ fontSize: 13, fontWeight: 700, color: C.text, marginBottom: 8 }}>{montwell.beforeTitle}</p>
-                  {montwell.beforePoints.map(pt => (
-                    <div key={pt} style={{ fontSize: 12, color: C.textSub, display: 'flex', gap: 6, marginBottom: 4, alignItems: 'center' }}>
-                      <span style={{ color: C.red, fontWeight: 700, flexShrink: 0 }}>✕</span> {pt}
-                    </div>
-                  ))}
+                  <p style={{ fontSize: 14, fontWeight: 700, color: C.text, marginBottom: 16 }}>{montwell.beforeTitle}</p>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 10, flexGrow: 1, justifyContent: 'center' }}>
+                    {montwell.beforePoints.map(pt => (
+                      <div key={pt} style={{ fontSize: 13, color: C.textSub, display: 'flex', gap: 8, alignItems: 'center' }}>
+                        <span style={{ color: C.red, fontWeight: 700, flexShrink: 0 }}>✕</span> {pt}
+                      </div>
+                    ))}
+                  </div>
                 </div>
                 {/* PO */}
-                <div style={{ background: '#F0FDF4', border: '1.5px solid #86EFAC', borderRadius: 12, padding: '16px 14px' }}>
-                  <div style={{ display: 'inline-block', background: '#DCFCE7', color: C.green, padding: '2px 10px', borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 10 }}>
+                <div style={{ background: '#F0FDF4', border: '1.5px solid #86EFAC', borderRadius: 12, padding: '20px 18px', display: 'flex', flexDirection: 'column' }}>
+                  <div style={{ display: 'inline-block', background: '#DCFCE7', color: C.green, padding: '2px 10px', borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 14, alignSelf: 'flex-start' }}>
                     {montwell.afterLabel}
                   </div>
-                  <p style={{ fontSize: 13, fontWeight: 700, marginBottom: 8 }}>
+                  <p style={{ fontSize: 14, fontWeight: 700, marginBottom: 16 }}>
                     <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer" style={{ color: C.blue, textDecoration: 'none' }}>
                       {montwell.afterTitle} ↗
                     </a>
                   </p>
-                  {montwell.afterPoints.map(pt => (
-                    <div key={pt} style={{ fontSize: 12, color: '#166534', display: 'flex', gap: 6, marginBottom: 4, alignItems: 'center' }}>
-                      <span style={{ color: C.green, fontWeight: 700, flexShrink: 0 }}>✓</span> {pt}
-                    </div>
-                  ))}
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 10, flexGrow: 1, justifyContent: 'center' }}>
+                    {montwell.afterPoints.map(pt => (
+                      <div key={pt} style={{ fontSize: 13, color: '#166534', display: 'flex', gap: 8, alignItems: 'center' }}>
+                        <span style={{ color: C.green, fontWeight: 700, flexShrink: 0 }}>✓</span> {pt}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-
-              <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer"
-                className="btn-secondary"
-                style={{ textDecoration: 'none', display: 'inline-flex', height: 44, fontSize: 14 }}>
-                {montwell.viewBtn}
-              </a>
             </div>
           </div>
 
