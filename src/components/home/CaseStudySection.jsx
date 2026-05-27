@@ -108,6 +108,7 @@ export default function CaseStudySection({ t, lang }) {
           {reviewsTitle}
         </h3>
 
+        <style>{`.google-cta-card:hover { border-color: #2563EB !important; transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }`}</style>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16, marginBottom: 24 }}>
           {/* Single real review */}
           <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
@@ -131,10 +132,8 @@ export default function CaseStudySection({ t, lang }) {
           </div>
 
           {/* CTA card — more reviews on Google */}
-          <a href={GOOGLE_REVIEW_LINK} target="_blank" rel="noopener noreferrer"
-            style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 12, background: C.white, border: `1.5px dashed ${C.border}`, borderRadius: 16, padding: '32px 24px', cursor: 'pointer', transition: 'border-color .15s' }}
-            onMouseEnter={e => e.currentTarget.style.borderColor = C.blue}
-            onMouseLeave={e => e.currentTarget.style.borderColor = C.border}
+          <a href={GOOGLE_REVIEW_LINK} target="_blank" rel="noopener noreferrer" className="google-cta-card"
+            style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 12, background: C.white, border: `1.5px solid ${C.border}`, borderRadius: 16, padding: '32px 24px', cursor: 'pointer', transition: 'all .15s' }}
           >
             <div style={{ fontSize: 32 }}>⭐</div>
             <p style={{ fontSize: 15, fontWeight: 600, color: C.text, textAlign: 'center', lineHeight: 1.4 }}>
