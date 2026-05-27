@@ -94,7 +94,7 @@ export default function Web299() {
         .btn-primary-lg { height: 56px; padding: 0 36px; font-size: 17px; font-weight: 700; border-radius: 14px; }
         .btn-secondary { display: inline-flex; align-items: center; justify-content: center; height: 52px; padding: 0 24px; border-radius: 12px; background: #fff; color: #111827; font-size: 15px; font-weight: 600; border: 1.5px solid #E5E7EB; cursor: pointer; transition: all .15s; font-family: 'Inter', sans-serif; text-decoration: none; }
         .btn-secondary:hover { background: #F9FAFB; transform: translateY(-1px); }
-        .card { background: #fff; border: 1px solid #E5E7EB; border-radius: 16px; padding: 24px; }
+        .card { background: #fff; border: 1px solid #E5E7EB; border-radius: 16px; padding: 24px; transition: all .2s; } .card:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-color: #D1D5DB; }
         .section-label { font-size: 13px; font-weight: 600; color: #2563EB; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 12px; }
         input:focus, textarea:focus { outline: none; border-color: #2563EB !important; box-shadow: 0 0 0 3px rgba(37,99,235,0.12); }
         .faq-row { border-bottom: 1px solid #E5E7EB; }
@@ -333,7 +333,7 @@ export default function Web299() {
           <div className="reviews-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
 
             {/* Real review */}
-            <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+            <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: 12, transition: 'all .2s' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
@@ -354,7 +354,7 @@ export default function Web299() {
 
             {/* CTA — see all reviews on Google */}
             <a href="https://maps.app.goo.gl/tDf7dRkYB2eZ3j9d7" target="_blank" rel="noopener noreferrer" className="card google-cta-card"
-              style={{ textDecoration: "none", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 12, background: C.white, padding: "32px 24px", cursor: "pointer", transition: "all .15s" }}
+              style={{ textDecoration: "none", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 12, background: C.white, border: `1px solid ${C.border}`, borderRadius: 16, padding: "32px 24px", cursor: "pointer", transition: "all .15s" }}
             >
               <div style={{ fontSize: 32 }}>⭐</div>
               <p style={{ fontSize: 15, fontWeight: 600, color: C.text, textAlign: 'center', lineHeight: 1.4 }}>
