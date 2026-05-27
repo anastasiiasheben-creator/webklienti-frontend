@@ -1,8 +1,23 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import logoImg from '../assets/logo.webp';
 
 const API = 'https://webklienti-backend.onrender.com';
+
+// ─── Brand tokens — identical to main site ───────────────────────────────────
+const C = {
+  bg: '#F9FAFB',
+  white: '#FFFFFF',
+  text: '#111827',
+  textSub: '#6B7280',
+  border: '#E5E7EB',
+  blue: '#2563EB',
+  blueDark: '#1D4ED8',
+  green: '#16A34A',
+  red: '#DC2626',
+  orange: '#EA580C',
+};
 
 export default function Web299() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', biz: '', consent: false, package: 'One-page web — 299 €' });
@@ -34,15 +49,16 @@ export default function Web299() {
   };
 
   const faqs = [
-    { q: 'Je to vhodné pre môj biznis?', a: 'Áno — funguje pre služby, živnostníkov, lokálne firmy aj online projekty. Ak chcete byť viditeľní na Google a získavať dopyty, je to pre vás.' },
-    { q: 'Ako rýchlo to bude hotové?', a: 'Štandardne do 5 pracovných dní od schválenia návrhu. V niektorých prípadoch aj skôr.' },
-    { q: 'Musím mať skúsenosti s webmi?', a: 'Nie. Všetko nastavíme za vás — stačí nám základné info o vašom biznise.' },
-    { q: 'Čo ak už mám web?', a: 'Pozrieme sa naň a buď ho opravíme, alebo odporúčame nový. Závisí od stavu.' },
-    { q: 'Sú v cene mesačné poplatky?', a: 'Nie. Cena 299 € je jednorazová za tvorbu. Hosting a doména sa platia samostatne, pomôžeme s nastavením.' },
+    { q: 'Je to jednorazová platba?', a: 'Áno. Cena 299 € je jednorazová za tvorbu webu. Žiadne mesačné poplatky za web samotný. Hosting a doména sa platia samostatne — pomôžeme vám s ich nastavením.' },
+    { q: 'Potrebujem hosting?', a: 'Hosting a doménu si zabezpečíte sami (odporúčame lacné SK/CZ riešenia) — alebo vám pomôžeme všetko nastaviť v rámci projektu.' },
+    { q: 'Ako dodám podklady — texty a fotky?', a: 'Po objednávke dostanete jednoduchý formulár kde vyplníte texty. Fotky pošlete cez email alebo WeTransfer. Ak nemáte fotky, poradíme bezplatné alternatívy.' },
+    { q: 'Môžem neskôr meniť texty?', a: 'Áno. Web odovzdáme aj so základným návodom. Väčšie zmeny vieme spraviť za dohodnutú cenu.' },
+    { q: 'Je v cene SEO?', a: 'Áno — SEO základy sú v cene: správna štruktúra stránky, meta tagy, rýchlosť, mobilná verzia. Na pokročilé SEO (blog, linkbuilding) máme samostatnú službu.' },
+    { q: 'Ako rýchlo je web hotový?', a: 'Štandardne do 5 pracovných dní od doručenia podkladov. Pri rýchlych podkladoch aj skôr.' },
   ];
 
   return (
-    <div style={{ fontFamily: "'Segoe UI', sans-serif", background: '#0f0f0f', color: '#f5f2eb', minHeight: '100vh' }}>
+    <div style={{ fontFamily: "'Inter', -apple-system, sans-serif", background: C.white, color: C.text, minHeight: '100vh' }}>
 
       <Helmet>
         <title>Web za 299 € – Tvorba webstránok pre malé firmy | WebKlienti</title>
@@ -50,6 +66,9 @@ export default function Web299() {
         <link rel="canonical" href="https://www.webklienti.com/web-299" />
         <link rel="alternate" hreflang="sk" href="https://www.webklienti.com/web-299" />
         <link rel="alternate" hreflang="x-default" href="https://www.webklienti.com/web-299" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.webklienti.com/web-299" />
         <meta property="og:title" content="Web za 299 € – Profesionálna webstránka pre malé firmy" />
@@ -57,275 +76,291 @@ export default function Web299() {
         <meta property="og:image" content="https://www.webklienti.com/og-image.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="WebKlienti – Web za 299 €" />
         <meta property="og:locale" content="sk_SK" />
         <meta property="og:site_name" content="WebKlienti" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Web za 299 € – Profesionálna webstránka pre malé firmy" />
         <meta name="twitter:description" content="Hotový firemný web za 299 €. Mobilná verzia, SEO, kontaktný formulár. Bez mesačných poplatkov." />
         <meta name="twitter:image" content="https://www.webklienti.com/og-image.png" />
-        <script type="application/ld+json">{`{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "One-page web za 299 €",
-  "description": "Profesionálna one-page webstránka pre malé firmy a živnostníkov. Mobilná verzia, SEO základy, kontaktný formulár, Google Maps. Hotová za 5 dní.",
-  "brand": { "@type": "Brand", "name": "WebKlienti" },
-  "url": "https://www.webklienti.com/web-299",
-  "image": "https://www.webklienti.com/og-image.png",
-  "offers": {
-    "@type": "Offer",
-    "price": "299",
-    "priceCurrency": "EUR",
-    "priceValidUntil": "2026-12-31",
-    "availability": "https://schema.org/InStock",
-    "url": "https://www.webklienti.com/web-299",
-    "seller": { "@type": "Organization", "name": "WebKlienti", "url": "https://www.webklienti.com" }
-  },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "80", "bestRating": "5" }
-}`}</script>
-        <script type="application/ld+json">{`{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Domov", "item": "https://www.webklienti.com/" },
-    { "@type": "ListItem", "position": 2, "name": "Web za 299 €", "item": "https://www.webklienti.com/web-299" }
-  ]
-}`}</script>
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Product","name":"One-page web za 299 €","description":"Profesionálna one-page webstránka pre malé firmy. Mobilná verzia, SEO základy, kontaktný formulár, Google Maps. Hotová za 5 dní.","brand":{"@type":"Brand","name":"WebKlienti"},"url":"https://www.webklienti.com/web-299","image":"https://www.webklienti.com/og-image.png","offers":{"@type":"Offer","price":"299","priceCurrency":"EUR","priceValidUntil":"2026-12-31","availability":"https://schema.org/InStock","url":"https://www.webklienti.com/web-299","seller":{"@type":"Organization","name":"WebKlienti","url":"https://www.webklienti.com"}},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"80","bestRating":"5"}}`}</script>
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domov","item":"https://www.webklienti.com/"},{"@type":"ListItem","position":2,"name":"Web za 299 €","item":"https://www.webklienti.com/web-299"}]}`}</script>
       </Helmet>
 
       <style>{`
         * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', -apple-system, sans-serif; }
+        .btn-primary { display: inline-flex; align-items: center; justify-content: center; height: 52px; padding: 0 28px; border-radius: 12px; background: #2563EB; color: #fff; font-size: 16px; font-weight: 600; border: none; cursor: pointer; transition: all .15s; text-decoration: none; font-family: 'Inter', sans-serif; white-space: nowrap; }
+        .btn-primary:hover { background: #1D4ED8; box-shadow: 0 8px 20px rgba(37,99,235,0.25); transform: translateY(-1px); }
+        .btn-primary-lg { height: 56px; padding: 0 36px; font-size: 17px; font-weight: 700; border-radius: 14px; }
+        .btn-secondary { display: inline-flex; align-items: center; justify-content: center; height: 52px; padding: 0 24px; border-radius: 12px; background: #fff; color: #111827; font-size: 15px; font-weight: 600; border: 1.5px solid #E5E7EB; cursor: pointer; transition: all .15s; font-family: 'Inter', sans-serif; text-decoration: none; }
+        .btn-secondary:hover { background: #F9FAFB; transform: translateY(-1px); }
+        .card { background: #fff; border: 1px solid #E5E7EB; border-radius: 16px; padding: 24px; }
+        .section-label { font-size: 13px; font-weight: 600; color: #2563EB; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 12px; }
+        input:focus, textarea:focus { outline: none; border-color: #2563EB !important; box-shadow: 0 0 0 3px rgba(37,99,235,0.12); }
+        .faq-row { border-bottom: 1px solid #E5E7EB; }
+        .faq-toggle { width: 100%; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: 20px 0; text-align: left; gap: 16px; font-family: 'Inter', sans-serif; }
         @media (max-width: 640px) {
+          .hero-badges { flex-direction: column !important; align-items: flex-start !important; }
           .what-grid { grid-template-columns: 1fr 1fr !important; }
           .case-split { flex-direction: column !important; }
           .arrow-sep { display: none !important; }
           .reviews-grid { grid-template-columns: 1fr !important; }
           .steps-row { flex-direction: column !important; }
           .trust-grid { grid-template-columns: 1fr !important; }
+          .sticky-cta { display: flex !important; }
+          .hero-ctas { flex-direction: column !important; }
         }
-        input:focus, textarea:focus { border-color: #ffd200 !important; outline: none; }
-        .btn-yellow { transition: transform 0.15s, box-shadow 0.15s; }
-        .btn-yellow:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(255,210,0,0.35); }
-        .faq-item { border-bottom: 1px solid rgba(255,255,255,0.07); }
-        .faq-btn { width: 100%; background: none; border: none; color: #f5f2eb; cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: 18px 0; text-align: left; gap: 16px; font-family: inherit; }
       `}</style>
 
-      {/* TOP BAR — scarcity */}
-      <div style={{ background: '#1a1a1a', borderBottom: '1px solid rgba(255,210,0,0.3)', padding: '9px 24px', textAlign: 'center' }}>
-        <span style={{ fontSize: 13, fontWeight: 700, color: '#ffd200' }}>⚡ Kapacita tento týždeň: zostávajú <span style={{ background: '#ffd200', color: '#1a1a1a', padding: '1px 8px', borderRadius: 4 }}>2 miesta</span></span>
+      {/* ── URGENCY BAR ── */}
+      <div style={{ background: C.blue, padding: '10px 24px', textAlign: 'center' }}>
+        <span style={{ fontSize: 13, fontWeight: 600, color: '#fff' }}>
+          ⚡ Obmedzená kapacita — tento týždeň zostávajú{' '}
+          <strong style={{ background: '#fff', color: C.blue, padding: '1px 8px', borderRadius: 4 }}>2 miesta</strong>
+        </span>
       </div>
 
-      {/* NAV */}
-      <div style={{ padding: '18px 32px', borderBottom: '1px solid rgba(255,255,255,0.06)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <Link to="/" style={{ fontWeight: 800, fontSize: 18, color: '#f5f2eb', textDecoration: 'none' }}>Web<span style={{ color: '#ffd200' }}>Klienti</span></Link>
-        <a href="tel:+421907890600" style={{ color: '#ffd200', textDecoration: 'none', fontSize: 14, fontWeight: 600 }}>+421 907 890 600</a>
-      </div>
-
-      {/* ── 1. HERO — outcome-first ── */}
-      <div style={{ padding: '60px 24px 56px', textAlign: 'center', maxWidth: 720, margin: '0 auto' }}>
-        <h1 style={{ fontSize: 'clamp(30px, 6vw, 60px)', fontWeight: 900, lineHeight: 1.08, letterSpacing: -2.5, marginBottom: 16 }}>
-          Získajte viac zákazníkov<br /><span style={{ color: '#ffd200' }}>z Google — za 299 €</span>
-        </h1>
-        <p style={{ fontSize: 17, color: 'rgba(245,242,235,0.6)', lineHeight: 1.65, marginBottom: 24 }}>
-          Profesionálny web, ktorý sa zobrazuje na Google a premieňa návštevníkov na dopytujúcich zákazníkov.<br />
-          <span style={{ color: 'rgba(245,242,235,0.35)' }}>Hotový za 5 dní. Bez mesačných poplatkov.</span>
-        </p>
-        <div style={{ display: 'inline-flex', alignItems: 'baseline', gap: 8, background: '#ffd200', color: '#1a1a1a', padding: '10px 28px', borderRadius: 14, marginBottom: 28 }}>
-          <span style={{ fontSize: 'clamp(28px, 5vw, 50px)', fontWeight: 900, letterSpacing: -2 }}>od 299 €</span>
-          <span style={{ fontSize: 14, fontWeight: 600, opacity: 0.6, textDecoration: 'line-through' }}>599 €</span>
-        </div>
-        <div style={{ display: 'block' }}>
-          <button className="btn-yellow" onClick={scrollToForm} style={{ background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '18px 48px', borderRadius: 100, fontWeight: 800, fontSize: 18, cursor: 'pointer', marginBottom: 12 }}>
-            Chcem web za 299 € →
+      {/* ── NAV — minimal, no distractions ── */}
+      <nav style={{ background: 'rgba(255,255,255,0.97)', backdropFilter: 'blur(8px)', borderBottom: `1px solid ${C.border}`, padding: '0 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: 64, position: 'sticky', top: 0, zIndex: 100 }}>
+        <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
+          <img src={logoImg} alt="WebKlienti logo" style={{ height: 34, width: 34, objectFit: 'contain', borderRadius: '50%' }} />
+          <span style={{ fontWeight: 700, fontSize: 17, color: C.text, letterSpacing: -0.5 }}>Web<span style={{ color: C.blue }}>Klienti</span></span>
+        </Link>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
+          <a href="#portfolio" style={{ fontSize: 14, color: C.textSub, textDecoration: 'none', fontWeight: 500 }}>Ukážky</a>
+          <a href="#cena" style={{ fontSize: 14, color: C.textSub, textDecoration: 'none', fontWeight: 500 }}>Cena</a>
+          <a href="#faq" style={{ fontSize: 14, color: C.textSub, textDecoration: 'none', fontWeight: 500 }}>FAQ</a>
+          <button onClick={scrollToForm} className="btn-primary" style={{ height: 40, fontSize: 14, padding: '0 18px' }}>
+            Objednať →
           </button>
-          <p style={{ fontSize: 13, color: 'rgba(245,242,235,0.22)' }}>Bez záväzkov · Odpoveď do 24 hodín</p>
+        </div>
+      </nav>
+
+      {/* ══════════════════════════════════════════════════
+          1. HERO — above the fold: price / speed / trust
+      ══════════════════════════════════════════════════ */}
+      <div style={{ background: C.white, borderBottom: `1px solid ${C.border}`, padding: '72px 24px 64px' }}>
+        <div style={{ maxWidth: 760, margin: '0 auto', textAlign: 'center' }}>
+
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(37,99,235,0.07)', border: `1px solid rgba(37,99,235,0.18)`, padding: '5px 14px', borderRadius: 100, fontSize: 13, fontWeight: 600, color: C.blue, marginBottom: 24 }}>
+            ✓ Overené na 80+ projektoch · SK & CZ
+          </div>
+
+          <h1 style={{ fontSize: 'clamp(32px, 5.5vw, 58px)', fontWeight: 800, lineHeight: 1.1, letterSpacing: -2, color: C.text, marginBottom: 20 }}>
+            Profesionálny firemný web<br />
+            <span style={{ color: C.blue }}>do 5 dní od 299 €</span>
+          </h1>
+
+          <p style={{ fontSize: 18, color: C.textSub, lineHeight: 1.65, marginBottom: 32, maxWidth: 580, margin: '0 auto 32px' }}>
+            Pre malé firmy, služby a lokálne podnikanie.<br />
+            Moderný dizajn, SEO, mobilná verzia a kontaktný formulár — všetko v cene.
+          </p>
+
+          {/* Trust badges — above the fold */}
+          <div className="hero-badges" style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 36 }}>
+            {[
+              { icon: '⚡', text: 'Dodanie do 5 dní' },
+              { icon: '💰', text: 'Bez mesačných poplatkov' },
+              { icon: '★', text: '4.9/5 hodnotenie' },
+              { icon: '✓', text: 'Bez záväzkov' },
+            ].map(b => (
+              <span key={b.text} style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: C.bg, border: `1px solid ${C.border}`, padding: '7px 14px', borderRadius: 100, fontSize: 13, fontWeight: 500, color: C.text }}>
+                <span style={{ color: C.blue }}>{b.icon}</span> {b.text}
+              </span>
+            ))}
+          </div>
+
+          {/* CTAs */}
+          <div className="hero-ctas" style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
+            <button onClick={scrollToForm} className="btn-primary btn-primary-lg">
+              👉 Chcem web za 299 €
+            </button>
+            <a href="https://wa.me/421907890600" target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ height: 56, fontSize: 15 }}>
+              💬 Napísať na WhatsApp
+            </a>
+          </div>
+          <p style={{ fontSize: 13, color: C.textSub, marginTop: 14 }}>Nezáväzná objednávka · Odpoveď do 24 hodín</p>
         </div>
       </div>
 
-      {/* ── 2. PROOF STRIP — hneď pod hero ── */}
-      <div style={{ background: '#1a1a1a', borderTop: '1px solid rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.05)', padding: '28px 24px' }}>
-        <div style={{ maxWidth: 800, margin: '0 auto', display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
+      {/* ══════════════════════════════════════════════════
+          2. SOCIAL PROOF STRIP
+      ══════════════════════════════════════════════════ */}
+      <div style={{ background: C.bg, borderBottom: `1px solid ${C.border}`, padding: '20px 24px' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto', display: 'flex', gap: 32, justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
           {[
-            { icon: '★', text: '4.9/5 hodnotenie', sub: '80+ projektov' },
-            { icon: '⚡', text: 'Prvé leady do 48h', sub: 'po spustení' },
-            { icon: '✓', text: 'Hotový za 5 dní', sub: 'bez čakania' },
-            { icon: '✓', text: 'SK & CZ', sub: 'Slovensko, Česko' },
-          ].map(t => (
-            <div key={t.text} style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', padding: '10px 20px', borderRadius: 12, textAlign: 'center', minWidth: 140 }}>
-              <div style={{ fontSize: 13, fontWeight: 700, color: '#f5f2eb', display: 'flex', alignItems: 'center', gap: 5, justifyContent: 'center' }}>
-                <span style={{ color: '#ffd200' }}>{t.icon}</span> {t.text}
-              </div>
-              <div style={{ fontSize: 11, color: 'rgba(245,242,235,0.35)', marginTop: 2 }}>{t.sub}</div>
+            { num: '80+', label: 'hotových webov' },
+            { num: '4.9★', label: 'priemerné hodnotenie' },
+            { num: '5 dní', label: 'priemerná dodávka' },
+            { num: '299 €', label: 'jednorazová cena' },
+          ].map(s => (
+            <div key={s.label} style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: 22, fontWeight: 800, color: C.blue, letterSpacing: -1 }}>{s.num}</div>
+              <div style={{ fontSize: 12, color: C.textSub, fontWeight: 500 }}>{s.label}</div>
             </div>
           ))}
         </div>
       </div>
 
-      {/* ── 3. PROBLEM SECTION ── */}
-      <div style={{ padding: '64px 24px', background: '#0f0f0f' }}>
-        <div style={{ maxWidth: 700, margin: '0 auto' }}>
-          <p style={{ fontSize: 11, letterSpacing: 3, textTransform: 'uppercase', color: '#555', marginBottom: 14, fontWeight: 700 }}>Prečo väčšina firiem prichádza o zákazníkov</p>
-          <h2 style={{ fontSize: 'clamp(22px, 3vw, 34px)', fontWeight: 900, letterSpacing: -1, marginBottom: 32, lineHeight: 1.2 }}>
-            87% zákazníkov hľadá firmy online.<br />
-            <span style={{ color: 'rgba(245,242,235,0.4)' }}>Nájdu vás — alebo vašu konkurenciu?</span>
-          </h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-            {[
-              'Firma bez webu pôsobí nedôveryhodne — zákazníci idú ku konkurencii',
-              'Starý alebo pomalý web odradí návštevníka skôr, ako si prečíta čo ponúkate',
-              'Bez SEO vás Google nezobrazí — platíte za reklamu namiesto organiky',
-              'Formulár, ktorý nefunguje na mobile = stratené dopyty každý deň',
-            ].map((pt, i) => (
-              <div key={i} style={{ display: 'flex', gap: 12, alignItems: 'flex-start', background: '#1a1a1a', border: '1px solid rgba(255,255,255,0.05)', borderRadius: 12, padding: '14px 18px' }}>
-                <span style={{ color: '#e24b4a', fontWeight: 700, flexShrink: 0, marginTop: 1 }}>✕</span>
-                <span style={{ fontSize: 14, color: 'rgba(245,242,235,0.6)', lineHeight: 1.5 }}>{pt}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      {/* ══════════════════════════════════════════════════
+          3. ČO ZÍSKATE — value clarity
+      ══════════════════════════════════════════════════ */}
+      <div id="cena" style={{ background: C.white, padding: '80px 24px', borderBottom: `1px solid ${C.border}` }}>
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <p className="section-label" style={{ textAlign: 'center' }}>Čo je v cene</p>
+          <h2 style={{ fontSize: 'clamp(24px, 3vw, 36px)', fontWeight: 800, letterSpacing: -1, textAlign: 'center', marginBottom: 8 }}>Čo získate za 299 €</h2>
+          <p style={{ textAlign: 'center', color: C.textSub, fontSize: 15, marginBottom: 48 }}>Kompletné riešenie — nič navyše nepotrebujete</p>
 
-      {/* ── 4. CASE STUDY — proof pred offerom ── */}
-      <div style={{ background: '#1a1a1a', padding: '64px 24px' }}>
-        <div style={{ maxWidth: 800, margin: '0 auto' }}>
-          <p style={{ fontSize: 11, letterSpacing: 3, textTransform: 'uppercase', color: '#555', marginBottom: 10, textAlign: 'center', fontWeight: 700 }}>Príklad z praxe</p>
-          <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 4 }}>Montwell</h2>
-          <p style={{ textAlign: 'center', fontSize: 13, color: '#555', marginBottom: 28 }}>Výroba a montáž nábytku · Slovensko</p>
-          <div className="case-split" style={{ display: 'flex', gap: 12, alignItems: 'stretch', marginBottom: 14 }}>
-            <div style={{ flex: 1, background: '#0f0f0f', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 16, padding: '22px 18px' }}>
-              <div style={{ display: 'inline-block', background: '#e24b4a', color: '#fff', padding: '3px 12px', borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 12 }}>PRED</div>
-              <div style={{ fontSize: 24, marginBottom: 8 }}>📷</div>
-              <p style={{ fontSize: 13, fontWeight: 700, color: '#f5f2eb', marginBottom: 8 }}>Len Instagram</p>
-              {['64 sledovateľov', 'Žiadny web', 'Nenachádzali ich na Google'].map(i => (
-                <div key={i} style={{ fontSize: 12, color: 'rgba(245,242,235,0.3)', display: 'flex', gap: 6, marginBottom: 4 }}>
-                  <span style={{ color: '#e24b4a' }}>✗</span> {i}
-                </div>
-              ))}
-            </div>
-            <div className="arrow-sep" style={{ display: 'flex', alignItems: 'center', fontSize: 20, color: '#ffd200', flexShrink: 0 }}>→</div>
-            <div style={{ flex: 1, background: '#0f0f0f', border: '1px solid rgba(255,210,0,0.25)', borderRadius: 16, padding: '22px 18px' }}>
-              <div style={{ display: 'inline-block', background: '#4ade80', color: '#1a1a1a', padding: '3px 12px', borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 12 }}>PO</div>
-              <div style={{ fontSize: 24, marginBottom: 8 }}>🌐</div>
-              <p style={{ fontSize: 13, fontWeight: 700, color: '#ffd200', marginBottom: 8 }}>montwell.sk</p>
-              {['Profesionálny web', 'Galéria realizácií', 'Zákazníci ich nájdu na Google'].map(i => (
-                <div key={i} style={{ fontSize: 12, color: 'rgba(245,242,235,0.6)', display: 'flex', gap: 6, marginBottom: 4 }}>
-                  <span style={{ color: '#4ade80' }}>✓</span> {i}
-                </div>
-              ))}
-            </div>
-          </div>
-          <div style={{ background: 'rgba(255,210,0,0.07)', border: '1px solid rgba(255,210,0,0.2)', borderRadius: 14, padding: '14px 22px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 10 }}>
-            <span style={{ fontSize: 14, fontWeight: 700, color: '#ffd200' }}>🎯 Prvé leady do 48 hodín · +120% viac dopytov po spustení</span>
-            <a href="https://montwell.sk/" target="_blank" rel="noopener noreferrer" style={{ color: '#ffd200', fontSize: 13, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(255,210,0,0.3)', padding: '6px 14px', borderRadius: 100, whiteSpace: 'nowrap' }}>Pozrieť web →</a>
-          </div>
-        </div>
-      </div>
-
-      {/* ── 5. WHAT YOU GET ── */}
-      <div style={{ padding: '64px 24px', background: '#0f0f0f' }}>
-        <div style={{ maxWidth: 800, margin: '0 auto' }}>
-          <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 8 }}>Čo dostanete za 299 €</h2>
-          <p style={{ textAlign: 'center', fontSize: 14, color: 'rgba(245,242,235,0.35)', marginBottom: 32 }}>Kompletné nastavenie — nič navyše nepotrebujete</p>
-          <div className="what-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10, marginBottom: 32 }}>
+          <div className="what-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 14, marginBottom: 40 }}>
             {[
-              { icon: '🎨', title: 'Dizajn na mieru', desc: 'Podľa vášho biznisu' },
-              { icon: '📱', title: 'Mobile friendly', desc: 'Funguje na mobile' },
-              { icon: '🔍', title: 'SEO základy', desc: 'Viditeľnosť na Google' },
-              { icon: '📧', title: 'Kontaktný formulár', desc: 'Dopyty priamo k vám' },
-              { icon: '📍', title: 'Google Maps', desc: 'Lokálne vyhľadávanie' },
-              { icon: '💼', title: 'Firemný email', desc: 'Profesionálny dojem' },
+              { icon: '🎨', title: 'Dizajn na mieru', desc: 'Nie template — web navrhnutý pre váš biznis' },
+              { icon: '📱', title: 'Mobilná verzia', desc: 'Funguje perfektne na telefóne aj tablete' },
+              { icon: '🔍', title: 'SEO základy', desc: 'Meta tagy, rýchlosť, štruktúra pre Google' },
+              { icon: '📧', title: 'Kontaktný formulár', desc: 'Dopyty chodia priamo na váš email' },
+              { icon: '📍', title: 'Google Maps', desc: 'Zákazníci vás nájdu na mape aj v okolí' },
+              { icon: '🔒', title: 'SSL + Hosting setup', desc: 'Bezpečný web, pomoc s nastavením hostingu' },
             ].map(item => (
-              <div key={item.title} style={{ background: '#1a1a1a', border: '1px solid rgba(255,255,255,0.06)', borderRadius: 14, padding: '16px 14px' }}>
-                <span style={{ fontSize: 22, display: 'block', marginBottom: 8 }}>{item.icon}</span>
-                <p style={{ fontSize: 13, fontWeight: 700, color: '#f5f2eb', marginBottom: 3 }}>{item.title}</p>
-                <p style={{ fontSize: 11, color: 'rgba(245,242,235,0.3)' }}>{item.desc}</p>
+              <div key={item.title} className="card" style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
+                <span style={{ fontSize: 24, flexShrink: 0 }}>{item.icon}</span>
+                <div>
+                  <p style={{ fontSize: 14, fontWeight: 700, color: C.text, marginBottom: 4 }}>{item.title}</p>
+                  <p style={{ fontSize: 13, color: C.textSub, lineHeight: 1.5 }}>{item.desc}</p>
+                </div>
               </div>
             ))}
           </div>
-          <div style={{ textAlign: 'center' }}>
-            <button className="btn-yellow" onClick={scrollToForm} style={{ background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '14px 40px', borderRadius: 100, fontSize: 16, fontWeight: 800, cursor: 'pointer' }}>
-              Chcem web za 299 € →
+
+          {/* Price highlight */}
+          <div style={{ background: 'linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%)', border: `1.5px solid rgba(37,99,235,0.2)`, borderRadius: 20, padding: '32px 36px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 24 }}>
+            <div>
+              <p style={{ fontSize: 13, fontWeight: 600, color: C.blue, textTransform: 'uppercase', letterSpacing: 1, marginBottom: 6 }}>Jednorazová cena</p>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: 10 }}>
+                <span style={{ fontSize: 52, fontWeight: 800, color: C.text, letterSpacing: -2 }}>299 €</span>
+                <span style={{ fontSize: 16, color: C.textSub, textDecoration: 'line-through' }}>599 €</span>
+              </div>
+              <p style={{ fontSize: 14, color: C.textSub, marginTop: 4 }}>Bez mesačných poplatkov · Hotový za 5 dní</p>
+            </div>
+            <button onClick={scrollToForm} className="btn-primary btn-primary-lg">
+              Objednať web →
             </button>
           </div>
         </div>
       </div>
 
-      {/* ── 6. HOW IT WORKS ── */}
-      <div style={{ background: '#1a1a1a', padding: '64px 24px' }}>
-        <div style={{ maxWidth: 660, margin: '0 auto' }}>
-          <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 36 }}>Ako to funguje</h2>
-          <div className="steps-row" style={{ display: 'flex' }}>
-            {[
-              { num: '01', title: 'Kontaktujete nás', desc: 'Formulár za 2 minúty' },
-              { num: '02', title: 'Dostanete návrh', desc: 'Do 24 hodín' },
-              { num: '03', title: 'Web je online', desc: 'Za 5 dní' },
-            ].map((s, i) => (
-              <div key={i} style={{ flex: 1, padding: '22px 14px', textAlign: 'center', borderRight: i < 2 ? '1px solid rgba(255,255,255,0.06)' : 'none' }}>
-                <div style={{ fontSize: 34, fontWeight: 900, color: '#ffd200', opacity: 0.6, lineHeight: 1, marginBottom: 10 }}>{s.num}</div>
-                <p style={{ fontSize: 14, fontWeight: 700, color: '#f5f2eb', marginBottom: 4 }}>{s.title}</p>
-                <p style={{ fontSize: 12, color: 'rgba(245,242,235,0.3)' }}>{s.desc}</p>
+      {/* ══════════════════════════════════════════════════
+          4. PORTFOLIO / CASE STUDY
+      ══════════════════════════════════════════════════ */}
+      <div id="portfolio" style={{ background: C.bg, padding: '80px 24px', borderBottom: `1px solid ${C.border}` }}>
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <p className="section-label" style={{ textAlign: 'center' }}>Ukážka z praxe</p>
+          <h2 style={{ fontSize: 'clamp(24px, 3vw, 36px)', fontWeight: 800, letterSpacing: -1, textAlign: 'center', marginBottom: 48 }}>Reálne výsledky, nie teórie</h2>
+
+          <div className="card" style={{ padding: '32px', marginBottom: 16 }}>
+            <div className="case-split" style={{ display: 'flex', gap: 16, alignItems: 'stretch' }}>
+              {/* PRED */}
+              <div style={{ flex: 1, background: C.bg, border: `1px solid ${C.border}`, borderRadius: 14, padding: '22px 18px' }}>
+                <div style={{ display: 'inline-block', background: '#FEE2E2', color: C.red, padding: '3px 12px', borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 14 }}>PRED</div>
+                <p style={{ fontSize: 14, fontWeight: 700, color: C.text, marginBottom: 12 }}>Montwell — len Instagram</p>
+                {['64 sledovateľov', 'Žiadny web', 'Neviditeľní na Google'].map(i => (
+                  <div key={i} style={{ fontSize: 13, color: C.textSub, display: 'flex', gap: 8, marginBottom: 6, alignItems: 'center' }}>
+                    <span style={{ color: C.red, fontWeight: 700 }}>✕</span> {i}
+                  </div>
+                ))}
               </div>
-            ))}
+
+              <div className="arrow-sep" style={{ display: 'flex', alignItems: 'center', fontSize: 22, color: C.blue, flexShrink: 0 }}>→</div>
+
+              {/* PO */}
+              <div style={{ flex: 1, background: '#F0FDF4', border: `1.5px solid #86EFAC`, borderRadius: 14, padding: '22px 18px' }}>
+                <div style={{ display: 'inline-block', background: '#DCFCE7', color: C.green, padding: '3px 12px', borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 14 }}>PO</div>
+                <p style={{ fontSize: 14, fontWeight: 700, color: C.text, marginBottom: 12 }}>
+                  <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer" style={{ color: C.blue, textDecoration: 'none' }}>montwell.sk ↗</a>
+                </p>
+                {['Profesionálny web', 'Galéria realizácií', 'Zákazníci ich nájdu na Google'].map(i => (
+                  <div key={i} style={{ fontSize: 13, color: '#166534', display: 'flex', gap: 8, marginBottom: 6, alignItems: 'center' }}>
+                    <span style={{ color: C.green, fontWeight: 700 }}>✓</span> {i}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Result bar */}
+            <div style={{ marginTop: 16, background: 'rgba(37,99,235,0.05)', border: `1px solid rgba(37,99,235,0.15)`, borderRadius: 12, padding: '14px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 10 }}>
+              <span style={{ fontSize: 14, fontWeight: 700, color: C.blue }}>🎯 Prvé leady do 48 hodín · +120% viac dopytov po spustení</span>
+              <a href="https://montwell.sk/" target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ height: 38, fontSize: 13, padding: '0 16px' }}>Pozrieť web →</a>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* ── 7. REVIEWS ── */}
-      <div style={{ padding: '64px 24px', background: '#0f0f0f' }}>
-        <div style={{ maxWidth: 700, margin: '0 auto' }}>
-          <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 24 }}>Čo hovoria klienti</h2>
-          <div className="reviews-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+      {/* ══════════════════════════════════════════════════
+          5. AKO TO FUNGUJE — 3 kroky
+      ══════════════════════════════════════════════════ */}
+      <div style={{ background: C.white, padding: '80px 24px', borderBottom: `1px solid ${C.border}` }}>
+        <div style={{ maxWidth: 760, margin: '0 auto' }}>
+          <p className="section-label" style={{ textAlign: 'center' }}>Jednoduchý proces</p>
+          <h2 style={{ fontSize: 'clamp(24px, 3vw, 36px)', fontWeight: 800, letterSpacing: -1, textAlign: 'center', marginBottom: 48 }}>Ako to funguje</h2>
+          <div className="steps-row" style={{ display: 'flex', gap: 0 }}>
+            {[
+              { num: '01', title: 'Vyplníte formulár', desc: 'Základné info o biznise — za 2 minúty', icon: '📋' },
+              { num: '02', title: 'Dostanete návrh', desc: 'Do 24 hodín pošleme vizuálny návrh', icon: '🎨' },
+              { num: '03', title: 'Web je online', desc: 'Hotový a spustený do 5 dní', icon: '🚀' },
+            ].map((s, i) => (
+              <div key={i} style={{ flex: 1, padding: '28px 20px', textAlign: 'center', borderRight: i < 2 ? `1px solid ${C.border}` : 'none', position: 'relative' }}>
+                <div style={{ fontSize: 32, marginBottom: 12 }}>{s.icon}</div>
+                <div style={{ fontSize: 12, fontWeight: 700, color: C.blue, letterSpacing: 1, marginBottom: 8 }}>{s.num}</div>
+                <p style={{ fontSize: 15, fontWeight: 700, color: C.text, marginBottom: 6 }}>{s.title}</p>
+                <p style={{ fontSize: 13, color: C.textSub, lineHeight: 1.5 }}>{s.desc}</p>
+              </div>
+            ))}
+          </div>
+          <div style={{ textAlign: 'center', marginTop: 40 }}>
+            <button onClick={scrollToForm} className="btn-primary btn-primary-lg">
+              Začať teraz →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* ══════════════════════════════════════════════════
+          6. REVIEWS
+      ══════════════════════════════════════════════════ */}
+      <div style={{ background: C.bg, padding: '80px 24px', borderBottom: `1px solid ${C.border}` }}>
+        <div style={{ maxWidth: 800, margin: '0 auto' }}>
+          <p className="section-label" style={{ textAlign: 'center' }}>Hodnotenia klientov</p>
+          <h2 style={{ fontSize: 'clamp(24px, 3vw, 36px)', fontWeight: 800, letterSpacing: -1, textAlign: 'center', marginBottom: 40 }}>Čo hovoria naši klienti</h2>
+          <div className="reviews-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
             {[
               { author: 'Marek Novák', company: 'Novák & syn s.r.o.', text: 'Web bol hotový za 5 dní presne podľa predstáv. Zákazníci píšu, že vyzerá profesionálne.' },
-              { author: 'Jana Kováčová', company: 'Kaderníctvo Jana', text: 'Konečne mám pekný web! Komunikácia super, cena výborná.' },
+              { author: 'Jana Kováčová', company: 'Kaderníctvo Jana', text: 'Konečne mám pekný web! Komunikácia super, cena výborná. Odporúčam každému živnostníkovi.' },
             ].map((r, i) => (
-              <div key={i} style={{ background: '#1a1a1a', border: '1px solid rgba(255,255,255,0.06)', borderRadius: 16, padding: '20px 18px' }}>
-                <div style={{ color: '#ffd200', fontSize: 12, marginBottom: 8 }}>★★★★★</div>
-                <p style={{ fontSize: 13, color: 'rgba(245,242,235,0.6)', lineHeight: 1.65, marginBottom: 12 }}>"{r.text}"</p>
-                <p style={{ fontWeight: 700, color: '#f5f2eb', fontSize: 13 }}>{r.author}</p>
-                <p style={{ fontSize: 12, color: '#444' }}>{r.company}</p>
+              <div key={i} className="card">
+                <div style={{ color: '#FBBF24', fontSize: 14, marginBottom: 10, letterSpacing: 1 }}>★★★★★</div>
+                <p style={{ fontSize: 14, color: C.textSub, lineHeight: 1.7, marginBottom: 16, fontStyle: 'italic' }}>„{r.text}"</p>
+                <p style={{ fontWeight: 700, color: C.text, fontSize: 14 }}>{r.author}</p>
+                <p style={{ fontSize: 13, color: C.textSub }}>{r.company}</p>
               </div>
             ))}
           </div>
         </div>
       </div>
 
-      {/* ── 8. TRUST ── */}
-      <div style={{ background: '#1a1a1a', padding: '64px 24px' }}>
-        <div style={{ maxWidth: 700, margin: '0 auto' }}>
-          <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 28 }}>Prečo nám firmy dôverujú</h2>
-          <div className="trust-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 12 }}>
-            {[
-              { icon: '⚡', title: 'Rýchla komunikácia', desc: 'Odpoveď do 24 hodín' },
-              { icon: '💰', title: 'Férová cena', desc: 'Konečná cena, žiadne skryté poplatky' },
-              { icon: '📈', title: 'Reálne výsledky', desc: 'Weby, ktoré generujú dopyty' },
-              { icon: '🏆', title: '80+ projektov', desc: 'Overené na SK & CZ trhu' },
-            ].map(item => (
-              <div key={item.title} style={{ background: '#0f0f0f', border: '1px solid rgba(255,255,255,0.06)', borderRadius: 14, padding: '20px 18px', display: 'flex', gap: 14, alignItems: 'flex-start' }}>
-                <span style={{ fontSize: 22, flexShrink: 0 }}>{item.icon}</span>
-                <div>
-                  <p style={{ fontSize: 14, fontWeight: 700, color: '#f5f2eb', marginBottom: 3 }}>{item.title}</p>
-                  <p style={{ fontSize: 12, color: 'rgba(245,242,235,0.35)' }}>{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* ── 9. FAQ ── */}
-      <div style={{ padding: '64px 24px', background: '#0f0f0f' }}>
-        <div style={{ maxWidth: 680, margin: '0 auto' }}>
-          <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 36 }}>Najčastejšie otázky</h2>
+      {/* ══════════════════════════════════════════════════
+          7. FAQ
+      ══════════════════════════════════════════════════ */}
+      <div id="faq" style={{ background: C.white, padding: '80px 24px', borderBottom: `1px solid ${C.border}` }}>
+        <div style={{ maxWidth: 720, margin: '0 auto' }}>
+          <p className="section-label" style={{ textAlign: 'center' }}>Časté otázky</p>
+          <h2 style={{ fontSize: 'clamp(24px, 3vw, 36px)', fontWeight: 800, letterSpacing: -1, textAlign: 'center', marginBottom: 40 }}>Najčastejšie otázky</h2>
           <div>
             {faqs.map((item, i) => (
-              <div key={i} className="faq-item">
-                <button className="faq-btn" onClick={() => setOpenFaq(openFaq === i ? null : i)}>
-                  <span style={{ fontSize: 15, fontWeight: 600 }}>{item.q}</span>
-                  <span style={{ color: '#ffd200', fontSize: 22, fontWeight: 700, flexShrink: 0, transition: 'transform .2s', transform: openFaq === i ? 'rotate(45deg)' : 'none', display: 'inline-block' }}>+</span>
+              <div key={i} className="faq-row">
+                <button className="faq-toggle" onClick={() => setOpenFaq(openFaq === i ? null : i)}>
+                  <span style={{ fontSize: 15, fontWeight: 600, color: C.text }}>{item.q}</span>
+                  <span style={{ color: C.blue, fontSize: 22, fontWeight: 700, flexShrink: 0, transition: 'transform .2s', transform: openFaq === i ? 'rotate(45deg)' : 'none', display: 'inline-block' }}>+</span>
                 </button>
                 {openFaq === i && (
-                  <div style={{ paddingBottom: 18, fontSize: 14, color: 'rgba(245,242,235,0.5)', lineHeight: 1.7 }}>{item.a}</div>
+                  <div style={{ paddingBottom: 20, fontSize: 15, color: C.textSub, lineHeight: 1.7 }}>{item.a}</div>
                 )}
               </div>
             ))}
@@ -333,98 +368,114 @@ export default function Web299() {
         </div>
       </div>
 
-      {/* ── 10. SCARCITY + MID CTA ── */}
-      <div style={{ background: '#1a1a1a', padding: '48px 24px' }}>
-        <div style={{ maxWidth: 560, margin: '0 auto', textAlign: 'center' }}>
-          <div style={{ background: 'rgba(255,210,0,0.07)', border: '1px solid rgba(255,210,0,0.25)', borderRadius: 16, padding: '28px 24px', marginBottom: 28 }}>
-            <p style={{ fontSize: 13, fontWeight: 700, color: '#ffd200', letterSpacing: 2, textTransform: 'uppercase', marginBottom: 8 }}>⚠ Obmedzená kapacita</p>
-            <h2 style={{ fontSize: 'clamp(18px, 3vw, 26px)', fontWeight: 900, letterSpacing: -0.5, color: '#f5f2eb', marginBottom: 8, lineHeight: 1.2 }}>
-              Pracujeme len s obmedzeným počtom klientov mesačne
-            </h2>
-            <p style={{ fontSize: 14, color: 'rgba(245,242,235,0.45)', marginBottom: 0 }}>
-              Aby sme udržali kvalitu výsledkov — aktuálne zostávajú <strong style={{ color: '#ffd200' }}>2 voľné miesta</strong>.
-            </p>
+      {/* ══════════════════════════════════════════════════
+          8. SCARCITY + FINAL CTA
+      ══════════════════════════════════════════════════ */}
+      <div style={{ background: C.blue, padding: '80px 24px' }}>
+        <div style={{ maxWidth: 640, margin: '0 auto', textAlign: 'center' }}>
+          <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.3)', borderRadius: 100, padding: '6px 18px', fontSize: 13, fontWeight: 600, color: '#fff', marginBottom: 24 }}>
+            ⚠ Aktuálne zostávajú 2 voľné miesta
           </div>
-          <button className="btn-yellow" onClick={scrollToForm} style={{ background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '18px 48px', borderRadius: 100, fontWeight: 800, fontSize: 18, cursor: 'pointer', marginBottom: 12 }}>
-            Rezervovať miesto →
-          </button>
-          <p style={{ fontSize: 13, color: 'rgba(245,242,235,0.22)' }}>Bez záväzkov · Odpoveď do 24 hodín</p>
-        </div>
-      </div>
-
-      {/* ── 11. FINAL CTA YELLOW ── */}
-      <div style={{ background: '#ffd200', padding: '52px 24px', textAlign: 'center' }}>
-        <div style={{ maxWidth: 560, margin: '0 auto' }}>
-          <h2 style={{ fontSize: 'clamp(22px, 4vw, 38px)', fontWeight: 900, letterSpacing: -1.5, color: '#1a1a1a', marginBottom: 10, lineHeight: 1.1 }}>
+          <h2 style={{ fontSize: 'clamp(26px, 4vw, 42px)', fontWeight: 800, color: '#fff', letterSpacing: -1.5, marginBottom: 16, lineHeight: 1.15 }}>
             Chcete web, ktorý získava zákazníkov?
           </h2>
-          <p style={{ fontSize: 15, color: 'rgba(26,26,26,0.55)', marginBottom: 24 }}>Hotový za 5 dní. Bez mesačných poplatkov. Bez rizika.</p>
-          <button className="btn-yellow" onClick={scrollToForm} style={{ background: '#1a1a1a', color: '#ffd200', border: 'none', padding: '18px 48px', borderRadius: 100, fontSize: 18, fontWeight: 800, cursor: 'pointer', marginBottom: 16 }}>
-            Chcem web za 299 € →
-          </button>
-          <div style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap', marginTop: 4 }}>
-            {['Odpoveď do 24 hodín', 'Bez záväzkov', 'Hotový za 5 dní'].map(t => (
-              <span key={t} style={{ fontSize: 13, color: 'rgba(26,26,26,0.5)', display: 'flex', alignItems: 'center', gap: 4 }}>
-                <span>✓</span> {t}
-              </span>
-            ))}
+          <p style={{ fontSize: 17, color: 'rgba(255,255,255,0.75)', marginBottom: 36, lineHeight: 1.6 }}>
+            Hotový za 5 dní. Od 299 €. Bez mesačných poplatkov. Bez rizika.
+          </p>
+          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
+            <button onClick={scrollToForm} style={{ display: 'inline-flex', alignItems: 'center', height: 56, padding: '0 32px', background: '#fff', color: C.blue, border: 'none', borderRadius: 14, fontSize: 17, fontWeight: 700, cursor: 'pointer', fontFamily: 'Inter, sans-serif' }}>
+              Objednať web za 299 € →
+            </button>
+            <a href="https://wa.me/421907890600" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', height: 56, padding: '0 24px', background: 'rgba(255,255,255,0.15)', color: '#fff', border: '1.5px solid rgba(255,255,255,0.4)', borderRadius: 14, fontSize: 15, fontWeight: 600, textDecoration: 'none', fontFamily: 'Inter, sans-serif' }}>
+              💬 WhatsApp
+            </a>
           </div>
+          <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)', marginTop: 16 }}>Nezáväzná objednávka · Odpoveď do 24 hodín · Bez záväzkov</p>
         </div>
       </div>
 
-      {/* ── 12. FORM ── */}
-      <div id="form299" style={{ padding: '64px 24px 80px', background: '#1a1a1a' }}>
-        <div style={{ maxWidth: 500, margin: '0 auto' }}>
-          <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 6 }}>Rezervujte si miesto</h2>
-          <p style={{ textAlign: 'center', color: 'rgba(245,242,235,0.35)', fontSize: 14, marginBottom: 28 }}>Vyplňte formulár — ozveme sa do 24 hodín.</p>
+      {/* ══════════════════════════════════════════════════
+          9. FORM
+      ══════════════════════════════════════════════════ */}
+      <div id="form299" style={{ padding: '80px 24px 96px', background: C.bg }}>
+        <div style={{ maxWidth: 520, margin: '0 auto' }}>
+          <p className="section-label" style={{ textAlign: 'center' }}>Objednávka</p>
+          <h2 style={{ fontSize: 'clamp(22px, 3vw, 32px)', fontWeight: 800, letterSpacing: -1, textAlign: 'center', marginBottom: 8 }}>Rezervujte si miesto</h2>
+          <p style={{ textAlign: 'center', color: C.textSub, fontSize: 15, marginBottom: 36 }}>Vyplňte formulár — ozveme sa do 24 hodín.</p>
+
           {formStatus === 'success' ? (
-            <div style={{ background: '#0f0f0f', border: '1px solid rgba(255,210,0,0.2)', borderRadius: 20, padding: '48px 32px', textAlign: 'center' }}>
-              <div style={{ fontSize: 48, marginBottom: 14 }}>🎉</div>
-              <h3 style={{ fontSize: 24, fontWeight: 800, marginBottom: 10, color: '#ffd200' }}>Ďakujeme!</h3>
-              <p style={{ color: 'rgba(245,242,235,0.5)', fontSize: 15 }}>Ozveme sa vám do 24 hodín.</p>
+            <div className="card" style={{ padding: '52px 32px', textAlign: 'center' }}>
+              <div style={{ fontSize: 48, marginBottom: 16 }}>🎉</div>
+              <h3 style={{ fontSize: 24, fontWeight: 800, marginBottom: 10, color: C.blue }}>Ďakujeme!</h3>
+              <p style={{ color: C.textSub, fontSize: 15 }}>Ozveme sa vám do 24 hodín.</p>
             </div>
           ) : (
-            <div style={{ background: '#0f0f0f', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 20, padding: '32px 28px', display: 'flex', flexDirection: 'column', gap: 14 }}>
+            <div className="card" style={{ padding: '36px 32px', display: 'flex', flexDirection: 'column', gap: 18 }}>
               {[
                 { key: 'name', label: 'Meno a priezvisko *', type: 'text', placeholder: 'Ján Novák' },
                 { key: 'email', label: 'Email *', type: 'email', placeholder: 'jan@firma.sk' },
                 { key: 'phone', label: 'Telefón', type: 'tel', placeholder: '+421 900 000 000' },
-                { key: 'biz', label: 'Čo robíte?', type: 'text', placeholder: 'napr. kaderníctvo, reštaurácia...' },
+                { key: 'biz', label: 'Čo robíte?', type: 'text', placeholder: 'napr. kaderníctvo, reštaurácia, služby...' },
               ].map(f => (
                 <div key={f.key}>
-                  <label style={{ display: 'block', fontSize: 12, fontWeight: 600, marginBottom: 6, color: 'rgba(245,242,235,0.4)', textTransform: 'uppercase', letterSpacing: 0.5 }}>{f.label}</label>
-                  <input type={f.type} placeholder={f.placeholder} value={form[f.key]} onChange={e => setForm(p => ({ ...p, [f.key]: e.target.value }))} style={{ width: '100%', padding: '12px 15px', background: '#1a1a1a', border: '1.5px solid rgba(255,255,255,0.1)', borderRadius: 10, fontSize: 15, color: '#f5f2eb', fontFamily: 'inherit' }} />
+                  <label style={{ display: 'block', fontSize: 14, fontWeight: 600, marginBottom: 8, color: C.text }}>{f.label}</label>
+                  <input
+                    type={f.type} placeholder={f.placeholder} value={form[f.key]}
+                    onChange={e => setForm(p => ({ ...p, [f.key]: e.target.value }))}
+                    style={{ width: '100%', padding: '12px 16px', background: C.white, border: `1.5px solid ${C.border}`, borderRadius: 10, fontSize: 15, color: C.text, fontFamily: 'Inter, sans-serif' }}
+                  />
                 </div>
               ))}
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10, marginTop: 4 }}>
-                <input id="c299" type="checkbox" checked={form.consent} onChange={e => { setForm(p => ({ ...p, consent: e.target.checked })); setConsentError(false); }} style={{ marginTop: 3, width: 16, height: 16, cursor: 'pointer', accentColor: '#ffd200', flexShrink: 0 }} />
-                <label htmlFor="c299" style={{ fontSize: 12, color: 'rgba(245,242,235,0.3)', lineHeight: 1.5, cursor: 'pointer' }}>
+
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
+                <input
+                  id="c299" type="checkbox" checked={form.consent}
+                  onChange={e => { setForm(p => ({ ...p, consent: e.target.checked })); setConsentError(false); }}
+                  style={{ marginTop: 3, width: 18, height: 18, cursor: 'pointer', accentColor: C.blue, flexShrink: 0 }}
+                />
+                <label htmlFor="c299" style={{ fontSize: 13, color: C.textSub, lineHeight: 1.5, cursor: 'pointer' }}>
                   Súhlasím so{' '}
-                  <Link to="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: '#ffd200', textDecoration: 'underline' }}>
+                  <Link to="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: C.blue, fontWeight: 600 }}>
                     spracovaním osobných údajov
                   </Link>{' *'}
                 </label>
               </div>
-              {consentError && <p style={{ color: '#e24b4a', fontSize: 13, marginTop: -4 }}>⚠️ Potvrďte súhlas so spracovaním údajov.</p>}
-              {formStatus === 'error' && <p style={{ color: '#e24b4a', fontSize: 13 }}>❌ Chyba. Skúste znova alebo nás kontaktujte priamo.</p>}
-              <button className="btn-yellow" onClick={handleSubmit} disabled={formStatus === 'loading'} style={{ background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '16px', borderRadius: 100, fontSize: 17, fontWeight: 800, cursor: 'pointer', marginTop: 4, opacity: formStatus === 'loading' ? 0.7 : 1 }}>
+              {consentError && <p style={{ color: C.red, fontSize: 13 }}>⚠️ Potvrďte súhlas so spracovaním údajov.</p>}
+              {formStatus === 'error' && <p style={{ color: C.red, fontSize: 13 }}>❌ Chyba. Skúste znova alebo nás kontaktujte priamo.</p>}
+
+              <button
+                onClick={handleSubmit} disabled={formStatus === 'loading'}
+                className="btn-primary" style={{ width: '100%', height: 52, fontSize: 16, fontWeight: 700, opacity: formStatus === 'loading' ? 0.7 : 1 }}
+              >
                 {formStatus === 'loading' ? 'Odosielam...' : 'Chcem web za 299 € →'}
               </button>
-              <p style={{ textAlign: 'center', fontSize: 12, color: 'rgba(245,242,235,0.18)' }}>Bez záväzkov · Bezplatná konzultácia</p>
+
+              <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
+                {['✓ Nezáväzná objednávka', '✓ Odpoveď do 24h', '✓ Bez skrytých poplatkov'].map(t => (
+                  <span key={t} style={{ fontSize: 13, color: C.textSub, fontWeight: 500 }}>{t}</span>
+                ))}
+              </div>
             </div>
           )}
         </div>
       </div>
 
       {/* FOOTER */}
-      <div style={{ padding: '22px', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
-        <p style={{ fontSize: 12, color: 'rgba(245,242,235,0.18)' }}>© 2025 Web Klienti · info@webklienti.com · +421 907 890 600</p>
-      </div>
+      <footer style={{ background: '#111827', padding: '36px 24px', textAlign: 'center' }}>
+        <Link to="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, textDecoration: 'none', marginBottom: 16 }}>
+          <img src={logoImg} alt="WebKlienti logo" style={{ height: 32, width: 32, objectFit: 'contain', borderRadius: '50%' }} />
+          <span style={{ fontWeight: 700, fontSize: 16, color: '#fff' }}>Web<span style={{ color: '#60A5FA' }}>Klienti</span></span>
+        </Link>
+        <div style={{ display: 'flex', gap: 20, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 12 }}>
+          <a href="mailto:info@webklienti.com" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none', fontSize: 14 }}>info@webklienti.com</a>
+          <a href="tel:+421907890600" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none', fontSize: 14 }}>+421 907 890 600</a>
+        </div>
+        <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.25)' }}>© 2025 Web Klienti · Všetky práva vyhradené</p>
+      </footer>
 
       {/* STICKY MOBILE CTA */}
-      <div style={{ display: 'none' }} className="sticky-mobile-cta">
-        <style>{`.sticky-mobile-cta { display: none !important; } @media (max-width: 640px) { .sticky-mobile-cta { display: block !important; position: fixed; bottom: 0; left: 0; right: 0; z-index: 998; background: #1a1a1a; border-top: 1px solid rgba(255,210,0,0.3); padding: 12px 16px 20px; } }`}</style>
-        <button onClick={scrollToForm} className="btn-yellow" style={{ width: '100%', background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '16px', borderRadius: 100, fontSize: 16, fontWeight: 800, cursor: 'pointer' }}>
+      <div className="sticky-cta" style={{ display: 'none', position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 998, background: '#fff', borderTop: `1px solid ${C.border}`, padding: '12px 16px 20px', boxShadow: '0 -4px 20px rgba(0,0,0,0.08)' }}>
+        <button onClick={scrollToForm} className="btn-primary" style={{ width: '100%', fontSize: 15, height: 50 }}>
           Chcem web za 299 € →
         </button>
       </div>
