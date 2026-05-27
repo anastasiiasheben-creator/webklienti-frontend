@@ -111,7 +111,7 @@ export default function CaseStudySection({ t, lang }) {
         <style>{`.google-cta-card:hover { border-color: #2563EB !important; transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }`}</style>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16, marginBottom: 24 }}>
           {/* Single real review */}
-          <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+          <div className="card card-hover" style={{ display: 'flex', flexDirection: 'column', gap: 12, transition: 'all .2s' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
               {/* Google logo */}
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -133,7 +133,7 @@ export default function CaseStudySection({ t, lang }) {
 
           {/* CTA card — more reviews on Google */}
           <a href={GOOGLE_REVIEW_LINK} target="_blank" rel="noopener noreferrer" className="card google-cta-card"
-            style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 12, background: C.white, padding: '32px 24px', cursor: 'pointer', transition: 'all .15s' }}
+            style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 12, background: C.white, border: `1px solid ${C.border}`, borderRadius: 16, padding: '32px 24px', cursor: 'pointer', transition: 'all .2s' }}
           >
             <div style={{ fontSize: 32 }}>⭐</div>
             <p style={{ fontSize: 15, fontWeight: 600, color: C.text, textAlign: 'center', lineHeight: 1.4 }}>
