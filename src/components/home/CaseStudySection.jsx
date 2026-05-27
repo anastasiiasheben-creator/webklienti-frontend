@@ -108,10 +108,10 @@ export default function CaseStudySection({ t, lang }) {
           {reviewsTitle}
         </h3>
 
-        <style>{`.google-cta-card:hover { border-color: #2563EB !important; transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }`}</style>
+        <style>{`.google-cta-card:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }`}</style>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16, marginBottom: 24 }}>
           {/* Single real review */}
-          <div className="card card-hover" style={{ display: 'flex', flexDirection: 'column', gap: 12, transition: 'all .2s' }}>
+          <div className="card card-hover" style={{ display: 'flex', flexDirection: 'column', gap: 12, transition: 'all .2s', border: '1px solid #E5E7EB', borderRadius: 16, background: '#fff' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
               {/* Google logo */}
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
