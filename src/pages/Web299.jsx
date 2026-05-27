@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
 const API = 'https://webklienti-backend.onrender.com';
@@ -325,7 +326,12 @@ export default function Web299() {
               ))}
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10, marginTop: 4 }}>
                 <input id="c299" type="checkbox" checked={form.consent} onChange={e => { setForm(p => ({ ...p, consent: e.target.checked })); setConsentError(false); }} style={{ marginTop: 3, width: 16, height: 16, cursor: 'pointer', accentColor: '#ffd200', flexShrink: 0 }} />
-                <label htmlFor="c299" style={{ fontSize: 12, color: 'rgba(245,242,235,0.3)', lineHeight: 1.5, cursor: 'pointer' }}>Súhlasím so spracovaním osobných údajov *</label>
+                <label htmlFor="c299" style={{ fontSize: 12, color: 'rgba(245,242,235,0.3)', lineHeight: 1.5, cursor: 'pointer' }}>
+                  Súhlasím so{' '}
+                  <Link to="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: '#ffd200', textDecoration: 'underline' }}>
+                    spracovaním osobných údajov
+                  </Link>{' *'}
+                </label>
               </div>
               {consentError && <p style={{ color: '#e24b4a', fontSize: 13, marginTop: -4 }}>⚠️ Potvrďte súhlas so spracovaním údajov.</p>}
               {formStatus === 'error' && <p style={{ color: '#e24b4a', fontSize: 13 }}>❌ Chyba. Skúste znova alebo nás kontaktujte priamo.</p>}
