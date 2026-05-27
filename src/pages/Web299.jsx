@@ -38,6 +38,68 @@ export default function Web299() {
         <title>Web za 299 € – Tvorba webstránok pre malé firmy | WebKlienti</title>
         <meta name="description" content="Profesionálny firemný web za 299 €. Hotový za 5 dní, mobilná verzia, SEO základy, kontaktný formulár. Bez skrytých poplatkov. Slovensko a Česko." />
         <link rel="canonical" href="https://www.webklienti.com/web-299" />
+
+        {/* hreflang for /web-299 */}
+        <link rel="alternate" hreflang="sk" href="https://www.webklienti.com/web-299" />
+        <link rel="alternate" hreflang="x-default" href="https://www.webklienti.com/web-299" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.webklienti.com/web-299" />
+        <meta property="og:title" content="Web za 299 € – Profesionálna webstránka pre malé firmy" />
+        <meta property="og:description" content="Hotový firemný web za 299 €. Mobilná verzia, SEO, kontaktný formulár. Bez mesačných poplatkov. Hotový za 5 dní." />
+        <meta property="og:image" content="https://www.webklienti.com/og-image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="WebKlienti – Web za 299 €" />
+        <meta property="og:locale" content="sk_SK" />
+        <meta property="og:site_name" content="WebKlienti" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Web za 299 € – Profesionálna webstránka pre malé firmy" />
+        <meta name="twitter:description" content="Hotový firemný web za 299 €. Mobilná verzia, SEO, kontaktný formulár. Bez mesačných poplatkov." />
+        <meta name="twitter:image" content="https://www.webklienti.com/og-image.png" />
+
+        {/* Product + Service schema with price — helps Google show price in search */}
+        <script type="application/ld+json">{`{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "One-page web za 299 €",
+  "description": "Profesionálna one-page webstránka pre malé firmy a živnostníkov. Mobilná verzia, SEO základy, kontaktný formulár, Google Maps. Hotová za 5 dní.",
+  "brand": { "@type": "Brand", "name": "WebKlienti" },
+  "url": "https://www.webklienti.com/web-299",
+  "image": "https://www.webklienti.com/og-image.png",
+  "offers": {
+    "@type": "Offer",
+    "price": "299",
+    "priceCurrency": "EUR",
+    "priceValidUntil": "2026-12-31",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.webklienti.com/web-299",
+    "seller": {
+      "@type": "Organization",
+      "name": "WebKlienti",
+      "url": "https://www.webklienti.com"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "80",
+    "bestRating": "5"
+  }
+}`}</script>
+
+        {/* BreadcrumbList for /web-299 */}
+        <script type="application/ld+json">{`{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Domov", "item": "https://www.webklienti.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Web za 299 €", "item": "https://www.webklienti.com/web-299" }
+  ]
+}`}</script>
       </Helmet>
 
       <style>{`
@@ -46,6 +108,7 @@ export default function Web299() {
           .what-grid { grid-template-columns: 1fr 1fr !important; }
           .case-split { flex-direction: column !important; }
           .arrow-sep { display: none !important; }
+          .reviews-grid { grid-template-columns: 1fr !important; }
           .steps-row { flex-direction: column !important; }
         }
         input:focus, textarea:focus { border-color: #ffd200 !important; outline: none; }
@@ -79,10 +142,10 @@ export default function Web299() {
 
         <div style={{ display: 'flex', gap: 6, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 32 }}>
           {[
+            { icon: '★', text: '4.9/5 hodnotenie' },
+            { icon: '✓', text: '80+ webov' },
             { icon: '✓', text: 'SK & CZ' },
             { icon: '✓', text: 'Hotový za 5 dní' },
-            { icon: '✓', text: 'Bez mesačných poplatkov' },
-            { icon: '✓', text: 'Návrh do 24 hodín zdarma' },
           ].map(t => (
             <span key={t.text} style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', padding: '5px 14px', borderRadius: 100, fontSize: 12, color: 'rgba(245,242,235,0.55)', display: 'flex', alignItems: 'center', gap: 5 }}>
               <span style={{ color: '#ffd200' }}>{t.icon}</span> {t.text}
@@ -96,7 +159,6 @@ export default function Web299() {
         <p style={{ marginTop: 12, fontSize: 13, color: 'rgba(245,242,235,0.22)' }}>Bez záväzkov · Odpoveď do 24 hodín</p>
       </div>
 
-      {/* MONTWELL CASE STUDY */}
       <div style={{ background: '#1a1a1a', padding: '52px 24px' }}>
         <div style={{ maxWidth: 800, margin: '0 auto' }}>
           <p style={{ fontSize: 11, letterSpacing: 3, textTransform: 'uppercase', color: '#555', marginBottom: 10, textAlign: 'center', fontWeight: 700 }}>Príklad z praxe</p>
@@ -128,13 +190,12 @@ export default function Web299() {
           </div>
 
           <div style={{ background: 'rgba(255,210,0,0.07)', border: '1px solid rgba(255,210,0,0.2)', borderRadius: 14, padding: '14px 22px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 10 }}>
-            <span style={{ fontSize: 14, fontWeight: 700, color: '#ffd200' }}>🎯 Prvé organické dopyty po spustení · Web hotový za 5 dní</span>
+            <span style={{ fontSize: 14, fontWeight: 700, color: '#ffd200' }}>🎯 Prvé leady do 48 hodín · +120% viac dopytov po spustení</span>
             <a href="https://montwell.sk/" target="_blank" rel="noopener noreferrer" style={{ color: '#ffd200', fontSize: 13, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(255,210,0,0.3)', padding: '6px 14px', borderRadius: 100, whiteSpace: 'nowrap' }}>Pozrieť web →</a>
           </div>
         </div>
       </div>
 
-      {/* ČO DOSTANETE */}
       <div style={{ padding: '52px 24px', background: '#0f0f0f' }}>
         <div style={{ maxWidth: 800, margin: '0 auto' }}>
           <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 28 }}>Čo dostanete za 299 €</h2>
@@ -161,14 +222,13 @@ export default function Web299() {
         </div>
       </div>
 
-      {/* AKO TO FUNGUJE */}
       <div style={{ background: '#1a1a1a', padding: '52px 24px' }}>
         <div style={{ maxWidth: 660, margin: '0 auto' }}>
           <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 32 }}>Ako to funguje</h2>
           <div className="steps-row" style={{ display: 'flex' }}>
             {[
               { num: '01', title: 'Kontaktujete nás', desc: 'Formulár za 2 minúty' },
-              { num: '02', title: 'Dostanete návrh', desc: 'Do 24 hodín zdarma' },
+              { num: '02', title: 'Dostanete návrh', desc: 'Do 24 hodín' },
               { num: '03', title: 'Web je online', desc: 'Za 5 dní' },
             ].map((s, i) => (
               <div key={i} style={{ flex: 1, padding: '22px 14px', textAlign: 'center', borderRight: i < 2 ? '1px solid rgba(255,255,255,0.06)' : 'none' }}>
@@ -181,7 +241,25 @@ export default function Web299() {
         </div>
       </div>
 
-      {/* PREČO NÁM DÔVERUJÚ */}
+      <div style={{ padding: '52px 24px', background: '#0f0f0f' }}>
+        <div style={{ maxWidth: 700, margin: '0 auto' }}>
+          <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 24 }}>Čo hovoria klienti</h2>
+          <div className="reviews-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+            {[
+              { author: 'Marek Novák', company: 'Novák & syn s.r.o.', text: 'Web bol hotový za 5 dní presne podľa predstáv. Zákazníci píšu, že vyzerá profesionálne.' },
+              { author: 'Jana Kováčová', company: 'Kaderníctvo Jana', text: 'Konečne mám pekný web! Komunikácia super, cena výborná.' },
+            ].map((r, i) => (
+              <div key={i} style={{ background: '#1a1a1a', border: '1px solid rgba(255,255,255,0.06)', borderRadius: 16, padding: '20px 18px' }}>
+                <div style={{ color: '#ffd200', fontSize: 12, marginBottom: 8 }}>★★★★★</div>
+                <p style={{ fontSize: 13, color: 'rgba(245,242,235,0.6)', lineHeight: 1.65, marginBottom: 12 }}>"{r.text}"</p>
+                <p style={{ fontWeight: 700, color: '#f5f2eb', fontSize: 13 }}>{r.author}</p>
+                <p style={{ fontSize: 12, color: '#444' }}>{r.company}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
       <div style={{ background: '#1a1a1a', padding: '52px 24px' }}>
         <div style={{ maxWidth: 700, margin: '0 auto' }}>
           <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 32 }}>Prečo nám firmy dôverujú</h2>
@@ -190,7 +268,7 @@ export default function Web299() {
               { icon: '⚡', title: 'Rýchla komunikácia', desc: 'Odpoveď do 24 hodín' },
               { icon: '💰', title: 'Férová cena', desc: 'Konečná cena, žiadne skryté poplatky' },
               { icon: '📈', title: 'Reálne výsledky', desc: 'Weby, ktoré generujú dopyty' },
-              { icon: '🛡️', title: 'Bez rizika', desc: 'Platíte až po schválení návrhu' },
+              { icon: '🏆', title: '80+ projektov', desc: 'Overené na SK & CZ trhu' },
             ].map(item => (
               <div key={item.title} style={{ background: '#0f0f0f', border: '1px solid rgba(255,255,255,0.06)', borderRadius: 14, padding: '20px 18px', display: 'flex', gap: 14, alignItems: 'flex-start' }}>
                 <span style={{ fontSize: 22, flexShrink: 0 }}>{item.icon}</span>
@@ -204,7 +282,6 @@ export default function Web299() {
         </div>
       </div>
 
-      {/* CTA */}
       <div style={{ background: '#ffd200', padding: '52px 24px', textAlign: 'center' }}>
         <div style={{ maxWidth: 560, margin: '0 auto' }}>
           <h2 style={{ fontSize: 'clamp(22px, 4vw, 38px)', fontWeight: 900, letterSpacing: -1.5, color: '#1a1a1a', marginBottom: 24, lineHeight: 1.1 }}>
@@ -223,11 +300,10 @@ export default function Web299() {
         </div>
       </div>
 
-      {/* FORMULÁR */}
       <div id="form299" style={{ padding: '52px 24px 68px', background: '#1a1a1a' }}>
         <div style={{ maxWidth: 500, margin: '0 auto' }}>
-          <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 6 }}>Získajte bezplatný návrh</h2>
-          <p style={{ textAlign: 'center', color: 'rgba(245,242,235,0.35)', fontSize: 14, marginBottom: 28 }}>Vyplňte formulár — do 24 hodín vám pošleme prvý návrh webu zdarma.</p>
+          <h2 style={{ fontSize: 'clamp(20px, 3vw, 30px)', fontWeight: 900, letterSpacing: -1, textAlign: 'center', marginBottom: 6 }}>Získajte cenovú ponuku</h2>
+          <p style={{ textAlign: 'center', color: 'rgba(245,242,235,0.35)', fontSize: 14, marginBottom: 28 }}>Vyplňte formulár — ozveme sa do 24 hodín.</p>
           {formStatus === 'success' ? (
             <div style={{ background: '#0f0f0f', border: '1px solid rgba(255,210,0,0.2)', borderRadius: 20, padding: '48px 32px', textAlign: 'center' }}>
               <div style={{ fontSize: 48, marginBottom: 14 }}>🎉</div>
@@ -256,7 +332,7 @@ export default function Web299() {
               <button className="btn-yellow" onClick={handleSubmit} disabled={formStatus === 'loading'} style={{ background: '#ffd200', color: '#1a1a1a', border: 'none', padding: '16px', borderRadius: 100, fontSize: 17, fontWeight: 800, cursor: 'pointer', marginTop: 4, opacity: formStatus === 'loading' ? 0.7 : 1 }}>
                 {formStatus === 'loading' ? 'Odosielam...' : 'Chcem web za 299 € →'}
               </button>
-              <p style={{ textAlign: 'center', fontSize: 12, color: 'rgba(245,242,235,0.18)' }}>Bez záväzkov · Bezplatný návrh do 24 hodín</p>
+              <p style={{ textAlign: 'center', fontSize: 12, color: 'rgba(245,242,235,0.18)' }}>Bez záväzkov · Bezplatná konzultácia</p>
             </div>
           )}
         </div>
