@@ -99,6 +99,7 @@ export default function Web299() {
         input:focus, textarea:focus { outline: none; border-color: #2563EB !important; box-shadow: 0 0 0 3px rgba(37,99,235,0.12); }
         .faq-row { border-bottom: 1px solid #E5E7EB; }
         .faq-toggle { width: 100%; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: 20px 0; text-align: left; gap: 16px; font-family: 'Inter', sans-serif; }
+        .google-cta-card:hover { border-color: #2563EB !important; transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
         @media (max-width: 640px) {
           .hero-badges { flex-direction: column !important; align-items: flex-start !important; }
           .what-grid { grid-template-columns: 1fr 1fr !important; }
@@ -352,10 +353,8 @@ export default function Web299() {
             </div>
 
             {/* CTA — see all reviews on Google */}
-            <a href="https://maps.app.goo.gl/tDf7dRkYB2eZ3j9d7" target="_blank" rel="noopener noreferrer"
-              style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 12, background: C.white, border: `1.5px dashed ${C.border}`, borderRadius: 16, padding: '32px 24px', cursor: 'pointer', transition: 'border-color .15s' }}
-              onMouseEnter={e => e.currentTarget.style.borderColor = C.blue}
-              onMouseLeave={e => e.currentTarget.style.borderColor = C.border}
+            <a href="https://maps.app.goo.gl/tDf7dRkYB2eZ3j9d7" target="_blank" rel="noopener noreferrer" className="card google-cta-card"
+              style={{ textDecoration: "none", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 12, background: C.white, padding: "32px 24px", cursor: "pointer", transition: "all .15s" }}
             >
               <div style={{ fontSize: 32 }}>⭐</div>
               <p style={{ fontSize: 15, fontWeight: 600, color: C.text, textAlign: 'center', lineHeight: 1.4 }}>
