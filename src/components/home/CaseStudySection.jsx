@@ -132,8 +132,8 @@ export default function CaseStudySection({ t, lang }) {
           </div>
 
           {/* CTA card — more reviews on Google */}
-          <a href={GOOGLE_REVIEW_LINK} target="_blank" rel="noopener noreferrer" className="google-cta-card"
-            style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 12, background: C.white, border: `1.5px solid ${C.border}`, borderRadius: 16, padding: '32px 24px', cursor: 'pointer', transition: 'all .15s' }}
+          <a href={GOOGLE_REVIEW_LINK} target="_blank" rel="noopener noreferrer" className="card google-cta-card"
+            style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 12, background: C.white, padding: '32px 24px', cursor: 'pointer', transition: 'all .15s' }}
           >
             <div style={{ fontSize: 32 }}>⭐</div>
             <p style={{ fontSize: 15, fontWeight: 600, color: C.text, textAlign: 'center', lineHeight: 1.4 }}>
