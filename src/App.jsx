@@ -81,25 +81,170 @@ function HomePage() {
   return (
     <div style={{ fontFamily: "'Inter', -apple-system, sans-serif", background: C.bg, color: C.text, minHeight: '100vh' }}>
       <Helmet>
-        <html lang={lang} />
+        <html lang={lang === 'cz' ? 'cs' : lang} />
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
         <link rel="canonical" href={seo.url} />
+
+        {/* hreflang — tells Google which language version to show per market */}
+        <link rel="alternate" hreflang="sk" href="https://www.webklienti.com/" />
+        <link rel="alternate" hreflang="cs" href="https://www.webklienti.com/?lang=cz" />
+        <link rel="alternate" hreflang="en" href="https://www.webklienti.com/?lang=en" />
+        <link rel="alternate" hreflang="x-default" href="https://www.webklienti.com/" />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* Open Graph — fixed image extension + added image dimensions */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content={seo.url} />
         <meta property="og:title" content={seo.title} />
         <meta property="og:description" content={seo.description} />
-        <meta property="og:image" content="https://webklienti.com/og-image.jpg" />
+        <meta property="og:image" content="https://www.webklienti.com/og-image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={lang === 'en' ? 'WebKlienti – Professional websites from €299' : 'WebKlienti – Profesionálne webstránky od 299 €'} />
         <meta property="og:locale" content={lang === 'sk' ? 'sk_SK' : lang === 'cz' ? 'cs_CZ' : 'en_US'} />
+        <meta property="og:locale:alternate" content="sk_SK" />
+        <meta property="og:site_name" content="WebKlienti" />
+
+        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@webklienti" />
         <meta name="twitter:title" content={seo.title} />
         <meta name="twitter:description" content={seo.description} />
-        <meta name="twitter:image" content="https://webklienti.com/og-image.jpg" />
-        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"LocalBusiness","name":"WebKlienti","url":"https://webklienti.com","telephone":"+421907890600","email":"info@webklienti.com","address":{"@type":"PostalAddress","streetAddress":"Ulica Mozartova 5652/12","addressLocality":"Trnava","postalCode":"917 08","addressCountry":"SK"},"areaServed":["SK","CZ"],"priceRange":"\u20ac\u20ac","openingHours":"Mo-Fr 09:00-18:00"}`}</script>
+        <meta name="twitter:image" content="https://www.webklienti.com/og-image.png" />
+
+        {/* LocalBusiness schema with AggregateRating */}
+        <script type="application/ld+json">{`{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "WebKlienti",
+  "url": "https://www.webklienti.com",
+  "logo": "https://www.webklienti.com/logo.webp",
+  "image": "https://www.webklienti.com/og-image.png",
+  "telephone": "+421907890600",
+  "email": "info@webklienti.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ulica Mozartova 5652/12",
+    "addressLocality": "Trnava",
+    "postalCode": "917 08",
+    "addressCountry": "SK"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 48.3774,
+    "longitude": 17.5880
+  },
+  "areaServed": [
+    { "@type": "Country", "name": "Slovakia" },
+    { "@type": "Country", "name": "Czech Republic" }
+  ],
+  "priceRange": "€€",
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61588797397714"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "80",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Matus K." },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "Super služby! Som veľmi spokojný."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Marek Novák" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "Web bol hotový za 5 dní presne podľa predstáv. Zákazníci píšu, že vyzerá profesionálne."
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Tvorba webstránok",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "One-page web",
+          "description": "Profesionálna one-page webstránka pre malé firmy a živnostníkov. Mobilná verzia, SEO základy, kontaktný formulár."
+        },
+        "price": "299",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.webklienti.com/web-299"
+      }
+    ]
+  }
+}`}</script>
+
+        {/* BreadcrumbList schema */}
+        <script type="application/ld+json">{`{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Domov", "item": "https://www.webklienti.com/" }
+  ]
+}`}</script>
+
+        {/* FAQPage schema — Google zobrazuje ako rozbaľovacie otázky priamo vo výsledkoch */}
+        <script type="application/ld+json">{`{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Koľko stojí tvorba webstránky?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Základná one-page webstránka stojí 299 €. Cena zahŕňa dizajn na mieru, mobilnú verziu, SEO základy, kontaktný formulár a Google Maps. Bez mesačných poplatkov."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Za ako dlho bude web hotový?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Štandardná webstránka je hotová do 5 pracovných dní od schválenia návrhu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Robíte weby pre firmy na Slovensku aj v Česku?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Áno, pôsobíme na celom Slovensku aj v Českej republike. Všetky projekty robíme kompletne online."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sú v cene zahrnuté aj mesačné poplatky za hosting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cena 299 € je jednorazová za tvorbu webu. Hosting a doména sa platia samostatne, ale pomôžeme vám s ich nastavením."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Čo je súčasťou webstránky za 299 €?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Súčasťou je: dizajn na mieru, mobilná (responzívna) verzia, SEO základy, kontaktný formulár, Google Maps integrácia a firemný email."
+      }
+    }
+  ]
+}`}</script>
       </Helmet>
 
       <style>{`
