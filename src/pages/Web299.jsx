@@ -99,7 +99,7 @@ export default function Web299() {
         input:focus, textarea:focus { outline: none; border-color: #2563EB !important; box-shadow: 0 0 0 3px rgba(37,99,235,0.12); }
         .faq-row { border-bottom: 1px solid #E5E7EB; }
         .faq-toggle { width: 100%; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: 20px 0; text-align: left; gap: 16px; font-family: 'Inter', sans-serif; }
-        .google-cta-card:hover { border-color: #2563EB !important; transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .google-cta-card:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
         @media (max-width: 640px) {
           .hero-badges { flex-direction: column !important; align-items: flex-start !important; }
           .what-grid { grid-template-columns: 1fr 1fr !important; }
@@ -333,7 +333,7 @@ export default function Web299() {
           <div className="reviews-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
 
             {/* Real review */}
-            <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: 12, transition: 'all .2s' }}>
+            <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: 12, transition: 'all .2s', border: '1px solid #E5E7EB', borderRadius: 16, background: '#fff' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
