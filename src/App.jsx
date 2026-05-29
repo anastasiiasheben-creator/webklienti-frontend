@@ -44,6 +44,14 @@ function HomePage() {
     return () => window.removeEventListener('scroll', handler);
   }, []);
 
+  // Keep Render backend alive — ping every 10 minutes
+  useEffect(() => {
+    const ping = () => fetch('https://webklienti-backend.onrender.com/api/orders', { method: 'HEAD' }).catch(() => {});
+    ping();
+    const interval = setInterval(ping, 10 * 60 * 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   const t = T[lang];
   const seo = { title: t.seoTitle, description: t.seoDescription, url: t.seoUrl };
 
