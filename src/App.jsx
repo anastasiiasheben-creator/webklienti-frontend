@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { FaWhatsapp, FaFacebookF } from 'react-icons/fa';
+import { FaWhatsapp, FaFacebookF, FaInstagram } from 'react-icons/fa';
 import logoImg from './assets/logo.webp';
 
 import sk from './i18n/sk';
@@ -63,9 +63,19 @@ function HomePage() {
     setFormStatus('loading');
     try {
       const data = await apiClient.createOrder({ ...form, lang });
-      if (data.success) { setFormStatus('success'); setForm(EMPTY_FORM); }
-      else { setFormStatus('error'); }
-    } catch { setFormStatus('error'); }
+      if (data.success) {
+        setFormStatus('success');
+        setForm(EMPTY_FORM);
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'form_submit_success', package: form.package });
+      } else {
+        console.error('Order failed:', data);
+        setFormStatus('error');
+      }
+    } catch (err) {
+      console.error('Order error:', err);
+      setFormStatus('error');
+    }
   };
 
   const handleSelectPackage = (pkg) => { setForm(p => ({ ...p, package: pkg })); scrollTo('contact'); };
@@ -81,170 +91,25 @@ function HomePage() {
   return (
     <div style={{ fontFamily: "'Inter', -apple-system, sans-serif", background: C.bg, color: C.text, minHeight: '100vh' }}>
       <Helmet>
-        <html lang={lang === 'cz' ? 'cs' : lang} />
+        <html lang={lang} />
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
         <link rel="canonical" href={seo.url} />
-
-        {/* hreflang — tells Google which language version to show per market */}
-        <link rel="alternate" hreflang="sk" href="https://www.webklienti.com/" />
-        <link rel="alternate" hreflang="cs" href="https://www.webklienti.com/?lang=cz" />
-        <link rel="alternate" hreflang="en" href="https://www.webklienti.com/?lang=en" />
-        <link rel="alternate" hreflang="x-default" href="https://www.webklienti.com/" />
-
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* Open Graph — fixed image extension + added image dimensions */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content={seo.url} />
         <meta property="og:title" content={seo.title} />
         <meta property="og:description" content={seo.description} />
-        <meta property="og:image" content="https://www.webklienti.com/og-image.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content={lang === 'en' ? 'WebKlienti – Professional websites from €299' : 'WebKlienti – Profesionálne webstránky od 299 €'} />
+        <meta property="og:image" content="https://webklienti.com/og-image.jpg" />
         <meta property="og:locale" content={lang === 'sk' ? 'sk_SK' : lang === 'cz' ? 'cs_CZ' : 'en_US'} />
-        <meta property="og:locale:alternate" content="sk_SK" />
-        <meta property="og:site_name" content="WebKlienti" />
-
-        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@webklienti" />
         <meta name="twitter:title" content={seo.title} />
         <meta name="twitter:description" content={seo.description} />
-        <meta name="twitter:image" content="https://www.webklienti.com/og-image.png" />
-
-        {/* LocalBusiness schema with AggregateRating */}
-        <script type="application/ld+json">{`{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "WebKlienti",
-  "url": "https://www.webklienti.com",
-  "logo": "https://www.webklienti.com/logo.webp",
-  "image": "https://www.webklienti.com/og-image.png",
-  "telephone": "+421907890600",
-  "email": "info@webklienti.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Ulica Mozartova 5652/12",
-    "addressLocality": "Trnava",
-    "postalCode": "917 08",
-    "addressCountry": "SK"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 48.3774,
-    "longitude": 17.5880
-  },
-  "areaServed": [
-    { "@type": "Country", "name": "Slovakia" },
-    { "@type": "Country", "name": "Czech Republic" }
-  ],
-  "priceRange": "€€",
-  "openingHours": "Mo-Fr 09:00-18:00",
-  "sameAs": [
-    "https://www.facebook.com/profile.php?id=61588797397714"
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "80",
-    "bestRating": "5",
-    "worstRating": "1"
-  },
-  "review": [
-    {
-      "@type": "Review",
-      "author": { "@type": "Person", "name": "Matus K." },
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "reviewBody": "Super služby! Som veľmi spokojný."
-    },
-    {
-      "@type": "Review",
-      "author": { "@type": "Person", "name": "Marek Novák" },
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "reviewBody": "Web bol hotový za 5 dní presne podľa predstáv. Zákazníci píšu, že vyzerá profesionálne."
-    }
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Tvorba webstránok",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "One-page web",
-          "description": "Profesionálna one-page webstránka pre malé firmy a živnostníkov. Mobilná verzia, SEO základy, kontaktný formulár."
-        },
-        "price": "299",
-        "priceCurrency": "EUR",
-        "availability": "https://schema.org/InStock",
-        "url": "https://www.webklienti.com/web-299"
-      }
-    ]
-  }
-}`}</script>
-
-        {/* BreadcrumbList schema */}
-        <script type="application/ld+json">{`{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Domov", "item": "https://www.webklienti.com/" }
-  ]
-}`}</script>
-
-        {/* FAQPage schema — Google zobrazuje ako rozbaľovacie otázky priamo vo výsledkoch */}
-        <script type="application/ld+json">{`{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Koľko stojí tvorba webstránky?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Základná one-page webstránka stojí 299 €. Cena zahŕňa dizajn na mieru, mobilnú verziu, SEO základy, kontaktný formulár a Google Maps. Bez mesačných poplatkov."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Za ako dlho bude web hotový?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Štandardná webstránka je hotová do 5 pracovných dní od schválenia návrhu."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Robíte weby pre firmy na Slovensku aj v Česku?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Áno, pôsobíme na celom Slovensku aj v Českej republike. Všetky projekty robíme kompletne online."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Sú v cene zahrnuté aj mesačné poplatky za hosting?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Cena 299 € je jednorazová za tvorbu webu. Hosting a doména sa platia samostatne, ale pomôžeme vám s ich nastavením."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Čo je súčasťou webstránky za 299 €?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Súčasťou je: dizajn na mieru, mobilná (responzívna) verzia, SEO základy, kontaktný formulár, Google Maps integrácia a firemný email."
-      }
-    }
-  ]
-}`}</script>
+        <meta name="twitter:image" content="https://webklienti.com/og-image.jpg" />
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"LocalBusiness","name":"WebKlienti","url":"https://webklienti.com","telephone":"+421907890600","email":"info@webklienti.com","address":{"@type":"PostalAddress","streetAddress":"Ulica Mozartova 5652/12","addressLocality":"Trnava","postalCode":"917 08","addressCountry":"SK"},"areaServed":["SK","CZ"],"priceRange":"\u20ac\u20ac","openingHours":"Mo-Fr 09:00-18:00"}`}</script>
       </Helmet>
 
       <style>{`
@@ -281,7 +146,7 @@ function HomePage() {
       `}</style>
 
       {/* NAV */}
-      <nav style={{ position: 'sticky', top: 0, zIndex: 100, background: 'rgba(255,255,255,0.97)', backdropFilter: 'blur(8px)', borderBottom: `1px solid ${C.border}`, padding: '0 40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: 64, boxShadow: navScrolled ? '0 4px 20px rgba(0,0,0,0.08)' : 'none', transition: 'box-shadow .2s' }}>
+      <nav style={{ position: 'sticky', top: 0, zIndex: 100, background: 'rgba(255,255,255,0.97)', backdropFilter: 'blur(8px)', borderBottom: `1px solid ${C.border}`, padding: '0 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: 64, boxShadow: navScrolled ? '0 4px 20px rgba(0,0,0,0.08)' : 'none', transition: 'box-shadow .2s', gap: 12 }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
           <img src={logoImg} alt="WebKlienti logo" style={{ height: 36, width: 36, objectFit: 'contain', borderRadius: '50%' }} />
           <span style={{ fontWeight: 700, fontSize: 18, color: C.text, letterSpacing: -0.5 }}>Web<span style={{ color: C.blue }}>Klienti</span></span>
@@ -342,11 +207,7 @@ function HomePage() {
         />
       </main>
 
-      {/* FLOATING */}
-      <div style={{ position: 'fixed', right: 20, bottom: 20, display: 'flex', flexDirection: 'column', gap: 12, zIndex: 999 }}>
-        <a href="https://wa.me/421907890600" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" style={{ width: 52, height: 52, background: '#25D366', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 22, boxShadow: '0 4px 16px rgba(0,0,0,0.15)', textDecoration: 'none' }}><FaWhatsapp /></a>
-        <a href="https://facebook.com/profile.php?id=61588797397714" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style={{ width: 52, height: 52, background: '#1877F2', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 20, boxShadow: '0 4px 16px rgba(0,0,0,0.15)', textDecoration: 'none' }}><FaFacebookF /></a>
-      </div>
+
 
       {/* STICKY MOBILE CTA */}
       <div className="sticky-cta" style={{ display: 'none', position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 998, background: C.white, borderTop: `1px solid ${C.border}`, padding: '12px 16px 20px', boxShadow: '0 -4px 20px rgba(0,0,0,0.08)' }}>
@@ -356,10 +217,15 @@ function HomePage() {
       {/* FOOTER */}
       <footer id="footer" style={{ background: C.dark, color: 'rgba(255,255,255,0.4)', textAlign: 'center', padding: '48px 24px', fontSize: 14 }}>
         <img src={logoImg} alt="WebKlienti logo" style={{ height: 36, width: 36, objectFit: 'contain', marginBottom: 16, borderRadius: '50%' }} />
-        <div className="footer-links" style={{ display: 'flex', gap: 24, justifyContent: 'center', marginBottom: 12, flexWrap: 'wrap' }}>
+        <div className="footer-links" style={{ display: 'flex', gap: 24, justifyContent: 'center', marginBottom: 16, flexWrap: 'wrap' }}>
           <a href="mailto:info@webklienti.com" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>info@webklienti.com</a>
           <a href="tel:+421907890600" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>+421 907 890 600</a>
           <span>webklienti.com</span>
+        </div>
+        <div style={{ display: 'flex', gap: 12, justifyContent: 'center', marginBottom: 20 }}>
+          <a href="https://wa.me/421907890600" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" style={{ width: 44, height: 44, background: '#25D366', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 20, textDecoration: 'none' }}><FaWhatsapp /></a>
+          <a href="https://facebook.com/profile.php?id=61588797397714" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style={{ width: 44, height: 44, background: '#1877F2', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 18, textDecoration: 'none' }}><FaFacebookF /></a>
+          <a href="https://www.instagram.com/webklienti" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style={{ width: 44, height: 44, background: 'linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 18, textDecoration: 'none' }}><FaInstagram /></a>
         </div>
         <p style={{ marginBottom: 8 }}>{t.footerRights}</p>
         <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)', fontStyle: 'italic' }}>{t.statNote}</p>
