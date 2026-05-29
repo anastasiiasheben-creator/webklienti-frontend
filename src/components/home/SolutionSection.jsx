@@ -22,14 +22,11 @@ export function LogoStrip({ lang }) {
             : lang === 'cz' ? 'Důvěřují nám firmy po celém Slovensku a ČR'
             : 'Dôverujú nám firmy po celom Slovensku a ČR'}
         </p>
-        <div style={{ display: 'flex', gap: 48, justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', opacity: 0.5 }}>
-          {['Montwell', 'Partner 2', 'Partner 3', 'Partner 4', 'Partner 5'].map((name, i) => (
-            <div key={i} style={{ fontSize: 15, fontWeight: 700, color: C.textSub, letterSpacing: -0.3, filter: 'grayscale(1)' }}>
-              {i === 0
-                ? <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer" style={{ color: C.textSub, textDecoration: 'none' }}>{name}</a>
-                : name}
-            </div>
-          ))}
+        <div style={{ display: 'flex', gap: 32, justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
+          <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer" style={{ color: C.textSub, textDecoration: 'none', fontSize: 15, fontWeight: 700, letterSpacing: -0.3, filter: 'grayscale(1)', opacity: 0.6 }}>Montwell</a>
+          <span style={{ fontSize: 13, color: C.textSub, opacity: 0.4, fontStyle: 'italic' }}>
+            {lang === 'en' ? '+ 80 more projects' : '+ 80 ďalších projektov'}
+          </span>
         </div>
       </div>
     </div>
