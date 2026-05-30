@@ -7,7 +7,7 @@ export default function PricingSection({ t, onSelectPackage }) {
         <p className="section-label">{t.pricingLabel}</p>
         <h2 style={{ fontSize: 'clamp(28px, 3vw, 36px)', fontWeight: 700, letterSpacing: '-0.01em', marginBottom: 12 }}>{t.pricingTitle}</h2>
         <p style={{ fontSize: 16, color: C.textSub, marginBottom: 48 }}>{t.pricingNote}</p>
-        <div className="pricing-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24, alignItems: 'start' }}>
+        <div className="pricing-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24, alignItems: 'stretch' }}>
           {t.cards.map((card, i) => (
             <div
               key={i}
