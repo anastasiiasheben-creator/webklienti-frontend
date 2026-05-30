@@ -74,13 +74,8 @@ function HomePage() {
     return () => observer.disconnect();
   }, []);
 
-  // Keep Render backend alive — ping every 10 minutes
-  useEffect(() => {
-    const ping = () => fetch('https://webklienti-backend.onrender.com/health').catch(() => {});
-    ping();
-    const interval = setInterval(ping, 10 * 60 * 1000);
-    return () => clearInterval(interval);
-  }, []);
+  // Backend keep-alive is handled externally (UptimeRobot / cron-job.org)
+  // pinging /health server-side — avoids console errors on the client.
 
   const t = T[lang];
   const seo = { title: t.seoTitle, description: t.seoDescription, url: t.seoUrl };
