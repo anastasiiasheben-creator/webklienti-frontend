@@ -13,10 +13,6 @@ export const C = {
   dark: '#0F172A',
 };
 
-export const API = process.env.REACT_APP_API_URL || 'http://localhost:3000';
+export const API = process.env.REACT_APP_API_URL || 'https://webklienti-backend.onrender.com';
 
-if (!process.env.REACT_APP_API_URL) {
-  console.warn('[WebKlienti] REACT_APP_API_URL is not set — falling back to localhost:3000');
-}
-
-export const NAV_IDS = ['pricing', 'reviews', 'footer'];
+export const NAV_IDS = ['pricing', 'reviews', 'faq', 'footer'];
