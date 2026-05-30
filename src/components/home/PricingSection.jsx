@@ -30,11 +30,11 @@ export default function PricingSection({ t, onSelectPackage }) {
                   fontSize: 12, fontWeight: 700, whiteSpace: 'nowrap',
                 }}>{card.badge}</div>
               )}
-              <p style={{ fontSize: 12, fontWeight: 600, letterSpacing: 2, textTransform: 'uppercase', color: card.featured ? C.blue : card.dark ? C.orange : C.textSub, marginBottom: 12 }}>{card.tag}</p>
+              <p style={{ fontSize: 12, fontWeight: 600, letterSpacing: 2, textTransform: 'uppercase', color: card.featured ? C.blue : card.dark ? C.orangeBright : C.textSub, marginBottom: 12 }}>{card.tag}</p>
               <h3 style={{ fontSize: 22, fontWeight: 700, marginBottom: 4 }}>{card.name}</h3>
-              <p style={{ fontSize: 13, color: card.dark ? 'rgba(255,255,255,0.5)' : C.textSub, marginBottom: 16, lineHeight: 1.5 }}>👤 {card.forWhom}</p>
+              <p style={{ fontSize: 13, color: card.dark ? 'rgba(255,255,255,0.7)' : C.textSub, marginBottom: 16, lineHeight: 1.5 }}>👤 {card.forWhom}</p>
               <div style={{ fontSize: 40, fontWeight: 700, letterSpacing: '-0.02em', marginBottom: 4 }}>{card.price}</div>
-              <p style={{ fontSize: 13, textDecoration: 'line-through', color: card.dark ? 'rgba(255,255,255,0.3)' : '#bbb', marginBottom: 20 }}>{card.old}</p>
+              <p style={{ fontSize: 13, textDecoration: 'line-through', color: card.dark ? 'rgba(255,255,255,0.55)' : '#6B7280', marginBottom: 20 }}>{card.old}</p>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10, flexGrow: 1, marginBottom: 24 }}>
                 {card.features.map(f => (
                   <li key={f} style={{ fontSize: 14, color: card.dark ? 'rgba(255,255,255,0.7)' : '#4B5563', display: 'flex', gap: 8, alignItems: 'flex-start' }}>
