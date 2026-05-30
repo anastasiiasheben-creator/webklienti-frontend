@@ -3,7 +3,7 @@ import { C } from '../../lib/constants';
 
 export default function ContactSection({ t, lang, form, setForm, formStatus, setFormStatus, consentError, setConsentError, onSubmit }) {
   return (
-    <div id="contact" style={{ background: C.bg, padding: '96px 40px' }}>
+    <div id="contact" style={{ background: C.bg, padding: '96px 40px 140px' }}>
       <div style={{ maxWidth: 600, margin: '0 auto' }}>
         <p className="section-label">{t.formLabel}</p>
         <h2 style={{ fontSize: 'clamp(26px, 3vw, 36px)', fontWeight: 700, letterSpacing: '-0.01em', marginBottom: 12 }}>{t.formTitle}</h2>
@@ -31,9 +31,9 @@ export default function ContactSection({ t, lang, form, setForm, formStatus, set
             {/* Website URL */}
             <div>
               <label htmlFor="field-website" style={{ display: 'block', fontSize: 14, fontWeight: 600, marginBottom: 8, color: C.text }}>
-                {lang === 'en' ? 'Website URL' : 'URL webu'}
+                {lang === 'en' ? 'Do you already have a website?' : 'Máte už web?'}
                 <span style={{ fontSize: 12, color: C.textSub, fontWeight: 400, marginLeft: 6 }}>
-                  ({lang === 'en' ? 'optional' : 'nepovinné'})
+                  ({lang === 'en' ? 'optional' : 'nepovinné — ak áno, zadajte URL'})
                 </span>
               </label>
               <input
