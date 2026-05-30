@@ -15,37 +15,24 @@ const posts = [
   { slug: 'kolko-stoji-webstranka-na-slovensku', title: 'Koľko stojí webstránka na Slovensku?', excerpt: 'Ceny webstránok sa pohybujú od 200 € až po tisíce eur. Ako sa v tom vyznať a za čo vlastne platíte? Úprimný prehľad trhu.', date: '3. apríla 2025', readTime: '5 min čítania' },
   { slug: 'preco-web-neprinas-zakaznikov', title: 'Prečo vám web neprináša zákazníkov (a ako to zmeniť)', excerpt: 'Váš web môže vyzerať dobre, ale ak neprináša dopyty, nie je problém v trhu — ale vo webe. Zistite 3 hlavné dôvody a ako ich opraviť.', date: '29. apríla 2025', readTime: '3 min čítania' },
   { slug: 'preco-vas-eshop-nepredava', title: 'Prečo váš e-shop nepredáva?', excerpt: 'Ľudia prídu, ale nekúpia. Je problém v nich, alebo vo vás? 5 otázok, ktoré vám otvoria oči o vašom e-shope.', date: '11. mája 2026', readTime: '4 min čítania' },
-  {
-  slug: 'tvorba-webu-pre-zivnostnika',
-  title: 'Tvorba webu pre živnostníka: čo by mal obsahovať úspešný web',
-  excerpt: 'Zistite, čo musí obsahovať moderný web pre živnostníka, aby získaval zákazníkov z Google a premieňal návštevníkov na dopyty.',
-  date: '22. mája 2026',
-  readTime: '4 min čítania'
-},
-{
-  slug: 'web-pre-kadernictvo',
-  title: 'Web pre kaderníctvo: ako získať viac rezervácií online',
-  excerpt: 'Profesionálny web pre kaderníctvo pomáha získavať nové rezervácie a budovať dôveru zákazníkov.',
-  date: '25. mája 2026',
-  readTime: '4 min čítania'
-},
-{
-  slug: 'co-musi-mat-dobry-firemny-web',
-  title: 'Čo musí mať dobrý firemný web v roku 2026',
-  excerpt: 'Zistite, aké prvky musí obsahovať moderný firemný web, aby získaval zákazníkov a zvyšoval dôveru návštevníkov.',
-  date: '27. mája 2026',
-  readTime: '4 min čítania'
-},
-{
-  slug: 'web-za-299-eur',
-  title: 'Web za 299 € – je to dobrá voľba?',
-  excerpt: 'Oplatí sa web za 299 €? Pozrite si výhody, nevýhody a situácie, kedy je lacnejší web rozumnou voľbou.',
-  date: '29. mája 2026',
-  readTime: '4 min čítania'
-},
+  { slug: 'tvorba-webu-pre-zivnostnika', title: 'Tvorba webu pre živnostníka: čo by mal obsahovať úspešný web', excerpt: 'Zistite, čo musí obsahovať moderný web pre živnostníka, aby získaval zákazníkov z Google a premieňal návštevníkov na dopyty.', date: '22. mája 2026', readTime: '4 min čítania' },
+  { slug: 'web-pre-kadernictvo', title: 'Web pre kaderníctvo: ako získať viac rezervácií online', excerpt: 'Profesionálny web pre kaderníctvo pomáha získavať nové rezervácie a budovať dôveru zákazníkov.', date: '25. mája 2026', readTime: '4 min čítania' },
+  { slug: 'co-musi-mat-dobry-firemny-web', title: 'Čo musí mať dobrý firemný web v roku 2026', excerpt: 'Zistite, aké prvky musí obsahovať moderný firemný web, aby získaval zákazníkov a zvyšoval dôveru návštevníkov.', date: '27. mája 2026', readTime: '4 min čítania' },
+  { slug: 'web-za-299-eur', title: 'Web za 299 € – je to dobrá voľba?', excerpt: 'Oplatí sa web za 299 €? Pozrite si výhody, nevýhody a situácie, kedy je lacnejší web rozumnou voľbou.', date: '29. mája 2026', readTime: '4 min čítania' },
 ];
 
 export default function Blog() {
+  const itemListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: posts.map((post, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `https://www.webklienti.com/blog/${post.slug}`,
+      name: post.title,
+    })),
+  };
+
   return (
     <div style={{ fontFamily: "'Inter', -apple-system, sans-serif", background: C.bg, minHeight: '100vh' }}>
       <Helmet>
@@ -53,6 +40,7 @@ export default function Blog() {
         <meta name="description" content="Praktické články o tvorbe webstránok, SEO a online marketingu pre malé firmy na Slovensku." />
         <link rel="canonical" href="https://www.webklienti.com/blog" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <script type="application/ld+json">{JSON.stringify(itemListSchema)}</script>
       </Helmet>
 
       <style>{`* { box-sizing: border-box; margin: 0; padding: 0; }`}</style>
@@ -60,7 +48,7 @@ export default function Blog() {
       {/* NAV */}
       <nav style={{ background: 'rgba(255,255,255,0.97)', backdropFilter: 'blur(8px)', borderBottom: `1px solid ${C.border}`, padding: '0 40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: 64, position: 'sticky', top: 0, zIndex: 100 }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
-          <img src={logoImg} alt="WebKlienti logo" style={{ height: 36, width: 36, objectFit: 'contain', borderRadius: '50%' }} />
+          <img src={logoImg} alt="WebKlienti logo" width="36" height="36" style={{ height: 36, width: 36, objectFit: 'contain', borderRadius: '50%' }} />
           <span style={{ fontWeight: 700, fontSize: 18, color: C.text }}>Web<span style={{ color: C.blue }}>Klienti</span></span>
         </Link>
         <Link to="/" style={{ color: C.textSub, textDecoration: 'none', fontSize: 14, fontWeight: 500 }}>← Späť na hlavnú</Link>
@@ -105,7 +93,7 @@ export default function Blog() {
       </div>
 
       <footer style={{ background: C.dark, color: 'rgba(255,255,255,0.4)', textAlign: 'center', padding: '32px 24px', fontSize: 13 }}>
-        <p>© 2025 Web Klienti · Všetky práva vyhradené</p>
+        <p>© {new Date().getFullYear()} Web Klienti · Všetky práva vyhradené</p>
       </footer>
     </div>
   );
