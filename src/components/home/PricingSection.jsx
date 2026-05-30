@@ -17,9 +17,9 @@ export default function PricingSection({ t, onSelectPackage }) {
                 color: card.dark ? '#f1f5f9' : C.text,
                 border: card.featured ? `2px solid ${C.blue}` : `1px solid ${C.border}`,
                 borderRadius: 16, padding: 28, position: 'relative',
-                display: 'flex', flexDirection: 'column',
-                transform: card.featured ? 'scale(1.05)' : 'none',
-                boxShadow: card.featured ? `0 20px 60px rgba(37,99,235,0.15)` : card.dark ? '0 4px 20px rgba(0,0,0,0.15)' : 'none',
+                display: 'flex', flexDirection: 'column', height: '100%',
+                transform: 'none',
+                boxShadow: card.featured ? `0 24px 64px rgba(37,99,235,0.22)` : card.dark ? '0 4px 20px rgba(0,0,0,0.15)' : 'none',
               }}
             >
               {card.badge && (
