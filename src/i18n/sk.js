@@ -2,7 +2,6 @@ const sk = {
   "nav": [
     "Cenník",
     "Referencie",
-    "FAQ",
     "Kontakt"
   ],
   "navOrder": "Objednať",
@@ -196,7 +195,7 @@ const sk = {
   "successMsg": "Vaša objednávka bola prijatá. Potvrdenie sme poslali na váš email.",
   "newOrder": "Nová objednávka",
   "errorMsg": "❌ Chyba. Skúste znova alebo nás kontaktujte priamo.",
-  "footerRights": "© 2025 Web Klienti · Všetky práva vyhradené",
+  "footerRights": "© 2026 Web Klienti · Všetky práva vyhradené",
   "faqLabel": "FAQ",
   "faqTitle": "Časté otázky",
   "faqItems": [
@@ -239,9 +238,9 @@ const sk = {
   "privacyTitle": "Ochrana osobných údajov",
   "privacyContent": "Prevádzkovateľ: Web Klienti, info@webklienti.com, +421 907 890 600\n\nAké údaje zbierame:\n• Meno, priezvisko, adresa, e-mail, telefón — pri odoslaní objednávky\n\nNa čo ich používame:\nPlnenie zmluvy, vedenie účtovnej evidencie a vzájomná komunikácia.\n\nDoba uchovávania:\nPo dobu trvania zmluvy a 5 rokov po jej ukončení.\n\nVaše práva:\nMáte právo na prístup k svojim údajom, ich opravu, vymazanie alebo prenosnosť. Žiadosť zasielajte na info@webklienti.com.\n\nCookies:\nPoužívame Google Analytics na sledovanie návštevnosti.\n\nPlatné od: 1.1.2025",
   "statNote": "Nový projekt · Každý web robíme individuálne bez šablón",
-  "seoTitle": "Tvorba webstránok, ktoré prinášajú zákazníkov | WebKlienti",
-  "seoDescription": "Moderné webstránky od 299 €. Web hotový do 5 dní. Tvorba webov a e-shopov pre firmy na Slovensku a v Česku. Bez mesačných poplatkov.",
-  "seoUrl": "https://webklienti.com",
+  "seoTitle": "WebKlienti — Tvorba webstránok od 299 € | Trnava, SK & CZ",
+  "seoDescription": "Tvorba moderných webstránok a e-shopov od 299 €, hotové do 5 dní. Weby pre živnostníkov a malé firmy na Slovensku a v Česku. Bez mesačných poplatkov.",
+  "seoUrl": "https://www.webklienti.com",
   "heroTag": "Web agentúra pre malé firmy · SK · CZ",
   "heroCtaSec": "Pozrieť ukážky →",
   "trustStrip": [
