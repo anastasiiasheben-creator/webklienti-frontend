@@ -2,6 +2,7 @@ const sk = {
   "nav": [
     "Cenník",
     "Referencie",
+    "FAQ",
     "Kontakt"
   ],
   "navOrder": "Objednať",
