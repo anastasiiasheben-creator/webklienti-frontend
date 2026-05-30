@@ -2,6 +2,7 @@ const cz = {
   "nav": [
     "Ceník",
     "Reference",
+    "FAQ",
     "Kontakt"
   ],
   "navOrder": "Objednat",
