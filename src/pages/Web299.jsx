@@ -74,7 +74,7 @@ export default function Web299() {
         <meta property="og:url" content="https://www.webklienti.com/web-299" />
         <meta property="og:title" content="Web za 299 € – Profesionálna webstránka pre malé firmy" />
         <meta property="og:description" content="Hotový firemný web za 299 €. Mobilná verzia, SEO, kontaktný formulár. Bez mesačných poplatkov. Hotový za 5 dní." />
-        <meta property="og:image" content="https://www.webklienti.com/og-image.png" />
+        <meta property="og:image" content="https://www.webklienti.com/og-image.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:locale" content="sk_SK" />
@@ -82,8 +82,8 @@ export default function Web299() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Web za 299 € – Profesionálna webstránka pre malé firmy" />
         <meta name="twitter:description" content="Hotový firemný web za 299 €. Mobilná verzia, SEO, kontaktný formulár. Bez mesačných poplatkov." />
-        <meta name="twitter:image" content="https://www.webklienti.com/og-image.png" />
-        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Product","name":"One-page web za 299 €","description":"Profesionálna one-page webstránka pre malé firmy. Mobilná verzia, SEO základy, kontaktný formulár, Google Maps. Hotová za 5 dní.","brand":{"@type":"Brand","name":"WebKlienti"},"url":"https://www.webklienti.com/web-299","image":"https://www.webklienti.com/og-image.png","offers":{"@type":"Offer","price":"299","priceCurrency":"EUR","priceValidUntil":"2026-12-31","availability":"https://schema.org/InStock","url":"https://www.webklienti.com/web-299","seller":{"@type":"Organization","name":"WebKlienti","url":"https://www.webklienti.com"}},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"80","bestRating":"5"}}`}</script>
+        <meta name="twitter:image" content="https://www.webklienti.com/og-image.jpg" />
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Product","name":"One-page web za 299 €","description":"Profesionálna one-page webstránka pre malé firmy. Mobilná verzia, SEO základy, kontaktný formulár, Google Maps. Hotová za 5 dní.","brand":{"@type":"Brand","name":"WebKlienti"},"url":"https://www.webklienti.com/web-299","image":"https://www.webklienti.com/og-image.jpg","offers":{"@type":"Offer","price":"299","priceCurrency":"EUR","priceValidUntil":"2026-12-31","availability":"https://schema.org/InStock","url":"https://www.webklienti.com/web-299","seller":{"@type":"Organization","name":"WebKlienti","url":"https://www.webklienti.com"}}}`}</script>
         <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domov","item":"https://www.webklienti.com/"},{"@type":"ListItem","position":2,"name":"Web za 299 €","item":"https://www.webklienti.com/web-299"}]}`}</script>
       </Helmet>
 
@@ -102,7 +102,7 @@ export default function Web299() {
         .faq-row { border-bottom: 1px solid #E5E7EB; }
         .faq-toggle { width: 100%; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: 20px 0; text-align: left; gap: 16px; font-family: 'Inter', sans-serif; }
         .google-cta-card:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
-        .desktop-nav-links { display: flex; align-items: center; gap: 20; }
+        .desktop-nav-links { display: flex; align-items: center; gap: 20px; }
         .hamburger-btn { display: none; }
         @media (max-width: 640px) {
           .desktop-nav-links { display: none !important; }
@@ -125,8 +125,7 @@ export default function Web299() {
       {/* URGENCY BAR */}
       <div style={{ background: C.blue, padding: '10px 24px', textAlign: 'center' }}>
         <span style={{ fontSize: 13, fontWeight: 600, color: '#fff' }}>
-          ⚡ Obmedzená kapacita — tento týždeň zostávajú{' '}
-          <strong style={{ background: '#fff', color: C.blue, padding: '1px 8px', borderRadius: 4 }}>{'2'} miesta</strong>
+          ⚡ Obmedzená kapacita — prijímame len 2 nové projekty týždenne
         </span>
       </div>
 
@@ -172,7 +171,7 @@ export default function Web299() {
       <div style={{ background: C.white, borderBottom: `1px solid ${C.border}`, padding: '56px 24px 48px' }}>
         <div style={{ maxWidth: 760, margin: '0 auto', textAlign: 'center' }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(37,99,235,0.07)', border: `1px solid rgba(37,99,235,0.18)`, padding: '5px 14px', borderRadius: 100, fontSize: 13, fontWeight: 600, color: C.blue, marginBottom: 20 }}>
-            ✓ Montwell.sk · +120% dopytov po spustení · SK & CZ
+            ✓ Realizácia Montwell.sk · Weby pre firmy v SK &amp; CZ
           </div>
           <h1 style={{ fontSize: 'clamp(28px, 5.5vw, 58px)', fontWeight: 800, lineHeight: 1.1, letterSpacing: -2, color: C.text, marginBottom: 16 }}>
             Profesionálny firemný web<br />
@@ -186,7 +185,7 @@ export default function Web299() {
             {[
               { icon: '⚡', text: 'Dodanie do 5 dní' },
               { icon: '💰', text: 'Bez mesačných poplatkov' },
-              { icon: '★', text: '5/5 hodnotenie' },
+              { icon: '🎨', text: 'Dizajn na mieru' },
               { icon: '✓', text: 'Bez záväzkov' },
             ].map(b => (
               <span key={b.text} style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: C.bg, border: `1px solid ${C.border}`, padding: '6px 12px', borderRadius: 100, fontSize: 13, fontWeight: 500, color: C.text }}>
@@ -246,13 +245,13 @@ export default function Web299() {
       <div id="portfolio" style={{ background: C.bg, padding: '64px 24px', borderBottom: `1px solid ${C.border}` }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <p className="section-label" style={{ textAlign: 'center' }}>Ukážka z praxe</p>
-          <h2 style={{ fontSize: 'clamp(22px, 3vw, 34px)', fontWeight: 800, letterSpacing: -1, textAlign: 'center', marginBottom: 40 }}>Reálne výsledky, nie teórie</h2>
+          <h2 style={{ fontSize: 'clamp(22px, 3vw, 34px)', fontWeight: 800, letterSpacing: -1, textAlign: 'center', marginBottom: 40 }}>Reálna realizácia</h2>
           <div className="card" style={{ padding: '24px' }}>
             <div className="case-split" style={{ display: 'flex', gap: 14, alignItems: 'stretch', marginBottom: 14 }}>
               <div style={{ flex: 1, background: '#FEF2F2', border: '1px solid #FECACA', borderRadius: 12, padding: '18px 16px' }}>
                 <div style={{ display: 'inline-block', background: '#FEE2E2', color: '#991B1B', padding: '2px 10px', borderRadius: 100, fontSize: 11, fontWeight: 700, marginBottom: 10 }}>PRED</div>
                 <p style={{ fontSize: 14, fontWeight: 700, color: C.text, marginBottom: 10 }}>Montwell — len Instagram</p>
-                {['64 sledovateľov', 'Žiadny web', 'Neviditeľní na Google'].map(i => (
+                {['Iba sociálne siete', 'Žiadny web', 'Ťažko nájditeľní na Google'].map(i => (
                   <div key={i} style={{ fontSize: 13, color: C.textSub, display: 'flex', gap: 7, marginBottom: 5, alignItems: 'center' }}>
                     <span style={{ color: '#B91C1C', fontWeight: 700 }}>✕</span> {i}
                   </div>
@@ -272,7 +271,7 @@ export default function Web299() {
               </div>
             </div>
             <div style={{ background: 'rgba(37,99,235,0.05)', border: `1px solid rgba(37,99,235,0.15)`, borderRadius: 10, padding: '12px 16px' }}>
-              <span style={{ fontSize: 13, fontWeight: 700, color: C.blue }}>🎯 Prvé leady do 48 hodín · +120% viac dopytov po spustení</span>
+              <span style={{ fontSize: 13, fontWeight: 700, color: C.blue }}>🎯 Profesionálny web, ktorý buduje dôveru a pomáha zákazníkom nájsť ich online</span>
             </div>
           </div>
         </div>
@@ -351,7 +350,7 @@ export default function Web299() {
       <div style={{ background: C.blue, padding: '64px 24px' }}>
         <div style={{ maxWidth: 640, margin: '0 auto', textAlign: 'center' }}>
           <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.3)', borderRadius: 100, padding: '6px 18px', fontSize: 13, fontWeight: 600, color: '#fff', marginBottom: 20 }}>
-            {`⚠ Aktuálne zostávajú ${'2'} voľné miesta`}
+            ⚡ Prijímame len 2 nové projekty týždenne
           </div>
           <h2 style={{ fontSize: 'clamp(24px, 4vw, 40px)', fontWeight: 800, color: '#fff', letterSpacing: -1.5, marginBottom: 14, lineHeight: 1.15 }}>Chcete web, ktorý získava zákazníkov?</h2>
           <p style={{ fontSize: 16, color: '#fff', marginBottom: 28, lineHeight: 1.6 }}>Hotový za 5 dní. Od 299 €. Bez mesačných poplatkov. Bez rizika.</p>
@@ -425,7 +424,7 @@ export default function Web299() {
           <a href="mailto:info@webklienti.com" style={{ color: 'rgba(255,255,255,0.7)', textDecoration: 'none', fontSize: 14 }}>info@webklienti.com</a>
           <a href="tel:+421907890600" style={{ color: 'rgba(255,255,255,0.7)', textDecoration: 'none', fontSize: 14 }}>+421 907 890 600</a>
         </div>
-        <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>© 2025 Web Klienti · Všetky práva vyhradené</p>
+        <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>© {new Date().getFullYear()} Web Klienti · Všetky práva vyhradené</p>
       </footer>
 
       {/* STICKY MOBILE CTA — skryje sa keď je formulár viditeľný */}
