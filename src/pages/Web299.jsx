@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import logoImg from '../assets/logo.webp';
-import { STATS } from '../lib/siteStats';
 
 const API = 'https://webklienti-backend.onrender.com';
 
@@ -127,7 +126,7 @@ export default function Web299() {
       <div style={{ background: C.blue, padding: '10px 24px', textAlign: 'center' }}>
         <span style={{ fontSize: 13, fontWeight: 600, color: '#fff' }}>
           ⚡ Obmedzená kapacita — tento týždeň zostávajú{' '}
-          <strong style={{ background: '#fff', color: C.blue, padding: '1px 8px', borderRadius: 4 }}>{STATS.spotsLeft} miesta</strong>
+          <strong style={{ background: '#fff', color: C.blue, padding: '1px 8px', borderRadius: 4 }}>{'2'} miesta</strong>
         </span>
       </div>
 
@@ -352,7 +351,7 @@ export default function Web299() {
       <div style={{ background: C.blue, padding: '64px 24px' }}>
         <div style={{ maxWidth: 640, margin: '0 auto', textAlign: 'center' }}>
           <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.3)', borderRadius: 100, padding: '6px 18px', fontSize: 13, fontWeight: 600, color: '#fff', marginBottom: 20 }}>
-            {`⚠ Aktuálne zostávajú ${STATS.spotsLeft} voľné miesta`}
+            {`⚠ Aktuálne zostávajú ${'2'} voľné miesta`}
           </div>
           <h2 style={{ fontSize: 'clamp(24px, 4vw, 40px)', fontWeight: 800, color: '#fff', letterSpacing: -1.5, marginBottom: 14, lineHeight: 1.15 }}>Chcete web, ktorý získava zákazníkov?</h2>
           <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.75)', marginBottom: 28, lineHeight: 1.6 }}>Hotový za 5 dní. Od 299 €. Bez mesačných poplatkov. Bez rizika.</p>
