@@ -250,17 +250,17 @@ export default function Web299() {
           <div className="card" style={{ padding: '24px' }}>
             <div className="case-split" style={{ display: 'flex', gap: 14, alignItems: 'stretch', marginBottom: 14 }}>
               <div style={{ flex: 1, background: '#FEF2F2', border: '1px solid #FECACA', borderRadius: 12, padding: '18px 16px' }}>
-                <div style={{ display: 'inline-block', background: '#FEE2E2', color: C.red, padding: '2px 10px', borderRadius: 100, fontSize: 11, fontWeight: 700, marginBottom: 10 }}>PRED</div>
+                <div style={{ display: 'inline-block', background: '#FEE2E2', color: '#991B1B', padding: '2px 10px', borderRadius: 100, fontSize: 11, fontWeight: 700, marginBottom: 10 }}>PRED</div>
                 <p style={{ fontSize: 14, fontWeight: 700, color: C.text, marginBottom: 10 }}>Montwell — len Instagram</p>
                 {['64 sledovateľov', 'Žiadny web', 'Neviditeľní na Google'].map(i => (
                   <div key={i} style={{ fontSize: 13, color: C.textSub, display: 'flex', gap: 7, marginBottom: 5, alignItems: 'center' }}>
-                    <span style={{ color: C.red, fontWeight: 700 }}>✕</span> {i}
+                    <span style={{ color: '#B91C1C', fontWeight: 700 }}>✕</span> {i}
                   </div>
                 ))}
               </div>
               <div className="arrow-sep" style={{ display: 'flex', alignItems: 'center', fontSize: 20, color: C.blue, flexShrink: 0 }}>→</div>
               <div style={{ flex: 1, background: '#F0FDF4', border: '1.5px solid #86EFAC', borderRadius: 12, padding: '18px 16px' }}>
-                <div style={{ display: 'inline-block', background: '#DCFCE7', color: C.green, padding: '2px 10px', borderRadius: 100, fontSize: 11, fontWeight: 700, marginBottom: 10 }}>PO</div>
+                <div style={{ display: 'inline-block', background: '#DCFCE7', color: '#166534', padding: '2px 10px', borderRadius: 100, fontSize: 11, fontWeight: 700, marginBottom: 10 }}>PO</div>
                 <p style={{ fontSize: 14, fontWeight: 700, marginBottom: 10 }}>
                   <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer" style={{ color: C.blue, textDecoration: 'none' }}>montwell.sk ↗</a>
                 </p>
@@ -354,12 +354,12 @@ export default function Web299() {
             {`⚠ Aktuálne zostávajú ${'2'} voľné miesta`}
           </div>
           <h2 style={{ fontSize: 'clamp(24px, 4vw, 40px)', fontWeight: 800, color: '#fff', letterSpacing: -1.5, marginBottom: 14, lineHeight: 1.15 }}>Chcete web, ktorý získava zákazníkov?</h2>
-          <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.92)', marginBottom: 28, lineHeight: 1.6 }}>Hotový za 5 dní. Od 299 €. Bez mesačných poplatkov. Bez rizika.</p>
+          <p style={{ fontSize: 16, color: '#fff', marginBottom: 28, lineHeight: 1.6 }}>Hotový za 5 dní. Od 299 €. Bez mesačných poplatkov. Bez rizika.</p>
           <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
             <button onClick={scrollToForm} style={{ display: 'inline-flex', alignItems: 'center', height: 54, padding: '0 28px', background: '#fff', color: C.blue, border: 'none', borderRadius: 14, fontSize: 16, fontWeight: 700, cursor: 'pointer', fontFamily: 'Inter, sans-serif' }}>Objednať web za 299 € →</button>
             <a href="https://wa.me/421907890600" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', height: 54, padding: '0 22px', background: 'rgba(255,255,255,0.15)', color: '#fff', border: '1.5px solid rgba(255,255,255,0.4)', borderRadius: 14, fontSize: 15, fontWeight: 600, textDecoration: 'none', fontFamily: 'Inter, sans-serif' }}>💬 WhatsApp</a>
           </div>
-          <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', marginTop: 14 }}>Nezáväzná objednávka · Odpoveď do 24 hodín · Bez záväzkov</p>
+          <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.95)', marginTop: 14 }}>Nezáväzná objednávka · Odpoveď do 24 hodín · Bez záväzkov</p>
         </div>
       </div>
 
