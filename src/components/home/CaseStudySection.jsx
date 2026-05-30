@@ -1,4 +1,4 @@
-import montwellImg from '../../assets/montwell-preview.png';
+import montwellImg from '../../assets/montwell-preview.webp';
 import { C } from '../../lib/constants';
 
 const GOOGLE_REVIEW_LINK = 'https://maps.app.goo.gl/tDf7dRkYB2eZ3j9d7';
@@ -49,7 +49,7 @@ export default function CaseStudySection({ t, lang }) {
           <div className="montwell-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40, alignItems: 'stretch', marginBottom: 28 }}>
             <div style={{ borderRadius: 12, overflow: 'hidden', border: `1px solid ${C.border}` }}>
               <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer">
-                <img src={montwellImg} alt="Montwell webstránka" style={{ width: '100%', display: 'block' }} loading="lazy" />
+                <img src={montwellImg} alt="Montwell webstránka" width="600" height="324" style={{ width: '100%', display: 'block', height: 'auto' }} loading="lazy" />
               </a>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
