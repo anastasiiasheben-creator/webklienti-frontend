@@ -11,67 +11,67 @@ const posts = {
   'preco-kazda-mala-firma-potrebuje-web': {
     title: 'Prečo dnes každá malá firma potrebuje web?',
     excerpt: '87 % zákazníkov hľadá firmy online. Ak nie ste na internete, prichádzate o zákazníkov v prospech konkurencie.',
-    date: '12. februára 2025', readTime: '4 min čítania',
+    date: '12. februára 2025', iso: '2025-02-12', readTime: '4 min čítania',
     content: `Každý deň ľudia vo vašom okolí hľadajú služby, ktoré ponúkate. Ak však nemáte web, väčšina z nich skončí u konkurencie.\n\nDnes zákazníci hľadajú firmy cez Google. Ak vás tam nenájdu, pre nich prakticky neexistujete. Nestačí mať len Facebook — firma bez webu často pôsobí menej dôveryhodne a prichádza o klientov ešte pred prvým kontaktom.\n\n## Web pracuje za vás 24/7\n\nProfesionálny web:\n\n- prezentuje vaše služby\n- buduje dôveru\n- privádza nových zákazníkov\n- umožňuje klientom kontaktovať vás kedykoľvek\n\n## Prvý dojem rozhoduje\n\nĽudia si dnes firmu preverujú online ešte pred telefonátom. Moderný a rýchly web vytvára profesionálny dojem a výrazne zvyšuje šancu, že si zákazník vyberie práve vás.\n\n## Web nemusí byť drahý\n\nProfesionálny firemný web dnes nemusí stáť tisíce eur. U nás začína od **299 €** — moderný dizajn, mobilná verzia, rýchle dodanie do 5 dní, bez skrytých poplatkov.`,
   },
   'ai-na-webstranke-konkurecna-vyhoda': {
     title: 'AI na vašej webstránke: konkurenčná výhoda, ktorú už používajú úspešné firmy',
     excerpt: 'AI chatboty, inteligentné vyhľadávanie a personalizovaný obsah dnes pomáhajú firmám zvyšovať konverzie.',
-    date: '19. mája 2026', readTime: '6 min čítania',
+    date: '19. mája 2026', iso: '2026-05-19', readTime: '6 min čítania',
     content: `Dnes už moderný web nemusí byť len „online vizitka". Vďaka umelej inteligencii sa dokáže aktívne rozprávať so zákazníkom, pomáhať mu pri rozhodovaní a automatizovať procesy.\n\n## AI chatbot, ktorý naozaj rozumie zákazníkom\n\nModerné AI chatboty pre web rozumejú kontextu, zámeru aj prirodzenému jazyku.\n\n- rýchlejšia zákaznícka podpora\n- menej manuálnej práce\n- vyššia spokojnosť zákazníkov\n- dostupnosť 24/7\n\n## AI na webe už nie je luxus\n\nFirmy, ktoré implementujú AI už dnes, zlepšujú zákaznícky servis, automatizujú opakujúce sa úlohy a získavajú výrazný náskok pred konkurenciou.`,
   },
   'preco-je-seo-klucove': {
     title: 'Prečo je SEO kľúčové pre úspech vášho podnikania',
     excerpt: 'Ak sa váš web nezobrazuje vo vyhľadávačoch, väčšina zákazníkov vás nenájde.',
-    date: '18. marca 2025', readTime: '3 min čítania',
+    date: '18. marca 2025', iso: '2025-03-18', readTime: '3 min čítania',
     content: `Dnes už nestačí mať len peknú webovú stránku. Ak sa váš web nezobrazuje vo vyhľadávačoch ako Google, väčšina potenciálnych zákazníkov vás jednoducho nenájde.\n\n## SEO pomáha:\n\n- zvýšiť viditeľnosť vašej firmy\n- priviesť na web viac reálnych zákazníkov\n- budovať dôveru a profesionálny imidž\n- získať výhodu pred konkurenciou\n- znížiť náklady na platenú reklamu`,
   },
   'google-search-console-a-google-analytics': {
     title: 'Prečo sú Google Search Console a Google Analytics nevyhnutné pre moderný web?',
     excerpt: 'Pomáhajú firmám sledovať návštevnosť, zlepšovať SEO a robiť lepšie rozhodnutia.',
-    date: '28. júna 2025', readTime: '5 min čítania',
+    date: '28. júna 2025', iso: '2025-06-28', readTime: '5 min čítania',
     content: `V dnešnom digitálnom svete nestačí mať iba peknú webstránku. Potrebujete rozumieť tomu, ako sa ľudia na vašom webe správajú.\n\n## Google Search Console\n\nPomáha sledovať výkon stránky vo výsledkoch vyhľadávania Google, analyzovať kľúčové slová a odhaliť technické problémy.\n\n## Google Analytics\n\nPoskytuje detailné štatistiky o návštevnosti webu a správaní používateľov.\n\nModerné firmy dnes rozhodujú na základe dát. Web bez analytiky funguje naslepo.`,
   },
   'kolko-stoji-webstranka-na-slovensku': {
     title: 'Koľko stojí webstránka na Slovensku?',
     excerpt: 'Ceny webstránok sa pohybujú od 200 € až po tisíce eur.',
-    date: '3. apríla 2025', readTime: '5 min čítania',
+    date: '3. apríla 2025', iso: '2025-04-03', readTime: '5 min čítania',
     content: `Jedna z najčastejších otázok: "Koľko stojí webstránka?" Ceny sa líšia enormne — od 0 € až po desiatky tisíc eur.\n\n## Možnosti a ich ceny\n\n### Zadarmo (šablóny ako Wix)\nVhodné pre hobby projekty, nie pre seriózny biznis.\n\n### Profesionálny freelancer alebo malá agentúra\nCena: **299 € — 1500 €** — zlatá stredná cesta pre malé firmy.\n\nU nás:\n- One-page web od **299 €**\n- Prezentačný web od **499 €**\n- E-shop od **999 €**\n\n## Záver\n\nPre malú firmu je optimálna investícia **299 € — 800 €** za kvalitný web, ktorý skutočne prináša zákazníkov.`,
   },
   'preco-web-neprinas-zakaznikov': {
     title: 'Prečo vám web neprináša zákazníkov (a ako to zmeniť)',
     excerpt: 'Váš web môže vyzerať dobre, ale ak neprináša dopyty, nie je problém v trhu — ale vo webe.',
-    date: '29. apríla 2025', readTime: '3 min čítania',
-    content: `Váš web môže vyzerať dobre. Ale ak neprináša dopyty, nie je problém v trhu — ale v ňom.\n\n## 1. Strácate ľudí na mobile\n\nVäčšina návštev prichádza z telefónu. Ak web sa pomaly načítava — zákazník odchádza do pár sekúnd.\n\n## 2. Návštevník nevie, čo má robiť\n\nAk nie je hneď jasné čo ponúkate a ako vás kontaktovať — nemáte šancu na zákazku.\n\n## 3. Nepôsobíte dôveryhodne\n\nZákazník porovnáva. Ak web nevyzerá profesionálne — vyberie konkurenciu.\n\n## Čo funguje\n\n- rýchly web\n- jasná ponuka do pár sekúnd\n- mobilná optimalizácia\n- výrazné tlačidlo kontaktu\n- dôkazy dôvery (recenzie, práce, referencie)`,
+    date: '29. apríla 2025', iso: '2025-04-29', readTime: '3 min čítania',
+    content: `Váš web môže vyzerať dobre. Ale ak neprináša dopyty, nie je problém v trhu — ale v ňom.\n\n## 1. Strácate ľudí na mobile\n\nVäčšina návštev prichádza z telefónu. Ak sa web pomaly načítava — zákazník odchádza do pár sekúnd.\n\n## 2. Návštevník nevie, čo má robiť\n\nAk nie je hneď jasné čo ponúkate a ako vás kontaktovať — nemáte šancu na zákazku.\n\n## 3. Nepôsobíte dôveryhodne\n\nZákazník porovnáva. Ak web nevyzerá profesionálne — vyberie konkurenciu.\n\n## Čo funguje\n\n- rýchly web\n- jasná ponuka do pár sekúnd\n- mobilná optimalizácia\n- výrazné tlačidlo kontaktu\n- dôkazy dôvery (recenzie, práce, referencie)`,
   },
   'preco-vas-eshop-nepredava': {
     title: 'Prečo váš e-shop nepredáva?',
     excerpt: 'Ľudia prídu, ale nekúpia. Je problém v nich, alebo vo vás?',
-    date: '11. mája 2026', readTime: '4 min čítania',
+    date: '11. mája 2026', iso: '2026-05-11', readTime: '4 min čítania',
     content: `Ak ľudia prídu, ale nekúpia… je problém v nich, alebo vo vás?\n\n## Rozumie váš e-shop zákazníkovi do 5 sekúnd?\n\nAk si zákazník nie je istý čo ponúkate — odchádza.\n\n## Je váš e-shop dôveryhodný?\n\nČo vidí zákazník?\n- recenzie?\n- jasné informácie?\n- profesionálny dojem?\n\n## Záver\n\nNie je otázka, či máte e-shop. Otázka je, či e-shop pracuje pre vás… alebo proti vám.`,
   },
   'tvorba-webu-pre-zivnostnika': {
     title: 'Tvorba webu pre živnostníka: čo by mal obsahovať úspešný web',
     excerpt: 'Zistite, čo musí obsahovať moderný web pre živnostníka, aby získaval zákazníkov z Google a premieňal návštevníkov na dopyty.',
-    date: '22. mája 2026', readTime: '4 min čítania',
+    date: '22. mája 2026', iso: '2026-05-22', readTime: '4 min čítania',
     content: `Mnohí živnostníci stále fungujú bez webovej stránky alebo používajú zastaraný web, ktorý neprináša žiadne výsledky. V roku 2026 je profesionálny web jedným z najdôležitejších nástrojov na získavanie nových zákazníkov.\n\n## Jasná ponuka služieb\n\nPrvá vec, ktorú by mal web obsahovať, je jasná ponuka služieb. Návštevník musí do niekoľkých sekúnd pochopiť, čo robíte a pre koho.\n\n## Budovanie dôveryhodnosti\n\nDruhým prvkom je dôveryhodnosť. Sem patria:\n\n- referencie klientov\n- fotografie realizácií\n- recenzie\n- kontaktné údaje\n\n## SEO optimalizácia\n\nTretím faktorom je SEO. Ak vás ľudia nenájdu v Google, web nebude generovať dopyty. Preto je potrebné optimalizovať stránky na relevantné kľúčové slová.\n\n## Rýchlosť načítania\n\nVeľký význam má aj rýchlosť načítania. Pomalý web znižuje konverzie a negatívne vplýva na pozície vo vyhľadávači.\n\n## Jasné CTA prvky\n\nNezabudnite na jasné výzvy k akcii:\n\n- Zavolajte nám\n- Požiadajte o cenovú ponuku\n- Získajte bezplatnú konzultáciu\n\nMnoho živnostníkov zistí, že jednoduchý a dobre nastavený web dokáže nahradiť časť platených reklám. Ak hľadáte jednoduché riešenie za fixnú cenu, pozrite si náš [web za 299 €](/web-299).\n\n## Záver\n\nWeb pre živnostníka nemusí byť komplikovaný. Musí však jasne komunikovať hodnotu, budovať dôveru a privádzať relevantných návštevníkov z Googlu.`,
   },
   'web-pre-kadernictvo': {
     title: 'Web pre kaderníctvo: ako získať viac rezervácií online',
     excerpt: 'Profesionálny web pre kaderníctvo pomáha získavať nové rezervácie a budovať dôveru zákazníkov. Zistite, čo by mal obsahovať.',
-    date: '25. mája 2026', readTime: '4 min čítania',
+    date: '25. mája 2026', iso: '2026-05-25', readTime: '4 min čítania',
     content: `Kaderníctvo dnes nesúťaží iba kvalitou služieb. Zákazníci si často vyberajú podľa toho, čo nájdu na internete.\n\n## Čo by mal web pre kaderníctvo obsahovať\n\nModerný web pre kaderníctvo by mal obsahovať:\n\n- galériu prác\n- cenník\n- kontakty\n- rezervačný formulár\n- recenzie klientov\n\nNajdôležitejšou časťou je prezentácia výsledkov. Ľudia chcú vidieť reálne premeny a ukážky práce.\n\n## Lokálne SEO je kľúčové\n\nVeľký význam má lokálne SEO. Ak niekto hľadá „kaderníctvo Trnava" alebo „dámske kaderníctvo Bratislava", váš web by sa mal zobrazovať vo výsledkoch vyhľadávania.\n\n## Praktické tipy\n\n- Pridajte fotografie pred a po.\n- Uveďte ceny služieb.\n- Vytvorte stránku pre každú službu.\n- Zbierajte recenzie od klientov.\n- Prepojte web s Google Business Profile.\n\nMnoho kaderníctiev stále funguje iba cez sociálne siete. To však znamená závislosť od algoritmov. Web je aktívum, ktoré vlastníte vy.\n\nAk chcete rýchly štart, pozrite si naše riešenie [web za 299 €](/web-299).\n\n## Záver\n\nDobrý web pre kaderníctvo dokáže prinášať rezervácie aj mimo sociálnych sietí a vytvárať stabilný zdroj nových zákazníkov.`,
   },
   'co-musi-mat-dobry-firemny-web': {
     title: 'Čo musí mať dobrý firemný web v roku 2026',
     excerpt: 'Zistite, aké prvky musí obsahovať moderný firemný web, aby získaval zákazníkov a zvyšoval dôveru návštevníkov.',
-    date: '27. mája 2026', readTime: '4 min čítania',
+    date: '27. mája 2026', iso: '2026-05-27', readTime: '4 min čítania',
     content: `Firemný web už nie je len online vizitka. Je to obchodný nástroj, ktorý má generovať dopyty a podporovať predaj.\n\n## Základné prvky firemného webu\n\nKaždý kvalitný firemný web by mal obsahovať:\n\n- jasnú hlavnú ponuku\n- referencie\n- kontaktné údaje\n- responzívny dizajn\n- rýchle načítanie\n- SEO optimalizáciu\n\nNajväčšou chybou je sústrediť sa iba na dizajn. Pekný web bez návštevnosti a konverzií neprináša firme žiadnu hodnotu.\n\n## Štruktúra obsahu\n\nDôležitá je aj štruktúra obsahu. Návštevník by mal okamžite nájsť odpovede na otázky:\n\n- Čo firma robí?\n- Pre koho?\n- Prečo si ju vybrať?\n- Ako ju kontaktovať?\n\n## Prípadové štúdie a blog\n\nSilným prvkom sú prípadové štúdie. Reálne výsledky budujú dôveru výrazne viac ako všeobecné marketingové tvrdenia.\n\nNezabudnite ani na blog. Pravidelný obsah pomáha získavať organickú návštevnosť z Google.\n\nAk chcete jednoduchý firemný web za pevnú cenu, pozrite si náš [web za 299 €](/web-299).\n\n## Záver\n\nÚspešný firemný web kombinuje kvalitný obsah, dôveru, SEO a jasné výzvy k akcii. Len tak dokáže generovať nové obchodné príležitosti.`,
   },
   'web-za-299-eur': {
     title: 'Web za 299 € – je to dobrá voľba?',
     excerpt: 'Oplatí sa web za 299 €? Pozrite si výhody, nevýhody a situácie, kedy je lacnejší web rozumnou voľbou.',
-    date: '29. mája 2026', readTime: '4 min čítania',
+    date: '29. mája 2026', iso: '2026-05-29', readTime: '4 min čítania',
     content: `Jednou z najčastejších otázok malých podnikateľov je, či má zmysel investovať do webu za 299 €. Odpoveď závisí od cieľa projektu.\n\nAk začínate podnikať a potrebujete rýchlo získať online prezentáciu, môže ísť o veľmi rozumné riešenie. Získate základný web, na ktorom zákazníci nájdu informácie o vašich službách a kontaktné údaje.\n\n## Výhody\n\n- nízka vstupná investícia\n- rýchla realizácia\n- jednoduchá správa\n- profesionálnejší dojem oproti absencii webu\n\n## Nevýhody\n\n- obmedzené možnosti rozšírenia\n- menej individuálny dizajn\n- menej pokročilé funkcie\n\n## Lepšia stratégia pre malé firmy\n\nMnohé firmy robia chybu, že investujú tisíce eur do webu ešte predtým, než majú overený dopyt po svojich službách. Pre menšie firmy býva často lepšou stratégiou:\n\n- spustiť jednoduchý web\n- získať prvých klientov\n- zbierať recenzie\n- následne investovať do rozšírenia\n\nNajdôležitejšie nie je, koľko web stojí, ale či prináša výsledky. Ak chcete vidieť príklad riešenia v tejto cenovej kategórii, pozrite si náš [web za 299 €](/web-299).\n\n## Záver\n\nWeb za 299 € môže byť výborným štartom pre živnostníkov a malé firmy. Kľúčové je, aby bol správne nastavený na získavanie dopytov a budovanie dôvery.`,
   },
 };
@@ -159,6 +159,8 @@ export default function BlogPost() {
     '@type': 'Article',
     headline: post.title,
     description: post.excerpt,
+    datePublished: post.iso,
+    dateModified: post.iso,
     author: { '@type': 'Organization', name: 'WebKlienti' },
     publisher: {
       '@type': 'Organization',
@@ -212,7 +214,7 @@ export default function BlogPost() {
       </article>
 
       <footer style={{ background: C.dark, color: 'rgba(255,255,255,0.7)', textAlign: 'center', padding: '32px 24px', fontSize: 13 }}>
-        <p>© 2025 Web Klienti · Všetky práva vyhradené</p>
+        <p>© {new Date().getFullYear()} Web Klienti · Všetky práva vyhradené</p>
       </footer>
     </div>
   );
