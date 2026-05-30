@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { FaWhatsapp, FaFacebookF, FaInstagram } from 'react-icons/fa';
@@ -19,10 +19,10 @@ import PricingSection from './components/home/PricingSection';
 import { RiskSection, FAQSection, FinalCtaSection } from './components/home/MiscSections';
 import ContactSection from './components/home/ContactSection';
 
-import Blog from './pages/Blog';
-import Privacy from './pages/Privacy';
-import BlogPost from './pages/BlogPost';
-import Web299 from './pages/Web299';
+const Blog = lazy(() => import('./pages/Blog'));
+const Privacy = lazy(() => import('./pages/Privacy'));
+const BlogPost = lazy(() => import('./pages/BlogPost'));
+const Web299 = lazy(() => import('./pages/Web299'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -300,13 +300,15 @@ export default function App() {
   return (
     <>
       <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:slug" element={<BlogPost />} />
-        <Route path="/privacy" element={<Privacy />} />
-        <Route path="/web-299" element={<Web299 />} />
-      </Routes>
+      <Suspense fallback={null}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/web-299" element={<Web299 />} />
+        </Routes>
+      </Suspense>
     </>
   );
 }
