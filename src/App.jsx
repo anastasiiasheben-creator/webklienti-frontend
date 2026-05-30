@@ -128,8 +128,6 @@ function HomePage() {
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
         <link rel="canonical" href="https://www.webklienti.com/" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.webklienti.com/" />
