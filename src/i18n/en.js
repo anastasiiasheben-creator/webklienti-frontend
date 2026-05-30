@@ -2,6 +2,7 @@ const en = {
   "nav": [
     "Pricing",
     "Reviews",
+    "FAQ",
     "Contact"
   ],
   "navOrder": "Order now",
