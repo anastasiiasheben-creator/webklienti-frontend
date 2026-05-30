@@ -58,11 +58,11 @@ export function FinalCtaSection({ t, onCta }) {
     <div style={{ background: C.blue, padding: '96px 40px' }}>
       <div style={{ maxWidth: 680, margin: '0 auto', textAlign: 'center' }}>
         <h2 style={{ fontSize: 'clamp(26px, 3.5vw, 40px)', fontWeight: 700, color: '#fff', letterSpacing: '-0.01em', marginBottom: 16 }}>{t.finalCtaTitle}</h2>
-        <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.75)', marginBottom: 40, lineHeight: 1.6 }}>{t.finalCtaSub}</p>
+        <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.92)', marginBottom: 40, lineHeight: 1.6 }}>{t.finalCtaSub}</p>
         <button onClick={onCta} style={{ display: 'inline-flex', alignItems: 'center', height: 56, padding: '0 32px', background: '#fff', color: C.blue, border: 'none', borderRadius: 12, fontSize: 17, fontWeight: 700, cursor: 'pointer', fontFamily: 'Inter, sans-serif' }}>
           {t.finalCtaBtn}
         </button>
-        <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.6)', marginTop: 16 }}>{t.heroMicro}</p>
+        <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.85)', marginTop: 16 }}>{t.heroMicro}</p>
       </div>
     </div>
   );
