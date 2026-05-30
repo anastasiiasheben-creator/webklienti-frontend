@@ -194,7 +194,7 @@ const en = {
   "successMsg": "Your order has been received. We sent a confirmation to your email.",
   "newOrder": "New order",
   "errorMsg": "❌ Error. Please try again or contact us directly.",
-  "footerRights": "© 2025 Web Klienti · All rights reserved",
+  "footerRights": "© 2026 Web Klienti · All rights reserved",
   "faqLabel": "FAQ",
   "faqTitle": "Frequently asked questions",
   "faqItems": [
@@ -237,9 +237,9 @@ const en = {
   "privacyTitle": "Privacy Policy",
   "privacyContent": "Controller: Web Klienti, info@webklienti.com, +421 907 890 600\n\nData we collect:\n• Full name, address, email, phone — when submitting an order\n\nHow we use it:\nOrder fulfillment, accounting records and mutual communication.\n\nRetention period:\nFor the duration of the contract and 5 years after its termination.\n\nYour rights:\nYou have the right to access, correct, delete or transfer your data.\n\nCookies:\nWe use Google Analytics to track traffic.\n\nEffective from: 1.1.2025",
   "statNote": "New agency · Every website built individually, no templates",
-  "seoTitle": "Websites That Bring You Customers | WebKlienti",
-  "seoDescription": "Professional websites from 299 €. Ready in 5 days. Web design and e-commerce for businesses in Slovakia and Czech Republic. No monthly fees.",
-  "seoUrl": "https://webklienti.com",
+  "seoTitle": "WebKlienti — Web Design from €299 | Slovakia & Czechia",
+  "seoDescription": "Professional websites and e-shops from €299, ready in 5 days. Web design for freelancers and small businesses in Slovakia and Czech Republic. No monthly fees.",
+  "seoUrl": "https://www.webklienti.com",
   "heroTag": "Web agency for small businesses · SK · CZ",
   "heroCtaSec": "See examples →",
   "trustStrip": [
