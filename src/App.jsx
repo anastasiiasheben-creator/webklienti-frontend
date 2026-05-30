@@ -13,7 +13,7 @@ import { apiClient } from './lib/api';
 
 import HeroSection from './components/home/HeroSection';
 import ProblemSection from './components/home/ProblemSection';
-import { AgitationStrip, LogoStrip, SolutionSection } from './components/home/SolutionSection';
+import { AgitationStrip, SolutionSection } from './components/home/SolutionSection';
 import CaseStudySection from './components/home/CaseStudySection';
 import PricingSection from './components/home/PricingSection';
 import { RiskSection, FAQSection, FinalCtaSection } from './components/home/MiscSections';
@@ -141,7 +141,7 @@ function HomePage() {
         <meta name="twitter:title" content={seo.title} />
         <meta name="twitter:description" content={seo.description} />
         <meta name="twitter:image" content="https://www.webklienti.com/og-image.jpg" />
-        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"LocalBusiness","name":"WebKlienti","url":"https://www.webklienti.com","telephone":"+421907890600","email":"info@webklienti.com","address":{"@type":"PostalAddress","streetAddress":"Ulica Mozartova 5652/12","addressLocality":"Trnava","postalCode":"917 08","addressCountry":"SK"},"areaServed":["SK","CZ"],"priceRange":"\u20ac\u20ac","openingHours":"Mo-Fr 09:00-18:00"}`}</script>
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"LocalBusiness","name":"WebKlienti","url":"https://www.webklienti.com","logo":"https://www.webklienti.com/logo.webp","image":"https://www.webklienti.com/og-image.jpg","telephone":"+421907890600","email":"info@webklienti.com","address":{"@type":"PostalAddress","streetAddress":"Ulica Mozartova 5652/12","addressLocality":"Trnava","postalCode":"917 08","addressCountry":"SK"},"areaServed":["SK","CZ"],"priceRange":"\u20ac\u20ac","openingHours":"Mo-Fr 09:00-18:00","sameAs":["https://www.facebook.com/profile.php?id=61588797397714","https://www.instagram.com/webklienti"]}`}</script>
       </Helmet>
 
       <style>{`
@@ -180,7 +180,7 @@ function HomePage() {
       {/* NAV */}
       <nav style={{ position: 'sticky', top: 0, zIndex: 100, background: 'rgba(255,255,255,0.97)', backdropFilter: 'blur(8px)', borderBottom: `1px solid ${C.border}`, padding: '0 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: 64, boxShadow: navScrolled ? '0 4px 20px rgba(0,0,0,0.08)' : 'none', transition: 'box-shadow .2s', gap: 12 }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
-          <img src={logoImg} alt="WebKlienti logo" style={{ height: 36, width: 36, objectFit: 'contain', borderRadius: '50%' }} />
+          <img src={logoImg} alt="WebKlienti logo" width="36" height="36" style={{ height: 36, width: 36, objectFit: 'contain', borderRadius: '50%' }} />
           <span style={{ fontWeight: 700, fontSize: 18, color: C.text, letterSpacing: -0.5 }}>Web<span style={{ color: C.blue }}>Klienti</span></span>
         </Link>
         <div style={{ display: 'flex', gap: 32, alignItems: 'center' }} className="desktop-nav">
@@ -223,7 +223,6 @@ function HomePage() {
         <HeroSection t={t} lang={lang} onCta={() => scrollTo('contact')} />
         <ProblemSection t={t} />
         <AgitationStrip t={t} />
-        <LogoStrip lang={lang} />
         <SolutionSection t={t} lang={lang} onCta={() => scrollTo('contact')} />
         <CaseStudySection t={t} lang={lang} />
         <PricingSection t={t} onSelectPackage={handleSelectPackage} />
@@ -248,7 +247,7 @@ function HomePage() {
 
       {/* FOOTER */}
       <footer id="footer" style={{ background: C.dark, color: 'rgba(255,255,255,0.7)', textAlign: 'center', padding: '48px 24px', fontSize: 14 }}>
-        <img src={logoImg} alt="WebKlienti logo" style={{ height: 36, width: 36, objectFit: 'contain', marginBottom: 16, borderRadius: '50%' }} />
+        <img src={logoImg} alt="WebKlienti logo" width="36" height="36" style={{ height: 36, width: 36, objectFit: 'contain', marginBottom: 16, borderRadius: '50%' }} />
         <div className="footer-links" style={{ display: 'flex', gap: 24, justifyContent: 'center', marginBottom: 16, flexWrap: 'wrap' }}>
           <a href="mailto:info@webklienti.com" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>info@webklienti.com</a>
           <a href="tel:+421907890600" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>+421 907 890 600</a>
@@ -256,10 +255,10 @@ function HomePage() {
         </div>
         <div style={{ display: 'flex', gap: 12, justifyContent: 'center', marginBottom: 20 }}>
           <a href="https://wa.me/421907890600" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" style={{ width: 44, height: 44, background: '#25D366', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 20, textDecoration: 'none' }}><FaWhatsapp /></a>
-          <a href="https://facebook.com/profile.php?id=61588797397714" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style={{ width: 44, height: 44, background: '#1877F2', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 18, textDecoration: 'none' }}><FaFacebookF /></a>
+          <a href="https://www.facebook.com/profile.php?id=61588797397714" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style={{ width: 44, height: 44, background: '#1877F2', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 18, textDecoration: 'none' }}><FaFacebookF /></a>
           <a href="https://www.instagram.com/webklienti" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style={{ width: 44, height: 44, background: 'linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 18, textDecoration: 'none' }}><FaInstagram /></a>
         </div>
-        <p style={{ marginBottom: 8 }}>{t.footerRights}</p>
+        <p style={{ marginBottom: 8 }}>© {new Date().getFullYear()} Web Klienti · {lang === 'en' ? 'All rights reserved' : lang === 'cz' ? 'Všechna práva vyhrazena' : 'Všetky práva vyhradené'}</p>
         <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)', fontStyle: 'italic' }}>{t.statNote}</p>
         <div style={{ marginTop: 32, paddingTop: 32, borderTop: '1px solid rgba(255,255,255,0.1)' }}>
           <button onClick={() => scrollTo('contact')} className="btn-primary" style={{ fontSize: 15 }}>
