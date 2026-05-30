@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Routes, Route, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { FaWhatsapp, FaFacebookF, FaInstagram } from 'react-icons/fa';
@@ -23,6 +24,12 @@ import Blog from './pages/Blog';
 import Privacy from './pages/Privacy';
 import BlogPost from './pages/BlogPost';
 import Web299 from './pages/Web299';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  return null;
+}
 
 const T = { sk, cz, en };
 const EMPTY_FORM = { name: '', email: '', phone: '', website: '', package: '', message: '', consent: false };
@@ -275,6 +282,7 @@ function HomePage() {
 export default function App() {
   return (
     <Routes>
+      <ScrollToTop />
       <Route path="/" element={<HomePage />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/:slug" element={<BlogPost />} />
