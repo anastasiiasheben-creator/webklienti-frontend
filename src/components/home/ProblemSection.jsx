@@ -10,7 +10,7 @@ export default function ProblemSection({ t }) {
             {t.problemTitle}
           </h2>
         </div>
-        <div className="problem-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16, marginBottom: 32 }}>
+        <div className="problem-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16, marginBottom: 32 }}>
           {t.problemPoints.map((pt, i) => (
             <div key={i} className="card" style={{ display: 'flex', alignItems: 'flex-start', gap: 14 }}>
               <span style={{ color: C.red, fontSize: 18, flexShrink: 0, marginTop: 1 }}>✕</span>
