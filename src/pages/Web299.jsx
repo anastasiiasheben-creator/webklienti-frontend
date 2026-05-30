@@ -6,9 +6,9 @@ import logoImg from '../assets/logo.webp';
 const API = 'https://webklienti-backend.onrender.com';
 
 const C = {
-  bg: '#F9FAFB', white: '#FFFFFF', text: '#111827', textSub: '#6B7280',
+  bg: '#F9FAFB', white: '#FFFFFF', text: '#111827', textSub: '#4B5563',
   border: '#E5E7EB', blue: '#2563EB', blueDark: '#1D4ED8',
-  green: '#16A34A', red: '#DC2626', orange: '#EA580C',
+  green: '#16A34A', red: '#DC2626', orange: '#C2410C',
 };
 
 export default function Web299() {
@@ -133,7 +133,7 @@ export default function Web299() {
       {/* NAV */}
       <nav style={{ background: 'rgba(255,255,255,0.97)', backdropFilter: 'blur(8px)', borderBottom: `1px solid ${C.border}`, padding: '0 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: 64, position: 'sticky', top: 0, zIndex: 100, gap: 12 }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none', flexShrink: 0 }}>
-          <img src={logoImg} alt="WebKlienti logo" style={{ height: 34, width: 34, objectFit: 'contain', borderRadius: '50%' }} />
+          <img src={logoImg} alt="WebKlienti logo" width="34" height="34" style={{ height: 34, width: 34, objectFit: 'contain', borderRadius: '50%' }} />
           <span style={{ fontWeight: 700, fontSize: 17, color: C.text, letterSpacing: -0.5 }}>Web<span style={{ color: C.blue }}>Klienti</span></span>
         </Link>
 
@@ -354,12 +354,12 @@ export default function Web299() {
             {`⚠ Aktuálne zostávajú ${'2'} voľné miesta`}
           </div>
           <h2 style={{ fontSize: 'clamp(24px, 4vw, 40px)', fontWeight: 800, color: '#fff', letterSpacing: -1.5, marginBottom: 14, lineHeight: 1.15 }}>Chcete web, ktorý získava zákazníkov?</h2>
-          <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.75)', marginBottom: 28, lineHeight: 1.6 }}>Hotový za 5 dní. Od 299 €. Bez mesačných poplatkov. Bez rizika.</p>
+          <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.92)', marginBottom: 28, lineHeight: 1.6 }}>Hotový za 5 dní. Od 299 €. Bez mesačných poplatkov. Bez rizika.</p>
           <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
             <button onClick={scrollToForm} style={{ display: 'inline-flex', alignItems: 'center', height: 54, padding: '0 28px', background: '#fff', color: C.blue, border: 'none', borderRadius: 14, fontSize: 16, fontWeight: 700, cursor: 'pointer', fontFamily: 'Inter, sans-serif' }}>Objednať web za 299 € →</button>
             <a href="https://wa.me/421907890600" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', height: 54, padding: '0 22px', background: 'rgba(255,255,255,0.15)', color: '#fff', border: '1.5px solid rgba(255,255,255,0.4)', borderRadius: 14, fontSize: 15, fontWeight: 600, textDecoration: 'none', fontFamily: 'Inter, sans-serif' }}>💬 WhatsApp</a>
           </div>
-          <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)', marginTop: 14 }}>Nezáväzná objednávka · Odpoveď do 24 hodín · Bez záväzkov</p>
+          <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', marginTop: 14 }}>Nezáväzná objednávka · Odpoveď do 24 hodín · Bez záväzkov</p>
         </div>
       </div>
 
@@ -418,14 +418,14 @@ export default function Web299() {
       {/* FOOTER */}
       <footer style={{ background: '#111827', padding: '32px 24px', textAlign: 'center' }}>
         <Link to="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, textDecoration: 'none', marginBottom: 14 }}>
-          <img src={logoImg} alt="WebKlienti logo" style={{ height: 32, width: 32, objectFit: 'contain', borderRadius: '50%' }} />
+          <img src={logoImg} alt="WebKlienti logo" width="32" height="32" style={{ height: 32, width: 32, objectFit: 'contain', borderRadius: '50%' }} />
           <span style={{ fontWeight: 700, fontSize: 16, color: '#fff' }}>Web<span style={{ color: '#60A5FA' }}>Klienti</span></span>
         </Link>
         <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 10 }}>
-          <a href="mailto:info@webklienti.com" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none', fontSize: 14 }}>info@webklienti.com</a>
-          <a href="tel:+421907890600" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none', fontSize: 14 }}>+421 907 890 600</a>
+          <a href="mailto:info@webklienti.com" style={{ color: 'rgba(255,255,255,0.7)', textDecoration: 'none', fontSize: 14 }}>info@webklienti.com</a>
+          <a href="tel:+421907890600" style={{ color: 'rgba(255,255,255,0.7)', textDecoration: 'none', fontSize: 14 }}>+421 907 890 600</a>
         </div>
-        <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.25)' }}>© 2025 Web Klienti · Všetky práva vyhradené</p>
+        <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>© 2025 Web Klienti · Všetky práva vyhradené</p>
       </footer>
 
       {/* STICKY MOBILE CTA — skryje sa keď je formulár viditeľný */}
