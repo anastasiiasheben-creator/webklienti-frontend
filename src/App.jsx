@@ -253,7 +253,7 @@ function HomePage() {
       </div>
 
       {/* FOOTER */}
-      <footer id="footer" style={{ background: C.dark, color: 'rgba(255,255,255,0.4)', textAlign: 'center', padding: '48px 24px', fontSize: 14 }}>
+      <footer id="footer" style={{ background: C.dark, color: 'rgba(255,255,255,0.7)', textAlign: 'center', padding: '48px 24px', fontSize: 14 }}>
         <img src={logoImg} alt="WebKlienti logo" style={{ height: 36, width: 36, objectFit: 'contain', marginBottom: 16, borderRadius: '50%' }} />
         <div className="footer-links" style={{ display: 'flex', gap: 24, justifyContent: 'center', marginBottom: 16, flexWrap: 'wrap' }}>
           <a href="mailto:info@webklienti.com" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>info@webklienti.com</a>
