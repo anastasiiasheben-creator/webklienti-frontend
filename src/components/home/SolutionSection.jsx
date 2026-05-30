@@ -13,26 +13,6 @@ export function AgitationStrip({ t }) {
   );
 }
 
-export function LogoStrip({ lang }) {
-  return (
-    <div style={{ background: C.white, borderBottom: `1px solid ${C.border}`, padding: '32px 40px' }}>
-      <div style={{ maxWidth: 1200, margin: '0 auto', textAlign: 'center' }}>
-        <p style={{ fontSize: 12, fontWeight: 500, color: C.textSub, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 24 }}>
-          {lang === 'en' ? 'Trusted by businesses across Slovakia & Czech Republic'
-            : lang === 'cz' ? 'Důvěřují nám firmy po celém Slovensku a ČR'
-            : 'Dôverujú nám firmy po celom Slovensku a ČR'}
-        </p>
-        <div style={{ display: 'flex', gap: 32, justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
-          <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer" style={{ color: C.text, textDecoration: 'none', fontSize: 15, fontWeight: 700, letterSpacing: -0.3, filter: 'grayscale(1)' }}>Montwell</a>
-          <span style={{ fontSize: 13, color: C.textSub, fontStyle: 'italic' }}>
-            {lang === 'en' ? '+ 80 more projects' : '+ 80 ďalších projektov'}
-          </span>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export function SolutionSection({ t, onCta, lang }) {
   return (
     <div style={{ background: C.bg, padding: '96px 40px', borderBottom: `1px solid ${C.border}` }}>
