@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import logoImg from '../assets/logo.webp';
+import { STATS } from '../lib/siteStats';
 
 const API = 'https://webklienti-backend.onrender.com';
 
@@ -126,7 +127,7 @@ export default function Web299() {
       <div style={{ background: C.blue, padding: '10px 24px', textAlign: 'center' }}>
         <span style={{ fontSize: 13, fontWeight: 600, color: '#fff' }}>
           ⚡ Obmedzená kapacita — tento týždeň zostávajú{' '}
-          <strong style={{ background: '#fff', color: C.blue, padding: '1px 8px', borderRadius: 4 }}>2 miesta</strong>
+          <strong style={{ background: '#fff', color: C.blue, padding: '1px 8px', borderRadius: 4 }}>{STATS.spotsLeft} miesta</strong>
         </span>
       </div>
 
@@ -172,7 +173,7 @@ export default function Web299() {
       <div style={{ background: C.white, borderBottom: `1px solid ${C.border}`, padding: '56px 24px 48px' }}>
         <div style={{ maxWidth: 760, margin: '0 auto', textAlign: 'center' }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(37,99,235,0.07)', border: `1px solid rgba(37,99,235,0.18)`, padding: '5px 14px', borderRadius: 100, fontSize: 13, fontWeight: 600, color: C.blue, marginBottom: 20 }}>
-            ✓ Overené na 80+ projektoch · SK & CZ
+            ✓ Montwell.sk · +120% dopytov po spustení · SK & CZ
           </div>
           <h1 style={{ fontSize: 'clamp(28px, 5.5vw, 58px)', fontWeight: 800, lineHeight: 1.1, letterSpacing: -2, color: C.text, marginBottom: 16 }}>
             Profesionálny firemný web<br />
@@ -186,7 +187,7 @@ export default function Web299() {
             {[
               { icon: '⚡', text: 'Dodanie do 5 dní' },
               { icon: '💰', text: 'Bez mesačných poplatkov' },
-              { icon: '★', text: '4.9/5 hodnotenie' },
+              { icon: '★', text: '5/5 hodnotenie' },
               { icon: '✓', text: 'Bez záväzkov' },
             ].map(b => (
               <span key={b.text} style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: C.bg, border: `1px solid ${C.border}`, padding: '6px 12px', borderRadius: 100, fontSize: 13, fontWeight: 500, color: C.text }}>
@@ -202,22 +203,7 @@ export default function Web299() {
         </div>
       </div>
 
-      {/* 2. PROOF STRIP */}
-      <div style={{ background: C.bg, borderBottom: `1px solid ${C.border}`, padding: '20px 24px' }}>
-        <div style={{ maxWidth: 900, margin: '0 auto', display: 'flex', gap: 24, justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
-          {[
-            { num: '80+', label: 'hotových webov' },
-            { num: '4.9★', label: 'priemerné hodnotenie' },
-            { num: '5 dní', label: 'priemerná dodávka' },
-            { num: '299 €', label: 'jednorazová cena' },
-          ].map(s => (
-            <div key={s.label} style={{ textAlign: 'center', minWidth: 80 }}>
-              <div style={{ fontSize: 20, fontWeight: 800, color: C.blue, letterSpacing: -1 }}>{s.num}</div>
-              <div style={{ fontSize: 12, color: C.textSub, fontWeight: 500 }}>{s.label}</div>
-            </div>
-          ))}
-        </div>
-      </div>
+
 
       {/* 3. ČO ZÍSKATE */}
       <div id="cena" style={{ background: C.white, padding: '64px 24px', borderBottom: `1px solid ${C.border}` }}>
@@ -366,7 +352,7 @@ export default function Web299() {
       <div style={{ background: C.blue, padding: '64px 24px' }}>
         <div style={{ maxWidth: 640, margin: '0 auto', textAlign: 'center' }}>
           <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.3)', borderRadius: 100, padding: '6px 18px', fontSize: 13, fontWeight: 600, color: '#fff', marginBottom: 20 }}>
-            ⚠ Aktuálne zostávajú 2 voľné miesta
+            {`⚠ Aktuálne zostávajú ${STATS.spotsLeft} voľné miesta`}
           </div>
           <h2 style={{ fontSize: 'clamp(24px, 4vw, 40px)', fontWeight: 800, color: '#fff', letterSpacing: -1.5, marginBottom: 14, lineHeight: 1.15 }}>Chcete web, ktorý získava zákazníkov?</h2>
           <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.75)', marginBottom: 28, lineHeight: 1.6 }}>Hotový za 5 dní. Od 299 €. Bez mesačných poplatkov. Bez rizika.</p>
