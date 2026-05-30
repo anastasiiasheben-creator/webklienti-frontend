@@ -12,14 +12,20 @@ export default function CaseStudySection({ t, lang }) {
     beforeTitle: lang === 'en' ? 'Only Instagram' : lang === 'cz' ? 'Jen Instagram' : 'Len Instagram',
     afterTitle: 'montwell.sk',
     beforePoints: lang === 'en'
-      ? ['64 followers', 'No website', 'Invisible on Google']
-      : ['64 sledovateľov', 'Žiadny web', 'Neviditeľní na Google'],
+      ? ['Only social media presence', 'No website', 'Hard to find on Google']
+      : lang === 'cz'
+      ? ['Pouze sociální sítě', 'Žádný web', 'Těžko k nalezení na Google']
+      : ['Iba sociálne siete', 'Žiadny web', 'Ťažko nájditeľní na Google'],
     afterPoints: lang === 'en'
       ? ['Professional website', 'Project gallery', 'Customers find them on Google']
+      : lang === 'cz'
+      ? ['Profesionální web', 'Galerie realizací', 'Zákazníci je najdou na Google']
       : ['Profesionálny web', 'Galéria realizácií', 'Zákazníci ich nájdu na Google'],
     result: lang === 'en'
-      ? '🎯 First leads within 48 hours · +120% more inquiries after launch'
-      : '🎯 Prvé leady do 48 hodín · +120% viac dopytov po spustení',
+      ? '🎯 A professional website that builds trust and helps customers find them online'
+      : lang === 'cz'
+      ? '🎯 Profesionální web, který buduje důvěru a pomáhá zákazníkům najít je online'
+      : '🎯 Profesionálny web, ktorý buduje dôveru a pomáha zákazníkom nájsť ich online',
   };
 
   const reviewText = lang === 'en'
