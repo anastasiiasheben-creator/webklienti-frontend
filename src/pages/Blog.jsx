@@ -15,6 +15,34 @@ const posts = [
   { slug: 'kolko-stoji-webstranka-na-slovensku', title: 'Koľko stojí webstránka na Slovensku?', excerpt: 'Ceny webstránok sa pohybujú od 200 € až po tisíce eur. Ako sa v tom vyznať a za čo vlastne platíte? Úprimný prehľad trhu.', date: '3. apríla 2025', readTime: '5 min čítania' },
   { slug: 'preco-web-neprinas-zakaznikov', title: 'Prečo vám web neprináša zákazníkov (a ako to zmeniť)', excerpt: 'Váš web môže vyzerať dobre, ale ak neprináša dopyty, nie je problém v trhu — ale vo webe. Zistite 3 hlavné dôvody a ako ich opraviť.', date: '29. apríla 2025', readTime: '3 min čítania' },
   { slug: 'preco-vas-eshop-nepredava', title: 'Prečo váš e-shop nepredáva?', excerpt: 'Ľudia prídu, ale nekúpia. Je problém v nich, alebo vo vás? 5 otázok, ktoré vám otvoria oči o vašom e-shope.', date: '11. mája 2026', readTime: '4 min čítania' },
+  {
+  slug: 'tvorba-webu-pre-zivnostnika',
+  title: 'Tvorba webu pre živnostníka: čo by mal obsahovať úspešný web',
+  excerpt: 'Zistite, čo musí obsahovať moderný web pre živnostníka, aby získaval zákazníkov z Google a premieňal návštevníkov na dopyty.',
+  date: '22. mája 2026',
+  readTime: '4 min čítania'
+},
+{
+  slug: 'web-pre-kadernictvo',
+  title: 'Web pre kaderníctvo: ako získať viac rezervácií online',
+  excerpt: 'Profesionálny web pre kaderníctvo pomáha získavať nové rezervácie a budovať dôveru zákazníkov.',
+  date: '25. mája 2026',
+  readTime: '4 min čítania'
+},
+{
+  slug: 'co-musi-mat-dobry-firemny-web',
+  title: 'Čo musí mať dobrý firemný web v roku 2026',
+  excerpt: 'Zistite, aké prvky musí obsahovať moderný firemný web, aby získaval zákazníkov a zvyšoval dôveru návštevníkov.',
+  date: '27. mája 2026',
+  readTime: '4 min čítania'
+},
+{
+  slug: 'web-za-299-eur',
+  title: 'Web za 299 € – je to dobrá voľba?',
+  excerpt: 'Oplatí sa web za 299 €? Pozrite si výhody, nevýhody a situácie, kedy je lacnejší web rozumnou voľbou.',
+  date: '29. mája 2026',
+  readTime: '4 min čítania'
+},
 ];
 
 export default function Blog() {
