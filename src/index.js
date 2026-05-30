@@ -1,20 +1,184 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <HelmetProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </HelmetProvider>
-  </React.StrictMode>
-);
+    <!-- ═══ PERFORMANCE: kritické CSS ═══ -->
+    <style>
+      body { margin: 0; font-family: 'Inter', -apple-system, sans-serif; background: #ffffff; color: #111827; }
+      #root { min-height: 100vh; }
+      nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.97); height: 64px; }
+    </style>
 
-reportWebVitals();
+    <!-- ═══ PERFORMANCE: preconnect & preload ═══ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap&font-display=swap" rel="stylesheet" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+    <link rel="preload" href="/logo.webp" as="image" type="image/webp" />
+
+    <!-- ═══ SEO: ZÁKLADNÉ ═══ -->
+    <title>Web Klienti – Tvorba webstránok od 299 € | SK · CZ · EU</title>
+    <meta name="description" content="Profesionálne webstránky pre malé firmy od 299 €. Hotové za 5 dní. SEO, GDPR, Google Business profil. Slovensko, Česko, Európa. Bez mesačných poplatkov." />
+    <meta name="keywords" content="tvorba webstránok, webstránka pre firmu, lacný web, web pre živnostníka, SEO web, webstránka Slovensko, tvorba webu Česko, webklienti" />
+    <meta name="author" content="Web Klienti" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.webklienti.com/" />
+
+    <!-- ═══ SEO: HREFLANG ═══ -->
+    <link rel="alternate" hreflang="sk" href="https://www.webklienti.com/" />
+    <link rel="alternate" hreflang="cs" href="https://www.webklienti.com/?lang=cz" />
+    <link rel="alternate" hreflang="en" href="https://www.webklienti.com/?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://www.webklienti.com/" />
+
+    <!-- ═══ SEO: OPEN GRAPH ═══ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.webklienti.com/" />
+    <meta property="og:title" content="Web Klienti – Tvorba webstránok od 299 €" />
+    <meta property="og:description" content="Profesionálne webstránky pre malé firmy od 299 €. Hotové za 5 dní. SEO, GDPR, Google Business profil." />
+    <meta property="og:image" content="https://www.webklienti.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="WebKlienti – Profesionálne webstránky od 299 €" />
+    <meta property="og:locale" content="sk_SK" />
+    <meta property="og:locale:alternate" content="cs_CZ" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:site_name" content="Web Klienti" />
+
+    <!-- ═══ SEO: TWITTER CARD ═══ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webklienti" />
+    <meta name="twitter:title" content="Web Klienti – Tvorba webstránok od 299 €" />
+    <meta name="twitter:description" content="Profesionálne webstránky pre malé firmy od 299 €. Hotové za 5 dní." />
+    <meta name="twitter:image" content="https://www.webklienti.com/og-image.png" />
+
+    <!-- ═══ SEO: GEO ═══ -->
+    <meta name="geo.region" content="SK" />
+    <meta name="geo.placename" content="Slovensko" />
+
+    <!-- ═══ SEO: SCHEMA.ORG ═══ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "WebKlienti",
+      "description": "Tvorba profesionálnych webstránok pre malé firmy od 299 €. Hotové za 5 dní.",
+      "url": "https://www.webklienti.com",
+      "logo": "https://www.webklienti.com/logo.webp",
+      "image": "https://www.webklienti.com/og-image.png",
+      "email": "info@webklienti.com",
+      "telephone": "+421907890600",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ulica Mozartova 5652/12",
+        "addressLocality": "Trnava",
+        "postalCode": "917 08",
+        "addressCountry": "SK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 48.3774,
+        "longitude": 17.5880
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "Slovakia" },
+        { "@type": "Country", "name": "Czech Republic" }
+      ],
+      "priceRange": "€€",
+      "openingHours": "Mo-Fr 09:00-18:00",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61588797397714"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "80",
+        "bestRating": "5"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Tvorba webstránok",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "One-page web" }, "price": "299", "priceCurrency": "EUR" },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Prezentačný web" }, "price": "499", "priceCurrency": "EUR" },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Internetový obchod" }, "price": "999", "priceCurrency": "EUR" }
+        ]
+      }
+    }
+    </script>
+
+    <!-- ═══ SEO: FAQ SCHEMA ═══ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Koľko stojí tvorba webstránky?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Základná one-page webstránka stojí 299 €. Cena zahŕňa dizajn na mieru, mobilnú verziu, SEO základy, kontaktný formulár a Google Maps. Bez mesačných poplatkov."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Za ako dlho bude web hotový?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Štandardná webstránka je hotová do 5 pracovných dní od schválenia návrhu."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Robíte weby pre firmy na Slovensku aj v Česku?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Áno, pôsobíme na celom Slovensku aj v Českej republike. Všetky projekty robíme kompletne online."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Sú v cene zahrnuté mesačné poplatky za hosting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cena 299 € je jednorazová za tvorbu webu. Hosting a doména sa platia samostatne, ale pomôžeme vám s ich nastavením."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- ═══ IKONY ═══ -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- ═══ FARBA PREHLIADAČA ═══ -->
+    <meta name="theme-color" content="#2563EB" />
+
+    <!-- ═══ GTM: lazy load ═══ -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+          f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-N39N3BP9');
+        }, 2000);
+      });
+    </script>
+
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N39N3BP9"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>Pre zobrazenie tejto stránky je potrebný JavaScript.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
