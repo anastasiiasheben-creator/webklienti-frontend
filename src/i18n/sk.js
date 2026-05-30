@@ -23,7 +23,8 @@ const sk = {
     "Návštevníci nechápu, čo majú spraviť",
     "Chýba jasná ponuka a výzva k akcii",
     "SEO je neprepojené s predajom",
-    "Chýba meranie výsledkov"
+    "Chýba meranie výsledkov",
+    "Pomalý web odráža návštevníkov skôr, než si prečítajú ponuku"
   ],
   "problemClose": "Výsledok: návštevnosť existuje, ale biznis nerastie.",
   "agitTitle": "Každý mesiac bez optimalizácie = stratené zákazky",
@@ -248,82 +249,6 @@ const sk = {
     "Slovensko / Česko",
     "Zamerané na dopyty"
   ],
-  "problems": [
-    {
-      "icon": "📉",
-      "text": "Žiadne dopyty z webu"
-    },
-    {
-      "icon": "🐌",
-      "text": "Slabá viditeľnosť na Google"
-    },
-    {
-      "icon": "📵",
-      "text": "Zastaraná alebo žiadna stránka"
-    },
-    {
-      "icon": "👻",
-      "text": "Zákazníci odchádzajú bez akcie"
-    }
-  ],
-  "solutions": [
-    {
-      "icon": "⚡",
-      "title": "Rýchle načítanie",
-      "desc": "PageSpeed 90+ — Google vás odporúča viac"
-    },
-    {
-      "icon": "🔍",
-      "title": "SEO pripravené",
-      "desc": "Zákazníci vás nájdu skôr ako konkurenciu"
-    },
-    {
-      "icon": "📱",
-      "title": "Mobil-first dizajn",
-      "desc": "70% zákazníkov hľadá z mobilu"
-    },
-    {
-      "icon": "🎯",
-      "title": "Optimalizované pre konverzie",
-      "desc": "Každý prvok vedie k dopytom"
-    }
-  ],
-  "casesLabel": "Reálny príklad",
-  "casesTitle": "Montwell — zákazníci začali prichádzať hneď po spustení",
-  "casesProblem": "Problém",
-  "casesSolution": "Riešenie",
-  "casesResult": "Výsledok",
-  "casesBtn": "Pozrieť web →",
-  "offerLabel": "Čo dostanete",
-  "offerTitle": "Profesionálny web, ktorý začne pracovať pre vás",
-  "offerItems": [
-    "Moderný dizajn na mieru",
-    "SEO pripravený od prvého dňa",
-    "Optimalizovaný pre dopyty a Google"
-  ],
-  "offerCta": "Chcem web za 299 € →",
-  "faqs": [
-    {
-      "q": "Koľko stojí web?",
-      "a": "One-page web od 299 €, prezentačný web od 499 €, e-shop od 999 €. Cena je konečná, bez skrytých poplatkov."
-    },
-    {
-      "q": "Ako dlho trvá výroba?",
-      "a": "One-page web je hotový za 5 dní, prezentačný web za 7 dní, e-shop za 14 dní."
-    },
-    {
-      "q": "Robíte aj SEO?",
-      "a": "Áno, každý web je SEO pripravený. Ponúkame aj pokročilé SEO balíky."
-    },
-    {
-      "q": "Čo potrebujem pripraviť?",
-      "a": "Nič. My sa postaráme o všetko — texty, dizajn, techniku. Stačí vyplniť formulár."
-    }
-  ],
-  "finalCta": "Chcete web, ktorý vám prináša zákazníkov?",
-  "statClients": "Spokojných klientov",
-  "statLeads": "Viac dopytov",
-  "statDays": "Hotový web",
   "consentLabel": "Súhlasím so spracovaním osobných údajov v súlade s",
   "consentLink": "Ochranou súkromia",
   "consentError": "Prosím, potvrďte súhlas so spracovaním osobných údajov."
