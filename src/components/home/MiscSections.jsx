@@ -62,7 +62,7 @@ export function FinalCtaSection({ t, onCta }) {
         <button onClick={onCta} style={{ display: 'inline-flex', alignItems: 'center', height: 56, padding: '0 32px', background: '#fff', color: C.blue, border: 'none', borderRadius: 12, fontSize: 17, fontWeight: 700, cursor: 'pointer', fontFamily: 'Inter, sans-serif' }}>
           {t.finalCtaBtn}
         </button>
-        <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.85)', marginTop: 16 }}>{t.heroMicro}</p>
+        <p style={{ fontSize: 14, color: '#fff', marginTop: 16 }}>{t.heroMicro}</p>
       </div>
     </div>
   );
