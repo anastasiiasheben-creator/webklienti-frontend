@@ -119,9 +119,9 @@ function HomePage() {
   const handleSelectPackage = (pkg) => { setForm(p => ({ ...p, package: pkg })); scrollTo('contact'); };
 
   const langBtn = (code) => ({
-    background: lang === code ? 'rgba(37,99,235,0.1)' : 'transparent',
+    background: lang === code ? C.blue : 'transparent',
     border: lang === code ? `1px solid ${C.blue}` : `1px solid ${C.border}`,
-    color: lang === code ? C.blue : C.textSub,
+    color: lang === code ? '#fff' : C.text,
     padding: '4px 10px', borderRadius: 8, fontSize: 12, fontWeight: 700,
     cursor: 'pointer', transition: 'all .15s', letterSpacing: 1,
   });
@@ -276,7 +276,7 @@ function HomePage() {
 
       {/* COOKIE BANNER */}
       {cookieVisible && (
-        <div role="dialog" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 9999, background: C.dark, borderTop: `1px solid rgba(255,255,255,0.08)`, padding: '16px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
+        <div role="dialog" aria-label="Cookie súhlas" aria-modal="false" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 9999, background: C.dark, borderTop: `1px solid rgba(255,255,255,0.08)`, padding: '16px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
           <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: 14, margin: 0, flex: 1 }}>
             🍪 {t.cookieMsg}{' '}
             <button onClick={() => setPrivacyOpen(true)} style={{ background: 'none', border: 'none', color: C.blue, cursor: 'pointer', fontSize: 14, textDecoration: 'underline', padding: 0, fontFamily: 'Inter, sans-serif' }}>{t.privacyLink}</button>
