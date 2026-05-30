@@ -76,7 +76,7 @@ function HomePage() {
 
   // Keep Render backend alive — ping every 10 minutes
   useEffect(() => {
-    const ping = () => fetch('https://webklienti-backend.onrender.com/api/orders', { method: 'HEAD' }).catch(() => {});
+    const ping = () => fetch('https://webklienti-backend.onrender.com/health').catch(() => {});
     ping();
     const interval = setInterval(ping, 10 * 60 * 1000);
     return () => clearInterval(interval);
