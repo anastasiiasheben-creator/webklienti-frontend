@@ -280,13 +280,15 @@ function HomePage() {
 
 export default function App() {
   return (
-    <ScrollToTop />
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/blog/:slug" element={<BlogPost />} />
-      <Route path="/privacy" element={<Privacy />} />
-      <Route path="/web-299" element={<Web299 />} />
-    </Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/web-299" element={<Web299 />} />
+      </Routes>
+    </>
   );
 }
