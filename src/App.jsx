@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { FaWhatsapp, FaFacebookF, FaInstagram } from 'react-icons/fa';
 import logoImg from './assets/logo.webp';
@@ -281,8 +280,8 @@ function HomePage() {
 
 export default function App() {
   return (
+    <ScrollToTop />
     <Routes>
-      <ScrollToTop />
       <Route path="/" element={<HomePage />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/:slug" element={<BlogPost />} />
