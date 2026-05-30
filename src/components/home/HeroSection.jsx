@@ -38,7 +38,7 @@ export default function HeroSection({ t, lang, onCta }) {
                 {lang === 'en' ? 'Monthly inquiries' : lang === 'cz' ? 'Měsíční poptávky' : 'Mesačné dopyty'}
               </div>
               <div style={{ fontSize: 36, fontWeight: 700, color: C.blue, marginBottom: 4 }}>+3×</div>
-              <div style={{ fontSize: 13, color: C.green, fontWeight: 600 }}>
+              <div style={{ fontSize: 13, color: '#15803D', fontWeight: 600 }}>
                 ↑ {lang === 'en' ? 'after optimisation' : lang === 'cz' ? 'po optimalizaci' : 'po optimalizácii'}
               </div>
               <div style={{ display: 'flex', alignItems: 'flex-end', gap: 6, marginTop: 16, height: 60 }}>
@@ -50,7 +50,7 @@ export default function HeroSection({ t, lang, onCta }) {
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
               {[
                 { label: lang === 'en' ? 'Avg. inquiries/mo' : lang === 'cz' ? 'Průměr dopytů/měs' : 'Priemer dopytov/mes', val: '14', color: C.blue },
-                { label: lang === 'en' ? 'Google ranking' : 'Google pozícia', val: 'TOP 3', color: C.green },
+                { label: lang === 'en' ? 'Google ranking' : 'Google pozícia', val: 'TOP 3', color: '#15803D' },
                 { label: lang === 'en' ? 'Conversion rate' : lang === 'cz' ? 'Konverzní poměr' : 'Konverzný pomer', val: '4.2%', color: C.orange },
                 { label: lang === 'en' ? 'Delivery' : lang === 'cz' ? 'Dodání' : 'Dodanie', val: lang === 'en' ? '5 days' : '5 dní', color: C.text },
               ].map((stat, i) => (
