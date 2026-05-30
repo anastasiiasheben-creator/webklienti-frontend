@@ -44,6 +44,7 @@ function HomePage() {
   const [openFaq, setOpenFaq] = useState(null);
   const [navScrolled, setNavScrolled] = useState(false);
   const [contactVisible, setContactVisible] = useState(false);
+  const [heroVisible, setHeroVisible] = useState(true);
 
   useEffect(() => {
     const handler = () => setNavScrolled(window.scrollY > 10);
@@ -59,6 +60,17 @@ function HomePage() {
       { threshold: 0.1 }
     );
     observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const hero = document.querySelector('main > div:first-child');
+    if (!hero) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setHeroVisible(entry.isIntersecting),
+      { threshold: 0.1 }
+    );
+    observer.observe(hero);
     return () => observer.disconnect();
   }, []);
 
@@ -236,7 +248,7 @@ function HomePage() {
 
 
       {/* STICKY MOBILE CTA */}
-      <div className="sticky-cta" style={{ display: contactVisible ? 'none' : 'none', position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 998, background: C.white, borderTop: `1px solid ${C.border}`, padding: '12px 16px 20px', boxShadow: '0 -4px 20px rgba(0,0,0,0.08)', visibility: contactVisible ? 'hidden' : 'visible', opacity: contactVisible ? 0 : 1, transition: 'opacity .2s, visibility .2s' }}>
+      <div className="sticky-cta" style={{ display: 'none', position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 998, background: C.white, borderTop: `1px solid ${C.border}`, padding: '12px 16px 20px', boxShadow: '0 -4px 20px rgba(0,0,0,0.08)', visibility: (heroVisible || contactVisible) ? 'hidden' : 'visible', opacity: (heroVisible || contactVisible) ? 0 : 1, transition: 'opacity .2s, visibility .2s' }}>
         <button onClick={() => scrollTo('contact')} className="btn-primary" style={{ width: '100%', fontSize: 15 }}>{t.stickyCtaBtn}</button>
       </div>
 
