@@ -138,7 +138,7 @@ export default function Web299() {
         </Link>
 
         {/* Desktop nav */}
-        <div className="desktop-nav-links">
+        <div className="desktop-nav-links" style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
           <a href="#portfolio" style={{ fontSize: 14, color: C.textSub, textDecoration: 'none', fontWeight: 500 }}>Ukážky</a>
           <a href="#cena" style={{ fontSize: 14, color: C.textSub, textDecoration: 'none', fontWeight: 500 }}>Cena</a>
           <a href="#faq" style={{ fontSize: 14, color: C.textSub, textDecoration: 'none', fontWeight: 500 }}>FAQ</a>
