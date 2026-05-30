@@ -127,22 +127,22 @@ function HomePage() {
         <html lang={lang} />
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
-        <link rel="canonical" href={seo.url} />
+        <link rel="canonical" href="https://www.webklienti.com/" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={seo.url} />
+        <meta property="og:url" content="https://www.webklienti.com/" />
         <meta property="og:title" content={seo.title} />
         <meta property="og:description" content={seo.description} />
-        <meta property="og:image" content="https://webklienti.com/og-image.jpg" />
+        <meta property="og:image" content="https://www.webklienti.com/og-image.jpg" />
         <meta property="og:locale" content={lang === 'sk' ? 'sk_SK' : lang === 'cz' ? 'cs_CZ' : 'en_US'} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={seo.title} />
         <meta name="twitter:description" content={seo.description} />
-        <meta name="twitter:image" content="https://webklienti.com/og-image.jpg" />
-        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"LocalBusiness","name":"WebKlienti","url":"https://webklienti.com","telephone":"+421907890600","email":"info@webklienti.com","address":{"@type":"PostalAddress","streetAddress":"Ulica Mozartova 5652/12","addressLocality":"Trnava","postalCode":"917 08","addressCountry":"SK"},"areaServed":["SK","CZ"],"priceRange":"\u20ac\u20ac","openingHours":"Mo-Fr 09:00-18:00"}`}</script>
+        <meta name="twitter:image" content="https://www.webklienti.com/og-image.jpg" />
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"LocalBusiness","name":"WebKlienti","url":"https://www.webklienti.com","telephone":"+421907890600","email":"info@webklienti.com","address":{"@type":"PostalAddress","streetAddress":"Ulica Mozartova 5652/12","addressLocality":"Trnava","postalCode":"917 08","addressCountry":"SK"},"areaServed":["SK","CZ"],"priceRange":"\u20ac\u20ac","openingHours":"Mo-Fr 09:00-18:00"}`}</script>
       </Helmet>
 
       <style>{`
@@ -274,7 +274,7 @@ function HomePage() {
         <div role="dialog" aria-label="Cookie súhlas" aria-modal="false" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 9999, background: C.dark, borderTop: `1px solid rgba(255,255,255,0.08)`, padding: '16px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
           <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: 14, margin: 0, flex: 1 }}>
             🍪 {t.cookieMsg}{' '}
-            <button onClick={() => setPrivacyOpen(true)} style={{ background: 'none', border: 'none', color: C.blue, cursor: 'pointer', fontSize: 14, textDecoration: 'underline', padding: 0, fontFamily: 'Inter, sans-serif' }}>{t.privacyLink}</button>
+            <button onClick={() => setPrivacyOpen(true)} style={{ background: 'none', border: 'none', color: '#93C5FD', cursor: 'pointer', fontSize: 14, textDecoration: 'underline', padding: 0, fontFamily: 'Inter, sans-serif' }}>{t.privacyLink}</button>
           </p>
           <div style={{ display: 'flex', gap: 8 }}>
             <button onClick={declineCookies} className="btn-secondary" style={{ height: 40, fontSize: 13, padding: '0 16px', background: 'transparent', border: '1px solid rgba(255,255,255,0.2)', color: 'rgba(255,255,255,0.6)' }}>{t.cookieDecline}</button>
