@@ -60,21 +60,21 @@ export default function CaseStudySection({ t, lang }) {
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, flexGrow: 1, alignItems: 'stretch' }}>
                 {/* PRED */}
                 <div style={{ background: '#FEF2F2', border: '1px solid #FECACA', borderRadius: 12, padding: '20px 18px', display: 'flex', flexDirection: 'column' }}>
-                  <div style={{ display: 'inline-block', background: '#FEE2E2', color: C.red, padding: '2px 10px', borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 14, alignSelf: 'flex-start' }}>
+                  <div style={{ display: 'inline-block', background: '#FEE2E2', color: '#991B1B', padding: '2px 10px', borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 14, alignSelf: 'flex-start' }}>
                     {montwell.beforeLabel}
                   </div>
                   <p style={{ fontSize: 14, fontWeight: 700, color: C.text, marginBottom: 16 }}>{montwell.beforeTitle}</p>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 10, flexGrow: 1, justifyContent: 'center' }}>
                     {montwell.beforePoints.map(pt => (
                       <div key={pt} style={{ fontSize: 13, color: C.textSub, display: 'flex', gap: 8, alignItems: 'center' }}>
-                        <span style={{ color: C.red, fontWeight: 700, flexShrink: 0 }}>✕</span> {pt}
+                        <span style={{ color: '#B91C1C', fontWeight: 700, flexShrink: 0 }}>✕</span> {pt}
                       </div>
                     ))}
                   </div>
                 </div>
                 {/* PO */}
                 <div style={{ background: '#F0FDF4', border: '1.5px solid #86EFAC', borderRadius: 12, padding: '20px 18px', display: 'flex', flexDirection: 'column' }}>
-                  <div style={{ display: 'inline-block', background: '#DCFCE7', color: C.green, padding: '2px 10px', borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 14, alignSelf: 'flex-start' }}>
+                  <div style={{ display: 'inline-block', background: '#DCFCE7', color: '#166534', padding: '2px 10px', borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 14, alignSelf: 'flex-start' }}>
                     {montwell.afterLabel}
                   </div>
                   <p style={{ fontSize: 14, fontWeight: 700, marginBottom: 16 }}>
