@@ -43,11 +43,23 @@ function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState(null);
   const [navScrolled, setNavScrolled] = useState(false);
+  const [contactVisible, setContactVisible] = useState(false);
 
   useEffect(() => {
     const handler = () => setNavScrolled(window.scrollY > 10);
     window.addEventListener('scroll', handler, { passive: true });
     return () => window.removeEventListener('scroll', handler);
+  }, []);
+
+  useEffect(() => {
+    const el = document.getElementById('contact');
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setContactVisible(entry.isIntersecting),
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
   }, []);
 
   // Keep Render backend alive — ping every 10 minutes
@@ -224,7 +236,7 @@ function HomePage() {
 
 
       {/* STICKY MOBILE CTA */}
-      <div className="sticky-cta" style={{ display: 'none', position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 998, background: C.white, borderTop: `1px solid ${C.border}`, padding: '12px 16px 20px', boxShadow: '0 -4px 20px rgba(0,0,0,0.08)' }}>
+      <div className="sticky-cta" style={{ display: contactVisible ? 'none' : 'none', position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 998, background: C.white, borderTop: `1px solid ${C.border}`, padding: '12px 16px 20px', boxShadow: '0 -4px 20px rgba(0,0,0,0.08)', visibility: contactVisible ? 'hidden' : 'visible', opacity: contactVisible ? 0 : 1, transition: 'opacity .2s, visibility .2s' }}>
         <button onClick={() => scrollTo('contact')} className="btn-primary" style={{ width: '100%', fontSize: 15 }}>{t.stickyCtaBtn}</button>
       </div>
 
