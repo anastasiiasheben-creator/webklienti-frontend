@@ -194,7 +194,7 @@ const cz = {
   "successMsg": "Vaše objednávka byla přijata. Potvrzení jsme poslali na váš email.",
   "newOrder": "Nová objednávka",
   "errorMsg": "❌ Chyba. Zkuste znovu nebo nás kontaktujte přímo.",
-  "footerRights": "© 2025 Web Klienti · Všechna práva vyhrazena",
+  "footerRights": "© 2026 Web Klienti · Všechna práva vyhrazena",
   "faqLabel": "FAQ",
   "faqTitle": "Časté dotazy",
   "faqItems": [
@@ -237,9 +237,9 @@ const cz = {
   "privacyTitle": "Ochrana osobních údajů",
   "privacyContent": "Provozovatel: Web Klienti, info@webklienti.com, +421 907 890 600\n\nJaké údaje sbíráme:\n• Jméno, příjmení, adresa, e-mail, telefon — při odeslání objednávky\n\nK čemu je používáme:\nPlnění smlouvy, vedení účetní evidence a vzájemná komunikace.\n\nDoba uchovávání:\nPo dobu trvání smlouvy a 5 let po jejím ukončení.\n\nVaše práva:\nMáte právo na přístup ke svým údajům, jejich opravu, vymazání nebo přenositelnost.\n\nCookies:\nPoužíváme Google Analytics ke sledování návštěvnosti.\n\nPlatné od: 1.1.2025",
   "statNote": "Nový projekt · Každý web děláme individuálně bez šablon",
-  "seoTitle": "Tvorba webů, které přinášejí zákazníky | WebKlienti",
-  "seoDescription": "Moderní webové stránky od 299 €. Web hotový do 5 dní. Tvorba webů a e-shopů pro firmy v ČR a SR. Bez měsíčních poplatků.",
-  "seoUrl": "https://webklienti.com",
+  "seoTitle": "WebKlienti — Tvorba webů od 299 € | SK & CZ",
+  "seoDescription": "Tvorba moderních webových stránek a e-shopů od 299 €, hotové do 5 dní. Weby pro živnostníky a malé firmy v ČR a SR. Bez měsíčních poplatků.",
+  "seoUrl": "https://www.webklienti.com",
   "heroTag": "Web agentura pro malé firmy · SK · CZ",
   "heroCtaSec": "Prohlédnout ukázky →",
   "trustStrip": [
