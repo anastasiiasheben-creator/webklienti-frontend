@@ -424,7 +424,7 @@ export default function Web299() {
           <a href="mailto:info@webklienti.com" style={{ color: 'rgba(255,255,255,0.7)', textDecoration: 'none', fontSize: 14 }}>info@webklienti.com</a>
           <a href="tel:+421907890600" style={{ color: 'rgba(255,255,255,0.7)', textDecoration: 'none', fontSize: 14 }}>+421 907 890 600</a>
         </div>
-        <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>© {new Date().getFullYear()} Web Klienti · Všetky práva vyhradené</p>
+        <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>© {new Date().getFullYear()} WebKlienti · Všetky práva vyhradené</p>
       </footer>
 
       {/* STICKY MOBILE CTA — skryje sa keď je formulár viditeľný */}
