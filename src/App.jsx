@@ -256,7 +256,7 @@ function HomePage() {
           <a href="https://www.facebook.com/profile.php?id=61588797397714" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style={{ width: 44, height: 44, background: '#1877F2', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 18, textDecoration: 'none' }}><FaFacebookF /></a>
           <a href="https://www.instagram.com/webklienti" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style={{ width: 44, height: 44, background: 'linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 18, textDecoration: 'none' }}><FaInstagram /></a>
         </div>
-        <p style={{ marginBottom: 8 }}>© {new Date().getFullYear()} Web Klienti · {lang === 'en' ? 'All rights reserved' : lang === 'cz' ? 'Všechna práva vyhrazena' : 'Všetky práva vyhradené'}</p>
+        <p style={{ marginBottom: 8 }}>© {new Date().getFullYear()} WebKlienti · {lang === 'en' ? 'All rights reserved' : lang === 'cz' ? 'Všechna práva vyhrazena' : 'Všetky práva vyhradené'}</p>
         <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)', fontStyle: 'italic' }}>{t.statNote}</p>
         <div style={{ marginTop: 32, paddingTop: 32, borderTop: '1px solid rgba(255,255,255,0.1)' }}>
           <button onClick={() => scrollTo('contact')} className="btn-primary" style={{ fontSize: 15 }}>
