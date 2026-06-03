@@ -380,7 +380,7 @@ export default function Web299() {
                 { key: 'name', label: 'Meno a priezvisko *', type: 'text', placeholder: 'Ján Novák' },
                 { key: 'email', label: 'Email *', type: 'email', placeholder: 'jan@firma.sk' },
                 { key: 'phone', label: 'Telefón', type: 'tel', placeholder: '+421 900 000 000' },
-                { key: 'biz', label: 'Čo robíte?', type: 'text', placeholder: 'napr. kaderníctvo, reštaurácia...' },
+                { key: 'message', label: 'Čo robíte?', type: 'text', placeholder: 'napr. kaderníctvo, reštaurácia...' },
               ].map(f => (
                 <div key={f.key}>
                   <label style={{ display: 'block', fontSize: 14, fontWeight: 600, marginBottom: 6, color: C.text }}>{f.label}</label>
