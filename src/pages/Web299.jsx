@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import logoImg from '../assets/logo.webp';
 
-const API = 'https://webklienti-backend.onrender.com';
+const API = 'https://webklienti-backend-1.onrender.com';
 
 const C = {
   bg: '#F9FAFB', white: '#FFFFFF', text: '#111827', textSub: '#4B5563',
