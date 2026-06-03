@@ -14,5 +14,5 @@ export const C = {
   textSub: '#4B5563',        // darkened from #6B7280 — now 7:1 on white (was 4.0:1, failed)
   dark: '#0F172A',
 };
-export const API = process.env.REACT_APP_API_URL || 'https://webklienti-backend.onrender.com';
+export const API = process.env.REACT_APP_API_URL || 'https://webklienti-backend-1.onrender.com';
 export const NAV_IDS = ['pricing', 'reviews', 'faq', 'footer'];
