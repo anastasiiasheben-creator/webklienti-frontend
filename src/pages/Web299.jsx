@@ -12,7 +12,7 @@ const C = {
 };
 
 export default function Web299() {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', biz: '', consent: false, package: 'One-page web — 299 €' });
+  const [form, setForm] = useState({ name: '', email: '', phone: '', message: '', consent: false, package: 'One-page web — 299 €' });
   const [formStatus, setFormStatus] = useState('idle');
   const [consentError, setConsentError] = useState(false);
   const [openFaq, setOpenFaq] = useState(null);
@@ -44,7 +44,7 @@ export default function Web299() {
         setFormStatus('success');
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({ event: 'form_submit_success' });
-        setForm({ name: '', email: '', phone: '', biz: '', consent: false, package: 'One-page web — 299 €' });
+        setForm({ name: '', email: '', phone: '', message: '', consent: false, package: 'One-page web — 299 €' });
       } else { setFormStatus('error'); }
     } catch { setFormStatus('error'); }
   };
