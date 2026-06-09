@@ -6,8 +6,8 @@ const sk = {
     "Kontakt"
   ],
   "navCta": "Objednať",
-  "heroBadge": "🚀 Akcia — 50% zľava do konca mesiaca",
-  "heroTitle": "Profesionálna web stránka pre firmu za fixnú cenu 299 €",
+  "heroBadge": "🚀 Akcia — 50 % zľava do konca mesiaca",
+  "heroTitle": "Profesionálna webstránka pre firmu za fixnú cenu 299 €",
   "heroSub": "Moderný firemný web, mobilná verzia, kontaktný formulár a základné SEO. Dodanie do 5 dní.",
   "heroBenefits": [
     "Moderný dizajn na mieru",
@@ -22,11 +22,11 @@ const sk = {
   "problemLabel": "Problém",
   "problemTitle": "Prečo malé firmy prichádzajú o zákazníkov online",
   "problemPoints": [
-    "Nemáte web stránku alebo pôsobí zastaralo",
+    "Nemáte webstránku alebo pôsobí zastaralo",
     "Na mobile sa zle používa",
     "Klienti vás nevedia nájsť na Google",
     "Konkurencia pôsobí profesionálnejšie",
-    "Neviete koľko stojí poriadny web"
+    "Neviete, koľko stojí poriadny web"
   ],
   "problemClose": "Výsledok: návštevnosť existuje, ale biznis nerastie.",
   "agitTitle": "Každý mesiac bez profesionálneho webu = stratení zákazníci",
@@ -188,7 +188,7 @@ const sk = {
     }
   ],
   "intentLabel": "Čo chcete dosiahnuť? *",
-  "intentNote": "Vyberte cieľ — pomôže nám pripraviť konkrétny plán pre vás.",
+  "intentNote": "Vyberte cieľ — pomôže nám pripravit konkrétny plán pre vás.",
   "messageLabel": "Správa",
   "messagePlaceholder": "Čo potrebujete? Aký je váš biznis?",
   "submitBtn": "Získať návrh zdarma →",
@@ -211,11 +211,11 @@ const sk = {
     },
     {
       "q": "Kedy a koľko platím?",
-      "a": "Po potvrdení objednávky uhradíte zálohu 50 % z ceny. Zvyšok platíte až po dokončení a schválení webu."
+      "a": "Prvý návrh do 24 hodín máte úplne zdarma. Ak sa vám páči a schválite ho, uhradíte 50 % zálohu a začneme pracovať na ostrom webe. Zvyšok doplácate až po kompletnom dokončení."
     },
     {
       "q": "Prečo stojí web len 299 €?",
-      "a": "Neprevádzkujeme veľkú agentúru. Používame overený proces, vďaka čomu vieme dodať kvalitný firemný web rýchlejšie a za nižšiu cenu."
+      "a": "Neprevádzkujeme veľkú agentúru. Používame overený proces, vďaka čomu vieme dodať kvalitnú firemnú webstránku rýchlejšie a za nižšiu cenu."
     },
     {
       "q": "Pomôžete s textami a fotkami?",
@@ -227,7 +227,7 @@ const sk = {
     },
     {
       "q": "Čo ak sa mi návrh nebude páčiť?",
-      "a": "Prvý návrh pošleme do 24 hodín. Ak sa vám nebude páčiť, upravíme ho. Platíte až po schválení návrhu."
+      "a": "Prvý návrh pošleme do 24 hodín. Ak sa vám nebude páčiť, upravíme ho alebo môžete spoluprácu bezplatne ukončiť. Platíte až po schválení konceptu."
     }
   ],
   "guaranteeTitle": "Bez rizika",
@@ -242,12 +242,12 @@ const sk = {
   "cookieDecline": "Odmietnuť",
   "privacyLink": "Ochrana súkromia",
   "privacyTitle": "Ochrana osobných údajov",
-  "privacyContent": "Prevádzkovateľ: Web Klienti, info@webklienti.com, +421 907 890 600\n\nAké údaje zbierame:\n• Meno, priezvisko, adresa, e-mail, telefón — pri odoslaní objednávky\n\nNa čo ich používame:\nPlnenie zmluvy, vedenie účtovnej evidencie a vzájomná komunikácia.\n\nDoba uchovávania:\nPo dobu trvania zmluvy a 5 rokov po jej ukončení.\n\nVaše práva:\nMáte právo na prístup k svojim údajom, ich opravu, vymazanie alebo prenosnosť. Žiadosť zasielajte na info@webklienti.com.\n\nCookies:\nPoužívame Google Analytics na sledovanie návštevnosti.\n\nPlatné od: 1.1.2025",
+  "privacyContent": "Prevádzkovateľ: Web Klienti, info@webklienti.com, +421 907 890 600\n\nAké údaje zbierame:\n• Meno, priezvisko, e-mail, telefón — pri odoslaní formulára\n\nNa čo ich používame:\nPlnenie zmluvy, vedenie účtovnej evidencie a vzájomná komunikácia.\n\nDoba uchovávania:\nPo dobu trvania zmluvy a 5 rokov po jej ukončení.\n\nVaše práva:\nMáte právo na prístup k svojim údajom, ich opravu, vymazanie alebo prenosnosť. Žiadosť zasielajte na info@webklienti.com.\n\nCookies:\nPoužívame Google Analytics na sledovanie návštevnosti.\n\nPlatné od: 1.1.2025",
   "statNote": "Nový projekt · Každý web robíme individuálne bez šablón",
-  "seoTitle": "WebKlienti — Tvorba web stránok pre firmu od 299 € | SK & CZ",
-  "seoDescription": "Tvorba moderných web stránok a e-shopov pre firmy od 299 €. Dodanie do 5 dní. Bez mesačných poplatkov. Slovensko a Česko.",
+  "seoTitle": "WebKlienti — Tvorba webstránok pre firmy od 299 € | SK & CZ",
+  "seoDescription": "Tvorba moderných webstránok a e-shopov pre firmy od 299 €. Dodanie do 5 dní. Bez mesačných poplatkov. Slovensko a Česko.",
   "seoUrl": "https://www.webklienti.com",
-  "heroTag": "Web agentúra pre malé firmy · SK · CZ",
+  "heroTag": "Webová agentúra pre malé firmy · SK · CZ",
   "heroCtaSec": "Pozrieť ukážky →",
   "trustStrip": [
     "Prijímame len 2 nové projekty týždenne",
