@@ -5,27 +5,27 @@ const GOOGLE_REVIEW_LINK = 'https://maps.app.goo.gl/tDf7dRkYB2eZ3j9d7';
 
 export default function CaseStudySection({ t, lang }) {
   const montwell = {
-    label: lang === 'en' ? 'Latest project' : lang === 'cz' ? 'Poslední realizace' : 'Posledná realizácia',
-    viewBtn: lang === 'en' ? 'View project →' : lang === 'cz' ? 'Zobrazit projekt →' : 'Zobraziť projekt →',
+    label: lang === 'en' ? 'Latest project' : lang === 'cz' ? 'Poslední realizace' : 'Overený projekt',
+    viewBtn: lang === 'en' ? 'View project →' : lang === 'cz' ? 'Zobrazit projekt →' : 'Pozrieť web klienta →',
     beforeLabel: lang === 'en' ? 'BEFORE' : 'PRED',
     afterLabel: lang === 'en' ? 'AFTER' : 'PO',
     beforeTitle: lang === 'en' ? 'Only Instagram' : lang === 'cz' ? 'Jen Instagram' : 'Len Instagram',
-    afterTitle: 'montwell.sk',
+    afterTitle: lang === 'en' ? 'Live website: montwell.sk' : lang === 'cz' ? 'Reálný web: montwell.sk' : 'Reálny web: montwell.sk',
     beforePoints: lang === 'en'
       ? ['Only social media presence', 'No website', 'Hard to find on Google']
       : lang === 'cz'
       ? ['Pouze sociální sítě', 'Žádný web', 'Těžko k nalezení na Google']
-      : ['Iba sociálne siete', 'Žiadny web', 'Ťažko nájditeľní na Google'],
+      : ['Majú len Instagram profil', 'Žiadny web', 'Ťažko nájditeľní na Google'],
     afterPoints: lang === 'en'
       ? ['Professional website', 'Project gallery', 'Customers find them on Google']
       : lang === 'cz'
       ? ['Profesionální web', 'Galerie realizací', 'Zákazníci je najdou na Google']
-      : ['Profesionálny web', 'Galéria realizácií', 'Zákazníci ich nájdu na Google'],
+      : ['Profesionálny web', 'Galéria realizácií', 'Klienti ich dnes nájdu cez Google vyhľadávanie'],
     result: lang === 'en'
       ? '🎯 A professional website that builds trust and helps customers find them online'
       : lang === 'cz'
       ? '🎯 Profesionální web, který buduje důvěru a pomáhá zákazníkům najít je online'
-      : '🎯 Profesionálny web, ktorý buduje dôveru a pomáha zákazníkom nájsť ich online',
+      : '🎯 Web spustený do 5 dní · profesionálna prezentácia, ktorá buduje dôveru u zákazníkov · pripravené na získavanie dopytov',
   };
 
   const reviewText = lang === 'en'
@@ -60,6 +60,7 @@ export default function CaseStudySection({ t, lang }) {
             </div>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
               <p style={{ fontSize: 12, letterSpacing: 2, textTransform: 'uppercase', color: C.textSub, marginBottom: 6 }}>{montwell.label}</p>
+              <p style={{ fontSize: 12, color: C.textSub, marginBottom: 12 }}>Reálny výsledok práce s klientom — bez šablón</p>
               <h3 style={{ fontSize: 24, fontWeight: 700, marginBottom: 20 }}>Montwell</h3>
 
               {/* PRED / PO cards — full height matching image */}
