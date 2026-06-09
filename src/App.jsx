@@ -77,7 +77,7 @@ function HomePage() {
     return () => observer.disconnect();
   }, []);
 
-  // OPRAVA 2: sledujeme viditeľnosť FinalCtaSection
+  // Sledujeme viditeľnosť FinalCtaSection
   useEffect(() => {
     const el = document.getElementById('final-cta');
     if (!el) return;
@@ -176,9 +176,7 @@ function HomePage() {
           .montwell-grid { grid-template-columns: 1fr !important; }
           .montwell-facts { grid-template-columns: 1fr 1fr !important; }
           .sticky-cta { display: flex !important; }
-          .footer-links { flex-direction: column !important; gap: 8px !important; }
-          
-          /* ИСПРАВЛЕНО: Теперь прижимаем к левому краю ТОЛЬКО на мобилках */
+          .footer-links { flex-direction: column !important; gap: 8px !important; }          
           .trust-bullets { justify-content: flex-start !important; }
         }
         @media (max-width: 480px) { .solution-grid { grid-template-columns: 1fr !important; } }
@@ -202,7 +200,7 @@ function HomePage() {
         .nav-phone:hover { color: #2563EB; }
       `}</style>
 
-      {/* OPRAVA 1: Urgency bar — plný solidný pás, nie pill */}
+      {/* Urgency bar — plný solidný pás, nie pill */}
       <div style={{ background: C.blue, padding: '10px 24px', textAlign: 'center' }}>
         <span style={{ fontSize: 13, fontWeight: 600, color: '#fff', letterSpacing: 0.2 }}>
           {t.heroBadge}
@@ -279,7 +277,7 @@ function HomePage() {
         />
       </main>
 
-     {/* OPRAVA 2: sticky CTA skryté v hero, kontaktoch, final CTA a pätičke */}
+     {/* Sticky CTA skryté v hero, kontaktoch, final CTA a pätičke */}
       <div className="sticky-cta" style={{ 
         display: 'none', 
         position: 'fixed', 
