@@ -7,10 +7,8 @@ const sk = {
   ],
   "navCta": "Získať návrh zdarma",
   "heroBadge": "🔥 Akcia — 50% zľava na spustenie projektu len do konca mesiaca",
-  // ZMENA: Agresívnejší a jasnejší prísľub výsledku namiesto klišé o "pomoci"
   "heroTitle": "Robíme weby, ktoré vašej firme reálne prinesú nových zákazníkov",
-  "heroSub": "Kompletný predajný systém: Moderný dizajn + silné SEO + konverzná štruktúra. Hotovo už do 5 dní.",
-  // ZMENA: Preformulované na hmatateľné biznis výhody pre klienta
+  "heroSub": "Kompletný predajný systém: Moderný dizajn + silné SEO + konverzná štruktúra. Hotovo už do 5 dní.",  
   "heroBenefits": [
     "Dizajn navrhnutý tak, aby návštevníka premenil na dopyt",
     "Prvotriedna rýchlosť a bezchybné zobrazenie na mobiloch",
@@ -22,7 +20,6 @@ const sk = {
   "heroMicro": "prvý koncept do 24 hodín · úplne bez záväzkov · ukážeme vám, ako predávať viac",
   "marketTag": "🌍 Strategický webdizajn pre Slovensko · Česko · Európu",
   "problemLabel": "Kde strácate peniaze?",
-  // ZMENA: Útok na najväčšiu bolesť – neefektívne investície a stratený potenciál
   "problemTitle": "Prečo väčšina firemných webov len sedí na internete a nezarobí ani cent?",
   "problemPoints": [
     "Máte starý web, ktorý namiesto lákania klientov vašu firmu reprezentuje zle",
@@ -32,12 +29,10 @@ const sk = {
     "Agentúry od vás pýtajú tisíce eur bez akejkoľvek garancie výsledku"
   ],
   "problemClose": "Výsledok: Vaša konkurencia rastie, zatiaľ čo vy prichádzate o desiatky dopytov mesačne.",
-  // ZMENA: Silnejšia agitácia zameraná na matematiku ušlého zisku
   "agitTitle": "Každý deň so slabým webom darujete zákazníkov konkurencii",
   "agitText": "Pekný web nestačí. Ak vaša stránka nefunguje ako premyslený predajný lievik, investícia do nej sa vám nikdy nevráti. My staviame weby okolo potrieb vašich budúcich klientov.",
   "solutionLabel": "Náš proces",
-  "solutionTitle": "Odoslaním formulára k novým zákazníkom za 5 dní",
-  // ZMENA: Kroky znejú akčnejšie a eliminujú strach, že klient s tým bude mať veľa práce
+  "solutionTitle": "Odoslaním formulára k novým zákazníkom za 5 dní",  
   "solutionSteps": [
     {
       "num": "01",
@@ -72,7 +67,6 @@ const sk = {
       "price": "299 €",
       "old": "bežne 599 €",
       "forWhom": "Ideálne pre živnostníkov, remeselníkov a lokálne služby",
-      // ZMENA: Features predávajú hodnotu, nie nudný zoznam technických parametrov
       "features": [
         "Predajný dizajn na jednej prehľadnej strane",
         "100% optimalizácia pre smartfóny a tablety",
@@ -169,7 +163,6 @@ const sk = {
     "Biznis web na dopyty — 499 €",
     "Kompletný E-shop — 999 €"
   ],
-  // ZMENA: Kľúčové miesto pre konverziu! Intent karty teraz nepredávajú produkt, ale EMÓCIU a CIEĽ klienta.
   "intentLabel": "Čo je hlavným cieľom vášho nového webu? *",
   "intentNote": "Vyberte si váš primárny cieľ — pomôže nám to postaviť štruktúru webu presne na mieru vašej cieľovej skupine.",
   "intentCards": [
@@ -206,7 +199,6 @@ const sk = {
   "footerRights": "© 2026 WebKlienti · Profesionálny webdizajn zameraný na výsledky",
   "faqLabel": "Odpovedáme",
   "faqTitle": "Všetko, čo potrebujete vedieť pred štartom",
-  // ZMENA: Odpovede v FAQ sú upravené tak, aby budovali dôveru a eliminovali obavy z nízkej ceny
   "faqItems": [
     {
       "q": "Koľko reálne trvá vytvorenie webu?",
