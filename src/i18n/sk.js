@@ -7,25 +7,26 @@ const sk = {
   ],
   "navOrder": "Objednať",
   "heroBadge": "🚀 Akcia — 50% zľava do konca mesiaca",
-  "heroTitle": "Získajte viac zákazníkov z Google bez platených reklám",
-  "heroSub": "Premeníme váš web na systém, ktorý prináša pravidelné dopyty a reálnych klientov.",
+  "heroTitle": "Profesionálna web stránka pre firmu za fixnú cenu 299 €",
+  "heroSub": "Moderný firemný web, mobilná verzia, kontaktný formulár a základné SEO. Hotový za 5 dní.",
   "heroBenefits": [
-    "Viac dopytov z Google bez navyšovania trafficu",
-    "Web optimalizovaný na konverzie, nie len dizajn",
-    "Jasné meranie toho, čo prináša zákazníkov"
+    "Moderný dizajn na mieru",
+    "Funguje perfektne na mobile",
+    "Kontaktný formulár + Google Mapy",
+    "Základné SEO v cene",
+    "Hotový za 5 dní"
   ],
-  "heroCta": "Chcem analýzu, prečo mi web neprináša zákazníkov",
+  "heroCta": "Chcem nezáväznú cenovú ponuku",
   "heroMicro": "odpoveď do 24 hodín · bez záväzkov · konkrétne odporúčania",
   "marketTag": "🌍 Slovensko · Česko · Európa",
   "problemLabel": "Problém",
   "problemTitle": "Prečo väčšina firemných webov nefunguje",
   "problemPoints": [
-    "Web vyzerá dobre, ale neprináša dopyty",
-    "Návštevníci nechápu, čo majú spraviť",
-    "Chýba jasná ponuka a výzva k akcii",
-    "SEO je neprepojené s predajom",
-    "Chýba meranie výsledkov",
-    "Pomalý web odráža návštevníkov skôr, než si prečítajú ponuku"
+    "Nemáte web stránku alebo pôsobí zastaralo",
+    "Na mobile sa zle používa",
+    "Klienti vás nevedia nájsť na Google",
+    "Konkurencia pôsobí profesionálnejšie",
+    "Neviete koľko stojí poriadny web"
   ],
   "problemClose": "Výsledok: návštevnosť existuje, ale biznis nerastie.",
   "agitTitle": "Každý mesiac bez optimalizácie = stratené zákazky",
