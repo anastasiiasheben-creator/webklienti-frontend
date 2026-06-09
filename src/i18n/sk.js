@@ -6,7 +6,6 @@ const sk = {
     "Kontakt"
   ],
   "navCta": "Získať návrh zdarma",
-  "topAnnouncement": "🔥 Akcia — 50% zľava na spustenie projektu len do konca mesiaca", // Новый ключ специально для синей полосы
   "heroBadge": "🔥 Akcia — 50% zľava na spustenie projektu len do konca mesiaca",
   "heroTitle": "Robíme weby, ktoré vašej firme reálne prinesú nových zákazníkov",
   "heroSub": "Kompletný predajný systém: Moderný dizajn + silné SEO + konverzná štruktúra. Hotovo už do 5 dní.",  
