@@ -20,7 +20,7 @@ const sk = {
   "heroMicro": "odpoveď do 24 hodín · bez záväzkov · konkrétne odporúčania",
   "marketTag": "🌍 Slovensko · Česko · Európa",
   "problemLabel": "Problém",
-  "problemTitle": "Prečo väčšina firemných webov nefunguje",
+  "problemTitle": "Prečo malé firmy prichádzajú o zákazníkov online",
   "problemPoints": [
     "Nemáte web stránku alebo pôsobí zastaralo",
     "Na mobile sa zle používa",
@@ -29,35 +29,35 @@ const sk = {
     "Neviete koľko stojí poriadny web"
   ],
   "problemClose": "Výsledok: návštevnosť existuje, ale biznis nerastie.",
-  "agitTitle": "Každý mesiac bez optimalizácie = stratené zákazky",
+  "agitTitle": "Každý mesiac bez profesionálneho webu = stratení zákazníci",
   "agitText": "Ak váš web nepracuje ako predajný systém, platíte za návštevnosť aj dizajn — ale nevracia sa vám to v dopytoch.",
   "solutionLabel": "Riešenie",
   "solutionTitle": "Ako z webu robíme systém na získavanie zákazníkov",
   "solutionSteps": [
     {
       "num": "01",
-      "title": "Analýza",
-      "desc": "Zistíme, prečo web nepretvára návštevníkov na dopyty."
+      "title": "Objednávka",
+      "desc": "Vyberiete si balík a odošlete formulár."
     },
     {
       "num": "02",
-      "title": "Optimalizácia konverzií",
-      "desc": "Upravíme message, UX a CTA tak, aby klient vedel, čo má spraviť."
+      "title": "Návrh do 24 hodín",
+      "desc": "Pripravíme prvý návrh webu podľa vášho podnikania."
     },
     {
       "num": "03",
-      "title": "SEO stratégia",
-      "desc": "Témy a obsah, ktoré prinášajú reálnych klientov z Google."
+      "title": "Úpravy a schválenie",
+      "desc": "Zapracujeme vaše pripomienky a doladíme detaily."
     },
     {
       "num": "04",
-      "title": "Tracking",
-      "desc": "Vidíte presne, čo prináša zákazníkov — žiadne dohady."
+      "title": "Hotový web za 5 dní",
+      "desc": "Spustíme web online a odovzdáme vám všetky prístupy."
     }
   ],
   "pricingLabel": "Cenník",
   "pricingTitle": "Vyberte úroveň rastu",
-  "pricingNote": "Všetky balíky sa zameriavajú na zvýšenie dopytov, nie len na návštevnosť.",
+  "pricingNote": "Vyberte si riešenie podľa veľkosti vášho podnikania.",
   "orderBtn": "Začať s týmto balíkom →",
   "cards": [
     {
@@ -122,7 +122,7 @@ const sk = {
   ],
   "featuredBadge": "ODPORÚČANÉ",
   "reviewsLabel": "Referencie",
-  "reviewsTitle": "Výsledky, ktoré klienti dosahujú",
+  "reviewsTitle": "Nedávno dokončený projekt",
   "riskTitle": "Bez rizika",
   "riskText": "Prvý návrh webu dostanete do 24 hodín zdarma. Platíte len 50 % zálohu — zvyšok až po schválení hotového webu.",
   "riskPoints": [
@@ -130,13 +130,13 @@ const sk = {
     "✓ Odporúčania pred realizáciou",
     "✓ Platíte až po schválení návrhu"
   ],
-  "finalCtaTitle": "Chcete zistiť, prečo vám web neprináša zákazníkov?",
-  "finalCtaSub": "Získajte bezplatnú analýzu webu — konkrétne kroky, nie všeobecné rady.",
+  "finalCtaTitle": "Pripravení získať profesionálny web pre vašu firmu?",
+  "finalCtaSub": "Pošlite nám základné informácie a do 24 hodín vám pripravíme návrh zdarma.",
   "finalCtaBtn": "Získať analýzu webu zdarma →",
-  "stickyCtaBtn": "Chcem analýzu webu →",
+  "stickyCtaBtn": "Chcem web za 299 € →",
   "formLabel": "Objednávka",
-  "formTitle": "Získajte 3 konkrétne spôsoby, ako získať viac zákazníkov z Google",
-  "formSub": "Vyplňte formulár a do 24 hodín vám pošleme prvý návrh webu zdarma.",
+  "formTitle": "Požiadajte o nezáväzný návrh webu zdarma",
+  "formSub": "Do 24 hodín vám pripravíme návrh riešenia a cenovú ponuku.",
   "fields": [
     {
       "key": "name",
