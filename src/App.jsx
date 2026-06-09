@@ -274,8 +274,22 @@ function HomePage() {
         />
       </main>
 
-      {/* OPRAVA 2: sticky CTA skryté aj keď je viditeľná FinalCtaSection */}
-      <div className="sticky-cta" style={{ display: 'none', position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 998, background: C.white, borderTop: `1px solid ${C.border}`, padding: '12px 16px 20px', boxShadow: '0 -4px 20px rgba(0,0,0,0.08)', visibility: (heroVisible || contactVisible || finalCtaVisible) ? 'hidden' : 'visible', opacity: (heroVisible || contactVisible || finalCtaVisible) ? 0 : 1, transition: 'opacity .2s, visibility .2s' }}>
+     {/* OPRAVA 2: sticky CTA skryté v hero, kontaktoch, final CTA a pätičke */}
+      <div className="sticky-cta" style={{ 
+        display: 'none', 
+        position: 'fixed', 
+        bottom: 0, 
+        left: 0, 
+        right: 0, 
+        zIndex: 998, 
+        background: C.white, 
+        borderTop: `1px solid ${C.border}`, 
+        padding: '12px 16px 20px', 
+        boxShadow: '0 -4px 20px rgba(0,0,0,0.08)', 
+        visibility: (heroVisible || contactVisible || finalCtaVisible || (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 100)) ? 'hidden' : 'visible', 
+        opacity: (heroVisible || contactVisible || finalCtaVisible || (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 100)) ? 0 : 1, 
+        transition: 'opacity .2s, visibility .2s' 
+      }}>
         <button onClick={() => scrollTo('contact')} className="btn-primary" style={{ width: '100%', fontSize: 15 }}>{t.stickyCtaBtn}</button>
       </div>
 
