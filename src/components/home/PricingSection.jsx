@@ -38,7 +38,8 @@ export default function PricingSection({ t, onSelectPackage }) {
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10, flexGrow: 1, marginBottom: 24 }}>
                 {card.features.map(f => (
                   <li key={f} style={{ fontSize: 14, color: card.dark ? 'rgba(255,255,255,0.7)' : '#4B5563', display: 'flex', gap: 8, alignItems: 'flex-start' }}>
-                    <span style={{ color: card.featured ? C.blue : C.green, fontWeight: 700, flexShrink: 0 }}>✓</span>{f}
+                    {/* ИСПРАВЛЕНО: Теперь цвет всегда C.green */}
+                    <span style={{ color: C.green, fontWeight: 700, flexShrink: 0 }}>✓</span>{f}
                   </li>
                 ))}
               </ul>
