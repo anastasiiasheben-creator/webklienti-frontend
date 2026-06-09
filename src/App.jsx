@@ -177,6 +177,9 @@ function HomePage() {
           .montwell-facts { grid-template-columns: 1fr 1fr !important; }
           .sticky-cta { display: flex !important; }
           .footer-links { flex-direction: column !important; gap: 8px !important; }
+          
+          /* ИСПРАВЛЕНО: Теперь прижимаем к левому краю ТОЛЬКО на мобилках */
+          .trust-bullets { justify-content: flex-start !important; }
         }
         @media (max-width: 480px) { .solution-grid { grid-template-columns: 1fr !important; } }
         .btn-primary { display: inline-flex; align-items: center; justify-content: center; height: 52px; padding: 0 24px; border-radius: 12px; background: #2563EB; color: #fff; font-size: 16px; font-weight: 600; border: none; cursor: pointer; transition: all .15s; text-decoration: none; font-family: 'Inter', sans-serif; }
@@ -186,7 +189,8 @@ function HomePage() {
         .btn-secondary { display: inline-flex; align-items: center; justify-content: center; height: 52px; padding: 0 24px; border-radius: 12px; background: #FFFFFF; color: #111827; font-size: 16px; font-weight: 600; border: 1px solid #E5E7EB; cursor: pointer; transition: all .15s; font-family: 'Inter', sans-serif; }
         .btn-secondary:hover { background: #F9FAFB; transform: translateY(-1px); }
         .btn-secondary:active { transform: translateY(0); }
-        .trust-bullets { justify-content: flex-start !important; }
+        
+        /* Из этой строки убрали принудительный flex-start, чтобы работал десктопный center */
         .card { background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 16px; padding: 24px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); transition: all .2s; }
         .card:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
         .section-label { font-size: 14px; font-weight: 500; color: #2563EB; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
