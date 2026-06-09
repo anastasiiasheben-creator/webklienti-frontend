@@ -277,7 +277,7 @@ function HomePage() {
 
         {/* Firemné údaje umiestnené pod ikonami */}
         <p style={{ marginBottom: 12, fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>
-          IČO: XXXXXXXX &bull; Trnava, Slovensko
+          IČO: 56360495 &bull; Trnava, Slovensko
         </p>
 
         <p style={{ marginBottom: 8 }}>{t.footerRights}</p>
