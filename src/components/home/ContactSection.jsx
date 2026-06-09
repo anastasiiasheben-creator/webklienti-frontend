@@ -108,8 +108,17 @@ export default function ContactSection({ t, lang, form, setForm, formStatus, set
               </label>
             </div>
             {consentError && <p style={{ color: C.red, fontSize: 13 }}>⚠️ {t.consentError}</p>}
-            {/* Trust bullets */}
-            <div style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap', marginTop: '8px' }}>
+            
+            {/* Submit Button */}
+            <button
+              onClick={onSubmit} disabled={formStatus === 'loading'} className="btn-primary"
+              style={{ width: '100%', opacity: formStatus === 'loading' ? 0.7 : 1, fontSize: 16 }}
+            >
+              {formStatus === 'loading' ? t.submitting : t.submitBtn}
+            </button>
+
+            {/* OPRAVENÉ: Trust bullets presunuté pod odosielacie tlačidlo */}
+            <div style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap', marginTop: '12px' }}>
               {[
                 { en: 'First draft free', sk: 'Návrh zdarma', cz: 'Návrh zdarma' },
                 { en: 'Reply in 24h', sk: 'Odpovieme do 24h', cz: 'Odpovíme do 24h' },
@@ -121,13 +130,6 @@ export default function ContactSection({ t, lang, form, setForm, formStatus, set
                 </span>
               ))}
             </div>
-            {/* Submit */}
-            <button
-              onClick={onSubmit} disabled={formStatus === 'loading'} className="btn-primary"
-              style={{ width: '100%', opacity: formStatus === 'loading' ? 0.7 : 1, fontSize: 16 }}
-            >
-              {formStatus === 'loading' ? t.submitting : t.submitBtn}
-            </button>
           </div>
         )}
       </div>
