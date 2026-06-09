@@ -31,7 +31,6 @@ function ScrollToTop() {
 }
 
 const T = { sk, cz, en };
-// OPRAVENO: Přidán výchozí klíč 'package'
 const EMPTY_FORM = { name: '', email: '', phone: '', website: '', package: '', message: '', consent: false };
 
 function HomePage() {
@@ -46,6 +45,7 @@ function HomePage() {
   const [navScrolled, setNavScrolled] = useState(false);
   const [contactVisible, setContactVisible] = useState(false);
   const [heroVisible, setHeroVisible] = useState(true);
+  const [finalCtaVisible, setFinalCtaVisible] = useState(false);
 
   const { pathname } = useLocation();
 
@@ -67,7 +67,6 @@ function HomePage() {
   }, []);
 
   useEffect(() => {
-    // Tip: Ujisti se, že HeroSection začíná s <div> tagem jako přímý potomek <main>
     const hero = document.querySelector('main > div:first-child');
     if (!hero) return;
     const observer = new IntersectionObserver(
@@ -78,15 +77,27 @@ function HomePage() {
     return () => observer.disconnect();
   }, []);
 
+  // OPRAVA 2: sledujeme viditeľnosť FinalCtaSection
+  useEffect(() => {
+    const el = document.getElementById('final-cta');
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setFinalCtaVisible(entry.isIntersecting),
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   const t = T[lang];
   const seo = { title: t.seoTitle, description: t.seoDescription, url: t.seoUrl };
   const currentCanonicalUrl = `https://www.webklienti.com${pathname}`;
 
-  const scrollTo = (id) => { 
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }); 
-    setMenuOpen(false); 
+  const scrollTo = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    setMenuOpen(false);
   };
-  
+
   const acceptCookies = () => { localStorage.setItem('wk_cookie', '1'); setCookieVisible(false); };
   const declineCookies = () => { localStorage.setItem('wk_cookie', '0'); setCookieVisible(false); };
 
@@ -117,9 +128,9 @@ function HomePage() {
     }
   };
 
-  const handleSelectPackage = (pkg) => { 
-    setForm(p => ({ ...p, package: pkg })); 
-    setTimeout(() => scrollTo('contact'), 50); // Drobný timeout zajistí bezpečný scroll po změně stavu
+  const handleSelectPackage = (pkg) => {
+    setForm(p => ({ ...p, package: pkg }));
+    setTimeout(() => scrollTo('contact'), 50);
   };
 
   const langBtn = (code) => ({
@@ -182,10 +193,16 @@ function HomePage() {
         input, select, textarea { font-family: 'Inter', sans-serif; }
         input:focus, select:focus, textarea:focus { outline: none; border-color: #2563EB !important; box-shadow: 0 0 0 3px rgba(37,99,235,0.12); }
         input[type="checkbox"]:focus { outline: 2px solid #2563EB; outline-offset: 2px; }
-        
         .nav-phone { display: flex; align-items: center; gap: 6px; color: #111827; text-decoration: none; font-size: 14px; font-weight: 600; transition: color .15s; }
         .nav-phone:hover { color: #2563EB; }
       `}</style>
+
+      {/* OPRAVA 1: Urgency bar — plný solidný pás, nie pill */}
+      <div style={{ background: C.blue, padding: '10px 24px', textAlign: 'center' }}>
+        <span style={{ fontSize: 13, fontWeight: 600, color: '#fff', letterSpacing: 0.2 }}>
+          {t.heroBadge}
+        </span>
+      </div>
 
       {/* NAV */}
       <nav style={{ position: 'sticky', top: 0, zIndex: 100, background: 'rgba(255,255,255,0.97)', backdropFilter: 'blur(8px)', borderBottom: `1px solid ${C.border}`, padding: '0 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: 64, boxShadow: navScrolled ? '0 4px 20px rgba(0,0,0,0.08)' : 'none', transition: 'box-shadow .2s', gap: 12 }}>
@@ -208,7 +225,7 @@ function HomePage() {
               <button key={code} onClick={() => setLang(code)} style={langBtn(code)}>{code.toUpperCase()}</button>
             ))}
           </div>
-          <button onClick={() => scrollTo('contact')} className="btn-primary" style={{ height: 40, fontSize: 14, padding: '0 18px' }}>{t.navCta}</button> 
+          <button onClick={() => scrollTo('contact')} className="btn-primary" style={{ height: 40, fontSize: 14, padding: '0 18px' }}>{t.navCta}</button>
         </div>
         <button onClick={() => setMenuOpen(!menuOpen)} className="hamburger" aria-label="Menu" style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', padding: 8, flexDirection: 'column', gap: 5 }}>
           <span style={{ display: 'block', width: 24, height: 2, background: menuOpen ? C.blue : C.text, transition: 'all .3s', transform: menuOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none' }} />
@@ -223,11 +240,9 @@ function HomePage() {
             <button key={i} onClick={() => scrollTo(NAV_IDS[i])} style={{ background: 'none', border: 'none', color: C.text, cursor: 'pointer', fontSize: 18, fontWeight: 600, textAlign: 'left', padding: '8px 0', fontFamily: 'Inter, sans-serif' }}>{label}</button>
           ))}
           <Link to="/blog" onClick={() => setMenuOpen(false)} style={{ color: C.text, textDecoration: 'none', fontSize: 18, fontWeight: 600, padding: '8px 0' }}>Blog</Link>
-          
           <a href="tel:+421907890600" className="nav-phone" style={{ fontSize: 16, padding: '8px 0' }}>
             <FaPhoneAlt size={14} style={{ color: C.blue }} /> +421 907 890 600
           </a>
-
           <div style={{ display: 'flex', gap: 8, paddingTop: 4 }}>
             {['sk', 'cz', 'en'].map(code => (
               <button key={code} onClick={() => setLang(code)} style={langBtn(code)}>{code.toUpperCase()}</button>
@@ -246,7 +261,10 @@ function HomePage() {
         <PricingSection t={t} onSelectPackage={handleSelectPackage} />
         <RiskSection t={t} />
         <FAQSection t={t} openFaq={openFaq} setOpenFaq={setOpenFaq} />
-        <FinalCtaSection t={t} onCta={() => scrollTo('contact')} />
+        {/* OPRAVA 2: pridané id="final-cta" pre IntersectionObserver */}
+        <div id="final-cta">
+          <FinalCtaSection t={t} onCta={() => scrollTo('contact')} />
+        </div>
         <ContactSection
           t={t} lang={lang}
           form={form} setForm={setForm}
@@ -256,12 +274,12 @@ function HomePage() {
         />
       </main>
 
-      {/* STICKY MOBILE CTA */}
-      <div className="sticky-cta" style={{ display: 'none', position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 998, background: C.white, borderTop: `1px solid ${C.border}`, padding: '12px 16px 20px', boxShadow: '0 -4px 20px rgba(0,0,0,0.08)', visibility: (heroVisible || contactVisible) ? 'hidden' : 'visible', opacity: (heroVisible || contactVisible) ? 0 : 1, transition: 'opacity .2s, visibility .2s' }}>
+      {/* OPRAVA 2: sticky CTA skryté aj keď je viditeľná FinalCtaSection */}
+      <div className="sticky-cta" style={{ display: 'none', position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 998, background: C.white, borderTop: `1px solid ${C.border}`, padding: '12px 16px 20px', boxShadow: '0 -4px 20px rgba(0,0,0,0.08)', visibility: (heroVisible || contactVisible || finalCtaVisible) ? 'hidden' : 'visible', opacity: (heroVisible || contactVisible || finalCtaVisible) ? 0 : 1, transition: 'opacity .2s, visibility .2s' }}>
         <button onClick={() => scrollTo('contact')} className="btn-primary" style={{ width: '100%', fontSize: 15 }}>{t.stickyCtaBtn}</button>
       </div>
 
-     {/* FOOTER */}
+      {/* FOOTER */}
       <footer id="footer" style={{ background: C.dark, color: 'rgba(255,255,255,0.7)', textAlign: 'center', padding: '48px 24px', fontSize: 14 }}>
         <img src={logoImg} alt="WebKlienti logo" width="36" height="36" style={{ height: 36, width: 36, objectFit: 'contain', marginBottom: 16, borderRadius: '50%' }} />
         <div className="footer-links" style={{ display: 'flex', gap: 24, justifyContent: 'center', marginBottom: 16, flexWrap: 'wrap' }}>
@@ -274,12 +292,9 @@ function HomePage() {
           <a href="https://www.facebook.com/profile.php?id=61588797397714" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style={{ width: 44, height: 44, background: '#1877F2', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 18, textDecoration: 'none' }}><FaFacebookF /></a>
           <a href="https://www.instagram.com/webklienti" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style={{ width: 44, height: 44, background: 'linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 18, textDecoration: 'none' }}><FaInstagram /></a>
         </div>
-
-        {/* Firemné údaje umiestnené pod ikonami */}
         <p style={{ marginBottom: 12, fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>
           IČO: 56360495 &bull; Trnava, Slovensko
         </p>
-
         <p style={{ marginBottom: 8 }}>{t.footerRights}</p>
         <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)', fontStyle: 'italic' }}>{t.statNote}</p>
         <div style={{ marginTop: 32, paddingTop: 32, borderTop: '1px solid rgba(255,255,255,0.1)' }}>
