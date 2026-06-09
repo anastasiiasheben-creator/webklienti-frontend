@@ -268,6 +268,7 @@ function HomePage() {
           <a href="mailto:info@webklienti.com" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>info@webklienti.com</a>
           <a href="tel:+421907890600" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>+421 907 890 600</a>
           <span>webklienti.com</span>
+          <span style={{ color: 'rgba(255,255,255,0.6)' }}>IČO: 56360495, Trnava, Slovensko</span>
         </div>
         <div style={{ display: 'flex', gap: 12, justifyContent: 'center', marginBottom: 20 }}>
           <a href="https://wa.me/421907890600" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" style={{ width: 44, height: 44, background: '#25D366', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 20, textDecoration: 'none' }}><FaWhatsapp /></a>
