@@ -132,7 +132,7 @@ const sk = {
   ],
   "finalCtaTitle": "Pripravení získať profesionálny web pre vašu firmu?",
   "finalCtaSub": "Pošlite nám základné informácie a do 24 hodín vám pripravíme návrh zdarma.",
-  "finalCtaBtn": "Získať analýzu webu zdarma →",
+  "finalCtaBtn": "Získať nezáväznú cenovú ponuku →",
   "stickyCtaBtn": "Chcem web za 299 € →",
   "formLabel": "Objednávka",
   "formTitle": "Požiadajte o nezáväzný návrh webu zdarma",
@@ -212,6 +212,10 @@ const sk = {
     {
       "q": "Kedy a koľko platím?",
       "a": "Po potvrdení objednávky uhradíte zálohu 50 % z ceny. Zvyšok platíte až po dokončení a schválení webu."
+    },
+    {
+      "q": "Prečo stojí web len 299 €?",
+      "a": "Neprevádzkujeme veľkú agentúru. Používame overený proces, vďaka čomu vieme dodať kvalitný firemný web rýchlejšie a za nižšiu cenu."
     },
     {
       "q": "Pomôžete s textami a fotkami?",
