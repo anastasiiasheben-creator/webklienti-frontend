@@ -5,57 +5,59 @@ const cz = {
     "FAQ",
     "Kontakt"
   ],
-  "navOrder": "Objednat",
-  "heroBadge": "🚀 Akce — 50% sleva do konce měsíce",
-  "heroTitle": "Získejte více zákazníků z Google bez placené reklamy",
-  "heroSub": "Přeměníme váš web na systém, který přináší pravidelné poptávky a reálné klienty.",
+  "navCta": "Objednat",
+  "heroBadge": "🚀 Akce — 50 % sleva do konce měsíce",
+  "heroTitle": "Profesionální webová stránka pro firmu za fixní cenu 299 €",
+  "heroSub": "Moderní firemný web, mobilní verze, kontaktní formulář a základní SEO. Dodání do 5 dní.",
   "heroBenefits": [
-    "Více poptávek z Google bez navyšování trafficu",
-    "Web optimalizovaný na konverze, ne jen design",
-    "Jasné měření toho, co přináší zákazníky"
+    "Moderní design na míru",
+    "Funguje perfektně na mobilu",
+    "Kontaktní formulář + Google Mapy",
+    "Základní SEO v ceně",
+    "Dodání do 5 dní"
   ],
-  "heroCta": "Chci analýzu, proč mi web nepřináší zákazníky",
+  "heroCta": "Chci nezávaznou cenovou nabídku",
   "heroMicro": "odpověď do 24 hodin · bez závazků · konkrétní doporučení",
   "marketTag": "🌍 Slovensko · Česko · Evropa",
   "problemLabel": "Problém",
-  "problemTitle": "Proč většina firemních webů nefunguje",
+  "problemTitle": "Proč malé firmy přicházejí o zákazníky online",
   "problemPoints": [
-    "Web vypadá dobře, ale nepřináší poptávky",
-    "Návštěvníci nechápou, co mají udělat",
-    "Chybí jasná nabídka a výzva k akci",
-    "SEO je nepropojené s prodejem",
-    "Chybí měření výsledků"
+    "Nemáte webovou stránku nebo působí zastarale",
+    "Na mobilu se špatně používá",
+    "Klienti vás neumí najít na Google",
+    "Konkurence působí profesionálněji",
+    "Nevíte, kolik stojí pořádný web"
   ],
   "problemClose": "Výsledek: návštěvnost existuje, ale byznys neroste.",
-  "agitTitle": "Každý měsíc bez optimalizace = ztracené zakázky",
+  "agitTitle": "Každý měsíc bez profesionálního webu = ztracení zákazníci",
   "agitText": "Pokud váš web nepracuje jako prodejní systém, platíte za návštěvnost i design — ale nevrací se vám to v poptávkách.",
   "solutionLabel": "Řešení",
   "solutionTitle": "Jak z webu děláme systém na získávání zákazníků",
   "solutionSteps": [
     {
       "num": "01",
-      "title": "Analýza",
-      "desc": "Zjistíme, proč web nepřeměňuje návštěvníky na poptávky."
+      "title": "Objednávka",
+      "desc": "Vyberete si balíček a odešlete formulář."
     },
     {
       "num": "02",
-      "title": "Optimalizace konverzí",
-      "desc": "Upravíme message, UX a CTA tak, aby klient věděl, co má udělat."
+      "title": "Návrh do 24 hodin",
+      "desc": "Připravíme první návrh webu podle vašeho podnikání."
     },
     {
       "num": "03",
-      "title": "SEO strategie",
-      "desc": "Témata a obsah, které přinášejí reálné klienty z Google."
+      "title": "Úpravy a schválení",
+      "desc": "Zapracujeme vaše připomínky a doladíme detaily."
     },
     {
       "num": "04",
-      "title": "Tracking",
-      "desc": "Vidíte přesně, co přináší zákazníky — žádné dohady."
+      "title": "Hotový web za 5 dní",
+      "desc": "Spustíme web online a předáme vám všechny přístupy."
     }
   ],
   "pricingLabel": "Ceník",
   "pricingTitle": "Vyberte úroveň růstu",
-  "pricingNote": "Všechny balíčky se zaměřují na zvýšení poptávek, ne jen na návštěvnost.",
+  "pricingNote": "Vyberte si řešení podle velikosti vašeho podnikání.",
   "orderBtn": "Začít s tímto balíčkem →",
   "cards": [
     {
@@ -67,14 +69,14 @@ const cz = {
       "forWhom": "Pro živnostníky a malé lokální firmy",
       "features": [
         "Moderní design na míru",
-        "Mobile friendly",
+        "Optimalizováno pro mobil",
         "Kontaktní formulář + mapa",
         "WhatsApp propojení",
         "Facebook propojení",
         "Základní SEO",
-        "GDPR ready",
+        "GDPR připraveno",
         "Google Business profil (BONUS)",
-        "Hotovo za 5 dní"
+        "Hotový web za 5 dní"
       ],
       "featured": false,
       "dark": false
@@ -100,10 +102,10 @@ const cz = {
     },
     {
       "tag": "Performance",
-      "badge": "High Impact",
+      "badge": "Vysoký dopad",
       "name": "Internetový obchod",
       "price": "999 €",
-      "old": "běžně 1999 €",
+      "old": "standardně 1999 €",
       "forWhom": "Pro růst a škálování — prodej produktů online",
       "features": [
         "Vše z Growth +",
@@ -112,15 +114,15 @@ const cz = {
         "Automatické faktury",
         "Správa objednávek",
         "WhatsApp + Facebook shop",
-        "Hotovo za 14 dní"
+        "Dodání za 14 dní"
       ],
       "featured": false,
       "dark": true
     }
   ],
-  "featuredBadge": "DOPORUČENO",
+  "featuredBadge": "Doporučeno",
   "reviewsLabel": "Reference",
-  "reviewsTitle": "Výsledky, které klienti dosahují",
+  "reviewsTitle": "Nedávno dokončený projekt",
   "riskTitle": "Bez rizika",
   "riskText": "První návrh webu dostanete do 24 hodin zdarma. Platíte jen 50 % zálohu — zbytek až po schválení hotového webu.",
   "riskPoints": [
@@ -128,13 +130,13 @@ const cz = {
     "✓ Doporučení před realizací",
     "✓ Platíte až po schválení návrhu"
   ],
-  "finalCtaTitle": "Chcete zjistit, proč vám web nepřináší zákazníky?",
-  "finalCtaSub": "Získejte bezplatnou analýzu webu — konkrétní kroky, ne obecné rady.",
-  "finalCtaBtn": "Získat analýzu webu zdarma →",
-  "stickyCtaBtn": "Chci analýzu webu →",
+  "finalCtaTitle": "Připraveni získat profesionální web pro vaši firmu?",
+  "finalCtaSub": "Pošlete nám základní informace a do 24 hodin vám připravíme návrh zdarma.",
+  "finalCtaBtn": "Získat nezávaznou cenovou nabídku →",
+  "stickyCtaBtn": "Chci web za 299 € →",
   "formLabel": "Objednávka",
-  "formTitle": "Získejte 3 konkrétní způsoby, jak získat více zákazníků z Google",
-  "formSub": "Vyplňte formulář a do 24 hodin vám pošleme první návrh webu zdarma.",
+  "formTitle": "Požádejte o nezávazný návrh webu zdarma",
+  "formSub": "Do 24 hodin vám připravíme návrh řešení a cenovou nabídku.",
   "fields": [
     {
       "key": "name",
@@ -209,7 +211,11 @@ const cz = {
     },
     {
       "q": "Kdy a kolik platím?",
-      "a": "Po potvrzení objednávky uhradíte zálohu 50 % z ceny. Zbytek platíte až po dokončení a schválení webu."
+      "a": "První návrh do 24 hodin máte zcela zdarma. Pokud se vám líbí a schválíte ho, uhradíte 50 % zálohu a začneme pracovat na ostrém webu. Zbytek doplácíte až po kompletním dokončení."
+    },
+    {
+      "q": "Proč stojí web jen 299 €?",
+      "a": "Neprovozujeme velkou agenturu. Používáme ověřený proces, díky čemuž dokážeme dodat kvalitní firemní web rychleji a za nižší cenu."
     },
     {
       "q": "Pomůžete s texty a fotkami?",
@@ -221,7 +227,7 @@ const cz = {
     },
     {
       "q": "Co když se mi návrh nebude líbit?",
-      "a": "První návrh pošleme do 24 hodin. Pokud se vám nebude líbit, upravíme ho. Platíte až po schválení návrhu."
+      "a": "První návrh pošleme do 24 hodin. Pokud se vám nebude líbit, upravíme ho nebo můžete spolupráci bezplatně ukončit. Platíte až po schválení konceptu."
     }
   ],
   "guaranteeTitle": "Bez rizika",
@@ -236,12 +242,12 @@ const cz = {
   "cookieDecline": "Odmítnout",
   "privacyLink": "Ochrana soukromí",
   "privacyTitle": "Ochrana osobních údajů",
-  "privacyContent": "Provozovatel: Web Klienti, info@webklienti.com, +421 907 890 600\n\nJaké údaje sbíráme:\n• Jméno, příjmení, adresa, e-mail, telefon — při odeslání objednávky\n\nK čemu je používáme:\nPlnění smlouvy, vedení účetní evidence a vzájemná komunikace.\n\nDoba uchovávání:\nPo dobu trvání smlouvy a 5 let po jejím ukončení.\n\nVaše práva:\nMáte právo na přístup ke svým údajům, jejich opravu, vymazání nebo přenositelnost.\n\nCookies:\nPoužíváme Google Analytics ke sledování návštěvnosti.\n\nPlatné od: 1.1.2025",
+  "privacyContent": "Provozovatel: Web Klienti, info@webklienti.com, +421 907 890 600\n\nJaké údaje sbíráme:\n• Jméno, příjmení, e-mail, telefon — při odeslání formuláře\n\nK čemu je používáme:\nPlnění smlouvy, vedení účetní evidence a vzájemná komunikace.\n\nDoba uchovávání:\nPo dobu trvání smlouvy a 5 let po její ukončení.\n\nVaše práva:\nMáte právo na přístup ke svým údajům, jejich opravu, vymazání nebo přenositelnost. Žádost zasílejte na info@webklienti.com.\n\nCookies:\nPoužíváme Google Analytics ke sledování návštěvnosti.\n\nPlatné od: 1.1.2025",
   "statNote": "Nový projekt · Každý web děláme individuálně bez šablon",
-  "seoTitle": "WebKlienti — Tvorba webů od 299 € | SK & CZ",
-  "seoDescription": "Tvorba moderních webových stránek a e-shopů od 299 €, hotové do 5 dní. Weby pro živnostníky a malé firmy v ČR a SR. Bez měsíčních poplatků.",
+  "seoTitle": "WebKlienti — Tvorba webových stránek pro firmy od 299 € | SK & CZ",
+  "seoDescription": "Tvorba moderních webových stránek a e-shopů pro firmy od 299 €. Dodání do 5 dní. Bez měsíčních poplatků. Slovensko a Česko.",
   "seoUrl": "https://www.webklienti.com",
-  "heroTag": "Web agentura pro malé firmy · SK · CZ",
+  "heroTag": "Webová agentura pro malé firmy · SK · CZ",
   "heroCtaSec": "Prohlédnout ukázky →",
   "trustStrip": [
     "Přijímáme jen 2 nové projekty týdně",
@@ -249,85 +255,9 @@ const cz = {
     "Slovensko / Česko",
     "Zaměřeno na poptávky"
   ],
-  "problems": [
-    {
-      "icon": "📉",
-      "text": "Žádné poptávky z webu"
-    },
-    {
-      "icon": "🐌",
-      "text": "Slabá viditelnost na Google"
-    },
-    {
-      "icon": "📵",
-      "text": "Zastaralá nebo žádná stránka"
-    },
-    {
-      "icon": "👻",
-      "text": "Zákazníci odcházejí bez akce"
-    }
-  ],
-  "solutions": [
-    {
-      "icon": "⚡",
-      "title": "Rychlé načítání",
-      "desc": "PageSpeed 90+ — Google vás doporučuje více"
-    },
-    {
-      "icon": "🔍",
-      "title": "SEO připraveno",
-      "desc": "Najdou vás zákazníci dříve než konkurenci"
-    },
-    {
-      "icon": "📱",
-      "title": "Mobil-first design",
-      "desc": "70% zákazníků hledá z mobilu"
-    },
-    {
-      "icon": "🎯",
-      "title": "Optimalizováno pro konverze",
-      "desc": "Každý prvek vede k poptávkám"
-    }
-  ],
-  "casesLabel": "Reálný příklad",
-  "casesTitle": "Montwell — zákazníci začali přicházet hned po spuštění",
-  "casesProblem": "Problém",
-  "casesSolution": "Řešení",
-  "casesResult": "Výsledek",
-  "casesBtn": "Prohlédnout web →",
-  "offerLabel": "Co dostanete",
-  "offerTitle": "Profesionální web, který začne pracovat pro vás",
-  "offerItems": [
-    "Moderní design na míru",
-    "SEO připravený od prvního dne",
-    "Optimalizovaný pro poptávky a Google"
-  ],
-  "offerCta": "Chci web za 299 € →",
-  "faqs": [
-    {
-      "q": "Kolik stojí web?",
-      "a": "One-page web od 299 €, prezentační web od 499 €, e-shop od 999 €. Cena je konečná, bez skrytých poplatků."
-    },
-    {
-      "q": "Jak dlouho trvá výroba?",
-      "a": "One-page web je hotový za 5 dní, prezentační web za 7 dní, e-shop za 14 dní."
-    },
-    {
-      "q": "Děláte také SEO?",
-      "a": "Ano, každý web je SEO připravený. Nabízíme i pokročilé SEO balíčky."
-    },
-    {
-      "q": "Co potřebuji připravit?",
-      "a": "Nic. My se postaráme o vše — texty, design, techniku. Stačí vyplnit formulář."
-    }
-  ],
-  "finalCta": "Chcete web, který vám přináší zákazníky?",
-  "statClients": "Spokojených klientů",
-  "statLeads": "Více poptávek",
-  "statDays": "Hotový web",
   "consentLabel": "Souhlasím se zpracováním osobních údajů v souladu s",
   "consentLink": "Ochranou soukromí",
-  "consentError": "Prosím potvrďte souhlas se zpracováním osobních údajů."
+  "consentError": "Prosím, potvrďte souhlas se zpracováním osobních údajů."
 };
 
 export default cz;
