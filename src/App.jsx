@@ -261,20 +261,25 @@ function HomePage() {
         <button onClick={() => scrollTo('contact')} className="btn-primary" style={{ width: '100%', fontSize: 15 }}>{t.stickyCtaBtn}</button>
       </div>
 
-      {/* FOOTER */}
+     {/* FOOTER */}
       <footer id="footer" style={{ background: C.dark, color: 'rgba(255,255,255,0.7)', textAlign: 'center', padding: '48px 24px', fontSize: 14 }}>
         <img src={logoImg} alt="WebKlienti logo" width="36" height="36" style={{ height: 36, width: 36, objectFit: 'contain', marginBottom: 16, borderRadius: '50%' }} />
         <div className="footer-links" style={{ display: 'flex', gap: 24, justifyContent: 'center', marginBottom: 16, flexWrap: 'wrap' }}>
           <a href="mailto:info@webklienti.com" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>info@webklienti.com</a>
           <a href="tel:+421907890600" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>+421 907 890 600</a>
           <span>webklienti.com</span>
-          <span style={{ color: 'rgba(255,255,255,0.6)' }}>IČO: 56360495, Trnava, Slovensko</span>
         </div>
         <div style={{ display: 'flex', gap: 12, justifyContent: 'center', marginBottom: 20 }}>
           <a href="https://wa.me/421907890600" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" style={{ width: 44, height: 44, background: '#25D366', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 20, textDecoration: 'none' }}><FaWhatsapp /></a>
           <a href="https://www.facebook.com/profile.php?id=61588797397714" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style={{ width: 44, height: 44, background: '#1877F2', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 18, textDecoration: 'none' }}><FaFacebookF /></a>
           <a href="https://www.instagram.com/webklienti" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style={{ width: 44, height: 44, background: 'linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 18, textDecoration: 'none' }}><FaInstagram /></a>
         </div>
+
+        {/* Firemné údaje umiestnené pod ikonami */}
+        <p style={{ marginBottom: 12, fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>
+          IČO: XXXXXXXX &bull; Trnava, Slovensko
+        </p>
+
         <p style={{ marginBottom: 8 }}>{t.footerRights}</p>
         <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)', fontStyle: 'italic' }}>{t.statNote}</p>
         <div style={{ marginTop: 32, paddingTop: 32, borderTop: '1px solid rgba(255,255,255,0.1)' }}>
