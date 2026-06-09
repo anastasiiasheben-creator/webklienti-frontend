@@ -44,10 +44,9 @@ export default function PricingSection({ t, onSelectPackage }) {
               </ul>
               <button
                 onClick={() => onSelectPackage(card.name + ' — ' + card.price)}
-                className={card.featured ? 'btn-primary' : 'btn-secondary'}
+                className="btn-primary"
                 style={{
                   width: '100%',
-                  ...(card.dark && !card.featured ? { background: 'rgba(255,255,255,0.1)', color: '#fff', border: '1px solid rgba(255,255,255,0.2)' } : {}),
                 }}
               >
                 {t.orderBtn}
