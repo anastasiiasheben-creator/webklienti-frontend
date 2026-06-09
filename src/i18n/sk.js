@@ -5,10 +5,10 @@ const sk = {
     "FAQ",
     "Kontakt"
   ],
-  "navCta": "Objednať",
+  "navCta": "Získať návrh zdarma",
   "heroBadge": "🚀 Akcia — 50 % zľava do konca mesiaca",
-  "heroTitle": "Profesionálna webstránka pre firmu za fixnú cenu 299 €",
-  "heroSub": "Moderný firemný web, mobilná verzia, kontaktný formulár a základné SEO. Dodanie do 5 dní.",
+  "heroTitle": "Weby, ktoré pomáhajú malým firmám získavať zákazníkov online",
+  "heroSub": "Moderný web + SEO + konverzná štruktúra. Spustené do 5 dní.",
   "heroBenefits": [
     "Moderný dizajn na mieru",
     "Funguje perfektne na mobile",
