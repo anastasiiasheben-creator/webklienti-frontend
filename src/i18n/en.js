@@ -192,7 +192,7 @@ const en = {
   "messagePlaceholder": "What industry are you in? What do you expect most from this website?",
   "submitBtn": "Submit Inquiry & Get Free Draft →",
   "submitting": "Processing data...",
-  "successTitle": "Excellent, data received!",
+  "successTitle": "Great, we have successfully received your inquiry!",
   "successMsg": "We have logged your inquiry. Our team is jumping straight into market analysis, and we will contact you with your custom visual layout within 24 hours.",
   "newOrder": "New Lead from Web",
   "errorMsg": "❌ The system failed to transmit the form. Please try again or call our direct line above.",
