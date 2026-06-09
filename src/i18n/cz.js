@@ -192,7 +192,7 @@ const cz = {
   "messagePlaceholder": "Čemu se věnujete? Co od nového webu očekáváte nejvíc?",
   "submitBtn": "Odeslat poptávku a získat návrh zdarma →",
   "submitting": "Připravuji data...",
-  "successTitle": "Skvělé, data dorazila!",
+  "successTitle": "Skvělé, Vaši poptávku jsme úspěšně přijali!",
   "successMsg": "Vaši poptávku jsme zaevidovali. Ihned se pouštíme do analýzy a do 24 hodin vás budeme kontaktovat s hotovým návrhem.",
   "newOrder": "Nová poptávka z webu",
   "errorMsg": "❌ Systému se nepodařilo odeslat formulář. Zkuste to znovu nebo nám zavolejte na číslo nahoře.",
