@@ -5,16 +5,16 @@ const sk = {
     "FAQ",
     "Kontakt"
   ],
-  "navOrder": "Objednať",
+  "navCta": "Objednať",
   "heroBadge": "🚀 Akcia — 50% zľava do konca mesiaca",
   "heroTitle": "Profesionálna web stránka pre firmu za fixnú cenu 299 €",
-  "heroSub": "Moderný firemný web, mobilná verzia, kontaktný formulár a základné SEO. Hotový za 5 dní.",
+  "heroSub": "Moderný firemný web, mobilná verzia, kontaktný formulár a základné SEO. Dodanie do 5 dní.",
   "heroBenefits": [
     "Moderný dizajn na mieru",
     "Funguje perfektne na mobile",
     "Kontaktný formulár + Google Mapy",
     "Základné SEO v cene",
-    "Hotový za 5 dní"
+    "Dodanie do 5 dní"
   ],
   "heroCta": "Chcem nezáväznú cenovú ponuku",
   "heroMicro": "odpoveď do 24 hodín · bez záväzkov · konkrétne odporúčania",
@@ -69,14 +69,14 @@ const sk = {
       "forWhom": "Pre živnostníkov a malé lokálne firmy",
       "features": [
         "Moderný dizajn na mieru",
-        "Mobile friendly",
+        "Optimalizované pre mobil",
         "Kontaktný formulár + mapa",
         "WhatsApp prepojenie",
         "Facebook prepojenie",
         "Základné SEO",
-        "GDPR ready",
+        "GDPR pripravené",
         "Google Business profil (BONUS)",
-        "Hotové za 5 dní"
+        "Hotový web za 5 dní"
       ],
       "featured": false,
       "dark": false
@@ -102,10 +102,10 @@ const sk = {
     },
     {
       "tag": "Performance",
-      "badge": "High Impact",
+      "badge": "Vysoký dopad",
       "name": "Internetový obchod",
       "price": "999 €",
-      "old": "bežne 1999 €",
+      "old": "štandardne 1999 €",
       "forWhom": "Pre rast a škálovanie — predaj produktov online",
       "features": [
         "Všetko z Growth +",
@@ -114,13 +114,13 @@ const sk = {
         "Automatické faktúry",
         "Správa objednávok",
         "WhatsApp + Facebook shop",
-        "Hotové za 14 dní"
+        "Dodanie za 14 dní"
       ],
       "featured": false,
       "dark": true
     }
   ],
-  "featuredBadge": "ODPORÚČANÉ",
+  "featuredBadge": "Odporúčané",
   "reviewsLabel": "Referencie",
   "reviewsTitle": "Nedávno dokončený projekt",
   "riskTitle": "Bez rizika",
@@ -240,8 +240,8 @@ const sk = {
   "privacyTitle": "Ochrana osobných údajov",
   "privacyContent": "Prevádzkovateľ: Web Klienti, info@webklienti.com, +421 907 890 600\n\nAké údaje zbierame:\n• Meno, priezvisko, adresa, e-mail, telefón — pri odoslaní objednávky\n\nNa čo ich používame:\nPlnenie zmluvy, vedenie účtovnej evidencie a vzájomná komunikácia.\n\nDoba uchovávania:\nPo dobu trvania zmluvy a 5 rokov po jej ukončení.\n\nVaše práva:\nMáte právo na prístup k svojim údajom, ich opravu, vymazanie alebo prenosnosť. Žiadosť zasielajte na info@webklienti.com.\n\nCookies:\nPoužívame Google Analytics na sledovanie návštevnosti.\n\nPlatné od: 1.1.2025",
   "statNote": "Nový projekt · Každý web robíme individuálne bez šablón",
-  "seoTitle": "WebKlienti — Tvorba webstránok od 299 € | Trnava, SK & CZ",
-  "seoDescription": "Tvorba moderných webstránok a e-shopov od 299 €, hotové do 5 dní. Weby pre živnostníkov a malé firmy na Slovensku a v Česku. Bez mesačných poplatkov.",
+  "seoTitle": "WebKlienti — Tvorba web stránok pre firmu od 299 € | SK & CZ",
+  "seoDescription": "Tvorba moderných web stránok a e-shopov pre firmy od 299 €. Dodanie do 5 dní. Bez mesačných poplatkov. Slovensko a Česko.",
   "seoUrl": "https://www.webklienti.com",
   "heroTag": "Web agentúra pre malé firmy · SK · CZ",
   "heroCtaSec": "Pozrieť ukážky →",
@@ -252,7 +252,7 @@ const sk = {
     "Zamerané na dopyty"
   ],
   "consentLabel": "Súhlasím so spracovaním osobných údajov v súlade s",
-  "consentLink": "Ochranou súkromia",
+  "consentLink": "Ochrana súkromia",
   "consentError": "Prosím, potvrďte súhlas so spracovaním osobných údajov."
 };
 
