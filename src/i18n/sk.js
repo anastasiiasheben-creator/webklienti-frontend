@@ -231,10 +231,10 @@ const sk = {
     }
   ],
   "guaranteeTitle": "Bez rizika",
-  "guaranteeText": "Prvý návrh webu dostanete do 24 hodín zdarma. Platíte len 50 % zálohu — zvyšok až po schválení hotového webu. Žiadne skryté poplatky.",
+  "guaranteeText": "Prvý návrh webu dostanete do 24 hodín zdarma.",
   "guaranteeBadges": [
     "✓ Návrh do 24 hodín",
-    "✓ 50 % záloha · 50 % po schválení",
+    "✓ Prvý návrh zdarma bez záväzku",
     "✓ Web je po odovzdaní váš"
   ],
   "cookieMsg": "Táto stránka používa cookies pre lepší zážitok a analytiku.",
