@@ -193,7 +193,7 @@ const sk = {
   "messagePlaceholder": "Čomu sa venujete? Čo od nového webu očakávate najviac?",
   "submitBtn": "Odoslať dopyt a získať návrh zdarma →",
   "submitting": "Pripravujem dáta...",
-  "successTitle": "Skvelé, dáta dorazili!",
+  "successTitle": "Skvelé, Váš dopyt sme úspešne prijali!",
   "successMsg": "Váš dopyt sme zaevidovali. Ihneď sa púšťame do analýzy a do 24 hodín vás budeme kontaktovať s hotovým návrhom.",
   "newOrder": "Nový dopyt z webu",
   "errorMsg": "❌ Systému sa nepodarilo odoslať formulár. Skúste to znova alebo nám zavolajte na číslo hore.",
