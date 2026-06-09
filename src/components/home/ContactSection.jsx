@@ -117,8 +117,8 @@ export default function ContactSection({ t, lang, form, setForm, formStatus, set
               {formStatus === 'loading' ? t.submitting : t.submitBtn}
             </button>
 
-            {/* OPRAVENÉ: Trust bullets presunuté pod odosielacie tlačidlo */}
-            <div style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap', marginTop: '12px' }}>
+            {/* Trust bullets presunuté pod odosielacie tlačidlo */}
+            <div className="trust-bullets" style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap', marginTop: '12px' }}>
               {[
                 { en: 'First draft free', sk: 'Návrh zdarma', cz: 'Návrh zdarma' },
                 { en: 'Reply in 24h', sk: 'Odpovieme do 24h', cz: 'Odpovíme do 24h' },
