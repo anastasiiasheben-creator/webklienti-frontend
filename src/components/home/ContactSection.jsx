@@ -109,12 +109,17 @@ export default function ContactSection({ t, lang, form, setForm, formStatus, set
             </div>
             {consentError && <p style={{ color: C.red, fontSize: 13 }}>⚠️ {t.consentError}</p>}
             {/* Trust bullets */}
-            <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap', marginTop: '8px' }}>
               {[
-                '✓ ' + (lang === 'en' ? 'First draft free' : 'Návrh zdarma'),
-                '✓ ' + (lang === 'en' ? 'Reply in 24h' : lang === 'cz' ? 'Odpovíme do 24h' : 'Odpovieme do 24h'),
-                '✓ ' + (lang === 'en' ? 'No commitment' : lang === 'cz' ? 'Bez závazku' : 'Bez záväzku'),
-              ].map(b => <span key={b} style={{ fontSize: 13, color: C.textSub, fontWeight: 500 }}>{b}</span>)}
+                { en: 'First draft free', sk: 'Návrh zdarma', cz: 'Návrh zdarma' },
+                { en: 'Reply in 24h', sk: 'Odpovieme do 24h', cz: 'Odpovíme do 24h' },
+                { en: 'No commitment', sk: 'Bez záväzku', cz: 'Bez závazku' },
+              ].map((b, i) => (
+                <span key={i} style={{ fontSize: 14, color: C.textSub, fontWeight: 500, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <span style={{ color: '#16A34A', fontSize: '16px', fontWeight: 'bold' }}>✓</span>
+                  {lang === 'en' ? b.en : lang === 'cz' ? b.cz : b.sk}
+                </span>
+              ))}
             </div>
             {/* Submit */}
             <button
