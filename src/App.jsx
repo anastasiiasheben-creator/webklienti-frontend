@@ -31,6 +31,7 @@ function ScrollToTop() {
 }
 
 const T = { sk, cz, en };
+// OPRAVENO: Přidán výchozí klíč 'package'
 const EMPTY_FORM = { name: '', email: '', phone: '', website: '', package: '', message: '', consent: false };
 
 function HomePage() {
@@ -66,6 +67,7 @@ function HomePage() {
   }, []);
 
   useEffect(() => {
+    // Tip: Ujisti se, že HeroSection začíná s <div> tagem jako přímý potomek <main>
     const hero = document.querySelector('main > div:first-child');
     if (!hero) return;
     const observer = new IntersectionObserver(
@@ -80,7 +82,11 @@ function HomePage() {
   const seo = { title: t.seoTitle, description: t.seoDescription, url: t.seoUrl };
   const currentCanonicalUrl = `https://www.webklienti.com${pathname}`;
 
-  const scrollTo = (id) => { document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }); setMenuOpen(false); };
+  const scrollTo = (id) => { 
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }); 
+    setMenuOpen(false); 
+  };
+  
   const acceptCookies = () => { localStorage.setItem('wk_cookie', '1'); setCookieVisible(false); };
   const declineCookies = () => { localStorage.setItem('wk_cookie', '0'); setCookieVisible(false); };
 
@@ -111,7 +117,10 @@ function HomePage() {
     }
   };
 
-  const handleSelectPackage = (pkg) => { setForm(p => ({ ...p, package: pkg })); scrollTo('contact'); };
+  const handleSelectPackage = (pkg) => { 
+    setForm(p => ({ ...p, package: pkg })); 
+    setTimeout(() => scrollTo('contact'), 50); // Drobný timeout zajistí bezpečný scroll po změně stavu
+  };
 
   const langBtn = (code) => ({
     background: lang === code ? C.blue : 'transparent',
@@ -191,7 +200,6 @@ function HomePage() {
           <Link to="/blog" style={{ color: C.textSub, textDecoration: 'none', fontSize: 15, fontWeight: 500 }}>Blog</Link>
         </div>
         <div style={{ display: 'flex', gap: 20, alignItems: 'center' }} className="desktop-nav">
-          {/* PRIDANÉ: Telefónne číslo na desktope */}
           <a href="tel:+421907890600" className="nav-phone">
             <FaPhoneAlt size={12} style={{ color: C.blue }} /> +421 907 890 600
           </a>
@@ -216,7 +224,6 @@ function HomePage() {
           ))}
           <Link to="/blog" onClick={() => setMenuOpen(false)} style={{ color: C.text, textDecoration: 'none', fontSize: 18, fontWeight: 600, padding: '8px 0' }}>Blog</Link>
           
-          {/* PRIDANÉ: Telefónne číslo v mobilnom menu */}
           <a href="tel:+421907890600" className="nav-phone" style={{ fontSize: 16, padding: '8px 0' }}>
             <FaPhoneAlt size={14} style={{ color: C.blue }} /> +421 907 890 600
           </a>
