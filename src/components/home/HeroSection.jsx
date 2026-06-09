@@ -3,12 +3,7 @@ import { C } from '../../lib/constants';
 export default function HeroSection({ t, lang, onCta }) {
   return (
     <div style={{ background: C.white, borderBottom: `1px solid ${C.border}`, padding: '96px 40px' }}>
-      <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-        <div style={{ marginBottom: 24 }}>
-          <span style={{ background: 'rgba(37,99,235,0.08)', color: C.blue, border: `1px solid rgba(37,99,235,0.2)`, padding: '5px 14px', borderRadius: 100, fontSize: 13, fontWeight: 600 }}>
-            {t.heroBadge}
-          </span>
-        </div>
+      <div style={{ maxWidth: 1200, margin: '0 auto' }}>        
         <div className="hero-grid" style={{ display: 'grid', gridTemplateColumns: '7fr 5fr', gap: 64, alignItems: 'center' }}>
           {/* LEFT */}
           <div>
