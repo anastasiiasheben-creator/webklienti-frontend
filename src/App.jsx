@@ -1,7 +1,7 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { FaWhatsapp, FaFacebookF, FaInstagram } from 'react-icons/fa';
+import { FaWhatsapp, FaFacebookF, FaInstagram, FaPhoneAlt } from 'react-icons/fa';
 import logoImg from './assets/logo.webp';
 
 import sk from './i18n/sk';
@@ -46,6 +46,8 @@ function HomePage() {
   const [contactVisible, setContactVisible] = useState(false);
   const [heroVisible, setHeroVisible] = useState(true);
 
+  const { pathname } = useLocation();
+
   useEffect(() => {
     const handler = () => setNavScrolled(window.scrollY > 10);
     window.addEventListener('scroll', handler, { passive: true });
@@ -74,11 +76,9 @@ function HomePage() {
     return () => observer.disconnect();
   }, []);
 
-  // Backend keep-alive is handled externally (UptimeRobot / cron-job.org)
-  // pinging /health server-side — avoids console errors on the client.
-
   const t = T[lang];
   const seo = { title: t.seoTitle, description: t.seoDescription, url: t.seoUrl };
+  const currentCanonicalUrl = `https://www.webklienti.com${pathname}`;
 
   const scrollTo = (id) => { document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }); setMenuOpen(false); };
   const acceptCookies = () => { localStorage.setItem('wk_cookie', '1'); setCookieVisible(false); };
@@ -127,10 +127,10 @@ function HomePage() {
         <html lang={lang} />
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
-        <link rel="canonical" href="https://www.webklienti.com/" />
+        <link rel="canonical" href={currentCanonicalUrl} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.webklienti.com/" />
+        <meta property="og:url" content={currentCanonicalUrl} />
         <meta property="og:title" content={seo.title} />
         <meta property="og:description" content={seo.description} />
         <meta property="og:image" content="https://www.webklienti.com/og-image.jpg" />
@@ -173,6 +173,9 @@ function HomePage() {
         input, select, textarea { font-family: 'Inter', sans-serif; }
         input:focus, select:focus, textarea:focus { outline: none; border-color: #2563EB !important; box-shadow: 0 0 0 3px rgba(37,99,235,0.12); }
         input[type="checkbox"]:focus { outline: 2px solid #2563EB; outline-offset: 2px; }
+        
+        .nav-phone { display: flex; align-items: center; gap: 6px; color: #111827; text-decoration: none; font-size: 14px; font-weight: 600; transition: color .15s; }
+        .nav-phone:hover { color: #2563EB; }
       `}</style>
 
       {/* NAV */}
@@ -187,13 +190,17 @@ function HomePage() {
           ))}
           <Link to="/blog" style={{ color: C.textSub, textDecoration: 'none', fontSize: 15, fontWeight: 500 }}>Blog</Link>
         </div>
-        <div style={{ display: 'flex', gap: 12, alignItems: 'center' }} className="desktop-nav">
+        <div style={{ display: 'flex', gap: 20, alignItems: 'center' }} className="desktop-nav">
+          {/* PRIDANÉ: Telefónne číslo na desktope */}
+          <a href="tel:+421907890600" className="nav-phone">
+            <FaPhoneAlt size={12} style={{ color: C.blue }} /> +421 907 890 600
+          </a>
           <div style={{ display: 'flex', gap: 4 }}>
             {['sk', 'cz', 'en'].map(code => (
               <button key={code} onClick={() => setLang(code)} style={langBtn(code)}>{code.toUpperCase()}</button>
             ))}
           </div>
-          <button onClick={() => scrollTo('contact')} className="btn-primary" style={{ height: 40, fontSize: 14, padding: '0 18px' }}>{t.navOrder}</button>
+          <button onClick={() => scrollTo('contact')} className="btn-primary" style={{ height: 40, fontSize: 14, padding: '0 18px' }}>{t.navCta}</button> 
         </div>
         <button onClick={() => setMenuOpen(!menuOpen)} className="hamburger" aria-label="Menu" style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', padding: 8, flexDirection: 'column', gap: 5 }}>
           <span style={{ display: 'block', width: 24, height: 2, background: menuOpen ? C.blue : C.text, transition: 'all .3s', transform: menuOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none' }} />
@@ -208,12 +215,18 @@ function HomePage() {
             <button key={i} onClick={() => scrollTo(NAV_IDS[i])} style={{ background: 'none', border: 'none', color: C.text, cursor: 'pointer', fontSize: 18, fontWeight: 600, textAlign: 'left', padding: '8px 0', fontFamily: 'Inter, sans-serif' }}>{label}</button>
           ))}
           <Link to="/blog" onClick={() => setMenuOpen(false)} style={{ color: C.text, textDecoration: 'none', fontSize: 18, fontWeight: 600, padding: '8px 0' }}>Blog</Link>
-          <div style={{ display: 'flex', gap: 8, paddingTop: 8 }}>
+          
+          {/* PRIDANÉ: Telefónne číslo v mobilnom menu */}
+          <a href="tel:+421907890600" className="nav-phone" style={{ fontSize: 16, padding: '8px 0' }}>
+            <FaPhoneAlt size={14} style={{ color: C.blue }} /> +421 907 890 600
+          </a>
+
+          <div style={{ display: 'flex', gap: 8, paddingTop: 4 }}>
             {['sk', 'cz', 'en'].map(code => (
               <button key={code} onClick={() => setLang(code)} style={langBtn(code)}>{code.toUpperCase()}</button>
             ))}
           </div>
-          <button onClick={() => scrollTo('contact')} className="btn-primary" style={{ width: '100%', marginTop: 8 }}>{t.navOrder}</button>
+          <button onClick={() => scrollTo('contact')} className="btn-primary" style={{ width: '100%', marginTop: 8 }}>{t.navCta}</button>
         </div>
       )}
 
@@ -236,8 +249,6 @@ function HomePage() {
         />
       </main>
 
-
-
       {/* STICKY MOBILE CTA */}
       <div className="sticky-cta" style={{ display: 'none', position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 998, background: C.white, borderTop: `1px solid ${C.border}`, padding: '12px 16px 20px', boxShadow: '0 -4px 20px rgba(0,0,0,0.08)', visibility: (heroVisible || contactVisible) ? 'hidden' : 'visible', opacity: (heroVisible || contactVisible) ? 0 : 1, transition: 'opacity .2s, visibility .2s' }}>
         <button onClick={() => scrollTo('contact')} className="btn-primary" style={{ width: '100%', fontSize: 15 }}>{t.stickyCtaBtn}</button>
@@ -256,11 +267,11 @@ function HomePage() {
           <a href="https://www.facebook.com/profile.php?id=61588797397714" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style={{ width: 44, height: 44, background: '#1877F2', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 18, textDecoration: 'none' }}><FaFacebookF /></a>
           <a href="https://www.instagram.com/webklienti" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style={{ width: 44, height: 44, background: 'linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 18, textDecoration: 'none' }}><FaInstagram /></a>
         </div>
-        <p style={{ marginBottom: 8 }}>© {new Date().getFullYear()} WebKlienti · {lang === 'en' ? 'All rights reserved' : lang === 'cz' ? 'Všechna práva vyhrazena' : 'Všetky práva vyhradené'}</p>
+        <p style={{ marginBottom: 8 }}>{t.footerRights}</p>
         <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)', fontStyle: 'italic' }}>{t.statNote}</p>
         <div style={{ marginTop: 32, paddingTop: 32, borderTop: '1px solid rgba(255,255,255,0.1)' }}>
           <button onClick={() => scrollTo('contact')} className="btn-primary" style={{ fontSize: 15 }}>
-            {lang === 'en' ? 'I want more customers from Google' : lang === 'cz' ? 'Chci více zákazníků z Google' : 'Chcem viac zákazníkov z Google'}
+            {t.heroCta}
           </button>
         </div>
       </footer>
