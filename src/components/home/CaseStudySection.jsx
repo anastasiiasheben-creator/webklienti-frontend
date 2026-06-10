@@ -6,7 +6,6 @@ const GOOGLE_REVIEW_LINK = 'https://maps.app.goo.gl/tDf7dRkYB2eZ3j9d7';
 // Všetky jazyky sú teraz sémanticky 1:1 so slovenským originálom
 const translations = {
   en: {
-    label: 'Verified project',
     viewBtn: 'View client\'s website →',
     beforeLabel: 'BEFORE',
     afterLabel: 'AFTER',
@@ -23,7 +22,6 @@ const translations = {
     verifiedLabel: 'Verified Google review'
   },
   cz: {
-    label: 'Ověřený projekt',
     viewBtn: 'Zobrazit web klienta →',
     beforeLabel: 'PŘED',
     afterLabel: 'PO',
@@ -40,7 +38,6 @@ const translations = {
     verifiedLabel: 'Ověřená recenze Google'
   },
   sk: {
-    label: 'Overený projekt',
     viewBtn: 'Pozrieť web klienta →',
     beforeLabel: 'PRED',
     afterLabel: 'PO',
@@ -85,7 +82,7 @@ export default function CaseStudySection({ t, lang }) {
               <p style={{ fontSize: 12, letterSpacing: 2, textTransform: 'uppercase', color: C.textSub, marginBottom: 6 }}>
                 {localT.label}
               </p>
-              <p style={{ fontSize: 12, color: C.textSub, marginBottom: 12 }}>
+              <p style={{ fontSize: 14, color: C.textSub, marginBottom: 12 }}>
                 {localT.subImageText}
               </p>
               <h3 style={{ fontSize: 24, fontWeight: 700, marginBottom: 20 }}>Montwell</h3>
