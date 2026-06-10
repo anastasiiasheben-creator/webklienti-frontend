@@ -21,6 +21,7 @@ const posts = [
   { slug: 'web-za-299-eur', title: 'Web za 299 € – je to dobrá voľba?', excerpt: 'Oplatí sa web za 299 €? Pozrite si výhody, nevýhody a situácie, kedy je lacnejší web rozumnou voľbou.', date: '29. mája 2026', readTime: '4 min čítania' },
   { slug: 'tvorba-webu-trnava', title: 'Tvorba webu Trnava — web pre firmy z Trnavy a okolia', excerpt: 'Hľadáte tvorbu webu v Trnave? Profesionálny web pre lokálne firmy, ktorý vás dostane na Google a privedie zákazníkov z okolia.', date: '30. mája 2026', readTime: '4 min čítania' },
   { slug: 'wordpress-vs-wix-vs-web-na-mieru', title: 'WordPress vs Wix vs web na mieru — čo si vybrať?', excerpt: 'Porovnanie troch najčastejších spôsobov tvorby webu pre malé firmy. Výhody, nevýhody a kedy sa ktorá možnosť oplatí.', date: '30. mája 2026', readTime: '5 min čítania' },
+  { slug: 'lokalne-seo-slovensko', title: 'Čo je to lokálne SEO a prečo na ňom záleží?', excerpt: 'Chcete, aby vás zákazníci našli hneď, ako vo vašom meste hľadajú vaše služby? Zistite, ako ovládnúť Google Mapy a premeniť vyhľadávania v okolí na zisk.', date: '10. júna 2026', readTime: '7 min čítania' },
 ];
 
 export default function Blog() {
