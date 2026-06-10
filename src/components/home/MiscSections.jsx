@@ -7,13 +7,16 @@ export function RiskSection({ t }) {
         <div style={{ fontSize: 40, marginBottom: 16 }}>🛡️</div>
         <h2 style={{ fontSize: 'clamp(26px, 3vw, 36px)', fontWeight: 700, letterSpacing: '-0.01em', marginBottom: 16 }}>{t.riskTitle}</h2>
         <p style={{ fontSize: 18, color: C.textSub, lineHeight: 1.7, marginBottom: 32 }}>{t.riskText}</p>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 12, alignItems: 'center' }}>
-          {t.riskPoints.map(p => (
-            <div key={p} style={{ background: C.white, border: `1px solid ${C.border}`, borderRadius: 100, padding: '10px 20px', fontSize: 14, fontWeight: 500, color: C.text, display: 'flex', alignItems: 'center', gap: 8 }}>
-              <span style={{ color: '#16A34A', fontWeight: 500, fontSize: 14, flexShrink: 0 }}>✓</span>
-              {p.replace(/^✓\s*/, '')}
-            </div>
-          ))}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 10, alignItems: 'center' }}>
+          {t.riskPoints.map(p => {
+            const text = p.replace(/^✓\s*/, '');
+            return (
+              <p key={p} style={{ fontSize: 15, fontWeight: 500, color: C.text, display: 'flex', alignItems: 'center', gap: 8 }}>
+                <span style={{ color: '#16A34A', flexShrink: 0 }}>✓</span>
+                {text}
+              </p>
+            );
+          })}
         </div>
       </div>
     </div>
