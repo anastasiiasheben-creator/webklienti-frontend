@@ -2,7 +2,7 @@ import { C } from '../../lib/constants';
 
 export function RiskSection({ t }) {
   return (
-    <div style={{ background: C.bg, padding: '96px 40px', borderBottom: `1px solid ${C.border}` }}>
+    <div style={{ background: C.bg, padding: '96px 40px', borderBottom: `1px solid ${C.border}`, borderLeft: '6px solid #16A34A' }}>
       <div style={{ maxWidth: 680, margin: '0 auto', textAlign: 'center' }}>
         <div style={{ fontSize: 40, marginBottom: 16 }}>🛡️</div>
         <h2 style={{ fontSize: 'clamp(26px, 3vw, 36px)', fontWeight: 700, letterSpacing: '-0.01em', marginBottom: 16 }}>{t.riskTitle}</h2>
