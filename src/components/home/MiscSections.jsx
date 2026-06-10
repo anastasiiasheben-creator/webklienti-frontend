@@ -11,10 +11,9 @@ export function RiskSection({ t }) {
           {t.riskPoints.map(p => {
             const text = p.replace(/^✓\s*/, '');
             return (
-              <p key={p} style={{ fontSize: 15, fontWeight: 500, color: C.text, display: 'flex', alignItems: 'center', gap: 8 }}>
-                <span style={{ color: '#16A34A', flexShrink: 0 }}>✓</span>
-                {text}
-              </p>
+              <div key={p} style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 16, color: C.text }}>
+                <span style={{ color: '#16A34A', fontWeight: 700, flexShrink: 0, marginTop: 1 }}>✓</span>{text}
+              </div>
             );
           })}
         </div>
