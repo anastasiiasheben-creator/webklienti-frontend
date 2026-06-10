@@ -127,7 +127,8 @@ const sk = {
   "riskPoints": [
     "✓ Úvodný vizuálny návrh máte do 24 hodín úplne ZDARMA",
     "✓ Zálohu platíte, až keď ste s konceptom na 100% spokojní",
-    "✓ Jasný plán a komunikácia bez zbytočného technického žargónu"
+    "✓ Jasný plán a komunikácia bez zbytočného technického žargónu",
+    "✓ Žiadne skryté poplatky ani viazanosť"
   ],
   "finalCtaTitle": "Chcete web, ktorý bude pre vašu firmu reálne zarábať?",
   "finalCtaSub": "Nečakajte, kým vás konkurencia predbehne úplne. Vyplňte formulár a zajtra máte na stole riešenie.",
