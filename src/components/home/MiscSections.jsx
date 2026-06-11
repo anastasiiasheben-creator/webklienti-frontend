@@ -7,7 +7,7 @@ export function RiskSection({ t }) {
         <div style={{ fontSize: 40, marginBottom: 16 }}>🛡️</div>
         <h2 style={{ fontSize: 'clamp(26px, 3vw, 36px)', fontWeight: 700, letterSpacing: '-0.01em', marginBottom: 16 }}>{t.riskTitle}</h2>
         <p style={{ fontSize: 18, color: C.textSub, lineHeight: 1.7, marginBottom: 32 }}>{t.riskText}</p>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 12, width: '100%', maxWidth: 680, margin: '0 auto', textAlign: 'left' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 12, width: '100%', maxWidth: 650, margin: '0 auto', textAlign: 'left' }}>
           {t.riskPoints.map(p => {
             const text = p.replace(/^✓\s*/, '');
             return (
