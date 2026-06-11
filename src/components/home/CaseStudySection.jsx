@@ -6,6 +6,7 @@ const GOOGLE_REVIEW_LINK = 'https://maps.app.goo.gl/tDf7dRkYB2eZ3j9d7';
 // Všetky jazyky sú teraz sémanticky 1:1 so slovenským originálom
 const translations = {
   en: {
+    label: 'Verified project',
     viewBtn: 'View client\'s website →',
     beforeLabel: 'BEFORE',
     afterLabel: 'AFTER',
@@ -22,6 +23,7 @@ const translations = {
     verifiedLabel: 'Verified Google review'
   },
   cz: {
+    label: 'Ověřený projekt', 
     viewBtn: 'Zobrazit web klienta →',
     beforeLabel: 'PŘED',
     afterLabel: 'PO',
@@ -38,6 +40,7 @@ const translations = {
     verifiedLabel: 'Ověřená recenze Google'
   },
   sk: {
+    label: 'Overený projekt',
     viewBtn: 'Pozrieť web klienta →',
     beforeLabel: 'PRED',
     afterLabel: 'PO',
