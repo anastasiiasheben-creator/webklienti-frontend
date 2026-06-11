@@ -127,7 +127,8 @@ const en = {
   "riskPoints": [
     "✓ Initial visual layout delivered in 24 hours completely FREE",
     "✓ Secure 50% deposit only after you approve the design direction",
-    "✓ Clear milestones and zero confusing developer jargon"
+    "✓ Clear milestones and zero confusing developer jargon",
+    "✓ No hidden fees or commitments"
   ],
   "finalCtaTitle": "Ready to own a website that works as hard as you do?",
   "finalCtaSub": "Don't let your competitors capture all the market traffic. Fill out the form and get your concept tomorrow.",
