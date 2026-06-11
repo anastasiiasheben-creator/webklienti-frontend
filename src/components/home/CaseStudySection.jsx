@@ -81,10 +81,7 @@ export default function CaseStudySection({ t, lang }) {
               </a>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <p style={{ fontSize: 12, letterSpacing: 2, textTransform: 'uppercase', color: C.textSub, marginBottom: 6 }}>
-                {localT.label}
-              </p>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>              
               <p style={{ fontSize: 14, color: C.textSub, marginBottom: 12 }}>
                 {localT.subImageText}
               </p>
