@@ -233,10 +233,9 @@ const cz = {
   "guaranteeTitle": "Stoprocentní garance spokojenosti",
   "guaranteeText": "První reálný koncept vašeho webu vidíte dřív, než zaplatíte byť jen jedinou korunu.",
   "guaranteeBadges": [
-    "✓ Úvodní vizuální návrh máte do 24 hodin zcela ZDARMA",
-    "✓ Zálohu platíte, až když jste s konceptem na 100% spokojeni",
-    "✓ Jasný plán a komunikace bez zbytečného technického žargonu",
-    "✓ Žádné skryté poplatky ani vázanost"
+  "✓ Strategická analýza trhu a návrh do 24 hodin",
+  "✓ První koncept zcela zdarma a bez závazků",
+  "✓ Žádné skryté poplatky ani vázanost"
   ],
   "cookieMsg": "Tento web používá technologie cookies k zajištění správné funkčnosti a měření návštěvnosti.",
   "cookieAccept": "Akceptovat vše",
