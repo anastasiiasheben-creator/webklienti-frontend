@@ -122,7 +122,7 @@ const en = {
   "featuredBadge": "Recommended",
   "reviewsLabel": "Our Work Speaks for Itself",
   "reviewsTitle": "Take a look at a recently launched project",
-  "riskTitle": "100% Risk-Free Partnership",
+  "riskTitle": "Risk-free collaboration",
   "riskText": "We back our code and strategy entirely. You don’t risk a single euro upfront. We build the first concept at our own expense—you only move forward if you love it.",
   "riskPoints": [
     "✓ Initial visual concept delivered within 24 hours — completely FREE",
