@@ -126,7 +126,7 @@ const sk = {
   "riskText": "Veríme svojej práci, preto neriskujete ani jedno euro. Prvý koncept pripravíme na naše náklady. Vy sa rozhodnete, či budeme pokračovať.",
   "riskPoints": [
     "✓ Úvodný vizuálny návrh máte do 24 hodín úplne ZDARMA",
-    "✓ Zálohu platíte, až keď ste s konceptom na 100% spokojní",
+    "✓ Najprv podpíšeme zmluvu, zálohu platíte až keď ste s\u00A0konceptom\u00A0na\u00A0100%\u00A0spokojní",
     "✓ Jasný plán a komunikácia bez zbytočného technického\u00A0žargónu",
     "✓ Žiadne skryté poplatky ani viazanosť"
   ],
