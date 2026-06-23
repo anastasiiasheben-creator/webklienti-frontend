@@ -125,10 +125,10 @@ const en = {
   "riskTitle": "100% Risk-Free Partnership",
   "riskText": "We back our code and strategy entirely. You don’t risk a single euro upfront. We build the first concept at our own expense—you only move forward if you love it.",
   "riskPoints": [
-    "✓ Initial visual layout delivered in 24 hours completely FREE",
-    "✓ Secure 50% deposit only after you approve the design direction",
-    "✓ Clear milestones and zero confusing developer jargon",
-    "✓ No hidden fees or commitments"
+    "✓ Initial visual concept delivered within 24 hours — completely FREE",
+    "✓ We sign a contract first — you pay the deposit only when you're 100% happy with the concept",
+    "✓ Clear plan and communication with zero technical jargon",
+    "✓ No hidden fees or long-term commitments"
   ],
   "finalCtaTitle": "Ready to own a website that works as hard as you do?",
   "finalCtaSub": "Don't let your competitors capture all the market traffic. Fill out the form and get your concept tomorrow.",
@@ -234,9 +234,8 @@ const en = {
   "guaranteeText": "You see a functional visual layout of your future website before you spend a single cent.",
   "guaranteeBadges": [
     "✓ Strategic market analysis and concept within 24 hours",
-    "✓ We sign a contract first — you pay the deposit only when you're 100% happy with the concept",
     "✓ First custom draft completely free and without obligations",
-    "✓ No hidden operational costs or long-term contracts"
+    "✓ No hidden fees or long-term commitments"
   ],
   "cookieMsg": "This website utilizes cookies to ensure optimal functionality and monitor traffic metrics.",
   "cookieAccept": "Accept All",
