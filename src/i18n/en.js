@@ -234,6 +234,7 @@ const en = {
   "guaranteeText": "You see a functional visual layout of your future website before you spend a single cent.",
   "guaranteeBadges": [
     "✓ Strategic market analysis and concept within 24 hours",
+    "✓ We sign a contract first — you pay the deposit only when you're 100% happy with the concept",
     "✓ First custom draft completely free and without obligations",
     "✓ No hidden operational costs or long-term contracts"
   ],
