@@ -211,7 +211,7 @@ const en = {
     },
     {
       "q": "How does the payment structure work?",
-      "a": "The onboarding is completely safe for you. You fill out the form, we analyze your niche, and we send you an initial visual layout within 24 hours for free. If you give us the green light, you secure a 50% deposit and we complete the final build. The remaining 50% is only invoiced once the site is fully tested, polished, and ready to go live."
+      "a": "Getting started is completely risk-free. Fill in the form, we'll do the analysis and send you the first visual concept within 24 hours — for free. If you say 'yes, we love it', we sign a contract and you pay a 50% deposit. The remaining 50% is due only when the website is finished, tested and ready to launch."
     },
     {
       "q": "Why are your prices significantly lower than traditional agencies?",
