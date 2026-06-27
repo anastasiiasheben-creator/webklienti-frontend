@@ -1,19 +1,60 @@
 import { C } from '../../lib/constants';
 
 export function RiskSection({ t }) {
+  const [isMobile, setIsMobile] = React.useState(window.innerWidth < 768);
+
+  React.useEffect(() => {
+    const handler = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener('resize', handler);
+    return () => window.removeEventListener('resize', handler);
+  }, []);
+
   return (
-    <div style={{ background: C.bg, padding: '96px 40px', borderBottom: `1px solid ${C.border}`, borderLeft: '6px solid #16A34A' }}>
+    <div style={{ 
+      background: C.bg, 
+      padding: '96px 40px',
+      borderBottom: `1px solid ${C.border}`,
+    }}>
       <div style={{ maxWidth: 780, margin: '0 auto', textAlign: 'center' }}>
         <div style={{ fontSize: 40, marginBottom: 16 }}>🛡️</div>
-        <h2 style={{ fontSize: 'clamp(26px, 3vw, 36px)', fontWeight: 700, letterSpacing: '-0.01em', marginBottom: 16 }}>{t.riskTitle}</h2>
-        <p style={{ fontSize: 18, color: C.textSub, lineHeight: 1.7, marginBottom: 32 }}>{t.riskText}</p>
+        <h2 style={{ 
+          fontSize: 'clamp(22px, 4vw, 36px)', 
+          fontWeight: 700, 
+          letterSpacing: '-0.01em', 
+          marginBottom: 16 
+        }}>
+          {t.riskTitle}
+        </h2>
+        <p style={{ 
+          fontSize: 'clamp(15px, 2vw, 18px)', 
+          color: C.textSub, 
+          lineHeight: 1.7, 
+          marginBottom: 32 
+        }}>
+          {t.riskText}
+        </p>
         <div style={{ width: 'fit-content', margin: '0 auto', textAlign: 'left' }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
             {t.riskPoints.map(p => {
               const text = p.replace(/^✓\s*/, '');
               return (
-                <div key={p} style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 16, color: C.text, lineHeight: 1.5, whiteSpace: 'nowrap' }}>
-                  <span style={{ color: '#16A34A', fontWeight: 700, flexShrink: 0, width: 20 }}>✓</span>
+                <div key={p} style={{ 
+                  display: 'flex', 
+                  alignItems: isMobile ? 'flex-start' : 'center', 
+                  gap: 10, 
+                  fontSize: 'clamp(15px, 2vw, 17px)',
+                  color: C.text, 
+                  lineHeight: 1.6,
+                  whiteSpace: isMobile ? 'normal' : 'nowrap',
+                  maxWidth: isMobile ? '85vw' : 'none',
+                }}>
+                  <span style={{ 
+                    color: '#16A34A', 
+                    fontWeight: 700, 
+                    flexShrink: 0, 
+                    width: 20,
+                    marginTop: isMobile ? 2 : 0,
+                  }}>✓</span>
                   <span>{text}</span>
                 </div>
               );
