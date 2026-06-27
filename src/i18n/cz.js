@@ -211,7 +211,7 @@ const cz = {
     },
     {
       "q": "Jak probíhá platba a kdy posílám peníze?",
-      "a": "Začátek je zcela bezpečný. Vyplníte formulář, my uděláme analýzu a do 24 hod vám pošleme první vizuální koncept zdarma. Pokud řeknete 'ano, tohle se mi líbí', uhradíte 50% zálohu a my web kompletně dokončíme. Zbylých 50% platíte až tehdy, když je web hotový, otestovaný a připravený ke spuštění."
+      "a": "Začátek je zcela bezpečný. Vyplníte formulář, my uděláme analýzu a do 24 hodin vám pošleme první vizuální koncept zdarma. Pokud řeknete 'ano, tohle se nám líbí', podepíšeme smlouvu a uhradíte 50% zálohu. Zbývajících 50% platíte až tehdy, když je web hotový, otestovaný a připravený ke spuštění."
     },
     {
       "q": "Proč jsou vaše ceny výrazně nižší než u klasických agentur?",
