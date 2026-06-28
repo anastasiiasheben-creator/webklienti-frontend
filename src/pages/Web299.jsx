@@ -70,7 +70,7 @@ export default function Web299() {
 
   const riskPoints = [
     'Úvodný vizuálny návrh máte do 24 hodín úplne ZDARMA',
-    'Zálohu platíte, až keď ste s konceptom na 100 % spokojní',
+    'Najprv podpíšeme zmluvu, zálohu platíte až keď ste s konceptom na 100% pokojní',
     'Jasný plán a komunikácia bez zbytočného technického žargónu',
     'Žiadne skryté poplatky ani viazanosť',
   ];
@@ -174,7 +174,7 @@ export default function Web299() {
       <div style={{ background: C.white, borderBottom: `1px solid ${C.border}`, padding: '56px 24px 48px' }}>
         <div style={{ maxWidth: 760, margin: '0 auto', textAlign: 'center' }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(37,99,235,0.07)', border: `1px solid rgba(37,99,235,0.18)`, padding: '5px 14px', borderRadius: 100, fontSize: 13, fontWeight: 600, color: C.blue, marginBottom: 20 }}>
-            ✓ Realizácia Montwell.sk · Výkonnostný webdizajn pre malé firmy v SK &amp; CZ
+            ✓ Realizácia Montwell.sk – web, ktorý prináša dopyty z Google aj priamo z prehliadača
           </div>
           <h1 style={{ fontSize: 'clamp(28px, 5.5vw, 56px)', fontWeight: 800, lineHeight: 1.1, letterSpacing: -2, color: C.text, marginBottom: 16 }}>
             Web, ktorý vašej firme reálne<br />
@@ -247,8 +247,8 @@ export default function Web299() {
       {/* 3. PORTFOLIO */}
       <div id="portfolio" style={{ background: C.white, padding: '64px 24px', borderBottom: `1px solid ${C.border}` }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
-          <p className="section-label" style={{ textAlign: 'center' }}>Naša práca hovorí za nás</p>
-          <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 800, letterSpacing: -1, textAlign: 'center', marginBottom: 40 }}>Pozrite si výsledok nedávneho projektu</h2>
+          <p className="section-label" style={{ textAlign: 'center' }}>Case Study</p>
+          <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 800, letterSpacing: -1, textAlign: 'center', marginBottom: 40 }}>Overený projekt</h2>
           <div className="card" style={{ padding: '32px' }}>
             <div className="case-split" style={{ display: 'flex', gap: 14, alignItems: 'stretch', marginBottom: 14 }}>
               <div style={{ flex: 1, background: '#FEF2F2', border: '1px solid #FECACA', borderRadius: 12, padding: '18px 16px' }}>
@@ -266,7 +266,7 @@ export default function Web299() {
                 <p style={{ fontSize: 14, fontWeight: 700, marginBottom: 10 }}>
                   <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer" style={{ color: C.blue, textDecoration: 'none' }}>montwell.sk ↗</a>
                 </p>
-                {['Profesionálny predajný web', 'Galéria realizácií a referencie', 'Zákazníci ich nájdu na Google'].map(i => (
+                {['Profesionálny predajný web', 'Galéria realizácií a referencie', 'Zákazníci ich nájdu na Google', 'Prvé kontakty z webu už v prvých týždňoch'].map(i => (
                   <div key={i} style={{ fontSize: 13, color: '#166534', display: 'flex', gap: 7, marginBottom: 5, alignItems: 'center' }}>
                     <span style={{ color: C.green, fontWeight: 700 }}>✓</span> {i}
                   </div>
@@ -274,7 +274,7 @@ export default function Web299() {
               </div>
             </div>
             <div style={{ background: 'rgba(37,99,235,0.05)', border: `1px solid rgba(37,99,235,0.15)`, borderRadius: 10, padding: '12px 16px' }}>
-              <span style={{ fontSize: 13, fontWeight: 700, color: C.blue }}>🎯 Profesionálny web, ktorý buduje dôveru a premieňa návštevy na dopyty</span>
+              <span style={{ fontSize: 13, fontWeight: 700, color: C.blue }}>🎯 Montwell.sk dnes pracuje ako predajný web — z Instagramu vznikol web, ktorý klientov privádza aj z vyhľadávania</span>
             </div>
           </div>
         </div>
