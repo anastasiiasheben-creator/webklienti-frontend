@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { RiskSection } from '../components/home/MiscSections';
+import sk from '../i18n/sk';
 import logoImg from '../assets/logo.webp';
 
 const API = 'https://webklienti-backend-1.onrender.com';
@@ -68,12 +70,7 @@ export default function Web299() {
     { q: 'Čo ak sa mi prvý návrh nebude páčiť?', a: 'Jednoducho nám poviete, čo máme zmeniť, a my návrh upravíme. Ak by ste mali pocit, že sme sa úplne minuli vašej predstave, spoluprácu môžete bez akýchkoľvek otázok a poplatkov ukončiť. Keďže ste pred návrhom nič neplatili, neriskujete vôbec nič.' },
   ];
 
-  const riskPoints = [
-    'Úvodný vizuálny návrh máte do 24 hodín úplne ZDARMA',
-    'Najprv podpíšeme zmluvu, zálohu platíte až keď ste s konceptom na 100% pokojní',
-    'Jasný plán a komunikácia bez zbytočného technického žargónu',
-    'Žiadne skryté poplatky ani viazanosť',
-  ];
+
 
   return (
     <div style={{ fontFamily: "'Inter', -apple-system, sans-serif", background: C.white, color: C.text, minHeight: '100vh' }}>
@@ -307,25 +304,8 @@ export default function Web299() {
         </div>
       </div>
 
-      {/* 5. GARANCIA / RISK — zelené fajky ako pills */}
-      <div style={{ background: C.white, padding: '96px 24px', borderBottom: `1px solid ${C.border}` }}>
-        <div style={{ maxWidth: 640, margin: '0 auto', textAlign: 'center' }}>
-          <div style={{ fontSize: 40, marginBottom: 16 }}>🛡️</div>
-          <p className="section-label" style={{ textAlign: 'center' }}>Spolupráca bez rizika</p>
-          <h2 style={{ fontSize: 'clamp(26px, 3vw, 36px)', fontWeight: 700, letterSpacing: '-0.01em', marginBottom: 16 }}>Spolupráca bez akéhokoľvek rizika</h2>
-          <p style={{ fontSize: 18, color: C.textSub, lineHeight: 1.7, marginBottom: 32 }}>
-            Veríme svojej práci, preto neriskujete ani jedno euro. Prvý koncept pripravíme na naše náklady. Vy sa rozhodnete, či budeme pokračovať.
-          </p>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 12, alignItems: 'center' }}>
-            {riskPoints.map(p => (
-              <div key={p} style={{ background: C.white, border: `1px solid ${C.border}`, borderRadius: 100, padding: '10px 20px', fontSize: 14, fontWeight: 500, color: C.text, display: 'flex', alignItems: 'center', gap: 8 }}>
-                <span style={{ color: C.green, fontWeight: 700, fontSize: 16, flexShrink: 0 }}>✓</span>
-                {p}
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      {/* 5. GARANCIA / RISK — use shared RiskSection for exact match */}
+      <RiskSection t={sk} />
 
       {/* 6. HODNOTENIA */}
       <div style={{ background: C.bg, padding: '64px 24px', borderBottom: `1px solid ${C.border}` }}>
