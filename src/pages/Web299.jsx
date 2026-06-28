@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { RiskSection } from '../components/home/MiscSections';
+import CaseStudySection from '../components/home/CaseStudySection';
 import sk from '../i18n/sk';
-import montwellImg from '../assets/montwell-preview.webp';
 import logoImg from '../assets/logo.webp';
 
 const API = 'https://webklienti-backend-1.onrender.com';
@@ -270,15 +270,7 @@ export default function Web299() {
                 ))}
               </div>
             </div>
-            <div style={{ background: 'rgba(37,99,235,0.05)', border: `1px solid rgba(37,99,235,0.15)`, borderRadius: 10, padding: '12px 16px' }}>
-              <span style={{ fontSize: 13, fontWeight: 700, color: C.blue }}>🎯 Montwell.sk dnes pracuje ako predajný web — z Instagramu vznikol web, ktorý klientov privádza aj z vyhľadávania</span>
-            </div>
-            <div style={{ marginTop: 24, textAlign: 'center' }}>
-              <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', width: '100%', maxWidth: 900 }}>
-                <img src={montwellImg} alt="Montwell webstránka" style={{ width: '100%', display: 'block', height: 'auto', borderRadius: 20 }} loading="lazy" />
-              </a>
-            </div>
-          </div>
+            <CaseStudySection t={sk} lang="sk" />
         </div>
       </div>
 
