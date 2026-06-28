@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { RiskSection } from '../components/home/MiscSections';
 import sk from '../i18n/sk';
+import montwellImg from '../assets/montwell-preview.webp';
 import logoImg from '../assets/logo.webp';
 
 const API = 'https://webklienti-backend-1.onrender.com';
@@ -61,13 +62,12 @@ export default function Web299() {
   };
 
   const faqs = [
-    { q: 'Je to jednorazová platba bez mesačných poplatkov?', a: 'Áno. Cena 299 € je jednorazová za kompletné zhotovenie webu. Web je po odovzdaní 100 % váš. Jediné ročné náklady sú za doménu a webhosting (cca 20–30 € ročne), ktoré platíte priamo poskytovateľovi — s ich výberom a nastavením vám kompletne pomôžeme.' },
-    { q: 'Ako prebieha platba a kedy posielam peniaze?', a: 'Vyplníte formulár, my spravíme analýzu a do 24 hodín vám pošleme prvý vizuálny koncept zdarma. Ak poviete „áno, toto sa mi páči", uhradíte 50% zálohu a my web kompletne dokončíme. Zvyšných 50% platíte až vtedy, keď je web hotový, otestovaný a pripravený na spustenie.' },
-    { q: 'Ako rýchlo je web hotový?', a: 'Štandardne do 5 pracovných dní od schválenia konceptu. Máme zabehnutý proces, vďaka ktorému eliminujeme zbytočné prestoje a dodáme web rýchlo aj bez kompromisov v kvalite.' },
-    { q: 'Čo ak nemám žiadne texty ani fotografie?', a: 'Žiadny problém. Na základe krátkeho rozhovoru o vašom biznise napíšeme konverzné texty za vás. Pokiaľ nemáte vlastné fotky, vyberieme licencované profesionálne snímky z prémiových fotobánk, ktoré dokonale sadnú k vašej značke.' },
-    { q: 'Je v cene SEO?', a: 'Áno — SEO základy sú v cene: správna štruktúra stránky, meta tagy, rýchlosť, mobilná verzia a nastavenie pre lokálne vyhľadávanie. Na pokročilé SEO (blog, linkbuilding, kľúčové slová) máme samostatnú službu v rámci balíka Biznis web.' },
+    { q: 'Je to jednorazová platba bez mesačných poplatkov?', a: 'Nie. U nás platíte len jednorazovo za kompletné zhotovenie webu. Web je po odovzdaní 100 % váš. Jediné ročné náklady sú za vašu doménu a webhosting (cca 20–30 € ročne), ktoré platíte priamo poskytovateľovi hostingu — s ich výberom a nastavením vám kompletne pomôžeme.' },
+    { q: 'Ako prebieha platba a kedy posielam peniaze?', a: 'Začiatok je úplne bezpečný. Vyplníte formulár, my spravíme analýzu a do 24 hodín vám pošleme prvý vizuálny koncept zdarma. Ak poviete \'áno, toto sa nám páči\', podpíšeme zmluvu a uhradíte 50% zálohu. Zvyšných 50% platíte až vtedy, keď je web hotový, otestovaný a pripravený na spustenie.' },
+    { q: 'Prečo sú vaše ceny výrazne nižšie ako u klasických agentúr?', a: 'Neplatíme drahé kancelárie v centre mesta, manažérov ani sekretárky. Sme efektívny tím vývojárov a dizajnérov. Vyvinuli sme vlastné optimalizované postupy, vďaka ktorým dokážeme eliminovať zbytočné prestoje a dodať špičkový firemný web za zlomok bežnej ceny.' },
+    { q: 'Čo ak nemám žiadne texty ani profesionálne fotografie?', a: 'Žiadny problém, postaráme sa o to. Na základe krátkeho rozhovoru o vašom biznise napíšeme konverzné texty za vás. Pokiaľ nemáte vlastné fotky z produkcie, vyberieme licencované a vysoko profesionálne snímky z prémiových fotobánk, ktoré dokonale sadnú k vašej značke.' },
     { q: 'Kto bude vlastniť hotovú webstránku?', a: 'Vy. Na rozdiel od iných firiem, ktoré vás uzamknú do vlastných platforiem na mesačné prenájmy, od nás dostanete plné administrátorské prístupy. Web funguje nezávisle a môžete si s ním robiť čokoľvek.' },
-    { q: 'Čo ak sa mi prvý návrh nebude páčiť?', a: 'Jednoducho nám poviete, čo máme zmeniť, a my návrh upravíme. Ak by ste mali pocit, že sme sa úplne minuli vašej predstave, spoluprácu môžete bez akýchkoľvek otázok a poplatkov ukončiť. Keďže ste pred návrhom nič neplatili, neriskujete vôbec nič.' },
+    { q: 'Čo sa stane, ak sa mi váš prvý návrh do 24 hodín nebude páčiť?', a: 'Jednoducho nám poviete, čo máme zmeniť a my návrh upravíme. Ak by ste mali pocit, že sme sa úplne minuli vašej predstave, spoluprácu môžete bez akýchkoľvek otázok a poplatkov ukončiť. Keďže ste pred návrhom nič neplatili, neriskujete vôbec nič.' },
   ];
 
 
@@ -272,6 +272,11 @@ export default function Web299() {
             </div>
             <div style={{ background: 'rgba(37,99,235,0.05)', border: `1px solid rgba(37,99,235,0.15)`, borderRadius: 10, padding: '12px 16px' }}>
               <span style={{ fontSize: 13, fontWeight: 700, color: C.blue }}>🎯 Montwell.sk dnes pracuje ako predajný web — z Instagramu vznikol web, ktorý klientov privádza aj z vyhľadávania</span>
+            </div>
+            <div style={{ marginTop: 24, textAlign: 'center' }}>
+              <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', width: '100%', maxWidth: 900 }}>
+                <img src={montwellImg} alt="Montwell webstránka" style={{ width: '100%', display: 'block', height: 'auto', borderRadius: 20 }} loading="lazy" />
+              </a>
             </div>
           </div>
         </div>
