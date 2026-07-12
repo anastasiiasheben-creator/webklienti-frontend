@@ -14,7 +14,7 @@ const posts = {
     date: '12. februára 2025', iso: '2025-02-12', readTime: '4 min čítania',
     content: `Každý deň ľudia vo vašom okolí hľadajú služby, ktoré ponúkate. Ak však nemáte web, väčšina z nich skončí u konkurencie.\n\nDnes zákazníci hľadajú firmy cez Google. Ak vás tam nenájdu, pre nich prakticky neexistujete. Nestačí mať len Facebook — firma bez webu často pôsobí menej dôveryhodne a prichádza o klientov ešte pred prvým kontaktom.\n\n## Web pracuje za vás 24/7\n\nProfesionálny web:\n\n- prezentuje vaše služby\n- buduje dôveru\n- privádza nových zákazníkov\n- umožňuje klientom kontaktovať vás kedykoľvek\n\n## Prvý dojem rozhoduje\n\nĽudia si dnes firmu preverujú online ešte pred telefonátom. Moderný a rýchly web vytvára profesionálny dojem a výrazne zvyšuje šancu, že si zákazník vyberie práve vás.\n\n## Web nemusí byť drahý\n\nProfesionálny firemný web dnes nemusí stáť tisíce eur. U nás začína od **299 €** — moderný dizajn, mobilná verzia, rýchle dodanie do 5 dní, bez skrytých poplatkov.`,
   },
-  'ai-na-webstranke-konkurecna-vyhoda': {
+  'ai-na-webstranke-konkurencna-vyhoda': {
     title: 'AI na vašej webstránke: konkurenčná výhoda, ktorú už používajú úspešné firmy',
     excerpt: 'AI chatboty, inteligentné vyhľadávanie a personalizovaný obsah dnes pomáhajú firmám zvyšovať konverzie.',
     date: '19. mája 2026', iso: '2026-05-19', readTime: '6 min čítania',
