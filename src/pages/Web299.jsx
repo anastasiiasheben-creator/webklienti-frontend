@@ -375,7 +375,14 @@ export default function Web299() {
         </div>
       </div>
 
-      {formStatus === 'success' ? (
+      {/* 9. FORM */}
+      <div id="form299" style={{ padding: '96px 24px 140px', background: C.bg }}>
+        <div style={{ maxWidth: 600, margin: '0 auto' }}>
+          <p className="section-label">Rýchly dopyt</p>
+          <h2 style={{ fontSize: 'clamp(26px, 3vw, 36px)', fontWeight: 700, letterSpacing: '-0.01em', marginBottom: 12 }}>Získajte profesionálny návrh webu do 24 hodín zdarma</h2>
+          <p style={{ color: C.textSub, marginBottom: 40, fontSize: 16, lineHeight: 1.6 }}>Napíšte nám základné detaily. Návrh je nezáväzný — ak sa vám nebude páčiť, nič neplatíte.</p>
+          
+          {formStatus === 'success' ? (
             <div style={{ background: C.white, border: `1px solid ${C.border}`, borderRadius: 16, padding: '52px 32px', textAlign: 'center' }}>
               <div style={{ fontSize: 48, marginBottom: 14 }}>🎉</div>
               <h3 style={{ fontSize: 26, fontWeight: 700, marginBottom: 10 }}>Skvelé, dáta dorazili!</h3>
@@ -416,10 +423,7 @@ export default function Web299() {
           )}
         </div>
       </div>
-    </div>
-  );
-}
-      
+        
       {/* FOOTER */}
       <footer style={{ background: '#111827', padding: '48px 24px', textAlign: 'center' }}>
         <Link to="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, textDecoration: 'none', marginBottom: 16 }}>
