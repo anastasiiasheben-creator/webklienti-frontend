@@ -25,8 +25,6 @@ const posts = [
   { slug: 'chyby-na-firemnych-webstrankach', title: '10 najčastejších chýb na firemných webstránkach, ktoré vás stoja zákazníkov', excerpt: 'Máte web, ale neprináša zákazníkov? Pozrite si najčastejšie chyby firemných webstránok, ktoré znižujú počet dopytov, dôveru zákazníkov aj výsledky online.', date: '12. júla 2026', iso: '2026-07-12', readTime: '10 min čítania' },
 
 ];
-  
-];
 
 export default function Blog() {
   const itemListSchema = {
