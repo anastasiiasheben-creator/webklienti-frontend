@@ -466,5 +466,30 @@ export default function Web299() {
       </div>
 
     </div>
+    <div style={{ background: '#DCFCE7', padding: '32px', borderRadius: '16px', textAlign: 'center' }}>
+              <div style={{ fontSize: '48px', marginBottom: '16px' }}>✅</div>
+              <h3 style={{ fontSize: '20px', fontWeight: 700, marginBottom: '8px' }}>Správa úspešne odoslaná!</h3>
+              <p style={{ color: '#166534' }}>Ďakujeme. Do 24 hodín sa vám ozveme s prvým konceptom.</p>
+            </div>
+          ) : (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+              <input type="text" placeholder="Vaše meno" value={form.name} onChange={e => setForm({...form, name: e.target.value})} style={{ width: '100%', padding: '14px', borderRadius: '12px', border: `1px solid ${C.border}` }} />
+              <input type="email" placeholder="Váš email" value={form.email} onChange={e => setForm({...form, email: e.target.value})} style={{ width: '100%', padding: '14px', borderRadius: '12px', border: `1px solid ${C.border}` }} />
+              <input type="tel" placeholder="Telefónne číslo" value={form.phone} onChange={e => setForm({...form, phone: e.target.value})} style={{ width: '100%', padding: '14px', borderRadius: '12px', border: `1px solid ${C.border}` }} />
+              <input type="text" placeholder="Vaša súčasná webstránka (ak máte)" value={form.website} onChange={e => setForm({...form, website: e.target.value})} style={{ width: '100%', padding: '14px', borderRadius: '12px', border: `1px solid ${C.border}` }} />
+              <textarea placeholder="O aký biznis ide? Čo od webu očakávate?" value={form.message} onChange={e => setForm({...form, message: e.target.value})} rows="4" style={{ width: '100%', padding: '14px', borderRadius: '12px', border: `1px solid ${C.border}` }} />
+              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', fontSize: '13px', color: C.textSub }}>
+                <input type="checkbox" checked={form.consent} onChange={e => setForm({...form, consent: e.target.checked})} />
+                Súhlasím so spracovaním osobných údajov pre účely vypracovania návrhu.
+              </label>
+              {consentError && <p style={{ color: C.red, fontSize: '12px' }}>Pre pokračovanie musíte udeliť súhlas.</p>}
+              <button onClick={handleSubmit} disabled={formStatus === 'loading'} className="btn-primary" style={{ width: '100%', height: '56px', fontSize: '16px' }}>
+                {formStatus === 'loading' ? 'Odosielam...' : 'Odoslať dopyt a získať návrh zdarma'}
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
   );
 }
