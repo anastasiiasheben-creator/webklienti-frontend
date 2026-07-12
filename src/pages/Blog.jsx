@@ -22,7 +22,9 @@ const posts = [
   { slug: 'tvorba-webu-trnava', title: 'Tvorba webu Trnava — web pre firmy z Trnavy a okolia', excerpt: 'Hľadáte tvorbu webu v Trnave? Profesionálny web pre lokálne firmy, ktorý vás dostane na Google a privedie zákazníkov z okolia.', date: '30. mája 2026', readTime: '4 min čítania' },
   { slug: 'wordpress-vs-wix-vs-web-na-mieru', title: 'WordPress vs Wix vs web na mieru — čo si vybrať?', excerpt: 'Porovnanie troch najčastejších spôsobov tvorby webu pre malé firmy. Výhody, nevýhody a kedy sa ktorá možnosť oplatí.', date: '30. mája 2026', readTime: '5 min čítania' },
   { slug: 'lokalne-seo-slovensko', title: 'Čo je to lokálne SEO a prečo na ňom záleží?', excerpt: 'Chcete, aby vás zákazníci našli hneď, ako vo vašom meste hľadajú vaše služby? Zistite, ako ovládnúť Google Mapy a premeniť vyhľadávania v okolí na zisk.', date: '10. júna 2026', readTime: '7 min čítania' },
-  { slug: 'chyby-na-firemnej-webstranke', title: '10 najčastejších chýb na firemných webstránkach, ktoré vás stoja zákazníkov', excerpt: 'Máte web, ale neprináša zákazníkov? Pozrite si najčastejšie chyby firemných webstránok, ktoré znižujú počet dopytov, dôveru zákazníkov aj výsledky online.', date: '12. júla 2026', readTime: '10 min čítania' },
+  { slug: 'chyby-na-firemnych-webstrankach', title: '10 najčastejších chýb na firemných webstránkach, ktoré vás stoja zákazníkov', excerpt: 'Máte web, ale neprináša zákazníkov? Pozrite si najčastejšie chyby firemných webstránok, ktoré znižujú počet dopytov, dôveru zákazníkov aj výsledky online.', date: '12. júla 2026', iso: '2026-07-12', readTime: '10 min čítania' },
+
+];
   
 ];
 
