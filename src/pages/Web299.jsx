@@ -432,7 +432,9 @@ export default function Web299() {
           )}
         </div>
       </div>
-
+      );
+      }
+      
       {/* FOOTER */}
       <footer style={{ background: '#111827', padding: '48px 24px', textAlign: 'center' }}>
         <Link to="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, textDecoration: 'none', marginBottom: 16 }}>
