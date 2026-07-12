@@ -92,6 +92,132 @@ const posts = {
     date: '10. júna 2026', iso: '2026-06-10', readTime: '7 min čítania',
     content: `Predstavte si situáciu: Pokazilo sa vám auto v Nitre, hľadáte zubára v Žiline alebo potrebujete urgentne architekta v Košiciach. Čo urobíte ako prvé? Vytiahnete smartfón a do Google naťukáte „oprava autoklimatizácie Nitra“ alebo „zubná klinika Žilina“.\n\nVýsledok, ktorý vám Google ponúkne, nerozhoduje len o tom, na aký odkaz kliknete. Rozhoduje o tom, komu v ten deň necháte svoje peniaze.\n\nPre slovenské firmy, ktoré pôsobia v konkrétnom regióne, meste či štvrti, už klasické SEO nestačí. Ak chcete, aby vás zákazníci našli presne v momente, keď potrebujú vaše služby, kľúčom k úspechu je lokálne SEO.\n\nV tomto detailnom sprievodcovi sa pozrieme na to, ako funguje lokálne vyhľadávanie na Slovensku, prečo samotná šablóna webu na tento boj nestačí a ako krok za krokom dominovať na lokálnom trhu.\n\n## Čo je to lokálne SEO a prečo na ňom záleží\n\nLokálne SEO (Local Search Engine Optimization) je proces optimalizácie vašej online prezentácie tak, aby sa vaša firma zobrazovala na popredných miestach vo výsledkoch vyhľadávania pre dopyty s lokálnym zámerom (local intent).\n\nGoogle dokáže v zlomku sekundy identifikovať, kde sa používateľ nachádza a prispôsobiť tomu výsledky. Ak zadáte výraz „reštaurácia“, Google vám neukáže najlepšiu reštauráciu v Bratislave, ak práve sedíte v Poprade.\n\nSila lokálneho vyhľadávania v číslach:\n\n- Až 46 % všetkých vyhľadávaní na Google má lokálny charakter.\n- 76 % ľudí, ktorí na smartfóne hľadajú niečo vo svojom okolí, navštívi súvisiacu firmu do 24 hodín.\n- Približne 28 % týchto lokálnych vyhľadávaní vyústi do okamžitého nákupu alebo objednávky služieb.\n\nPre slovenských podnikateľov to znamená jediné: Ak nie ste viditeľní na lokálnej úrovni, dobrovoľne odovzdávate zákazníkov konkurencii, ktorá je o dve ulice ďalej.\n\n## Svätý grál lokálneho vyhľadávania: Google Map Pack\n\nKeď zadáte lokálny dopyt, Google vám na samom vrchu zobrazí mapu a tri najrelevantnejšie lokálne firmy. Tento blok sa nazýva Google Map Pack (alebo Local 3-Pack).\n\nTento blok priťahuje až 40 – 60 % všetkých kliknutí na danej stránke výsledkov. Ak sa v ňom nenachádzate, pre obrovskú časť zákazníkov jednoducho neexistujete.\n\nAby ste sa do tohto prestížneho výberu dostali, musíte pochopiť tri hlavné piliere, podľa ktorých Google lokálne firmy hodnotí:\n\n- Relevancia (Relevance) – Ako presne vaša firma zodpovedá tomu, čo používateľ hľadá.\n- Vzdialenosť (Distance) – Ako ďaleko sa nachádza vaša prevádzka od polohy vyhľadávajúceho.\n- Významnosť (Prominence) – Aká známa a dôveryhodná je vaša firma na internete (hodnotenia, spätné odkazy, zmienky).\n\n## Prípadová štúdia: Ako lokálne SEO zachránilo rodinný autoservis\n\nPozrime sa na reálny príklad z našej praxe. Pán Milan vlastní rodinný autoservis v Poprade. Mal starší web postavený na bezplatnej šablóne, no väčšinu zákazníkov mal len z odporúčaní. Keď konkurencia v meste začala rásť, počet objednávok klesol.\n\nRozhodli sme sa kompletne preopačne postaviť jeho online stratégiu. Starý web sme nahradili rýchlym webom na mieru, kompletne sme prekopali jeho Google profil a zamerali sa na kľúčové slovo „oprava prevodoviek Poprad“ a „pneuservis Poprad“.\n\nVýsledok po 4 mesiacoch:\n\n- Nárast organickej návštevnosti webu: +115 %\n- Počet priamych telefonátov z Google Mapy: +140 % (priemerne 45 nových telefonátov mesačne navyše)\n- Obsadenosť servisu: Plno na 3 týždne dopredu.\n\nPán Milan nemusel investovať tisíce eur do celonárodnej reklamy. Stačilo, aby ho videli ľudia, ktorým práve v Poprade a okolí začalo hrkať v motore.\n\n## Strategický plán pre lokálne SEO na Slovensku\n\nÚspešné lokálne SEO nie je jednorazová záležitosť, ale skladačka z viacerých dôležitých komponentov. Poďme si ich rozobrať do detailu.\n\n1. Google Profil Moja Firma – Vaša druhá domovská stránka\n\nVytvorenie a dôkladná optimalizácia profilu na Google je absolútnym základom. Je to bezplatný nástroj, no väčšina slovenských firiem ho využíva len na 20 %.\n\n- Zadajte presný a konzistentný názov: Použite reálny názov firmy. Môžete pridať jedno hlavné kľúčové slovo (napr. „AutoServis XY Nitra – Oprava prevodoviek“), ale nepreháňajte to s prepchávaním kľúčových slov, inak riskujete penalizáciu od Google.\n- Vyberte správne kategórie: Primárna kategória musí presne definovať vašu hlavnú činnosť. Ak ste kaviareň, ktorá občas pečie torty na objednávku, vaša primárna kategória je „Kaviareň“, sekundárna „Cukrárstvo“.\n- Doplňte NAP údaje (Name, Address, Phone): Tieto údaje (Názov, Adresa, Telefón) musia byť stopercentne identické na Google profile, na vašom webe aj vo všetkých online katalógoch (napr. Azet, Zlaté Stránky). Ak máte na webe napísané „Trieda SNP 12“ a na Google „Tr. SNP 12“, roboty to môže zmiasť a zníži to vašu dôveryhodnosť.\n- Využívajte príspevky (Google Updates): Google umožňuje publikovať novinky, akcie a udalosti priamo do vášho profilu. Ukážte algoritmom aj ľuďom, že vaša firma žije.\n\n2. Sila recenzií: Sociálny dôkaz, ktorý predáva\n\nSlováci sú opatrní kupujúci. Predtým, než navštívia novú reštauráciu alebo zavolajú inštalatéra, pozrú si hodnotenia. Pre Google sú recenzie priamym signálom kvality.\n\n- Pýtajte si recenzie aktívne: Po dokončení zákazky pošlite klientovi SMS alebo e-mail s priamym odkazom na udelenie recenzie.\n- Odpovedajte na každú recenziu: Na pozitívne odpovedzte s poďakovaním (môžete jemne zakomponovať kľúčové slovo, napr. „Sme radi, že vám naša pizza v Trnave chutila“). Na negatívne odpovedzte profesionálne, konštruktívne a bez emócií. Google sleduje vašu interakciu.\n\n## On-Page SEO: Prečo krabicové weby zlyhávajú\n\nMnoho začínajúcich podnikateľov siahne po lacných platformách na prenájom webov s vizuálnymi šablónami. Na začiatok to môže stačiť, no akonáhle vstúpite do konkurenčného prostredia lokálneho SEO, narazíte na tvrdé limity.\n\nGoogle dnes odmeňuje technickú dokonalosť a hĺbku. Lokálne SEO si vyžaduje špecifickú architektúru webu, ktorú šablóny často nedokážu efektívne a rýchlo spracovať.\n\n- Rýchlosť načítania a Core Web Vitals: Lokálne vyhľadávania prebiehajú primárne na mobilných zariadeniach, často na cestách a pri slabšom pripojení. Krabicové riešenia so sebou nesú balastný kód, zbytočné pluginy a ťažké skripty, ktoré web spomaľujú. Web na mieru je čistý, optimalizovaný a načíta sa okamžite.\n- Lokálne pristávacie stránky (Location Pages): Ak pôsobíte vo viacerých mestách (napr. upratovací servis v Bratislave, Trnave a Nitre), nevytvárajte jednu spoločnú podstránku. Každé mesto si zaslúži vlastnú, unikátnu podstránku optimalizovanú na daný región (napr. /upratovanie-bratislava, /upratovanie-nitra). Tieto stránky nesmú byť iba skopírovaným textom – musia obsahovať lokálne referencie, mapu a špecifické recenzie.\n- Implementácia štruktúrovaných dát (LocalBusiness Schema Markup): Ide o špeciálny kód, ktorý bežný návštevník nevidí, ale vyhľadávacím robotom presne hovorí, kto ste a kde sídlite. Správna implementácia Schema Markup dokáže výrazne posunúť web v lokálnych výsledkoch smerom nahor. Pri webe na mieru vám programátor vloží čistý JSON-LD kód priamo do štruktúry stránky bez potreby inštalácie spomaľujúcich pluginov.\n\n## Citácie a budovanie lokálnej autority\n\nAby Google vedel, že ste na slovenskom internete dôležitým hráčom, potrebujete vidieť, že o vás hovoria iné lokálne autority. Budovanie spätných odkazov pre lokálne SEO má svoje špecifiká.\n\n- Národné katalógy firiem: Registrácia na portáloch Azet, Zoznam, Atlas, Firmy.sk alebo Zlaté Stránky slúži na budovanie základnej dôvery a NAP konzistencie.\n- Regionálne spravodajstvo: Spätné odkazy z webov ako Sme Regionálne, MyBratislava, Nitralive či Košice Online prinášajú obrovskú lokálnu autoritu a relevantný traffic z okolia.\n- Lokálne partnerstvá: Weby dodávateľov alebo lokálnych športových klubov, ktoré sponzorujete, sú zdrojom pre prirodzené a vysoko relevantné lokálne odkazy.\n- Tematické slovenské portály: Weby ako Modrá Strecha (pre stavebníctvo), Wilio alebo portály o gastronómii vám pomôžu targetovať na publikum s jasným nákupným zámerom.\n\nZlaté pravidlo lokálneho linkbuildingu hovorí, že je lepšie získať jeden kvalitný odkaz z regionálneho spravodajského portálu vo vašom meste, ako 20 odkazov z generických, nekvalitných PR webov bez reálnej návštevnosti.\n\n## Analýza kľúčových slov: Ako hľadajú slovenskí zákazníci?\n\nPri analýze kľúčových slov pre lokálny trh musíte kombinovať hlavnú službu s geografickými modifikátormi. Ľudia na Slovensku vyhľadávajú tromi základnými spôsobmi:\n\n- Služba + Mesto (Implicitná lokácia): „stavebná firma Trnava“, „kaderníctvo Banská Bystrica“.\n- Služba + Okolie (Explicitná lokácia v blízkosti): „reštaurácia v mojom okolí“, „odťahová služba blízko mňa“. Google tu využíva geolokáciu zariadenia.\n- Špecifická štvrť/región: „pneuservis Bratislava Ružinov“, „chata na prenájom Liptov“.\n\nPri tvorbe obsahu na web sa nezameriavajte len na vysoko konkurenčné výrazy. Vytvárajte obsah okolo takzvaných long-tail kľúčových slov (dlhšie, špecifickejšie frázy).\n\nNamiesto článku „Ako postaviť dom“ napíšte článok „Na čo si dať pozor pri vybavovaní stavebného povolenia v Trenčíne a okolí“. Získate síce o niečo menej zobrazení, ale oslovíte ľudí, ktorí hľadajú presne vás a sú pripravení nakúpiť.\n\n## Sledujte svoje výsledky: Čo merať v lokálnom SEO?\n\nInvestícia do lokálneho SEO a webu na mieru sa musí vrátiť. Aby ste vedeli, či vaše úsilie prináša ovocie, zamerajte sa na tieto kľúčové metriky:\n\n- Zobrazenia a kliknutia v Google Business Profile: Google vám v administrácii presne ukáže, koľko ľudí si pozrelo váš profil, koľko z nich kliklo na tlačidlo „Zatelefonovať“, koľko si vyžiadalo trasu autom do vašej prevádzky a koľko prešlo na váš web.\n- Pozície v lokálnom vyhľadávaní: Sledujte, ako sa posúvate nahor v Map Packu pre kľúčové slová naviazané na vaše mesto.\n- Lokálny organický traffic: V nástroji Google Analytics 4 (GA4) sledujte návštevnosť z organického vyhľadávania očistenú o návštevy z iných krajín alebo nerelevantných miest, ak dodávate služby len lokálne.\n\n## Záver\n\nDostať sa na prvé priečky v lokálnom vyhľadávaní na Slovensku si vyžaduje kombináciu troch vecí: technicky dokonalého webu na mieru, pravidelne optimalizovaného Google profilu a autentického obsahu, ktorý rieši reálne problémy ľudí vo vašom regióne.\n\nVýhodou lokálneho SEO je, že konkurencia na slovenskom trhu v mnohých regiónoch stále spí. Mnoho firiem sa spolieha na staré weby, nefunkčné profily alebo neoptimalizované šablóny. Ak sa do toho obujete profesionálne, výsledky v podobe nových telefonátov a objednávok na seba nenechajú dlho čakať.`,
   },
+  'najcastejsie-chyby-na-firemnom-webe': {
+  title: '10 najčastejších chýb na firemnom webe, ktoré vás stoja zákazníkov',
+  excerpt: 'Máte web, ale neprináša zákazníkov? Pozrite si najčastejšie chyby firemných webstránok, ktoré znižujú dôveru, počet dopytov a online výsledky.',
+  date: '12. júla 2026', iso: '2026-07-12', readTime: '10 min čítania',
+  content: `Mnoho firiem dnes webstránku má. Nie každá webstránka však skutočne pracuje pre firmu. Častý problém nie je v tom, že by firma nemala kvalitné služby alebo produkty. Problém býva v samotnom webe. Návštevník príde, pozrie si stránku a odíde bez toho, aby zavolal alebo poslal dopyt.
+  Web môže byť vizuálne pekný, ale ak návštevník rýchlo nezistí, čo robíte, pre koho to robíte a prečo by si mal vybrať práve vás, prichádzate o zákazníkov.
+  Firemná webstránka dnes nie je iba online vizitka. Je to nástroj, ktorý má budovať dôveru a prinášať nové obchodné príležitosti.
+  ## 1. Návštevník okamžite nevie, čo robíte
+  Prvá chyba, ktorú vidíme na mnohých firemných weboch, je nejasná úvodná stránka.
+Človek, ktorý príde prvýkrát na váš web, by mal do niekoľkých sekúnd pochopiť:
+
+- aké služby ponúkate
+- komu pomáhate
+- aký problém riešite
+- prečo si vybrať práve vás
+
+Texty ako "Vitajte na našej stránke" alebo "Sme profesionálna spoločnosť" návštevníkovi nepomôžu rozhodnúť sa.
+Dobrá úvodná stránka musí hovoriť hlavne o zákazníkovi a jeho potrebe.
+
+## 2. Web nemá jasný cieľ
+Každý kvalitný web by mal mať jeden hlavný cieľ.
+Najčastejšie:
+- získavať dopyty
+- získavať telefonáty
+- predávať produkty
+- rezervovať služby
+
+Častou chybou je web, ktorý iba prezentuje informácie, ale návštevníkovi nepovie, čo má urobiť ďalej.
+Používajte jasné výzvy:
+- Vyžiadať cenovú ponuku
+- Kontaktovať nás
+- Objednať konzultáciu
+
+## 3. Chýba dôvera
+Zákazník sa pred rozhodnutím snaží zistiť, či vám môže veriť.
+Ak na stránke chýbajú:
+- referencie
+- ukážky práce
+- fotografie realizácií
+- skúsenosti klientov
+návštevník môže mať pochybnosti.
+Dôvera často rozhoduje o tom, či zákazník osloví vás alebo konkurenciu.
+
+## 4. Web sa načítava pomaly
+Rýchlosť webu je dnes veľmi dôležitá.
+Nikto nechce čakať niekoľko sekúnd, kým sa stránka otvorí.
+Najčastejšie príčiny pomalého webu:
+- veľké fotografie
+- nekvalitný hosting
+- zbytočné doplnky
+- neoptimalizovaný kód
+
+Rýchly web zlepšuje používateľský zážitok a pomáha aj pri SEO.
+
+## 5. Web nie je pripravený pre mobily
+Veľká časť návštevníkov používa mobilné zariadenia.
+Ak sa stránka zle ovláda, text je príliš malý alebo tlačidlá nefungujú správne, používateľ odíde.
+Moderná webstránka musí fungovať perfektne na počítači aj mobile.
+
+## 6. Texty hovoria iba o firme
+Mnohé firmy píšu iba o sebe.
+Napríklad:
+- máme dlhoročné skúsenosti
+- poskytujeme kvalitné služby
+- sme profesionáli
+
+Zákazník však rieši hlavne svoj problém.
+Potrebuje vedieť:
+- ako mu pomôžete
+- aký výsledok môže očakávať
+- prečo ste lepšia voľba
+Dobré texty na webe predávajú riešenie, nie iba službu.
+
+## 7. Kontakt sa ťažko hľadá
+Ak zákazník musí hľadať telefón alebo formulár, je to problém.
+Kontakt by mal byť dostupný okamžite.
+
+Odporúčame mať:
+- telefón v hornej časti stránky
+- viditeľné tlačidlo kontaktu
+- jednoduchý formulár
+Každý zbytočný krok znižuje šancu na získanie zákazníka.
+
+## 8. Nekvalitné fotografie
+Fotografie vytvárajú prvý dojem.
+Používanie náhodných obrázkov z internetu často pôsobí nedôveryhodne.
+Lepšie fungujú vlastné fotografie:
+- tímu
+- prevádzky
+- produktov
+- realizácií
+
+Autentický obsah pomáha budovať vzťah so zákazníkom.
+
+## 9. Chýbajú odpovede na otázky zákazníkov
+Pred kontaktovaním firmy má zákazník často množstvo otázok.
+Zaujíma ho:
+- cena
+- priebeh spolupráce
+- čas realizácie
+- miesto pôsobenia
+- čo všetko získava
+Ak odpovede nenájde na vašom webe, začne hľadať inde.
+
+## 10. Web sa po spustení neaktualizuje
+Web nie je hotový navždy v deň spustenia.
+Firma rastie, menia sa služby, pribúdajú nové skúsenosti a referencie.
+Aktualizovaný web pôsobí profesionálnejšie a pomáha získavať viac návštevníkov z vyhľadávačov.
+
+## Ako zistiť, či váš web potrebuje zlepšenie?
+
+Položte si tieto otázky:
+- Je do 5 sekúnd jasné, čo firma ponúka?
+- Funguje web dobre na mobile?
+- Nájde zákazník kontakt okamžite?
+- Obsahuje reálne referencie?
+- Vedie návštevníka k ďalšiemu kroku?
+Ak ste pri viacerých otázkach odpovedali nie, váš web pravdepodobne prichádza o zákazníkov.
+
+## Záver
+
+Dobrý firemný web nie je iba pekný dizajn.
+Je to nástroj, ktorý má pomáhať firme rásť.
+Ak web neprináša zákazníkov, často nemusí byť problém v celej stránke. Niekedy stačí odstrániť niekoľko chýb, zlepšiť obsah, zrýchliť načítanie a jasnejšie komunikovať hodnotu.
+Vo WebKlienti tvoríme webstránky pre živnostníkov a malé firmy, ktoré chcú mať profesionálnu prezentáciu a získavať viac zákazníkov online.`
+},
 };
 
 function renderInline(text) {
