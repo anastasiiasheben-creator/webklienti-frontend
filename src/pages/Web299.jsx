@@ -375,14 +375,7 @@ export default function Web299() {
         </div>
       </div>
 
-      {/* 9. FORM */}
-      <div id="form299" style={{ padding: '96px 24px 140px', background: C.bg }}>
-        <div style={{ maxWidth: 600, margin: '0 auto' }}>
-          <p className="section-label">Rýchly dopyt</p>
-          <h2 style={{ fontSize: 'clamp(26px, 3vw, 36px)', fontWeight: 700, letterSpacing: '-0.01em', marginBottom: 12 }}>Získajte profesionálny návrh webu do 24 hodín zdarma</h2>
-          <p style={{ color: C.textSub, marginBottom: 40, fontSize: 16, lineHeight: 1.6 }}>Napíšte nám základné detaily. Návrh je nezáväzný — ak sa vám nebude páčiť, nič neplatíte.</p>
-          
-          {formStatus === 'success' ? (
+      {formStatus === 'success' ? (
             <div style={{ background: C.white, border: `1px solid ${C.border}`, borderRadius: 16, padding: '52px 32px', textAlign: 'center' }}>
               <div style={{ fontSize: 48, marginBottom: 14 }}>🎉</div>
               <h3 style={{ fontSize: 26, fontWeight: 700, marginBottom: 10 }}>Skvelé, dáta dorazili!</h3>
@@ -414,26 +407,18 @@ export default function Web299() {
                 </label>
               </div>
               {consentError && <p style={{ color: C.red, fontSize: 13 }}>⚠️ Pre odoslanie dopytu musíte potvrdiť súhlas so spracovaním osobných údajov.</p>}
-              {formStatus === 'error' && <p style={{ color: C.red, fontSize: 13 }}>❌ Systému sa nepodarilo odoslať formulár. Skúste to znova alebo nám zavolajte na číslo hore.</p>}
+              {formStatus === 'error' && <p style={{ color: C.red, fontSize: 13 }}>❌ Systému sa nepodarilo odoslať formulár. Skúste to znova.</p>}
               <button onClick={handleSubmit} disabled={formStatus === 'loading'}
                 className="btn-primary" style={{ width: '100%', height: 52, fontSize: 16, fontWeight: 700, opacity: formStatus === 'loading' ? 0.7 : 1 }}>
                 {formStatus === 'loading' ? 'Pripravujem dáta...' : 'Odoslať dopyt a získať návrh zdarma →'}
               </button>
-              <div style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap', marginTop: 4 }}>
-                {[
-                  { text: 'Návrh zdarma' }, { text: 'Odpovieme do 24h' }, { text: 'Bez záväzku' }
-                ].map(b => (
-                  <span key={b.text} style={{ fontSize: 14, color: C.textSub, fontWeight: 500, display: 'flex', alignItems: 'center', gap: 6 }}>
-                    <span style={{ color: C.green, fontSize: 16, fontWeight: 700 }}>✓</span> {b.text}
-                  </span>
-                ))}
-              </div>
             </div>
           )}
         </div>
       </div>
-      );
-      }
+    </div>
+  );
+}
       
       {/* FOOTER */}
       <footer style={{ background: '#111827', padding: '48px 24px', textAlign: 'center' }}>
