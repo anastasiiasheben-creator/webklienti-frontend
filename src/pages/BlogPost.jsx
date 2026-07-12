@@ -1,7 +1,6 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import logoImg from '../assets/logo.webp';
-
+ 
 const C = {
   blue: '#2563EB', bg: '#F9FAFB', white: '#FFFFFF',
   border: '#E5E7EB', text: '#111827', textSub: '#4B5563', dark: '#0F172A',
