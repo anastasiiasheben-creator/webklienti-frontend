@@ -13,6 +13,12 @@ const posts = {
     date: '12. februára 2025', iso: '2025-02-12', readTime: '4 min čítania',
     content: `Každý deň ľudia vo vašom okolí hľadajú služby, ktoré ponúkate. Ak však nemáte web, väčšina z nich skončí u konkurencie...`,
   },
+  'najcastejsie-chyby-na-firemnom-webe': {
+    title: 'Najčastejšie chyby na firemnom webe',
+    excerpt: 'Prehliadky najbežnejších chýb, ktoré znižujú konverzie a dôveru návštevníkov.',
+    date: '01. marca 2025', iso: '2025-03-01', readTime: '5 min čítania',
+    content: `V tomto článku rozoberáme najčastejšie chyby, ktoré firmy robia na svojich weboch: chýbajúci kontakt, pomalé načítanie, neprehľadná štruktúra a nekvalitný obsah. Opravou týchto problémov môžete významne zvýšiť počet dopytov a dôveru zákazníkov.`,
+  },
   // ... ostatné príspevky z tvojho zoznamu
 };
 
