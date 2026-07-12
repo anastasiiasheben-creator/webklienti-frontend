@@ -381,6 +381,7 @@ export default function Web299() {
           <p className="section-label">Rýchly dopyt</p>
           <h2 style={{ fontSize: 'clamp(26px, 3vw, 36px)', fontWeight: 700, letterSpacing: '-0.01em', marginBottom: 12 }}>Získajte profesionálny návrh webu do 24 hodín zdarma</h2>
           <p style={{ color: C.textSub, marginBottom: 40, fontSize: 16, lineHeight: 1.6 }}>Napíšte nám základné detaily. Návrh je nezáväzný — ak sa vám nebude páčiť, nič neplatíte.</p>
+          
           {formStatus === 'success' ? (
             <div style={{ background: C.white, border: `1px solid ${C.border}`, borderRadius: 16, padding: '52px 32px', textAlign: 'center' }}>
               <div style={{ fontSize: 48, marginBottom: 14 }}>🎉</div>
