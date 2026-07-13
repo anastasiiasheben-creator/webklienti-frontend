@@ -289,7 +289,6 @@ export default function Web299() {
                       ))}
                     </div>
                   </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -298,6 +297,7 @@ export default function Web299() {
             <div style={{ background: 'rgba(37,99,235,0.05)', border: `1px solid rgba(37,99,235,0.15)`, borderRadius: 12, padding: '14px 20px' }}>
               <span style={{ fontSize: 14, fontWeight: 700, color: C.blue }}>🎯 Montwell.sk spustený do 5 dní · predajný web, ktorý buduje dôveru a generuje kontakty</span>
             </div>
+          </div>
 
           {/* REVIEWS */}
           <p style={{ fontSize: 12, fontWeight: 600, color: C.textSub, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 16, marginTop: 48 }}>Hodnotenia klientov</p>
