@@ -303,6 +303,8 @@ export default function Web299() {
           <p style={{ fontSize: 12, fontWeight: 600, color: C.textSub, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 16, marginTop: 48 }}>Hodnotenia klientov</p>
           <h3 style={{ fontSize: 'clamp(20px, 2.5vw, 28px)', fontWeight: 700, letterSpacing: '-0.01em', marginBottom: 24 }}>Čo hovoria naši klienti</h3>
 
+          <style>{`.google-cta-card:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }`}</style>
+
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16, marginBottom: 24 }}>
             {/* Single real review */}
             <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: 12, transition: 'all .2s' }}>
@@ -323,7 +325,7 @@ export default function Web299() {
             </div>
 
             {/* CTA card — more reviews on Google */}
-            <a href="https://maps.app.goo.gl/tDf7dRkYB2eZ3j9d7" target="_blank" rel="noopener noreferrer" className="card"
+            <a href="https://maps.app.goo.gl/tDf7dRkYB2eZ3j9d7" target="_blank" rel="noopener noreferrer" className="card google-cta-card"
               style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 12, cursor: 'pointer', transition: 'all .2s' }}
             >
               <div style={{ fontSize: 32 }}>⭐</div>
