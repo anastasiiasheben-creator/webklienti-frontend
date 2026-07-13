@@ -119,9 +119,7 @@ export default function Web299() {
           .hero-ctas { flex-direction: column !important; }
           .hero-ctas .btn-primary-lg, .hero-ctas .btn-secondary { width: 100% !important; }
           .what-grid { grid-template-columns: 1fr 1fr !important; }
-          .case-split { flex-direction: column !important; }
-          .arrow-sep { display: none !important; }
-          .reviews-grid { grid-template-columns: 1fr !important; }
+          .montwell-grid { grid-template-columns: 1fr !important; }
           .steps-row { flex-direction: column !important; }
           .steps-row > div { border-right: none !important; border-bottom: 1px solid #E5E7EB; }
           .steps-row > div:last-child { border-bottom: none !important; }
@@ -249,9 +247,9 @@ export default function Web299() {
           
           <div className="card" style={{ padding: 32, marginBottom: 24 }}>
             <div className="montwell-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40, alignItems: 'stretch', marginBottom: 28 }}>
-              <div style={{ borderRadius: 12, overflow: 'hidden', border: `1px solid ${C.border}` }}>
-                <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer">
-                  <img src={montwellImg} alt="Montwell webstránka" width="600" height="324" style={{ width: '100%', display: 'block', height: 'auto' }} loading="lazy" />
+              <div style={{ borderRadius: 12, overflow: 'hidden', border: `1px solid ${C.border}`, display: 'flex' }}>
+                <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer" style={{ display: 'block', width: '100%' }}>
+                  <img src={montwellImg} alt="Montwell webstránka" width="600" height="324" style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }} loading="lazy" />
                 </a>
               </div>
 
