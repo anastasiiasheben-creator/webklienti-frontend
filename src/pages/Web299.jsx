@@ -289,6 +289,17 @@ export default function Web299() {
                       ))}
                     </div>
                   </div>
+                        Reálny predajný web: montwell.sk ↗
+                      </a>
+                    </p>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 10, flexGrow: 1, justifyContent: 'center' }}>
+                      {['Profesionálny web', 'Galéria realizácií', 'Klienti ich dnes nájdu cez Google vyhľadávanie', 'Prvé dopyty a objednávky už v prvých týždňoch'].map((pt, index) => (
+                        <div key={index} style={{ fontSize: 13, color: '#166534', display: 'flex', gap: 8, alignItems: 'center' }}>
+                          <span style={{ color: C.green, fontWeight: 700, flexShrink: 0 }}>✓</span> {pt}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
