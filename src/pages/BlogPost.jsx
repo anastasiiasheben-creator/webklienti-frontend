@@ -164,22 +164,225 @@ Firmy, ktoré SEO zanedbajú, zostávajú neviditeľné. Firmy, ktoré doň inve
 **Chcete vedieť, prečo sa váš web nezobrazuje na Google tak, ako by mal? SEO analýza vám ukáže presné kroky, ako získať viac návštevníkov a zákazníkov.**`,
   },
   'google-search-console-a-google-analytics': {
-    title: 'Prečo sú Google Search Console a Google Analytics nevyhnutné pre moderný web?',
-    excerpt: 'Pomáhajú firmám sledovať návštevnosť, zlepšovať SEO a robiť lepšie rozhodnutia.',
+    title: 'Google Search Console a Google Analytics: Prečo sú nevyhnutné pre moderný web',
+    metaTitle: 'Google Search Console a Google Analytics: Prečo ich potrebuje každý web',
+    excerpt: 'Zistite, prečo sú Google Search Console a Google Analytics nevyhnutné pre úspešný web. Naučte sa sledovať návštevnosť, SEO výsledky a správanie zákazníkov.',
     date: '28. júna 2025',
     iso: '2025-06-28',
-    readTime: '5 min čítania',
-    content: `V dnešnom digitálnom svete nestačí mať iba peknú webstránku. Potrebujete rozumieť tomu, ako sa ľudia na vašom webe správajú.
+    readTime: '8 min čítania',
+    content: `V dnešnom digitálnom prostredí už nestačí mať iba modernú webovú stránku.
 
-## Google Search Console
+Pekný dizajn, kvalitné fotografie a profesionálne texty sú dôležité, ale samy o sebe nezaručia nových zákazníkov.
 
-Pomáha sledovať výkon stránky vo výsledkoch vyhľadávania Google, analyzovať kľúčové slová a odhaliť technické problémy.
+Skutočný problém mnohých firiem je, že nevedia odpovedať na základné otázky:
 
-## Google Analytics
+- Koľko ľudí navštevuje môj web?
+- Ako ma zákazníci nachádzajú?
+- Na aké výrazy sa zobrazujem v Google?
+- Ktoré stránky prinášajú najviac dopytov?
+- Prečo návštevníci odchádzajú bez kontaktu?
 
-Poskytuje detailné štatistiky o návštevnosti webu a správaní používateľov.
+Ak tieto údaje nepoznáte, rozhodujete sa podľa pocitu.
 
-Moderné firmy dnes rozhodujú na základe dát. Web bez analytiky funguje naslepo.`,
+A práve tu prichádzajú na rad Google Search Console a Google Analytics. Tieto nástroje umožňujú pochopiť, čo sa na vašom webe skutočne deje, a robiť rozhodnutia založené na dátach.
+
+## Web bez analytiky funguje naslepo
+
+Predstavte si kamennú predajňu, do ktorej každý deň prichádzajú zákazníci. Majiteľ vie:
+
+- koľko ľudí vošlo dnu
+- ktoré produkty si pozerali
+- čo si kúpili
+- kde vznikol problém
+
+Pri webovej stránke je to rovnaké. Rozdiel je v tom, že bez analytických nástrojov tieto informácie nevidíte.
+
+Môžete mať stovky návštevníkov mesačne, ale neviete:
+
+- či prišli správni ľudia
+- či našli to, čo hľadali
+- či web podporuje predaj
+- kde prichádzate o potenciálnych zákazníkov
+
+Moderný marketing preto nie je iba o získavaní návštevnosti. Je hlavne o pochopení správania návštevníkov.
+
+## Google Search Console: Nástroj, ktorý ukazuje, ako vás vidí Google
+
+Google Search Console je bezplatný nástroj od Googlu, ktorý pomáha majiteľom webov sledovať výkon stránky vo výsledkoch vyhľadávania.
+
+Jednoducho povedané: ukazuje vám, ako Google vníma váš web a pri akých vyhľadávaniach ho zobrazuje. Pre SEO je to jeden z najdôležitejších zdrojov dát.
+
+Čo môžete zistiť pomocou Google Search Console?
+
+### 1. Na aké kľúčové slová sa zobrazujete
+
+Mnohé firmy si myslia, že presne vedia, ako ich zákazníci hľadajú. Realita býva často iná.
+
+Search Console vám ukáže:
+
+- aké frázy ľudia zadávajú
+- koľkokrát sa váš web zobrazil
+- koľko ľudí kliklo na výsledok
+- aká je priemerná pozícia
+
+Napríklad: Firma poskytuje rekonštrukcie bytov. Majiteľ očakáva návštevnosť z výrazu „rekonštrukcia bytu". Po čase však zistí, že veľa ľudí prichádza cez:
+
+- „cena rekonštrukcie kúpeľne"
+- „koľko stojí prerábka bytu"
+- „moderná rekonštrukcia paneláku"
+
+Tieto dáta môžu otvoriť nové možnosti pre tvorbu obsahu.
+
+### 2. Ktoré stránky získavajú najviac návštevnosti
+
+Nie každá stránka na webe má rovnakú hodnotu. Môžete zistiť, že:
+
+- článok prináša veľa návštev
+- služba získava málo kliknutí
+- dôležitá podstránka sa takmer nezobrazuje
+
+Na základe týchto informácií môžete upravovať obsah a zlepšovať výsledky.
+
+### 3. Technické problémy webu
+
+Google Search Console upozorní aj na problémy, ktoré môžu negatívne ovplyvniť SEO. Napríklad:
+
+- stránky, ktoré Google nezaindexoval
+- chyby pri zobrazovaní
+- problémy s mobilnou verziou
+- technické obmedzenia
+
+Web môže vyzerať perfektne pre návštevníka, ale ak má problém s indexáciou, Google ho nemusí správne zobrazovať.
+
+## Google Analytics: Ukáže, čo robia návštevníci na vašom webe
+
+Kým Google Search Console rieši najmä viditeľnosť vo vyhľadávaní, Google Analytics ukazuje správanie používateľov po príchode na web. Pomáha odpovedať na otázku: čo robia ľudia, keď už sa na môj web dostanú?
+
+Čo môžete sledovať v Google Analytics?
+
+### 1. Odkiaľ návštevníci prichádzajú
+
+Zistíte, či ľudia prichádzajú:
+
+- z Google vyhľadávania
+- sociálnych sietí
+- reklamy
+- odkazov z iných webov
+
+To vám pomôže pochopiť, ktoré marketingové kanály fungujú.
+
+### 2. Správanie používateľov
+
+Môžete sledovať:
+
+- ktoré stránky ľudia navštevujú
+- ako dlho sa na nich zdržia
+- akou cestou prechádzajú webom
+- kde najčastejšie odchádzajú
+
+Napríklad: Máte veľkú návštevnosť článku „Ako vybrať klimatizáciu", ale takmer žiadne kontakty. Možný problém nemusí byť v návštevnosti. Možno článok neodkazuje na službu montáže klimatizácie alebo návštevník nevie, čo má urobiť ďalej.
+
+### 3. Konverzie a reálny výsledok
+
+Najväčšia chyba firiem je sledovať iba počet návštev. 1000 návštevníkov mesačne ešte neznamená úspech.
+
+Dôležitejšie otázky sú:
+
+- Koľko ľudí poslalo dopyt?
+- Koľko zavolalo?
+- Ktoré stránky prinášajú zákazníkov?
+
+Web nemá byť iba informačná vizitka. Má podporovať obchodné výsledky.
+
+## Ako spolupracujú Google Search Console a Google Analytics
+
+Tieto nástroje sa navzájom dopĺňajú.
+
+Google Search Console odpovedá: ako ma ľudia nachádzajú?
+
+Google Analytics odpovedá: čo robia po návšteve webu?
+
+Spolu vytvárajú kompletný obraz:
+
+- Zistíte, ktoré vyhľadávania prinášajú návštevnosť.
+- Zistíte, ako sa návštevníci správajú.
+- Upravíte obsah alebo stránky.
+- Zlepšujete výsledky.
+
+Presne tak funguje moderný SEO proces.
+
+## Príklad z praxe: Ako dáta pomohli zlepšiť web
+
+Predstavme si lokálnu firmu, ktorá poskytuje servis klimatizácií. Majiteľ mal web, ale získaval iba niekoľko dopytov mesačne.
+
+Po analýze dát zistil:
+
+- ľudia často hľadali „servis klimatizácie pred letom"
+- hlavná stránka služby neobsahovala odpovede na tieto otázky
+- návštevníci odchádzali bez kontaktovania firmy
+
+Firma následne:
+
+- vytvorila nový článok
+- upravila stránku služby
+- pridala jasnejšiu výzvu na kontakt
+
+Výsledkom nebolo iba viac návštevníkov. Výsledkom bolo viac relevantných zákazníkov. A presne o tom by mala byť analytika.
+
+## Prečo sú dáta základom úspešného SEO
+
+SEO nie je jednorazová úprava webu. Je to neustále zlepšovanie.
+
+Pomocou dát môžete:
+
+- nájsť nové príležitosti
+- aktualizovať slabé stránky
+- pochopiť zákazníkov
+- zlepšovať konverzie
+
+Ak chcete zlepšovať svoju organickú návštevnosť, odporúčam pozrieť si aj článok o [SEO pre malé firmy](/blog/ako-ziskat-zakaznikov-z-google-bez-reklamy), kde vysvetľujeme, ako vytvoriť stratégiu získavania zákazníkov z Google.
+
+## Najčastejšie chyby pri používaní analytiky
+
+### 1. Firma nástroje nainštaluje, ale nesleduje ich
+
+Samotná inštalácia neprinesie výsledky. Dôležité je pravidelne vyhodnocovať dáta.
+
+### 2. Sleduje iba návštevnosť
+
+Veľa návštevníkov neznamená automaticky viac zákazníkov.
+
+### 3. Nerobí z dát žiadne zmeny
+
+Dáta majú hodnotu iba vtedy, keď podľa nich konáte.
+
+## FAQ: Google Search Console a Google Analytics
+
+### Je Google Search Console zadarmo?
+
+Áno. Google Search Console je bezplatný nástroj dostupný pre každého vlastníka webovej stránky.
+
+### Potrebujem Google Analytics aj pri malom firemnom webe?
+
+Áno. Aj malý web môže získať cenné informácie o návštevníkoch a zlepšiť svoju výkonnosť.
+
+### Aký je rozdiel medzi Google Search Console a Google Analytics?
+
+Search Console sleduje výkon vo vyhľadávaní Google. Analytics sleduje správanie používateľov na samotnom webe.
+
+### Ako často treba kontrolovať analytické dáta?
+
+Ideálne pravidelne, napríklad raz mesačne. Pri aktívnom SEO projekte aj častejšie.
+
+## Záver: Web bez dát je iba odhad
+
+Moderná firma nemôže riadiť online marketing iba podľa pocitu.
+
+Google Search Console a Google Analytics poskytujú informácie, ktoré pomáhajú pochopiť zákazníkov, zlepšovať web a získavať viac obchodných príležitostí.
+
+Úspešný web nie je iba pekný web. Je to web, ktorý dokáže prilákať správnych ľudí, pochopiť ich správanie a premeniť návštevy na zákazníkov.
+
+**Neviete, či váš web využíva celý potenciál Google vyhľadávania? Analýza dát vám môže ukázať, kde strácate návštevníkov, ktoré stránky majú najväčší potenciál a čo môžete zlepšiť pre získanie nových zákazníkov.**`,
   },
   'kolko-stoji-webstranka-na-slovensku': {
     title: 'Koľko stojí webstránka na Slovensku v roku 2026?',
@@ -748,6 +951,230 @@ Dobrý firemný web nie je iba pekný dizajn. Je to nástroj, ktorý má pomáha
 
 Vo WebKlienti tvoríme webstránky pre živnostníkov a malé firmy, ktoré chcú mať profesionálnu prezentáciu a získavať viac zákazníkov online.`,
   },
+  'ako-ziskat-zakaznikov-z-google-bez-reklamy': {
+    title: 'Ako získať prvých zákazníkov cez Google bez platenia reklamy: Praktický SEO návod pre malé firmy',
+    metaTitle: 'Ako získať zákazníkov z Google bez reklamy | SEO pre malé firmy',
+    excerpt: 'Naučte sa, ako získať prvých zákazníkov cez Google bez platených reklám. Praktický SEO návod pre malé firmy, lokálne vyhľadávanie a rast organickej návštevnosti.',
+    date: '16. júla 2026',
+    iso: '2026-07-16',
+    readTime: '9 min čítania',
+    content: `Mnohé malé firmy majú rovnaký problém.
+
+Webová stránka existuje. Služby sú kvalitné. Firma má skúsenosti. Napriek tomu neprichádzajú nové dopyty.
+
+Najčastejšia otázka podnikateľov potom znie: „Prečo nás ľudia cez Google nenájdu?"
+
+Odpoveď je jednoduchá. Google neuprednostňuje firmy iba preto, že existujú. Vyberá stránky, ktoré najlepšie odpovedajú na konkrétnu potrebu používateľa.
+
+Ak niekto zadá do vyhľadávania:
+
+- „oprava kotla Trnava"
+- „účtovník pre malú firmu"
+- „rekonštrukcia kúpeľne cena"
+- „ako vybrať klimatizáciu"
+
+Google hľadá obsah, ktorý mu pomôže odpovedať. A práve tu vzniká príležitosť pre malé firmy. Správne nastavené SEO dokáže privádzať zákazníkov z Google bez toho, aby firma musela každý deň platiť za reklamu.
+
+## Prečo je Google vyhľadávanie jeden z najlepších zdrojov zákazníkov
+
+Nie všetci návštevníci webu majú rovnakú hodnotu. Človek, ktorý náhodne uvidí reklamu na sociálnej sieti, možno službu nepotrebuje. Človek, ktorý napíše do Googlu „firma na rekonštrukciu bytu Bratislava", už rieši konkrétny problém.
+
+Rozdiel je v úmysle. Pri reklame firma hľadá zákazníka. Pri Google vyhľadávaní zákazník hľadá firmu.
+
+To je dôvod, prečo môže byť organická návštevnosť z Google vyhľadávania veľmi kvalitným zdrojom nových objednávok a dopytov.
+
+## SEO pre malé firmy nie je o veľkom rozpočte
+
+Veľa podnikateľov si myslí, že SEO funguje iba pre veľké spoločnosti. Nie je to pravda.
+
+Veľké firmy často bojujú o všeobecné výrazy ako „marketing", „poistenie", „stavba domu" alebo „hypotéka". Malá firma však môže vyhrať presnejším zameraním.
+
+Namiesto „stavebná firma" môže cieliť na „rekonštrukcia kúpeľne v Trnave". Namiesto „účtovníctvo" môže cieliť na „účtovníctvo pre živnostníkov Bratislava".
+
+Tieto výrazy síce nemajú taký veľký počet vyhľadávaní, ale často prinášajú ľudí, ktorí sú bližšie k rozhodnutiu. SEO nie je hra o najväčšiu návštevnosť. Je to hra o správnych návštevníkoch.
+
+## Krok 1: Zistite, čo vaši zákazníci hľadajú
+
+Najväčšia chyba malých firiem je, že vytvárajú obsah podľa seba. Napíšu: „Sme profesionálna firma s 15-ročnými skúsenosťami." To môže byť pravda. Ale zákazník do Googlu nezadáva „hľadám profesionálnu firmu s 15-ročnými skúsenosťami".
+
+Zákazník zadáva:
+
+- ako vyriešiť problém
+- koľko služba stojí
+- aké riešenie je najlepšie
+- koho si vybrať
+
+Preto prvá otázka pri SEO nemá byť „Čo chceme povedať zákazníkom?", ale „Akú otázku zadávajú zákazníci predtým, než nás kontaktujú?"
+
+### Ktoré SEO kľúčové slová prinášajú zákazníkov
+
+Kľúčové slová môžeme rozdeliť do troch skupín.
+
+### 1. Kľúčové slová s nákupným zámerom
+
+Tieto výrazy používajú ľudia, ktorí už hľadajú konkrétnu službu.
+
+- servis klimatizácie Bratislava
+- tvorba web stránky cena
+- oprava práčky nonstop
+- účtovník pre firmu
+
+Tieto frázy majú často najvyššiu obchodnú hodnotu.
+
+### 2. Informačné kľúčové slová
+
+Pred nákupom si ľudia často robia prieskum.
+
+- koľko stojí rekonštrukcia bytu
+- ako vybrať tepelné čerpadlo
+- aké okná sú najlepšie
+- ako založiť firmu
+
+Firma, ktorá vytvorí kvalitný obsah, môže zákazníka osloviť ešte pred konkurenciou.
+
+### 3. Lokálne vyhľadávanie
+
+Pre malé firmy je lokálne SEO jedna z najväčších príležitostí. Ľudia často hľadajú službu spolu s mestom, firmu v okolí alebo prevádzku blízko seba.
+
+Ak podnikáte lokálne, odporúčam venovať pozornosť aj článku o [Lokálnom SEO](/blog/lokalne-seo-slovensko), pretože práve lokálne výsledky často rozhodujú o tom, komu zákazník zavolá.
+
+## Krok 2: Vytvorte obsah, ktorý Google odporučí
+
+Google dnes nehľadá iba stránky s kľúčovými slovami. Hľadá najlepšiu odpoveď.
+
+Kvalitný SEO obsah musí:
+
+- vyriešiť problém zákazníka
+- vysvetliť tému jednoducho
+- ukázať odborné znalosti
+- viesť návštevníka k ďalšiemu kroku
+
+Príklad: Firma predáva klimatizácie.
+
+Slabý článok: „Prečo sme najlepší predajca klimatizácií."
+
+Lepší článok: „Ako vybrať klimatizáciu do bytu: Kompletný návod."
+
+Druhý článok má väčšiu šancu zaujať ľudí, ktorí reálne riešia nákup.
+
+## Krok 3: Optimalizujte stránky služieb
+
+Mnoho firiem robí chybu. Vytvoria množstvo článkov, ale samotné služby nechajú slabé.
+
+Stránka služby by mala jasne vysvetliť:
+
+- čo ponúkate
+- komu pomáhate
+- aký problém riešite
+- prečo si vybrať vás
+- ako vás kontaktovať
+
+Namiesto jednej všeobecnej stránky „/sluzby" je lepšie vytvoriť samostatné stránky, napríklad:
+
+- /rekonstrukcia-kupelne
+- /sluzby-uctovnictvo
+- /oprava-kotlov
+
+Každá stránka môže získavať návštevnosť z iných vyhľadávaní.
+
+## Krok 4: Merajte výsledky pomocou Google nástrojov
+
+SEO bez merania je iba odhad. Pomocou nástrojov ako [Google Search Console a Google Analytics](/blog/google-search-console-a-google-analytics) môžete sledovať:
+
+- ktoré frázy privádzajú návštevníkov
+- ktoré stránky fungujú
+- koľko ľudí kontaktuje firmu
+- kde zákazníci odchádzajú
+
+Dôležité nie je iba sledovať návštevnosť. Dôležité je sledovať výsledok. Jedna návšteva od človeka, ktorý pošle dopyt, môže mať väčšiu hodnotu ako stovky náhodných kliknutí.
+
+## Krok 5: Prepojte obsah pomocou interných odkazov
+
+Interné odkazy pomáhajú Googlu pochopiť štruktúru webu. Zároveň udržujú návštevníkov dlhšie na stránke.
+
+Napríklad v článku o získavaní zákazníkov z Google môžete prirodzene odkázať na [Lokálne SEO](/blog/lokalne-seo-slovensko) alebo na [Google Search Console a Google Analytics](/blog/google-search-console-a-google-analytics).
+
+Tak vzniká prepojený odborný obsahový systém.
+
+## 30-dňový plán: Ako začať získavať zákazníkov z Google
+
+### Prvý týždeň
+
+- skontrolujte stav webu
+- nastavte Google Search Console
+- vytvorte zoznam 30 kľúčových slov
+
+### Druhý týždeň
+
+- upravte hlavné stránky služieb
+- doplňte odpovede na otázky zákazníkov
+- pridajte referencie
+
+### Tretí týždeň
+
+- publikujte prvé odborné články
+- vytvorte interné odkazy
+- optimalizujte lokálne profily
+
+### Štvrtý týždeň
+
+- sledujte výsledky
+- aktualizujte obsah
+- pokračujte v publikovaní
+
+SEO nie je jednorazová úloha. Je to proces budovania digitálneho aktíva firmy.
+
+## Najčastejšie chyby malých firiem pri SEO
+
+### 1. Čakajú okamžité výsledky
+
+SEO potrebuje čas. Výhodou však je, že výsledky môžu rásť dlhodobo.
+
+### 2. Píšu iba o sebe
+
+Zákazníci nehľadajú históriu firmy. Hľadajú riešenie svojho problému.
+
+### 3. Ignorujú lokálne SEO
+
+Pre malé firmy môže byť lokálne vyhľadávanie najrýchlejšia cesta k zákazníkom.
+
+### 4. Nemajú jasný cieľ
+
+Cieľom SEO nie je iba návštevnosť. Cieľom sú:
+
+- telefonáty
+- formuláre
+- objednávky
+- noví zákazníci
+
+## FAQ: Ako získať zákazníkov z Google bez reklamy
+
+### Je možné získať zákazníkov z Google zadarmo?
+
+Áno. Organické výsledky nefungujú na princípe platenia za kliknutie. Investujete však čas do obsahu, optimalizácie a kvality webu.
+
+### Ako dlho trvá, kým SEO prinesie výsledky?
+
+Záleží od konkurencie a kvality webu. Prvé zlepšenia môžu prísť v priebehu mesiacov, stabilný rast však vyžaduje pravidelnú prácu.
+
+### Potrebuje SEO aj malá lokálna firma?
+
+Áno. Práve malé firmy často získajú veľkú výhodu cez lokálne vyhľadávanie.
+
+### Koľko článkov potrebujem?
+
+Dôležitejšia je kvalita ako množstvo. Niekoľko dobre spracovaných článkov môže priniesť viac zákazníkov ako desiatky slabých textov.
+
+## Záver: Google môže byť váš najlepší zdroj nových zákazníkov
+
+Získať zákazníkov cez Google bez platenia reklamy nie je o trikoch. Je to o pochopení zákazníka.
+
+Firma, ktorá vie, čo ľudia hľadajú, vytvorí kvalitný obsah a správne optimalizuje svoj web, môže postupne získavať stabilný prísun nových dopytov.
+
+Najväčšia výhoda SEO je v tom, že neplatíte za každý klik. Budujete systém, ktorý môže pracovať pre vašu firmu dlhodobo.
+
+**Neviete, prečo váš web neprináša zákazníkov z Google? Začnite SEO analýzou a zistite, na aké výrazy vás zákazníci hľadajú, kde strácate návštevnosť a ktoré stránky môžu priniesť nové dopyty.**`,
+  },
 };
 
 function renderInline(text) {
@@ -906,7 +1333,7 @@ export default function BlogPost() {
   return (
     <div style={{ fontFamily: "'Inter', -apple-system, sans-serif", background: C.bg, minHeight: '100vh' }}>
       <Helmet>
-        <title>{post.title} | WebKlienti</title>
+        <title>{post.metaTitle || `${post.title} | WebKlienti`}</title>
 
         <meta name="description" content={post.excerpt} />
         <meta name="robots" content="index,follow,max-image-preview:large" />
