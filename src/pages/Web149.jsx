@@ -15,7 +15,7 @@ const C = {
 };
 
 export default function Web149() {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', website: '', message: '', consent: false, package: 'Landing page — 149 €' });
+  const [form, setForm] = useState({ name: '', email: '', phone: '', website: '', message: '', consent: false, package: 'Landing page вЂ” 149 в‚¬' });
   const [formStatus, setFormStatus] = useState('idle');
   const [consentError, setConsentError] = useState(false);
   const [openFaq, setOpenFaq] = useState(null);
@@ -23,10 +23,10 @@ export default function Web149() {
   const [formVisible, setFormVisible] = useState(false);
   const [finalCtaVisible, setFinalCtaVisible] = useState(false);
 
-  const scrollToForm = () => { document.getElementById('form299')?.scrollIntoView({ behavior: 'smooth' }); setMenuOpen(false); };
+  const scrollToForm = () => { document.getElementById('form149')?.scrollIntoView({ behavior: 'smooth' }); setMenuOpen(false); };
 
   useEffect(() => {
-    const el = document.getElementById('form299');
+    const el = document.getElementById('form149');
     if (!el) return;
     const observer = new IntersectionObserver(([entry]) => setFormVisible(entry.isIntersecting), { threshold: 0.1 });
     observer.observe(el);
@@ -42,7 +42,7 @@ export default function Web149() {
   }, []);
 
   const handleSubmit = async () => {
-    if (!form.name || !form.email) { alert('Vyplňte meno a email.'); return; }
+    if (!form.name || !form.email) { alert('VyplЕ€te meno a email.'); return; }
     if (!form.consent) { setConsentError(true); return; }
     setConsentError(false);
     setFormStatus('loading');
@@ -56,18 +56,18 @@ export default function Web149() {
         setFormStatus('success');
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({ event: 'form_submit_success' });
-        setForm({ name: '', email: '', phone: '', website: '', message: '', consent: false, package: 'Landing page — 149 €' });
+        setForm({ name: '', email: '', phone: '', website: '', message: '', consent: false, package: 'Landing page вЂ” 149 в‚¬' });
       } else { setFormStatus('error'); }
     } catch { setFormStatus('error'); }
   };
 
   const faqs = [
-    { q: 'Je to jednorazová platba bez mesačných poplatkov?', a: 'Nie. U nás platíte len jednorazovo za kompletné zhotovenie webu. Web je po odovzdaní 100 % váš. Jediné ročné náklady sú za vašu doménu a webhosting (cca 20–30 € ročne), ktoré platíte priamo poskytovateľovi hostingu — s ich výberom a nastavením vám kompletne pomôžeme.' },
-    { q: 'Ako prebieha platba a kedy posielam peniaze?', a: 'Začiatok je úplne bezpečný. Vyplníte formulár, my spravíme analýzu a do 24 hodín vám pošleme prvý vizuálny koncept zdarma. Ak poviete \'áno, toto sa nám páči\', podpíšeme zmluvu a uhradíte 50% zálohu. Zvyšných 50% platíte až vtedy, keď je web hotový, otestovaný a pripravený na spustenie.' },
-    { q: 'Prečo sú vaše ceny výrazne nižšie ako u klasických agentúr?', a: 'Neplatíme drahé kancelárie v centre mesta, manažérov ani sekretárky. Sme efektívny tím vývojárov a dizajnérov. Vyvinuli sme vlastné optimalizované postupy, vďaka ktorým dokážeme eliminovať zbytočné prestoje a dodať špičkový firemný web za zlomok bežnej ceny.' },
-    { q: 'Čo ak nemám žiadne texty ani profesionálne fotografie?', a: 'Žiadny problém, postaráme sa o to. Na základe krátkeho rozhovoru o vašom biznise napíšeme konverzné texty za vás. Pokiaľ nemáte vlastné fotky z produkcie, vyberieme licencované a vysoko profesionálne snímky z prémiových fotobánk, ktoré dokonale sadnú k vašej značke.' },
-    { q: 'Kto bude vlastniť hotovú webstránku?', a: 'Vy. Na rozdiel od iných firiem, ktoré vás uzamknú do vlastných platforiem na mesačné prenájmy, od nás dostanete plné administrátorské prístupy. Web funguje nezávisle a môžete si s ním robiť čokoľvek.' },
-    { q: 'Čo sa stane, ak sa mi váš prvý návrh do 24 hodín nebude páčiť?', a: 'Jednoducho nám poviete, čo máme zmeniť a my návrh upravíme. Ak by ste mali pocit, že sme sa úplne minuli vašej predstave, spoluprácu môžete bez akýchkoľvek otázok a poplatkov ukončiť. Keďže ste pred návrhom nič neplatili, neriskujete vôbec nič.' },
+    { q: 'Je to jednorazovГЎ platba bez mesaДЌnГЅch poplatkov?', a: 'Nie. U nГЎs platГ­te len jednorazovo za kompletnГ© zhotovenie webu. Web je po odovzdanГ­ 100 % vГЎЕЎ. JedinГ© roДЌnГ© nГЎklady sГє za vaЕЎu domГ©nu a webhosting (cca 20вЂ“30 в‚¬ roДЌne), ktorГ© platГ­te priamo poskytovateДѕovi hostingu вЂ” s ich vГЅberom a nastavenГ­m vГЎm kompletne pomГґЕѕeme.' },
+    { q: 'Ako prebieha platba a kedy posielam peniaze?', a: 'ZaДЌiatok je Гєplne bezpeДЌnГЅ. VyplnГ­te formulГЎr, my spravГ­me analГЅzu a do 24 hodГ­n vГЎm poЕЎleme prvГЅ vizuГЎlny koncept zdarma. Ak poviete \'ГЎno, toto sa nГЎm pГЎДЌi\', podpГ­ЕЎeme zmluvu a uhradГ­te 50% zГЎlohu. ZvyЕЎnГЅch 50% platГ­te aЕѕ vtedy, keДЏ je web hotovГЅ, otestovanГЅ a pripravenГЅ na spustenie.' },
+    { q: 'PreДЌo sГє vaЕЎe ceny vГЅrazne niЕѕЕЎie ako u klasickГЅch agentГєr?', a: 'NeplatГ­me drahГ© kancelГЎrie v centre mesta, manaЕѕГ©rov ani sekretГЎrky. Sme efektГ­vny tГ­m vГЅvojГЎrov a dizajnГ©rov. Vyvinuli sme vlastnГ© optimalizovanГ© postupy, vДЏaka ktorГЅm dokГЎЕѕeme eliminovaЕҐ zbytoДЌnГ© prestoje a dodaЕҐ ЕЎpiДЌkovГЅ firemnГЅ web za zlomok beЕѕnej ceny.' },
+    { q: 'ДЊo ak nemГЎm Еѕiadne texty ani profesionГЎlne fotografie?', a: 'ЕЅiadny problГ©m, postarГЎme sa o to. Na zГЎklade krГЎtkeho rozhovoru o vaЕЎom biznise napГ­ЕЎeme konverznГ© texty za vГЎs. PokiaДѕ nemГЎte vlastnГ© fotky z produkcie, vyberieme licencovanГ© a vysoko profesionГЎlne snГ­mky z prГ©miovГЅch fotobГЎnk, ktorГ© dokonale sadnГє k vaЕЎej znaДЌke.' },
+    { q: 'Kto bude vlastniЕҐ hotovГє webstrГЎnku?', a: 'Vy. Na rozdiel od inГЅch firiem, ktorГ© vГЎs uzamknГє do vlastnГЅch platforiem na mesaДЌnГ© prenГЎjmy, od nГЎs dostanete plnГ© administrГЎtorskГ© prГ­stupy. Web funguje nezГЎvisle a mГґЕѕete si s nГ­m robiЕҐ ДЌokoДѕvek.' },
+    { q: 'ДЊo sa stane, ak sa mi vГЎЕЎ prvГЅ nГЎvrh do 24 hodГ­n nebude pГЎДЌiЕҐ?', a: 'Jednoducho nГЎm poviete, ДЌo mГЎme zmeniЕҐ a my nГЎvrh upravГ­me. Ak by ste mali pocit, Еѕe sme sa Гєplne minuli vaЕЎej predstave, spoluprГЎcu mГґЕѕete bez akГЅchkoДѕvek otГЎzok a poplatkov ukonДЌiЕҐ. KeДЏЕѕe ste pred nГЎvrhom niДЌ neplatili, neriskujete vГґbec niДЌ.' },
   ];
 
 
@@ -76,19 +76,19 @@ export default function Web149() {
     <div style={{ fontFamily: "'Inter', -apple-system, sans-serif", background: C.white, color: C.text, minHeight: '100vh' }}>
 
       <Helmet>
-        <title>Landing page za 150 € – Webstránka od 3 dní | WebKlienti</title>
-        <meta name="description" content="Landing page od 150 €. Dizajn navrhnutý na získavanie zákazníkov, mobilná verzia, SEO základy a kontaktný formulár. Dodanie od 3 dní." />
+        <title>Landing page za 150 в‚¬ вЂ“ WebstrГЎnka od 3 dnГ­ | WebKlienti</title>
+        <meta name="description" content="Landing page od 150 в‚¬. Dizajn navrhnutГЅ na zГ­skavanie zГЎkaznГ­kov, mobilnГЎ verzia, SEO zГЎklady a kontaktnГЅ formulГЎr. Dodanie od 3 dnГ­." />
         <link rel="canonical" href="https://www.webklienti.com/web-149" />
         <link rel="alternate" hreflang="sk" href="https://www.webklienti.com/web-149" />
         <link rel="alternate" hreflang="x-default" href="https://www.webklienti.com/web-149" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.webklienti.com/web-149" />
-        <meta property="og:title" content="Landing page za 149 € – Webstránka od 3 dní" />
-        <meta property="og:description" content="Landing page od 149 €. Mobilná verzia, SEO, kontaktný formulár. Bez mesačných poplatkov. Dodanie od 3 dní." />
+        <meta property="og:title" content="Landing page za 149 в‚¬ вЂ“ WebstrГЎnka od 3 dnГ­" />
+        <meta property="og:description" content="Landing page od 149 в‚¬. MobilnГЎ verzia, SEO, kontaktnГЅ formulГЎr. Bez mesaДЌnГЅch poplatkov. Dodanie od 3 dnГ­." />
         <meta property="og:image" content="https://www.webklienti.com/og-image.jpg" />
         <meta property="og:locale" content="sk_SK" />
         <meta name="twitter:card" content="summary_large_image" />
-        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Product","name":"Landing page za 149 €","description":"Profesionálna landing page pre malé firmy. Mobilná verzia, SEO základy, kontaktný formulár, Google Maps. Dodanie od 3 dní.","image":"https://www.webklienti.com/og-image.jpg","brand":{"@type":"Brand","name":"WebKlienti"},"url":"https://www.webklienti.com/web-149","offers":{"@type":"Offer","price":"149","priceCurrency":"EUR","availability":"https://schema.org/InStock","seller":{"@type":"Organization","name":"WebKlienti","url":"https://www.webklienti.com"}},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1","bestRating":"5","worstRating":"1"},"review":[{"@type":"Review","author":{"@type":"Person","name":"Matus K."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Super služby! Som veľmi spokojný."}]}`}</script>
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Product","name":"Landing page za 149 в‚¬","description":"ProfesionГЎlna landing page pre malГ© firmy. MobilnГЎ verzia, SEO zГЎklady, kontaktnГЅ formulГЎr, Google Maps. Dodanie od 3 dnГ­.","image":"https://www.webklienti.com/og-image.jpg","brand":{"@type":"Brand","name":"WebKlienti"},"url":"https://www.webklienti.com/web-149","offers":{"@type":"Offer","price":"149","priceCurrency":"EUR","availability":"https://schema.org/InStock","seller":{"@type":"Organization","name":"WebKlienti","url":"https://www.webklienti.com"}},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1","bestRating":"5","worstRating":"1"},"review":[{"@type":"Review","author":{"@type":"Person","name":"Matus K."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Super sluЕѕby! Som veДѕmi spokojnГЅ."}]}`}</script>
       </Helmet>
 
       <style>{`
@@ -132,7 +132,7 @@ export default function Web149() {
       {/* URGENCY BAR */}
       <div style={{ background: C.blue, padding: '10px 24px', textAlign: 'center' }}>
         <span style={{ fontSize: 13, fontWeight: 600, color: '#fff', letterSpacing: 0.2 }}>
-          🔥 Akcia — 50% zľava na spustenie projektu · Prijímame len 2 nové projekty týždenne
+          рџ”Ґ Akcia вЂ” 50% zДѕava na spustenie projektu В· PrijГ­mame len 2 novГ© projekty tГЅЕѕdenne
         </span>
       </div>
 
@@ -144,9 +144,9 @@ export default function Web149() {
         </Link>
         <div className="desktop-nav-links">
           <a href="#portfolio" style={{ fontSize: 14, color: C.textSub, textDecoration: 'none', fontWeight: 500 }}>Referencie</a>
-          <a href="#cena" style={{ fontSize: 14, color: C.textSub, textDecoration: 'none', fontWeight: 500 }}>Cenník</a>
+          <a href="#cena" style={{ fontSize: 14, color: C.textSub, textDecoration: 'none', fontWeight: 500 }}>CennГ­k</a>
           <a href="#faq" style={{ fontSize: 14, color: C.textSub, textDecoration: 'none', fontWeight: 500 }}>FAQ</a>
-          <button onClick={scrollToForm} className="btn-primary" style={{ height: 40, fontSize: 14, padding: '0 18px' }}>Získať návrh zdarma</button>
+          <button onClick={scrollToForm} className="btn-primary" style={{ height: 40, fontSize: 14, padding: '0 18px' }}>ZГ­skaЕҐ nГЎvrh zdarma</button>
         </div>
         <button className="hamburger-btn" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu"
           style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 8, flexDirection: 'column', gap: 5 }}>
@@ -158,10 +158,10 @@ export default function Web149() {
 
       {menuOpen && (
         <div style={{ position: 'fixed', top: 114, left: 0, right: 0, zIndex: 99, background: C.white, padding: '16px 24px 24px', display: 'flex', flexDirection: 'column', gap: 16, borderBottom: `1px solid ${C.border}`, boxShadow: '0 8px 24px rgba(0,0,0,0.08)' }}>
-          {[['#portfolio', 'Referencie'], ['#cena', 'Cenník'], ['#faq', 'FAQ']].map(([href, label]) => (
+          {[['#portfolio', 'Referencie'], ['#cena', 'CennГ­k'], ['#faq', 'FAQ']].map(([href, label]) => (
             <a key={href} href={href} onClick={() => setMenuOpen(false)} style={{ color: C.text, textDecoration: 'none', fontSize: 18, fontWeight: 600, padding: '8px 0', borderBottom: `1px solid ${C.border}` }}>{label}</a>
           ))}
-          <button onClick={scrollToForm} className="btn-primary" style={{ width: '100%', marginTop: 8 }}>Získať návrh zdarma</button>
+          <button onClick={scrollToForm} className="btn-primary" style={{ width: '100%', marginTop: 8 }}>ZГ­skaЕҐ nГЎvrh zdarma</button>
         </div>
       )}
 
@@ -169,52 +169,52 @@ export default function Web149() {
       <div style={{ background: C.white, borderBottom: `1px solid ${C.border}`, padding: '56px 24px 48px' }}>
         <div style={{ maxWidth: 760, margin: '0 auto', textAlign: 'center' }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(37,99,235,0.07)', border: `1px solid rgba(37,99,235,0.18)`, padding: '5px 14px', borderRadius: 100, fontSize: 13, fontWeight: 600, color: C.blue, marginBottom: 20 }}>
-            ✓ Realizácia Montwell.sk – web, ktorý prináša dopyty z Google aj priamo z prehliadača
+            вњ“ RealizГЎcia Montwell.sk вЂ“ web, ktorГЅ prinГЎЕЎa dopyty z Google aj priamo z prehliadaДЌa
           </div>
           <h1 style={{ fontSize: 'clamp(28px, 5.5vw, 56px)', fontWeight: 800, lineHeight: 1.1, letterSpacing: -2, color: C.text, marginBottom: 16 }}>
-            Web, ktorý vašej firme reálne<br />
-            <span style={{ color: C.blue }}>prinesie nových zákazníkov</span>
+            Web, ktorГЅ vaЕЎej firme reГЎlne<br />
+            <span style={{ color: C.blue }}>prinesie novГЅch zГЎkaznГ­kov</span>
           </h1>
           <p style={{ fontSize: 17, color: C.textSub, lineHeight: 1.65, marginBottom: 28, maxWidth: 580, margin: '0 auto 28px' }}>
-            Moderný dizajn navrhnutý na získavanie dopytov + silné SEO + kontaktný formulár a mapy — všetko v cene.<br />
-            <strong style={{ color: C.text }}>Hotovo už od 3 dní za 149 €.</strong>
+            ModernГЅ dizajn navrhnutГЅ na zГ­skavanie dopytov + silnГ© SEO + kontaktnГЅ formulГЎr a mapy вЂ” vЕЎetko v cene.<br />
+            <strong style={{ color: C.text }}>Hotovo uЕѕ od 3 dnГ­ za 149 в‚¬.</strong>
           </p>
           <div className="benefit-list" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px 16px', maxWidth: 560, margin: '0 auto 28px', textAlign: 'left' }}>
             {[
-              'Dizajn navrhnutý tak, aby návštevníka premenil na dopyt',
-              'Bezchybné zobrazenie na mobiloch a tabletoch',
-              'Kontaktné formuláre, mapy a prepojenia v cene',
-              'SEO optimalizácie, aby vás klienti našli na Google',
-              'Bleskové dodanie od 3 dní bez zbytočného naťahovania',
-              'Úvodný vizuálny návrh do 24 hodín ZDARMA',
+              'Dizajn navrhnutГЅ tak, aby nГЎvЕЎtevnГ­ka premenil na dopyt',
+              'BezchybnГ© zobrazenie na mobiloch a tabletoch',
+              'KontaktnГ© formulГЎre, mapy a prepojenia v cene',
+              'SEO optimalizГЎcie, aby vГЎs klienti naЕЎli na Google',
+              'BleskovГ© dodanie od 3 dnГ­ bez zbytoДЌnГ©ho naЕҐahovania',
+              'ГљvodnГЅ vizuГЎlny nГЎvrh do 24 hodГ­n ZDARMA',
             ].map(b => (
               <div key={b} style={{ display: 'flex', alignItems: 'flex-start', gap: 8, fontSize: 14, color: C.textSub }}>
-                <span style={{ color: C.green, fontWeight: 700, flexShrink: 0, marginTop: 1 }}>✓</span> {b}
+                <span style={{ color: C.green, fontWeight: 700, flexShrink: 0, marginTop: 1 }}>вњ“</span> {b}
               </div>
             ))}
           </div>
           <div className="hero-ctas" style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <button onClick={scrollToForm} className="btn-primary btn-primary-lg">Chcem nezáväzný návrh webu zdarma</button>
-            <a href="https://wa.me/421907890600" target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ height: 56, fontSize: 15 }}>💬 WhatsApp</a>
+            <button onClick={scrollToForm} className="btn-primary btn-primary-lg">Chcem nezГЎvГ¤znГЅ nГЎvrh webu zdarma</button>
+            <a href="https://wa.me/421907890600" target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ height: 56, fontSize: 15 }}>рџ’¬ WhatsApp</a>
           </div>
-          <p style={{ fontSize: 13, color: C.textSub, marginTop: 12 }}>prvý koncept do 24 hodín · úplne bez záväzkov · ukážeme vám, ako predávať viac</p>
+          <p style={{ fontSize: 13, color: C.textSub, marginTop: 12 }}>prvГЅ koncept do 24 hodГ­n В· Гєplne bez zГЎvГ¤zkov В· ukГЎЕѕeme vГЎm, ako predГЎvaЕҐ viac</p>
         </div>
       </div>
 
-      {/* 2. ČO ZÍSKATE */}
+      {/* 2. ДЊO ZГЌSKATE */}
       <div id="cena" style={{ background: C.bg, padding: '64px 24px', borderBottom: `1px solid ${C.border}` }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
-          <p className="section-label" style={{ textAlign: 'center' }}>Transparentné ceny</p>
-          <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 800, letterSpacing: -1, textAlign: 'center', marginBottom: 8 }}>Čo získate za 149 €</h2>
-          <p style={{ textAlign: 'center', color: C.textSub, fontSize: 15, marginBottom: 36 }}>Kompletné riešenie. Žiadne skryté poplatky. Nič navyše nepotrebujete.</p>
+          <p className="section-label" style={{ textAlign: 'center' }}>TransparentnГ© ceny</p>
+          <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 800, letterSpacing: -1, textAlign: 'center', marginBottom: 8 }}>ДЊo zГ­skate za 149 в‚¬</h2>
+          <p style={{ textAlign: 'center', color: C.textSub, fontSize: 15, marginBottom: 36 }}>KompletnГ© rieЕЎenie. ЕЅiadne skrytГ© poplatky. NiДЌ navyЕЎe nepotrebujete.</p>
           <div className="what-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12, marginBottom: 32 }}>
             {[
-              { icon: '🎨', title: 'Predajný dizajn na mieru', desc: 'Nie template — web navrhnutý na premenu návštevníkov na dopyty' },
-              { icon: '📱', title: 'Mobilná verzia', desc: 'Prvotriedna rýchlosť a bezchybné zobrazenie na smartfónoch' },
-              { icon: '🔍', title: 'SEO základy', desc: 'Meta tagy, rýchlosť, štruktúra pre lokálne vyhľadávanie na Google' },
-              { icon: '📧', title: 'Kontaktný formulár', desc: 'Dopyty a objednávky chodia priamo na váš email' },
-              { icon: '📍', title: 'Google Maps + prepojenia', desc: 'Hovor, email, mapa a WhatsApp — všetko jedným kliknutím' },
-              { icon: '🔒', title: 'GDPR + Google Business', desc: 'Cookies lišta, SSL a BONUS: audit / nastavenie Google Business profilu' },
+              { icon: 'рџЋЁ', title: 'PredajnГЅ dizajn na mieru', desc: 'Nie template вЂ” web navrhnutГЅ na premenu nГЎvЕЎtevnГ­kov na dopyty' },
+              { icon: 'рџ“±', title: 'MobilnГЎ verzia', desc: 'Prvotriedna rГЅchlosЕҐ a bezchybnГ© zobrazenie na smartfГіnoch' },
+              { icon: 'рџ”Ќ', title: 'SEO zГЎklady', desc: 'Meta tagy, rГЅchlosЕҐ, ЕЎtruktГєra pre lokГЎlne vyhДѕadГЎvanie na Google' },
+              { icon: 'рџ“§', title: 'KontaktnГЅ formulГЎr', desc: 'Dopyty a objednГЎvky chodia priamo na vГЎЕЎ email' },
+              { icon: 'рџ“Ќ', title: 'Google Maps + prepojenia', desc: 'Hovor, email, mapa a WhatsApp вЂ” vЕЎetko jednГЅm kliknutГ­m' },
+              { icon: 'рџ”’', title: 'GDPR + Google Business', desc: 'Cookies liЕЎta, SSL a BONUS: audit / nastavenie Google Business profilu' },
             ].map(item => (
               <div key={item.title} className="card" style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
                 <span style={{ fontSize: 22, flexShrink: 0 }}>{item.icon}</span>
@@ -227,14 +227,14 @@ export default function Web149() {
           </div>
           <div className="price-box" style={{ background: 'linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%)', border: `1.5px solid rgba(37,99,235,0.2)`, borderRadius: 20, padding: '28px 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 20 }}>
             <div>
-              <p style={{ fontSize: 13, fontWeight: 600, color: C.blue, textTransform: 'uppercase', letterSpacing: 1, marginBottom: 6 }}>Jednorazová cena · Žiadne mesačné poplatky</p>
+              <p style={{ fontSize: 13, fontWeight: 600, color: C.blue, textTransform: 'uppercase', letterSpacing: 1, marginBottom: 6 }}>JednorazovГЎ cena В· ЕЅiadne mesaДЌnГ© poplatky</p>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: 10 }}>
-                <span style={{ fontSize: 48, fontWeight: 800, color: C.text, letterSpacing: -2 }}>149 €</span>
-                <span style={{ fontSize: 16, color: C.textSub, textDecoration: 'line-through' }}>bežne 599 €</span>
+                <span style={{ fontSize: 48, fontWeight: 800, color: C.text, letterSpacing: -2 }}>149 в‚¬</span>
+                <span style={{ fontSize: 16, color: C.textSub, textDecoration: 'line-through' }}>beЕѕne 599 в‚¬</span>
               </div>
-              <p style={{ fontSize: 14, color: C.textSub, marginTop: 4 }}>Kompletné odovzdanie od 3 pracovných dní</p>
+              <p style={{ fontSize: 14, color: C.textSub, marginTop: 4 }}>KompletnГ© odovzdanie od 3 pracovnГЅch dnГ­</p>
             </div>
-            <button onClick={scrollToForm} className="btn-primary btn-primary-lg" style={{ width: '100%', maxWidth: 280 }}>Zvoliť tento balík a získať návrh →</button>
+            <button onClick={scrollToForm} className="btn-primary btn-primary-lg" style={{ width: '100%', maxWidth: 280 }}>ZvoliЕҐ tento balГ­k a zГ­skaЕҐ nГЎvrh в†’</button>
           </div>
         </div>
       </div>
@@ -243,18 +243,18 @@ export default function Web149() {
       <div id="portfolio" style={{ background: C.white, padding: '64px 24px', borderBottom: `1px solid ${C.border}` }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <p className="section-label" style={{ textAlign: 'center' }}>Case Study</p>
-          <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 800, letterSpacing: -1, textAlign: 'center', marginBottom: 40 }}>Overený projekt</h2>
+          <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 800, letterSpacing: -1, textAlign: 'center', marginBottom: 40 }}>OverenГЅ projekt</h2>
           
           <div className="card" style={{ padding: 32, marginBottom: 24 }}>
             <div className="montwell-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40, alignItems: 'stretch', marginBottom: 28 }}>
               <div style={{ borderRadius: 12, overflow: 'hidden', border: `1px solid ${C.border}`, display: 'flex' }}>
                 <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer" style={{ display: 'block', width: '100%' }}>
-                  <img src={montwellImg} alt="Montwell webstránka" width="600" height="324" style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }} loading="lazy" />
+                  <img src={montwellImg} alt="Montwell webstrГЎnka" width="600" height="324" style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }} loading="lazy" />
                 </a>
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <p style={{ fontSize: 14, color: C.textSub, marginBottom: 12 }}>Reálny výsledok práce s klientom — bez šablón</p>
+                <p style={{ fontSize: 14, color: C.textSub, marginBottom: 12 }}>ReГЎlny vГЅsledok prГЎce s klientom вЂ” bez ЕЎablГіn</p>
                 <h3 style={{ fontSize: 24, fontWeight: 700, marginBottom: 20 }}>Montwell</h3>
 
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, flexGrow: 1, alignItems: 'stretch' }}>
@@ -263,9 +263,9 @@ export default function Web149() {
                     <div style={{ display: 'inline-block', background: '#FEE2E2', color: '#991B1B', padding: '2px 10px', borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 14, alignSelf: 'flex-start' }}>PRED</div>
                     <p style={{ fontSize: 14, fontWeight: 700, color: C.text, marginBottom: 16 }}>Len Instagram</p>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: 10, flexGrow: 1, justifyContent: 'center' }}>
-                      {['Majú len Instagram profil', 'Žiadny web', 'Ťažko nájdateľní na Google'].map((pt, index) => (
+                      {['MajГє len Instagram profil', 'ЕЅiadny web', 'Е¤aЕѕko nГЎjdateДѕnГ­ na Google'].map((pt, index) => (
                         <div key={index} style={{ fontSize: 13, color: C.textSub, display: 'flex', gap: 8, alignItems: 'center' }}>
-                          <span style={{ color: '#B91C1C', fontWeight: 700, flexShrink: 0 }}>✕</span> {pt}
+                          <span style={{ color: '#B91C1C', fontWeight: 700, flexShrink: 0 }}>вњ•</span> {pt}
                         </div>
                       ))}
                     </div>
@@ -276,13 +276,13 @@ export default function Web149() {
                     <div style={{ display: 'inline-block', background: '#DCFCE7', color: '#166534', padding: '2px 10px', borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 14, alignSelf: 'flex-start' }}>PO</div>
                     <p style={{ fontSize: 14, fontWeight: 700, marginBottom: 16 }}>
                       <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer" style={{ color: C.blue, textDecoration: 'none' }}>
-                        Reálny predajný web: montwell.sk ↗
+                        ReГЎlny predajnГЅ web: montwell.sk в†—
                       </a>
                     </p>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: 10, flexGrow: 1, justifyContent: 'center' }}>
-                      {['Profesionálny web', 'Galéria realizácií', 'Klienti ich dnes nájdu cez Google vyhľadávanie', 'Prvé dopyty a objednávky už v prvých týždňoch'].map((pt, index) => (
+                      {['ProfesionГЎlny web', 'GalГ©ria realizГЎciГ­', 'Klienti ich dnes nГЎjdu cez Google vyhДѕadГЎvanie', 'PrvГ© dopyty a objednГЎvky uЕѕ v prvГЅch tГЅЕѕdЕ€och'].map((pt, index) => (
                         <div key={index} style={{ fontSize: 13, color: '#166534', display: 'flex', gap: 8, alignItems: 'center' }}>
-                          <span style={{ color: C.green, fontWeight: 700, flexShrink: 0 }}>✓</span> {pt}
+                          <span style={{ color: C.green, fontWeight: 700, flexShrink: 0 }}>вњ“</span> {pt}
                         </div>
                       ))}
                     </div>
@@ -293,16 +293,16 @@ export default function Web149() {
 
             {/* Result bar */}
             <div style={{ background: 'rgba(37,99,235,0.05)', border: `1px solid rgba(37,99,235,0.15)`, borderRadius: 12, padding: '14px 20px' }}>
-              <span style={{ fontSize: 14, fontWeight: 700, color: C.blue }}>🎯 Montwell.sk spustený od 3 pracovných dní · profesionálny web, ktorý buduje dôveru</span>
+              <span style={{ fontSize: 14, fontWeight: 700, color: C.blue }}>рџЋЇ Montwell.sk spustenГЅ od 3 pracovnГЅch dnГ­ В· profesionГЎlny web, ktorГЅ buduje dГґveru</span>
             </div>
             <Link to="/blog/spolupraca-s-montwell-webstranka" style={{ display: 'inline-block', marginTop: 16, color: C.blue, fontWeight: 700, textDecoration: 'none' }}>
-              Prečítať case study o spolupráci s Montwell →
+              PreДЌГ­taЕҐ case study o spoluprГЎci s Montwell в†’
             </Link>
           </div>
 
           {/* REVIEWS */}
           <p style={{ fontSize: 12, fontWeight: 600, color: C.textSub, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 16, marginTop: 48 }}>Hodnotenia klientov</p>
-          <h3 style={{ fontSize: 'clamp(20px, 2.5vw, 28px)', fontWeight: 700, letterSpacing: '-0.01em', marginBottom: 24 }}>Čo hovoria naši klienti</h3>
+          <h3 style={{ fontSize: 'clamp(20px, 2.5vw, 28px)', fontWeight: 700, letterSpacing: '-0.01em', marginBottom: 24 }}>ДЊo hovoria naЕЎi klienti</h3>
 
           <style>{`.google-cta-card:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }`}</style>
 
@@ -316,21 +316,21 @@ export default function Web149() {
                   <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
                   <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
                 </svg>
-                <div style={{ color: '#FBBF24', fontSize: 14, letterSpacing: 1 }}>★★★★★</div>
+                <div style={{ color: '#FBBF24', fontSize: 14, letterSpacing: 1 }}>в…в…в…в…в…</div>
               </div>
-              <p style={{ fontSize: 15, color: C.text, lineHeight: 1.7, fontStyle: 'italic', flexGrow: 1 }}>„Super služby! Som veľmi spokojný."</p>
+              <p style={{ fontSize: 15, color: C.text, lineHeight: 1.7, fontStyle: 'italic', flexGrow: 1 }}>вЂћSuper sluЕѕby! Som veДѕmi spokojnГЅ."</p>
               <div>
                 <p style={{ fontWeight: 700, color: C.text, fontSize: 14 }}>Matus K.</p>
-                <p style={{ fontSize: 12, color: C.textSub, marginTop: 2 }}>Overená recenzia Google</p>
+                <p style={{ fontSize: 12, color: C.textSub, marginTop: 2 }}>OverenГЎ recenzia Google</p>
               </div>
             </div>
 
-            {/* CTA card — more reviews on Google */}
+            {/* CTA card вЂ” more reviews on Google */}
             <a href="https://maps.app.goo.gl/tDf7dRkYB2eZ3j9d7" target="_blank" rel="noopener noreferrer" className="card google-cta-card"
               style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 12, cursor: 'pointer', transition: 'all .2s' }}
             >
-              <div style={{ fontSize: 32 }}>⭐</div>
-              <p style={{ fontSize: 15, fontWeight: 600, color: C.text, textAlign: 'center', lineHeight: 1.4 }}>Pozrieť všetky Google hodnotenia →</p>
+              <div style={{ fontSize: 32 }}>в­ђ</div>
+              <p style={{ fontSize: 15, fontWeight: 600, color: C.text, textAlign: 'center', lineHeight: 1.4 }}>PozrieЕҐ vЕЎetky Google hodnotenia в†’</p>
               <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
@@ -348,15 +348,15 @@ export default function Web149() {
       {/* 4. PROCES */}
       <div style={{ background: C.bg, padding: '64px 24px', borderBottom: `1px solid ${C.border}` }}>
         <div style={{ maxWidth: 760, margin: '0 auto' }}>
-          <p className="section-label" style={{ textAlign: 'center' }}>Náš proces</p>
-          <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 800, letterSpacing: -1, textAlign: 'center', marginBottom: 8 }}>Odoslaním formulára k novým zákazníkom od 3 dní</h2>
-          <p style={{ textAlign: 'center', color: C.textSub, fontSize: 15, marginBottom: 40 }}>Jednoduchý a transparentný proces bez zbytočného technického žargónu.</p>
+          <p className="section-label" style={{ textAlign: 'center' }}>NГЎЕЎ proces</p>
+          <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 800, letterSpacing: -1, textAlign: 'center', marginBottom: 8 }}>OdoslanГ­m formulГЎra k novГЅm zГЎkaznГ­kom od 3 dnГ­</h2>
+          <p style={{ textAlign: 'center', color: C.textSub, fontSize: 15, marginBottom: 40 }}>JednoduchГЅ a transparentnГЅ proces bez zbytoДЌnГ©ho technickГ©ho ЕѕargГіnu.</p>
           <div className="steps-row" style={{ display: 'flex', background: C.white, border: `1px solid ${C.border}`, borderRadius: 16, overflow: 'hidden' }}>
             {[
-              { num: '01', title: 'Nezáväzný dopyt', desc: 'Vyplníte krátky formulár o vašom biznise — za 2 minúty.', icon: '📋' },
-              { num: '02', title: 'Koncept do 24 hodín', desc: 'Úplne zdarma vám vypracujeme úvodný vizuálny návrh riešenia.', icon: '🎨' },
-              { num: '03', title: 'Vyladenie detailov', desc: 'Doladíme texty, štruktúru a funkcie presne podľa vás.', icon: '⚙️' },
-              { num: '04', title: 'Spustenie od 3 dní', desc: 'Web nasadíme na vašu doménu a odovzdáme vám kľúče.', icon: '🚀' },
+              { num: '01', title: 'NezГЎvГ¤znГЅ dopyt', desc: 'VyplnГ­te krГЎtky formulГЎr o vaЕЎom biznise вЂ” za 2 minГєty.', icon: 'рџ“‹' },
+              { num: '02', title: 'Koncept do 24 hodГ­n', desc: 'Гљplne zdarma vГЎm vypracujeme ГєvodnГЅ vizuГЎlny nГЎvrh rieЕЎenia.', icon: 'рџЋЁ' },
+              { num: '03', title: 'Vyladenie detailov', desc: 'DoladГ­me texty, ЕЎtruktГєru a funkcie presne podДѕa vГЎs.', icon: 'вљ™пёЏ' },
+              { num: '04', title: 'Spustenie od 3 dnГ­', desc: 'Web nasadГ­me na vaЕЎu domГ©nu a odovzdГЎme vГЎm kДѕГєДЌe.', icon: 'рџљЂ' },
             ].map((s, i) => (
               <div key={i} style={{ flex: 1, padding: '24px 16px', textAlign: 'center', borderRight: i < 3 ? `1px solid ${C.border}` : 'none' }}>
                 <div style={{ fontSize: 26, marginBottom: 8 }}>{s.icon}</div>
@@ -367,19 +367,19 @@ export default function Web149() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: 32 }}>
-            <button onClick={scrollToForm} className="btn-primary btn-primary-lg" style={{ width: '100%', maxWidth: 360 }}>Získať nezáväzný návrh riešenia →</button>
+            <button onClick={scrollToForm} className="btn-primary btn-primary-lg" style={{ width: '100%', maxWidth: 360 }}>ZГ­skaЕҐ nezГЎvГ¤znГЅ nГЎvrh rieЕЎenia в†’</button>
           </div>
         </div>
       </div>
 
-      {/* 5. GARANCIA / RISK — use shared RiskSection for exact match */}
+      {/* 5. GARANCIA / RISK вЂ” use shared RiskSection for exact match */}
       <RiskSection t={sk} />
 
-      {/* 6. FAQ — accordion štýl ako hlavný web */}
+      {/* 6. FAQ вЂ” accordion ЕЎtГЅl ako hlavnГЅ web */}
       <div id="faq" style={{ background: C.white, padding: '96px 24px', borderBottom: `1px solid ${C.border}` }}>
         <div style={{ maxWidth: 720, margin: '0 auto' }}>
-          <p className="section-label">Odpovedáme</p>
-          <h2 style={{ fontSize: 'clamp(28px, 3vw, 36px)', fontWeight: 700, letterSpacing: '-0.01em', marginBottom: 40 }}>Všetko, čo potrebujete vedieť pred štartom</h2>
+          <p className="section-label">OdpovedГЎme</p>
+          <h2 style={{ fontSize: 'clamp(28px, 3vw, 36px)', fontWeight: 700, letterSpacing: '-0.01em', marginBottom: 40 }}>VЕЎetko, ДЌo potrebujete vedieЕҐ pred ЕЎtartom</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
             {faqs.map((item, i) => (
               <div key={i} className="faq-item" style={{
@@ -404,39 +404,39 @@ export default function Web149() {
       <div id="final-cta" style={{ background: C.blue, padding: '96px 24px' }}>
         <div style={{ maxWidth: 680, margin: '0 auto', textAlign: 'center' }}>
           <h2 style={{ fontSize: 'clamp(26px, 3.5vw, 40px)', fontWeight: 700, color: '#fff', letterSpacing: '-0.01em', marginBottom: 16 }}>
-            Chcete web, ktorý bude pre vašu firmu reálne zarábať?
+            Chcete web, ktorГЅ bude pre vaЕЎu firmu reГЎlne zarГЎbaЕҐ?
           </h2>
           <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.92)', marginBottom: 40, lineHeight: 1.6 }}>
-            Nečakajte, kým vás konkurencia predbehne úplne. Vyplňte formulár a zajtra máte na stole riešenie.
+            NeДЌakajte, kГЅm vГЎs konkurencia predbehne Гєplne. VyplЕ€te formulГЎr a zajtra mГЎte na stole rieЕЎenie.
           </p>
           <button onClick={scrollToForm} style={{ display: 'inline-flex', alignItems: 'center', height: 56, padding: '0 32px', background: '#fff', color: C.blue, border: 'none', borderRadius: 12, fontSize: 17, fontWeight: 700, cursor: 'pointer', fontFamily: 'Inter, sans-serif' }}>
-            Získať nezáväzný návrh riešenia →
+            ZГ­skaЕҐ nezГЎvГ¤znГЅ nГЎvrh rieЕЎenia в†’
           </button>
-          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.9)', marginTop: 16 }}>prvý koncept do 24 hodín · úplne bez záväzkov · ukážeme vám, ako predávať viac</p>
+          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.9)', marginTop: 16 }}>prvГЅ koncept do 24 hodГ­n В· Гєplne bez zГЎvГ¤zkov В· ukГЎЕѕeme vГЎm, ako predГЎvaЕҐ viac</p>
         </div>
       </div>
 
       {/* 9. FORM */}
-      <div id="form299" style={{ padding: '96px 24px 140px', background: C.bg }}>
+      <div id="form149" style={{ padding: '96px 24px 140px', background: C.bg }}>
         <div style={{ maxWidth: 600, margin: '0 auto' }}>
-          <p className="section-label">Rýchly dopyt</p>
-          <h2 style={{ fontSize: 'clamp(26px, 3vw, 36px)', fontWeight: 700, letterSpacing: '-0.01em', marginBottom: 12 }}>Získajte profesionálny návrh webu do 24 hodín zdarma</h2>
-          <p style={{ color: C.textSub, marginBottom: 40, fontSize: 16, lineHeight: 1.6 }}>Napíšte nám základné detaily. Návrh je nezáväzný — ak sa vám nebude páčiť, nič neplatíte.</p>
+          <p className="section-label">RГЅchly dopyt</p>
+          <h2 style={{ fontSize: 'clamp(26px, 3vw, 36px)', fontWeight: 700, letterSpacing: '-0.01em', marginBottom: 12 }}>ZГ­skajte profesionГЎlny nГЎvrh webu do 24 hodГ­n zdarma</h2>
+          <p style={{ color: C.textSub, marginBottom: 40, fontSize: 16, lineHeight: 1.6 }}>NapГ­ЕЎte nГЎm zГЎkladnГ© detaily. NГЎvrh je nezГЎvГ¤znГЅ вЂ” ak sa vГЎm nebude pГЎДЌiЕҐ, niДЌ neplatГ­te.</p>
           
           {formStatus === 'success' ? (
             <div style={{ background: C.white, border: `1px solid ${C.border}`, borderRadius: 16, padding: '52px 32px', textAlign: 'center' }}>
-              <div style={{ fontSize: 48, marginBottom: 14 }}>🎉</div>
-              <h3 style={{ fontSize: 26, fontWeight: 700, marginBottom: 10 }}>Skvelé, dáta dorazili!</h3>
-              <p style={{ color: C.textSub, fontSize: 15 }}>Váš dopyt sme zaevidovali. Ihneď sa púšťame do analýzy a do 24 hodín vás budeme kontaktovať s hotovým návrhom.</p>
+              <div style={{ fontSize: 48, marginBottom: 14 }}>рџЋ‰</div>
+              <h3 style={{ fontSize: 26, fontWeight: 700, marginBottom: 10 }}>SkvelГ©, dГЎta dorazili!</h3>
+              <p style={{ color: C.textSub, fontSize: 15 }}>VГЎЕЎ dopyt sme zaevidovali. IhneДЏ sa pГєЕЎЕҐame do analГЅzy a do 24 hodГ­n vГЎs budeme kontaktovaЕҐ s hotovГЅm nГЎvrhom.</p>
             </div>
           ) : (
             <div style={{ background: C.white, border: `1px solid ${C.border}`, borderRadius: 16, padding: '40px 36px', display: 'flex', flexDirection: 'column', gap: 20 }}>
               {[
-                { key: 'name', label: 'Vaše meno a priezvisko *', type: 'text', placeholder: 'napr. Ján Novák' },
-                { key: 'email', label: 'Kontaktný e-mail *', type: 'email', placeholder: 'jan@firma.sk' },
-                { key: 'phone', label: 'Telefónne číslo (pre rýchle upresnenie)', type: 'tel', placeholder: '+421 911 111 222' },
-                { key: 'website', label: 'Váš aktuálny web (ak máte)', type: 'url', placeholder: 'napr. www.mojastranka.sk' },
-                { key: 'message', label: 'Čo je hlavným cieľom vášho nového webu?', type: 'text', placeholder: 'Čomu sa venujete? Čo od nového webu očakávate?' },
+                { key: 'name', label: 'VaЕЎe meno a priezvisko *', type: 'text', placeholder: 'napr. JГЎn NovГЎk' },
+                { key: 'email', label: 'KontaktnГЅ e-mail *', type: 'email', placeholder: 'jan@firma.sk' },
+                { key: 'phone', label: 'TelefГіnne ДЌГ­slo (pre rГЅchle upresnenie)', type: 'tel', placeholder: '+421 911 111 222' },
+                { key: 'website', label: 'VГЎЕЎ aktuГЎlny web (ak mГЎte)', type: 'url', placeholder: 'napr. www.mojastranka.sk' },
+                { key: 'message', label: 'ДЊo je hlavnГЅm cieДѕom vГЎЕЎho novГ©ho webu?', type: 'text', placeholder: 'ДЊomu sa venujete? ДЊo od novГ©ho webu oДЌakГЎvate?' },
               ].map(f => (
                 <div key={f.key}>
                   <label style={{ display: 'block', fontSize: 14, fontWeight: 600, marginBottom: 8, color: C.text }}>{f.label}</label>
@@ -446,19 +446,19 @@ export default function Web149() {
                 </div>
               ))}
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
-                <input id="c299" type="checkbox" checked={form.consent}
+                <input id="c149" type="checkbox" checked={form.consent}
                   onChange={e => { setForm(p => ({ ...p, consent: e.target.checked })); setConsentError(false); }}
                   style={{ marginTop: 3, width: 18, height: 18, cursor: 'pointer', accentColor: C.blue, flexShrink: 0 }} />
-                <label htmlFor="c299" style={{ fontSize: 13, color: C.textSub, lineHeight: 1.5, cursor: 'pointer' }}>
-                  Súhlasím so spracovaním osobných údajov za účelom vypracovania nezáväznej ponuky v súlade s{' '}
-                  <Link to="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: C.blue, fontWeight: 600 }}>Zásadami ochrany súkromia</Link>{' *'}
+                <label htmlFor="c149" style={{ fontSize: 13, color: C.textSub, lineHeight: 1.5, cursor: 'pointer' }}>
+                  SГєhlasГ­m so spracovanГ­m osobnГЅch Гєdajov za ГєДЌelom vypracovania nezГЎvГ¤znej ponuky v sГєlade s{' '}
+                  <Link to="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: C.blue, fontWeight: 600 }}>ZГЎsadami ochrany sГєkromia</Link>{' *'}
                 </label>
               </div>
-              {consentError && <p style={{ color: C.red, fontSize: 13 }}>⚠️ Pre odoslanie dopytu musíte potvrdiť súhlas so spracovaním osobných údajov.</p>}
-              {formStatus === 'error' && <p style={{ color: C.red, fontSize: 13 }}>❌ Systému sa nepodarilo odoslať formulár. Skúste to znova.</p>}
+              {consentError && <p style={{ color: C.red, fontSize: 13 }}>вљ пёЏ Pre odoslanie dopytu musГ­te potvrdiЕҐ sГєhlas so spracovanГ­m osobnГЅch Гєdajov.</p>}
+              {formStatus === 'error' && <p style={{ color: C.red, fontSize: 13 }}>вќЊ SystГ©mu sa nepodarilo odoslaЕҐ formulГЎr. SkГєste to znova.</p>}
               <button onClick={handleSubmit} disabled={formStatus === 'loading'}
                 className="btn-primary" style={{ width: '100%', height: 52, fontSize: 16, fontWeight: 700, opacity: formStatus === 'loading' ? 0.7 : 1 }}>
-                {formStatus === 'loading' ? 'Pripravujem dáta...' : 'Odoslať dopyt a získať návrh zdarma →'}
+                {formStatus === 'loading' ? 'Pripravujem dГЎta...' : 'OdoslaЕҐ dopyt a zГ­skaЕҐ nГЎvrh zdarma в†’'}
               </button>
             </div>
           )}
@@ -476,11 +476,11 @@ export default function Web149() {
           <a href="tel:+421907890600" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontSize: 14 }}>+421 907 890 600</a>
           <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: 14 }}>webklienti.com</span>
         </div>
-        <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.5)', marginBottom: 8 }}>IČO: 56360495 · Trnava, Slovensko</p>
-        <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.5)', marginBottom: 8 }}>© {new Date().getFullYear()} WebKlienti · Profesionálny webdizajn zameraný na výsledky</p>
-        <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.5)', fontStyle: 'italic' }}>Každý projekt staviame od prvej línie kódu pre maximálny výkon a rýchlosť. Žiadne pomalé, kupované šablóny.</p>
+        <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.5)', marginBottom: 8 }}>IДЊO: 56360495 В· Trnava, Slovensko</p>
+        <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.5)', marginBottom: 8 }}>В© {new Date().getFullYear()} WebKlienti В· ProfesionГЎlny webdizajn zameranГЅ na vГЅsledky</p>
+        <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.5)', fontStyle: 'italic' }}>KaЕѕdГЅ projekt staviame od prvej lГ­nie kГіdu pre maximГЎlny vГЅkon a rГЅchlosЕҐ. ЕЅiadne pomalГ©, kupovanГ© ЕЎablГіny.</p>
         <div style={{ marginTop: 32, paddingTop: 32, borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-          <button onClick={scrollToForm} className="btn-primary" style={{ fontSize: 15 }}>Chcem nezáväzný návrh webu zdarma</button>
+          <button onClick={scrollToForm} className="btn-primary" style={{ fontSize: 15 }}>Chcem nezГЎvГ¤znГЅ nГЎvrh webu zdarma</button>
         </div>
       </footer>
 
@@ -494,10 +494,11 @@ export default function Web149() {
         transition: 'opacity .2s, visibility .2s'
       }}>
         <button onClick={scrollToForm} className="btn-primary" style={{ width: '100%', fontSize: 15, height: 50 }}>
-          Chcem landing page od 149 € →
+          Chcem landing page od 149 в‚¬ в†’
         </button>
       </div>
 
     </div>
   );
 }
+

@@ -6,7 +6,7 @@ const en = {
     "Contact"
   ],
   "navCta": "Get Free Design",
-  "heroBadge": "🔥 Limited Offer — 50% off project launch until the end of the month",
+  "heroBadge": "рџ”Ґ Limited Offer вЂ” 50% off project launch until the end of the month",
   "heroTitle": "We build websites that actually drive new customers to your business",
   "heroSub": "Complete sales engine: Modern design + powerful SEO + conversion-focused structure. Live from 3 business days.",
   "heroBenefits": [
@@ -17,14 +17,14 @@ const en = {
     "Ultra-fast 5-day delivery with zero endless delays"
   ],
   "heroCta": "Get My Free Website Concept",
-  "heroMicro": "first visual draft in 24 hours · 100% risk-free · see how to grow your sales",
-  "marketTag": "🌍 Strategic Web Design for Europe · UK · Global",
+  "heroMicro": "first visual draft in 24 hours В· 100% risk-free В· see how to grow your sales",
+  "marketTag": "рџЊЌ Strategic Web Design for Europe В· UK В· Global",
   "problemLabel": "Where Are You Losing Money?",
   "problemTitle": "Why do most small business websites just sit online without making a single cent?",
   "problemPoints": [
     "Your current website looks outdated and drives potential clients straight away",
     "The layout breaks on mobile, loads too slowly, or feels frustrating to use",
-    "You are invisible on Google — all the high-intent calls and emails go to your competitors",
+    "You are invisible on Google вЂ” all the high-intent calls and emails go to your competitors",
     "The design lacks authority, making customers second-guess your professionalism",
     "Agencies charge you thousands upfront with absolutely zero performance guarantees"
   ],
@@ -58,14 +58,14 @@ const en = {
   "pricingLabel": "Transparent Pricing",
   "pricingTitle": "Invest in a high-performing digital asset that pays for itself",
   "pricingNote": "No hidden fees, no locked contracts. Choose the package that matches your immediate growth goals.",
-  "orderBtn": "Select Package & Get Free Draft →",
+  "orderBtn": "Select Package & Get Free Draft в†’",
   "cards": [
     {
       "tag": "Starter",
       "badge": null,
       "name": "Landing Page",
-      "price": "150 €",
-      "old": "regularly 300 €",
+      "price": "150 в‚¬",
+      "old": "regularly 300 в‚¬",
       "forWhom": "Perfect for freelancers, local services, and tradesmen",
       "features": [
         "High-conversion layout on one high-impact page",
@@ -84,8 +84,8 @@ const en = {
       "tag": "Growth",
       "badge": "Most Popular",
       "name": "Business Lead Generator",
-      "price": "499 €",
-      "old": "regularly 999 €",
+      "price": "499 в‚¬",
+      "old": "regularly 999 в‚¬",
       "forWhom": "Best value for established companies looking to dominate local markets",
       "features": [
         "Everything in the Starter package +",
@@ -103,8 +103,8 @@ const en = {
       "tag": "Performance",
       "badge": "Sales Machine",
       "name": "Full E-Commerce Store",
-      "price": "999 €",
-      "old": "regularly 1,999 €",
+      "price": "999 в‚¬",
+      "old": "regularly 1,999 в‚¬",
       "forWhom": "For ambitious brands ready to sell products and scale revenue online",
       "features": [
         "Everything in the Business package +",
@@ -123,20 +123,20 @@ const en = {
   "reviewsLabel": "Our Work Speaks for Itself",
   "reviewsTitle": "Take a look at a recently launched project",
   "riskTitle": "Risk-free collaboration",
-  "riskText": "We back our code and strategy entirely. You don’t risk a single euro upfront. We build the first concept at our own expense—you only move forward if you love it.",
+  "riskText": "We back our code and strategy entirely. You donвЂ™t risk a single euro upfront. We build the first concept at our own expenseвЂ”you only move forward if you love it.",
   "riskPoints": [
-    "✓ Initial visual concept delivered within 24 hours — completely FREE",
-    "✓ We sign a contract first — you pay the deposit only when you're 100% happy with the concept",
-    "✓ Clear plan and communication with zero technical jargon",
-    "✓ No hidden fees or long-term commitments"
+    "вњ“ Initial visual concept delivered within 24 hours вЂ” completely FREE",
+    "вњ“ We sign a contract first вЂ” you pay the deposit only when you're 100% happy with the concept",
+    "вњ“ Clear plan and communication with zero technical jargon",
+    "вњ“ No hidden fees or long-term commitments"
   ],
   "finalCtaTitle": "Ready to own a website that works as hard as you do?",
   "finalCtaSub": "Don't let your competitors capture all the market traffic. Fill out the form and get your concept tomorrow.",
-  "finalCtaBtn": "Get My Free Strategy & Draft →",
-  "stickyCtaBtn": "Get a High-Converting Web from 299 € →",
+  "finalCtaBtn": "Get My Free Strategy & Draft в†’",
+  "stickyCtaBtn": "Get a High-Converting Web from 149 в‚¬ в†’",
   "formLabel": "Quick Inquiry",
   "formTitle": "Get a professional website concept within 24 hours free",
-  "formSub": "Share a few basic details. The draft is entirely non-binding — if it's not a perfect fit, you owe nothing.",
+  "formSub": "Share a few basic details. The draft is entirely non-binding вЂ” if it's not a perfect fit, you owe nothing.",
   "fields": [
     {
       "key": "name",
@@ -158,46 +158,46 @@ const en = {
     }
   ],
   "packageLabel": "Selected Package *",
-  "packagePlaceholder": "— Choose your starting position —",
+  "packagePlaceholder": "вЂ” Choose your starting position вЂ”",
   "packages": [
-    "Landing Page — 150 €",
-    "Business Lead Generator — 499 €",
-    "Full E-Commerce Store — 999 €"
+    "Landing Page вЂ” 150 в‚¬",
+    "Business Lead Generator вЂ” 499 в‚¬",
+    "Full E-Commerce Store вЂ” 999 в‚¬"
   ],
   "intentLabel": "What is the primary goal of your new website? *",
-  "intentNote": "Select your core business objective — this helps us architect the exact structure your target audience expects.",
+  "intentNote": "Select your core business objective вЂ” this helps us architect the exact structure your target audience expects.",
   "intentCards": [
     {
-      "value": "Landing Page — 150 €",
+      "value": "Landing Page вЂ” 150 в‚¬",
       "intent": "I want a clean, modern digital card",
       "sub": "I need a highly professional and fast online presence so local clients can verify my business.",
-      "price": "150 €",
+      "price": "150 в‚¬",
       "badge": null
     },
     {
-      "value": "Business Lead Generator — 499 €",
+      "value": "Business Lead Generator вЂ” 499 в‚¬",
       "intent": "I want to consistently sign new clients",
       "sub": "I need an asset optimized for generating quote inquiries, inbound calls, and appointment bookings.",
-      "price": "499 €",
+      "price": "499 в‚¬",
       "badge": "Best Value"
     },
     {
-      "value": "Full E-Commerce Store — 999 €",
+      "value": "Full E-Commerce Store вЂ” 999 в‚¬",
       "intent": "I want to sell products online",
       "sub": "I am looking for a fully automated, standalone online store that handles sales securely 24/7.",
-      "price": "999 €",
+      "price": "999 в‚¬",
       "badge": null
     }
   ],
   "messageLabel": "Tell us briefly about your business (optional)",
   "messagePlaceholder": "What industry are you in? What do you expect most from this website?",
-  "submitBtn": "Submit Inquiry & Get Free Draft →",
+  "submitBtn": "Submit Inquiry & Get Free Draft в†’",
   "submitting": "Processing data...",
   "successTitle": "Great, we have successfully received your inquiry!",
   "successMsg": "We have logged your inquiry. Our team is jumping straight into market analysis, and we will contact you with your custom visual layout within 24 hours.",
   "newOrder": "New Lead from Web",
-  "errorMsg": "❌ The system failed to transmit the form. Please try again or call our direct line above.",
-  "footerRights": "© 2026 WebKlienti · Performance-driven web design engineered for results",
+  "errorMsg": "вќЊ The system failed to transmit the form. Please try again or call our direct line above.",
+  "footerRights": "В© 2026 WebKlienti В· Performance-driven web design engineered for results",
   "faqLabel": "FAQ",
   "faqTitle": "Everything you need to know before we launch",
   "faqItems": [
@@ -207,15 +207,15 @@ const en = {
     },
     {
       "q": "Are there any recurring monthly developer fees?",
-      "a": "No. You pay a single, transparent one-time fee for the complete development of the site. Once handed over, the website is 100% yours. Your only ongoing costs are standard domain registry and hosting (approx. 20–30 € per year) paid directly to the host provider — which we help you choose and configure completely free."
+      "a": "No. You pay a single, transparent one-time fee for the complete development of the site. Once handed over, the website is 100% yours. Your only ongoing costs are standard domain registry and hosting (approx. 20вЂ“30 в‚¬ per year) paid directly to the host provider вЂ” which we help you choose and configure completely free."
     },
     {
       "q": "How does the payment structure work?",
-      "a": "Getting started is completely risk-free. Fill in the form, we'll do the analysis and send you the first visual concept within 24 hours — for free. If you say 'yes, we love it', we sign a contract and you pay a 50% deposit. The remaining 50% is due only when the website is finished, tested and ready to launch."
+      "a": "Getting started is completely risk-free. Fill in the form, we'll do the analysis and send you the first visual concept within 24 hours вЂ” for free. If you say 'yes, we love it', we sign a contract and you pay a 50% deposit. The remaining 50% is due only when the website is finished, tested and ready to launch."
     },
     {
       "q": "Why are your prices significantly lower than traditional agencies?",
-      "a": "We don’t fund expensive city-center offices, account executives, or corporate overheads. We are a lean, hyper-focused team of developers and conversion designers. By developing optimized internal templates and workflows, we cut out dead time and deliver premium assets for a fraction of market costs."
+      "a": "We donвЂ™t fund expensive city-center offices, account executives, or corporate overheads. We are a lean, hyper-focused team of developers and conversion designers. By developing optimized internal templates and workflows, we cut out dead time and deliver premium assets for a fraction of market costs."
     },
     {
       "q": "What if I don't have professional text copy or high-res images?",
@@ -227,28 +227,28 @@ const en = {
     },
     {
       "q": "What happens if I don't like the free concept delivered in 24 hours?",
-      "a": "You simply point out what needs adjustment, and we modify the layout. If you feel our direction doesn’t match your expectations at all, you can walk away instantly with zero obligations and zero cost. Since no money changes hands before approval, you assume no risk."
+      "a": "You simply point out what needs adjustment, and we modify the layout. If you feel our direction doesnвЂ™t match your expectations at all, you can walk away instantly with zero obligations and zero cost. Since no money changes hands before approval, you assume no risk."
     }
   ],
   "guaranteeTitle": "100% Satisfaction Guarantee",
   "guaranteeText": "You see a functional visual layout of your future website before you spend a single cent.",
   "guaranteeBadges": [
-    "✓ Strategic market analysis and concept within 24 hours",
-    "✓ First custom draft completely free and without obligations",
-    "✓ No hidden fees or long-term commitments"
+    "вњ“ Strategic market analysis and concept within 24 hours",
+    "вњ“ First custom draft completely free and without obligations",
+    "вњ“ No hidden fees or long-term commitments"
   ],
   "cookieMsg": "This website utilizes cookies to ensure optimal functionality and monitor traffic metrics.",
   "cookieAccept": "Accept All",
   "cookieDecline": "Decline",
   "privacyLink": "Privacy Policy",
   "privacyTitle": "Personal Data Processing",
-  "privacyContent": "Operator: WebKlienti, info@webklienti.com, +421 907 890 600\n\nWhat data we collect:\n• First name, last name, email address, phone number — exclusively via voluntary submission of the inquiry form.\n\nPurpose of processing:\nPreparation of the free design concept, calculating custom quotes, client communication, and fulfilling contract obligations.\n\nData retention:\nFor the duration of the communication or contractual agreement, and subsequently for the period required by applicable legal frameworks.\n\nYour rights:\nYou hold full rights to access your data, request corrections, demand complete erasure (the right to be forgotten), or restrict processing. Send all compliance requests to info@webklienti.com.\n\nAnalytics:\nWe deploy anonymized Google Analytics properties to monitor system health and evaluate ad campaign performance.\n\nEffective date: January 1, 2025",
+  "privacyContent": "Operator: WebKlienti, info@webklienti.com, +421 907 890 600\n\nWhat data we collect:\nвЂў First name, last name, email address, phone number вЂ” exclusively via voluntary submission of the inquiry form.\n\nPurpose of processing:\nPreparation of the free design concept, calculating custom quotes, client communication, and fulfilling contract obligations.\n\nData retention:\nFor the duration of the communication or contractual agreement, and subsequently for the period required by applicable legal frameworks.\n\nYour rights:\nYou hold full rights to access your data, request corrections, demand complete erasure (the right to be forgotten), or restrict processing. Send all compliance requests to info@webklienti.com.\n\nAnalytics:\nWe deploy anonymized Google Analytics properties to monitor system health and evaluate ad campaign performance.\n\nEffective date: January 1, 2025",
   "statNote": "Every project is architected from line one of code for maximum core web vitals and speed. Zero slow, bloated marketplace themes.",
-  "themeTitle": "Conversion-Driven Web Design from 149 € | WebKlienti",
+  "themeTitle": "Conversion-Driven Web Design from 149 в‚¬ | WebKlienti",
   "seoDescription": "We build modern websites and online shops engineered to acquire buyers for your business. Fast 5-day delivery, free concept draft within 24 hours. No monthly fees.",
   "seoUrl": "https://www.webklienti.com",
   "heroTag": "Performance Web Design for Small and Medium Enterprises",
-  "heroCtaSec": "View Packages ↓",
+  "heroCtaSec": "View Packages в†“",
   "trustStrip": [
     "We accept a maximum of 2 new projects per week to maintain pristine quality standards",
     "Clean code compiled strictly for lightning-fast deployment speeds",
@@ -261,3 +261,4 @@ const en = {
 };
 
 export default en;
+
