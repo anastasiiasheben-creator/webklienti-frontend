@@ -1,17 +1,17 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="sk">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- в•ђв•ђв•ђ PERFORMANCE: kritickГ© CSS в•ђв•ђв•ђ -->
+    <!-- ═══ PERFORMANCE: kritické CSS ═══ -->
     <style>
       body { margin: 0; font-family: 'Inter', -apple-system, sans-serif; background: #ffffff; color: #111827; }
       #root { min-height: 100vh; }
       nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.97); height: 64px; }
     </style>
 
-    <!-- в•ђв•ђв•ђ PERFORMANCE: preconnect & preload в•ђв•ђв•ђ -->
+    <!-- ═══ PERFORMANCE: preconnect & preload ═══ -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
@@ -20,51 +20,51 @@
     <link rel="dns-prefetch" href="https://www.google-analytics.com" />
     <link rel="preload" href="/logo.webp" as="image" type="image/webp" />
 
-    <!-- в•ђв•ђв•ђ SEO: ZГЃKLADNГ‰ в•ђв•ђв•ђ -->
-    <title>WebKlienti вЂ“ Tvorba webstrГЎnok od 149 в‚¬ | Trnava, SK &amp; CZ</title>
-    <meta name="description" content="ProfesionГЎlne webstrГЎnky pre malГ© firmy od 149 в‚¬. HotovГ© za 5 dnГ­. SEO, GDPR, Google Business profil. Slovensko, ДЊesko, EurГіpa. Bez mesaДЌnГЅch poplatkov." />
-    <meta name="keywords" content="tvorba webstrГЎnok, webstrГЎnka pre firmu, lacnГЅ web, web pre ЕѕivnostnГ­ka, SEO web, webstrГЎnka Slovensko, tvorba webu ДЊesko, webklienti" />
+    <!-- ═══ SEO: ZÁKLADNÉ ═══ -->
+    <title>WebKlienti – Tvorba webstránok od 299 € | Trnava, SK &amp; CZ</title>
+    <meta name="description" content="Profesionálne webstránky pre malé firmy od 299 €. Hotové za 5 dní. SEO, GDPR, Google Business profil. Slovensko, Česko, Európa. Bez mesačných poplatkov." />
+    <meta name="keywords" content="tvorba webstránok, webstránka pre firmu, lacný web, web pre živnostníka, SEO web, webstránka Slovensko, tvorba webu Česko, webklienti" />
     <meta name="author" content="Web Klienti" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.webklienti.com/" />
     <meta http-equiv="content-language" content="sk" />
 
-    <!-- в•ђв•ђв•ђ SEO: HREFLANG в•ђв•ђв•ђ -->
+    <!-- ═══ SEO: HREFLANG ═══ -->
     <link rel="alternate" hreflang="sk" href="https://www.webklienti.com/" />
     <link rel="alternate" hreflang="x-default" href="https://www.webklienti.com/" />
 
-    <!-- в•ђв•ђв•ђ SEO: OPEN GRAPH в•ђв•ђв•ђ -->
+    <!-- ═══ SEO: OPEN GRAPH ═══ -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.webklienti.com/" />
-    <meta property="og:title" content="WebKlienti вЂ“ Tvorba webstrГЎnok od 149 в‚¬" />
-    <meta property="og:description" content="ProfesionГЎlne webstrГЎnky pre malГ© firmy od 149 в‚¬. HotovГ© za 5 dnГ­. SEO, GDPR, Google Business profil." />
+    <meta property="og:title" content="WebKlienti – Tvorba webstránok od 299 €" />
+    <meta property="og:description" content="Profesionálne webstránky pre malé firmy od 299 €. Hotové za 5 dní. SEO, GDPR, Google Business profil." />
     <meta property="og:image" content="https://www.webklienti.com/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="WebKlienti вЂ“ ProfesionГЎlne webstrГЎnky od 149 в‚¬" />
+    <meta property="og:image:alt" content="WebKlienti – Profesionálne webstránky od 299 €" />
     <meta property="og:locale" content="sk_SK" />
     <meta property="og:locale:alternate" content="cs_CZ" />
     <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:site_name" content="WebKlienti" />
 
-    <!-- в•ђв•ђв•ђ SEO: TWITTER CARD в•ђв•ђв•ђ -->
+    <!-- ═══ SEO: TWITTER CARD ═══ -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@webklienti" />
-    <meta name="twitter:title" content="WebKlienti вЂ“ Tvorba webstrГЎnok od 149 в‚¬" />
-    <meta name="twitter:description" content="ProfesionГЎlne webstrГЎnky pre malГ© firmy od 149 в‚¬. HotovГ© za 5 dnГ­." />
+    <meta name="twitter:title" content="WebKlienti – Tvorba webstránok od 299 €" />
+    <meta name="twitter:description" content="Profesionálne webstránky pre malé firmy od 299 €. Hotové za 5 dní." />
     <meta name="twitter:image" content="https://www.webklienti.com/og-image.jpg" />
 
-    <!-- в•ђв•ђв•ђ SEO: GEO в•ђв•ђв•ђ -->
+    <!-- ═══ SEO: GEO ═══ -->
     <meta name="geo.region" content="SK" />
     <meta name="geo.placename" content="Trnava, Slovensko" />
 
-    <!-- в•ђв•ђв•ђ SEO: SCHEMA.ORG в•ђв•ђв•ђ -->
+    <!-- ═══ SEO: SCHEMA.ORG ═══ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       "name": "WebKlienti",
-      "description": "Tvorba profesionГЎlnych webstrГЎnok pre malГ© firmy od 149 в‚¬. HotovГ© za 5 dnГ­.",
+      "description": "Tvorba profesionálnych webstránok pre malé firmy od 299 €. Hotové za 5 dní.",
       "url": "https://www.webklienti.com",
       "logo": "https://www.webklienti.com/logo.webp",
       "image": "https://www.webklienti.com/og-image.jpg",
@@ -86,7 +86,7 @@
         { "@type": "Country", "name": "Slovakia" },
         { "@type": "Country", "name": "Czech Republic" }
       ],
-      "priceRange": "в‚¬в‚¬",
+      "priceRange": "€€",
       "openingHours": "Mo-Fr 09:00-18:00",
       "sameAs": [
         "https://www.facebook.com/profile.php?id=61588797397714",
@@ -94,17 +94,17 @@
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Tvorba webstrГЎnok",
+        "name": "Tvorba webstránok",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "One-page web" }, "price": "149", "priceCurrency": "EUR" },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "PrezentaДЌnГЅ web" }, "price": "499", "priceCurrency": "EUR" },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "InternetovГЅ obchod" }, "price": "999", "priceCurrency": "EUR" }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "One-page web" }, "price": "299", "priceCurrency": "EUR" },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Prezentačný web" }, "price": "499", "priceCurrency": "EUR" },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Internetový obchod" }, "price": "999", "priceCurrency": "EUR" }
         ]
       }
     }
     </script>
 
-    <!-- в•ђв•ђв•ђ SEO: FAQ SCHEMA в•ђв•ђв•ђ -->
+    <!-- ═══ SEO: FAQ SCHEMA ═══ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -112,49 +112,49 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "KoДѕko stojГ­ tvorba webstrГЎnky?",
+          "name": "Koľko stojí tvorba webstránky?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ZГЎkladnГЎ one-page webstrГЎnka stojГ­ 149 в‚¬. Cena zahЕ•Е€a dizajn na mieru, mobilnГє verziu, SEO zГЎklady, kontaktnГЅ formulГЎr a Google Maps. Bez mesaДЌnГЅch poplatkov."
+            "text": "Základná one-page webstránka stojí 299 €. Cena zahŕňa dizajn na mieru, mobilnú verziu, SEO základy, kontaktný formulár a Google Maps. Bez mesačných poplatkov."
           }
         },
         {
           "@type": "Question",
-          "name": "Za ako dlho bude web hotovГЅ?",
+          "name": "Za ako dlho bude web hotový?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Е tandardnГЎ webstrГЎnka je hotovГЎ do 5 pracovnГЅch dnГ­ od schvГЎlenia nГЎvrhu."
+            "text": "Štandardná webstránka je hotová do 5 pracovných dní od schválenia návrhu."
           }
         },
         {
           "@type": "Question",
-          "name": "RobГ­te weby pre firmy na Slovensku aj v ДЊesku?",
+          "name": "Robíte weby pre firmy na Slovensku aj v Česku?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ГЃno, pГґsobГ­me na celom Slovensku aj v ДЊeskej republike. VЕЎetky projekty robГ­me kompletne online."
+            "text": "Áno, pôsobíme na celom Slovensku aj v Českej republike. Všetky projekty robíme kompletne online."
           }
         },
         {
           "@type": "Question",
-          "name": "SГє v cene zahrnutГ© mesaДЌnГ© poplatky za hosting?",
+          "name": "Sú v cene zahrnuté mesačné poplatky za hosting?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Cena 149 в‚¬ je jednorazovГЎ za tvorbu webu. Hosting a domГ©na sa platia samostatne, ale pomГґЕѕeme vГЎm s ich nastavenГ­m."
+            "text": "Cena 299 € je jednorazová za tvorbu webu. Hosting a doména sa platia samostatne, ale pomôžeme vám s ich nastavením."
           }
         }
       ]
     }
     </script>
 
-    <!-- в•ђв•ђв•ђ IKONY в•ђв•ђв•ђ -->
+    <!-- ═══ IKONY ═══ -->
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/logo192.png" />
     <link rel="manifest" href="/manifest.json" />
 
-    <!-- в•ђв•ђв•ђ FARBA PREHLIADAДЊA в•ђв•ђв•ђ -->
+    <!-- ═══ FARBA PREHLIADAČA ═══ -->
     <meta name="theme-color" content="#2563EB" />
 
-    <!-- в•ђв•ђв•ђ GTM: lazy load (po prvej interakcii alebo max 3.5s) в•ђв•ђв•ђ -->
+    <!-- ═══ GTM: lazy load (po prvej interakcii alebo max 3.5s) ═══ -->
     <script>
       window.dataLayer = window.dataLayer || [];
       (function () {
@@ -179,7 +179,7 @@
           events.forEach(function (e) { window.removeEventListener(e, trigger, { passive: true }); });
         }
         events.forEach(function (e) { window.addEventListener(e, trigger, { passive: true }); });
-        // poistka: ak pouЕѕГ­vateДѕ neurobГ­ niДЌ, naДЌГ­taj po 3.5s
+        // poistka: ak používateľ neurobí nič, načítaj po 3.5s
         window.addEventListener('load', function () { setTimeout(loadGTM, 3500); });
       })();
     </script>
@@ -188,8 +188,7 @@
   <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N39N3BP9"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <noscript>Pre zobrazenie tejto strГЎnky je potrebnГЅ JavaScript.</noscript>
+    <noscript>Pre zobrazenie tejto stránky je potrebný JavaScript.</noscript>
     <div id="root"></div>
   </body>
 </html>
-
