@@ -1,4 +1,4 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import logoImg from '../assets/logo.webp';
 import { newBlogPosts } from '../lib/newBlogPosts';
@@ -2086,6 +2086,12 @@ Najväčšia výhoda SEO je v tom, že neplatíte za každý klik. Budujete syst
   ...Object.fromEntries(newBlogPosts.map(post => [post.slug, post])),
 };
 
+const legacySlugs = {
+  'preco-web-nepredava-7-chyb': 'preco-web-neprinas-zakaznikov',
+  'wordpress-vs-wix-vs-webflow': 'wordpress-vs-wix-vs-web-na-mieru',
+  'web-za-500-vs-5000-eur': 'web-za-299-eur',
+};
+
 function renderInline(text) {
   // handle markdown links [text](url) and **bold**
   const nodes = [];
@@ -2172,7 +2178,10 @@ function renderContent(content) {
 
 export default function BlogPost() {
   const { slug } = useParams();
+  const legacySlug = legacySlugs[slug];
   const post = posts[slug];
+
+  if (legacySlug) return <Navigate to={`/blog/${legacySlug}`} replace />;
 
   if (!post)
     return (
