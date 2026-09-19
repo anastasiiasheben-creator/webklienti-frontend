@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import logoImg from '../assets/logo.webp';
+import { newBlogPosts } from '../lib/newBlogPosts';
 
 const C = {
   blue: '#2563EB', bg: '#F9FAFB', white: '#FFFFFF',
@@ -24,7 +25,7 @@ const posts = [
   { slug: 'lokalne-seo-slovensko', title: 'Čo je to lokálne SEO a prečo na ňom záleží?', excerpt: 'Chcete, aby vás zákazníci našli hneď, ako vo vašom meste hľadajú vaše služby? Zistite, ako ovládnúť Google Mapy a premeniť vyhľadávania v okolí na zisk.', date: '10. júna 2026', readTime: '7 min čítania' },
   { slug: 'najcastejsie-chyby-na-firemnom-webe', title: '10 najčastejších chýb na firemných webstránkach, ktoré vás stoja zákazníkov', excerpt: 'Máte web, ale neprináša zákazníkov? Pozrite si najčastejšie chyby firemných webstránok, ktoré znižujú počet dopytov, dôveru zákazníkov aj výsledky online.', date: '12. júla 2026', iso: '2026-07-12', readTime: '10 min čítania' },
   { slug: 'ako-ziskat-zakaznikov-z-google-bez-reklamy', title: 'Ako získať prvých zákazníkov cez Google bez platenia reklamy: Praktický SEO návod pre malé firmy', excerpt: 'Naučte sa, ako získať prvých zákazníkov cez Google bez platených reklám. Praktický SEO návod pre malé firmy, lokálne vyhľadávanie a rast organickej návštevnosti.', date: '16. júla 2026', iso: '2026-07-16', readTime: '9 min čítania' },
-
+  ...newBlogPosts,
 ];
 
 export default function Blog() {

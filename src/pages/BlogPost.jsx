@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import logoImg from '../assets/logo.webp';
+import { newBlogPosts } from '../lib/newBlogPosts';
 
 const C = {
   blue: '#2563EB',
@@ -2082,6 +2083,7 @@ Najväčšia výhoda SEO je v tom, že neplatíte za každý klik. Budujete syst
 
 **Neviete, prečo váš web neprináša zákazníkov z Google? Začnite SEO analýzou a zistite, na aké výrazy vás zákazníci hľadajú, kde strácate návštevnosť a ktoré stránky môžu priniesť nové dopyty.**`,
   },
+  ...Object.fromEntries(newBlogPosts.map(post => [post.slug, post])),
 };
 
 function renderInline(text) {
