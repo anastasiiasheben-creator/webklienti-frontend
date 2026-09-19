@@ -64,8 +64,8 @@ const en = {
       "tag": "Starter",
       "badge": null,
       "name": "Landing Page",
-      "price": "149 €",
-      "old": "regularly 599 €",
+      "price": "150 €",
+      "old": "regularly 300 €",
       "forWhom": "Perfect for freelancers, local services, and tradesmen",
       "features": [
         "High-conversion layout on one high-impact page",
@@ -160,7 +160,7 @@ const en = {
   "packageLabel": "Selected Package *",
   "packagePlaceholder": "— Choose your starting position —",
   "packages": [
-    "Landing Page — 149 €",
+    "Landing Page — 150 €",
     "Business Lead Generator — 499 €",
     "Full E-Commerce Store — 999 €"
   ],
@@ -168,10 +168,10 @@ const en = {
   "intentNote": "Select your core business objective — this helps us architect the exact structure your target audience expects.",
   "intentCards": [
     {
-      "value": "Landing Page — 149 €",
+      "value": "Landing Page — 150 €",
       "intent": "I want a clean, modern digital card",
       "sub": "I need a highly professional and fast online presence so local clients can verify my business.",
-      "price": "149 €",
+      "price": "150 €",
       "badge": null
     },
     {

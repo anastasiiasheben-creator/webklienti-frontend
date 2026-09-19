@@ -76,8 +76,8 @@ export default function Web149() {
     <div style={{ fontFamily: "'Inter', -apple-system, sans-serif", background: C.white, color: C.text, minHeight: '100vh' }}>
 
       <Helmet>
-        <title>Landing page za 149 € – Webstránka od 3 dní | WebKlienti</title>
-        <meta name="description" content="Landing page od 149 €. Dizajn navrhnutý na získavanie zákazníkov, mobilná verzia, SEO základy a kontaktný formulár. Dodanie od 3 dní." />
+        <title>Landing page za 150 € – Webstránka od 3 dní | WebKlienti</title>
+        <meta name="description" content="Landing page od 150 €. Dizajn navrhnutý na získavanie zákazníkov, mobilná verzia, SEO základy a kontaktný formulár. Dodanie od 3 dní." />
         <link rel="canonical" href="https://www.webklienti.com/web-149" />
         <link rel="alternate" hreflang="sk" href="https://www.webklienti.com/web-149" />
         <link rel="alternate" hreflang="x-default" href="https://www.webklienti.com/web-149" />
@@ -88,7 +88,7 @@ export default function Web149() {
         <meta property="og:image" content="https://www.webklienti.com/og-image.jpg" />
         <meta property="og:locale" content="sk_SK" />
         <meta name="twitter:card" content="summary_large_image" />
-        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Product","name":"Landing page za 149 €","description":"Profesionálna landing page pre malé firmy. Mobilná verzia, SEO základy, kontaktný formulár, Google Maps. Dodanie od 3 dní.","brand":{"@type":"Brand","name":"WebKlienti"},"url":"https://www.webklienti.com/web-149","offers":{"@type":"Offer","price":"149","priceCurrency":"EUR","availability":"https://schema.org/InStock","seller":{"@type":"Organization","name":"WebKlienti","url":"https://www.webklienti.com"}},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1","bestRating":"5","worstRating":"1"},"review":[{"@type":"Review","author":{"@type":"Person","name":"Matus K."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Super služby! Som veľmi spokojný."}]}`}</script>
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Product","name":"Landing page za 149 €","description":"Profesionálna landing page pre malé firmy. Mobilná verzia, SEO základy, kontaktný formulár, Google Maps. Dodanie od 3 dní.","image":"https://www.webklienti.com/og-image.jpg","brand":{"@type":"Brand","name":"WebKlienti"},"url":"https://www.webklienti.com/web-149","offers":{"@type":"Offer","price":"149","priceCurrency":"EUR","availability":"https://schema.org/InStock","seller":{"@type":"Organization","name":"WebKlienti","url":"https://www.webklienti.com"}},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1","bestRating":"5","worstRating":"1"},"review":[{"@type":"Review","author":{"@type":"Person","name":"Matus K."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Super služby! Som veľmi spokojný."}]}`}</script>
       </Helmet>
 
       <style>{`

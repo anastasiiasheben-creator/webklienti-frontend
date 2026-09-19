@@ -64,8 +64,8 @@ const sk = {
       "tag": "Starter",
       "badge": null,
       "name": "Landing page",
-      "price": "149 €",
-      "old": "bežne 599 €",
+      "price": "150 €",
+      "old": "bežne 300 €",
       "forWhom": "Ideálne pre živnostníkov, remeselníkov a lokálne služby",
       "features": [
         "Predajný dizajn na jednej prehľadnej strane",
@@ -160,7 +160,7 @@ const sk = {
   "packageLabel": "Zvolený balík *",
   "packagePlaceholder": "— Vyberte si štartovaciu pozíciu —",
   "packages": [
-    "Landing page — 149 €",
+    "Landing page — 150 €",
     "Biznis web na dopyty — 499 €",
     "Kompletný E-shop — 999 €"
   ],
@@ -168,10 +168,10 @@ const sk = {
   "intentNote": "Vyberte si váš primárny cieľ — pomôže nám to postaviť štruktúru webu presne na mieru vašej cieľovej skupine.",
   "intentCards": [
     {
-      "value": "Landing page — 149 €",
+      "value": "Landing page — 150 €",
       "intent": "Chcem len modernú vizitku",
       "sub": "Potrebujem reprezentatívnu a rýchlu stránku, aby ma klienti našli na internete.",
-      "price": "149 €",
+      "price": "150 €",
       "badge": null
     },
     {

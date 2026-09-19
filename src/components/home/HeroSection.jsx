@@ -1,4 +1,6 @@
 import { C } from '../../lib/constants';
+import montwellImg from '../../assets/montwell-preview.webp';
+import { Link } from 'react-router-dom';
 
 export default function HeroSection({ t, lang, onCta }) {
   return (
@@ -26,35 +28,19 @@ export default function HeroSection({ t, lang, onCta }) {
             </button>
             <p style={{ fontSize: 14, color: C.textSub }}>{t.heroMicro}</p>
           </div>
-          {/* RIGHT — dashboard mock */}
-          <div className="hero-right" style={{ background: 'linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%)', borderRadius: 20, padding: 32, border: `1px solid rgba(37,99,235,0.12)` }}>
-            <div style={{ background: C.white, borderRadius: 12, padding: 20, marginBottom: 16, boxShadow: '0 4px 12px rgba(0,0,0,0.06)' }}>
-              <div style={{ fontSize: 12, color: C.textSub, marginBottom: 8, fontWeight: 500 }}>
-                {lang === 'en' ? 'Monthly inquiries' : lang === 'cz' ? 'Měsíční poptávky' : 'Mesačné dopyty'}
-              </div>
-              <div style={{ fontSize: 36, fontWeight: 700, color: C.blue, marginBottom: 4 }}>+3×</div>
-              <div style={{ fontSize: 13, color: '#15803D', fontWeight: 600 }}>
-                ↑ {lang === 'en' ? 'after optimisation' : lang === 'cz' ? 'po optimalizaci' : 'po optimalizácii'}
-              </div>
-              <div style={{ display: 'flex', alignItems: 'flex-end', gap: 6, marginTop: 16, height: 60 }}>
-                {[20, 28, 22, 35, 32, 48, 52, 44, 58, 62, 68, 80].map((h, i) => (
-                  <div key={i} style={{ flex: 1, background: i >= 6 ? C.blue : '#DBEAFE', height: `${h}%`, borderRadius: '4px 4px 0 0' }} />
-                ))}
-              </div>
-            </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
-              {[
-                { label: lang === 'en' ? 'Avg. inquiries/mo' : lang === 'cz' ? 'Průměr dopytů/měs' : 'Priemer dopytov/mes', val: '14', color: C.blue },
-                { label: lang === 'en' ? 'Google ranking' : 'Google pozícia', val: 'TOP 3', color: '#15803D' },
-                { label: lang === 'en' ? 'Conversion rate' : lang === 'cz' ? 'Konverzní poměr' : 'Konverzný pomer', val: '4.2%', color: C.orange },
-                { label: lang === 'en' ? 'Delivery' : lang === 'cz' ? 'Dodání' : 'Dodanie', val: lang === 'en' ? '5 days' : '5 dní', color: C.text },
-              ].map((stat, i) => (
-                <div key={i} style={{ background: C.white, borderRadius: 10, padding: '12px 14px', boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}>
-                  <div style={{ fontSize: 11, color: C.textSub, marginBottom: 4, fontWeight: 500 }}>{stat.label}</div>
-                  <div style={{ fontSize: 20, fontWeight: 700, color: stat.color }}>{stat.val}</div>
-                </div>
-              ))}
-            </div>
+          {/* RIGHT — verified client work */}
+          <div className="hero-right" style={{ background: C.bg, borderRadius: 20, padding: 20, border: `1px solid ${C.border}` }}>
+            <img src={montwellImg} alt="Montwell webstránka" width="600" height="324" style={{ width: '100%', display: 'block', aspectRatio: '600 / 324', objectFit: 'cover', borderRadius: 12, marginBottom: 16 }} />
+            <p style={{ fontSize: 12, color: C.blue, fontWeight: 700, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 8 }}>
+              {lang === 'en' ? 'Real client work' : lang === 'cz' ? 'Reálná realizace' : 'Reálna realizácia'}
+            </p>
+            <h2 style={{ fontSize: 24, fontWeight: 700, color: C.text, marginBottom: 12 }}>Montwell.sk</h2>
+            <p style={{ fontSize: 14, color: C.textSub, lineHeight: 1.6, marginBottom: 16 }}>
+              {lang === 'en' ? 'SK + DE website · project gallery · SEO-ready blog' : lang === 'cz' ? 'SK + DE web · galerie realizací · blog připravený pro SEO' : 'SK + DE web · galéria realizácií · blog pripravený pre SEO'}
+            </p>
+            <Link to="/blog/spolupraca-s-montwell-webstranka" style={{ color: C.blue, fontWeight: 700, textDecoration: 'none', fontSize: 14 }}>
+              {lang === 'en' ? 'Read the case study →' : lang === 'cz' ? 'Přečíst case study →' : 'Prečítať case study →'}
+            </Link>
           </div>
         </div>
       </div>

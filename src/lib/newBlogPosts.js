@@ -778,13 +778,13 @@ Pri viacjazyčnom webe treba myslieť na štruktúru, navigáciu, titulky, meta 
 
 Web existuje približne tri mesiace. Od začiatku neboli spustené Google Ads kampane, preto nižšie uvedené výsledky pochádzajú z organického vyhľadávania.
 
-Podľa Google Search Console sa web počas prvých troch mesiacov zobrazil vo výsledkoch Google 321-krát a získal 57 organických kliknutí. Priemerná miera prekliknutia bola 17,8 % a priemerná pozícia 6,6.
+Podľa Google Search Console sa web počas prvých troch mesiacov zobrazil vo výsledkoch Google **321-krát** a získal **57 organických kliknutí**. Priemerná miera prekliknutia bola **17,8 %** a priemerná pozícia **6,6**.
 
 Priemerná pozícia 6,6 znamená, že web sa v sledovanom období zobrazoval v priemere na prvej stránke výsledkov Google. Najvýkonnejší bol značkový dopyt „montwell“, ktorý priniesol 36 kliknutí zo 66 zobrazení.
 
 ## Ktoré stránky získali najviac návštev
 
-Hlavná stránka získala 46 kliknutí a 118 zobrazení. Kontaktná stránka získala 3 kliknutia a 135 zobrazení. Nemecká verzia úvodu získala 3 kliknutia a 28 zobrazení, čo predstavuje prvý signál zahraničnej organickej viditeľnosti.
+Hlavná stránka získala **46 kliknutí** a **118 zobrazení**. Kontaktná stránka získala **3 kliknutia** a **135 zobrazení**. Nemecká verzia úvodu získala **3 kliknutia** a **28 zobrazení**, čo predstavuje prvý signál zahraničnej organickej viditeľnosti.
 
 Návštevnosť prišla najmä zo Slovenska, no kliknutia boli zaznamenané aj z Nemecka, Česka, Rakúska a Talianska. To je dôležitý základ pre ďalšie rozširovanie nemeckého obsahu.
 
