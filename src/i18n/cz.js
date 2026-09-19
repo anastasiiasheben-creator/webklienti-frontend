@@ -8,13 +8,13 @@ const cz = {
   "navCta": "Získat návrh zdarma",
   "heroBadge": "🔥 Akce — 50% sleva na spuštění projektu pouze do konce měsíce",
   "heroTitle": "Děláme weby, které vaší firmě reálně přinesou nové zákazníky",
-  "heroSub": "Kompletní prodejní systém: Moderní design + silné SEO + konverzní struktura. Hotovo už do 5 dnů.",
+  "heroSub": "Kompletní prodejní systém: Moderní design + silné SEO + konverzní struktura. Hotovo už od 3 dnů.",
   "heroBenefits": [
     "Design navržený tak, aby návštěvníka proměnil v poptávku",
     "Prvotřídní rychlost a bezchybné zobrazení na mobilech",
     "Kompletní nastavení: Kontaktní formuláře, mapy a propojení",
     "Pokročilé SEO optimalizace, aby vás klienti našli na Google",
-    "Bleskové dodání do 5 dnů bez zbytečného natahování"
+    "Bleskové dodání od 3 dnů bez zbytečného natahování"
   ],
   "heroCta": "Chci nezávazný návrh webu zdarma",
   "heroMicro": "první koncept do 24 hodin · zcela bez závazků · ukážeme vám, jak prodávat víc",
@@ -32,7 +32,7 @@ const cz = {
   "agitTitle": "Každý den se slabým webem darujete zákazníky konkurenci",
   "agitText": "Pěkný web nestačí. Pokud vaše stránka nefunguje jako promyšlený prodejní trychtýř, investice do ní se vám nikdy nevrátí. My stavíme weby kolem potřeb vašich budoucich klientů.",
   "solutionLabel": "Náš proces",
-  "solutionTitle": "Odesláním formuláře k novým zákazníkům za 5 dní",
+  "solutionTitle": "Odesláním formuláře k novým zákazníkům od 3 dnů",
   "solutionSteps": [
     {
       "num": "01",
@@ -51,7 +51,7 @@ const cz = {
     },
     {
       "num": "04",
-      "title": "Spuštění do 5 dnů",
+      "title": "Spuštění od 3 dnů",
       "desc": "Web nasadíme na vaši doménu, nastavíme analytiku a předáme vám všechny přístupy."
     }
   ],
@@ -63,8 +63,8 @@ const cz = {
     {
       "tag": "Starter",
       "badge": null,
-      "name": "One-page vizitka",
-      "price": "7 500 Kč",
+      "name": "Landing page",
+      "price": "3 725 Kč",
       "old": "běžně 15 000 Kč",
       "forWhom": "Ideální pro živnostníky, řemeslníky a lokální služby",
       "features": [
@@ -75,7 +75,7 @@ const cz = {
         "Základní nastavení SEO pro vyhledávání v okolí",
         "Příprava na legislativu a GDPR (cookies lišta)",
         "BONUS: Nastavení / audit Google Business profilu",
-        "Kompletní odevzdání do 5 pracovních dnů"
+        "Kompletní odevzdání od 3 pracovních dnů"
       ],
       "featured": false,
       "dark": false
@@ -160,7 +160,7 @@ const cz = {
   "packageLabel": "Zvolený balíček *",
   "packagePlaceholder": "— Vyberte si startovací pozici —",
   "packages": [
-    "One-page vizitka — 7 500 Kč",
+    "Landing page — 3 725 Kč",
     "Byznys web na poptávky — 12 500 Kč",
     "Kompletní E-shop — 25 000 Kč"
   ],
@@ -168,10 +168,10 @@ const cz = {
   "intentNote": "Vyberte si váš primární cíl — pomůže nám to postavit strukturu webu přesně na míru vaší cílové skupině.",
   "intentCards": [
     {
-      "value": "One-page vizitka — 7 500 Kč",
+      "value": "Landing page — 3 725 Kč",
       "intent": "Chci jen moderní vizitku",
       "sub": "Potřebuji reprezentativní a rychlou stránku, aby mě klienti našli na internetu.",
-      "price": "7 500 Kč",
+      "price": "3 725 Kč",
       "badge": null
     },
     {

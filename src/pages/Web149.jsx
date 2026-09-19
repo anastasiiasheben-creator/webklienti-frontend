@@ -14,8 +14,8 @@ const C = {
   green: '#16A34A', red: '#DC2626', orange: '#C2410C',
 };
 
-export default function Web299() {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', website: '', message: '', consent: false, package: 'One-page vizitka — 299 €' });
+export default function Web149() {
+  const [form, setForm] = useState({ name: '', email: '', phone: '', website: '', message: '', consent: false, package: 'Landing page — 149 €' });
   const [formStatus, setFormStatus] = useState('idle');
   const [consentError, setConsentError] = useState(false);
   const [openFaq, setOpenFaq] = useState(null);
@@ -56,7 +56,7 @@ export default function Web299() {
         setFormStatus('success');
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({ event: 'form_submit_success' });
-        setForm({ name: '', email: '', phone: '', website: '', message: '', consent: false, package: 'One-page vizitka — 299 €' });
+        setForm({ name: '', email: '', phone: '', website: '', message: '', consent: false, package: 'Landing page — 149 €' });
       } else { setFormStatus('error'); }
     } catch { setFormStatus('error'); }
   };
@@ -76,19 +76,19 @@ export default function Web299() {
     <div style={{ fontFamily: "'Inter', -apple-system, sans-serif", background: C.white, color: C.text, minHeight: '100vh' }}>
 
       <Helmet>
-        <title>Web za 299 € – Profesionálna webstránka do 5 dní | WebKlienti</title>
-        <meta name="description" content="Moderný firemný web od 299 €. Dizajn navrhnutý na získavanie zákazníkov, mobilná verzia, SEO základy, kontaktný formulár. Hotový do 5 dní. Slovensko a Česko." />
-        <link rel="canonical" href="https://www.webklienti.com/web-299" />
-        <link rel="alternate" hreflang="sk" href="https://www.webklienti.com/web-299" />
-        <link rel="alternate" hreflang="x-default" href="https://www.webklienti.com/web-299" />
+        <title>Landing page za 149 € – Webstránka od 3 dní | WebKlienti</title>
+        <meta name="description" content="Landing page od 149 €. Dizajn navrhnutý na získavanie zákazníkov, mobilná verzia, SEO základy a kontaktný formulár. Dodanie od 3 dní." />
+        <link rel="canonical" href="https://www.webklienti.com/web-149" />
+        <link rel="alternate" hreflang="sk" href="https://www.webklienti.com/web-149" />
+        <link rel="alternate" hreflang="x-default" href="https://www.webklienti.com/web-149" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.webklienti.com/web-299" />
-        <meta property="og:title" content="Web za 299 € – Profesionálna webstránka do 5 dní" />
-        <meta property="og:description" content="Moderný firemný web od 299 €. Mobilná verzia, SEO, kontaktný formulár. Bez mesačných poplatkov. Hotový do 5 dní." />
+        <meta property="og:url" content="https://www.webklienti.com/web-149" />
+        <meta property="og:title" content="Landing page za 149 € – Webstránka od 3 dní" />
+        <meta property="og:description" content="Landing page od 149 €. Mobilná verzia, SEO, kontaktný formulár. Bez mesačných poplatkov. Dodanie od 3 dní." />
         <meta property="og:image" content="https://www.webklienti.com/og-image.jpg" />
         <meta property="og:locale" content="sk_SK" />
         <meta name="twitter:card" content="summary_large_image" />
-        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Product","name":"One-page web za 299 €","description":"Profesionálna one-page webstránka pre malé firmy. Mobilná verzia, SEO základy, kontaktný formulár, Google Maps. Hotová za 5 dní.","brand":{"@type":"Brand","name":"WebKlienti"},"url":"https://www.webklienti.com/web-299","offers":{"@type":"Offer","price":"299","priceCurrency":"EUR","availability":"https://schema.org/InStock","seller":{"@type":"Organization","name":"WebKlienti","url":"https://www.webklienti.com"}},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1","bestRating":"5","worstRating":"1"},"review":[{"@type":"Review","author":{"@type":"Person","name":"Matus K."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Super služby! Som veľmi spokojný."}]}`}</script>
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Product","name":"Landing page za 149 €","description":"Profesionálna landing page pre malé firmy. Mobilná verzia, SEO základy, kontaktný formulár, Google Maps. Dodanie od 3 dní.","brand":{"@type":"Brand","name":"WebKlienti"},"url":"https://www.webklienti.com/web-149","offers":{"@type":"Offer","price":"149","priceCurrency":"EUR","availability":"https://schema.org/InStock","seller":{"@type":"Organization","name":"WebKlienti","url":"https://www.webklienti.com"}},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1","bestRating":"5","worstRating":"1"},"review":[{"@type":"Review","author":{"@type":"Person","name":"Matus K."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Super služby! Som veľmi spokojný."}]}`}</script>
       </Helmet>
 
       <style>{`
@@ -177,7 +177,7 @@ export default function Web299() {
           </h1>
           <p style={{ fontSize: 17, color: C.textSub, lineHeight: 1.65, marginBottom: 28, maxWidth: 580, margin: '0 auto 28px' }}>
             Moderný dizajn navrhnutý na získavanie dopytov + silné SEO + kontaktný formulár a mapy — všetko v cene.<br />
-            <strong style={{ color: C.text }}>Hotovo už do 5 dní od 299 €.</strong>
+            <strong style={{ color: C.text }}>Hotovo už od 3 dní za 149 €.</strong>
           </p>
           <div className="benefit-list" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px 16px', maxWidth: 560, margin: '0 auto 28px', textAlign: 'left' }}>
             {[
@@ -185,7 +185,7 @@ export default function Web299() {
               'Bezchybné zobrazenie na mobiloch a tabletoch',
               'Kontaktné formuláre, mapy a prepojenia v cene',
               'SEO optimalizácie, aby vás klienti našli na Google',
-              'Bleskové dodanie do 5 dní bez zbytočného naťahovania',
+              'Bleskové dodanie od 3 dní bez zbytočného naťahovania',
               'Úvodný vizuálny návrh do 24 hodín ZDARMA',
             ].map(b => (
               <div key={b} style={{ display: 'flex', alignItems: 'flex-start', gap: 8, fontSize: 14, color: C.textSub }}>
@@ -205,7 +205,7 @@ export default function Web299() {
       <div id="cena" style={{ background: C.bg, padding: '64px 24px', borderBottom: `1px solid ${C.border}` }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <p className="section-label" style={{ textAlign: 'center' }}>Transparentné ceny</p>
-          <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 800, letterSpacing: -1, textAlign: 'center', marginBottom: 8 }}>Čo získate za 299 €</h2>
+          <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 800, letterSpacing: -1, textAlign: 'center', marginBottom: 8 }}>Čo získate za 149 €</h2>
           <p style={{ textAlign: 'center', color: C.textSub, fontSize: 15, marginBottom: 36 }}>Kompletné riešenie. Žiadne skryté poplatky. Nič navyše nepotrebujete.</p>
           <div className="what-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12, marginBottom: 32 }}>
             {[
@@ -229,10 +229,10 @@ export default function Web299() {
             <div>
               <p style={{ fontSize: 13, fontWeight: 600, color: C.blue, textTransform: 'uppercase', letterSpacing: 1, marginBottom: 6 }}>Jednorazová cena · Žiadne mesačné poplatky</p>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: 10 }}>
-                <span style={{ fontSize: 48, fontWeight: 800, color: C.text, letterSpacing: -2 }}>299 €</span>
+                <span style={{ fontSize: 48, fontWeight: 800, color: C.text, letterSpacing: -2 }}>149 €</span>
                 <span style={{ fontSize: 16, color: C.textSub, textDecoration: 'line-through' }}>bežne 599 €</span>
               </div>
-              <p style={{ fontSize: 14, color: C.textSub, marginTop: 4 }}>Kompletné odovzdanie do 5 pracovných dní</p>
+              <p style={{ fontSize: 14, color: C.textSub, marginTop: 4 }}>Kompletné odovzdanie od 3 pracovných dní</p>
             </div>
             <button onClick={scrollToForm} className="btn-primary btn-primary-lg" style={{ width: '100%', maxWidth: 280 }}>Zvoliť tento balík a získať návrh →</button>
           </div>
@@ -293,8 +293,11 @@ export default function Web299() {
 
             {/* Result bar */}
             <div style={{ background: 'rgba(37,99,235,0.05)', border: `1px solid rgba(37,99,235,0.15)`, borderRadius: 12, padding: '14px 20px' }}>
-              <span style={{ fontSize: 14, fontWeight: 700, color: C.blue }}>🎯 Montwell.sk spustený do 5 dní · predajný web, ktorý buduje dôveru a generuje kontakty</span>
+              <span style={{ fontSize: 14, fontWeight: 700, color: C.blue }}>🎯 Montwell.sk spustený od 3 pracovných dní · profesionálny web, ktorý buduje dôveru</span>
             </div>
+            <Link to="/blog/spolupraca-s-montwell-webstranka" style={{ display: 'inline-block', marginTop: 16, color: C.blue, fontWeight: 700, textDecoration: 'none' }}>
+              Prečítať case study o spolupráci s Montwell →
+            </Link>
           </div>
 
           {/* REVIEWS */}
@@ -346,14 +349,14 @@ export default function Web299() {
       <div style={{ background: C.bg, padding: '64px 24px', borderBottom: `1px solid ${C.border}` }}>
         <div style={{ maxWidth: 760, margin: '0 auto' }}>
           <p className="section-label" style={{ textAlign: 'center' }}>Náš proces</p>
-          <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 800, letterSpacing: -1, textAlign: 'center', marginBottom: 8 }}>Odoslaním formulára k novým zákazníkom za 5 dní</h2>
+          <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 800, letterSpacing: -1, textAlign: 'center', marginBottom: 8 }}>Odoslaním formulára k novým zákazníkom od 3 dní</h2>
           <p style={{ textAlign: 'center', color: C.textSub, fontSize: 15, marginBottom: 40 }}>Jednoduchý a transparentný proces bez zbytočného technického žargónu.</p>
           <div className="steps-row" style={{ display: 'flex', background: C.white, border: `1px solid ${C.border}`, borderRadius: 16, overflow: 'hidden' }}>
             {[
               { num: '01', title: 'Nezáväzný dopyt', desc: 'Vyplníte krátky formulár o vašom biznise — za 2 minúty.', icon: '📋' },
               { num: '02', title: 'Koncept do 24 hodín', desc: 'Úplne zdarma vám vypracujeme úvodný vizuálny návrh riešenia.', icon: '🎨' },
               { num: '03', title: 'Vyladenie detailov', desc: 'Doladíme texty, štruktúru a funkcie presne podľa vás.', icon: '⚙️' },
-              { num: '04', title: 'Spustenie do 5 dní', desc: 'Web nasadíme na vašu doménu a odovzdáme vám kľúče.', icon: '🚀' },
+              { num: '04', title: 'Spustenie od 3 dní', desc: 'Web nasadíme na vašu doménu a odovzdáme vám kľúče.', icon: '🚀' },
             ].map((s, i) => (
               <div key={i} style={{ flex: 1, padding: '24px 16px', textAlign: 'center', borderRight: i < 3 ? `1px solid ${C.border}` : 'none' }}>
                 <div style={{ fontSize: 26, marginBottom: 8 }}>{s.icon}</div>
@@ -491,7 +494,7 @@ export default function Web299() {
         transition: 'opacity .2s, visibility .2s'
       }}>
         <button onClick={scrollToForm} className="btn-primary" style={{ width: '100%', fontSize: 15, height: 50 }}>
-          Chcem nový web od 299 € →
+          Chcem landing page od 149 € →
         </button>
       </div>
 

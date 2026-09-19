@@ -736,4 +736,86 @@ Web je pripravený na spustenie vtedy, keď funguje pre človeka aj vyhľadáva�
 
 Vo WebKlienti odovzdávame web až po kontrole kľúčových bodov. Ak chcete mať istotu, že sa na nič dôležité nezabudne, radi prejdeme checklist spolu s vami.`
   },
+  {
+    slug: 'spolupraca-s-montwell-webstranka',
+    title: 'Spolupráca s Montwell: čo priniesla nová webstránka',
+    metaTitle: 'Montwell case study: webstránka a SEO výsledky za 3 mesiace',
+    excerpt: 'Case study spolupráce WebKlientov s Montwell: nová webstránka, slovenská a nemecká verzia a organické výsledky Google za prvé 3 mesiace.',
+    date: '19. septembra 2026',
+    iso: '2026-09-19',
+    readTime: '7 min čítania',
+    content: `Dobrá case study nemá byť iba zoznam pekných obrazoviek. Má ukázať, aký problém firma riešila, čo sa na webe zmenilo a čo sa dá po spustení reálne zmerať. Príkladom je spolupráca WebKlientov s Montwell, firmou, ktorá pred vytvorením webu komunikovala najmä cez Instagram.
+
+## Situácia pred spoluprácou
+
+Montwell mal prezentáciu na sociálnej sieti, ale chýbala mu vlastná webstránka. Zákazník si preto nevedel na jednom mieste pozrieť služby, realizácie, kontaktné údaje a ďalšie informácie o firme.
+
+Pri montáži nábytku je dôležité ukázať nielen názov služby, ale aj kvalitu práce. Fotografie realizácií, jasný kontakt a dôveryhodná prezentácia pomáhajú návštevníkovi rozhodnúť sa, či firmu osloví.
+
+## Čo sme pre Montwell vytvorili
+
+Výsledkom spolupráce je profesionálna webstránka montwell.sk s praktickou štruktúrou a obsahom pripraveným pre návštevníkov aj vyhľadávače.
+
+Web obsahuje:
+
+- slovenskú a nemeckú jazykovú verziu
+- prezentáciu služieb a tímu
+- galériu realizácií
+- kontaktné stránky a formulár
+- Google Maps a ďalšie kontaktné možnosti
+- základné SEO nastavenie
+- blog pripravený na ďalšie rozširovanie obsahu
+
+Web tak nie je iba online vizitkou. Návštevník rýchlo pochopí, čo Montwell robí, pozrie si ukážky práce a dostane sa ku kontaktu bez zbytočného hľadania.
+
+## Dvojjazyčný web pre širší dosah
+
+Montwell pôsobí v prostredí, kde dáva zmysel komunikovať aj po nemecky. Nemecká verzia preto nie je iba dekoratívny preklad. Má vlastné stránky a umožňuje návštevníkom z nemecky hovoriacich krajín nájsť základné informácie v ich jazyku.
+
+Pri viacjazyčnom webe treba myslieť na štruktúru, navigáciu, titulky, meta údaje a technické prepojenia medzi jazykmi. Samotné preloženie textu ešte neznamená, že sa stránka začne zobrazovať v zahraničí.
+
+## Výsledky po prvých troch mesiacoch
+
+Web existuje približne tri mesiace. Od začiatku neboli spustené Google Ads kampane, preto nižšie uvedené výsledky pochádzajú z organického vyhľadávania.
+
+Podľa Google Search Console sa web počas prvých troch mesiacov zobrazil vo výsledkoch Google 321-krát a získal 57 organických kliknutí. Priemerná miera prekliknutia bola 17,8 % a priemerná pozícia 6,6.
+
+Priemerná pozícia 6,6 znamená, že web sa v sledovanom období zobrazoval v priemere na prvej stránke výsledkov Google. Najvýkonnejší bol značkový dopyt „montwell“, ktorý priniesol 36 kliknutí zo 66 zobrazení.
+
+## Ktoré stránky získali najviac návštev
+
+Hlavná stránka získala 46 kliknutí a 118 zobrazení. Kontaktná stránka získala 3 kliknutia a 135 zobrazení. Nemecká verzia úvodu získala 3 kliknutia a 28 zobrazení, čo predstavuje prvý signál zahraničnej organickej viditeľnosti.
+
+Návštevnosť prišla najmä zo Slovenska, no kliknutia boli zaznamenané aj z Nemecka, Česka, Rakúska a Talianska. To je dôležitý základ pre ďalšie rozširovanie nemeckého obsahu.
+
+Tieto čísla predstavujú kliknutia z Google, nie automaticky počet dopytov alebo zákaziek. Počet odoslaných formulárov, telefonátov a objednávok treba sledovať samostatne cez konverzné meranie.
+
+## Čo z toho vyplýva pre ďalší rast
+
+Prvé tri mesiace ukazujú, že web už dokáže získavať organickú viditeľnosť bez Google Ads. Ďalší rast môže podporiť pravidelné dopĺňanie článkov, rozšírenie stránok služieb, získavanie recenzií a presnejšie meranie kontaktov.
+
+Najväčšiu hodnotu má kombinácia jasnej ponuky, dôveryhodných ukážok práce a obsahu, ktorý odpovedá na otázky zákazníkov. SEO potom nie je iba technická úloha, ale spôsob, ako dostať správnych ľudí na správnu stránku.
+
+## FAQ
+
+### Ako dlho existuje web Montwell?
+Web existuje približne tri mesiace. Výsledky Google Search Console sa týkajú jeho prvých troch mesiacov.
+
+### Koľko kliknutí web získal?
+Za sledované obdobie získal 57 organických kliknutí a 321 zobrazení vo výsledkoch Google.
+
+### Znamená 57 kliknutí 57 zákazníkov?
+Nie. Ide o kliknutia z organického vyhľadávania. Zákaznícke dopyty a objednávky treba vyhodnocovať cez konverzné meranie.
+
+### Boli spustené Google Ads?
+Nie. Od začiatku boli výsledky získavané organicky, bez Google Ads kampaní.
+
+## Záver
+
+Spolupráca s Montwell ukazuje, že nový web nie je iba otázkou vizuálu. Vlastná webstránka vytvorila priestor pre služby, realizácie, kontakty, viac jazykov a merateľnú organickú viditeľnosť.
+
+Za prvé tri mesiace web získal 57 kliknutí z Google pri priemernej pozícii 6,6. Ďalšie výsledky budú závisieť od obsahu, dopytu, konkurencie a toho, ako dobre sa podarí návštevnosť premieňať na kontakty.
+
+**Chcete podobný web pre svoju firmu? Pozrite si naše [riešenie pre firmy](/web-149) alebo nám pošlite nezáväzný dopyt.`
+  },
 ];

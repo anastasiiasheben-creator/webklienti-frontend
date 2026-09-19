@@ -8,7 +8,7 @@ const en = {
   "navCta": "Get Free Design",
   "heroBadge": "🔥 Limited Offer — 50% off project launch until the end of the month",
   "heroTitle": "We build websites that actually drive new customers to your business",
-  "heroSub": "Complete sales engine: Modern design + powerful SEO + conversion-focused structure. Live in just 5 days.",
+  "heroSub": "Complete sales engine: Modern design + powerful SEO + conversion-focused structure. Live from 3 business days.",
   "heroBenefits": [
     "Design engineered to turn casual visitors into paying leads",
     "Blazing-fast loading speeds and flawless mobile performance",
@@ -32,7 +32,7 @@ const en = {
   "agitTitle": "Every single day with a weak website is a free gift to your competition",
   "agitText": "A pretty website isn't enough. If your page isn't built as a calculated sales funnel, your investment will never return. We engineer websites entirely around the psychology of your future buyers.",
   "solutionLabel": "Our Process",
-  "solutionTitle": "From a quick form submission to a client-catching machine in 5 days",
+  "solutionTitle": "From a quick form submission to a client-catching machine from 3 business days",
   "solutionSteps": [
     {
       "num": "01",
@@ -51,7 +51,7 @@ const en = {
     },
     {
       "num": "04",
-      "title": "Launch within 5 Days",
+      "title": "Launch from 3 Days",
       "desc": "We deploy the site to your domain, configure full analytics, and hand over all master keys."
     }
   ],
@@ -63,8 +63,8 @@ const en = {
     {
       "tag": "Starter",
       "badge": null,
-      "name": "One-Page Landing Page",
-      "price": "299 €",
+      "name": "Landing Page",
+      "price": "149 €",
       "old": "regularly 599 €",
       "forWhom": "Perfect for freelancers, local services, and tradesmen",
       "features": [
@@ -75,7 +75,7 @@ const en = {
         "Essential local SEO optimization for localized search terms",
         "Fully GDPR & privacy compliant (cookie consent banner)",
         "BONUS: Free Google Business Profile setup or expert audit",
-        "Complete delivery and handover within 5 business days"
+        "Complete delivery and handover from 3 business days"
       ],
       "featured": false,
       "dark": false
@@ -160,7 +160,7 @@ const en = {
   "packageLabel": "Selected Package *",
   "packagePlaceholder": "— Choose your starting position —",
   "packages": [
-    "One-Page Landing Page — 299 €",
+    "Landing Page — 149 €",
     "Business Lead Generator — 499 €",
     "Full E-Commerce Store — 999 €"
   ],
@@ -168,10 +168,10 @@ const en = {
   "intentNote": "Select your core business objective — this helps us architect the exact structure your target audience expects.",
   "intentCards": [
     {
-      "value": "One-Page Landing Page — 299 €",
+      "value": "Landing Page — 149 €",
       "intent": "I want a clean, modern digital card",
       "sub": "I need a highly professional and fast online presence so local clients can verify my business.",
-      "price": "299 €",
+      "price": "149 €",
       "badge": null
     },
     {
@@ -203,7 +203,7 @@ const en = {
   "faqItems": [
     {
       "q": "How long does it realistically take to build a website?",
-      "a": "We move fast because of our refined internal workflow. A single landing page goes live within 5 business days, a multi-page business site within 7 days, and a comprehensive e-commerce store within 14 days of your visual concept approval."
+      "a": "We move fast because of our refined internal workflow. A landing page can go live from 3 business days, while larger websites take longer depending on their scope and features."
     },
     {
       "q": "Are there any recurring monthly developer fees?",
@@ -244,7 +244,7 @@ const en = {
   "privacyTitle": "Personal Data Processing",
   "privacyContent": "Operator: WebKlienti, info@webklienti.com, +421 907 890 600\n\nWhat data we collect:\n• First name, last name, email address, phone number — exclusively via voluntary submission of the inquiry form.\n\nPurpose of processing:\nPreparation of the free design concept, calculating custom quotes, client communication, and fulfilling contract obligations.\n\nData retention:\nFor the duration of the communication or contractual agreement, and subsequently for the period required by applicable legal frameworks.\n\nYour rights:\nYou hold full rights to access your data, request corrections, demand complete erasure (the right to be forgotten), or restrict processing. Send all compliance requests to info@webklienti.com.\n\nAnalytics:\nWe deploy anonymized Google Analytics properties to monitor system health and evaluate ad campaign performance.\n\nEffective date: January 1, 2025",
   "statNote": "Every project is architected from line one of code for maximum core web vitals and speed. Zero slow, bloated marketplace themes.",
-  "themeTitle": "Conversion-Driven Web Design from 299 € | WebKlienti",
+  "themeTitle": "Conversion-Driven Web Design from 149 € | WebKlienti",
   "seoDescription": "We build modern websites and online shops engineered to acquire buyers for your business. Fast 5-day delivery, free concept draft within 24 hours. No monthly fees.",
   "seoUrl": "https://www.webklienti.com",
   "heroTag": "Performance Web Design for Small and Medium Enterprises",

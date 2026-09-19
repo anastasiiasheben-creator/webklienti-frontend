@@ -8,13 +8,13 @@ const sk = {
   "navCta": "Získať návrh zdarma",
   "heroBadge": "🔥 Akcia — 50% zľava na spustenie projektu len do konca mesiaca",
   "heroTitle": "Robíme weby, ktoré vašej firme reálne prinesú nových zákazníkov",
-  "heroSub": "Kompletný predajný systém: Moderný dizajn + silné SEO + konverzná štruktúra. Hotovo už do 5 dní.",  
+  "heroSub": "Kompletný predajný systém: Moderný dizajn + silné SEO + konverzná štruktúra. Hotovo už od 3 dní.",  
   "heroBenefits": [
     "Dizajn navrhnutý tak, aby návštevníka premenil na dopyt",
     "Prvotriedna rýchlosť a bezchybné zobrazenie na mobiloch",
     "Kompletné nastavenie: Kontaktné formuláre, mapy a prepojenia",
     "Pokročilé SEO optimalizácie, aby vás klienti našli na Google",
-    "Bleskové dodanie do 5 dní bez zbytočného naťahovania"
+    "Bleskové dodanie od 3 dní bez zbytočného naťahovania"
   ],
   "heroCta": "Chcem nezáväzný návrh webu zdarma",
   "heroMicro": "prvý koncept do 24 hodín · úplne bez záväzkov · ukážeme vám, ako predávať viac",
@@ -32,7 +32,7 @@ const sk = {
   "agitTitle": "Každý deň so slabým webom darujete zákazníkov konkurencii",
   "agitText": "Pekný web nestačí. Ak vaša stránka nefunguje ako premyslený predajný lievik, investícia do nej sa vám nikdy nevráti. My staviame weby okolo potrieb vašich budúcich klientov.",
   "solutionLabel": "Náš proces",
-  "solutionTitle": "Odoslaním formulára k novým zákazníkom za 5 dní",  
+  "solutionTitle": "Odoslaním formulára k novým zákazníkom od 3 dní",  
   "solutionSteps": [
     {
       "num": "01",
@@ -51,7 +51,7 @@ const sk = {
     },
     {
       "num": "04",
-      "title": "Spustenie do 5 dní",
+      "title": "Spustenie od 3 dní",
       "desc": "Web nasadíme na vašu doménu, nastavíme analytiku a odovzdáme vám kľúče."
     }
   ],
@@ -63,8 +63,8 @@ const sk = {
     {
       "tag": "Starter",
       "badge": null,
-      "name": "One-page vizitka",
-      "price": "299 €",
+      "name": "Landing page",
+      "price": "149 €",
       "old": "bežne 599 €",
       "forWhom": "Ideálne pre živnostníkov, remeselníkov a lokálne služby",
       "features": [
@@ -75,7 +75,7 @@ const sk = {
         "Základné nastavenie SEO pre vyhľadávanie v okolí",
         "Príprava na legislatívu a GDPR (cookies lišta)",
         "BONUS: Nastavenie / audit Google Business profilu",
-        "Kompletné odovzdanie do 5 pracovných dní"
+        "Kompletné odovzdanie od 3 pracovných dní"
       ],
       "featured": false,
       "dark": false
@@ -160,7 +160,7 @@ const sk = {
   "packageLabel": "Zvolený balík *",
   "packagePlaceholder": "— Vyberte si štartovaciu pozíciu —",
   "packages": [
-    "One-page vizitka — 299 €",
+    "Landing page — 149 €",
     "Biznis web na dopyty — 499 €",
     "Kompletný E-shop — 999 €"
   ],
@@ -168,10 +168,10 @@ const sk = {
   "intentNote": "Vyberte si váš primárny cieľ — pomôže nám to postaviť štruktúru webu presne na mieru vašej cieľovej skupine.",
   "intentCards": [
     {
-      "value": "One-page vizitka — 299 €",
+      "value": "Landing page — 149 €",
       "intent": "Chcem len modernú vizitku",
       "sub": "Potrebujem reprezentatívnu a rýchlu stránku, aby ma klienti našli na internete.",
-      "price": "299 €",
+      "price": "149 €",
       "badge": null
     },
     {
@@ -203,7 +203,7 @@ const sk = {
   "faqItems": [
     {
       "q": "Koľko reálne trvá vytvorenie webu?",
-      "a": "Sme rýchli, pretože máme zabehnutý proces. Jednostránkový web spustíme do 5 pracovných dní, viacstránkový biznis web do 7 dní a plnohodnotný e-shop do 14 dní od schválenia úvodného konceptu."
+      "a": "Sme rýchli, pretože máme zabehnutý proces. Landing page vieme spustiť od 3 pracovných dní, väčšie weby trvajú dlhšie podľa rozsahu a funkcií."
     },
     {
       "q": "Budem platiť nejaké pravidelné mesačné poplatky?",
@@ -244,8 +244,8 @@ const sk = {
   "privacyTitle": "Spracovanie osobných údajov",
   "privacyContent": "Prevádzkovateľ: WebKlienti, info@webklienti.com, +421 907 890 600\n\nAké údaje zbierame:\n• Meno, priezvisko, e-mail, telefónne číslo — výhradne pri dobrovoľnom odoslaní dopytového formulára.\n\nNa čo ich používame:\nPríprava bezplatného návrhu, spracovanie cenovej ponuky, komunikácia so zákazníkom a plnenie zmluvných záväzkov.\n\nDoba uchovávania:\nPo dobu trvania komunikácie alebo zmluvného vzťahu a následne po dobu vyžadovanú platnými zákonmi SR.\n\nVaše práva:\nMáte plné právo na prístup k svojim údajom, ich opravu, vymazanie (právo na zabudnutie) alebo obmedzenie spracovania. Akékoľvek žiadosti posielajte na info@webklienti.com.\n\nAnalytika:\nPoužívame anonymizovaný nástroj Google Analytics na optimalizáciu chodu webu a meranie úspešnosti reklamných kampaní.\n\nPlatné od: 1.1.2025",
   "statNote": "Každý projekt staviame od prvej línie kódu pre maximálny výkon a rýchlosť. Žiadne pomalé, kupované šablóny.",
-  "seoTitle": "Tvorba webstránok so zameraním na zisk od 299 € | WebKlienti",
-  "seoDescription": "Vytvoríme pre vašu firmu moderný web alebo e-shop navrhnutý na získavanie zákazníkov. Rýchle dodanie do 5 dní, návrh do 24 hodín zdarma. Bez poplatkov.",
+  "seoTitle": "Tvorba webstránok so zameraním na zisk od 149 € | WebKlienti",
+  "seoDescription": "Vytvoríme pre vašu firmu moderný web alebo landing page navrhnutý na získavanie zákazníkov. Dodanie od 3 dní, návrh do 24 hodín zdarma.",
   "seoUrl": "https://www.webklienti.com",
   "heroTag": "Výkonnostný webdizajn pre malé a stredné firmy",
   "heroCtaSec": "Zobraziť cenník ↓",

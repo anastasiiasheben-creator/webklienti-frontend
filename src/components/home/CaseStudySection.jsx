@@ -1,4 +1,5 @@
 import montwellImg from '../../assets/montwell-preview.webp';
+import { Link } from 'react-router-dom';
 import { C } from '../../lib/constants';
 
 const GOOGLE_REVIEW_LINK = 'https://maps.app.goo.gl/tDf7dRkYB2eZ3j9d7';
@@ -130,6 +131,9 @@ export default function CaseStudySection({ t, lang }) {
           <div style={{ background: 'rgba(37,99,235,0.05)', border: `1px solid rgba(37,99,235,0.15)`, borderRadius: 12, padding: '14px 20px' }}>
             <span style={{ fontSize: 14, fontWeight: 700, color: C.blue }}>{localT.result}</span>
           </div>
+          <Link to="/blog/spolupraca-s-montwell-webstranka" style={{ display: 'inline-block', marginTop: 16, color: C.blue, fontWeight: 700, textDecoration: 'none' }}>
+            Prečítať case study o spolupráci s Montwell →
+          </Link>
         </div>
 
         {/* ── REVIEWS ── */}

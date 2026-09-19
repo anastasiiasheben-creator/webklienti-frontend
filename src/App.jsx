@@ -1,5 +1,5 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
-import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import { Routes, Route, Link, Navigate, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { FaWhatsapp, FaFacebookF, FaInstagram, FaPhoneAlt } from 'react-icons/fa';
 import logoImg from './assets/logo.webp';
@@ -22,7 +22,7 @@ import ContactSection from './components/home/ContactSection';
 const Blog = lazy(() => import('./pages/Blog'));
 const Privacy = lazy(() => import('./pages/Privacy'));
 const BlogPost = lazy(() => import('./pages/BlogPost'));
-const Web299 = lazy(() => import('./pages/Web299'));
+const Web149 = lazy(() => import('./pages/Web149'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -359,7 +359,8 @@ export default function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/privacy" element={<Privacy />} />
-          <Route path="/web-299" element={<Web299 />} />
+          <Route path="/web-149" element={<Web149 />} />
+          <Route path="/web-299" element={<Navigate to="/web-149" replace />} />
         </Routes>
       </Suspense>
     </>
