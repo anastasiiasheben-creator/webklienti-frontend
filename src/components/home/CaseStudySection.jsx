@@ -21,7 +21,8 @@ const translations = {
     reviewsTitle: 'What our clients say',
     reviewsLabel: 'Client reviews',
     allReviewsBtn: 'See all Google reviews →',
-    verifiedLabel: 'Verified Google review'
+    verifiedLabel: 'Verified Google review',
+    caseStudyLinkText: 'Read the full Montwell case study →'
   },
   cz: {
     label: 'Ověřený projekt', 
@@ -38,7 +39,8 @@ const translations = {
     reviewsTitle: 'Co říkají klienti',
     reviewsLabel: 'Hodnocení klientů',
     allReviewsBtn: 'Zobrazit všechna hodnocení →',
-    verifiedLabel: 'Ověřená recenze Google'
+    verifiedLabel: 'Ověřená recenze Google',
+    caseStudyLinkText: 'Přečíst celý case study o spolupráci s Montwell →'
   },
   sk: {
     label: 'Overený projekt',
@@ -55,7 +57,8 @@ const translations = {
     reviewsTitle: 'Čo hovoria klienti',
     reviewsLabel: 'Hodnotenia klientov',
     allReviewsBtn: 'Pozrieť všetky Google hodnotenia →',
-    verifiedLabel: 'Overená recenzia Google'
+    verifiedLabel: 'Overená recenzia Google',
+    caseStudyLinkText: 'Prečítať celý case study o spolupráci s Montwell →'
   }
 };
 
@@ -132,7 +135,7 @@ export default function CaseStudySection({ t, lang }) {
             <span style={{ fontSize: 14, fontWeight: 700, color: C.blue }}>{localT.result}</span>
           </div>
           <Link to="/blog/spolupraca-s-montwell-webstranka" style={{ display: 'inline-block', marginTop: 16, color: C.blue, fontWeight: 700, textDecoration: 'none' }}>
-            Prečítať case study o spolupráci s Montwell →
+            {localT.caseStudyLinkText}
           </Link>
         </div>
 

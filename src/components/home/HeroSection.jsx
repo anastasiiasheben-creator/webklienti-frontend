@@ -30,7 +30,7 @@ export default function HeroSection({ t, lang, onCta }) {
           </div>
           {/* RIGHT — verified client work */}
           <div className="hero-right" style={{ background: C.bg, borderRadius: 20, padding: 20, border: `1px solid ${C.border}` }}>
-            <img src={montwellImg} alt="Montwell webstránka" width="600" height="324" style={{ width: '100%', display: 'block', aspectRatio: '600 / 324', objectFit: 'cover', borderRadius: 12, marginBottom: 16 }} />
+            <img src={montwellImg} alt="Montwell webstránka" width="600" height="324" fetchPriority="high" style={{ width: '100%', display: 'block', aspectRatio: '600 / 324', objectFit: 'cover', borderRadius: 12, marginBottom: 16 }} />
             <p style={{ fontSize: 12, color: C.blue, fontWeight: 700, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 8 }}>
               {lang === 'en' ? 'Real client work' : lang === 'cz' ? 'Reálná realizace' : 'Reálna realizácia'}
             </p>
@@ -39,7 +39,7 @@ export default function HeroSection({ t, lang, onCta }) {
               {lang === 'en' ? 'SK + DE website · project gallery · SEO-ready blog' : lang === 'cz' ? 'SK + DE web · galerie realizací · blog připravený pro SEO' : 'SK + DE web · galéria realizácií · blog pripravený pre SEO'}
             </p>
             <Link to="/blog/spolupraca-s-montwell-webstranka" style={{ color: C.blue, fontWeight: 700, textDecoration: 'none', fontSize: 14 }}>
-              {lang === 'en' ? 'See the real project →' : lang === 'cz' ? 'Prohlédnout realizaci →' : 'Pozrite si reálnu realizáciu →'}
+              {lang === 'en' ? 'Read the full Montwell story →' : lang === 'cz' ? 'Přečíst celý příběh Montwell →' : 'Prečítať celý príbeh Montwell →'}
             </Link>
           </div>
         </div>
