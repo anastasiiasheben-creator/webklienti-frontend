@@ -401,7 +401,7 @@ Kontaktujte podporu a overte stav služby. Ak sa výpadky opakujú, vyžiadajte 
 
 Pri hostingu hľadajte stabilitu, bezpečnosť, zálohy a podporu. Pre malú firmu je dobrý hosting ten, ktorý web spoľahlivo obslúži a nenechá vás bez pomoci pri probléme.
 
-Vo WebKlienti vám pomôžeme vybrať a nastaviť hosting tak, aby ste rozumeli tomu, za čo platíte a kto má k službe prístup.`
+Vo WebKlienti tvoríme firemné weby a pri odovzdaní vám vysvetlíme, aké technické služby web potrebuje. Hosting si môžete vybrať a platiť priamo u vlastného poskytovateľa, aby ste nad ním mali kontrolu.`
   },
   {
     slug: 'redizajn-webu-kedy-je-spravny-cas',
