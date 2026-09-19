@@ -22,7 +22,7 @@ const translations = {
     reviewsLabel: 'Client reviews',
     allReviewsBtn: 'See all Google reviews →',
     verifiedLabel: 'Verified Google review',
-    caseStudyLinkText: 'Read the full Montwell case study →'
+    caseStudyLinkText: 'Read the full story about our work with Montwell →'
   },
   cz: {
     label: 'Ověřený projekt', 
@@ -40,7 +40,7 @@ const translations = {
     reviewsLabel: 'Hodnocení klientů',
     allReviewsBtn: 'Zobrazit všechna hodnocení →',
     verifiedLabel: 'Ověřená recenze Google',
-    caseStudyLinkText: 'Přečíst celý case study o spolupráci s Montwell →'
+    caseStudyLinkText: 'Přečíst celý příběh o spolupráci s Montwell →'
   },
   sk: {
     label: 'Overený projekt',
@@ -58,7 +58,7 @@ const translations = {
     reviewsLabel: 'Hodnotenia klientov',
     allReviewsBtn: 'Pozrieť všetky Google hodnotenia →',
     verifiedLabel: 'Overená recenzia Google',
-    caseStudyLinkText: 'Prečítať celý case study o spolupráci s Montwell →'
+    caseStudyLinkText: 'Prečítať celý príbeh o spolupráci s Montwell →'
   }
 };
 

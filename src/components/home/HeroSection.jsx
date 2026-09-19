@@ -39,7 +39,7 @@ export default function HeroSection({ t, lang, onCta }) {
               {lang === 'en' ? 'SK + DE website · project gallery · SEO-ready blog' : lang === 'cz' ? 'SK + DE web · galerie realizací · blog připravený pro SEO' : 'SK + DE web · galéria realizácií · blog pripravený pre SEO'}
             </p>
             <Link to="/blog/spolupraca-s-montwell-webstranka" style={{ color: C.blue, fontWeight: 700, textDecoration: 'none', fontSize: 14 }}>
-              {lang === 'en' ? 'Read the full Montwell story →' : lang === 'cz' ? 'Přečíst celý příběh Montwell →' : 'Prečítať celý príbeh Montwell →'}
+              {lang === 'en' ? 'Read the full story about our work with Montwell →' : lang === 'cz' ? 'Přečíst celý příběh o spolupráci s Montwell →' : 'Prečítať celý príbeh o spolupráci s Montwell →'}
             </Link>
           </div>
         </div>
