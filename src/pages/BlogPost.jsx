@@ -583,13 +583,15 @@ Google Search Console a Google Analytics poskytujú informácie, ktoré pomáhaj
 **Neviete, či váš web využíva celý potenciál Google vyhľadávania? Analýza dát vám môže ukázať, kde strácate návštevníkov, ktoré stránky majú najväčší potenciál a čo môžete zlepšiť pre získanie nových zákazníkov.**`,
   },
   'kolko-stoji-webstranka-na-slovensku': {
-    title: 'Koľko stojí webstránka na Slovensku v roku 2026?',
-    metaTitle: 'Koľko stojí webstránka na Slovensku v roku 2026?',
-    excerpt: 'Ceny webstránok na Slovensku sa pohybujú od 200 € po desiatky tisíc. Zistite, za čo skutočne platíte a akú cenu má zmysel zaplatiť za váš web.',
+    title: 'Koľko stojí webstránka? Cena webu na Slovensku 2026',
+    metaTitle: 'Cena webstránky 2026: Koľko stojí web na Slovensku?',
+    excerpt: 'Cena webstránky na Slovensku začína približne od 200 € a pri zložitejších projektoch rastie na tisíce. Pozrite si reálne cenové kategórie a náklady.',
     date: '30. mája 2026',
     iso: '2026-05-30',
     readTime: '9 min čítania',
-    content: `„Koľko bude stáť web?" je otázka, na ktorú dostanete od troch rôznych dodávateľov tri úplne odlišné odpovede — 250 €, 900 € aj 4 500 €. Nie je to preto, že by vás niekto chcel oklamať. Je to preto, že pod slovom „web" sa môže skrývať čokoľvek od jednoduchej vizitky po komplexný systém s vlastným redakčným systémom, platobnou bránou a desiatkami hodín programovania.
+    content: `Ak hľadáte cenu webstránky, pravdepodobne ste narazili na ponuky od niekoľkých stoviek až po tisíce eur. Koľko stojí web pre firmu, závisí od rozsahu, funkcií, obsahu a skúseností dodávateľa. Pre jednoduchý firemný web je realistická cena približne od 299 €, zatiaľ čo e-shop alebo riešenie na mieru môže stáť výrazne viac.
+
+  „Koľko bude stáť web?" je otázka, na ktorú dostanete od troch rôznych dodávateľov tri úplne odlišné odpovede — 250 €, 900 € aj 4 500 €. Nie je to preto, že by vás niekto chcel oklamať. Je to preto, že pod slovom „web" sa môže skrývať čokoľvek od jednoduchej vizitky po komplexný systém s vlastným redakčným systémom, platobnou bránou a desiatkami hodín programovania.
 
 Ak plánujete investovať do webu pre svoju firmu, potrebujete vedieť nielen orientačné čísla, ale hlavne to, čo za ne reálne dostanete a kde sa oplatí ušetriť, a kde naopak nie.
 
