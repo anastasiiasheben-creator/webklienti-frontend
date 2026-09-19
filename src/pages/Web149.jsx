@@ -5,8 +5,7 @@ import { RiskSection } from '../components/home/MiscSections';
 import sk from '../i18n/sk';
 import logoImg from '../assets/logo.webp';
 import montwellImg from '../assets/montwell-preview.webp';
-
-const API = 'https://webklienti-backend-1.onrender.com';
+import { API } from '../lib/constants';
 
 const C = {
   bg: '#F9FAFB', white: '#FFFFFF', text: '#111827', textSub: '#4B5563',
@@ -23,10 +22,10 @@ export default function Web149() {
   const [formVisible, setFormVisible] = useState(false);
   const [finalCtaVisible, setFinalCtaVisible] = useState(false);
 
-  const scrollToForm = () => { document.getElementById('form299')?.scrollIntoView({ behavior: 'smooth' }); setMenuOpen(false); };
+  const scrollToForm = () => { document.getElementById('form149')?.scrollIntoView({ behavior: 'smooth' }); setMenuOpen(false); };
 
   useEffect(() => {
-    const el = document.getElementById('form299');
+    const el = document.getElementById('form149');
     if (!el) return;
     const observer = new IntersectionObserver(([entry]) => setFormVisible(entry.isIntersecting), { threshold: 0.1 });
     observer.observe(el);
@@ -76,8 +75,8 @@ export default function Web149() {
     <div style={{ fontFamily: "'Inter', -apple-system, sans-serif", background: C.white, color: C.text, minHeight: '100vh' }}>
 
       <Helmet>
-        <title>Landing page za 150 € – Webstránka od 3 dní | WebKlienti</title>
-        <meta name="description" content="Landing page od 150 €. Dizajn navrhnutý na získavanie zákazníkov, mobilná verzia, SEO základy a kontaktný formulár. Dodanie od 3 dní." />
+        <title>Landing page za 149 € – Webstránka od 3 dní | WebKlienti</title>
+        <meta name="description" content="Landing page od 149 €. Dizajn navrhnutý na získavanie zákazníkov, mobilná verzia, SEO základy a kontaktný formulár. Dodanie od 3 dní." />
         <link rel="canonical" href="https://www.webklienti.com/web-149" />
         <link rel="alternate" hreflang="sk" href="https://www.webklienti.com/web-149" />
         <link rel="alternate" hreflang="x-default" href="https://www.webklienti.com/web-149" />
@@ -88,7 +87,7 @@ export default function Web149() {
         <meta property="og:image" content="https://www.webklienti.com/og-image.jpg" />
         <meta property="og:locale" content="sk_SK" />
         <meta name="twitter:card" content="summary_large_image" />
-        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Product","name":"Landing page za 149 €","description":"Profesionálna landing page pre malé firmy. Mobilná verzia, SEO základy, kontaktný formulár, Google Maps. Dodanie od 3 dní.","image":"https://www.webklienti.com/og-image.jpg","brand":{"@type":"Brand","name":"WebKlienti"},"url":"https://www.webklienti.com/web-149","offers":{"@type":"Offer","price":"149","priceCurrency":"EUR","availability":"https://schema.org/InStock","seller":{"@type":"Organization","name":"WebKlienti","url":"https://www.webklienti.com"}},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1","bestRating":"5","worstRating":"1"},"review":[{"@type":"Review","author":{"@type":"Person","name":"Matus K."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Super služby! Som veľmi spokojný."}]}`}</script>
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Product","name":"Landing page za 149 €","description":"Profesionálna landing page pre malé firmy. Mobilná verzia, SEO základy, kontaktný formulár, Google Maps. Dodanie od 3 dní.","image":"https://www.webklienti.com/og-image.jpg","brand":{"@type":"Brand","name":"WebKlienti"},"url":"https://www.webklienti.com/web-149","offers":{"@type":"Offer","price":"149","priceCurrency":"EUR","availability":"https://schema.org/InStock","seller":{"@type":"Organization","name":"WebKlienti","url":"https://www.webklienti.com"},"shippingDetails":{"@type":"OfferShippingDetails","shippingRate":{"@type":"MonetaryAmount","value":"0","currency":"EUR"},"shippingDestination":{"@type":"DefinedRegion","addressCountry":"SK"},"deliveryTime":{"@type":"ShippingDeliveryTime","handlingTime":{"@type":"QuantitativeValue","minValue":0,"maxValue":0,"unitCode":"DAY"},"transitTime":{"@type":"QuantitativeValue","minValue":3,"maxValue":3,"unitCode":"DAY"}}},"hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","returnPolicyCategory":"https://schema.org/MerchantReturnNotPermitted"}},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1","bestRating":"5","worstRating":"1"},"review":[{"@type":"Review","author":{"@type":"Person","name":"Matus K."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Super služby! Som veľmi spokojný."}]}`}</script>
       </Helmet>
 
       <style>{`
@@ -230,7 +229,7 @@ export default function Web149() {
               <p style={{ fontSize: 13, fontWeight: 600, color: C.blue, textTransform: 'uppercase', letterSpacing: 1, marginBottom: 6 }}>Jednorazová cena · Žiadne mesačné poplatky</p>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: 10 }}>
                 <span style={{ fontSize: 48, fontWeight: 800, color: C.text, letterSpacing: -2 }}>149 €</span>
-                <span style={{ fontSize: 16, color: C.textSub, textDecoration: 'line-through' }}>bežne 599 €</span>
+                <span style={{ fontSize: 16, color: C.textSub, textDecoration: 'line-through' }}>bežne 299 €</span>
               </div>
               <p style={{ fontSize: 14, color: C.textSub, marginTop: 4 }}>Kompletné odovzdanie od 3 pracovných dní</p>
             </div>
@@ -417,7 +416,7 @@ export default function Web149() {
       </div>
 
       {/* 9. FORM */}
-      <div id="form299" style={{ padding: '96px 24px 140px', background: C.bg }}>
+      <div id="form149" style={{ padding: '96px 24px 140px', background: C.bg }}>
         <div style={{ maxWidth: 600, margin: '0 auto' }}>
           <p className="section-label">Rýchly dopyt</p>
           <h2 style={{ fontSize: 'clamp(26px, 3vw, 36px)', fontWeight: 700, letterSpacing: '-0.01em', marginBottom: 12 }}>Získajte profesionálny návrh webu do 24 hodín zdarma</h2>
@@ -446,10 +445,10 @@ export default function Web149() {
                 </div>
               ))}
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
-                <input id="c299" type="checkbox" checked={form.consent}
+                <input id="c149" type="checkbox" checked={form.consent}
                   onChange={e => { setForm(p => ({ ...p, consent: e.target.checked })); setConsentError(false); }}
                   style={{ marginTop: 3, width: 18, height: 18, cursor: 'pointer', accentColor: C.blue, flexShrink: 0 }} />
-                <label htmlFor="c299" style={{ fontSize: 13, color: C.textSub, lineHeight: 1.5, cursor: 'pointer' }}>
+                <label htmlFor="c149" style={{ fontSize: 13, color: C.textSub, lineHeight: 1.5, cursor: 'pointer' }}>
                   Súhlasím so spracovaním osobných údajov za účelom vypracovania nezáväznej ponuky v súlade s{' '}
                   <Link to="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: C.blue, fontWeight: 600 }}>Zásadami ochrany súkromia</Link>{' *'}
                 </label>

@@ -19,7 +19,7 @@ const posts = [
   { slug: 'tvorba-webu-pre-zivnostnika', title: 'Tvorba webu pre živnostníka: čo by mal obsahovať úspešný web', excerpt: 'Zistite presne, čo musí obsahovať web pre živnostníka, aby prinášal zákazníkov z Google a premieňal návštevníkov na skutočné dopyty.', date: '22. mája 2026', readTime: '9 min čítania' },
   { slug: 'web-pre-kadernictvo', title: 'Web pre kaderníctvo: ako získať viac rezervácií online', excerpt: 'Profesionálny web pre kaderníctvo prináša nové rezervácie a buduje dôveru zákazníkov. Zistite, čo musí obsahovať a ako využiť lokálne SEO.', date: '25. mája 2026', readTime: '8 min čítania' },
   { slug: 'co-musi-mat-dobry-firemny-web', title: 'Čo musí mať dobrý firemný web v roku 2026', excerpt: 'Zistite, aké konkrétne prvky musí obsahovať moderný firemný web, aby naozaj získaval zákazníkov a zvyšoval dôveru návštevníkov.', date: '27. mája 2026', readTime: '9 min čítania' },
-  { slug: 'web-za-299-eur', title: 'Web za 299 € – je to dobrá voľba?', excerpt: 'Oplatí sa web za 299 €? Pozrite si reálne výhody, nevýhody a konkrétne situácie, kedy je lacnejší web tou najrozumnejšou voľbou.', date: '29. mája 2026', readTime: '8 min čítania' },
+  { slug: 'web-za-149-eur', title: 'Web za 149 € – je to dobrá voľba?', excerpt: 'Oplatí sa web za 149 €? Pozrite si reálne výhody, nevýhody a konkrétne situácie, kedy je lacnejší web tou najrozumnejšou voľbou.', date: '29. mája 2026', readTime: '8 min čítania' },
   { slug: 'tvorba-webu-trnava', title: 'Tvorba webu Trnava — web pre firmy z Trnavy a okolia', excerpt: 'Hľadáte tvorbu webu v Trnave? Zistite, čo musí lokálny web obsahovať, aby vás Trnavčania našli v Google skôr než konkurenciu.', date: '30. mája 2026', readTime: '9 min čítania' },
   { slug: 'wordpress-vs-wix-vs-web-na-mieru', title: 'WordPress vs Wix vs web na mieru — čo si vybrať?', excerpt: 'WordPress, Wix alebo web na mieru? Porovnanie troch najčastejších ciest k firemnému webu — výhody, nevýhody a kedy sa ktorá oplatí.', date: '30. mája 2026', readTime: '9 min čítania' },
   { slug: 'lokalne-seo-slovensko', title: 'Čo je to lokálne SEO a prečo na ňom záleží?', excerpt: 'Chcete, aby vás zákazníci našli hneď, ako vo vašom meste hľadajú vaše služby? Zistite, ako ovládnúť Google Mapy a premeniť vyhľadávania v okolí na zisk.', date: '10. júna 2026', readTime: '7 min čítania' },
@@ -74,8 +74,8 @@ export default function Blog() {
 
       {/* POSTS */}
       <div style={{ maxWidth: 800, margin: '0 auto', padding: '64px 40px' }}>
-        {posts.map((post, i) => (
-          <Link key={i} to={`/blog/${post.slug}`} style={{ textDecoration: 'none' }}>
+        {posts.map((post) => (
+          <Link key={post.slug} to={`/blog/${post.slug}`} style={{ textDecoration: 'none' }}>
             <div style={{ background: C.white, border: `1px solid ${C.border}`, borderRadius: 16, padding: '32px', marginBottom: 16, transition: 'all .2s' }}
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.08)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = 'none'; }}>
@@ -93,7 +93,7 @@ export default function Blog() {
       {/* CTA */}
       <div style={{ background: C.blue, padding: '80px 40px', textAlign: 'center' }}>
         <h2 style={{ fontSize: 32, fontWeight: 700, color: '#fff', marginBottom: 16 }}>Potrebujete web pre vašu firmu?</h2>
-        <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: 32, fontSize: 16 }}>Hotový za 5 dní od 299 €</p>
+        <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: 32, fontSize: 16 }}>Hotový za 3 dni od 149 €</p>
         <Link to="/" style={{ background: '#fff', color: C.blue, padding: '14px 36px', borderRadius: 12, fontWeight: 700, fontSize: 16, textDecoration: 'none', display: 'inline-block' }}>
           Objednať web →
         </Link>

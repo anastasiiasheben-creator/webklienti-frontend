@@ -7,7 +7,7 @@ const cz = {
   ],
   "navCta": "Získat návrh zdarma",
   "heroBadge": "🔥 Akce — 50% sleva na spuštění projektu pouze do konce měsíce",
-  "heroTitle": "Děláme weby, které vaší firmě reálně přinesou nové zákazníky",
+  "heroTitle": "Děláme weby navržené pro získávání nových zákazníků",
   "heroSub": "Kompletní prodejní systém: Moderní design + silné SEO + konverzní struktura. Hotovo už od 3 dnů.",
   "heroBenefits": [
     "Design navržený tak, aby návštěvníka proměnil v poptávku",
@@ -133,7 +133,7 @@ const cz = {
   "finalCtaTitle": "Chcete web, který bude pro vaši firmu reálně vydělávat?",
   "finalCtaSub": "Nečekejte, až vás konkurence předběhne úplně. Vyplňte formulář a zítra máte na stole řešení.",
   "finalCtaBtn": "Získat nezávazný návrh řešení →",
-  "stickyCtaBtn": "Chci nový web od 7 500 Kč →",
+  "stickyCtaBtn": "Chci nový web od 3 725 Kč →",
   "formLabel": "Rychlá poptávka",
   "formTitle": "Získejte profesionální návrh webu do 24 hodin zdarma",
   "formSub": "Napište nám základní detaily. Návrh je nezávazný — pokud se vám nebude líbit, nic neplatíte.",
@@ -203,7 +203,7 @@ const cz = {
   "faqItems": [
     {
       "q": "Kolik reálně trvá vytvoření webu?",
-      "a": "Jsme rychlí, protože máme zaběhnutý proces. Jednostránkový web spustíme do 5 pracovních dnů, vícestránkový byznys web do 7 dnů a plnohodnotný e-shop do 14 dnů od schválení úvodního konceptu."
+      "a": "Jsme rychlí, protože máme zaběhnutý proces. Jednostránkový web spustíme od 3 pracovních dnů, vícestránkový byznys web do 7 dnů a plnohodnotný e-shop do 14 dnů od schválení úvodního konceptu."
     },
     {
       "q": "Budu platit nějaké pravidelné měsíční poplatky?",
@@ -244,8 +244,8 @@ const cz = {
   "privacyTitle": "Zpracování osobních údajů",
   "privacyContent": "Provozovatel: WebKlienti, info@webklienti.com, +421 907 890 600\n\nJaké údaje sbíráme:\n• Jméno, příjmení, e-mail, telefonní číslo — výhradně při dobrovolném odeslání poptávkového formuláře.\n\nNa co je používáme:\nPříprava bezplatného návrhu, zpracování cenové nabídky, komunikace se zákazníkem a plnění smluvních závazků.\n\nDoba uchovávání:\nPo dobu trvání komunikace nebo smluvního vztahu a následně po dobu vyžadovanou platnými zákony.\n\nVaše práva:\nMáte plné právo na přístup ke svým údajům, jejich opravu, vymazání (právo na zapomnění) nebo omezení zpracování. Jakékoli žádosti posílejte na info@webklienti.com.\n\nAnalytika:\nPoužíváme anonymizovaný nástroj Google Analytics pro optimalizaci chodu webu a měření úspěšnosti reklamních kampaní.\n\nPlatné od: 1.1.2025",
   "statNote": "Každý projekt stavíme od první linie kódu pro maximální výkon a rychlost. Žádné pomalé, kupované šablony.",
-  "seoTitle": "Tvorba webových stránek se zaměřením na zisk od 7 500 Kč | WebKlienti",
-  "seoDescription": "Vytvoříme pro vaši firmu moderní web nebo e-shop navržený pro získávání zákazníků. Rýchlé dodání do 5 dnů, návrh do 24 hodin zdarma. Bez poplatků.",
+  "seoTitle": "Tvorba webových stránek se zaměřením na zisk od 3 725 Kč | WebKlienti",
+  "seoDescription": "Vytvoříme pro vaši firmu moderní web nebo e-shop navržený pro získávání zákazníků. Rychlé dodání do 3 dnů, návrh do 24 hodin zdarma. Bez poplatků.",
   "seoUrl": "https://www.webklienti.com",
   "heroTag": "Výkonnostní webdesign pro malé a střední firmy",
   "heroCtaSec": "Zobrazit ceník ↓",

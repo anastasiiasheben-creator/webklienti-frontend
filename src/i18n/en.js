@@ -7,14 +7,14 @@ const en = {
   ],
   "navCta": "Get Free Design",
   "heroBadge": "🔥 Limited Offer — 50% off project launch until the end of the month",
-  "heroTitle": "We build websites that actually drive new customers to your business",
+  "heroTitle": "We build websites designed to bring in new customers",
   "heroSub": "Complete sales engine: Modern design + powerful SEO + conversion-focused structure. Live from 3 business days.",
   "heroBenefits": [
     "Design engineered to turn casual visitors into paying leads",
     "Blazing-fast loading speeds and flawless mobile performance",
     "Fully fully-featured: Contact forms, maps, and seamless integrations",
     "Advanced SEO setup so your local customers can find you on Google",
-    "Ultra-fast 5-day delivery with zero endless delays"
+    "Ultra-fast 3-day delivery with zero endless delays"
   ],
   "heroCta": "Get My Free Website Concept",
   "heroMicro": "first visual draft in 24 hours · 100% risk-free · see how to grow your sales",
@@ -64,8 +64,8 @@ const en = {
       "tag": "Starter",
       "badge": null,
       "name": "Landing Page",
-      "price": "150 €",
-      "old": "regularly 300 €",
+      "price": "149 €",
+      "old": "regularly 299 €",
       "forWhom": "Perfect for freelancers, local services, and tradesmen",
       "features": [
         "High-conversion layout on one high-impact page",
@@ -133,7 +133,7 @@ const en = {
   "finalCtaTitle": "Ready to own a website that works as hard as you do?",
   "finalCtaSub": "Don't let your competitors capture all the market traffic. Fill out the form and get your concept tomorrow.",
   "finalCtaBtn": "Get My Free Strategy & Draft →",
-  "stickyCtaBtn": "Get a High-Converting Web from 299 € →",
+  "stickyCtaBtn": "Get a Landing Page from 149 € →",
   "formLabel": "Quick Inquiry",
   "formTitle": "Get a professional website concept within 24 hours free",
   "formSub": "Share a few basic details. The draft is entirely non-binding — if it's not a perfect fit, you owe nothing.",
@@ -160,7 +160,7 @@ const en = {
   "packageLabel": "Selected Package *",
   "packagePlaceholder": "— Choose your starting position —",
   "packages": [
-    "Landing Page — 150 €",
+    "Landing Page — 149 €",
     "Business Lead Generator — 499 €",
     "Full E-Commerce Store — 999 €"
   ],
@@ -168,10 +168,10 @@ const en = {
   "intentNote": "Select your core business objective — this helps us architect the exact structure your target audience expects.",
   "intentCards": [
     {
-      "value": "Landing Page — 150 €",
+      "value": "Landing Page — 149 €",
       "intent": "I want a clean, modern digital card",
       "sub": "I need a highly professional and fast online presence so local clients can verify my business.",
-      "price": "150 €",
+      "price": "149 €",
       "badge": null
     },
     {
@@ -244,8 +244,8 @@ const en = {
   "privacyTitle": "Personal Data Processing",
   "privacyContent": "Operator: WebKlienti, info@webklienti.com, +421 907 890 600\n\nWhat data we collect:\n• First name, last name, email address, phone number — exclusively via voluntary submission of the inquiry form.\n\nPurpose of processing:\nPreparation of the free design concept, calculating custom quotes, client communication, and fulfilling contract obligations.\n\nData retention:\nFor the duration of the communication or contractual agreement, and subsequently for the period required by applicable legal frameworks.\n\nYour rights:\nYou hold full rights to access your data, request corrections, demand complete erasure (the right to be forgotten), or restrict processing. Send all compliance requests to info@webklienti.com.\n\nAnalytics:\nWe deploy anonymized Google Analytics properties to monitor system health and evaluate ad campaign performance.\n\nEffective date: January 1, 2025",
   "statNote": "Every project is architected from line one of code for maximum core web vitals and speed. Zero slow, bloated marketplace themes.",
-  "themeTitle": "Conversion-Driven Web Design from 149 € | WebKlienti",
-  "seoDescription": "We build modern websites and online shops engineered to acquire buyers for your business. Fast 5-day delivery, free concept draft within 24 hours. No monthly fees.",
+  "seoTitle": "Conversion-Driven Web Design from 149 € | WebKlienti",
+  "seoDescription": "We build modern websites and online shops engineered to acquire buyers for your business. Fast 3-day delivery, free concept draft within 24 hours. No monthly fees.",
   "seoUrl": "https://www.webklienti.com",
   "heroTag": "Performance Web Design for Small and Medium Enterprises",
   "heroCtaSec": "View Packages ↓",

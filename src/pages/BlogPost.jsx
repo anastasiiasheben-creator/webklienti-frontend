@@ -79,7 +79,7 @@ To znamená, že web musí spĺňať tri základné podmienky, inak stráca zmys
 
 Veľa podnikateľov odkladá tvorbu webu, pretože si myslia, že to znamená mesiace práce a tisíce eur. Realita v roku 2026 je iná — pozrite si aj náš prehľad [koľko naozaj stojí webstránka na Slovensku](/blog/kolko-stoji-webstranka-na-slovensku). Pre väčšinu živnostníkov a malých firiem stačí kvalitný web s jasnou štruktúrou, referenciami a kontaktným formulárom, nie zložitý systém s desiatkami funkcií, ktoré nikdy nevyužijú.
 
-U nás vznikne profesionálny web už od **299 €**, hotový do 5 pracovných dní, s mobilnou verziou a bez skrytých mesačných poplatkov. To znamená, že návratnosť investície môže priniesť už prvá získaná zákazka.
+U nás vznikne profesionálny web už od **149 €**, hotový do 3 pracovných dní, s mobilnou verziou a bez skrytých mesačných poplatkov. To znamená, že návratnosť investície môže priniesť už prvá získaná zákazka.
 
 ## Čo by mal obsahovať web malej firmy, aby fungoval
 
@@ -123,7 +123,7 @@ Facebook je dobrý doplnok, ale nezobrazuje sa vo väčšine vyhľadávaní na G
 
 ### Ako rýchlo sa dá web spustiť?
 
-Jednoduchý profesionálny web vieme pripraviť do 5 pracovných dní od dodania podkladov.
+Jednoduchý profesionálny web vieme pripraviť do 3 pracovných dní od dodania podkladov.
 
 ### Oplatí sa web aj v odvetví, kde funguje hlavne odporúčanie?
 
@@ -287,7 +287,7 @@ Aj ten najlepší produkt alebo služba má obmedzený potenciál, ak o nich nik
 
 Ak sa vaša firma pravidelne objavuje medzi prvými výsledkami Google, získavate obrovskú výhodu. Nielenže vás vidí viac ľudí, ale zároveň sa vaša značka dostáva do povedomia potenciálnych zákazníkov.
 
-Predstavte si dve stavebné firmy. Prvá sa zobrazuje na prvej strane výsledkov pri vyhľadávaní „rekonštrukcia domu Trnava". Druhá sa nachádza na štvrtej strane. Ktorá z nich bude pravdepodobne dostávať viac telefonátov a dopytov?
+Predstavte si dve stavebné firmy v Trnave. Prvá sa zobrazuje na prvej strane výsledkov pri vyhľadávaní „rekonštrukcia domu Trnava" — ako sa to dá dosiahnuť, rozoberáme v článku o [tvorbe webu pre firmy z Trnavy](/blog/tvorba-webu-trnava). Druhá sa nachádza na štvrtej strane. Ktorá z nich bude pravdepodobne dostávať viac telefonátov a dopytov?
 
 Odpoveď je zrejmá.
 
@@ -589,7 +589,7 @@ Google Search Console a Google Analytics poskytujú informácie, ktoré pomáhaj
     date: '30. mája 2026',
     iso: '2026-05-30',
     readTime: '9 min čítania',
-    content: `Ak hľadáte cenu webstránky, pravdepodobne ste narazili na ponuky od niekoľkých stoviek až po tisíce eur. Koľko stojí web pre firmu, závisí od rozsahu, funkcií, obsahu a skúseností dodávateľa. Pre jednoduchý firemný web je realistická cena približne od 299 €, zatiaľ čo e-shop alebo riešenie na mieru môže stáť výrazne viac.
+    content: `Ak hľadáte cenu webstránky, pravdepodobne ste narazili na ponuky od niekoľkých stoviek až po tisíce eur. Koľko stojí web pre firmu, závisí od rozsahu, funkcií, obsahu a skúseností dodávateľa. Pre jednoduchý firemný web je realistická cena približne od 149 €, zatiaľ čo e-shop alebo riešenie na mieru môže stáť výrazne viac.
 
   „Koľko bude stáť web?" je otázka, na ktorú dostanete od troch rôznych dodávateľov tri úplne odlišné odpovede — 250 €, 900 € aj 4 500 €. Nie je to preto, že by vás niekto chcel oklamať. Je to preto, že pod slovom „web" sa môže skrývať čokoľvek od jednoduchej vizitky po komplexný systém s vlastným redakčným systémom, platobnou bránou a desiatkami hodín programovania.
 
@@ -639,9 +639,9 @@ Vysoká cena sama osebe negarantuje kvalitu ani výsledky. Kľúčové je pýta�
 
 ## Čo v roku 2026 dostanete za rozumnú cenu
 
-Vďaka moderným nástrojom a efektívnejším pracovným postupom dnes vzniká kvalitný web rýchlejšie a za nižšiu cenu než pred pár rokmi — bez toho, aby to znamenalo kompromis v kvalite. U nás vychádza profesionálny firemný web od **299 €**, hotový do 5 pracovných dní, s mobilnou verziou, základnou SEO optimalizáciou a bez skrytých mesačných poplatkov.
+Vďaka moderným nástrojom a efektívnejším pracovným postupom dnes vzniká kvalitný web rýchlejšie a za nižšiu cenu než pred pár rokmi — bez toho, aby to znamenalo kompromis v kvalite. U nás vychádza profesionálny firemný web od **149 €**, hotový do 3 pracovných dní, s mobilnou verziou, základnou SEO optimalizáciou a bez skrytých mesačných poplatkov.
 
-Ak zvažujete práve túto cenovú kategóriu, prečítajte si aj podrobnejší rozbor v článku [web za 299 € – je to dobrá voľba?](/blog/web-za-299-eur), kde rozoberáme, pre koho je toto riešenie ideálne a kedy sa oplatí investovať viac.
+Ak zvažujete práve túto cenovú kategóriu, prečítajte si aj podrobnejší rozbor v článku [web za 149 € – je to dobrá voľba?](/blog/web-za-149-eur), kde rozoberáme, pre koho je toto riešenie ideálne a kedy sa oplatí investovať viac.
 
 ## Ako si vybrať správnu cenovú kategóriu pre vašu firmu
 
@@ -653,7 +653,7 @@ Bežná chyba je rozhodovať sa o webe výlučne podľa najnižšej ponuky bez t
 
 ## Ako sa cena webu vyvíjala za posledné roky
 
-Ešte pred pár rokmi bol web na mieru pre malú firmu často nedostupný luxus – dodávatelia účtovali stovky hodín ručnej práce na dizajn aj programovanie, čo sa premietalo do cien niekoľko tisíc eur aj za jednoduchú prezentáciu. Vďaka efektívnejším nástrojom, automatizácii opakujúcich sa úloh a skúsenostiam nazbieraným pri stovkách podobných projektov sa dnes dá rovnaká kvalita dosiahnuť za zlomok pôvodného času – a teda aj za zlomok pôvodnej ceny. To je hlavný dôvod, prečo dnešný trh ponúka kvalitné weby už od 299 €, bez toho, aby to znamenalo ústupok v rýchlosti či dizajne.
+Ešte pred pár rokmi bol web na mieru pre malú firmu často nedostupný luxus – dodávatelia účtovali stovky hodín ručnej práce na dizajn aj programovanie, čo sa premietalo do cien niekoľko tisíc eur aj za jednoduchú prezentáciu. Vďaka efektívnejším nástrojom, automatizácii opakujúcich sa úloh a skúsenostiam nazbieraným pri stovkách podobných projektov sa dnes dá rovnaká kvalita dosiahnuť za zlomok pôvodného času – a teda aj za zlomok pôvodnej ceny. To je hlavný dôvod, prečo dnešný trh ponúka kvalitné weby už od 149 €, bez toho, aby to znamenalo ústupok v rýchlosti či dizajne.
 
 ## Prečo sa oplatí porovnávať ponuky podľa obsahu, nie len podľa čísla
 
@@ -672,13 +672,13 @@ Firma, ktorá si tieto otázky vyjasní vopred, sa vyhne nepríjemnému prekvape
 
 ## Ako sa cena webu premieta do reálnej návratnosti investície
 
-Namiesto porovnávania čísel osamote sa oplatí počítať s návratnosťou. Ak web za 299 € prinesie mesačne čo i len jednu novú zákazku v hodnote niekoľkých stoviek eur, investícia sa vráti prakticky okamžite. Rovnaký princíp platí aj pri drahších riešeniach – kľúčová otázka nikdy nie je „koľko web stojí", ale „koľko dopytov a akej hodnoty mi reálne prinesie za rok prevádzky".
+Namiesto porovnávania čísel osamote sa oplatí počítať s návratnosťou. Ak web za 149 € prinesie mesačne čo i len jednu novú zákazku v hodnote niekoľkých stoviek eur, investícia sa vráti prakticky okamžite. Rovnaký princíp platí aj pri drahších riešeniach – kľúčová otázka nikdy nie je „koľko web stojí", ale „koľko dopytov a akej hodnoty mi reálne prinesie za rok prevádzky".
 
 ## FAQ: Cena webstránky na Slovensku
 
 ### Aká je najnižšia rozumná cena za profesionálny web?
 
-Kvalitný firemný web pre živnostníka alebo malú firmu je dnes možné získať už od 299 €, pokiaľ zahŕňa mobilnú verziu, rýchle načítanie a základnú SEO optimalizáciu.
+Kvalitný firemný web pre živnostníka alebo malú firmu je dnes možné získať už od 149 €, pokiaľ zahŕňa mobilnú verziu, rýchle načítanie a základnú SEO optimalizáciu.
 
 ### Prečo je e-shop drahší ako bežný firemný web?
 
@@ -1033,13 +1033,13 @@ Odporúčame aspoň orientačné ceny alebo cenové rozpätie. Zvyšuje to dôve
 
 ### Ako rýchlo môže byť web živnostníka hotový?
 
-Jednoduchý web s jasnou ponukou, referenciami a kontaktným formulárom vieme pripraviť do 5 pracovných dní.
+Jednoduchý web s jasnou ponukou, referenciami a kontaktným formulárom vieme pripraviť do 3 pracovných dní.
 
 ### Potrebujem aj blog, alebo stačí jednoduchá prezentácia?
 
 Na začiatok stačí kvalitná jednostránková alebo niekoľkostránková prezentácia. Blog sa oplatí pridať neskôr, keď chcete rásť aj cez organické vyhľadávanie na širšie témy.
 
-**Ak chcete jednoduchý a rýchly web, ktorý bude reálne prinášať dopyty, pozrite si naše riešenie [web za 299 €](/blog/web-za-299-eur) alebo nám rovno napíšte, čo potrebujete.**`,
+**Ak chcete jednoduchý a rýchly web, ktorý bude reálne prinášať dopyty, pozrite si naše riešenie [web za 149 €](/blog/web-za-149-eur) alebo nám rovno napíšte, čo potrebujete.**`,
   },
   'web-pre-kadernictvo': {
     title: 'Web pre kaderníctvo: ako získať viac rezervácií online',
@@ -1151,7 +1151,7 @@ Web vám prináša nové zákazníčky navyše k stálej klientele – najmä ti
 
 Áno, ak ponúkate obe služby. Samostatné podstránky s vlastným obsahom a fotografiami pomáhajú zobrazovať sa vo vyhľadávaní pre obe cieľové skupiny zákazníkov.
 
-**Ak chcete rýchly a profesionálny web pre svoje kaderníctvo, pozrite si naše riešenie [web za 299 €](/blog/web-za-299-eur) alebo nám napíšte, ako váš salón momentálne funguje.**`,
+**Ak chcete rýchly a profesionálny web pre svoje kaderníctvo, pozrite si naše riešenie [web za 149 €](/blog/web-za-149-eur) alebo nám napíšte, ako váš salón momentálne funguje.**`,
   },
   'co-musi-mat-dobry-firemny-web': {
     title: 'Čo musí mať dobrý firemný web v roku 2026',
@@ -1265,26 +1265,26 @@ Výrazne – konkrétne referencie a prípadové štúdie patria medzi najsilnej
 
 ### Ako rýchlo sa dá kvalitný firemný web pripraviť?
 
-Pri jasne pripravených podkladoch vieme profesionálny firemný web pripraviť do 5 pracovných dní.
+Pri jasne pripravených podkladoch vieme profesionálny firemný web pripraviť do 3 pracovných dní.
 
 ### Musí byť súčasťou firemného webu aj sekcia o firme a jej histórii?
 
 Nie je to nevyhnutnosť, no krátka a úprimná sekcia o tom, kto za firmou stojí, dokáže zvýšiť dôveru, najmä pri službách, kde zákazník rieši osobné alebo dôverné záležitosti.
 
-**Ak chcete jednoduchý firemný web za pevnú cenu, pozrite si naše riešenie [web za 299 €](/blog/web-za-299-eur) alebo nám napíšte, čo od webu vaša firma potrebuje.**`,
+**Ak chcete jednoduchý firemný web za pevnú cenu, pozrite si naše riešenie [web za 149 €](/blog/web-za-149-eur) alebo nám napíšte, čo od webu vaša firma potrebuje.**`,
   },
-  'web-za-299-eur': {
-    title: 'Web za 299 € – je to dobrá voľba?',
-    metaTitle: 'Web za 299 € – oplatí sa? Výhody, nevýhody, príklady',
-    excerpt: 'Oplatí sa web za 299 €? Pozrite si reálne výhody, nevýhody a konkrétne situácie, kedy je lacnejší web tou najrozumnejšou voľbou.',
+  'web-za-149-eur': {
+    title: 'Web za 149 € – je to dobrá voľba?',
+    metaTitle: 'Web za 149 € – oplatí sa? Výhody, nevýhody, príklady',
+    excerpt: 'Oplatí sa web za 149 €? Pozrite si reálne výhody, nevýhody a konkrétne situácie, kedy je lacnejší web tou najrozumnejšou voľbou.',
     date: '29. mája 2026',
     iso: '2026-05-29',
     readTime: '8 min čítania',
-    content: `„Web za 299 € nemôže byť dobrý, veď to je smiešne málo." Túto reakciu počúvame pomerne často – a väčšinou od ľudí, ktorí si predstavujú, že za nízku cenu dostanú niečo nedorobené alebo zbytočné. Realita je iná: vďaka efektívnejším pracovným postupom a moderným nástrojom dnes vzniká za rozumnú cenu web, ktorý pred pár rokmi stál niekoľkonásobne viac.
+    content: `„Web za 149 € nemôže byť dobrý, veď to je smiešne málo." Túto reakciu počúvame pomerne často – a väčšinou od ľudí, ktorí si predstavujú, že za nízku cenu dostanú niečo nedorobené alebo zbytočné. Realita je iná: vďaka efektívnejším pracovným postupom a moderným nástrojom dnes vzniká za rozumnú cenu web, ktorý pred pár rokmi stál niekoľkonásobne viac.
 
-Otázka teda nie je „je 299 € málo alebo veľa", ale „pre koho a v akej situácii je toto riešenie skutočne rozumnou voľbou".
+Otázka teda nie je „je 149 € málo alebo veľa", ale „pre koho a v akej situácii je toto riešenie skutočne rozumnou voľbou".
 
-## Pre koho je web za 299 € ideálny
+## Pre koho je web za 149 € ideálny
 
 Ak práve začínate podnikať alebo potrebujete rýchlo nahradiť web, ktorý nemáte, alebo ktorý je zastaraný, táto cenová kategória rieši presne váš problém. Získate funkčný, profesionálne vyzerajúci web, na ktorom zákazníci nájdu jasné informácie o vašich službách, referencie a spôsob, ako vás kontaktovať.
 
@@ -1298,7 +1298,7 @@ Typický zákazník tejto kategórie:
 ## Výhody webu v tejto cenovej kategórii
 
 - **Nízka vstupná investícia** – nemusíte čakať, kým naskladáte rozpočet niekoľko tisíc eur.
-- **Rýchla realizácia** – hotový web do 5 pracovných dní, nie mesiace čakania v poradovníku agentúry.
+- **Rýchla realizácia** – hotový web do 3 pracovných dní, nie mesiace čakania v poradovníku agentúry.
 - **Jednoduchá správa** – bez zložitých systémov, ktoré si vyžadujú technické znalosti.
 - **Okamžitý profesionálny dojem** – aj základný, dobre spracovaný web pôsobí dôveryhodnejšie ako žiadny web alebo zanedbaná Facebook stránka.
 
@@ -1314,7 +1314,7 @@ Pre porovnanie, podobný rozpočet by pokryl sotva jeden mesiac priemernej plate
 
 ## Prečo lacný web nie je to isté ako zlý web
 
-Dôležité je rozlišovať medzi „lacným" a „zle spraveným" webom. Web za 299 € môže byť rýchly, mobilne optimalizovaný a dobre štruktúrovaný – problém nastáva len vtedy, keď dodávateľ použije zastaranú šablónu, web nezoptimalizuje pre mobil alebo zanedbá základné SEO nastavenia. Práve tieto chyby, nie samotná cena, spôsobujú, že web neprináša výsledky. Viac o tom, čo presne robí web nefunkčným, nájdete v článku [prečo vám web neprináša zákazníkov](/blog/preco-web-neprinas-zakaznikov).
+Dôležité je rozlišovať medzi „lacným" a „zle spraveným" webom. Web za 149 € môže byť rýchly, mobilne optimalizovaný a dobre štruktúrovaný – problém nastáva len vtedy, keď dodávateľ použije zastaranú šablónu, web nezoptimalizuje pre mobil alebo zanedbá základné SEO nastavenia. Práve tieto chyby, nie samotná cena, spôsobujú, že web neprináša výsledky. Viac o tom, čo presne robí web nefunkčným, nájdete v článku [prečo vám web neprináša zákazníkov](/blog/preco-web-neprinas-zakaznikov).
 
 ## Lepšia stratégia pre malé firmy: začať jednoducho, rásť postupne
 
@@ -1349,7 +1349,7 @@ Začínajúca kozmetička si na štart podnikania objednala jednoduchý web za n
 
 Nie vždy je najrýchlejšie riešenie aj najlepšie. Ak viete, že do pol roka budete potrebovať e-shop, rezervačný systém alebo viacjazyčný web, môže byť rozumnejšie počkať a rovno investovať do riešenia, ktoré tieto funkcie pokryje, než neskôr platiť za prechod na inú platformu. Rozhodnutie by preto malo vychádzať nielen z aktuálneho rozpočtu, ale aj z toho, kam firma smeruje v horizonte najbližšieho roka.
 
-## Prečo psychológia ceny 299 € funguje aj v praxi, nielen v marketingu
+## Prečo psychológia ceny 149 € funguje aj v praxi, nielen v marketingu
 
 Cena tesne pod okrúhlym číslom nie je len marketingový trik – pri malých firmách a živnostníkoch často zodpovedá presne tej hranici, pri ktorej sa rozhodnutie o webe dá urobiť „z hlavy", bez nutnosti dlho premýšľať alebo si rozpočet vopred plánovať. Vyššie sumy, aj keď len o pár stoviek eur, už väčšinou vyžadujú dlhšie zvažovanie, poradu s partnerom alebo účtovníčkou. Práve táto dostupnosť je dôvod, prečo si toto riešenie vyberá tak veľa začínajúcich podnikateľov – nie je to len o nízkej cene, ale o rýchlosti rozhodnutia, ktorú umožňuje.
 
@@ -1368,13 +1368,13 @@ Aby ste sa vyhli sklamaniu, oplatí sa pred objednávkou položiť dodávateľov
 
 Dodávateľ, ktorý vie na tieto otázky jasne a konkrétne odpovedať, s väčšou pravdepodobnosťou dodá web, ktorý bude fungovať tak, ako očakávate.
 
-## Reálne očakávania: čo web za 299 € nie je
+## Reálne očakávania: čo web za 149 € nie je
 
-Aby sme boli úplne úprimní – toto riešenie nie je miesto pre firmu, ktorá potrebuje zložitý e-shop s desiatkami kategórií, mnohojazyčný web alebo pokročilý redakčný systém so sofistikovaným workflow. Pre tieto prípady existuje vyššia cenová kategória, ktorá takéto nároky pokryje lepšie. Web za 299 € je najsilnejší presne tam, kde ho najviac firiem aj potrebuje – ako rýchly, dôveryhodný a funkčný základ pre online prezentáciu.
+Aby sme boli úplne úprimní – toto riešenie nie je miesto pre firmu, ktorá potrebuje zložitý e-shop s desiatkami kategórií, mnohojazyčný web alebo pokročilý redakčný systém so sofistikovaným workflow. Pre tieto prípady existuje vyššia cenová kategória, ktorá takéto nároky pokryje lepšie. Web za 149 € je najsilnejší presne tam, kde ho najviac firiem aj potrebuje – ako rýchly, dôveryhodný a funkčný základ pre online prezentáciu.
 
-## FAQ: Web za 299 €
+## FAQ: Web za 149 €
 
-### Dostanem za 299 € skutočne profesionálny web?
+### Dostanem za 149 € skutočne profesionálny web?
 
 Áno, pokiaľ ide o jednoduchší, no dobre spracovaný web s jasnou štruktúrou, mobilnou verziou a základnou SEO optimalizáciou – presne to, čo väčšina malých firiem na začiatok potrebuje.
 
@@ -1498,7 +1498,7 @@ Prvé zlepšenia sa zvyčajne prejavia v priebehu týždňov, stabilné a výraz
 
 Pre väčšinu lokálnych firiem v Trnave postačuje slovenčina. Druhý jazyk sa oplatí zvážiť len vtedy, ak pravidelne obsluhujete aj zahraničnú klientelu, napríklad v cestovnom ruchu.
 
-**Ak podnikáte v Trnave alebo okolí a chcete web, ktorý vás dostane pred lokálnu konkurenciu, napíšte nám, o akú firmu ide.**`,
+**Ak podnikáte v Trnave alebo okolí a chcete web, ktorý vás dostane pred lokálnu konkurenciu, pozrite si naše riešenie [web za 149 €](/blog/web-za-149-eur) alebo nám rovno napíšte, o akú firmu ide.**`,
   },
   'wordpress-vs-wix-vs-web-na-mieru': {
     title: 'WordPress vs Wix vs web na mieru — čo si vybrať?',
@@ -2091,7 +2091,8 @@ Najväčšia výhoda SEO je v tom, že neplatíte za každý klik. Budujete syst
 const legacySlugs = {
   'preco-web-nepredava-7-chyb': 'preco-web-neprinas-zakaznikov',
   'wordpress-vs-wix-vs-webflow': 'wordpress-vs-wix-vs-web-na-mieru',
-  'web-za-500-vs-5000-eur': 'web-za-299-eur',
+  'web-za-500-vs-5000-eur': 'web-za-149-eur',
+  'web-za-299-eur': 'web-za-149-eur',
 };
 
 function renderInline(text) {
@@ -2337,7 +2338,7 @@ export default function BlogPost() {
             Potrebujete web pre vašu firmu?
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.85)', marginBottom: 24 }}>
-            Hotový za 5 dní od 299 €. Bez mesačných poplatkov.
+            Hotový za 3 dni od 149 €. Bez mesačných poplatkov.
           </p>
           <Link
             to="/"

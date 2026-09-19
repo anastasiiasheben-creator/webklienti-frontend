@@ -257,10 +257,10 @@ function HomePage() {
 
       <main>
         <HeroSection t={t} lang={lang} onCta={() => scrollTo('contact')} />
+        <CaseStudySection t={t} lang={lang} />
         <ProblemSection t={t} />
         <AgitationStrip t={t} />
         <SolutionSection t={t} lang={lang} onCta={() => scrollTo('contact')} />
-        <CaseStudySection t={t} lang={lang} />
         <PricingSection t={t} onSelectPackage={handleSelectPackage} />
         <RiskSection t={t} />
         <FAQSection t={t} openFaq={openFaq} setOpenFaq={setOpenFaq} />

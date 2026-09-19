@@ -7,7 +7,7 @@ const sk = {
   ],
   "navCta": "Získať návrh zdarma",
   "heroBadge": "🔥 Akcia — 50% zľava na spustenie projektu len do konca mesiaca",
-  "heroTitle": "Robíme weby, ktoré vašej firme reálne prinesú nových zákazníkov",
+  "heroTitle": "Robíme weby navrhnuté na získavanie nových zákazníkov",
   "heroSub": "Kompletný predajný systém: Moderný dizajn + silné SEO + konverzná štruktúra. Hotovo už od 3 dní.",  
   "heroBenefits": [
     "Dizajn navrhnutý tak, aby návštevníka premenil na dopyt",
@@ -64,8 +64,8 @@ const sk = {
       "tag": "Starter",
       "badge": null,
       "name": "Landing page",
-      "price": "150 €",
-      "old": "bežne 300 €",
+      "price": "149 €",
+      "old": "bežne 299 €",
       "forWhom": "Ideálne pre živnostníkov, remeselníkov a lokálne služby",
       "features": [
         "Predajný dizajn na jednej prehľadnej strane",
@@ -133,7 +133,7 @@ const sk = {
   "finalCtaTitle": "Chcete web, ktorý bude pre vašu firmu reálne zarábať?",
   "finalCtaSub": "Nečakajte, kým vás konkurencia predbehne úplne. Vyplňte formulár a zajtra máte na stole riešenie.",
   "finalCtaBtn": "Získať nezáväzný návrh riešenia →",
-  "stickyCtaBtn": "Chcem nový web od 299 € →",
+  "stickyCtaBtn": "Chcem landing page od 149 € →",
   "formLabel": "Rýchly dopyt",
   "formTitle": "Získajte profesionálny návrh webu do 24 hodín zdarma",
   "formSub": "Napíšte nám základné detaily. Návrh je nezáväzný — ak sa vám nebude páčiť, nič neplatíte.",
@@ -160,7 +160,7 @@ const sk = {
   "packageLabel": "Zvolený balík *",
   "packagePlaceholder": "— Vyberte si štartovaciu pozíciu —",
   "packages": [
-    "Landing page — 150 €",
+    "Landing page — 149 €",
     "Biznis web na dopyty — 499 €",
     "Kompletný E-shop — 999 €"
   ],
@@ -168,10 +168,10 @@ const sk = {
   "intentNote": "Vyberte si váš primárny cieľ — pomôže nám to postaviť štruktúru webu presne na mieru vašej cieľovej skupine.",
   "intentCards": [
     {
-      "value": "Landing page — 150 €",
+      "value": "Landing page — 149 €",
       "intent": "Chcem len modernú vizitku",
       "sub": "Potrebujem reprezentatívnu a rýchlu stránku, aby ma klienti našli na internete.",
-      "price": "150 €",
+      "price": "149 €",
       "badge": null
     },
     {
