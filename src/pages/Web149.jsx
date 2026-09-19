@@ -5,6 +5,7 @@ import { RiskSection } from '../components/home/MiscSections';
 import sk from '../i18n/sk';
 import logoImg from '../assets/logo.webp';
 import montwellImg from '../assets/montwell-preview.webp';
+import montwellImgSm from '../assets/montwell-preview-sm.webp';
 import { API } from '../lib/constants';
 
 const C = {
@@ -248,7 +249,7 @@ export default function Web149() {
             <div className="montwell-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40, alignItems: 'stretch', marginBottom: 28 }}>
               <div style={{ borderRadius: 12, overflow: 'hidden', border: `1px solid ${C.border}`, display: 'flex' }}>
                 <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer" style={{ display: 'block', width: '100%' }}>
-                  <img src={montwellImg} alt="Montwell webstránka" width="600" height="324" style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover', objectPosition: 'left center' }} loading="lazy" />
+                  <img src={montwellImg} srcSet={`${montwellImgSm} 960w, ${montwellImg} 1200w`} sizes="(max-width: 640px) 480px, 600px" alt="Montwell webstránka" width="600" height="324" style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover', objectPosition: 'left center' }} loading="lazy" />
                 </a>
               </div>
 
