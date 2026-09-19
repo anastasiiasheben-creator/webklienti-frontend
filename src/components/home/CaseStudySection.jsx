@@ -81,7 +81,7 @@ export default function CaseStudySection({ t, lang }) {
             
             <div style={{ borderRadius: 12, overflow: 'hidden', border: `1px solid ${C.border}`, display: 'flex' }}>
               <a href="https://montwell.sk" target="_blank" rel="noopener noreferrer" style={{ display: 'block', width: '100%' }}>
-                <img src={montwellImg} alt="Montwell webstránka" width="600" height="324" style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }} loading="lazy" />
+                <img src={montwellImg} alt="Montwell webstránka" width="600" height="324" style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover', objectPosition: 'left center' }} loading="lazy" />
               </a>
             </div>
 

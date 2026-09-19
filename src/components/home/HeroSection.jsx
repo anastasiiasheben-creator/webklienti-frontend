@@ -30,7 +30,7 @@ export default function HeroSection({ t, lang, onCta }) {
           </div>
           {/* RIGHT — verified client work */}
           <div className="hero-right" style={{ background: C.bg, borderRadius: 20, padding: 20, border: `1px solid ${C.border}` }}>
-            <img src={montwellImg} alt="Montwell webstránka" width="600" height="324" fetchPriority="high" style={{ width: '100%', display: 'block', aspectRatio: '600 / 324', objectFit: 'cover', borderRadius: 12, marginBottom: 16 }} />
+            <img src={montwellImg} alt="Montwell webstránka" width="600" height="324" fetchPriority="high" style={{ width: '100%', display: 'block', aspectRatio: '600 / 324', objectFit: 'cover', objectPosition: 'left center', borderRadius: 12, marginBottom: 16 }} />
             <p style={{ fontSize: 12, color: C.blue, fontWeight: 700, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 8 }}>
               {lang === 'en' ? 'Real client work' : lang === 'cz' ? 'Reálná realizace' : 'Reálna realizácia'}
             </p>
