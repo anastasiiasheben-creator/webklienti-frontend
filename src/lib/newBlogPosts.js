@@ -4,8 +4,8 @@ export const newBlogPosts = [
     title: 'Ako pripraviť podklady na tvorbu webu: praktický checklist',
     metaTitle: 'Ako pripraviť podklady na tvorbu webu | Checklist',
     excerpt: 'Neviete, čo pripraviť pred tvorbou webu? Praktický checklist podkladov, textov, fotografií a rozhodnutí, ktoré urýchlia web a znížia počet úprav.',
-    date: '19. septembra 2026',
-    iso: '2026-09-19',
+    date: '3. augusta 2026',
+    iso: '2026-08-03',
     readTime: '10 min čítania',
     content: `Tvorba webu sa často predĺži nie preto, že by bol dizajn príliš zložitý. Najviac času sa stráca pri čakaní na texty, fotografie, rozhodnutia a odpovede, ktoré mohli byť pripravené ešte pred prvým návrhom.
 
@@ -82,8 +82,8 @@ Ak chcete proces urýchliť, vo WebKlienti vám pomôžeme premeniť vaše podkl
     title: 'Koľko trvá vytvorenie webstránky? Reálny časový harmonogram',
     metaTitle: 'Koľko trvá vytvorenie webstránky? Reálny harmonogram',
     excerpt: 'Zistite, koľko trvá vytvorenie webstránky od zadania po spustenie. Reálny harmonogram, faktory, ktoré projekt zrýchlia, a najčastejšie zdržania.',
-    date: '19. septembra 2026',
-    iso: '2026-09-19',
+    date: '10. augusta 2026',
+    iso: '2026-08-10',
     readTime: '9 min čítania',
     content: `Otázka „Kedy bude web hotový?“ patrí medzi prvé, ktoré si podnikateľ položí. Odpoveď však nezávisí iba od počtu stránok. Rovnako dôležité sú pripravené podklady, rýchlosť rozhodovania, rozsah funkcií a počet ľudí, ktorí projekt schvaľujú.
 
@@ -165,8 +165,8 @@ Vo WebKlienti vieme jednoduchý firemný web pripraviť rýchlo, pretože použ�
     title: 'Landing page alebo webstránka? Čo potrebuje vaša firma',
     metaTitle: 'Landing page alebo webstránka? Porovnanie pre firmy',
     excerpt: 'Landing page alebo klasická webstránka? Porovnajte rozdiely, cenu, SEO, vhodné použitie a zistite, ktoré riešenie dáva zmysel pre vašu firmu.',
-    date: '19. septembra 2026',
-    iso: '2026-09-19',
+    date: '17. augusta 2026',
+    iso: '2026-08-17',
     readTime: '9 min čítania',
     content: `Landing page a klasická webstránka nie sú dve pomenovania pre to isté. Obe môžu vyzerať profesionálne, ale slúžia odlišným cieľom. Landing page vedie návštevníka k jednej konkrétnej akcii. Webstránka vysvetľuje firmu, služby a možnosti spolupráce v širšom kontexte.
 
@@ -251,8 +251,8 @@ Vo WebKlienti vám pomôžeme vybrať rozsah podľa cieľa, rozpočtu a toho, č
     title: 'Ako si vybrať správnu doménu pre firmu',
     metaTitle: 'Ako si vybrať správnu doménu pre firmu | Tipy',
     excerpt: 'Správna doména sa ľahko pamätá, píše aj vyslovuje. Zistite, ako vybrať názov a koncovku, čomu sa vyhnúť a čo skontrolovať pred registráciou.',
-    date: '19. septembra 2026',
-    iso: '2026-09-19',
+    date: '24. augusta 2026',
+    iso: '2026-08-24',
     readTime: '8 min čítania',
     content: `Doména je adresa, na ktorej vás zákazníci nájdu. Nie je to iba technický detail. Zákazník ju uvidí v e-maile, v reklame, na vizitke aj v Google. Ak sa ťažko píše alebo si ju ľudia mýlia s konkurenciou, môže firmu stáť návštevy aj dôveru.
 
@@ -325,8 +325,8 @@ Vo WebKlienti vám pomôžeme skontrolovať dostupnosť, nastaviť doménu a pre
     title: 'Čo je webhosting a prečo na ňom záleží',
     metaTitle: 'Čo je webhosting a prečo na ňom záleží?',
     excerpt: 'Webhosting ukladá súbory webstránky a sprístupňuje ich návštevníkom. Vysvetľujeme typy hostingu, výkon, bezpečnosť, cenu a výber pre malú firmu.',
-    date: '19. septembra 2026',
-    iso: '2026-09-19',
+    date: '31. augusta 2026',
+    iso: '2026-08-31',
     readTime: '8 min čítania',
     content: `Webhosting je služba, ktorá poskytuje priestor a technické zázemie pre webstránku. Keď návštevník zadá vašu doménu, hosting odošle jeho prehliadaču súbory, z ktorých sa stránka zobrazí.
 
@@ -408,8 +408,8 @@ Vo WebKlienti vám pomôžeme vybrať a nastaviť hosting tak, aby ste rozumeli 
     title: 'Redizajn webu: kedy je správny čas?',
     metaTitle: 'Redizajn webu: kedy je správny čas?',
     excerpt: 'Zistite, kedy sa oplatí redizajn webu, čo skontrolovať, ako nestratiť SEO návštevnosť a kedy stačia úpravy namiesto nového webu a čo merať.',
-    date: '19. septembra 2026',
-    iso: '2026-09-19',
+    date: '5. septembra 2026',
+    iso: '2026-09-05',
     readTime: '10 min čítania',
     content: `Redizajn webu nie je súťaž o modernejší vzhľad. Správny redizajn rieši konkrétny problém: návštevníci nerozumejú ponuke, web neprináša dopyty, nefunguje na mobile alebo už nezodpovedá tomu, čo firma dnes ponúka.
 
@@ -485,8 +485,8 @@ Vo WebKlienti redizajn nezačíname farbami. Začíname otázkou, čo má web zl
     title: 'Koľko stránok má mať firemný web?',
     metaTitle: 'Koľko stránok má mať firemný web? Praktický návod',
     excerpt: 'Koľko podstránok potrebuje firemný web? Zistite, čo patrí na úvod, služby, referencie a kontakt a ako vytvoriť štruktúru bez zbytočných stránok.',
-    date: '19. septembra 2026',
-    iso: '2026-09-19',
+    date: '9. septembra 2026',
+    iso: '2026-09-09',
     readTime: '9 min čítania',
     content: `Na otázku, koľko stránok má mať firemný web, neexistuje univerzálne číslo. Malý živnostník môže potrebovať päť kvalitných stránok, zatiaľ čo firma s desiatimi službami ich potrebuje viac. Rozhodujúca nie je veľkosť webu, ale počet dôležitých otázok, na ktoré musí odpovedať.
 
@@ -557,8 +557,8 @@ Vo WebKlienti navrhujeme štruktúru tak, aby bola jednoduchá pre návštevník
     title: 'Ako napísať texty na web, ktoré predávajú',
     metaTitle: 'Ako napísať texty na web, ktoré predávajú',
     excerpt: 'Praktický návod na texty pre web, ktoré hovoria jazykom zákazníka. Naučte sa písať titulky, služby, dôkazy a výzvy k akcii bez prázdnych fráz.',
-    date: '19. septembra 2026',
-    iso: '2026-09-19',
+    date: '14. septembra 2026',
+    iso: '2026-09-14',
     readTime: '10 min čítania',
     content: `Text na webe nepredáva preto, že znie profesionálne. Predáva vtedy, keď návštevník pochopí svoj problém, uvidí riešenie a získa dôvod urobiť ďalší krok.
 

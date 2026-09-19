@@ -217,7 +217,7 @@ function HomePage() {
           {t.nav.map((label, i) => (
             <button key={i} onClick={() => scrollTo(NAV_IDS[i])} style={{ background: 'none', border: 'none', color: C.textSub, cursor: 'pointer', fontSize: 15, fontWeight: 500, fontFamily: 'Inter, sans-serif' }}>{label}</button>
           ))}
-          <Link to="/blog" style={{ color: C.textSub, textDecoration: 'none', fontSize: 15, fontWeight: 500 }}>Blog</Link>
+          {lang === 'sk' && <Link to="/blog" style={{ color: C.textSub, textDecoration: 'none', fontSize: 15, fontWeight: 500 }}>Blog</Link>}
         </div>
         <div style={{ display: 'flex', gap: 20, alignItems: 'center' }} className="desktop-nav">
           <a href="tel:+421907890600" className="nav-phone">
@@ -242,7 +242,7 @@ function HomePage() {
           {t.nav.map((label, i) => (
             <button key={i} onClick={() => scrollTo(NAV_IDS[i])} style={{ background: 'none', border: 'none', color: C.text, cursor: 'pointer', fontSize: 18, fontWeight: 600, textAlign: 'left', padding: '8px 0', fontFamily: 'Inter, sans-serif' }}>{label}</button>
           ))}
-          <Link to="/blog" onClick={() => setMenuOpen(false)} style={{ color: C.text, textDecoration: 'none', fontSize: 18, fontWeight: 600, padding: '8px 0' }}>Blog</Link>
+          {lang === 'sk' && <Link to="/blog" onClick={() => setMenuOpen(false)} style={{ color: C.text, textDecoration: 'none', fontSize: 18, fontWeight: 600, padding: '8px 0' }}>Blog</Link>}
           <a href="tel:+421907890600" className="nav-phone" style={{ fontSize: 16, padding: '8px 0' }}>
             <FaPhoneAlt size={14} style={{ color: C.blue }} /> +421 907 890 600
           </a>
