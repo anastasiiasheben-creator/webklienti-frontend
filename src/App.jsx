@@ -47,7 +47,14 @@ function HomePage() {
   const [heroVisible, setHeroVisible] = useState(true);
   const [finalCtaVisible, setFinalCtaVisible] = useState(false);
 
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
+
+  // Links like /#contact (e.g. from the blog) scroll to that section after the page renders
+  useEffect(() => {
+    if (!hash) return;
+    const timer = setTimeout(() => document.getElementById(hash.slice(1))?.scrollIntoView({ behavior: 'smooth' }), 150);
+    return () => clearTimeout(timer);
+  }, [hash]);
 
   useEffect(() => {
     const handler = () => setNavScrolled(window.scrollY > 10);

@@ -816,7 +816,7 @@ Spolupráca s Montwell ukazuje, že nový web nie je iba otázkou vizuálu. Vlas
 
 Za prvé tri mesiace web získal 57 kliknutí z Google pri priemernej pozícii 6,6. Ďalšie výsledky budú závisieť od obsahu, dopytu, konkurencie a toho, ako dobre sa podarí návštevnosť premieňať na kontakty.
 
-**Chcete podobný web pre svoju firmu? Pozrite si naše [riešenie pre firmy](/web-149) alebo nám pošlite nezáväzný dopyt.`
+**Chcete podobný web pre svoju firmu? [Objednajte si web tu](/#contact) – stačí vyplniť krátky formulár.**`
   },
   {
     slug: 'webstranka-pre-stavebnu-firmu',
@@ -965,7 +965,7 @@ Nemusíte, ale oplatí sa aspoň raz za mesiac pridať novú realizáciu. Je to 
 
 Web stavebnej firmy nepredáva dizajnom. Predáva tým, že zákazníkovi ukáže, čo ste postavili, kde pracujete, koľko to zhruba stojí a ako s vami prebieha spolupráca. Keď tieto veci napíšete konkrétne a doplníte ich profilom v Google Mapách, web začne pracovať popri odporúčaniach – aj vtedy, keď ste na stavbe a telefón nedvíhate.
 
-**Chcete web pre svoju stavebnú firmu? Pozrite si naše [riešenie pre firmy](/web-149) alebo nám pošlite nezáväzný dopyt.**`
+**Chcete web pre svoju stavebnú firmu? [Objednajte si web tu](/#contact) – stačí vyplniť krátky formulár.**`
   },
   {
     slug: 'webstranka-pre-autoservis',
@@ -1108,7 +1108,7 @@ Hlavne otváracie hodiny, dovolenky a cenník. Ak ich máte neaktuálne, zákazn
 
 Web autoservisu nemusí byť veľký ani drahý. Musí rýchlo odpovedať na otázky vodiča: robíte to, čo potrebujem? Koľko to stojí? Kde ste? Ako sa objednám? Keď k tomu pridáte dobré recenzie a aktuálny profil v Google Mapách, budete pre ľudí vo vašom okolí jasnou voľbou vo chvíli, keď im zasvieti kontrolka.
 
-**Chcete moderný web pre svoj autoservis? Pozrite si naše [riešenie pre firmy](/web-149) alebo nám pošlite nezáväzný dopyt.**`
+**Chcete moderný web pre svoj autoservis? [Objednajte si web tu](/#contact) – stačí vyplniť krátky formulár.**`
   },
   {
     slug: 'webstranka-pre-elektrikara',
@@ -1258,6 +1258,6 @@ Jednoduchý prezentačný web nemusí byť drahý. Prehľad cien nájdete v čl�
 
 Web elektrikára má dve úlohy: rýchlo pomôcť človeku, ktorému niečo nefunguje, a presvedčiť toho, kto si vyberá odborníka na väčšiu prácu. Konkrétne služby, oprávnenia, región, fotky z realizácií, referencie a viditeľný telefón – to je celý recept. Nič viac na začiatok nepotrebujete.
 
-**Chcete web pre svoju elektrikársku živnosť? Pozrite si naše [riešenie pre firmy](/web-149) alebo nám pošlite nezáväzný dopyt.**`
+**Chcete web pre svoju elektrikársku živnosť? [Objednajte si web tu](/#contact) – stačí vyplniť krátky formulár.**`
   },
 ];

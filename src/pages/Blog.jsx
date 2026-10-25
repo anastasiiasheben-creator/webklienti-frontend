@@ -159,7 +159,7 @@ export default function Blog() {
       <div style={{ background: C.blue, padding: '80px 40px', textAlign: 'center' }}>
         <h2 style={{ fontSize: 32, fontWeight: 700, color: '#fff', marginBottom: 16 }}>Potrebujete web pre vašu firmu?</h2>
         <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: 32, fontSize: 16 }}>Hotový za 3 dni od 149 €</p>
-        <Link to="/" style={{ background: '#fff', color: C.blue, padding: '14px 36px', borderRadius: 12, fontWeight: 700, fontSize: 16, textDecoration: 'none', display: 'inline-block' }}>
+        <Link to="/#contact" style={{ background: '#fff', color: C.blue, padding: '14px 36px', borderRadius: 12, fontWeight: 700, fontSize: 16, textDecoration: 'none', display: 'inline-block' }}>
           Objednať web →
         </Link>
       </div>

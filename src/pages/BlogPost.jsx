@@ -2341,7 +2341,7 @@ export default function BlogPost() {
             Hotový za 3 dni od 149 €. Bez mesačných poplatkov.
           </p>
           <Link
-            to="/"
+            to="/#contact"
             style={{
               background: '#fff',
               color: C.blue,
