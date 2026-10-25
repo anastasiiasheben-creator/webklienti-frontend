@@ -818,4 +818,446 @@ Za prvé tri mesiace web získal 57 kliknutí z Google pri priemernej pozícii 6
 
 **Chcete podobný web pre svoju firmu? Pozrite si naše [riešenie pre firmy](/web-149) alebo nám pošlite nezáväzný dopyt.`
   },
+  {
+    slug: 'webstranka-pre-stavebnu-firmu',
+    title: 'Webstránka pre stavebnú firmu: čo musí obsahovať, aby prinášala zákazky',
+    metaTitle: 'Webstránka pre stavebnú firmu | Čo musí obsahovať',
+    excerpt: 'Ako má vyzerať web stavebnej firmy, ktorý prináša dopyty? Realizácie, služby, lokalita, referencie a kontakt – praktický návod od ľudí, ktorí weby pre remeselníkov robia.',
+    date: '28. septembra 2026',
+    iso: '2026-09-28',
+    readTime: '11 min čítania',
+    content: `Väčšina stavebných firiem, s ktorými sa rozprávame, má rovnaký príbeh. Roky fungovali z odporúčaní, práce bolo dosť a web neriešili. Potom prišlo slabšie obdobie, susedné firmy začali brať zákazky, o ktorých ani nevedeli, a zrazu bolo jasné, že jeden telefón od známeho nestačí.
+
+Zákazník, ktorý ide rekonštruovať kúpeľňu za osem tisíc eur alebo zatepľovať dom, sa nerozhoduje za päť minút. Hľadá, porovnáva, ukazuje weby manželke a pýta sa známych. Ak vás v tomto procese nenájde alebo nájde iba profil na Facebooku s poslednou fotkou spred dvoch rokov, vypadávate z výberu skôr, než ste mali šancu.
+
+V tomto článku nájdete presne to, čo by mal web stavebnej firmy obsahovať. Nie teóriu, ale veci, ktoré na stavebných weboch reálne rozhodujú o tom, či zazvoní telefón.
+
+## Zákazník vám neverí, kým mu neukážete dôkaz
+
+Toto je dôležité pochopiť ešte pred tým, než začnete riešiť farby a logo. Stavebníctvo má u bežných ľudí zlú povesť. Každý pozná niekoho, komu firma nedokončila prácu, prekročila rozpočet alebo zmizla so zálohou.
+
+Zákazník preto na váš web neprichádza s otázkou „sú dobrí?“. Prichádza s otázkou „nedopadnem s nimi zle?“. Celý web má na túto obavu odpovedať. Nie sľubmi, ale dôkazmi.
+
+Veta „sme spoľahlivá firma s dlhoročnými skúsenosťami“ je na každom druhom webe a zákazník ju preskočí. Veta „za posledné štyri roky sme dokončili 63 rekonštrukcií bytov v Trnave a okolí, všetky v dohodnutom termíne alebo s vopred ohláseným posunom“ už niečo hovorí. Ak máte takéto čísla, použite ich. Ak ich nemáte, začnite si ich zapisovať.
+
+## Realizácie: najdôležitejšia stránka celého webu
+
+Na weboch stavebných firiem býva galéria realizácií spravidla najnavštevovanejšia stránka hneď po úvodnej. Ľudia si chcú pozrieť, čo ste postavili, a podľa toho sa rozhodujú.
+
+Čo funguje:
+
+- **Fotografie pred a po.** Zákazník potrebuje vidieť zmenu. Samotná fotka hotovej kúpeľne je pekná, ale až porovnanie s pôvodným stavom ukáže, akú prácu ste odviedli.
+- **Krátky popis ku každej realizácii.** Čo sa robilo, kde, ako dlho to trvalo. Napríklad: „Rekonštrukcia kúpeľne v paneláku, Trnava – Družba. Vybúranie bytového jadra, nové rozvody, sprchový kút so žľabom. 14 pracovných dní.“
+- **Rozdelenie podľa typu práce.** Kúpeľne, kuchyne, podkrovia, fasády, novostavby. Kto hľadá zateplenie, nechce prechádzať fotky kúpeľní.
+- **Vlastné fotografie.** Obrázky z fotobanky ľudia spoznajú okamžite a pôsobia presne opačne, než chcete.
+
+Fotky nemusí robiť profesionál. Stačí mobil, ale s pár pravidlami: foťte cez deň, upracte stavbu pred fotením, foťte z rovnakého miesta pred aj po a urobte viac záberov – vyberiete si neskôr. Najväčšia chyba, ktorú vidíme, je, že firma fotí iba hotové veci. Rozpracovaná stavba s čistými rozvodmi a poriadkom na stavenisku ukazuje kvalitu možno ešte lepšie.
+
+## Služby napísané tak, ako ich hľadá zákazník
+
+Na mnohých weboch stavebných firiem je zoznam služieb napísaný jazykom stavbára: „murárske práce, obklady a dlažby, sadrokartón, ZTI“. Zákazník však takto nerozmýšľa. Hľadá „rekonštrukcia kúpeľne“, „prerobenie bytového jadra“ alebo „zateplenie rodinného domu“.
+
+Každá služba, ktorú chcete predávať, by mala mať vlastnú sekciu alebo podstránku. Na nej odpovedzte na štyri otázky:
+
+1. **Čo presne robíte** – vrátane toho, čo zákazník často nevie, že k tomu patrí (napríklad odvoz sutiny, vybavenie kontajnera, revízie).
+2. **Pre koho** – byty, rodinné domy, firmy, bytové domy.
+3. **Ako to prebieha** – obhliadka, cenová ponuka, zmluva, harmonogram, odovzdanie.
+4. **Koľko to približne stojí** – alebo aspoň od čoho cena závisí.
+
+Samostatné podstránky majú aj výhodu pri vyhľadávaní. Google vás ľahšie zobrazí pri „rekonštrukcia kúpeľne Trnava“, keď máte stránku venovanú presne tomu, než keď je kúpeľňa jedno slovo v dlhom zozname. Koľko podstránok je rozumné mať, rozoberáme v článku [Koľko stránok má mať firemný web?](/blog/kolko-stranok-ma-mat-firemny-web).
+
+## Ceny: zverejniť či nie?
+
+Na túto otázku dostávame od stavebných firiem najviac námietok. „Každá zákazka je iná, cenu neviem povedať dopredu.“ To je pravda. Lenže zákazník nepotrebuje presnú cenu. Potrebuje vedieť, či sa vôbec oplatí vám volať.
+
+Funguje napríklad:
+
+- cena „od“ pri typických zákazkách – „rekonštrukcia kúpeľne od 6 500 € vrátane materiálu“,
+- rozpätie pre bežný byt alebo dom,
+- zoznam faktorov, ktoré cenu zvyšujú alebo znižujú.
+
+Firmy, ktoré začnú uvádzať orientačné ceny, často hovoria, že dopytov síce nepribudlo veľa, ale ubudli tie zbytočné. Ľudia s rozpočtom 2 000 € na celú kúpeľňu sa prestanú ozývať a vy nestrácate čas obhliadkami, ktoré nikdy nevedú k zákazke.
+
+## Kde pracujete – napíšte to konkrétne
+
+Stavebná firma takmer vždy pôsobí v určitom okruhu. Zákazník z Piešťan potrebuje rýchlo vedieť, či k nemu pôjdete. Nenechávajte ho hádať.
+
+Na web uveďte mestá a okresy, kde pracujete, a ideálne aj konkrétne obce, kde ste už realizovali zákazky. Pri realizáciách píšte lokalitu. Google aj zákazník tak dostanú jasný signál, že v danom regióne naozaj pôsobíte.
+
+K webu patrí aj **Google Business Profile** – záznam v Google Mapách. Pri vyhľadávaní typu „stavebná firma Trnava“ sa výsledky z máp zobrazujú nad bežnými webmi. Profil s fotografiami, recenziami a odkazom na web je pre lokálnu firmu jedna z najlepších investícií času. Viac o tom v článku [Čo je to lokálne SEO a prečo na ňom záleží?](/blog/lokalne-seo-slovensko).
+
+## Referencie, ktoré niečo znamenajú
+
+„Spokojný zákazník, Bratislava“ neznamená nič. Referencia má váhu, keď je konkrétna:
+
+„Robili nám kompletnú rekonštrukciu bytu 3+1. Termín posunuli o týždeň, ale vopred nám to povedali a vysvetlili prečo. Cena sedela s ponukou. – Martina K., Trnava“
+
+Všimnite si, že táto referencia obsahuje aj malý problém. Paradoxne práve to ju robí dôveryhodnou. Zákazníci vedia, že na stavbe sa vždy niečo pokazí. Zaujíma ich, ako to riešite.
+
+Ako zbierať referencie: po odovzdaní zákazky pošlite zákazníkovi krátku správu s odkazom na Google recenzie. Najlepšie ešte v ten deň, keď je spokojnosť najväčšia. Ak recenziu nenapíše, po týždni pripomeňte. Väčšina ľudí nie je proti, len zabudne.
+
+## Ako vyzerá spolupráca s vami
+
+Pre človeka, ktorý rekonštruuje prvýkrát, je celý proces neznámy. Nevie, čo príde po prvom telefonáte, kedy platí zálohu, kto vybavuje materiál, čo ak sa niečo pokazí.
+
+Jednoduchá sekcia „Ako to u nás funguje“ s piatimi krokmi odstráni veľkú časť neistoty:
+
+1. Zavoláte alebo vyplníte formulár.
+2. Prídeme na obhliadku – zadarmo, do týždňa.
+3. Pošleme rozpočet s rozpisom prác a materiálu.
+4. Podpíšeme zmluvu s termínom a platobným kalendárom.
+5. Realizujeme a odovzdávame s preberacím protokolom.
+
+Ak dávate záruku nad rámec zákona, napíšte to. Ak máte poistenie zodpovednosti za škodu, napíšte to. Sú to presne veci, ktoré zákazník potrebuje počuť.
+
+## Formulár, ktorý vám ušetrí čas
+
+Telefonát je stále najčastejší spôsob, akým zákazníci stavebnú firmu kontaktujú. Telefónne číslo preto musí byť viditeľné v hlavičke a na mobile klikateľné.
+
+Formulár však má jednu veľkú výhodu: zákazník do neho napíše viac informácií a vy si ich viete pozrieť, keď máte čas – nie keď stojíte na lešení. Dobrý dopytový formulár pre stavebnú firmu obsahuje:
+
+- typ práce (výber z možností),
+- lokalitu,
+- približný termín,
+- stručný popis,
+- možnosť priložiť fotografie.
+
+Fotky od zákazníka vám často povedia viac než desaťminútový telefonát a ušetria jednu zbytočnú obhliadku.
+
+## Chyby, ktoré na stavebných weboch vidíme najčastejšie
+
+- Galéria s desiatimi fotkami, z ktorých polovica je z fotobanky.
+- Text „O nás“, ktorý by sa dal skopírovať na web akejkoľvek inej firmy.
+- Žiadna zmienka o regióne pôsobenia.
+- Kontakt iba v pätičke alebo iba e-mail bez telefónu.
+- Web, ktorý sa na mobile načítava päť sekúnd kvôli nekomprimovaným fotkám.
+- Posledná realizácia pridaná pred tromi rokmi – zákazník si myslí, že firma už nefunguje.
+
+Ďalšie bežné chyby nájdete v článku [10 najčastejších chýb na firemných webstránkach](/blog/najcastejsie-chyby-na-firemnom-webe).
+
+## Čo pripraviť, keď si chcete dať web spraviť
+
+Najviac času pri tvorbe webu nestojí programovanie, ale čakanie na podklady. Ak chcete mať web rýchlo, pripravte si:
+
+- 10 až 20 najlepších realizácií s fotkami a krátkym popisom,
+- zoznam služieb zoradený podľa toho, čo chcete predávať najviac,
+- región pôsobenia,
+- tri až päť referencií,
+- logo a kontaktné údaje.
+
+Podrobný zoznam nájdete v článku [Ako pripraviť podklady na tvorbu webu](/blog/ako-pripravit-podklady-na-tvorbu-webu).
+
+## FAQ
+
+### Koľko stojí webstránka pre stavebnú firmu?
+Prezentačný web so službami, galériou realizácií a dopytovým formulárom nemusí stáť tisíce eur. Cena závisí najmä od počtu podstránok a toho, či potrebujete napríklad viac jazykov. Prehľad nájdete v článku [Koľko stojí webstránka na Slovensku](/blog/kolko-stoji-webstranka-na-slovensku).
+
+### Nestačí mi profil na Facebooku?
+Facebook je dobrý doplnok, ale nie náhrada. Zákazník, ktorý hľadá v Google, sa k vášmu Facebooku často ani nedostane. A príspevky sa po čase stratia v časovej osi, kým realizácie na webe zostávajú prehľadne usporiadané.
+
+### Ako dlho trvá, kým web začne prinášať dopyty?
+Pri lokálnych vyhľadávaniach v menšom meste sa prvé výsledky často objavia za niekoľko týždňov. Vo väčších mestách s vyššou konkurenciou to trvá dlhšie. Rýchlosť zvýšite tým, že pravidelne pridávate nové realizácie.
+
+### Musím web sám aktualizovať?
+Nemusíte, ale oplatí sa aspoň raz za mesiac pridať novú realizáciu. Je to najjednoduchší spôsob, ako ukázať zákazníkom aj Google, že firma žije.
+
+## Záver
+
+Web stavebnej firmy nepredáva dizajnom. Predáva tým, že zákazníkovi ukáže, čo ste postavili, kde pracujete, koľko to zhruba stojí a ako s vami prebieha spolupráca. Keď tieto veci napíšete konkrétne a doplníte ich profilom v Google Mapách, web začne pracovať popri odporúčaniach – aj vtedy, keď ste na stavbe a telefón nedvíhate.
+
+**Chcete web pre svoju stavebnú firmu? Pozrite si naše [riešenie pre firmy](/web-149) alebo nám pošlite nezáväzný dopyt.**`
+  },
+  {
+    slug: 'webstranka-pre-autoservis',
+    title: 'Webstránka pre autoservis: ako získať viac zákazníkov z okolia',
+    metaTitle: 'Webstránka pre autoservis | Viac zákazníkov z okolia',
+    excerpt: 'Čo musí mať web autoservisu, aby ho vodiči našli v Google a objednali sa? Služby, ceny, objednávanie termínov, recenzie a lokálne SEO – prakticky a bez teórie.',
+    date: '8. októbra 2026',
+    iso: '2026-10-08',
+    readTime: '10 min čítania',
+    content: `Autoservis je jeden z mála biznisov, kde zákazník hľadá pomoc v strese. Svieti mu kontrolka, auto zvláštne klepe, o tri dni má STK alebo potrebuje prezuť gumy, lebo ráno bol mráz. Otvorí mobil, napíše „autoservis“ a názov mesta a za dve minúty sa rozhodne.
+
+V týchto dvoch minútach nerozhoduje, aký dobrý mechanik ste. Rozhoduje, čo zákazník vidí na displeji: recenzie, vzdialenosť, otváracie hodiny a či sa dá jednoducho objednať. Web je miesto, kde tieto veci buď nájde rýchlo, alebo nenájde vôbec.
+
+Robíme weby pre malé firmy vrátane servisov a dielní a pri autoservisoch sa opakujú stále tie isté otázky aj chyby. Tu je to, čo naozaj funguje.
+
+## Ako vodič vyberá servis
+
+Predstavte si typickú situáciu. Majiteľ päťročnej Octavie býva v Trnave, značkový servis je mu drahý a hľadá alternatívu. Do Google napíše „servis Škoda Trnava“. Zobrazia sa mu tri servisy v mapách a pod nimi niekoľko webov.
+
+Klikne na servis s najlepšími recenziami. Na webe hľadá tri veci: či robia Škody, koľko stojí servisná prehliadka a ako sa objednať. Ak to nájde do pol minúty, objedná sa. Ak musí preklikávať, vráti sa späť a skúsi ďalší servis.
+
+Celý web autoservisu by mal byť postavený okolo tejto pol minúty.
+
+## Úvodná stránka: tri veci hneď hore
+
+Na úvodnej stránke musí byť bez posúvania vidieť:
+
+- **čo robíte** – jednou vetou, napríklad „Servis a opravy osobných áut všetkých značiek, pneuservis, príprava na STK“,
+- **kde ste** – mesto a ideálne aj mestská časť,
+- **ako sa objednať** – tlačidlo na zavolanie a tlačidlo na online objednanie.
+
+Veľký obrázok auta alebo dielne je pekný, ale ak kvôli nemu zákazník na mobile nevidí telefónne číslo, robí viac škody ako úžitku.
+
+## Služby: konkrétne, nie všeobecne
+
+„Komplexné servisné služby pre vaše vozidlo“ neznamená nič. Zákazník hľadá konkrétny úkon. Napíšte zoznam toho, čo naozaj robíte:
+
+- servisná prehliadka podľa predpisu výrobcu,
+- výmena oleja a filtrov,
+- brzdy – platničky, kotúče, brzdová kvapalina,
+- výmena rozvodov,
+- diagnostika a vymazanie chýb,
+- plnenie a dezinfekcia klimatizácie,
+- geometria,
+- pneuservis a uskladnenie pneumatík,
+- príprava na STK a EK.
+
+Ak niektoré služby nerobíte, je fér to napísať tiež. Zákazník, ktorý potrebuje opravu automatickej prevodovky, ocení, keď hneď vie, že s tým treba ísť inde, a možno sa k vám vráti s niečím iným.
+
+## Cenník: najväčší rozdiel medzi vami a konkurenciou
+
+Vodiči sa servisov boja kvôli peniazom. Nevedia, či im nenaúčtujú zbytočné práce, a nemajú ako porovnať. Servis, ktorý zverejní aspoň orientačné ceny, okamžite pôsobí dôveryhodnejšie.
+
+Nemusíte zverejniť všetko. Stačia najčastejšie úkony:
+
+- výmena oleja vrátane práce (bez materiálu alebo s rozpätím pre bežné autá),
+- prezutie pneumatík podľa veľkosti diskov,
+- plnenie klimatizácie,
+- diagnostika,
+- hodinová sadzba.
+
+Pridajte vetu, ktorá rieši najväčší strach: „Žiadnu prácu navyše neurobíme bez vášho súhlasu. Ak pri oprave nájdeme ďalší problém, zavoláme vám s cenou.“ Táto jedna veta niekedy predá viac než celá stránka o vašich skúsenostiach.
+
+## Online objednanie termínu
+
+Veľa ľudí rieši auto vo chvíli, keď vy už máte zatvorené – večer doma alebo cez obednú prestávku v práci. Ak sa dá objednať iba telefonicky v pracovnom čase, časť z nich zabudne alebo si medzitým nájde servis, kde sa dalo objednať hneď.
+
+Pre menší servis stačí jednoduchý formulár:
+
+- značka a model auta,
+- čo potrebuje (výber z najčastejších úkonov + voľný text),
+- preferovaný dátum,
+- telefón.
+
+Ráno si dopyty prejdete a zákazníkom potvrdíte termín. Rezervačný kalendár s voľnými termínmi sa oplatí až vtedy, keď máte viac zdvihákov a chcete plánovanie automatizovať. Pri dvoch mechanikoch často spôsobí viac zmätku než úžitku.
+
+## Značky a špecializácia
+
+Ak sa na niečo špecializujete, povedzte to nahlas. „Špecialista na koncern VW“, „servis francúzskych áut“ alebo „dodávky a úžitkové vozidlá“ – to sú presne tie slová, ktoré ľudia píšu do Google.
+
+Pre každú hlavnú značku alebo špecializáciu sa oplatí vytvoriť samostatnú podstránku. Servis, ktorý má stránku „Servis Škoda Trnava“ s popisom, čo pri Škodách robí a koľko stojí prehliadka, má oveľa väčšiu šancu zobraziť sa pri tomto vyhľadávaní než servis, ktorý má na webe iba vetu „opravujeme všetky značky“.
+
+## Recenzie rozhodujú viac než čokoľvek iné
+
+Pri autoservise je hodnotenie v Google Mapách často prvá vec, ktorú zákazník vidí – ešte predtým, než sa dostane na web. Servis s hodnotením 4,8 a stovkou recenzií vyhráva nad servisom s hodnotením 4,1 a desiatimi recenziami, aj keď je o kilometer ďalej.
+
+Ako získať viac recenzií bez prosenia:
+
+- pri odovzdaní auta povedzte zákazníkovi, že vám recenzia pomôže,
+- v ten istý deň mu pošlite SMS s priamym odkazom na hodnotenie,
+- na pult dajte malú kartičku s QR kódom.
+
+Odpovedajte na všetky recenzie, aj negatívne. Vecná a slušná odpoveď na kritiku často presvedčí ďalších zákazníkov viac než desať pochvál. Ukazuje, že problém riešite a neschovávate sa.
+
+Najlepšie recenzie si skopírujte aj na web – s menom a autom zákazníka, ak súhlasí. Ako funguje lokálne vyhľadávanie a ako sa v ňom dostať vyššie, rozoberáme v článku [Čo je to lokálne SEO a prečo na ňom záleží?](/blog/lokalne-seo-slovensko).
+
+## Praktické informácie, ktoré zákazníci hľadajú
+
+Tieto veci sa zdajú drobnosti, ale zákazníci kvôli nim volajú alebo odchádzajú:
+
+- **presná adresa a mapa** – aj s poznámkou typu „vjazd z bočnej ulice za čerpacou stanicou“,
+- **otváracie hodiny** – aktuálne, vrátane sviatkov a dovoleniek,
+- **parkovanie** – kde nechať auto, ak ho prinesie mimo otváracích hodín,
+- **náhradné vozidlo alebo odvoz** – ak ponúkate, je to silný argument,
+- **platba kartou** – áno, ľudia sa na to stále pýtajú,
+- **firemní zákazníci** – fakturácia pre firmy a správa vozového parku.
+
+## Ukážte dielňu a ľudí
+
+Pri servise si ľudia chcú overiť, že nejdú „do garáže za panelákom“ (aj keď mnoho výborných servisov tak začínalo). Fotografie čistej dielne, náradia, diagnostiky a ľudí, ktorí na autách robia, budujú dôveru.
+
+Krátky text o majiteľovi – koľko rokov robí s autami, kde sa učil, prečo si otvoril vlastný servis – pomáha viac než všeobecné frázy. Ľudia chcú vedieť, komu nechávajú kľúče.
+
+## Mobil na prvom mieste
+
+Väčšina ľudí hľadá servis na mobile. Web autoservisu preto musí:
+
+- načítať sa rýchlo aj na slabšom signále,
+- mať tlačidlo na zavolanie stále po ruke,
+- mať formulár, ktorý sa dá vyplniť palcom,
+- zobrazovať cenník bez zväčšovania a posúvania do strán.
+
+Ak si nie ste istí, ako na tom je váš súčasný web, otvorte ho na vlastnom mobile a skúste sa sami objednať. Ak vás to otrávi, zákazníka tiež. Ďalšie typické problémy nájdete v článku [Prečo vám web neprináša zákazníkov](/blog/preco-web-neprinas-zakaznikov).
+
+## FAQ
+
+### Potrebuje autoservis web, keď má profil v Google Mapách?
+Profil v Mapách je dôležitý, ale priestor v ňom je obmedzený. Na webe vysvetlíte služby, ukážete cenník, zbierate objednávky a môžete mať podstránky pre jednotlivé značky. Web a profil sa navzájom podporujú – Google viac dôveruje firme, ktorá má oboje.
+
+### Oplatí sa robiť web aj pre malý servis s jedným mechanikom?
+Áno, často ešte viac. Malý servis nemá rozpočet na reklamu a web s dobrým lokálnym SEO je najlacnejší spôsob, ako získať zákazníkov zo svojho okolia.
+
+### Mám dať na web aj presné ceny dielov?
+Nie, ceny dielov sa menia a líšia podľa auta. Stačí cena práce a orientačné rozpätie pri bežných úkonoch.
+
+### Ako často treba web aktualizovať?
+Hlavne otváracie hodiny, dovolenky a cenník. Ak ich máte neaktuálne, zákazník príde k zatvorenej bráne a to si zapamätá.
+
+## Záver
+
+Web autoservisu nemusí byť veľký ani drahý. Musí rýchlo odpovedať na otázky vodiča: robíte to, čo potrebujem? Koľko to stojí? Kde ste? Ako sa objednám? Keď k tomu pridáte dobré recenzie a aktuálny profil v Google Mapách, budete pre ľudí vo vašom okolí jasnou voľbou vo chvíli, keď im zasvieti kontrolka.
+
+**Chcete moderný web pre svoj autoservis? Pozrite si naše [riešenie pre firmy](/web-149) alebo nám pošlite nezáväzný dopyt.**`
+  },
+  {
+    slug: 'webstranka-pre-elektrikara',
+    title: 'Webstránka pre elektrikára: ako získať viac zákaziek z Google',
+    metaTitle: 'Webstránka pre elektrikára | Viac zákaziek z Google',
+    excerpt: 'Ako má vyzerať web elektrikára, aby prinášal dopyty? Služby, oprávnenia, región, havarijné výjazdy, revízie a referencie – návod pre elektrikárov a malé firmy.',
+    date: '18. októbra 2026',
+    iso: '2026-10-18',
+    readTime: '10 min čítania',
+    content: `Dobrý elektrikár má práce väčšinou dosť. Telefón zvoní od známych, od stavebných firiem, od bývalých zákazníkov. Prečo by teda riešil web?
+
+Odpoveď počujeme od elektrikárov často sami: lebo práca z odporúčaní je nepredvídateľná. Raz je jej toľko, že nestíhate, inokedy dva týždne čakáte. A lebo z odporúčaní prichádzajú najmä drobné opravy, zatiaľ čo lepšie platené zákazky – celé elektroinštalácie v novostavbách, wallboxy, fotovoltika, inteligentné domácnosti – si ľudia hľadajú sami cez Google.
+
+Web elektrikára nemusí byť veľký. Musí byť jasný, rýchly a dôveryhodný. V tomto článku je presne to, čo by na ňom malo byť.
+
+## Dva typy zákazníkov, ktorí vás hľadajú
+
+Elektrikára hľadajú ľudia v dvoch úplne odlišných situáciách a web musí fungovať pre oboch.
+
+**Niečo nefunguje a potrebujú pomoc.** Vypadáva istič, nesvieti polovica bytu, zásuvka sa zahrieva. Zákazník je nervózny a nemá čas čítať. Chce telefónne číslo, informáciu, či prídete ešte dnes, a či pracujete v jeho meste. Rozhodne sa za minútu.
+
+**Plánujú väčšiu prácu.** Rekonštrukcia bytu, novostavba, nový rozvádzač, nabíjačka pre elektromobil, revízia pred predajom nehnuteľnosti. Títo zákazníci majú čas, porovnávajú viacerých elektrikárov a čítajú. Zaujímajú ich skúsenosti, referencie, oprávnenia a cena.
+
+Úvodná stránka by preto mala mať hneď hore výrazný kontakt pre prvú skupinu a pod ním prehľad služieb a dôkazov pre druhú.
+
+## Úvod: kto ste, kde a ako vás zastihnúť
+
+Na mobile musí zákazník bez posúvania vidieť:
+
+- čo robíte – „Elektroinštalácie, revízie a poruchy, Trnava a okolie do 30 km“,
+- tlačidlo na zavolanie,
+- ak ponúkate havarijné výjazdy, aj to, kedy – „poruchy riešime aj cez víkend“.
+
+Toto je celá úloha prvej obrazovky. Všetko ostatné môže byť nižšie.
+
+## Služby: napíšte presne, čo robíte
+
+Elektrikár môže znamenať veľa vecí. Niekto robí iba drobné opravy v domácnostiach, iný robí kompletné elektroinštalácie v novostavbách, ďalší sa venuje priemyslu alebo fotovoltike. Zákazník potrebuje rýchlo vedieť, či ste správny človek na jeho problém.
+
+Napíšte konkrétne služby:
+
+- elektroinštalácie v novostavbách a pri rekonštrukciách,
+- výmena a zapojenie rozvádzačov,
+- odborné prehliadky a skúšky (revízie) elektrických inštalácií,
+- hľadanie a odstraňovanie porúch,
+- montáž svietidiel, vypínačov a zásuviek,
+- inštalácia nabíjacích staníc (wallboxov) pre elektromobily,
+- inteligentná domácnosť a riadenie osvetlenia,
+- bleskozvody.
+
+Služby, ktoré chcete robiť viac – zvyčajne tie lepšie platené –, si zaslúžia vlastnú sekciu alebo podstránku. Napríklad stránka o wallboxoch, kde vysvetlíte, čo inštalácia obnáša, či treba navýšiť istenie, koľko to trvá a koľko to približne stojí. Takáto stránka má veľkú šancu zobraziť sa v Google pri vyhľadávaní „inštalácia wallboxu“ s názvom mesta, kde konkurencia často nemá nič.
+
+## Oprávnenia a bezpečnosť
+
+Pri elektrine ide o bezpečnosť a zákazníci to vedia. Mnohí sa boja, že im prácu urobí niekto bez oprávnenia a potom budú mať problém pri kolaudácii, s poisťovňou alebo pri predaji bytu.
+
+Na web preto patrí:
+
+- vaše odborné spôsobilosti (napríklad osvedčenie podľa príslušnej vyhlášky a rozsah, v akom môžete pracovať),
+- či vykonávate odborné prehliadky a skúšky a vystavujete správy,
+- koľko rokov praxe máte,
+- akú záruku dávate na prácu,
+- či ste poistení pre prípad škody.
+
+Netreba z toho robiť dlhý odborný text. Stačí prehľadná sekcia s niekoľkými bodmi. Pre zákazníka, ktorý stavia dom a potrebuje doklady ku kolaudácii, môže byť práve toto rozhodujúce.
+
+## Kde pracujete a kedy prídete
+
+Elektrikár pracuje lokálne. Uveďte mestá a obce, kam dochádzate, a ak účtujete dopravu podľa vzdialenosti, povedzte ako. Zákazník z dediny 25 km od mesta potrebuje vedieť, či k nemu vôbec pôjdete.
+
+Pri poruchách je dôležitá aj rýchlosť. Ak viete prísť v ten istý deň, napíšte to. Ak nie, napíšte reálny čas – „zvyčajne do 2 pracovných dní“. Úprimnosť tu funguje lepšie než sľuby, ktoré potom nedodržíte.
+
+Popri webe si určite založte alebo doplňte **Google Business Profile**. Pri vyhľadávaní „elektrikár“ s názvom mesta sa výsledky v mapách zobrazujú úplne hore a ľudia s poruchou často volajú priamo odtiaľ, bez toho, aby otvorili web. Ako na to, vysvetľujeme v článku [Čo je to lokálne SEO a prečo na ňom záleží?](/blog/lokalne-seo-slovensko).
+
+## Fotky práce, ktorá sa schová do steny
+
+Problém elektrikárov je, že väčšina ich práce po dokončení nie je vidieť. Káble sú v stenách, rozvádzač za dvierkami. Zákazník vidí iba vypínač.
+
+Preto foťte počas práce:
+
+- úhľadne zapojený rozvádzač s popísanými ističmi,
+- vedenie káblov pred omietnutím,
+- hotové osvetlenie v interiéri,
+- nainštalovaný wallbox v garáži.
+
+Pre laika je čistý, prehľadný rozvádzač jasný dôkaz, že robíte poriadne. Ak máte aj fotku „pred“ – starý rozvádzač s keramickými poistkami a zamotanými káblami –, kontrast hovorí sám za seba.
+
+## Referencie s konkrétnym príbehom
+
+Krátka referencia s menom, mestom a typom práce má väčšiu váhu než „spokojný zákazník“. Napríklad:
+
+„V novostavbe nám robili kompletnú elektroinštaláciu aj revíziu ku kolaudácii. Všetko podľa dohody, vrátane papierov. – Peter H., Zeleneč“
+
+Najlepší čas požiadať o referenciu je hneď po odovzdaní práce. Pošlite zákazníkovi SMS s odkazom na Google recenzie. Väčšina ľudí rada pomôže, len to musí byť jednoduché.
+
+## Ceny: aspoň orientačne
+
+Elektrikári ceny na web dávajú neradi, pretože každá práca je iná. Zákazník to chápe. Napriek tomu chce mať aspoň predstavu.
+
+Stačí uviesť:
+
+- cenu výjazdu a prvej hodiny práce,
+- cenu revízie bytu alebo domu podľa veľkosti,
+- orientačné rozpätie pri typických zákazkách, napríklad inštalácia wallboxu.
+
+Zbytočné telefonáty od ľudí, ktorí čakajú, že im vymeníte rozvádzač za päťdesiat eur, sa tým výrazne znížia.
+
+## Kontakt a formulár
+
+Pri poruche zákazník volá. Telefónne číslo musí byť klikateľné a viditeľné v hlavičke na každej stránke.
+
+Pri plánovaných prácach pomôže formulár. Dobrý formulár pre elektrikára obsahuje:
+
+- typ práce,
+- lokalitu,
+- typ objektu – byt, dom, firma,
+- popis situácie,
+- možnosť priložiť fotku rozvádzača alebo problému.
+
+Fotka rozvádzača vám často povie viac než pätnásťminútový telefonát a pomôže vám odhadnúť cenu ešte pred obhliadkou.
+
+## Najčastejšie chyby, ktoré vidíme
+
+- web bez telefónneho čísla na prvej obrazovke,
+- iba zoznam služieb bez akéhokoľvek dôkazu, že ich viete robiť,
+- žiadna informácia o regióne,
+- fotky z fotobanky s elektrikárom v bielej prilbe, ktorý nie ste vy,
+- web, ktorý sa na mobile rozpadá.
+
+Viac v článku [10 najčastejších chýb na firemných webstránkach](/blog/najcastejsie-chyby-na-firemnom-webe).
+
+## FAQ
+
+### Potrebuje elektrikár naozaj web, keď má práce dosť?
+Ak chcete mať prácu stabilnejšiu a vyberať si lepšie zákazky, áno. Web vám pomôže získať zákazníkov, ktorí vás nepoznajú z odporúčaní, a tých je väčšina.
+
+### Stačí jednostránkový web?
+Na začiatok áno. Jedna dobre spravená stránka so službami, regiónom, oprávneniami, referenciami a kontaktom môže fungovať veľmi dobre. Neskôr pridajte podstránky pre služby, ktoré chcete robiť viac.
+
+### Čo ak nemám žiadne fotky realizácií?
+Začnite pri najbližšej zákazke. Mobil a trocha svetla stačia. Za mesiac budete mať dosť materiálu na galériu.
+
+### Koľko stojí web pre elektrikára?
+Jednoduchý prezentačný web nemusí byť drahý. Prehľad cien nájdete v článku [Koľko stojí webstránka na Slovensku](/blog/kolko-stoji-webstranka-na-slovensku), prípadne v článku [Web za 149 € – je to dobrá voľba?](/blog/web-za-149-eur).
+
+## Záver
+
+Web elektrikára má dve úlohy: rýchlo pomôcť človeku, ktorému niečo nefunguje, a presvedčiť toho, kto si vyberá odborníka na väčšiu prácu. Konkrétne služby, oprávnenia, región, fotky z realizácií, referencie a viditeľný telefón – to je celý recept. Nič viac na začiatok nepotrebujete.
+
+**Chcete web pre svoju elektrikársku živnosť? Pozrite si naše [riešenie pre firmy](/web-149) alebo nám pošlite nezáväzný dopyt.**`
+  },
 ];
