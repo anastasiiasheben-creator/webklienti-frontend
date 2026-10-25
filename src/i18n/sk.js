@@ -6,7 +6,7 @@ const sk = {
     "Kontakt"
   ],
   "navCta": "Získať návrh zdarma",
-  "heroBadge": "🔥 Akcia — 50% zľava na spustenie projektu len do konca mesiaca",
+  "heroBadge": "🔥 Akcia — 50% zľava len do konca mesiaca",
   "heroTitle": "Robíme weby navrhnuté na získavanie nových zákazníkov",
   "heroSub": "Kompletný predajný systém: Moderný dizajn + silné SEO + konverzná štruktúra. Hotovo už od 3 dní.",  
   "heroBenefits": [
@@ -17,6 +17,7 @@ const sk = {
     "Bleskové dodanie od 3 dní bez zbytočného naťahovania"
   ],
   "heroCta": "Chcem nezáväzný návrh webu zdarma",
+  "heroOrder": "Objednávka",
   "heroMicro": "prvý koncept do 24 hodín · úplne bez záväzkov · ukážeme vám, ako predávať viac",
   "marketTag": "🌍 Strategický webdizajn pre Slovensko · Česko · Európu",
   "problemLabel": "Kde strácate peniaze?",
@@ -164,8 +165,7 @@ const sk = {
     "Biznis web na dopyty — 499 €",
     "Kompletný E-shop — 999 €"
   ],
-  "intentLabel": "Čo je hlavným cieľom vášho nového webu? *",
-  "intentNote": "Vyberte si váš primárny cieľ — pomôže nám to postaviť štruktúru webu presne na mieru vašej cieľovej skupine.",
+  "intentNote": "Vyberte si balík, ktorý najlepšie sedí vašim aktuálnym cieľom.",
   "intentCards": [
     {
       "value": "Landing page — 149 €",

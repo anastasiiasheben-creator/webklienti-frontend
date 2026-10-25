@@ -32,10 +32,10 @@ export default function Privacy() {
         <h1 style={{ fontSize: 'clamp(26px, 3vw, 40px)', fontWeight: 700, letterSpacing: '-0.02em', color: C.text, marginBottom: 8 }}>
           Zásady ochrany osobných údajov
         </h1>
-        <p style={{ fontSize: 14, color: C.textSub, marginBottom: 48 }}>Platné od 1. januára 2025 | WebKlienti – Ing. Anastasiia Sheben</p>
+        <p style={{ fontSize: 14, color: C.textSub, marginBottom: 48 }}>Platné od 1. januára 2025 | WebKlienti – Ing. A. Sheben</p>
 
         {[
-          { num: '1.', title: 'Prevádzkovateľ', content: (<><p>Prevádzkovateľom webovej stránky www.webklienti.com je:</p><p style={{ marginTop: 12 }}><strong>Ing. Anastasiia Sheben – WebKlienti</strong><br />Ulica Mozartova 5652/12, 917 08 Trnava, Slovenská republika<br />IČO: 56360495 · DIČ: 1087134598<br />E-mail: <a href="mailto:info@webklienti.com" style={{ color: C.blue }}>info@webklienti.com</a><br />Tel.: <a href="tel:+421907890600" style={{ color: C.blue }}>+421 907 890 600</a></p></>) },
+          { num: '1.', title: 'Prevádzkovateľ', content: (<><p>Prevádzkovateľom webovej stránky www.webklienti.com je:</p><p style={{ marginTop: 12 }}><strong>Ing. A. Sheben – WebKlienti</strong><br />Ulica Mozartova 5652/12, 917 08 Trnava, Slovenská republika<br />IČO: 56360495 · DIČ: 1087134598<br />E-mail: <a href="mailto:info@webklienti.com" style={{ color: C.blue }}>info@webklienti.com</a><br />Tel.: <a href="tel:+421907890600" style={{ color: C.blue }}>+421 907 890 600</a></p></>) },
           { num: '2.', title: 'Aké údaje zbierame', content: (<><p>Pri vyplnení objednávkového formulára zbierame:</p><ul style={{ paddingLeft: 24, marginTop: 12 }}>{['Meno a priezvisko', 'E-mailovú adresu', 'Telefónne číslo', 'Informácie o požadovanej službe'].map(i => <li key={i} style={{ marginBottom: 6 }}>{i}</li>)}</ul></>) },
           { num: '3.', title: 'Účel spracovania', content: (<><p>Vaše osobné údaje spracúvame výlučne za účelom:</p><ul style={{ paddingLeft: 24, marginTop: 12 }}>{['Odpovedania na váš dopyt a zaslania cenovej ponuky', 'Plnenia zmluvného vzťahu (ak dôjde k uzavretiu zmluvy)', 'Vedenia účtovnej evidencie v zmysle zákona č. 431/2002 Z. z.'].map(i => <li key={i} style={{ marginBottom: 6 }}>{i}</li>)}</ul></>) },
           { num: '4.', title: 'Právny základ', content: <p>Spracovanie je nevyhnutné na splnenie predzmluvných opatrení (čl. 6 ods. 1 písm. b) GDPR) a na základe vášho súhlasu (čl. 6 ods. 1 písm. a) GDPR).</p> },
@@ -56,7 +56,7 @@ export default function Privacy() {
       </div>
 
       <footer style={{ background: C.dark, color: 'rgba(255,255,255,0.4)', textAlign: 'center', padding: '32px 24px', fontSize: 13 }}>
-        <p>© 2025 Web Klienti · Ing. Anastasiia Sheben · Trnava · Slovensko</p>
+        <p>© 2025 Web Klienti · Ing. A. Sheben · Trnava · Slovensko</p>
       </footer>
     </div>
   );

@@ -27,6 +27,9 @@ export default function HeroSection({ t, lang, onCta }) {
             <button onClick={onCta} className="btn-primary" style={{ fontSize: 16, marginBottom: 16, width: '100%', maxWidth: 480 }}>
               👉 {t.heroCta}
             </button>
+            <button onClick={onCta} className="btn-secondary" style={{ fontSize: 16, marginBottom: 16, width: '100%', maxWidth: 480, display: 'flex' }}>
+              {t.heroOrder}
+            </button>
             <p style={{ fontSize: 14, color: C.textSub }}>{t.heroMicro}</p>
           </div>
           {/* RIGHT — verified client work */}
@@ -39,9 +42,11 @@ export default function HeroSection({ t, lang, onCta }) {
             <p style={{ fontSize: 14, color: C.textSub, lineHeight: 1.6, marginBottom: 16 }}>
               {lang === 'en' ? 'SK + DE website · project gallery · SEO-ready blog' : lang === 'cz' ? 'SK + DE web · galerie realizací · blog připravený pro SEO' : 'SK + DE web · galéria realizácií · blog pripravený pre SEO'}
             </p>
-            <Link to="/blog/spolupraca-s-montwell-webstranka" style={{ color: C.blue, fontWeight: 700, textDecoration: 'none', fontSize: 14 }}>
-              {lang === 'en' ? 'Read the full story about our work with Montwell →' : lang === 'cz' ? 'Přečíst celý příběh o spolupráci s Montwell →' : 'Prečítať celý príbeh o spolupráci s Montwell →'}
-            </Link>
+            {lang === 'sk' && (
+              <Link to="/blog/spolupraca-s-montwell-webstranka" style={{ color: C.blue, fontWeight: 700, textDecoration: 'none', fontSize: 14 }}>
+                Prečítať celý príbeh o spolupráci s Montwell →
+              </Link>
+            )}
           </div>
         </div>
       </div>

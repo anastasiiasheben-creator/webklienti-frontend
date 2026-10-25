@@ -44,7 +44,6 @@ export default function ContactSection({ t, lang, form, setForm, formStatus, set
             </div>
             {/* Intent cards */}
             <div>
-              <p style={{ fontSize: 14, fontWeight: 600, marginBottom: 4, color: C.text }}>{t.intentLabel}</p>
               <p style={{ fontSize: 13, color: C.textSub, marginBottom: 12 }}>{t.intentNote}</p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
                 {t.intentCards.map((card) => {

@@ -201,8 +201,8 @@ function HomePage() {
       `}</style>
 
       {/* Urgency bar — plný solidný pás, nie pill */}
-      <div style={{ background: C.blue, padding: '10px 24px', textAlign: 'center' }}>
-        <span style={{ fontSize: 13, fontWeight: 600, color: '#fff', letterSpacing: 0.2 }}>
+      <div style={{ background: C.blue, padding: '12px 24px', textAlign: 'center' }}>
+        <span style={{ fontSize: 'clamp(15px, 2vw, 18px)', fontWeight: 700, color: '#fff', letterSpacing: 0.2 }}>
           {t.heroBadge}
         </span>
       </div>
@@ -310,7 +310,7 @@ function HomePage() {
           <a href="https://www.instagram.com/webklienti" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style={{ width: 44, height: 44, background: 'linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 18, textDecoration: 'none' }}><FaInstagram /></a>
         </div>
         <p style={{ marginBottom: 12, fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>
-          Ing. Anastasiia Sheben - WebKlienti &bull; IČO: 56360495 &bull; DIČ: 1087134598 &bull; Mozartova 12, Trnava, Slovensko
+          Ing. A. Sheben - WebKlienti &bull; IČO: 56360495 &bull; DIČ: 1087134598 &bull; Mozartova 12, Trnava, Slovensko
         </p>
         <p style={{ marginBottom: 8 }}>{t.footerRights}</p>
         <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)', fontStyle: 'italic' }}>{t.statNote}</p>

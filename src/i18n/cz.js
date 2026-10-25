@@ -6,7 +6,7 @@ const cz = {
     "Kontakt"
   ],
   "navCta": "Získat návrh zdarma",
-  "heroBadge": "🔥 Akce — 50% sleva na spuštění projektu pouze do konce měsíce",
+  "heroBadge": "🔥 Akce — 50% sleva pouze do konce měsíce",
   "heroTitle": "Děláme weby navržené pro získávání nových zákazníků",
   "heroSub": "Kompletní prodejní systém: Moderní design + silné SEO + konverzní struktura. Hotovo už od 3 dnů.",
   "heroBenefits": [
@@ -17,6 +17,7 @@ const cz = {
     "Bleskové dodání od 3 dnů bez zbytečného natahování"
   ],
   "heroCta": "Chci nezávazný návrh webu zdarma",
+  "heroOrder": "Poptávka",
   "heroMicro": "první koncept do 24 hodin · zcela bez závazků · ukážeme vám, jak prodávat víc",
   "marketTag": "🌍 Strategický webdesign pro Česko · Slovensko · Evropu",
   "problemLabel": "Kde ztrácíte peníze?",
@@ -164,8 +165,7 @@ const cz = {
     "Byznys web na poptávky — 12 500 Kč",
     "Kompletní E-shop — 25 000 Kč"
   ],
-  "intentLabel": "Co je hlavním cílem vašeho nového webu? *",
-  "intentNote": "Vyberte si váš primární cíl — pomůže nám to postavit strukturu webu přesně na míru vaší cílové skupině.",
+  "intentNote": "Vyberte si balíček, který nejlépe odpovídá vašim aktuálním cílům.",
   "intentCards": [
     {
       "value": "Landing page — 3 725 Kč",

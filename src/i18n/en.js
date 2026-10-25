@@ -6,7 +6,7 @@ const en = {
     "Contact"
   ],
   "navCta": "Get Free Design",
-  "heroBadge": "🔥 Limited Offer — 50% off project launch until the end of the month",
+  "heroBadge": "🔥 Limited Offer — 50% off until the end of the month",
   "heroTitle": "We build websites designed to bring in new customers",
   "heroSub": "Complete sales engine: Modern design + powerful SEO + conversion-focused structure. Live from 3 business days.",
   "heroBenefits": [
@@ -17,6 +17,7 @@ const en = {
     "Ultra-fast 3-day delivery with zero endless delays"
   ],
   "heroCta": "Get My Free Website Concept",
+  "heroOrder": "Order",
   "heroMicro": "first visual draft in 24 hours · 100% risk-free · see how to grow your sales",
   "marketTag": "🌍 Strategic Web Design for Europe · UK · Global",
   "problemLabel": "Where Are You Losing Money?",
@@ -164,8 +165,7 @@ const en = {
     "Business Lead Generator — 499 €",
     "Full E-Commerce Store — 999 €"
   ],
-  "intentLabel": "What is the primary goal of your new website? *",
-  "intentNote": "Select your core business objective — this helps us architect the exact structure your target audience expects.",
+  "intentNote": "Choose the package that best fits your current goals.",
   "intentCards": [
     {
       "value": "Landing Page — 149 €",

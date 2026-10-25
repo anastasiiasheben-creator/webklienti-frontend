@@ -135,9 +135,11 @@ export default function CaseStudySection({ t, lang }) {
           <div style={{ background: 'rgba(37,99,235,0.05)', border: `1px solid rgba(37,99,235,0.15)`, borderRadius: 12, padding: '14px 20px' }}>
             <span style={{ fontSize: 14, fontWeight: 700, color: C.blue }}>{localT.result}</span>
           </div>
-          <Link to="/blog/spolupraca-s-montwell-webstranka" style={{ display: 'inline-block', marginTop: 16, color: C.blue, fontWeight: 700, textDecoration: 'none' }}>
-            {localT.caseStudyLinkText}
-          </Link>
+          {lang === 'sk' && (
+            <Link to="/blog/spolupraca-s-montwell-webstranka" style={{ display: 'inline-block', marginTop: 16, color: C.blue, fontWeight: 700, textDecoration: 'none' }}>
+              {localT.caseStudyLinkText}
+            </Link>
+          )}
         </div>
 
         {/* ── REVIEWS ── */}
