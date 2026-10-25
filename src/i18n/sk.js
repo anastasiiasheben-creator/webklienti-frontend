@@ -112,7 +112,6 @@ const sk = {
         "Integrácia overených platobných brán (karty, Apple Pay)",
         "Automatické generovanie faktúr a prepojenie na sklad",
         "Prehľadný systém na správu objednávok a zákazníkov",
-        "Prepojenie na Facebook Shop a Instagram nákupy",
         "Kompletné odovzdanie do 14 pracovných dní"
       ],
       "featured": false,

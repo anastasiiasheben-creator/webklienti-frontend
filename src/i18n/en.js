@@ -112,7 +112,6 @@ const en = {
         "Secure payment gateways integration (Stripe, Cards, Apple Pay)",
         "Automated PDF invoicing and real-time inventory management",
         "Intuitive dashboard for tracking orders and customer data",
-        "Facebook Shop and Instagram Shopping catalog sync",
         "Complete delivery and handover within 14 business days"
       ],
       "featured": false,

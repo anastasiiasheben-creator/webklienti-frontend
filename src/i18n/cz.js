@@ -112,7 +112,6 @@ const cz = {
         "Integrace ověřených platebních bran (karty, Apple Pay)",
         "Automatické generování faktur a propojení na sklad",
         "Přehledný systém pro správu objednávek a zákazníků",
-        "Propojení na Facebook Shop a Instagram nákupy",
         "Kompletní odevzdání do 14 pracovních dnů"
       ],
       "featured": false,
