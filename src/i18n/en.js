@@ -92,10 +92,9 @@ const en = {
         "Everything in the Starter package +",
         "Up to 5 fully custom-designed pages (Services, About Us, etc.)",
         "Clean project gallery and organized client testimonials section",
-        "Modern blog/article layout with an easy self-managed system",
         "In-depth keyword research and advanced custom SEO framework",
         "Google Analytics integration for precise conversion tracking",
-        "Complete delivery and handover within 7 business days"
+        "Complete delivery and handover within 5 business days"
       ],
       "featured": true,
       "dark": false

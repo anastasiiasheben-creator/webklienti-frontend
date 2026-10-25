@@ -92,10 +92,9 @@ const cz = {
         "Vše z balíčku Starter +",
         "Až 5 kompletně navržených podstránek (Služby, O nás...)",
         "Přehledná galerie projektů a sekce referencí",
-        "Moderní blog / sekce článků s jednoduchou správou",
         "Kompletní analýza klíčových slov a pokročilé SEO na míru",
         "Nasazení Google Analytics pro přesné sledování konverzí",
-        "Kompletní odevzdání do 7 pracovních dnů"
+        "Kompletní odevzdání do 5 pracovních dnů"
       ],
       "featured": true,
       "dark": false
@@ -203,7 +202,7 @@ const cz = {
   "faqItems": [
     {
       "q": "Kolik reálně trvá vytvoření webu?",
-      "a": "Jsme rychlí, protože máme zaběhnutý proces. Jednostránkový web spustíme od 3 pracovních dnů, vícestránkový byznys web do 7 dnů a plnohodnotný e-shop do 14 dnů od schválení úvodního konceptu."
+      "a": "Jsme rychlí, protože máme zaběhnutý proces. Jednostránkový web spustíme od 3 pracovních dnů, vícestránkový byznys web do 5 pracovních dnů a plnohodnotný e-shop do 14 dnů od schválení úvodního konceptu."
     },
     {
       "q": "Budu platit nějaké pravidelné měsíční poplatky?",

@@ -92,10 +92,9 @@ const sk = {
         "Všetko z balíka Starter +",
         "Až 5 kompletne navrhnutých podstránok (Služby, O nás...)",
         "Prehľadná galéria projektov a sekcia referencií",
-        "Moderný blog / sekcia článkov s jednoduchou správou",
         "Kompletná analýza kľúčových slov a pokročilé SEO na mieru",
         "Nasadanie Google Analytics pre presné sledovanie konverzií",
-        "Kompletné odovzdanie do 7 pracovných dní"
+        "Kompletné odovzdanie do 5 pracovných dní"
       ],
       "featured": true,
       "dark": false
