@@ -102,10 +102,10 @@ function HomePage() {
   const declineCookies = () => { localStorage.setItem('wk_cookie', '0'); setCookieVisible(false); };
 
   const handleSubmit = async () => {
-    if (!form.name || !form.email || !form.package) {
-      alert(lang === 'en' ? 'Please fill in name, email and select a plan'
-        : lang === 'cz' ? 'Vyplňte jméno, email a vyberte balíček'
-        : 'Vyplňte meno, email a vyberte balík');
+    if (!form.name || !form.email || !form.phone || !form.package) {
+      alert(lang === 'en' ? 'Please fill in name, email, phone and select a plan'
+        : lang === 'cz' ? 'Vyplňte jméno, email, telefon a vyberte balíček'
+        : 'Vyplňte meno, email, telefón a vyberte balík');
       return;
     }
     if (!form.consent) { setConsentError(true); return; }
@@ -216,11 +216,12 @@ function HomePage() {
           <span style={{ fontWeight: 700, fontSize: 18, color: C.text, letterSpacing: -0.5 }}>Web<span style={{ color: C.blue }}>Klienti</span></span>
         </Link>
         <div style={{ display: 'flex', gap: 8, alignItems: 'center' }} className="desktop-nav">
-          {t.nav.map((label, i) => (
+          {t.nav.slice(0, -1).map((label, i) => (
             <button key={i} onClick={() => scrollTo(NAV_IDS[i])} className="nav-link">{label}</button>
           ))}
           {lang === 'sk' && <Link to="/blog" className="nav-link">Blog</Link>}
           <button onClick={() => scrollTo('contact')} className="nav-link">{t.navOrder}</button>
+          <button onClick={() => scrollTo(NAV_IDS[t.nav.length - 1])} className="nav-link">{t.nav[t.nav.length - 1]}</button>
         </div>
         <div style={{ display: 'flex', gap: 20, alignItems: 'center' }} className="desktop-nav">
           <a href="tel:+421907890600" className="nav-phone">
@@ -242,11 +243,12 @@ function HomePage() {
 
       {menuOpen && (
         <div style={{ position: 'fixed', top: 64, left: 0, right: 0, zIndex: 99, background: C.white, padding: '20px 24px', display: 'flex', flexDirection: 'column', gap: 16, borderBottom: `1px solid ${C.border}` }}>
-          {t.nav.map((label, i) => (
+          {t.nav.slice(0, -1).map((label, i) => (
             <button key={i} onClick={() => scrollTo(NAV_IDS[i])} style={{ background: 'none', border: 'none', color: C.text, cursor: 'pointer', fontSize: 18, fontWeight: 600, textAlign: 'left', padding: '8px 0', fontFamily: 'Inter, sans-serif' }}>{label}</button>
           ))}
           {lang === 'sk' && <Link to="/blog" onClick={() => setMenuOpen(false)} style={{ color: C.text, textDecoration: 'none', fontSize: 18, fontWeight: 600, padding: '8px 0' }}>Blog</Link>}
           <button onClick={() => scrollTo('contact')} style={{ background: 'none', border: 'none', color: C.text, cursor: 'pointer', fontSize: 18, fontWeight: 600, textAlign: 'left', padding: '8px 0', fontFamily: 'Inter, sans-serif' }}>{t.navOrder}</button>
+          <button onClick={() => scrollTo(NAV_IDS[t.nav.length - 1])} style={{ background: 'none', border: 'none', color: C.text, cursor: 'pointer', fontSize: 18, fontWeight: 600, textAlign: 'left', padding: '8px 0', fontFamily: 'Inter, sans-serif' }}>{t.nav[t.nav.length - 1]}</button>
           <a href="tel:+421907890600" className="nav-phone" style={{ fontSize: 16, padding: '8px 0' }}>
             <FaPhoneAlt size={14} style={{ color: C.blue }} /> +421 907 890 600
           </a>

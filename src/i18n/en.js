@@ -153,7 +153,7 @@ const en = {
     },
     {
       "key": "phone",
-      "label": "Phone Number (for quick clarifications)",
+      "label": "Phone Number *",
       "type": "tel",
       "placeholder": "+44 7123 456789"
     }

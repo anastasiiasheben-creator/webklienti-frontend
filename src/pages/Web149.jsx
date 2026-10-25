@@ -42,7 +42,7 @@ export default function Web149() {
   }, []);
 
   const handleSubmit = async () => {
-    if (!form.name || !form.email) { alert('Vyplňte meno a email.'); return; }
+    if (!form.name || !form.email || !form.phone) { alert('Vyplňte meno, email a telefón.'); return; }
     if (!form.consent) { setConsentError(true); return; }
     setConsentError(false);
     setFormStatus('loading');
@@ -434,7 +434,7 @@ export default function Web149() {
               {[
                 { key: 'name', label: 'Vaše meno a priezvisko *', type: 'text', placeholder: 'napr. Ján Novák' },
                 { key: 'email', label: 'Kontaktný e-mail *', type: 'email', placeholder: 'jan@firma.sk' },
-                { key: 'phone', label: 'Telefónne číslo (pre rýchle upresnenie)', type: 'tel', placeholder: '+421 911 111 222' },
+                { key: 'phone', label: 'Telefónne číslo *', type: 'tel', placeholder: '+421 911 111 222' },
                 { key: 'website', label: 'Váš aktuálny web (ak máte)', type: 'url', placeholder: 'napr. www.mojastranka.sk' },
                 { key: 'message', label: 'Čo je hlavným cieľom vášho nového webu?', type: 'text', placeholder: 'Čomu sa venujete? Čo od nového webu očakávate?' },
               ].map(f => (

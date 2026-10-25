@@ -153,7 +153,7 @@ const cz = {
     },
     {
       "key": "phone",
-      "label": "Telefonní číslo (pro rychlé upřesnění)",
+      "label": "Telefonní číslo *",
       "type": "tel",
       "placeholder": "+420 777 111 222"
     }

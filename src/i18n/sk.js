@@ -153,7 +153,7 @@ const sk = {
     },
     {
       "key": "phone",
-      "label": "Telefónne číslo (pre rýchle upresnenie)",
+      "label": "Telefónne číslo *",
       "type": "tel",
       "placeholder": "+421 911 111 222"
     }
