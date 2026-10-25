@@ -189,6 +189,7 @@ function HomePage() {
         .btn-secondary:active { transform: translateY(0); }
         .nav-link { background: none; border: none; color: #6B7280; cursor: pointer; font-size: 15px; font-weight: 500; font-family: 'Inter', sans-serif; text-decoration: none; padding: 8px 12px; border-radius: 8px; transition: color .15s, background .15s; }
         .nav-link:hover { color: #2563EB; background: rgba(37,99,235,0.08); }
+        @media (min-width: 1680px) { .nav-links-center { position: absolute; left: 50%; transform: translateX(-50%); } }
         
         /* Из этой строки убрали принудительный flex-start, чтобы работал десктопный center */
         .card { background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 16px; padding: 24px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); transition: all .2s; }
@@ -215,7 +216,7 @@ function HomePage() {
           <img src={logoImg} alt="WebKlienti logo" width="36" height="36" style={{ height: 36, width: 36, objectFit: 'contain', borderRadius: '50%' }} />
           <span style={{ fontWeight: 700, fontSize: 18, color: C.text, letterSpacing: -0.5 }}>Web<span style={{ color: C.blue }}>Klienti</span></span>
         </Link>
-        <div style={{ display: 'flex', gap: 8, alignItems: 'center' }} className="desktop-nav">
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center' }} className="desktop-nav nav-links-center">
           {t.nav.slice(0, -1).map((label, i) => (
             <button key={i} onClick={() => scrollTo(NAV_IDS[i])} className="nav-link">{label}</button>
           ))}

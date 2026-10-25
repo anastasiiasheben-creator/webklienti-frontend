@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import logoImg from '../assets/logo.webp';
 import { newBlogPosts } from '../lib/newBlogPosts';
@@ -28,7 +28,61 @@ const posts = [
   ...newBlogPosts,
 ];
 
+const CATEGORIES = [
+  { id: 'ceny', label: 'Ceny a rozpočet' },
+  { id: 'tvorba-webu', label: 'Tvorba webu' },
+  { id: 'seo', label: 'SEO a Google' },
+  { id: 'viac-zakaznikov', label: 'Viac zákazníkov' },
+  { id: 'odvetvia', label: 'Web pre odvetvia' },
+  { id: 'referencie', label: 'Referencie' },
+];
+
+const POST_CATEGORY = {
+  'kolko-stoji-webstranka-na-slovensku': 'ceny',
+  'web-za-149-eur': 'ceny',
+  'kolko-trva-vytvorenie-webstranky': 'ceny',
+  'ako-pripravit-podklady-na-tvorbu-webu': 'tvorba-webu',
+  'landing-page-alebo-webstranka': 'tvorba-webu',
+  'ako-si-vybrat-spravnu-domenu': 'tvorba-webu',
+  'co-je-webhosting-a-preco-na-nom-zalezi': 'tvorba-webu',
+  'kolko-stranok-ma-mat-firemny-web': 'tvorba-webu',
+  'ako-napisat-texty-na-web-ktore-predavaju': 'tvorba-webu',
+  'checklist-pred-spustenim-webstranky': 'tvorba-webu',
+  'redizajn-webu-kedy-je-spravny-cas': 'tvorba-webu',
+  'wordpress-vs-wix-vs-web-na-mieru': 'tvorba-webu',
+  'preco-je-seo-klucove': 'seo',
+  'lokalne-seo-slovensko': 'seo',
+  'ako-ziskat-zakaznikov-z-google-bez-reklamy': 'seo',
+  'google-search-console-a-google-analytics': 'seo',
+  'ai-na-webstranke-konkurencna-vyhoda': 'seo',
+  'preco-kazda-mala-firma-potrebuje-web': 'viac-zakaznikov',
+  'preco-web-neprinas-zakaznikov': 'viac-zakaznikov',
+  'co-musi-mat-dobry-firemny-web': 'viac-zakaznikov',
+  'najcastejsie-chyby-na-firemnom-webe': 'viac-zakaznikov',
+  'preco-vas-eshop-nepredava': 'viac-zakaznikov',
+  'tvorba-webu-pre-zivnostnika': 'odvetvia',
+  'web-pre-kadernictvo': 'odvetvia',
+  'webstranka-pre-stavebnu-firmu': 'odvetvia',
+  'webstranka-pre-autoservis': 'odvetvia',
+  'webstranka-pre-elektrikara': 'odvetvia',
+  'tvorba-webu-trnava': 'odvetvia',
+  'spolupraca-s-montwell-webstranka': 'referencie',
+};
+
+const categoryLabel = (slug) => CATEGORIES.find(c => c.id === POST_CATEGORY[slug])?.label;
+
+const pillStyle = (active) => ({
+  padding: '8px 16px', borderRadius: 999, fontSize: 14, fontWeight: 600, cursor: 'pointer', fontFamily: 'inherit',
+  border: `1px solid ${active ? C.blue : C.border}`, background: active ? C.blue : C.white, color: active ? '#fff' : C.text,
+  transition: 'all .15s',
+});
+
 export default function Blog() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const activeCategory = CATEGORIES.some(c => c.id === searchParams.get('kategoria')) ? searchParams.get('kategoria') : null;
+  const visiblePosts = activeCategory ? posts.filter(p => POST_CATEGORY[p.slug] === activeCategory) : posts;
+  const selectCategory = (id) => setSearchParams(id ? { kategoria: id } : {});
+
   const itemListSchema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
@@ -73,13 +127,24 @@ export default function Blog() {
       </div>
 
       {/* POSTS */}
-      <div style={{ maxWidth: 800, margin: '0 auto', padding: '64px 40px' }}>
-        {posts.map((post) => (
+      <div style={{ maxWidth: 800, margin: '0 auto', padding: '40px 16px 64px' }}>
+        <div role="tablist" aria-label="Kategórie článkov" style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center', marginBottom: 32 }}>
+          <button role="tab" aria-selected={!activeCategory} onClick={() => selectCategory(null)} style={pillStyle(!activeCategory)}>
+            Všetky ({posts.length})
+          </button>
+          {CATEGORIES.map(c => (
+            <button key={c.id} role="tab" aria-selected={activeCategory === c.id} onClick={() => selectCategory(c.id)} style={pillStyle(activeCategory === c.id)}>
+              {c.label} ({posts.filter(p => POST_CATEGORY[p.slug] === c.id).length})
+            </button>
+          ))}
+        </div>
+        {visiblePosts.map((post) => (
           <Link key={post.slug} to={`/blog/${post.slug}`} style={{ textDecoration: 'none' }}>
             <div style={{ background: C.white, border: `1px solid ${C.border}`, borderRadius: 16, padding: '32px', marginBottom: 16, transition: 'all .2s' }}
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.08)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = 'none'; }}>
-              <div style={{ display: 'flex', gap: 16, marginBottom: 10, fontSize: 13, color: C.textSub }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16, marginBottom: 10, fontSize: 13, color: C.textSub }}>
+                {categoryLabel(post.slug) && <span style={{ color: C.blue, fontWeight: 600 }}>{categoryLabel(post.slug)}</span>}
                 <span>{post.date}</span><span>·</span><span>{post.readTime}</span>
               </div>
               <h2 style={{ fontSize: 20, fontWeight: 700, color: C.text, marginBottom: 10, lineHeight: 1.3 }}>{post.title}</h2>
