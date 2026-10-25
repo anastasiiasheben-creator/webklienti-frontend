@@ -17,7 +17,7 @@ const sk = {
     "Bleskové dodanie od 3 dní bez zbytočného naťahovania"
   ],
   "heroCta": "Chcem nezáväzný návrh webu zdarma",
-  "heroOrder": "Objednávka",
+  "navOrder": "Objednávka",
   "heroMicro": "prvý koncept do 24 hodín · úplne bez záväzkov · ukážeme vám, ako predávať viac",
   "marketTag": "🌍 Strategický webdizajn pre Slovensko · Česko · Európu",
   "problemLabel": "Kde strácate peniaze?",

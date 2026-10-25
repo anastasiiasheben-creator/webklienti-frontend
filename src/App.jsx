@@ -187,6 +187,8 @@ function HomePage() {
         .btn-secondary { display: inline-flex; align-items: center; justify-content: center; height: 52px; padding: 0 24px; border-radius: 12px; background: #FFFFFF; color: #111827; font-size: 16px; font-weight: 600; border: 1px solid #E5E7EB; cursor: pointer; transition: all .15s; font-family: 'Inter', sans-serif; }
         .btn-secondary:hover { background: #F9FAFB; transform: translateY(-1px); }
         .btn-secondary:active { transform: translateY(0); }
+        .nav-link { background: none; border: none; color: #6B7280; cursor: pointer; font-size: 15px; font-weight: 500; font-family: 'Inter', sans-serif; text-decoration: none; padding: 8px 12px; border-radius: 8px; transition: color .15s, background .15s; }
+        .nav-link:hover { color: #2563EB; background: rgba(37,99,235,0.08); }
         
         /* Из этой строки убрали принудительный flex-start, чтобы работал десктопный center */
         .card { background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 16px; padding: 24px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); transition: all .2s; }
@@ -213,11 +215,12 @@ function HomePage() {
           <img src={logoImg} alt="WebKlienti logo" width="36" height="36" style={{ height: 36, width: 36, objectFit: 'contain', borderRadius: '50%' }} />
           <span style={{ fontWeight: 700, fontSize: 18, color: C.text, letterSpacing: -0.5 }}>Web<span style={{ color: C.blue }}>Klienti</span></span>
         </Link>
-        <div style={{ display: 'flex', gap: 32, alignItems: 'center' }} className="desktop-nav">
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center' }} className="desktop-nav">
           {t.nav.map((label, i) => (
-            <button key={i} onClick={() => scrollTo(NAV_IDS[i])} style={{ background: 'none', border: 'none', color: C.textSub, cursor: 'pointer', fontSize: 15, fontWeight: 500, fontFamily: 'Inter, sans-serif' }}>{label}</button>
+            <button key={i} onClick={() => scrollTo(NAV_IDS[i])} className="nav-link">{label}</button>
           ))}
-          {lang === 'sk' && <Link to="/blog" style={{ color: C.textSub, textDecoration: 'none', fontSize: 15, fontWeight: 500 }}>Blog</Link>}
+          {lang === 'sk' && <Link to="/blog" className="nav-link">Blog</Link>}
+          <button onClick={() => scrollTo('contact')} className="nav-link">{t.navOrder}</button>
         </div>
         <div style={{ display: 'flex', gap: 20, alignItems: 'center' }} className="desktop-nav">
           <a href="tel:+421907890600" className="nav-phone">
@@ -243,6 +246,7 @@ function HomePage() {
             <button key={i} onClick={() => scrollTo(NAV_IDS[i])} style={{ background: 'none', border: 'none', color: C.text, cursor: 'pointer', fontSize: 18, fontWeight: 600, textAlign: 'left', padding: '8px 0', fontFamily: 'Inter, sans-serif' }}>{label}</button>
           ))}
           {lang === 'sk' && <Link to="/blog" onClick={() => setMenuOpen(false)} style={{ color: C.text, textDecoration: 'none', fontSize: 18, fontWeight: 600, padding: '8px 0' }}>Blog</Link>}
+          <button onClick={() => scrollTo('contact')} style={{ background: 'none', border: 'none', color: C.text, cursor: 'pointer', fontSize: 18, fontWeight: 600, textAlign: 'left', padding: '8px 0', fontFamily: 'Inter, sans-serif' }}>{t.navOrder}</button>
           <a href="tel:+421907890600" className="nav-phone" style={{ fontSize: 16, padding: '8px 0' }}>
             <FaPhoneAlt size={14} style={{ color: C.blue }} /> +421 907 890 600
           </a>

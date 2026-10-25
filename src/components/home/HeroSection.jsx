@@ -27,9 +27,6 @@ export default function HeroSection({ t, lang, onCta }) {
             <button onClick={onCta} className="btn-primary" style={{ fontSize: 16, marginBottom: 16, width: '100%', maxWidth: 480 }}>
               👉 {t.heroCta}
             </button>
-            <button onClick={onCta} className="btn-secondary" style={{ fontSize: 16, marginBottom: 16, width: '100%', maxWidth: 480, display: 'flex' }}>
-              {t.heroOrder}
-            </button>
             <p style={{ fontSize: 14, color: C.textSub }}>{t.heroMicro}</p>
           </div>
           {/* RIGHT — verified client work */}

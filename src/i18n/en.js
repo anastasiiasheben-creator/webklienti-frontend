@@ -17,7 +17,7 @@ const en = {
     "Ultra-fast 3-day delivery with zero endless delays"
   ],
   "heroCta": "Get My Free Website Concept",
-  "heroOrder": "Order",
+  "navOrder": "Order",
   "heroMicro": "first visual draft in 24 hours · 100% risk-free · see how to grow your sales",
   "marketTag": "🌍 Strategic Web Design for Europe · UK · Global",
   "problemLabel": "Where Are You Losing Money?",
