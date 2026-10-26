@@ -10,13 +10,14 @@ export default function HeroSection({ t, lang, onCta }) {
         <div className="hero-grid" style={{ display: 'grid', gridTemplateColumns: '7fr 5fr', gap: 64, alignItems: 'center' }}>
           {/* LEFT */}
           <div>
-            <div style={{ fontSize: 12, fontWeight: 500, color: C.textSub, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 16 }}>
-              {t.marketTag}
+            <div className="market-tag" style={{ fontSize: 12, fontWeight: 500, color: C.textSub, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 16 }}>
+              <span className="market-tag-full">{t.marketTag}</span>
+              <span className="market-tag-short">{t.marketTagShort}</span>
             </div>
             <h1 style={{ fontSize: 'clamp(36px, 4vw, 56px)', fontWeight: 700, lineHeight: 1.14, letterSpacing: '-0.01em', color: C.text, marginBottom: 24 }}>
               {t.heroTitle}
             </h1>
-            <p style={{ fontSize: 18, color: C.textSub, lineHeight: 1.6, marginBottom: 32 }}>{t.heroSub}</p>
+            <p style={{ fontSize: 18, color: C.textSub, lineHeight: 1.6, marginBottom: 32, whiteSpace: 'pre-line' }}>{t.heroSub}</p>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 40 }}>
               {t.heroBenefits.map((b, i) => (
                 <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 10, fontSize: 16, color: C.text }}>

@@ -8,7 +8,7 @@ const cz = {
   "navCta": "Získat návrh zdarma",
   "heroBadge": "🔥 Akce — 50% sleva pouze do konce měsíce",
   "heroTitle": "Děláme weby navržené pro získávání nových zákazníků",
-  "heroSub": "Moderní design + SEO, aby vás zákazníci našli na Googlu + web, ze kterého vám rovnou zavolají. Hotovo už od 3 dnů.",
+  "heroSub": "Moderní design + SEO, aby vás zákazníci našli na Googlu.\nHotovo už od 3 dnů.",
   "heroBenefits": [
     "Design navržený tak, aby návštěvníka proměnil v poptávku",
     "Prvotřídní rychlost a bezchybné zobrazení na mobilech",
@@ -20,6 +20,7 @@ const cz = {
   "navOrder": "Poptávka",
   "heroMicro": "první koncept do 24 hodin · zcela bez závazků · ukážeme vám, jak prodávat víc",
   "marketTag": "🌍 Weby pro firmy v Česku · na Slovensku · v Evropě",
+  "marketTagShort": "🌍 Weby pro firmy v CZ · na SK · v EU",
   "problemLabel": "Kde ztrácíte peníze?",
   "problemTitle": "Proč většina firemních webů jen sedí na internetu a nevydělá ani korunu?",
   "problemPoints": [

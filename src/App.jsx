@@ -171,7 +171,11 @@ function HomePage() {
 
       <style>{`
         * { box-sizing: border-box; margin: 0; padding: 0; }
+        .market-tag-short { display: none; }
         @media (max-width: 768px) {
+          .market-tag-full { display: none !important; }
+          .market-tag-short { display: inline !important; }
+          .market-tag { font-size: 11px !important; letter-spacing: 0.5px !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
           .desktop-nav { display: none !important; }
           .hamburger { display: flex !important; }
           .hero-grid { grid-template-columns: 1fr !important; }

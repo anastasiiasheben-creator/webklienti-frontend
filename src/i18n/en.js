@@ -8,7 +8,7 @@ const en = {
   "navCta": "Get Free Design",
   "heroBadge": "🔥 Limited Offer — 50% off until the end of the month",
   "heroTitle": "We build websites designed to bring in new customers",
-  "heroSub": "Modern design + SEO so customers find you on Google + a website that gets them to call you straight away. Live from 3 business days.",
+  "heroSub": "Modern design + SEO so customers find you on Google.\nLive from 3 business days.",
   "heroBenefits": [
     "Design engineered to turn casual visitors into paying leads",
     "Blazing-fast loading speeds and flawless mobile performance",
@@ -20,6 +20,7 @@ const en = {
   "navOrder": "Order",
   "heroMicro": "first visual draft in 24 hours · 100% risk-free · see how to grow your sales",
   "marketTag": "🌍 Websites for businesses in Europe · UK · worldwide",
+  "marketTagShort": "🌍 Websites for EU · UK · worldwide",
   "problemLabel": "Where Are You Losing Money?",
   "problemTitle": "Why do most small business websites just sit online without making a single cent?",
   "problemPoints": [
