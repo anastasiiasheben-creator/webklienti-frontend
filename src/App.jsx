@@ -185,6 +185,7 @@ function HomePage() {
           .sticky-cta { display: flex !important; }
           .footer-links { flex-direction: column !important; gap: 8px !important; }          
           .trust-bullets { justify-content: flex-start !important; }
+          .intent-sub { display: none !important; }
         }
         @media (max-width: 480px) { .solution-grid { grid-template-columns: 1fr !important; } }
         .btn-primary { display: inline-flex; align-items: center; justify-content: center; height: 52px; padding: 0 24px; border-radius: 12px; background: #2563EB; color: #fff; font-size: 16px; font-weight: 600; border: none; cursor: pointer; transition: all .15s; text-decoration: none; font-family: 'Inter', sans-serif; }

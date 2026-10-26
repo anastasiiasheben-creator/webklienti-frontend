@@ -63,14 +63,14 @@ export default function ContactSection({ t, lang, form, setForm, formStatus, set
                       }}
                     >
                       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12 }}>
-                        <div>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 3 }}>
+                        <div style={{ flex: 1, minWidth: 0 }}>
+                          <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: 8, marginBottom: 3 }}>
                             <span style={{ fontSize: 15, fontWeight: 700, color: selected ? C.blue : C.text }}>{card.intent}</span>
                             {card.badge && (
-                              <span style={{ fontSize: 11, fontWeight: 700, background: C.blue, color: '#fff', padding: '2px 8px', borderRadius: 999 }}>{card.badge}</span>
+                              <span style={{ fontSize: 11, fontWeight: 700, background: C.blue, color: '#fff', padding: '2px 8px', borderRadius: 999, whiteSpace: 'nowrap' }}>{card.badge}</span>
                             )}
                           </div>
-                          <span style={{ fontSize: 13, color: C.textSub, lineHeight: 1.4, display: 'block' }}>{card.sub}</span>
+                          <span className="intent-sub" style={{ fontSize: 13, color: C.textSub, lineHeight: 1.4, display: 'block' }}>{card.sub}</span>
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexShrink: 0 }}>
                           <span style={{ fontSize: 15, fontWeight: 700, color: selected ? C.blue : C.text }}>{card.price}</span>

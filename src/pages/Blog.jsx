@@ -104,7 +104,11 @@ export default function Blog() {
         <script type="application/ld+json">{JSON.stringify(itemListSchema)}</script>
       </Helmet>
 
-      <style>{`* { box-sizing: border-box; margin: 0; padding: 0; }`}</style>
+      <style>{`
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        .blog-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        @media (max-width: 768px) { .blog-grid { grid-template-columns: 1fr; } }
+      `}</style>
 
       {/* NAV */}
       <nav style={{ background: 'rgba(255,255,255,0.97)', backdropFilter: 'blur(8px)', borderBottom: `1px solid ${C.border}`, padding: '0 40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: 64, position: 'sticky', top: 0, zIndex: 100 }}>
@@ -127,7 +131,7 @@ export default function Blog() {
       </div>
 
       {/* POSTS */}
-      <div style={{ maxWidth: 800, margin: '0 auto', padding: '40px 16px 64px' }}>
+      <div style={{ maxWidth: 1100, margin: '0 auto', padding: '40px 16px 64px' }}>
         <div role="tablist" aria-label="Kategórie článkov" style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center', marginBottom: 32 }}>
           <button role="tab" aria-selected={!activeCategory} onClick={() => selectCategory(null)} style={pillStyle(!activeCategory)}>
             Všetky ({posts.length})
@@ -138,9 +142,10 @@ export default function Blog() {
             </button>
           ))}
         </div>
+        <div className="blog-grid">
         {visiblePosts.map((post) => (
-          <Link key={post.slug} to={`/blog/${post.slug}`} style={{ textDecoration: 'none' }}>
-            <div style={{ background: C.white, border: `1px solid ${C.border}`, borderRadius: 16, padding: '32px', marginBottom: 16, transition: 'all .2s' }}
+          <Link key={post.slug} to={`/blog/${post.slug}`} style={{ textDecoration: 'none', display: 'flex' }}>
+            <div style={{ background: C.white, border: `1px solid ${C.border}`, borderRadius: 16, padding: '32px', width: '100%', display: 'flex', flexDirection: 'column', transition: 'all .2s' }}
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.08)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = 'none'; }}>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16, marginBottom: 10, fontSize: 13, color: C.textSub }}>
@@ -149,10 +154,11 @@ export default function Blog() {
               </div>
               <h2 style={{ fontSize: 20, fontWeight: 700, color: C.text, marginBottom: 10, lineHeight: 1.3 }}>{post.title}</h2>
               <p style={{ fontSize: 15, color: C.textSub, lineHeight: 1.7, marginBottom: 16 }}>{post.excerpt}</p>
-              <span style={{ color: C.blue, fontWeight: 600, fontSize: 14 }}>Čítať článok →</span>
+              <span style={{ color: C.blue, fontWeight: 600, fontSize: 14, marginTop: 'auto' }}>Čítať článok →</span>
             </div>
           </Link>
         ))}
+        </div>
       </div>
 
       {/* CTA */}
