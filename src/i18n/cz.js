@@ -8,7 +8,7 @@ const cz = {
   "navCta": "Získat návrh zdarma",
   "heroBadge": "🔥 Akce — 50% sleva pouze do konce měsíce",
   "heroTitle": "Děláme weby navržené pro získávání nových zákazníků",
-  "heroSub": "Kompletní prodejní systém: Moderní design + silné SEO + konverzní struktura. Hotovo už od 3 dnů.",
+  "heroSub": "Moderní design + SEO, aby vás zákazníci našli na Googlu + web, ze kterého vám rovnou zavolají. Hotovo už od 3 dnů.",
   "heroBenefits": [
     "Design navržený tak, aby návštěvníka proměnil v poptávku",
     "Prvotřídní rychlost a bezchybné zobrazení na mobilech",
@@ -19,7 +19,7 @@ const cz = {
   "heroCta": "Chci nezávazný návrh webu zdarma",
   "navOrder": "Poptávka",
   "heroMicro": "první koncept do 24 hodin · zcela bez závazků · ukážeme vám, jak prodávat víc",
-  "marketTag": "🌍 Strategický webdesign pro Česko · Slovensko · Evropu",
+  "marketTag": "🌍 Weby pro firmy v Česku · na Slovensku · v Evropě",
   "problemLabel": "Kde ztrácíte peníze?",
   "problemTitle": "Proč většina firemních webů jen sedí na internetu a nevydělá ani korunu?",
   "problemPoints": [
@@ -31,7 +31,7 @@ const cz = {
   ],
   "problemClose": "Výsledek: Vaše konkurence roste, zatímco vy přicházíte o desítky poptávek měsíčně.",
   "agitTitle": "Každý den se slabým webem darujete zákazníky konkurenci",
-  "agitText": "Pěkný web nestačí. Pokud vaše stránka nefunguje jako promyšlený prodejní trychtýř, investice do ní se vám nikdy nevrátí. My stavíme weby kolem potřeb vašich budoucich klientů.",
+  "agitText": "Pěkný web nestačí. Pokud vám web nepřináší telefonáty a objednávky, jsou to vyhozené peníze. My stavíme weby kolem potřeb vašich budoucích klientů.",
   "solutionLabel": "Náš proces",
   "solutionTitle": "Odesláním formuláře k novým zákazníkům od 3 dnů",
   "solutionSteps": [
@@ -53,7 +53,7 @@ const cz = {
     {
       "num": "04",
       "title": "Spuštění od 3 dnů",
-      "desc": "Web nasadíme na vaši doménu, nastavíme analytiku a předáme vám všechny přístupy."
+      "desc": "Web nasadíme na vaši doménu, nastavíme přehled, kolik lidí váš web navštívilo, a předáme vám všechny přístupy."
     }
   ],
   "pricingLabel": "Transparentní ceny",
@@ -64,7 +64,7 @@ const cz = {
     {
       "tag": "Starter",
       "badge": null,
-      "name": "Landing page",
+      "name": "Webová vizitka",
       "price": "3 725 Kč",
       "old": "běžně 15 000 Kč",
       "forWhom": "Ideální pro živnostníky, řemeslníky a lokální služby",
@@ -92,8 +92,8 @@ const cz = {
         "Vše z balíčku Starter +",
         "Až 5 kompletně navržených podstránek (Služby, O nás...)",
         "Přehledná galerie projektů a sekce referencí",
-        "Kompletní analýza klíčových slov a pokročilé SEO na míru",
-        "Nasazení Google Analytics pro přesné sledování konverzí",
+        "Zjistíme, co vaši zákazníci píšou do Googlu, a nastavíme web tak, abyste se jim ukázali",
+        "Uvidíte, kolik lidí vám z webu zavolalo nebo napsalo",
         "Kompletní odevzdání do 5 pracovních dnů"
       ],
       "featured": true,

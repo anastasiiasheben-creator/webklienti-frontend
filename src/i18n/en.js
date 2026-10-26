@@ -8,7 +8,7 @@ const en = {
   "navCta": "Get Free Design",
   "heroBadge": "🔥 Limited Offer — 50% off until the end of the month",
   "heroTitle": "We build websites designed to bring in new customers",
-  "heroSub": "Complete sales engine: Modern design + powerful SEO + conversion-focused structure. Live from 3 business days.",
+  "heroSub": "Modern design + SEO so customers find you on Google + a website that gets them to call you straight away. Live from 3 business days.",
   "heroBenefits": [
     "Design engineered to turn casual visitors into paying leads",
     "Blazing-fast loading speeds and flawless mobile performance",
@@ -19,7 +19,7 @@ const en = {
   "heroCta": "Get My Free Website Concept",
   "navOrder": "Order",
   "heroMicro": "first visual draft in 24 hours · 100% risk-free · see how to grow your sales",
-  "marketTag": "🌍 Strategic Web Design for Europe · UK · Global",
+  "marketTag": "🌍 Websites for businesses in Europe · UK · worldwide",
   "problemLabel": "Where Are You Losing Money?",
   "problemTitle": "Why do most small business websites just sit online without making a single cent?",
   "problemPoints": [
@@ -31,7 +31,7 @@ const en = {
   ],
   "problemClose": "The Result: Your competition keeps growing while you lose dozens of high-value leads every month.",
   "agitTitle": "Every single day with a weak website is a free gift to your competition",
-  "agitText": "A pretty website isn't enough. If your page isn't built as a calculated sales funnel, your investment will never return. We engineer websites entirely around the psychology of your future buyers.",
+  "agitText": "A pretty website isn't enough. If your website doesn't bring you calls and bookings, it's money thrown away. We build every website around what your future customers need.",
   "solutionLabel": "Our Process",
   "solutionTitle": "From a quick form submission to a client-catching machine from 3 business days",
   "solutionSteps": [
@@ -53,7 +53,7 @@ const en = {
     {
       "num": "04",
       "title": "Launch from 3 Days",
-      "desc": "We deploy the site to your domain, configure full analytics, and hand over all master keys."
+      "desc": "We put the site live on your domain, set up a simple overview of how many people visit it, and hand over all the keys."
     }
   ],
   "pricingLabel": "Transparent Pricing",
@@ -64,7 +64,7 @@ const en = {
     {
       "tag": "Starter",
       "badge": null,
-      "name": "Landing Page",
+      "name": "Business Card Website",
       "price": "149 €",
       "old": "regularly 299 €",
       "forWhom": "Perfect for freelancers, local services, and tradesmen",
@@ -84,7 +84,7 @@ const en = {
     {
       "tag": "Growth",
       "badge": "Most Popular",
-      "name": "Business Lead Generator",
+      "name": "Business Website",
       "price": "499 €",
       "old": "regularly 999 €",
       "forWhom": "Best value for established companies looking to dominate local markets",
@@ -92,8 +92,8 @@ const en = {
         "Everything in the Starter package +",
         "Up to 5 fully custom-designed pages (Services, About Us, etc.)",
         "Clean project gallery and organized client testimonials section",
-        "In-depth keyword research and advanced custom SEO framework",
-        "Google Analytics integration for precise conversion tracking",
+        "We find out what your customers type into Google and set up your site so you show up for them",
+        "See how many people called or messaged you from your website",
         "Complete delivery and handover within 5 business days"
       ],
       "featured": true,
@@ -132,7 +132,7 @@ const en = {
   "finalCtaTitle": "Ready to own a website that works as hard as you do?",
   "finalCtaSub": "Don't let your competitors capture all the market traffic. Fill out the form and get your concept tomorrow.",
   "finalCtaBtn": "Get My Free Strategy & Draft →",
-  "stickyCtaBtn": "Get a Landing Page from 149 € →",
+  "stickyCtaBtn": "Get a Business Card Website from 149 € →",
   "formLabel": "Quick Inquiry",
   "formTitle": "Get a professional website concept within 24 hours free",
   "formSub": "Share a few basic details. The draft is entirely non-binding — if it's not a perfect fit, you owe nothing.",
@@ -201,7 +201,7 @@ const en = {
   "faqItems": [
     {
       "q": "How long does it realistically take to build a website?",
-      "a": "We move fast because of our refined internal workflow. A landing page can go live from 3 business days, while larger websites take longer depending on their scope and features."
+      "a": "We move fast because of our refined internal workflow. A business card website can go live from 3 business days, while larger websites take longer depending on their scope and features."
     },
     {
       "q": "Are there any recurring monthly developer fees?",

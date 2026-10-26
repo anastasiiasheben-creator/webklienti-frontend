@@ -8,7 +8,7 @@ const sk = {
   "navCta": "Získať návrh zdarma",
   "heroBadge": "🔥 Akcia — 50% zľava len do konca mesiaca",
   "heroTitle": "Robíme weby navrhnuté na získavanie nových zákazníkov",
-  "heroSub": "Kompletný predajný systém: Moderný dizajn + silné SEO + konverzná štruktúra. Hotovo už od 3 dní.",  
+  "heroSub": "Moderný dizajn + SEO, aby vás zákazníci našli na Google + web, z ktorého vám rovno zavolajú. Hotovo už od 3 dní.",  
   "heroBenefits": [
     "Dizajn navrhnutý tak, aby návštevníka premenil na dopyt",
     "Prvotriedna rýchlosť a bezchybné zobrazenie na mobiloch",
@@ -19,7 +19,7 @@ const sk = {
   "heroCta": "Chcem nezáväzný návrh webu zdarma",
   "navOrder": "Objednávka",
   "heroMicro": "prvý koncept do 24 hodín · úplne bez záväzkov · ukážeme vám, ako predávať viac",
-  "marketTag": "🌍 Strategický webdizajn pre Slovensko · Česko · Európu",
+  "marketTag": "🌍 Weby pre firmy na Slovensku · v Česku · v Európe",
   "problemLabel": "Kde strácate peniaze?",
   "problemTitle": "Prečo väčšina firemných webov len sedí na internete a nezarobí ani cent?",
   "problemPoints": [
@@ -31,7 +31,7 @@ const sk = {
   ],
   "problemClose": "Výsledok: Vaša konkurencia rastie, zatiaľ čo vy prichádzate o desiatky dopytov mesačne.",
   "agitTitle": "Každý deň so slabým webom darujete zákazníkov konkurencii",
-  "agitText": "Pekný web nestačí. Ak vaša stránka nefunguje ako premyslený predajný lievik, investícia do nej sa vám nikdy nevráti. My staviame weby okolo potrieb vašich budúcich klientov.",
+  "agitText": "Pekný web nestačí. Ak vám web neprináša telefonáty a objednávky, sú to vyhodené peniaze. My staviame weby okolo potrieb vašich budúcich klientov.",
   "solutionLabel": "Náš proces",
   "solutionTitle": "Odoslaním formulára k novým zákazníkom od 3 dní",  
   "solutionSteps": [
@@ -53,7 +53,7 @@ const sk = {
     {
       "num": "04",
       "title": "Spustenie od 3 dní",
-      "desc": "Web nasadíme na vašu doménu, nastavíme analytiku a odovzdáme vám kľúče."
+      "desc": "Web nasadíme na vašu doménu, nastavíme prehľad, koľko ľudí váš web navštívilo, a odovzdáme vám kľúče."
     }
   ],
   "pricingLabel": "Transparentné ceny",
@@ -64,7 +64,7 @@ const sk = {
     {
       "tag": "Starter",
       "badge": null,
-      "name": "Landing page",
+      "name": "Web-vizitka",
       "price": "149 €",
       "old": "bežne 299 €",
       "forWhom": "Ideálne pre živnostníkov, remeselníkov a lokálne služby",
@@ -92,8 +92,8 @@ const sk = {
         "Všetko z balíka Starter +",
         "Až 5 kompletne navrhnutých podstránok (Služby, O nás...)",
         "Prehľadná galéria projektov a sekcia referencií",
-        "Kompletná analýza kľúčových slov a pokročilé SEO na mieru",
-        "Nasadanie Google Analytics pre presné sledovanie konverzií",
+        "Zistíme, čo vaši zákazníci píšu do Google, a nastavíme web tak, aby ste sa im ukázali",
+        "Uvidíte, koľko ľudí vám z webu zavolalo alebo napísalo",
         "Kompletné odovzdanie do 5 pracovných dní"
       ],
       "featured": true,
@@ -132,7 +132,7 @@ const sk = {
   "finalCtaTitle": "Chcete web, ktorý bude pre vašu firmu reálne zarábať?",
   "finalCtaSub": "Nečakajte, kým vás konkurencia predbehne úplne. Vyplňte formulár a zajtra máte na stole riešenie.",
   "finalCtaBtn": "Získať nezáväzný návrh riešenia →",
-  "stickyCtaBtn": "Chcem landing page od 149 € →",
+  "stickyCtaBtn": "Chcem web-vizitku od 149 € →",
   "formLabel": "Rýchly dopyt",
   "formTitle": "Získajte profesionálny návrh webu do 24 hodín zdarma",
   "formSub": "Napíšte nám základné detaily. Návrh je nezáväzný — ak sa vám nebude páčiť, nič neplatíte.",
@@ -201,7 +201,7 @@ const sk = {
   "faqItems": [
     {
       "q": "Koľko reálne trvá vytvorenie webu?",
-      "a": "Sme rýchli, pretože máme zabehnutý proces. Landing page vieme spustiť od 3 pracovných dní, väčšie weby trvajú dlhšie podľa rozsahu a funkcií."
+      "a": "Sme rýchli, pretože máme zabehnutý proces. Web-vizitku vieme spustiť od 3 pracovných dní, väčšie weby trvajú dlhšie podľa rozsahu a funkcií."
     },
     {
       "q": "Budem platiť nejaké pravidelné mesačné poplatky?",
