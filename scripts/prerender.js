@@ -127,11 +127,21 @@ for (const p of posts) {
   });
 }
 
+// staré adresy článkov presmerujú na nové (inak by po pravidle /blog/:slug skončili na 404)
+const legacySlugs = findDeclaration(read('src/pages/BlogPost.jsx'), 'legacySlugs').properties.map((prop) => [
+  prop.key.value || prop.key.name,
+  literal(prop.value),
+]);
+for (const [from, to] of legacySlugs) {
+  const target = pages.find((p) => p.route === `/blog/${to}`);
+  pages.push({ ...target, route: `/blog/${from}`, canonicalRoute: target.route, redirect: true });
+}
+
 // --- zápis ---
 const template = fs.readFileSync(path.join(BUILD, 'index.html'), 'utf8');
 
 function render(page) {
-  const url = SITE + page.route;
+  const url = SITE + (page.canonicalRoute || page.route);
   const ogTitle = page.ogTitle || page.title.replace(/\s*\|\s*WebKlienti$/, '');
   const replacements = [
     [/<title>[^<]*<\/title>/, `<title>${esc(page.title)}</title>`],
@@ -147,6 +157,7 @@ function render(page) {
     [/<div id="root">[\s\S]*?<\/div>\s*<\/div>\s*(?=<\/body>)/, `<div id="root">${page.body}</div>`],
   ];
   if (page.article) replacements.push([/<meta property="og:type" content="[^"]*"/, '<meta property="og:type" content="article"']);
+  if (page.redirect) replacements.push([/<title>/, `<meta http-equiv="refresh" content="0; url=${page.canonicalRoute}"><title>`]);
 
   let html = template;
   for (const [pattern, value] of replacements) {
