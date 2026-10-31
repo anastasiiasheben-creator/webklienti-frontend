@@ -884,7 +884,7 @@ Stavebná firma takmer vždy pôsobí v určitom okruhu. Zákazník z Piešťan 
 
 Na web uveďte mestá a okresy, kde pracujete, a ideálne aj konkrétne obce, kde ste už realizovali zákazky. Pri realizáciách píšte lokalitu. Google aj zákazník tak dostanú jasný signál, že v danom regióne naozaj pôsobíte.
 
-K webu patrí aj **Google Business Profile** – záznam v Google Mapách. Pri vyhľadávaní typu „stavebná firma Trnava“ sa výsledky z máp zobrazujú nad bežnými webmi. Profil s fotografiami, recenziami a odkazom na web je pre lokálnu firmu jedna z najlepších investícií času. Viac o tom v článku [Čo je to lokálne SEO a prečo na ňom záleží?](/blog/lokalne-seo-slovensko).
+K webu patrí aj **Google Business Profile** – záznam v Google Mapách. Pri vyhľadávaní typu „stavebná firma Trnava“ sa výsledky z máp zobrazujú nad bežnými webmi. Profil s fotografiami, recenziami a odkazom na web je pre lokálnu firmu jedna z najlepších investícií času. Viac o tom v článku [Čo je to lokálne SEO a prečo na ňom záleží?](/blog/lokalne-seo-slovensko), postup krok za krokom nájdete v návode [Ako dostať firmu na Google Mapy](/blog/ako-dostat-firmu-na-google-mapy).
 
 ## Referencie, ktoré niečo znamenajú
 
@@ -1060,7 +1060,7 @@ Ako získať viac recenzií bez prosenia:
 
 Odpovedajte na všetky recenzie, aj negatívne. Vecná a slušná odpoveď na kritiku často presvedčí ďalších zákazníkov viac než desať pochvál. Ukazuje, že problém riešite a neschovávate sa.
 
-Najlepšie recenzie si skopírujte aj na web – s menom a autom zákazníka, ak súhlasí. Ako funguje lokálne vyhľadávanie a ako sa v ňom dostať vyššie, rozoberáme v článku [Čo je to lokálne SEO a prečo na ňom záleží?](/blog/lokalne-seo-slovensko).
+Najlepšie recenzie si skopírujte aj na web – s menom a autom zákazníka, ak súhlasí. Ako funguje lokálne vyhľadávanie a ako sa v ňom dostať vyššie, rozoberáme v článku [Čo je to lokálne SEO a prečo na ňom záleží?](/blog/lokalne-seo-slovensko). Ako si profil založiť a vyplniť, nájdete v návode [Ako dostať firmu na Google Mapy](/blog/ako-dostat-firmu-na-google-mapy).
 
 ## Praktické informácie, ktoré zákazníci hľadajú
 
@@ -1181,7 +1181,7 @@ Elektrikár pracuje lokálne. Uveďte mestá a obce, kam dochádzate, a ak účt
 
 Pri poruchách je dôležitá aj rýchlosť. Ak viete prísť v ten istý deň, napíšte to. Ak nie, napíšte reálny čas – „zvyčajne do 2 pracovných dní“. Úprimnosť tu funguje lepšie než sľuby, ktoré potom nedodržíte.
 
-Popri webe si určite založte alebo doplňte **Google Business Profile**. Pri vyhľadávaní „elektrikár“ s názvom mesta sa výsledky v mapách zobrazujú úplne hore a ľudia s poruchou často volajú priamo odtiaľ, bez toho, aby otvorili web. Ako na to, vysvetľujeme v článku [Čo je to lokálne SEO a prečo na ňom záleží?](/blog/lokalne-seo-slovensko).
+Popri webe si určite založte alebo doplňte **Google Business Profile**. Pri vyhľadávaní „elektrikár“ s názvom mesta sa výsledky v mapách zobrazujú úplne hore a ľudia s poruchou často volajú priamo odtiaľ, bez toho, aby otvorili web. Ako ho založiť a vyplniť, vysvetľujeme v návode [Ako dostať firmu na Google Mapy](/blog/ako-dostat-firmu-na-google-mapy).
 
 ## Fotky práce, ktorá sa schová do steny
 

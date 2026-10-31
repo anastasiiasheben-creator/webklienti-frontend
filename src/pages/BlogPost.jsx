@@ -119,7 +119,7 @@ Pre väčšinu živnostníkov a malých firiem preto dáva najväčší zmysel p
 
 ### Stačí mi len Facebook stránka?
 
-Facebook je dobrý doplnok, ale nezobrazuje sa vo väčšine vyhľadávaní na Google a pôsobí menej dôveryhodne pri väčších alebo dlhodobejších zákazkách.
+Facebook je dobrý doplnok, ale nezobrazuje sa vo väčšine vyhľadávaní na Google a pôsobí menej dôveryhodne pri väčších alebo dlhodobejších zákazkách. Podrobnejšie to rozoberáme v článku [Prečo nestačí mať len Facebook stránku](/blog/preco-nestaci-mat-len-facebook).
 
 ### Ako rýchlo sa dá web spustiť?
 
@@ -611,7 +611,7 @@ Viac podstránok, dizajn prispôsobený firme, lepšia štruktúra obsahu a zák
 
 ### E-shop a riešenia na mieru (od 999 € vyššie)
 
-Internetový obchod, rezervačný systém alebo web s individuálnymi funkciami ako platobná brána, prepojenie na sklad či zákaznícky účet. Cena tu rastie s počtom funkcií a integrácií, ktoré musí systém zvládať.
+Internetový obchod, rezervačný systém alebo web s individuálnymi funkciami ako platobná brána, prepojenie na sklad či zákaznícky účet. Cena tu rastie s počtom funkcií a integrácií, ktoré musí systém zvládať. Podrobný rozpis nájdete v článku [Koľko stojí e-shop na Slovensku](/blog/kolko-stoji-eshop-na-slovensku).
 
 ### Weby veľkých agentúr (2 000 € – desiatky tisíc eur)
 
@@ -1054,7 +1054,7 @@ Kaderníctva dnes nesúťažia iba kvalitou strihu či farbenia. Súťažia aj t
 
 ## Prečo web pre kaderníctvo nie je to isté ako Instagram
 
-Instagram je skvelý na budovanie komunity a prezentáciu premien, ale má zásadné obmedzenie – nezobrazuje sa vo vyhľadávaní na Google. Keď niekto hľadá „kaderníctvo Trnava" alebo „pánsky barber Košice", Google mu ukáže weby a firemné profily, nie Instagram účty. Salón bez webu tak prichádza o veľkú časť ľudí, ktorí ho aktívne hľadajú, ale ešte nesledujú na sociálnych sieťach.
+Instagram je skvelý na budovanie komunity a prezentáciu premien, ale má zásadné obmedzenie – nezobrazuje sa vo vyhľadávaní na Google. Keď niekto hľadá „kaderníctvo Trnava" alebo „pánsky barber Košice", Google mu ukáže weby a firemné profily, nie Instagram účty. Salón bez webu tak prichádza o veľkú časť ľudí, ktorí ho aktívne hľadajú, ale ešte nesledujú na sociálnych sieťach. Prečo sociálne siete samy nestačia, vysvetľujeme aj v článku [Prečo nestačí mať len Facebook stránku](/blog/preco-nestaci-mat-len-facebook).
 
 ## Čo musí obsahovať dobrý web pre kaderníctvo
 
@@ -1086,7 +1086,7 @@ Malý dámsky salón v Banskej Bystrici fungoval roky výhradne cez Instagram �
 - Uveďte konkrétne ceny pri každej službe, nie len všeobecné „ceny na vyžiadanie".
 - Vytvorte samostatnú podstránku pre kľúčové služby (strihy, farbenie, svadobné účesy) – pomáha to aj vo vyhľadávaní.
 - Aktívne zbierajte recenzie po každej návšteve, napríklad cez SMS s odkazom.
-- Prepojte web s Google Business Profile a udržujte tam aktuálne otváracie hodiny.
+- Prepojte web s [Google Business Profile](/blog/ako-dostat-firmu-na-google-mapy) a udržujte tam aktuálne otváracie hodiny.
 
 ## Web ako aktívum, ktoré vlastníte vy
 
@@ -1435,7 +1435,7 @@ Lokálne SEO samo osebe nestačí, ak zvyšok webu nefunguje. Web musí zárove�
 
 ## Praktické kroky pre firmy z Trnavy a okolia
 
-1. Skontrolujte, či máte aktívny a kompletne vyplnený Google Business Profile.
+1. Skontrolujte, či máte aktívny a kompletne vyplnený [Google Business Profile](/blog/ako-dostat-firmu-na-google-mapy).
 2. Uistite sa, že adresa a telefónne číslo sú na webe aj na Google profile úplne zhodné.
 3. Doplňte na web referencie od klientov z Trnavy a blízkeho okolia.
 4. Vytvorte obsah, ktorý prirodzene spomína konkrétne mestá a obce, kde pôsobíte.
@@ -1567,7 +1567,7 @@ Kaviareň s cukrárňou si na začiatok spravila jednoduchý web na Wixe – rý
 
 ## Ako sa rozhoduje firma, ktorá nevie posúdiť technické detaily
 
-Väčšina majiteľov malých firiem nie je programátor a nemá čas naštudovať si technické rozdiely medzi platformami do hĺbky. Namiesto toho sa oplatí pýtať sa jednoduchšie, praktické otázky: Ako rýchlo sa web spustí? Čo sa stane, ak budem chcieť o rok pridať novú funkciu? Čo sa stane, ak budem chcieť zmeniť dodávateľa? Odpovede na tieto tri otázky väčšinou jasne ukážu, ktorá cesta zodpovedá vášmu spôsobu podnikania a plánom do budúcnosti, aj bez potreby rozumieť technickému pozadiu jednotlivých riešení.
+Väčšina majiteľov malých firiem nie je programátor a nemá čas naštudovať si technické rozdiely medzi platformami do hĺbky. Namiesto toho sa oplatí pýtať sa jednoduchšie, praktické otázky: Ako rýchlo sa web spustí? Čo sa stane, ak budem chcieť o rok pridať novú funkciu? Čo sa stane, ak budem chcieť zmeniť dodávateľa? Odpovede na tieto tri otázky väčšinou jasne ukážu, ktorá cesta zodpovedá vášmu spôsobu podnikania a plánom do budúcnosti, aj bez potreby rozumieť technickému pozadiu jednotlivých riešení. Ďalšie otázky, ktoré sa oplatí položiť ešte pred objednávkou, nájdete v článku [Ako si vybrať tvorcu webstránky](/blog/ako-si-vybrat-dodavatela-webstranky).
 
 ## Čo hovoria skúsenosti firiem, ktoré platformu už raz zmenili
 
@@ -1637,7 +1637,7 @@ Pre slovenských podnikateľov to znamená jediné: Ak nie ste viditeľní na lo
 
 ## Svätý grál lokálneho vyhľadávania: Google Map Pack
 
-Keď zadáte lokálny dopyt, Google vám na samom vrchu zobrazí mapu a tri najrelevantnejšie lokálne firmy. Tento blok sa nazýva Google Map Pack (alebo Local 3-Pack).
+Keď zadáte lokálny dopyt, Google vám na samom vrchu zobrazí mapu a tri najrelevantnejšie lokálne firmy. Tento blok sa nazýva Google Map Pack (alebo Local 3-Pack). Ako sa doň dostať krok za krokom – od založenia profilu po recenzie –, popisujeme v návode [Ako dostať firmu na Google Mapy](/blog/ako-dostat-firmu-na-google-mapy).
 
 Tento blok priťahuje až 40 – 60 % všetkých kliknutí na danej stránke výsledkov. Ak sa v ňom nenachádzate, pre obrovskú časť zákazníkov jednoducho neexistujete.
 
@@ -2128,6 +2128,21 @@ function boldSplit(text, baseKey) {
   );
 }
 
+// Otázky a odpovede zo sekcie „## FAQ“ pre štruktúrované dáta FAQPage
+function extractFaq(content) {
+  const plain = (text) => text.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\*\*/g, '').trim();
+  const faq = [];
+  let inFaq = false;
+  for (const raw of content.split('\n')) {
+    const line = raw.trim();
+    if (line.startsWith('## ')) inFaq = line.startsWith('## FAQ');
+    else if (!inFaq || !line) continue;
+    else if (line.startsWith('### ')) faq.push({ question: plain(line.slice(4)), answer: [] });
+    else if (faq.length) faq[faq.length - 1].answer.push(plain(line.replace(/^- /, '')));
+  }
+  return faq.filter((item) => item.answer.length);
+}
+
 function renderContent(content) {
   const lines = content.split('\n');
   const result = [];
@@ -2251,6 +2266,17 @@ export default function BlogPost() {
     ],
   };
 
+  const faq = extractFaq(post.content);
+  const faqSchema = faq.length > 0 && {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: { '@type': 'Answer', text: item.answer.join(' ') },
+    })),
+  };
+
   return (
     <div style={{ fontFamily: "'Inter', -apple-system, sans-serif", background: C.bg, minHeight: '100vh' }}>
       <Helmet>
@@ -2273,6 +2299,8 @@ export default function BlogPost() {
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
 
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+
+        {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
       </Helmet>
 
       <style>{`* { box-sizing: border-box; margin: 0; padding: 0; }`}</style>

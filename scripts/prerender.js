@@ -155,6 +155,8 @@ function render(page) {
     [/<meta name="twitter:title" content="[^"]*"/, `<meta name="twitter:title" content="${esc(ogTitle)}"`],
     [/<meta name="twitter:description" content="[^"]*"/, `<meta name="twitter:description" content="${esc(page.description)}"`],
     [/<div id="root">[\s\S]*?<\/div>\s*<\/div>\s*(?=<\/body>)/, `<div id="root">${page.body}</div>`],
+    // FAQ z úvodnej stránky patrí iba tam; články majú vlastné FAQPage z BlogPost.jsx
+    [/<script type="application\/ld\+json">(?:(?!<\/script>)[\s\S])*"FAQPage"(?:(?!<\/script>)[\s\S])*<\/script>/, ''],
   ];
   if (page.article) replacements.push([/<meta property="og:type" content="[^"]*"/, '<meta property="og:type" content="article"']);
   if (page.redirect) replacements.push([/<title>/, `<meta http-equiv="refresh" content="0; url=${page.canonicalRoute}"><title>`]);
