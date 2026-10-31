@@ -89,7 +89,7 @@ function helmetMeta(file) {
 }
 
 const shell = (body) =>
-  `<div style="font-family:Inter,-apple-system,sans-serif;max-width:720px;margin:0 auto;padding:64px 16px;color:#0f172a;line-height:1.6">` +
+  `<div class="prerender" style="font-family:Inter,-apple-system,sans-serif;max-width:720px;margin:0 auto;padding:64px 16px;color:#0f172a;line-height:1.6">` +
   `<p><a href="/">WebKlienti</a> · <a href="/blog">Blog</a></p>${body}</div>`;
 
 const pages = [];
