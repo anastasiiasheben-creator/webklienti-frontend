@@ -741,8 +741,8 @@ Vo WebKlienti odovzdávame web až po kontrole kľúčových bodov. Ak chcete ma
     title: 'Spolupráca s Montwell: čo priniesla nová webstránka',
     metaTitle: 'Montwell case study: webstránka a SEO výsledky za 3 mesiace',
     excerpt: 'Case study spolupráce WebKlientov s Montwell: nová webstránka, slovenská a nemecká verzia a organické výsledky Google za prvé 3 mesiace.',
-    date: '19. septembra 2026',
-    iso: '2026-09-19',
+    date: '21. septembra 2026',
+    iso: '2026-09-21',
     readTime: '7 min čítania',
     content: `Dobrá case study nemá byť iba zoznam pekných obrazoviek. Má ukázať, aký problém firma riešila, čo sa na webe zmenilo a čo sa dá po spustení reálne zmerať. Príkladom je spolupráca WebKlientov s Montwell, firmou, ktorá pred vytvorením webu komunikovala najmä cez Instagram.
 
@@ -1259,5 +1259,592 @@ Jednoduchý prezentačný web nemusí byť drahý. Prehľad cien nájdete v čl�
 Web elektrikára má dve úlohy: rýchlo pomôcť človeku, ktorému niečo nefunguje, a presvedčiť toho, kto si vyberá odborníka na väčšiu prácu. Konkrétne služby, oprávnenia, región, fotky z realizácií, referencie a viditeľný telefón – to je celý recept. Nič viac na začiatok nepotrebujete.
 
 **Chcete web pre svoju elektrikársku živnosť? [Objednajte si web tu](/#contact) – stačí vyplniť krátky formulár.**`
+  },
+  {
+    slug: 'ako-dostat-firmu-na-google-mapy',
+    title: 'Ako dostať firmu na Google Mapy: návod na Google Business Profile',
+    metaTitle: 'Ako dostať firmu na Google Mapy | Návod krok za krokom',
+    excerpt: 'Ako pridať firmu na Google Mapy a založiť Google Business Profile? Návod krok za krokom: overenie, kategórie, fotky, recenzie a chyby, ktoré vás stoja zákazníkov.',
+    date: '21. októbra 2026',
+    iso: '2026-10-21',
+    readTime: '11 min čítania',
+    content: `Skúste si do mobilu napísať „kaderníctvo“ alebo „autoservis“ a názov vášho mesta. Skôr než uvidíte prvú webstránku, Google vám ukáže mapu s tromi firmami, ich hodnotením, otváracími hodinami a tlačidlom Zavolať. Veľa ľudí ďalej ani nescrolluje. Vyberú si jednu z týchto troch a zavolajú.
+
+Ak tam vaša firma nie je, zákazník o vás jednoducho nevie. Nie preto, že by ste robili horšie, ale preto, že ste neboli tam, kde sa pozeral.
+
+Záznam na Google Mapách sa volá **Google Business Profile** (predtým Google Moja firma). Je zadarmo a založíte si ho sami za jedno popoludnie. V tomto článku je postup krok za krokom a hlavne veci, ktoré rozhodujú o tom, či sa budete zobrazovať vyššie ako konkurencia.
+
+## Čo je Google Business Profile a prečo ho potrebujete
+
+Google Business Profile je karta vašej firmy, ktorá sa zobrazuje v Google Mapách a vo vyhľadávaní. Obsahuje názov, adresu alebo oblasť pôsobenia, telefón, otváracie hodiny, fotky, recenzie a odkaz na web.
+
+Pre lokálnu firmu je to často najdôležitejšie miesto na internete. Človek, ktorý hľadá elektrikára, kaderníčku alebo pneuservis, chce niekoho blízko a rýchlo. Mapa mu presne toto ukáže.
+
+Dobrá správa: na rozdiel od reklamy za zobrazenie v mapách neplatíte. Zlá správa: veľa firiem si profil založí, vyplní polovicu údajov a potom sa čudujú, prečo ich Google ukazuje až na desiatom mieste.
+
+## Krok 1: Skontrolujte, či už profil nemáte
+
+Skôr než začnete, vyhľadajte názov svojej firmy v Google Mapách. Často sa stane, že profil už existuje – založil ho niekto z rodiny, bývalý zamestnanec, alebo ho Google vytvoril sám z verejných údajov.
+
+- Ak profil existuje a máte k nemu prístup, pokračujte jeho úpravou.
+- Ak existuje, ale prístup nemáte, kliknite na „Vlastníte túto firmu?“ a požiadajte o prevzatie.
+- Ak neexistuje, založte nový.
+
+Dva profily pre jednu firmu sú problém. Google nevie, ktorý je správny, a recenzie sa rozdelia medzi oba.
+
+## Krok 2: Založenie profilu
+
+Profil založíte na stránke business.google.com. Budete potrebovať Google účet – ideálne firemný, nie osobný účet, ku ktorému sa o dva roky nebudete vedieť prihlásiť.
+
+Google sa vás postupne opýta:
+
+- **názov firmy** – presne tak, ako ju používate, bez pridávania kľúčových slov,
+- **hlavnú kategóriu** – napríklad „Elektrikár“, „Kaderníctvo“, „Autoservis“,
+- **či máte prevádzku, kam chodia zákazníci**,
+- **oblasť, kde poskytujete služby**, ak chodíte k zákazníkom,
+- **telefón a web**.
+
+Pri názve firmy buďte poctiví. Lákavé je napísať „Peter Novák – elektrikár Trnava 24/7 najlacnejšie“, ale Google to považuje za porušenie pravidiel a profil vám môže pozastaviť. Konkurencia vás navyše môže nahlásiť.
+
+### Máte prevádzku, alebo chodíte za zákazníkmi?
+
+Toto je dôležitý rozdiel. Kaderníctvo, autoservis alebo obchod má adresu, kam zákazník príde. Tú uvediete a zobrazí sa na mape.
+
+Elektrikár, inštalatér alebo stavebná firma často pracuje u zákazníka a doma žiadnu prevádzku nemá. V takom prípade adresu skryjete a namiesto nej nastavíte **oblasť pôsobenia** – mestá a okresy, kam dochádzate. Nemusíte tak zverejňovať svoju domácu adresu.
+
+## Krok 3: Overenie
+
+Google musí overiť, že firma naozaj existuje a že ju spravujete vy. Spôsob overenia si väčšinou nevyberáte, Google vám ho ponúkne sám. Najčastejšie je to:
+
+- krátke video, v ktorom ukážete prevádzku, označenie firmy, náradie alebo služobné auto a doklad, že firmu vediete,
+- telefonát alebo SMS s kódom,
+- pohľadnica s kódom poslaná poštou na adresu firmy.
+
+Pri videu si dajte záležať. Natočte ho v jednom zábere, bez strihu, a ukážte, že ste na mieste, ktoré ste uviedli. Ak nemáte prevádzku, ukážte auto s logom, náradie a napríklad faktúru alebo živnostenský list. Overenie môže trvať od pár minút po niekoľko dní.
+
+Kým profil nie je overený, verejne sa nezobrazuje, alebo sa zobrazuje bez vašich úprav.
+
+## Krok 4: Vyplňte všetko, nie iba povinné polia
+
+Tu sa rozhoduje, či budete v mapách hore, alebo dole. Google uprednostňuje profily, ktoré sú úplné a aktuálne.
+
+### Kategórie
+
+Hlavná kategória je najdôležitejšia. Vyberte tú, ktorá najpresnejšie popisuje, čo robíte najviac. Doplňte aj vedľajšie kategórie. Autoservis môže pridať „Pneuservis“ a „Servis klimatizácie“, kaderníctvo „Barbershop“ alebo „Kozmetický salón“, ak tieto služby naozaj ponúka.
+
+### Služby
+
+Napíšte konkrétne služby, ideálne s krátkym popisom a orientačnou cenou. „Výmena oleja“, „Prezutie pneumatík“, „Revízia elektroinštalácie“. Ľudia hľadajú konkrétne veci, nie „komplexné služby“.
+
+### Popis firmy
+
+Máte 750 znakov. Napíšte normálnou rečou, čo robíte, pre koho a kde. Napríklad: „Rodinný autoservis v Hlohovci. Opravujeme osobné autá všetkých značiek, robíme diagnostiku, servis klimatizácií a prezúvanie. Termín väčšinou do troch dní.“ Žiadne „sme dynamicky sa rozvíjajúca spoločnosť“.
+
+### Otváracie hodiny
+
+Vyplňte ich presne a nezabudnite na sviatky. Nič zákazníka nenahnevá viac ako prísť pred zatvorené dvere, keď Google tvrdil, že máte otvorené.
+
+### Fotky
+
+Profily s fotkami dostávajú viac kliknutí aj telefonátov. Pridajte:
+
+- logo a úvodnú fotku,
+- fotku prevádzky zvonku, aby vás ľudia našli,
+- fotky interiéru,
+- fotky vašej práce – účesy, opravené autá, hotové kúpeľne, zapojené rozvádzače,
+- fotku seba alebo tímu.
+
+Stačia fotky z mobilu, ak sú ostré a dobre osvetlené. Fotky z fotobanky nepoužívajte. Google aj zákazníci to spoznajú.
+
+## Krok 5: Recenzie – najsilnejší faktor, ktorý ovplyvníte
+
+Recenzie rozhodujú dvakrát. Google podľa nich posudzuje, ako dôveryhodná je firma, a zákazník podľa nich vyberá, komu zavolá. Firma so 4,8 a štyridsiatimi recenziami vyhrá nad firmou so 4,9 a tromi recenziami takmer vždy.
+
+Ako získať recenzie bez otravovania:
+
+- V profile si skopírujte odkaz na pridanie recenzie.
+- Po skončení práce pošlite zákazníkovi SMS: „Ďakujem za dôveru. Ak ste boli spokojný, budem rád za krátku recenziu: [odkaz].“
+- Vytlačte si QR kód s odkazom a dajte ho na pult, do auta alebo na faktúru.
+
+Najlepší čas je hneď po odovzdaní práce, keď je zákazník spokojný. O týždeň už na to zabudne.
+
+### Odpovedajte na každú recenziu
+
+Aj na pozitívnu stačí krátke poďakovanie. Pri negatívnej recenzii nereagujte urazene. Pokojne vysvetlite situáciu a ponúknite riešenie. Takú odpoveď si prečíta každý ďalší zákazník a často ho presvedčí viac ako desať pochvál.
+
+Nikdy si recenzie nekupujte a nepíšte ich sami. Google falošné recenzie maže a profil môže potrestať.
+
+## Krok 6: Prepojte profil s webom
+
+Profil v mapách a webstránka sa navzájom podporujú. Profil prinesie zákazníka, web ho presvedčí. Veľa ľudí si pred telefonátom ešte otvorí web, aby videli cenník, fotky alebo podrobnosti o službách.
+
+Dôležité je, aby sa údaje zhodovali. Názov firmy, adresa a telefón musia byť na webe, v profile aj v katalógoch rovnaké. Ak má web iné telefónne číslo ako Google profil, Google si nie je istý, ktoré je správne, a vy strácate pozíciu.
+
+Na web patrí aj mapa s vašou polohou a zoznam miest, kde pôsobíte. Viac o tom, ako spolu súvisí web a mapy, nájdete v článku [Čo je to lokálne SEO a prečo na ňom záleží?](/blog/lokalne-seo-slovensko).
+
+## Prečo ste v mapách nízko, aj keď máte profil
+
+Google pri zoradení firiem v mapách posudzuje najmä tri veci:
+
+- **Relevantnosť** – či váš profil zodpovedá tomu, čo človek hľadá. Pomáhajú presné kategórie a služby.
+- **Vzdialenosť** – ako ďaleko ste od človeka, ktorý hľadá. Toto neovplyvníte.
+- **Dôveryhodnosť** – recenzie, ich počet a hodnotenie, aktivita profilu, kvalita webu a zmienky o firme na internete.
+
+Ak ste nízko, najčastejšie príčiny sú:
+
+- zlá alebo príliš všeobecná hlavná kategória,
+- málo recenzií alebo žiadne odpovede na ne,
+- žiadne fotky alebo iba logo,
+- chýbajúci web, prípadne web, ktorý o službách skoro nič nehovorí,
+- rozdielne kontaktné údaje na rôznych miestach.
+
+## Ako udržiavať profil aktívny
+
+Profil nie je vec, ktorú raz vyplníte a zabudnete. Stačí však pár minút mesačne:
+
+- raz za mesiac pridajte nové fotky z práce,
+- odpovedajte na nové recenzie do pár dní,
+- aktualizujte otváracie hodiny pred sviatkami a dovolenkou,
+- občas pridajte príspevok – akciu, novú službu, sezónnu ponuku.
+
+Príspevky nemusia byť dokonalé. Fotka a dve vety typu „Od novembra robíme aj prezutie pneumatík v sobotu“ úplne stačia.
+
+## FAQ
+
+### Koľko stojí Google Business Profile?
+Nič. Profil je zadarmo. Platíte iba vtedy, ak sa rozhodnete pre platenú reklamu v Google, ale tú na zobrazenie v mapách nepotrebujete.
+
+### Môžem mať profil, keď nemám prevádzku?
+Áno. Ak chodíte k zákazníkom, adresu skryjete a nastavíte oblasť, kde pracujete. Takto to robia elektrikári, inštalatéri aj stavebné firmy.
+
+### Ako dlho trvá, kým sa zobrazím v mapách?
+Po overení sa profil zobrazí väčšinou do niekoľkých dní. Lepšie pozície pri konkurenčných vyhľadávaniach prichádzajú postupne, s recenziami, fotkami a dobrým webom.
+
+### Potrebujem k profilu aj web?
+Profil funguje aj bez webu, ale s webom funguje lepšie. Google berie web ako dôkaz, že ste skutočná a aktívna firma, a zákazník na ňom nájde odpovede, ktoré sa do profilu nezmestia. Ak ešte web nemáte, pozrite si článok [Prečo dnes každá malá firma potrebuje web?](/blog/preco-kazda-mala-firma-potrebuje-web).
+
+### Čo robiť s nespravodlivou negatívnou recenziou?
+Pokojne a vecne na ňu odpovedzte. Ak porušuje pravidlá – je urážlivá, falošná alebo od niekoho, kto nikdy nebol vaším zákazníkom –, môžete ju nahlásiť na odstránenie. Garancia však neexistuje, preto je lepšia slušná odpoveď a viac pozitívnych recenzií.
+
+## Záver
+
+Google Business Profile je najrýchlejší spôsob, ako sa lokálna firma dostane pred zákazníkov, ktorí práve hľadajú jej služby. Založte ho, overte, vyplňte úplne všetko, zbierajte recenzie a prepojte ho s webom. Nič z toho nie je zložité, len to treba urobiť poriadne.
+
+Ak chcete ďalšie tipy, ako prísť k zákazníkom z vyhľadávania, prečítajte si aj [Ako získať prvých zákazníkov cez Google bez reklamy](/blog/ako-ziskat-zakaznikov-z-google-bez-reklamy).
+
+**Chcete web, ktorý bude s vaším Google profilom spolupracovať a prinášať dopyty? [Napíšte nám](/#contact) – pripravíme ho za pár dní.**`
+  },
+  {
+    slug: 'preco-nestaci-mat-len-facebook',
+    title: 'Prečo nestačí mať len Facebook stránku',
+    metaTitle: 'Facebook alebo web? Prečo nestačí mať len Facebook',
+    excerpt: 'Máte Facebook a premýšľate, či ešte potrebujete web? Zistite, kde Facebook nestačí, prečo vás bez webu ľudia na Google nenájdu a ako ich spojiť.',
+    date: '24. októbra 2026',
+    iso: '2026-10-24',
+    readTime: '9 min čítania',
+    content: `„Načo mi je web, keď mám Facebook?“ Túto vetu počujeme veľmi často. Od kaderníčok, majstrov, malých reštaurácií aj živnostníkov, ktorí robia dobrú prácu a zákazníkov majú hlavne z odporúčaní.
+
+A rozumieme tomu. Facebook stránka je zadarmo, založíte ju za desať minút, pridáte fotky a hotovo. Kamaráti dajú like, pár ľudí napíše správu. Prečo platiť za niečo ďalšie?
+
+Odpoveď je jednoduchá: Facebook a web robia dve rôzne veci. Facebook je dobrý na udržiavanie kontaktu s ľuďmi, ktorí vás už poznajú. Web je dobrý na to, aby vás našli ľudia, ktorí o vás ešte nikdy nepočuli. A práve tí sú pre rast firmy dôležitejší.
+
+## Ako ľudia naozaj hľadajú služby
+
+Predstavte si, že sa vám pokazí práčka. Čo urobíte? Väčšina ľudí otvorí Google a napíše „oprava práčky“ a názov mesta. Nikto nejde na Facebook a nescrolluje skupiny, kým nenájde opravára.
+
+Rovnako to funguje pri kaderníctve v novom meste, pri hľadaní elektrikára, autoservisu alebo stavebnej firmy. Ľudia, ktorí potrebujú službu teraz, hľadajú na Google.
+
+Facebook stránky sa vo výsledkoch Google občas zobrazia, ale len zriedka na prvých miestach pri všeobecných vyhľadávaniach typu „kaderníctvo Trnava“. Tam vyhrávajú weby a profily v Google Mapách. Ak máte iba Facebook, ste pre veľkú časť zákazníkov neviditeľní.
+
+## Čo Facebook robí dobre
+
+Aby sme boli spravodliví – Facebook má svoje miesto a nie je dôvod ho rušiť.
+
+- Rýchlo zdieľate novinky, akcie a fotky z práce.
+- Zákazníci vám jednoducho napíšu správu.
+- Stáli zákazníci vidia, že ste aktívni.
+- Odporúčania sa šíria cez zdieľanie a komentáre.
+
+Pre kaderníčku, ktorá pridá fotku nového účesu a pod ňou sa ozvú tri ďalšie klientky, je to užitočný nástroj. Problém nastáva, keď je Facebook to jediné, čo firma má.
+
+## Prečo Facebook sám nestačí
+
+### Nenájdu vás noví zákazníci
+
+Toto je najväčší problém. Facebook ukazuje vaše príspevky hlavne ľuďom, ktorí vás už sledujú. Organický dosah firemných stránok je dnes malý – z vašich sledovateľov uvidí bežný príspevok iba časť. Nových ľudí oslovíte prakticky len cez platenú reklamu.
+
+Web naopak pracuje pre vás aj vtedy, keď nič nepridávate. Ak je dobre spravený, Google ho ukáže človeku, ktorý hľadá presne vašu službu vo vašom meste.
+
+### Nie je to vaše
+
+Facebook stránka patrí Facebooku. Pravidlá sa menia, dosah klesá, a ak vám niekto stránku nahlási alebo vám zablokujú účet, môžete prísť o všetko – fotky, recenzie aj kontakty. Stáva sa to častejšie, než by človek čakal, a dostať sa späť je zdĺhavé.
+
+Web a doména sú vaše. Nikto vám ich zo dňa na deň nevypne.
+
+### Informácie sa strácajú
+
+Na Facebooku sú informácie roztrúsené v príspevkoch. Cenník ste dali pred rokom, otváracie hodiny niekde v časti „Informácie“, fotky z realizácií v desiatich albumoch. Zákazník, ktorý chce rýchlo zistiť, čo robíte a koľko to stojí, to musí pracne hľadať. Väčšina to vzdá.
+
+Web má jasnú štruktúru: služby, ceny, ukážky práce, kontakt. Všetko na svojom mieste.
+
+### Nie každý má Facebook
+
+Veľa ľudí Facebook nepoužíva, prípadne ho používa iba na rodinu. Niektorí si nechcú vytvárať účet, len aby si pozreli vaše fotky. Mladší ľudia sú skôr na Instagrame a TikToku, starší často len na Google. Web otvorí každý, bez prihlasovania.
+
+### Pôsobí menej profesionálne
+
+Pri drobných službách to nemusí vadiť. Ale ak ponúkate väčšie zákazky – rekonštrukciu, montáž, firemné služby –, zákazník chce vidieť, že ste stabilná firma. Vlastný web s doménou a e-mailom na tejto doméne pôsobí výrazne dôveryhodnejšie ako Facebook stránka a Gmail adresa.
+
+## Skutočný príklad: dve kaderníctva v jednom meste
+
+Predstavte si dve kaderníctva na tej istej ulici. Obe robia kvalitnú prácu, obe majú spokojné klientky.
+
+Prvé má iba Facebook s peknými fotkami. Nové klientky prichádzajú hlavne z odporúčaní.
+
+Druhé má jednoduchý web s cenníkom, fotkami účesov, otváracími hodinami a tlačidlom na rezerváciu, plus vyplnený profil v Google Mapách. Keď sa do mesta prisťahuje nová žena a napíše do Google „kaderníctvo“, nájde práve toto druhé.
+
+Nie je to o tom, kto strihá lepšie. Je to o tom, kto je viditeľný vo chvíli, keď sa zákazník rozhoduje. Viac o tom, čo by mal mať web kaderníctva, nájdete v článku [Web pre kaderníctvo: ako získať viac rezervácií online](/blog/web-pre-kadernictvo).
+
+## Facebook a web spolu fungujú najlepšie
+
+Netreba si vyberať. Najlepšie výsledky majú firmy, ktoré využívajú obe a navzájom ich prepoja.
+
+- **Web je základ.** Tu sú všetky dôležité informácie, sem vedú odkazy z Google aj zo sociálnych sietí.
+- **Facebook udržiava vzťah.** Novinky, fotky z práce, akcie. Pri každom príspevku môžete odkázať na web, kde je viac detailov.
+- **Google Business Profile vás ukáže v mapách.** Je zadarmo a pre lokálnu firmu veľmi dôležitý. Návod nájdete v článku [Ako dostať firmu na Google Mapy](/blog/ako-dostat-firmu-na-google-mapy).
+
+Na webe potom môžete mať odkaz na Facebook a na Facebooku odkaz na web. Zákazník si vyberie, čo mu vyhovuje.
+
+## Čo by mal mať jednoduchý web, ak doteraz máte iba Facebook
+
+Netreba hneď veľký web s desiatkami podstránok. Na začiatok stačí jedna dobre spravená stránka:
+
+- kto ste, čo robíte a kde – hneď na začiatku,
+- zoznam služieb s orientačnými cenami,
+- fotky vašej práce – kľudne tie, ktoré už máte na Facebooku,
+- recenzie spokojných zákazníkov,
+- kontakt, telefón, ktorý sa dá na mobile hneď vytočiť, a mapa.
+
+Takýto web dokáže fungovať roky a priniesť zákazníkov, ktorí by vás cez Facebook nikdy nenašli. Viac o tom, čo by mal web obsahovať, píšeme v článku [Čo musí mať dobrý firemný web](/blog/co-musi-mat-dobry-firemny-web).
+
+## Koľko to stojí v porovnaní s Facebookom
+
+Facebook je zadarmo, ak neplatíte reklamu. Web zadarmo nie je, ale ani nemusí byť drahý. Jednoduchý prezentačný web pre živnostníka dnes stojí rádovo stovky eur, nie tisíce. K tomu doména a hosting, ktoré vychádzajú na pár eur mesačne.
+
+Ak vám web prinesie čo i len jednu novú zákazku za mesiac, väčšinou sa vám vráti veľmi rýchlo. Podrobnejší prehľad cien nájdete v článku [Koľko stojí webstránka na Slovensku](/blog/kolko-stoji-webstranka-na-slovensku).
+
+## FAQ
+
+### Mám zrušiť Facebook, keď si urobím web?
+Nie. Facebook je užitočný na komunikáciu so stálymi zákazníkmi. Web ho nenahrádza, dopĺňa ho. Najlepšie fungujú spolu.
+
+### Nájde ma Google, keď mám iba Facebook?
+Pri vyhľadávaní presného názvu vašej firmy možno áno. Pri vyhľadávaní služby, napríklad „elektrikár Nitra“, len zriedka. Tam vyhrávajú weby a profily v Google Mapách.
+
+### Stačí mi namiesto webu Google Business Profile?
+Profil v mapách je výborný začiatok a odporúčame ho každej lokálnej firme. Web však dáva Google aj zákazníkovi viac informácií a dôvery. Najlepšie je mať oboje.
+
+### Čo ak nemám čas starať sa o web?
+Jednoduchý web nepotrebuje každodennú starostlivosť ako Facebook. Raz sa urobí poriadne a potom stačí občas aktualizovať cenník alebo pridať fotky.
+
+### Môžem na web dať fotky a recenzie z Facebooku?
+Áno, vlastné fotky určite. Pri recenziách je slušné opýtať sa zákazníka, či môžete jeho hodnotenie zverejniť aj na webe s menom.
+
+## Záver
+
+Facebook je dobrý na udržiavanie kontaktu so zákazníkmi, ktorých už máte. Ak chcete, aby vás našli aj noví ľudia – tí, ktorí práve teraz hľadajú vaše služby na Google –, potrebujete vlastný web. Nemusí byť veľký ani drahý. Musí byť jasný, rýchly a mať všetko, čo zákazník potrebuje vedieť, aby vám zavolal.
+
+**Máte zatiaľ iba Facebook a chcete jednoduchý web, ktorý vás ukáže na Google? [Ozvite sa nám](/#contact) – pripravíme ho za pár dní.**`
+  },
+  {
+    slug: 'ako-si-vybrat-dodavatela-webstranky',
+    title: 'Ako si vybrať tvorcu webstránky a nenaletieť: 12 otázok pred objednávkou',
+    metaTitle: 'Ako si vybrať tvorcu webstránky | 12 otázok pred objednávkou',
+    excerpt: 'Ako vybrať dodávateľa webstránky? 12 otázok, ktoré položiť pred objednávkou: vlastníctvo domény, mesačné poplatky, úpravy, SEO, termíny aj varovné signály.',
+    date: '27. októbra 2026',
+    iso: '2026-10-27',
+    readTime: '11 min čítania',
+    content: `Väčšina podnikateľov si web objednáva raz za niekoľko rokov. Nie je to ich odbor, nevedia, na čo sa pýtať, a preto sa rozhodujú podľa ceny alebo podľa toho, kto im ako prvý odpísal. Niekedy to dopadne dobre. Inokedy zistia o rok, že doména nie je ich, za každú zmenu textu platia, alebo sa im dodávateľ prestal ozývať.
+
+Tento článok nie je o tom, ktorého dodávateľa vybrať. Je o tom, ako sa nedať nachytať a ako rozpoznať, či vám niekto ponúka web, ktorý bude fungovať, alebo iba pekný obrázok.
+
+Nižšie nájdete otázky, ktoré by ste mali položiť každému tvorcovi webu ešte pred podpisom objednávky. Dobrý dodávateľ na ne odpovie bez problémov. Ak sa niekto vyhýba odpovedi, je to signál.
+
+## Najprv si ujasnite, čo vlastne potrebujete
+
+Skôr než začnete porovnávať ponuky, odpovedzte si na tri otázky:
+
+- **Čo má web robiť?** Prinášať telefonáty, rezervácie, dopyty na cenovú ponuku, predávať tovar?
+- **Kto sú vaši zákazníci a ako vás hľadajú?** Ľudia z okolia cez Google, firmy, turisti?
+- **Koľko služieb ponúkate?** Jedna stránka stačí pre živnostníka s jednou službou. Firma s piatimi typmi prác potrebuje viac.
+
+Bez toho budete porovnávať jablká s hruškami. Jedna ponuka za 300 € a druhá za 2 000 € môžu byť obe férové, ak opisujú úplne iný rozsah. Pomôcť vám môže článok [Koľko stránok má mať firemný web?](/blog/kolko-stranok-ma-mat-firemny-web).
+
+## 12 otázok, ktoré položiť dodávateľovi
+
+### 1. Na koho bude registrovaná doména?
+
+Toto je najdôležitejšia otázka v celom článku. Doména (napríklad vasafirma.sk) musí byť registrovaná na vás alebo vašu firmu. Nie na dodávateľa, nie na jeho agentúru.
+
+Ak je doména na niekom inom, v praxi ho potrebujete pri každej zmene a pri odchode k inému dodávateľovi môžete o adresu prísť. S ňou aj o e-maily a pozície v Google. Viac v článku [Ako si vybrať správnu doménu](/blog/ako-si-vybrat-spravnu-domenu).
+
+### 2. Kto bude vlastniť web a texty?
+
+Po zaplatení by ste mali mať právo web používať aj vtedy, keď sa s dodávateľom rozídete. Opýtajte sa, či dostanete prístupy, prípadne zálohu webu. Niektoré ponuky „web zadarmo za mesačný poplatok“ fungujú tak, že keď prestanete platiť, web zmizne.
+
+### 3. Aké sú mesačné alebo ročné poplatky?
+
+Cena za tvorbu je jedna vec. Druhá je, koľko budete platiť každý rok. Pýtajte sa konkrétne:
+
+- koľko stojí doména,
+- koľko stojí hosting a kto ho platí,
+- či je v cene správa webu, aktualizácie, zálohy,
+- či sú poplatky za licencie šablón alebo pluginov.
+
+Lacný web s drahým mesačným paušálom môže byť po troch rokoch drahší ako kvalitný web s nízkymi prevádzkovými nákladmi. Čo je hosting a prečo na ňom záleží, vysvetľujeme v článku [Čo je webhosting a prečo na ňom záleží](/blog/co-je-webhosting-a-preco-na-nom-zalezi).
+
+### 4. Koľko kôl úprav je v cene?
+
+Takmer každý web sa po prvom návrhu upravuje. Opýtajte sa, koľko zmien je v cene a koľko stojí každá ďalšia. Dobrá je aj otázka, ako bude vyzerať komunikácia – e-mail, telefón, osobné stretnutie.
+
+### 5. Ako budem web upravovať sám?
+
+Ak chcete meniť cenník, otváracie hodiny alebo pridávať fotky, musíte vedieť ako. Niekto dá redakčný systém, niekto robí zmeny za vás. Obe cesty sú v poriadku, len musíte vopred vedieť, ktorú dostanete a koľko stojí drobná zmena.
+
+### 6. Môžem vidieť weby, ktoré ste spravili?
+
+Referencie sú najlepší dôkaz. Nepozerajte iba screenshoty v portfóliu – otvorte tie weby na mobile. Fungujú rýchlo? Dá sa ľahko zavolať? Sú stále online? Ak môžete, zavolajte jednému z klientov a opýtajte sa na spoluprácu.
+
+### 7. Bude web dobre fungovať na mobile?
+
+Väčšina návštevníkov lokálnych firiem prichádza z mobilu. Odpoveď „áno, je responzívny“ nestačí. Opýtajte sa, ako testujú mobilnú verziu, a pri referenciách si to overte sami.
+
+### 8. Ako rýchlo sa bude web načítavať?
+
+Pomalý web stráca zákazníkov aj pozície v Google. Dobrý dodávateľ vie povedať, ako rýchlosť meria. Zadarmo si to môžete overiť aj vy cez nástroj PageSpeed Insights od Google.
+
+### 9. Čo z SEO je v cene?
+
+SEO znamená úpravy, vďaka ktorým vás nájdu ľudia na Google. Opýtajte sa, čo konkrétne dostanete: nadpisy, popisy stránok pre Google, mapu stránok, napojenie na Google Search Console, prepojenie s Google Mapami?
+
+Pozor na opačný extrém. Ak vám niekto **garantuje prvé miesto v Google**, nehovorí pravdu. Takú záruku nemôže dať nikto. Viac o tom v článku [Prečo je SEO kľúčové pre úspech vášho podnikania](/blog/preco-je-seo-klucove).
+
+### 10. Kto napíše texty?
+
+Texty často zdržia projekt viac ako dizajn. Opýtajte sa, či ich dodávateľ napíše, upraví vaše podklady, alebo čaká, že ich dodáte celé vy. Dobré texty majú na počet dopytov väčší vplyv ako farba tlačidiel. Tipy nájdete v článku [Ako napísať texty na web, ktoré predávajú](/blog/ako-napisat-texty-na-web-ktore-predavaju).
+
+### 11. Aký je termín a čo ho môže posunúť?
+
+Spýtajte sa na konkrétny termín a aj na to, čo potrebujú od vás a dokedy. Väčšina oneskorení vzniká čakaním na podklady od klienta. Reálny harmonogram nájdete v článku [Koľko trvá vytvorenie webstránky?](/blog/kolko-trva-vytvorenie-webstranky).
+
+### 12. Čo sa stane po spustení?
+
+Kto rieši, keď web prestane fungovať? Robí niekto zálohy? Koľko stojí pomoc o rok? Je v cene napojenie na Google Analytics, aby ste videli, koľko ľudí web navštívi? Spolupráca by spustením webu nemala skončiť tichom.
+
+## Varovné signály
+
+Pri týchto veciach spozornite:
+
+- **Garancia prvého miesta v Google.** Nikto ju nemôže dať.
+- **Doména na meno dodávateľa** bez jasnej dohody o prevode.
+- **Žiadna písomná ponuka.** Rozsah, cena a termín majú byť na papieri alebo v e-maile.
+- **Žiadne referencie** alebo referencie, ktoré nefungujú.
+- **Výrazne nižšia cena bez vysvetlenia** – a s mesačným paušálom, o ktorom sa dozviete až neskôr.
+- **Tlak na rýchle rozhodnutie** typu „zľava platí iba do piatku“.
+- **Odpovede plné cudzích slov**, ktorým nerozumiete, a nikto vám ich nevysvetlí.
+
+## Agentúra, freelancer alebo urob si sám?
+
+Neexistuje jedna správna odpoveď. Záleží na rozpočte a na tom, čo potrebujete.
+
+- **Väčšia agentúra** je vhodná pre firmy so zložitejšími požiadavkami a väčším rozpočtom. Počítajte s vyššou cenou a dlhším procesom.
+- **Menší tím alebo freelancer** je často najlepšia voľba pre živnostníkov a malé firmy. Komunikujete priamo s tým, kto web robí, a cena býva primeranejšia.
+- **Stavebnice typu Wix** zvládne aj laik, ale stojí to váš čas a mesačné poplatky. Porovnanie nájdete v článku [WordPress vs Wix vs web na mieru](/blog/wordpress-vs-wix-vs-web-na-mieru).
+
+## Ako porovnať ponuky
+
+Keď máte dve-tri ponuky, položte ich vedľa seba a porovnajte:
+
+- čo presne je v cene (počet stránok, texty, fotky, SEO, formulár),
+- celkové náklady na tri roky, nie iba cenu tvorby,
+- termín dodania,
+- kto vlastní doménu a web,
+- ako sa vám s dodávateľom komunikovalo.
+
+Posledný bod nepodceňujte. Ak vám niekto pred zaplatením odpovedá týždeň, po zaplatení to nebude lepšie.
+
+## FAQ
+
+### Koľko by mal stáť web pre malú firmu?
+Jednoduchý prezentačný web stojí rádovo stovky eur, väčšie firemné weby a e-shopy viac. Prehľad cien nájdete v článku [Koľko stojí webstránka na Slovensku](/blog/kolko-stoji-webstranka-na-slovensku).
+
+### Je lacný web vždy zlý?
+Nie. Cena nehovorí všetko. Lacný web môže byť dobrý, ak je rýchly, prehľadný, funguje na mobile a doména je vaša. Viac v článku [Web za 149 € – je to dobrá voľba?](/blog/web-za-149-eur).
+
+### Mám podpisovať zmluvu?
+Pri menších projektoch stačí písomná objednávka alebo e-mail s jasným rozsahom, cenou, termínom a informáciou o vlastníctve domény. Pri väčších projektoch je zmluva rozumná.
+
+### Čo ak už mám web a doména nie je na mne?
+Požiadajte dodávateľa o prevod domény na vás. Je to bežná vec a férový dodávateľ to urobí. Ak odmieta, je to dôvod na zmenu.
+
+## Záver
+
+Dobrého tvorcu webu nespoznáte podľa najkrajšieho portfólia ani najnižšej ceny. Spoznáte ho podľa toho, že vám jasne odpovie na otázky o doméne, poplatkoch, úpravách a termínoch, vysvetlí veci bez zbytočných cudzích slov a nesľubuje nemožné. Uložte si týchto 12 otázok a položte ich každému, s kým sa budete rozprávať. Aj nám.
+
+**Chcete jasnú ponuku bez skrytých poplatkov a s doménou na vaše meno? [Napíšte nám](/#contact) – odpovieme na všetky otázky ešte pred objednávkou.**`
+  },
+  {
+    slug: 'kolko-stoji-eshop-na-slovensku',
+    title: 'Koľko stojí e-shop na Slovensku v roku 2026?',
+    metaTitle: 'Koľko stojí e-shop na Slovensku v roku 2026? | Ceny',
+    excerpt: 'Koľko stojí e-shop na Slovensku? Porovnanie prenájmu, WordPress/WooCommerce a e-shopu na mieru, skryté mesačné náklady a za čo sa oplatí zaplatiť.',
+    date: '30. októbra 2026',
+    iso: '2026-10-30',
+    readTime: '10 min čítania',
+    content: `Otázka „koľko stojí e-shop“ má rovnako veľa odpovedí ako otázka „koľko stojí auto“. Dá sa začať s pár eurami mesačne, ale dá sa aj zaplatiť desaťtisíce. Obe možnosti môžu byť správne – záleží na tom, čo predávate, koľko toho predávate a koľko času do e-shopu viete vložiť.
+
+V tomto článku vysvetľujeme, z čoho sa cena e-shopu skladá, aké sú hlavné možnosti na Slovensku, na čo ľudia pri rozpočte zabúdajú a ako sa rozhodnúť bez toho, aby ste preplatili alebo naopak ušetrili na nesprávnom mieste.
+
+Uvedené ceny sú orientačné a líšia sa podľa dodávateľa. Majú vám pomôcť zorientovať sa, nie nahradiť konkrétnu ponuku.
+
+## Z čoho sa skladá cena e-shopu
+
+Pri e-shope neplatíte iba za „stránku“. Platíte za celý systém, ktorý musí zvládnuť:
+
+- katalóg produktov s fotkami, popismi, variantmi (veľkosť, farba) a skladom,
+- košík a objednávku,
+- platby kartou, prevodom alebo na dobierku,
+- napojenie na dopravcov a výdajné miesta,
+- faktúry a e-maily zákazníkom,
+- obchodné podmienky, reklamácie a ochranu osobných údajov,
+- správu objednávok pre vás.
+
+Každá z týchto vecí stojí čas pri nastavení a niektoré aj mesačný poplatok. Preto je e-shop vždy drahší ako jednoduchý prezentačný web.
+
+## Tri hlavné cesty k e-shopu
+
+### 1. Prenajatý e-shop (platforma s mesačným poplatkom)
+
+Na Slovensku a v Česku sú obľúbené platformy, kde si e-shop „prenajmete“. Platíte mesačný poplatok podľa balíka a počtu produktov a dostanete hotový systém, ktorý si nastavíte sám alebo s pomocou.
+
+**Orientačné náklady:** mesačný poplatok od pár eur pri najmenších balíkoch po desiatky eur pri väčších, k tomu platená šablóna alebo úprava dizajnu, prípadne doplnky.
+
+**Výhody:**
+
+- rýchly štart, často do pár dní,
+- nemusíte riešiť hosting, aktualizácie ani bezpečnosť,
+- napojenie na slovenských dopravcov a platobné brány býva pripravené.
+
+**Nevýhody:**
+
+- platíte navždy, kým e-shop existuje,
+- obmedzenia dizajnu a funkcií podľa platformy,
+- prechod na iné riešenie neskôr môže byť pracný.
+
+**Pre koho:** pre začínajúcich predajcov, menšie sortimenty a ľudí, ktorí chcú začať rýchlo a s malým vstupným rozpočtom.
+
+### 2. WordPress s WooCommerce
+
+WooCommerce je bezplatný doplnok, ktorý z WordPress webu urobí e-shop. Je to najrozšírenejšie riešenie na svete pre menšie a stredné obchody.
+
+**Orientačné náklady:** pri nastavení od dodávateľa zvyčajne od približne 1 000 € vyššie podľa počtu produktov, dizajnu a napojení. K tomu hosting, doména a niektoré platené doplnky, spolu typicky desiatky až nižšie stovky eur ročne.
+
+**Výhody:**
+
+- e-shop je váš, nikto vám ho nevypne,
+- veľa možností a doplnkov,
+- jednoduché prepojenie s blogom a obsahom pre SEO.
+
+**Nevýhody:**
+
+- treba sa starať o aktualizácie a zálohy,
+- príliš veľa doplnkov spomaľuje web,
+- pri zložitejších požiadavkách sa náklady na úpravy rýchlo sčítajú.
+
+**Pre koho:** pre firmy, ktoré chcú mať e-shop pod kontrolou, majú desiatky až stovky produktov a počítajú s dlhodobým rastom.
+
+### 3. E-shop na mieru
+
+Systém vyvinutý presne podľa vašich potrieb – vlastný dizajn, vlastné procesy, napojenie na účtovníctvo, sklad alebo veľkoobchodný systém.
+
+**Orientačné náklady:** typicky niekoľko tisíc eur a viac. Pri veľkých projektoch desiatky tisíc.
+
+**Výhody:**
+
+- žiadne obmedzenia platformy,
+- rýchlosť a výkon podľa vašich potrieb,
+- dá sa napojiť prakticky na čokoľvek.
+
+**Nevýhody:**
+
+- vysoká vstupná investícia,
+- závislosť na dodávateľovi, ktorý systém pozná,
+- dlhší čas vývoja.
+
+**Pre koho:** pre zavedené obchody s tisíckami objednávok, špecifickými procesmi alebo napojením na vlastné systémy. Pre začínajúci e-shop to väčšinou nie je rozumná voľba.
+
+## Náklady, na ktoré sa zabúda
+
+Cena za vytvorenie je iba začiatok. Pri rozpočte rátajte aj s týmito položkami:
+
+- **Platobná brána** – poplatok z každej platby kartou, väčšinou percento z transakcie.
+- **Doprava** – zmluvy s dopravcami, prípadne poplatky za napojenie.
+- **Fakturácia** – služba alebo doplnok na vystavovanie faktúr, ak ho nemá samotný systém.
+- **Fotky produktov** – kvalitné fotky predávajú. Ak ich nemáte, rátajte s fotografom alebo vlastným časom.
+- **Popisy produktov** – pri stovkách produktov ide o desiatky hodín práce.
+- **Obchodné podmienky a GDPR** – mali by byť napísané pre váš e-shop, nie skopírované od konkurencie.
+- **Marketing** – e-shop bez návštevníkov nič nepredá. Počítajte s rozpočtom na reklamu, SEO alebo sociálne siete.
+- **Správa** – aktualizácie, zálohy, drobné úpravy.
+
+Často sa stáva, že ľudia investujú všetko do vytvorenia e-shopu a na marketing už nezostane nič. Potom majú pekný obchod, do ktorého nikto nechodí. Ak už e-shop máte a nepredáva, pozrite si článok [Prečo váš e-shop nepredáva?](/blog/preco-vas-eshop-nepredava).
+
+## Príklad: tri rôzne e-shopy, tri rôzne rozpočty
+
+**Predajkyňa ručne robených sviečok** s 30 produktmi. Začína popri práci, chce si overiť, či o produkty bude záujem. Prenajatý e-shop s najmenším balíkom a pekne nafotené produkty sú pre ňu ideálny štart. Investícia je malá a ak to nepôjde, veľa nestratí.
+
+**Rodinný obchod so záhradnými potrebami** s 400 produktmi a kamennou predajňou. Chce predávať aj online a dlhodobo rásť cez Google. Dáva zmysel WooCommerce alebo vyšší balík platformy, s dôrazom na kategórie a popisy produktov, ktoré pomáhajú pri vyhľadávaní.
+
+**Veľkoobchod s náhradnými dielmi** s tisíckami položiek, cenníkmi pre rôznych odberateľov a napojením na sklad. Tu sa už oplatí riešenie na mieru, pretože hotové platformy by bolo treba ohýbať tak veľmi, že by to bolo drahšie.
+
+## Kedy e-shop vôbec nepotrebujete
+
+Nie každá firma, ktorá niečo predáva, potrebuje plnohodnotný e-shop. Ak máte pár produktov alebo robíte výrobky na zákazku, často stačí obyčajný web s katalógom a objednávkovým formulárom. Zákazník vyplní, čo chce, vy mu pošlete potvrdenie a platobné údaje.
+
+Takýto web je výrazne lacnejší, nemá mesačné poplatky za platformu a dá sa neskôr rozšíriť na e-shop, keď objednávok pribudne. Rozdiel medzi typmi webov rozoberáme aj v článku [Landing page alebo webstránka?](/blog/landing-page-alebo-webstranka).
+
+## Ako sa rozhodnúť
+
+Položte si tieto otázky:
+
+- **Koľko produktov budete mať o rok?** Desiatky, stovky, tisíce?
+- **Koľko objednávok mesačne čakáte?**
+- **Kto bude e-shop spravovať?** Vy, zamestnanec, dodávateľ?
+- **Koľko môžete investovať na začiatku a koľko mesačne?**
+- **Potrebujete napojenie na sklad alebo účtovníctvo?**
+
+Ak začínate a neviete, či to pôjde, začnite jednoducho. Prerobiť malý e-shop na väčší je bežná vec. Zaplatiť tisíce za systém, ktorý potom nevyužijete, sa nevráti.
+
+## FAQ
+
+### Aký je najlacnejší spôsob, ako začať predávať online?
+Prenajatý e-shop s najmenším balíkom alebo jednoduchý web s objednávkovým formulárom. Oba sa dajú spustiť s malou počiatočnou investíciou.
+
+### Je lepší prenajatý e-shop, alebo vlastný?
+Prenajatý je jednoduchší na začiatok a nemusíte sa starať o techniku. Vlastný (napríklad WooCommerce) je váš a pri väčšom raste môže vyjsť lacnejšie. Záleží na tom, či chcete pohodlie, alebo kontrolu.
+
+### Koľko trvá vytvorenie e-shopu?
+Jednoduchý e-shop na platforme sa dá spustiť za pár dní až týždňov. E-shop na mieru trvá mesiace. Najviac času často zaberie príprava produktov, fotiek a textov.
+
+### Potrebujem k e-shopu aj blog?
+Nie je to povinné, ale pomáha. Články odpovedajú na otázky zákazníkov a privádzajú ľudí z Google, ktorí by váš e-shop inak nenašli.
+
+### Koľko stojí bežný firemný web bez e-shopu?
+Výrazne menej. Prehľad nájdete v článku [Koľko stojí webstránka na Slovensku](/blog/kolko-stoji-webstranka-na-slovensku).
+
+## Záver
+
+E-shop môže stáť pár eur mesačne aj desaťtisíce. Správna cena je tá, ktorá zodpovedá vášmu sortimentu, počtu objednávok a tomu, koľko času viete do obchodu vložiť. Pri rozpočte nezabudnite na platobnú bránu, dopravu, fotky, texty a hlavne na marketing – bez návštevníkov nepredá ani najkrajší e-shop.
+
+**Neviete, či potrebujete e-shop, alebo vám stačí web s objednávkovým formulárom? [Napíšte nám](/#contact) – poradíme, čo dáva zmysel pre vašu situáciu.**`
   },
 ];

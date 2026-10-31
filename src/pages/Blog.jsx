@@ -65,6 +65,10 @@ const POST_CATEGORY = {
   'webstranka-pre-stavebnu-firmu': 'odvetvia',
   'webstranka-pre-autoservis': 'odvetvia',
   'webstranka-pre-elektrikara': 'odvetvia',
+  'ako-dostat-firmu-na-google-mapy': 'seo',
+  'preco-nestaci-mat-len-facebook': 'viac-zakaznikov',
+  'ako-si-vybrat-dodavatela-webstranky': 'tvorba-webu',
+  'kolko-stoji-eshop-na-slovensku': 'ceny',
   'tvorba-webu-trnava': 'odvetvia',
   'spolupraca-s-montwell-webstranka': 'referencie',
 };
