@@ -69,6 +69,9 @@ const POST_CATEGORY = {
   'preco-nestaci-mat-len-facebook': 'viac-zakaznikov',
   'ako-si-vybrat-dodavatela-webstranky': 'tvorba-webu',
   'kolko-stoji-eshop-na-slovensku': 'ceny',
+  'webstranka-pre-realitnu-kancelariu': 'odvetvia',
+  'ako-ziskat-viac-dopytov-cez-web': 'viac-zakaznikov',
+  'kolko-stoji-sprava-webu': 'ceny',
   'tvorba-webu-trnava': 'odvetvia',
   'spolupraca-s-montwell-webstranka': 'referencie',
 };

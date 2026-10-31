@@ -1847,4 +1847,398 @@ E-shop môže stáť pár eur mesačne aj desaťtisíce. Správna cena je tá, k
 
 **Neviete, či potrebujete e-shop, alebo vám stačí web s objednávkovým formulárom? [Napíšte nám](/#contact) – poradíme, čo dáva zmysel pre vašu situáciu.**`
   },
+  {
+    slug: 'webstranka-pre-realitnu-kancelariu',
+    title: 'Webstránka pre realitnú kanceláriu: ako získať viac predávajúcich aj kupujúcich',
+    metaTitle: 'Webstránka pre realitnú kanceláriu | Čo musí obsahovať',
+    excerpt: 'Čo má mať web realitnej kancelárie alebo makléra? Ponuka nehnuteľností, ocenenie, referencie, lokálne SEO a formuláre, ktoré prinášajú nových predávajúcich.',
+    date: '25. októbra 2026',
+    iso: '2026-10-25',
+    readTime: '10 min čítania',
+    content: `Väčšina realitných kancelárií si myslí, že ich web je hlavne katalóg ponúk. Kupujúci však nehnuteľnosti hľadajú najmä na veľkých realitných portáloch. Na web kancelárie prídu, až keď ich niečo zaujme – alebo keď si chcú overiť, s kým majú dočinenia.
+
+Skutočná hodnota webu je inde. Najcennejší zákazník realitky nie je kupujúci, ale **predávajúci**. Človek, ktorý chce predať byt po rodičoch alebo dom, z ktorého sa sťahuje. Takého zákazníka portál neprivedie. Ten si makléra vyberá sám, často cez Google, a rozhoduje sa podľa toho, komu viac dôveruje.
+
+V tomto článku je, čo by mal web realitnej kancelárie alebo samostatného makléra obsahovať, aby prinášal oboch – kupujúcich aj predávajúcich.
+
+## Dva typy návštevníkov, dve rôzne potreby
+
+**Kupujúci** hľadá konkrétnu nehnuteľnosť. Zaujíma ho cena, lokalita, fotky, dispozícia a ako rýchlo sa dá dohodnúť obhliadka. Je netrpezlivý a porovnáva.
+
+**Predávajúci** hľadá človeka, ktorému zverí jednu z najväčších transakcií svojho života. Zaujíma ho, koľko jeho nehnuteľnosť stojí, ako dlho bude predaj trvať, koľko zaplatí za služby a či makléra vôbec zaujíma jeho lokalita. Rozhoduje sa pomalšie a podľa dôvery.
+
+Web musí hneď na úvodnej stránke ukázať cestu obom. Napríklad dve jasné tlačidlá: „Pozrieť ponuku“ a „Chcem predať nehnuteľnosť“.
+
+## Ponuka nehnuteľností: prehľadne a aktuálne
+
+Aj keď väčšina kupujúcich príde z portálov, ponuka na vlastnom webe je dôležitá. Je to dôkaz, že kancelária reálne predáva.
+
+Čo musí každý inzerát obsahovať:
+
+- veľa kvalitných fotiek, prvá musí zaujať aj v malom náhľade,
+- cenu – inzerát bez ceny mnohí kupujúci rovno preskočia,
+- lokalitu čo najpresnejšie, aspoň ulicu alebo časť mesta,
+- základné údaje: rozloha, dispozícia, poschodie, stav, energetická trieda,
+- meno a telefón makléra, ktorý nehnuteľnosť predáva,
+- tlačidlo na dohodnutie obhliadky.
+
+Najväčší problém realitných webov sú **neaktuálne ponuky**. Predaný byt, ktorý na webe visí tri mesiace, pôsobí neprofesionálne. Ak používate realitný softvér, overte si, či vie ponuky na web posielať automaticky. Väčšina bežných systémov to dokáže a ušetrí vám to hodiny práce.
+
+Pri predaných nehnuteľnostiach je dobrý nápad nechať ich na webe s označením „Predané“. Ukazujú, že predávate, a predávajúcemu z rovnakej lokality dávajú signál, že ju poznáte.
+
+## Stránka pre predávajúcich: tu sa rozhoduje o zákazkách
+
+Toto je najdôležitejšia stránka celého webu a mnohé realitky ju vôbec nemajú. Má odpovedať na otázky, ktoré si predávajúci kladie:
+
+- **Ako prebieha predaj s vami?** Krok za krokom, od prvého stretnutia po podpis zmluvy.
+- **Čo za to dostanem?** Fotky, video, pôdorys, inzercia, obhliadky, právny servis, pomoc s hypotékou pre kupujúceho.
+- **Koľko to stojí?** Aspoň princíp provízie. Predávajúci to aj tak zistí, len skôr alebo neskôr.
+- **Ako dlho to trvá?** Reálny odhad, nie sľub.
+- **Prečo vy?** Konkrétne čísla a príbehy, nie „sme profesionáli s dlhoročnými skúsenosťami“.
+
+Na konci stránky má byť formulár „Chcem predať“ alebo „Chcem ocenenie nehnuteľnosti“.
+
+### Ocenenie nehnuteľnosti zadarmo
+
+Ponuka bezplatného odhadu ceny je pre realitky jeden z najlepších spôsobov, ako získať kontakt na predávajúceho. Človek, ktorý uvažuje o predaji, chce najprv vedieť, koľko jeho byt stojí. Ak mu to poviete vy, je veľká šanca, že predaj zverí práve vám.
+
+Formulár stačí jednoduchý:
+
+- adresa alebo lokalita,
+- typ nehnuteľnosti a rozloha,
+- stav,
+- telefón alebo e-mail.
+
+Nesľubujte presnú cenu za päť minút. Napíšte, že sa ozvete do pracovného dňa s orientačným odhadom a ponúknete osobnú obhliadku. Je to úprimné a vedie to k stretnutiu.
+
+## Maklér ako človek, nie logo
+
+V realitách si ľudia vyberajú konkrétneho človeka. Web by preto mal mať stránku o tíme s:
+
+- skutočnými fotkami maklérov, nie z fotobanky,
+- krátkym predstavením – odkiaľ sú, ako dlho robia, na aké lokality sa špecializujú,
+- priamym telefónom a e-mailom.
+
+Maklér, ktorý „žije v Trnave dvadsať rokov a predal tu desiatky bytov“, je pre predávajúceho z Trnavy oveľa presvedčivejší ako anonymná „sieť pobočiek po celom Slovensku“.
+
+## Referencie a výsledky
+
+Predávajúci chce dôkaz, že predávate rýchlo a za dobrú cenu. Najlepšie fungujú:
+
+- **recenzie s menom a lokalitou**, ideálne prepojené s Google recenziami,
+- **krátke príbehy predajov**: „Trojizbový byt na Linčianskej, predaný za 6 týždňov, 3 % nad pôvodným odhadom majiteľa“,
+- počet predaných nehnuteľností za posledný rok, ak je to číslo, za ktorým si stojíte.
+
+Neuvádzajte čísla, ktoré neviete doložiť. Predávajúci sa na ne na stretnutí často opýta.
+
+## Lokálne SEO: buďte vidieť vo svojom meste
+
+Predávajúci často hľadajú „realitná kancelária Trnava“ alebo „predaj bytu Nitra“. Na tieto vyhľadávania sa zobrazujú výsledky v Google Mapách a weby, ktoré o danom meste naozaj niečo píšu.
+
+Čo pomáha:
+
+- vyplnený a overený **Google Business Profile** s fotkami a recenziami – postup nájdete v návode [Ako dostať firmu na Google Mapy](/blog/ako-dostat-firmu-na-google-mapy),
+- samostatné stránky pre mestá alebo časti, kde pôsobíte, s vlastným textom,
+- články o lokálnom trhu, napríklad „Koľko stojí byt v Trnave v roku 2026“ alebo „Čo zvyšuje cenu domu v okolí Senca“.
+
+Takéto články sú pre realitku zlatá baňa. Ľudia, ktorí uvažujú o predaji, presne tieto otázky hľadajú. Viac o princípoch nájdete v článku [Čo je to lokálne SEO a prečo na ňom záleží?](/blog/lokalne-seo-slovensko).
+
+## Kontakt a rýchla reakcia
+
+V realitách vyhráva ten, kto sa ozve prvý. Kupujúci, ktorý pošle dopyt na tri byty od troch kancelárií, ide na obhliadku tam, kde mu zavolali najskôr.
+
+Na webe preto:
+
+- telefón klikateľný na mobile v hlavičke každej stránky,
+- pri každom inzeráte tlačidlo na zavolanie konkrétnemu maklérovi,
+- formulár, ktorý sa po odoslaní dostane priamo maklérovi, nie do spoločnej schránky, ktorú nikto nečíta.
+
+## Najčastejšie chyby realitných webov
+
+- predané a neaktuálne ponuky bez označenia,
+- žiadna stránka pre predávajúcich – web hovorí iba ku kupujúcim,
+- fotky maklérov z fotobanky alebo žiadne,
+- pomalé načítanie kvôli stovkám nekomprimovaných fotiek,
+- inzeráty, ktoré sa na mobile zle prezerajú, hoci väčšina ľudí pozerá ponuky práve na mobile.
+
+Ďalšie bežné problémy rozoberá článok [10 najčastejších chýb na firemných webstránkach](/blog/najcastejsie-chyby-na-firemnom-webe).
+
+## FAQ
+
+### Potrebuje realitka vlastný web, keď inzeruje na portáloch?
+Áno. Portály prinášajú kupujúcich k jednotlivým ponukám, ale predávajúci si makléra vyberajú podľa dôvery – a tú buduje vlastný web s referenciami, tímom a stránkou pre predávajúcich.
+
+### Dajú sa ponuky na web posielať automaticky z realitného softvéru?
+Väčšina realitných systémov podporuje export ponúk. Pri tvorbe webu je dobré to overiť hneď na začiatku, aby ste nemuseli inzeráty zadávať dvakrát.
+
+### Stačí samostatnému maklérovi jednoduchý web?
+Na začiatok áno. Jedna stránka s predstavením, ponukou, referenciami, sekciou pre predávajúcich a kontaktom môže fungovať veľmi dobre. Rozdiel medzi jednoduchým a väčším webom vysvetľuje článok [Landing page alebo webstránka?](/blog/landing-page-alebo-webstranka).
+
+### Koľko stojí web pre realitnú kanceláriu?
+Závisí od toho, či potrebujete napojenie na realitný softvér a koľko ponúk budete mať. Prehľad cien nájdete v článku [Koľko stojí webstránka na Slovensku](/blog/kolko-stoji-webstranka-na-slovensku).
+
+## Záver
+
+Web realitnej kancelárie nie je ďalší realitný portál. Jeho úlohou je presvedčiť predávajúceho, že práve vy predáte jeho nehnuteľnosť najlepšie. Aktuálna ponuka, stránka pre predávajúcich s ponukou ocenenia, skutoční makléri, overiteľné referencie a viditeľnosť vo vašom meste – to sú veci, ktoré prinášajú zákazky.
+
+**Chcete web, ktorý vašej realitke prinesie viac predávajúcich? [Napíšte nám](/#contact) – navrhneme riešenie podľa toho, ako pracujete.**`
+  },
+  {
+    slug: 'ako-ziskat-viac-dopytov-cez-web',
+    title: 'Ako získať viac dopytov cez firemný web: 11 zmien, ktoré fungujú',
+    metaTitle: 'Ako získať viac dopytov cez firemný web | 11 zmien',
+    excerpt: 'Web má návštevy, ale dopyty neprichádzajú? 11 konkrétnych zmien – od prvej obrazovky po formulár –, ktoré zvýšia počet telefonátov a správ od zákazníkov.',
+    date: '28. októbra 2026',
+    iso: '2026-10-28',
+    readTime: '10 min čítania',
+    content: `Veľa majiteľov firiem nám povie to isté: „Web máme, ľudia naň chodia, ale nikto sa neozve.“ Často to nie je problém návštevnosti. Ľudia prídu, rozhliadnu sa a odídu, pretože im web nepovedal dosť rýchlo, či ste pre nich tí správni, alebo im nedal jednoduchý spôsob, ako sa ozvať.
+
+Dobrá správa: na to netreba nový web. Väčšinou stačí niekoľko úprav na tom existujúcom. V tomto článku je 11 zmien, ktoré najčastejšie zvyšujú počet telefonátov a správ. Nemusíte urobiť všetky naraz. Začnite prvými tromi.
+
+Ak k vám návštevníci zatiaľ vôbec nechodia, je problém skôr vo viditeľnosti na Google. Vtedy začnite článkom [Prečo vám web neprináša zákazníkov](/blog/preco-web-neprinas-zakaznikov).
+
+## 1. Prvá obrazovka musí povedať tri veci
+
+Návštevník sa rozhoduje v priebehu pár sekúnd. Na mobile bez posúvania musí vidieť:
+
+- **čo robíte** – konkrétne, nie „komplexné riešenia“,
+- **pre koho alebo kde** – „pre rodinné domy v Trnavskom kraji“,
+- **čo má urobiť** – tlačidlo „Zavolať“ alebo „Získať cenovú ponuku“.
+
+Skúste to: otvorte svoj web na mobile a ukážte ho na tri sekundy niekomu, kto vašu firmu nepozná. Ak nevie povedať, čo robíte, máte prvú úlohu.
+
+## 2. Telefón klikateľný na každej stránke
+
+Znie to samozrejme, ale stále vidíme weby, kde je číslo iba v pätičke alebo ako obrázok, na ktorý sa nedá kliknúť. Telefón patrí do hlavičky, na každú stránku, a musí sa dať na mobile jedným ťuknutím vytočiť.
+
+Pri službách, kde ľudia volajú v strese – poruchy, havárie, odťahová služba – je to najdôležitejšia zmena zo všetkých.
+
+## 3. Formulár s menej políčkami
+
+Každé ďalšie políčko vo formulári niekoho odradí. Pýtajte sa iba na to, čo naozaj potrebujete, aby ste sa mohli ozvať:
+
+- meno,
+- telefón alebo e-mail,
+- krátka správa alebo výber služby.
+
+Adresu, rozpočet a podrobnosti zistíte pri telefonáte. Ak potrebujete viac informácií vopred, napríklad pri cenovej ponuke na rekonštrukciu, rozdeľte formulár do dvoch krokov a povinné nechajte iba kontakt.
+
+## 4. Napíšte, čo sa stane po odoslaní
+
+Ľudia sa neozývajú aj preto, že nevedia, čo nasleduje. Pod tlačidlo napíšte jednu vetu: „Ozveme sa vám do 24 hodín v pracovné dni, cenová ponuka je nezáväzná.“ Zníži to strach z toho, že sa niekam zaviažu.
+
+Rovnako dôležité je, aby ste sa naozaj ozvali. Najväčšie straty dopytov nevznikajú na webe, ale v neprečítanej schránke.
+
+## 5. Orientačné ceny
+
+Mnohé firmy sa boja zverejniť ceny. Výsledok je, že zákazník nevie, či si vás môže dovoliť, a radšej sa ozve konkurencii, ktorá aspoň naznačila, koľko to stojí.
+
+Netreba presný cenník. Stačí „od“ cena alebo rozpätie pri typických zákazkách: „Výmena batérie od 45 €“, „Rekonštrukcia kúpeľne zvyčajne 6 000 – 12 000 € podľa rozsahu“. Odfiltrujete tým aj ľudí, ktorí by sa ozvali s nereálnymi očakávaniami.
+
+## 6. Dôkazy, že to viete
+
+Návštevník potrebuje dôvod uveriť, že ste dobrí. Najlepšie fungujú:
+
+- **fotky vašej skutočnej práce**, ideálne pred a po,
+- **recenzie s menom a mestom**, nie anonymné citáty,
+- **počet rokov praxe alebo realizácií**, ak je to číslo, ktoré viete doložiť,
+- **logá firiem**, pre ktoré ste pracovali, ak robíte B2B.
+
+Dôkazy dajte blízko k tlačidlu kontaktu. Človek sa rozhodne práve vo chvíli, keď vidí výsledok vašej práce.
+
+## 7. Samostatná stránka pre každú hlavnú službu
+
+Ak robíte päť rôznych vecí a všetko je na jednej stránke v zozname, zákazník sa v tom stratí a Google nevie, na čo vás má ukazovať.
+
+Každá hlavná služba si zaslúži vlastnú stránku s popisom, cenami, fotkami a kontaktom. Človek, ktorý hľadá „výmena strešnej krytiny Nitra“, by mal prísť priamo na stránku o strechách, nie na úvod, kde musí hľadať. Koľko stránok je rozumné, rozoberáme v článku [Koľko stránok má mať firemný web?](/blog/kolko-stranok-ma-mat-firemny-web).
+
+## 8. Texty o zákazníkovi, nie o vás
+
+Porovnajte dve vety:
+
+- „Sme dynamická firma s dlhoročnou tradíciou a individuálnym prístupom.“
+- „Novú kúpeľňu vám odovzdáme do troch týždňov, vrátane odvozu sutiny a upratania.“
+
+Prvá veta nehovorí nič, druhá rieši zákazníkov problém. Prejdite svoje texty a každú vetu, ktorá by mohla byť na webe akejkoľvek firmy, nahraďte konkrétnou informáciou. Viac tipov nájdete v článku [Ako napísať texty na web, ktoré predávajú](/blog/ako-napisat-texty-na-web-ktore-predavaju).
+
+## 9. Rýchlosť načítania na mobile
+
+Ak sa web načítava dlhšie ako pár sekúnd, časť ľudí odíde skôr, než ho vôbec uvidia. Najčastejšie príčiny sú obrovské fotky, veľa doplnkov a lacný preťažený hosting.
+
+Rýchlosť si overíte zadarmo v nástroji PageSpeed Insights od Google. Ak je výsledok na mobile slabý, zmenšenie fotiek často pomôže viac než čokoľvek iné.
+
+## 10. Viac spôsobov, ako sa ozvať
+
+Niekto rád volá, iný radšej napíše. Okrem telefónu a formulára zvážte:
+
+- **WhatsApp** – pre mnohých ľudí najpohodlnejší spôsob, najmä keď chcú poslať fotku problému,
+- **online rezerváciu** pri službách na termín, napríklad kaderníctvo alebo servis,
+- **e-mail** pre tých, ktorí nechcú vypĺňať formulár.
+
+Nepridávajte však desať tlačidiel naraz. Dva až tri jasné spôsoby stačia.
+
+## 11. Merajte, odkiaľ dopyty prichádzajú
+
+Bez merania neviete, či zmeny pomohli. Základ je Google Analytics s meraním odoslaných formulárov a kliknutí na telefón a Google Search Console, kde vidíte, na aké výrazy vás ľudia nachádzajú. Ako ich nastaviť, vysvetľujeme v článku [Google Search Console a Google Analytics](/blog/google-search-console-a-google-analytics).
+
+Jednoduchý tip: pri telefonáte sa opýtajte „Ako ste sa o nás dozvedeli?“ a odpovede si zapisujte. Za mesiac budete mať prekvapivo presný obraz.
+
+## Ako začať
+
+Ak neviete, kde začať, toto poradie funguje pre väčšinu malých firiem:
+
+- najprv prvá obrazovka, telefón a formulár (body 1 – 4),
+- potom ceny a dôkazy (body 5 – 6),
+- nakoniec podstránky služieb, texty a rýchlosť (body 7 – 9).
+
+Po každej zmene počkajte aspoň pár týždňov a sledujte, či dopytov pribudlo.
+
+## FAQ
+
+### Koľko dopytov by mal web prinášať?
+Neexistuje univerzálne číslo. Záleží na odbore, regióne a počte návštevníkov. Dôležitejšie je, či počet dopytov po zmenách rastie a či sú to zákazníci, ktorých chcete.
+
+### Je lepšie mať formulár, alebo iba telefón?
+Oboje. Časť ľudí nechce volať, najmä večer alebo v práci. Formulár im umožní ozvať sa kedykoľvek a vy sa im ozvete, keď budete mať čas.
+
+### Pomôže viac dopytov reklama?
+Reklama prinesie viac návštevníkov, ale ak web nepresvedčí, zaplatíte za návštevy bez dopytov. Najprv upravte web, potom zvažujte reklamu.
+
+### Musím na to mať nový web?
+Väčšinou nie. Mnohé z týchto zmien sa dajú urobiť na existujúcom webe. Nový web dáva zmysel, ak je starý pomalý, nefunguje na mobile alebo sa nedá upravovať. Viac v článku [Redizajn webu – kedy je správny čas?](/blog/redizajn-webu-kedy-je-spravny-cas).
+
+## Záver
+
+Viac dopytov väčšinou neprinesie krajší dizajn, ale jasnejší web. Povedzte hneď na začiatku, čo robíte a pre koho, ukážte dôkazy, dajte orientačné ceny a umožnite ľuďom ozvať sa jedným ťuknutím. A potom sa im rýchlo ozvite.
+
+**Chcete vedieť, čo na vašom webe brzdí dopyty? [Napíšte nám](/#contact) – pozrieme sa naň a povieme vám, čo zmeniť ako prvé.**`
+  },
+  {
+    slug: 'kolko-stoji-sprava-webu',
+    title: 'Koľko stojí správa webu a čo do nej patrí',
+    metaTitle: 'Koľko stojí správa webu? Ceny a čo do nej patrí',
+    excerpt: 'Koľko stojí správa webu mesačne a ročne? Doména, hosting, aktualizácie, zálohy, zmeny obsahu a SEO – čo platíte, čo potrebujete a kde netreba preplácať.',
+    date: '31. októbra 2026',
+    iso: '2026-10-31',
+    readTime: '9 min čítania',
+    content: `Keď je web hotový, väčšina majiteľov firiem si vydýchne. Potom príde prvá faktúra za doménu, ponuka „mesačného paušálu za správu“ a otázka: čo z toho naozaj potrebujem a koľko by to malo stáť?
+
+Odpoveď závisí hlavne od toho, ako je web postavený a ako často ho meníte. Jednoduchá prezentácia živnostníka potrebuje minimum starostlivosti. E-shop s denne meniacim sa sortimentom potrebuje pravidelnú prácu.
+
+V tomto článku vysvetľujeme, z čoho sa náklady na prevádzku webu skladajú, aké sú bežné ceny na Slovensku a kde sa oplatí ušetriť. Ceny sú orientačné a líšia sa podľa dodávateľa.
+
+## Čo sú povinné náklady
+
+Bez týchto dvoch položiek web nefunguje:
+
+### Doména
+
+Adresa vášho webu, napríklad vasafirma.sk. Platí sa ročne. Bežná doména .sk alebo .com stojí rádovo jednotky až nižšie desiatky eur ročne podľa registrátora.
+
+Dôležité je, aby bola doména registrovaná **na vás**, nie na dodávateľa webu. Viac v článku [Ako si vybrať správnu doménu](/blog/ako-si-vybrat-spravnu-domenu).
+
+### Hosting
+
+Priestor, kde je web uložený. Pre malý firemný web stačí lacnejší program, typicky niekoľko eur mesačne. E-shop alebo web s veľkou návštevnosťou potrebuje výkonnejší hosting za viac.
+
+Pozor na extrémne lacný hosting. Pomalý web stráca zákazníkov aj pozície v Google. Rozdiely vysvetľujeme v článku [Čo je webhosting a prečo na ňom záleží](/blog/co-je-webhosting-a-preco-na-nom-zalezi).
+
+Niektoré moderné weby, napríklad jednoduché statické stránky, sa dajú prevádzkovať na hostingu, ktorý je pri malej návštevnosti lacný alebo dokonca bezplatný. Je to jedna z výhod jednoduchších riešení.
+
+## Čo zahŕňa správa webu
+
+„Správa webu“ môže znamenať veľa vecí. Pri porovnávaní ponúk si zistite, čo presne je v cene:
+
+- **Technické aktualizácie** – pri WordPresse aktualizácie systému, šablóny a doplnkov. Bez nich hrozí, že sa web pokazí alebo ho niekto napadne.
+- **Zálohy** – pravidelná kópia webu, z ktorej sa dá obnoviť, keď sa niečo pokazí.
+- **Bezpečnosť** – sledovanie, či web nie je napadnutý, SSL certifikát (zámok v prehliadači).
+- **Monitoring** – upozornenie, keď web prestane fungovať.
+- **Zmeny obsahu** – úprava cenníka, nové fotky, otváracie hodiny, nová služba.
+- **Technická podpora** – keď niečo nefunguje, máte komu zavolať.
+
+Nie každý web potrebuje všetko. Jednoduchý web bez redakčného systému nepotrebuje mesačné aktualizácie doplnkov, lebo žiadne nemá.
+
+## Koľko stojí správa webu na Slovensku
+
+Na trhu sa stretnete s tromi modelmi:
+
+### Platba za prácu
+
+Platíte iba vtedy, keď niečo potrebujete. Bežná hodinová sadzba sa pohybuje približne od 20 do 50 € podľa dodávateľa a náročnosti. Drobná zmena, napríklad výmena cenníka, trvá často menej ako hodinu.
+
+**Pre koho:** jednoduché weby, ktoré sa menia zriedka.
+
+### Mesačný paušál
+
+Za pevnú sumu mesačne dostanete balík služieb – aktualizácie, zálohy, monitoring a určitý počet hodín na zmeny. Malé paušály začínajú zhruba na niekoľkých desiatkach eur mesačne, rozsiahlejšie s marketingom a SEO stoja stovky eur.
+
+**Pre koho:** WordPress weby a e-shopy, ktoré potrebujú pravidelné aktualizácie, a firmy, ktoré chcú mať istotu, že sa o web niekto stará.
+
+### Správa vo vlastnej réžii
+
+Doménu a hosting platíte sami, obsah meníte sami v redakčnom systéme a dodávateľa voláte iba pri väčších zmenách.
+
+**Pre koho:** ľudia, ktorí sa nevyhýbajú technike a majú čas.
+
+## Príklady ročných nákladov
+
+**Živnostník s jednoduchým webom.** Doména a hosting, zmeny raz-dvakrát do roka za hodinovú sadzbu. Ročne väčšinou do nižších stoviek eur, často menej.
+
+**Malá firma s WordPress webom.** Doména, hosting a paušál na aktualizácie a zálohy, plus občasné zmeny. Ročne typicky niekoľko stoviek eur.
+
+**E-shop.** Výkonnejší hosting, platené doplnky, pravidelné aktualizácie, zmeny produktov a marketing. Ročne stovky až tisíce eur podľa veľkosti. Viac v článku [Koľko stojí e-shop na Slovensku](/blog/kolko-stoji-eshop-na-slovensku).
+
+## Kde netreba preplácať
+
+- **Paušál, ktorý nič nerobí.** Ak platíte mesačne a za rok sa na webe nič nezmenilo ani neaktualizovalo, opýtajte sa, za čo platíte.
+- **Drahý hosting „u dodávateľa“** pre malý web. Ak platíte za hosting výrazne viac, než stoja bežné programy, opýtajte sa prečo.
+- **Doplnky, ktoré nepotrebujete.** Každý platený doplnok je ročný poplatok a ďalšia vec na aktualizáciu.
+- **Viazanosť.** Dlhodobá zmluva s vysokou pokutou za odchod je varovný signál.
+
+## Kde sa šetriť nevypláca
+
+- **Zálohy.** Keď sa web pokazí a záloha neexistuje, oprava stojí oveľa viac než roky záloh.
+- **Aktualizácie WordPressu.** Neaktualizovaný web je najčastejší dôvod napadnutia.
+- **Rýchly hosting.** Pomalý web vás stojí zákazníkov každý deň.
+
+## Čo si skontrolovať v ponuke na správu
+
+Skôr než podpíšete mesačný paušál, nechajte si odpovedať na tieto otázky:
+
+- **Koľko hodín práce je v cene** a čo sa stane, keď ich za mesiac nevyčerpáte? Prenášajú sa do ďalšieho mesiaca, alebo prepadnú?
+- **Ako rýchlo reagujú**, keď web nefunguje? Do hodiny, do dňa, do týždňa?
+- **Kde sú uložené zálohy** a kedy ste naposledy skúšali, či sa z nich dá web naozaj obnoviť?
+- **Dostanete prehľad**, čo sa za mesiac urobilo? Krátky e-mail raz mesačne stačí.
+- **Aká je výpovedná lehota** a dostanete pri odchode všetky prístupy?
+
+Dobrý dodávateľ na tieto otázky odpovie bez váhania. Ak odpovede nie sú jasné, je to signál, že platíte za istotu, ktorú v skutočnosti nemáte.
+
+## Ako znížiť náklady na správu
+
+Najviac ovplyvníte náklady ešte pri tvorbe webu:
+
+- **Jednoduchší web = lacnejšia správa.** Web bez zbytočných doplnkov a funkcií sa nemá čo pokaziť.
+- **Moderné statické riešenia** nepotrebujú pravidelné aktualizácie systému ako WordPress. Porovnanie nájdete v článku [WordPress vs Wix vs web na mieru](/blog/wordpress-vs-wix-vs-web-na-mieru).
+- **Dohodnite sa vopred.** Pri objednávke webu sa opýtajte, koľko bude stáť prevádzka a drobné zmeny. Ďalšie otázky nájdete v článku [Ako si vybrať tvorcu webstránky](/blog/ako-si-vybrat-dodavatela-webstranky).
+
+## FAQ
+
+### Musím platiť mesačný paušál za správu webu?
+Nie. Pri jednoduchom webe, ktorý sa mení zriedka, často stačí platiť doménu, hosting a občasnú prácu podľa potreby. Paušál dáva zmysel pri WordPress weboch a e-shopoch.
+
+### Čo sa stane, keď prestanem platiť správu?
+Web by mal fungovať ďalej, ak máte doménu a hosting zaplatené na svoje meno. Ak je všetko na dodávateľovi, môžete prísť o web aj o adresu. Preto je dôležité mať doménu na seba.
+
+### Ako často treba web aktualizovať?
+WordPress a podobné systémy ideálne pri každej bezpečnostnej aktualizácii, v praxi aspoň raz mesačne. Obsah, teda ceny, fotky a služby, vždy keď sa niečo zmení – zastaraný web odrádza zákazníkov.
+
+### Je v cene správy aj SEO?
+Pri bežných paušáloch väčšinou nie, alebo iba v základnej podobe. Ak chcete pravidelne písať články a zlepšovať pozície v Google, ide o samostatnú službu. Prečo sa to oplatí, vysvetľujeme v článku [Prečo je SEO kľúčové pre úspech vášho podnikania](/blog/preco-je-seo-klucove).
+
+## Záver
+
+Správa webu nemusí byť drahá. Pri jednoduchom webe platíte hlavne doménu a hosting a pár hodín práce ročne. Pri WordPresse a e-shopoch dáva zmysel paušál s aktualizáciami a zálohami. Vždy si však overte, čo presne je v cene, a majte doménu aj hosting na svoje meno.
+
+**Chcete web, ktorého prevádzka vás nebude stáť zbytočné peniaze? [Napíšte nám](/#contact) – povieme vám vopred, koľko bude stáť nielen tvorba, ale aj prevádzka.**`
+  },
 ];
